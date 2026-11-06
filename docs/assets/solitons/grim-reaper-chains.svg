@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="title">Three grim-reaper turns: an eternal curve</title>
+  <desc id="description">Heuristic schematic · no geometric PDE is solved</desc>
+  <rect width="640" height="410" fill="#f7fafb" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" stroke="#21667f" stroke-width="0" fill="#21667f" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <text x="24" y="33" fill="#183f52" font-size="22" font-weight="650" text-anchor="start">Three grim-reaper turns: an eternal curve</text>
+  <text x="24" y="59" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">Heuristic schematic · no geometric PDE is solved</text>
+  <path d="M45,98 L595,98" stroke="#526b77" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" />
+  <text x="55" y="91" fill="#183f52" font-size="14" font-weight="400" text-anchor="start">a3</text>
+  <path d="M45,169 L595,169" stroke="#526b77" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" />
+  <text x="55" y="162" fill="#183f52" font-size="14" font-weight="400" text-anchor="start">a2</text>
+  <path d="M45,240 L595,240" stroke="#526b77" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" />
+  <text x="55" y="233" fill="#183f52" font-size="14" font-weight="400" text-anchor="start">a1</text>
+  <path d="M45,311 L595,311" stroke="#526b77" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" />
+  <text x="55" y="304" fill="#183f52" font-size="14" font-weight="400" text-anchor="start">a0</text>
+  <path d="M575,307 C360,307 130,300 130,274 C130,247 355,242 452,221 C510,208 510,190 452,179 C355,158 130,161 130,134 C130,107 360,102 575,102" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="320" y="135" fill="#183f52" font-size="18" font-weight="400" text-anchor="middle">G₃</text>
+  <text x="320" y="206" fill="#183f52" font-size="18" font-weight="400" text-anchor="middle">G₂</text>
+  <text x="320" y="277" fill="#183f52" font-size="18" font-weight="400" text-anchor="middle">G₁</text>
+  <text x="24" y="367" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">Monotone asymptote heights give the embedded graphical subfamily.</text>
+  <text x="24" y="390" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">The joins are heuristic; the full glued solution is not an explicit formula.</text>
+</svg>

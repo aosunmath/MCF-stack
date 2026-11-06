@@ -642,7 +642,9 @@
       "status": "cited-example",
       "citations": [
         "CatHIMWNotes19",
-        "CatHMW20"
+        "CatHMW20",
+        "CatMSTW26",
+        "CatGMM25"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -698,6 +700,154 @@
         "CatSunWang2025"
       ],
       "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-scherk-translators",
+      "title": "Doubly periodic Scherk translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-translating-helicoids",
+      "title": "Helicoid-like translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-translating-annuloids",
+      "title": "Annuloid translators in slabs",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHMWAnnuli24",
+        "CatGMM25"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-mountain-pass-expanders",
+      "title": "Mountain-pass self-expanders",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBWMP20"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-high-genus-expanders",
+      "title": "Expanders of unbounded genus at a fixed cone",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHMWExpand26"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-knotted-expanders",
+      "title": "Knotted self-expanders",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMWKnotted26"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hh-ancient-ovals",
+      "title": "Haslhofer--Hershkovits ancient ovals",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHH13",
+        "CatHS14"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-minimal-ancient-flows",
+      "title": "Ancient flows from unstable minimal hypersurfaces",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMP19"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-reapernoid",
+      "title": "The eternal reapernoid",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMP19"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-stacked-pancakes",
+      "title": "Ancient stacked pancakes",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMY26"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ancient-spiral-curves",
+      "title": "Compact nonconvex ancient spiral curves",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatZOKA23"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-grim-reaper-chains",
+      "title": "Eternal curves from chains of grim reapers",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAY18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
     }
   ],
   "external_proof_dependencies": [

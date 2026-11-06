@@ -1314,7 +1314,9 @@
       "notes": "The one-plane/three-plane asymptotics do not give four topological ends.",
       "citations": [
         "CatHIMWNotes19",
-        "CatHMW20"
+        "CatHMW20",
+        "CatMSTW26",
+        "CatGMM25"
       ],
       "cases": [
         {
@@ -1334,8 +1336,9 @@
           },
           "compact": false,
           "entropy": {
-            "status": "not-recorded",
-            "text": "Not recorded in this entry."
+            "status": "exact",
+            "text": "λ = 3; Gama–Martín–Møller, Theorem 1.4 and the pitchfork asymptotics.",
+            "value": 3
           },
           "gaussian": {
             "status": "not-recorded",
@@ -3767,6 +3770,659 @@
       "tag": "AE7721D6799F",
       "model": "chu-sun-genus-one",
       "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-scherk-translators",
+      "notes": "",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "cases": [
+        {
+          "name": "Scherk translator in three-space",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Doubly periodic surface of infinite genus",
+          "genus": {
+            "key": "infinite",
+            "text": "Infinite genus"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Global topological ends not recorded"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞; infinitely many asymptotic planes (Hoffman–Martín–White, p. 9)."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Doubly periodic Scherk translators",
+      "section": "doubly-periodic-scherk-translators",
+      "category": "translators",
+      "tag": "D24DEEE97A5F",
+      "model": "scherk-translators",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-translating-helicoids",
+      "notes": "",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "cases": [
+        {
+          "name": "Helicoid-like surface",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ² (from the strip decomposition)",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞; the source gives unbounded area ratios."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Helicoid-like translators",
+      "section": "helicoid-like-translators",
+      "category": "translators",
+      "tag": "E6CC94303132",
+      "model": "translating-helicoids",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-translating-annuloids",
+      "notes": "",
+      "citations": [
+        "CatHMWAnnuli24",
+        "CatGMM25"
+      ],
+      "cases": [
+        {
+          "name": "Annuloid",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2, despite four vertical asymptotic planes"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 4 (Hoffman–Martín–White, Remark 7.9).",
+            "value": 4
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Annuloid translators in slabs",
+      "section": "annuloid-translators-in-slabs",
+      "category": "translators",
+      "tag": "4887FC9B88DC",
+      "model": "translating-annuloids",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-mountain-pass-expanders",
+      "notes": "",
+      "citations": [
+        "CatBWMP20"
+      ],
+      "cases": [
+        {
+          "name": "Smooth surface case n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Topology depends on the cone and variational construction",
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not prescribed"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Determined by the cone link; no common count"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by smooth conical asymptotics; no value supplied."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by area growth; not equal to entropy in general."
+          }
+        },
+        {
+          "name": "Smooth hypersurfaces 3 ≤ n ≤ 6",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Smooth hypersurface; topology not prescribed",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Depends on the cone link"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by smooth conical asymptotics."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by area growth."
+          }
+        }
+      ],
+      "title": "Mountain-pass self-expanders",
+      "section": "mountain-pass-self-expanders",
+      "category": "expanders",
+      "tag": "1EA720390291",
+      "model": "mountain-pass-expanders",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-high-genus-expanders",
+      "notes": "",
+      "citations": [
+        "CatHMWExpand26"
+      ],
+      "cases": [
+        {
+          "name": "Fixed three-component cone Cₖ in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable genus pᵃk−1 surface, p odd prime, a ≥ 0; k sufficiently large",
+          "genus": {
+            "key": "higher",
+            "text": "g = pᵃk−1 ≥ 2 for the stated large k"
+          },
+          "ends": {
+            "key": "3",
+            "text": "3 conical ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by conical area growth; no value supplied."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite; no centered value supplied."
+          }
+        }
+      ],
+      "title": "Expanders of unbounded genus at a fixed cone",
+      "section": "expanders-of-unbounded-genus-at-a-fixed-cone",
+      "category": "expanders",
+      "tag": "3A8C3B21B572",
+      "model": "high-genus-expanders",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-knotted-expanders",
+      "notes": "",
+      "citations": [
+        "CatMWKnotted26"
+      ],
+      "cases": [
+        {
+          "name": "Trefoil example",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Trefoil-knotted torus with three punctures and attached annular ends",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "3",
+            "text": "3"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by conical area growth; no value supplied."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite; no centered value supplied."
+          }
+        },
+        {
+          "name": "General handlebody construction",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Knotted genus-g surface, every g ≥ 1, with sufficiently many ends",
+          "genus": {
+            "key": "varies",
+            "text": "Any g ≥ 1"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "r sufficiently large for the chosen handlebody"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by conical area growth."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by conical area growth."
+          }
+        }
+      ],
+      "title": "Knotted self-expanders",
+      "section": "knotted-self-expanders",
+      "category": "expanders",
+      "tag": "DA3FCE2F354F",
+      "model": "knotted-expanders",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-hh-ancient-ovals",
+      "notes": "",
+      "citations": [
+        "CatHH13",
+        "CatHS14"
+      ],
+      "cases": [
+        {
+          "name": "Surface oval n = 2, j = 1",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Sphere S²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          }
+        },
+        {
+          "name": "Hypersurface ovals n ≥ 3, 1 ≤ j ≤ n−1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sphere Sⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          }
+        }
+      ],
+      "title": "Haslhofer–Hershkovits ancient ovals",
+      "section": "haslhofer-hershkovits-ancient-ovals",
+      "category": "other-special-flows",
+      "tag": "56D296501918",
+      "model": "hh-ancient-ovals",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-minimal-ancient-flows",
+      "notes": "",
+      "citations": [
+        "CatMP19"
+      ],
+      "cases": [
+        {
+          "name": "Early ancient Costa perturbations in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Genus-one surface with three ends (normal-graph topology)",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "3",
+            "text": "3"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value recorded in the checked statement."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Ancient flows from unstable minimal hypersurfaces",
+      "section": "ancient-flows-from-unstable-minimal-hypersurfaces",
+      "category": "other-special-flows",
+      "tag": "8A13A6308368",
+      "model": "minimal-ancient-flows",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-reapernoid",
+      "notes": "",
+      "citations": [
+        "CatMP19"
+      ],
+      "cases": [
+        {
+          "name": "Surface reapernoid n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value recorded in the checked statement."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        },
+        {
+          "name": "Hypersurface reapernoids n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value recorded in the checked statement."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "The eternal reapernoid",
+      "section": "the-eternal-reapernoid",
+      "category": "other-special-flows",
+      "tag": "8EACFCA7AE0F",
+      "model": "reapernoid",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-stacked-pancakes",
+      "notes": "",
+      "citations": [
+        "CatMY26"
+      ],
+      "cases": [
+        {
+          "name": "n = 3 in ℝ⁴, and n ≥ 4 in ℝⁿ⁺¹",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sphere Sⁿ, n ≥ 3, from the closed rotational profile",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          }
+        }
+      ],
+      "title": "Ancient stacked pancakes",
+      "section": "ancient-stacked-pancakes",
+      "category": "other-special-flows",
+      "tag": "1A2B6DF32B79",
+      "model": "stacked-pancakes",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-ancient-spiral-curves",
+      "notes": "",
+      "citations": [
+        "CatZOKA23"
+      ],
+      "cases": [
+        {
+          "name": "Embedded ancient planar curve",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no uniform value over ancient time is asserted."
+          }
+        }
+      ],
+      "title": "Compact nonconvex ancient spiral curves",
+      "section": "compact-nonconvex-ancient-spiral-curves",
+      "category": "other-special-flows",
+      "tag": "505A2B69BD4F",
+      "model": "ancient-spiral-curves",
+      "illustration_status": "Heuristic schematic"
+    },
+    {
+      "label": "ex:catalogue-grim-reaper-chains",
+      "notes": "",
+      "citations": [
+        "CatAY18"
+      ],
+      "cases": [
+        {
+          "name": "Monotone three-reaper chain",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value recorded in the checked statement."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Eternal curves from chains of grim reapers",
+      "section": "eternal-curves-from-chains-of-grim-reapers",
+      "category": "other-special-flows",
+      "tag": "B7D6B1E7217F",
+      "model": "grim-reaper-chains",
+      "illustration_status": "Heuristic schematic"
     }
   ]
 }

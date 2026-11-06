@@ -260,20 +260,38 @@
     "section": "finite-genus-translators-with-three-ends"
   },
   {
+    "route": "sections/doubly-periodic-scherk-translators",
+    "title": "3.11 Doubly periodic Scherk translators",
+    "chapter": "translators",
+    "section": "doubly-periodic-scherk-translators"
+  },
+  {
+    "route": "sections/helicoid-like-translators",
+    "title": "3.12 Helicoid-like translators",
+    "chapter": "translators",
+    "section": "helicoid-like-translators"
+  },
+  {
+    "route": "sections/annuloid-translators-in-slabs",
+    "title": "3.13 Annuloid translators in slabs",
+    "chapter": "translators",
+    "section": "annuloid-translators-in-slabs"
+  },
+  {
     "route": "sections/nonrotational-entire-convex-translators",
-    "title": "3.11 Nonrotational entire convex translators",
+    "title": "3.14 Nonrotational entire convex translators",
     "chapter": "translators",
     "section": "nonrotational-entire-convex-translators"
   },
   {
     "route": "sections/translators-with-an-angenent-torus-end",
-    "title": "3.12 Translators with an Angenent-torus end",
+    "title": "3.15 Translators with an Angenent-torus end",
     "chapter": "translators",
     "section": "translators-with-an-angenent-torus-end"
   },
   {
     "route": "sections/translators-with-high-genus-spherical-doubling-ends",
-    "title": "3.13 Translators with high-genus spherical-doubling ends",
+    "title": "3.16 Translators with high-genus spherical-doubling ends",
     "chapter": "translators",
     "section": "translators-with-high-genus-spherical-doubling-ends"
   },
@@ -319,6 +337,24 @@
     "section": "one-sided-expanders-from-mean-convex-cones"
   },
   {
+    "route": "sections/mountain-pass-self-expanders",
+    "title": "4.7 Mountain-pass self-expanders",
+    "chapter": "expanders",
+    "section": "mountain-pass-self-expanders"
+  },
+  {
+    "route": "sections/expanders-of-unbounded-genus-at-a-fixed-cone",
+    "title": "4.8 Expanders of unbounded genus at a fixed cone",
+    "chapter": "expanders",
+    "section": "expanders-of-unbounded-genus-at-a-fixed-cone"
+  },
+  {
+    "route": "sections/knotted-self-expanders",
+    "title": "4.9 Knotted self-expanders",
+    "chapter": "expanders",
+    "section": "knotted-self-expanders"
+  },
+  {
     "route": "chapters/other-special-flows",
     "title": "5 Other special flows",
     "chapter": "other-special-flows"
@@ -330,44 +366,80 @@
     "section": "the-angenent-oval-as-an-explicit-ancient-flow"
   },
   {
+    "route": "sections/compact-nonconvex-ancient-spiral-curves",
+    "title": "5.2 Compact nonconvex ancient spiral curves",
+    "chapter": "other-special-flows",
+    "section": "compact-nonconvex-ancient-spiral-curves"
+  },
+  {
+    "route": "sections/eternal-curves-from-chains-of-grim-reapers",
+    "title": "5.3 Eternal curves from chains of grim reapers",
+    "chapter": "other-special-flows",
+    "section": "eternal-curves-from-chains-of-grim-reapers"
+  },
+  {
     "route": "sections/the-catenoid-as-an-eternal-stationary-flow",
-    "title": "5.2 The catenoid as an eternal stationary flow",
+    "title": "5.4 The catenoid as an eternal stationary flow",
     "chapter": "other-special-flows",
     "section": "the-catenoid-as-an-eternal-stationary-flow"
   },
   {
     "route": "sections/rotational-degenerate-neckpinch-solutions",
-    "title": "5.3 Rotational degenerate neckpinch solutions",
+    "title": "5.5 Rotational degenerate neckpinch solutions",
     "chapter": "other-special-flows",
     "section": "rotational-degenerate-neckpinch-solutions"
   },
   {
     "route": "sections/eternal-shrinking-helices",
-    "title": "5.4 Eternal shrinking helices",
+    "title": "5.6 Eternal shrinking helices",
     "chapter": "other-special-flows",
     "section": "eternal-shrinking-helices"
   },
   {
     "route": "sections/immortal-annuli-converging-to-a-double-plane",
-    "title": "5.5 Immortal annuli converging to a double plane",
+    "title": "5.7 Immortal annuli converging to a double plane",
     "chapter": "other-special-flows",
     "section": "immortal-annuli-converging-to-a-double-plane"
   },
   {
+    "route": "sections/haslhofer-hershkovits-ancient-ovals",
+    "title": "5.8 Haslhofer–Hershkovits ancient ovals",
+    "chapter": "other-special-flows",
+    "section": "haslhofer-hershkovits-ancient-ovals"
+  },
+  {
+    "route": "sections/ancient-flows-from-unstable-minimal-hypersurfaces",
+    "title": "5.9 Ancient flows from unstable minimal hypersurfaces",
+    "chapter": "other-special-flows",
+    "section": "ancient-flows-from-unstable-minimal-hypersurfaces"
+  },
+  {
+    "route": "sections/the-eternal-reapernoid",
+    "title": "5.10 The eternal reapernoid",
+    "chapter": "other-special-flows",
+    "section": "the-eternal-reapernoid"
+  },
+  {
     "route": "sections/mean-curvature-evolution-of-the-whitney-sphere",
-    "title": "5.6 Mean curvature evolution of the Whitney sphere",
+    "title": "5.11 Mean curvature evolution of the Whitney sphere",
     "chapter": "other-special-flows",
     "section": "mean-curvature-evolution-of-the-whitney-sphere"
   },
   {
     "route": "sections/ancient-torus-curves-in-higher-codimension",
-    "title": "5.7 Ancient torus curves in higher codimension",
+    "title": "5.12 Ancient torus curves in higher codimension",
     "chapter": "other-special-flows",
     "section": "ancient-torus-curves-in-higher-codimension"
   },
   {
+    "route": "sections/ancient-stacked-pancakes",
+    "title": "5.13 Ancient stacked pancakes",
+    "chapter": "other-special-flows",
+    "section": "ancient-stacked-pancakes"
+  },
+  {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.8 Immortal compact flows converging to a double sphere",
+    "title": "5.14 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
   },

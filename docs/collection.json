@@ -730,6 +730,9 @@
         "the-pitchfork-translator",
         "nguyen-translating-tridents",
         "finite-genus-translators-with-three-ends",
+        "doubly-periodic-scherk-translators",
+        "helicoid-like-translators",
+        "annuloid-translators-in-slabs",
         "nonrotational-entire-convex-translators",
         "translators-with-an-angenent-torus-end",
         "translators-with-high-genus-spherical-doubling-ends"
@@ -757,7 +760,10 @@
             "scherkenoid-translators",
             "the-pitchfork-translator",
             "nguyen-translating-tridents",
-            "finite-genus-translators-with-three-ends"
+            "finite-genus-translators-with-three-ends",
+            "doubly-periodic-scherk-translators",
+            "helicoid-like-translators",
+            "annuloid-translators-in-slabs"
           ],
           "related": [
             {
@@ -1065,6 +1071,30 @@
               "name": "Compact core with one S_m × [z₀,∞) end"
             }
           ]
+        },
+        "doubly-periodic-scherk-translators": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-scherk-translators-1",
+              "name": "Scherk translator in three-space"
+            }
+          ]
+        },
+        "helicoid-like-translators": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-translating-helicoids-1",
+              "name": "Helicoid-like surface"
+            }
+          ]
+        },
+        "annuloid-translators-in-slabs": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-translating-annuloids-1",
+              "name": "Annuloid"
+            }
+          ]
         }
       },
       "tag": "2760875656EF"
@@ -1078,7 +1108,10 @@
         "rotational-graphical-expanders-over-round-cones",
         "two-sheeted-expanders-of-rotational-double-cones",
         "one-sheeted-expanders-of-rotational-double-cones",
-        "one-sided-expanders-from-mean-convex-cones"
+        "one-sided-expanders-from-mean-convex-cones",
+        "mountain-pass-self-expanders",
+        "expanders-of-unbounded-genus-at-a-fixed-cone",
+        "knotted-self-expanders"
       ],
       "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions.",
       "number": 4,
@@ -1099,7 +1132,10 @@
             "rotational-graphical-expanders-over-round-cones",
             "two-sheeted-expanders-of-rotational-double-cones",
             "one-sheeted-expanders-of-rotational-double-cones",
-            "one-sided-expanders-from-mean-convex-cones"
+            "one-sided-expanders-from-mean-convex-cones",
+            "mountain-pass-self-expanders",
+            "expanders-of-unbounded-genus-at-a-fixed-cone",
+            "knotted-self-expanders"
           ],
           "related": [
             {
@@ -1153,6 +1189,15 @@
                   "name": "Higher-dimensional cone smoothings"
                 }
               ]
+            },
+            {
+              "section": "mountain-pass-self-expanders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-mountain-pass-expanders-2",
+                  "name": "Smooth hypersurfaces 3 ≤ n ≤ 6"
+                }
+              ]
             }
           ]
         },
@@ -1194,6 +1239,15 @@
                 {
                   "anchor": "case-ex-catalogue-mean-convex-expanders-2",
                   "name": "Higher-dimensional cone smoothings"
+                }
+              ]
+            },
+            {
+              "section": "mountain-pass-self-expanders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-mountain-pass-expanders-2",
+                  "name": "Smooth hypersurfaces 3 ≤ n ≤ 6"
                 }
               ]
             }
@@ -1306,6 +1360,46 @@
               "name": "Four or more prescribed rays"
             }
           ]
+        },
+        "mountain-pass-self-expanders": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-mountain-pass-expanders-1",
+              "name": "Smooth surface case n = 2"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-mountain-pass-expanders-2",
+              "name": "Smooth hypersurfaces 3 ≤ n ≤ 6"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-mountain-pass-expanders-2",
+              "name": "Smooth hypersurfaces 3 ≤ n ≤ 6"
+            }
+          ]
+        },
+        "expanders-of-unbounded-genus-at-a-fixed-cone": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-high-genus-expanders-1",
+              "name": "Fixed three-component cone Cₖ in ℝ³"
+            }
+          ]
+        },
+        "knotted-self-expanders": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-knotted-expanders-1",
+              "name": "Trefoil example"
+            },
+            {
+              "anchor": "case-ex-catalogue-knotted-expanders-2",
+              "name": "General handlebody construction"
+            }
+          ]
         }
       },
       "tag": "EE91DF9C2CB0"
@@ -1315,12 +1409,18 @@
       "title": "Other special flows",
       "topics": [
         "the-angenent-oval-as-an-explicit-ancient-flow",
+        "compact-nonconvex-ancient-spiral-curves",
+        "eternal-curves-from-chains-of-grim-reapers",
         "the-catenoid-as-an-eternal-stationary-flow",
         "rotational-degenerate-neckpinch-solutions",
         "eternal-shrinking-helices",
         "immortal-annuli-converging-to-a-double-plane",
+        "haslhofer-hershkovits-ancient-ovals",
+        "ancient-flows-from-unstable-minimal-hypersurfaces",
+        "the-eternal-reapernoid",
         "mean-curvature-evolution-of-the-whitney-sphere",
         "ancient-torus-curves-in-higher-codimension",
+        "ancient-stacked-pancakes",
         "immortal-compact-flows-converging-to-a-double-sphere"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons.",
@@ -1330,7 +1430,9 @@
           "key": "r2",
           "title": "Euclidean plane ℝ²",
           "topics": [
-            "the-angenent-oval-as-an-explicit-ancient-flow"
+            "the-angenent-oval-as-an-explicit-ancient-flow",
+            "compact-nonconvex-ancient-spiral-curves",
+            "eternal-curves-from-chains-of-grim-reapers"
           ],
           "related": []
         },
@@ -1341,7 +1443,10 @@
             "the-catenoid-as-an-eternal-stationary-flow",
             "rotational-degenerate-neckpinch-solutions",
             "eternal-shrinking-helices",
-            "immortal-annuli-converging-to-a-double-plane"
+            "immortal-annuli-converging-to-a-double-plane",
+            "haslhofer-hershkovits-ancient-ovals",
+            "ancient-flows-from-unstable-minimal-hypersurfaces",
+            "the-eternal-reapernoid"
           ],
           "related": []
         },
@@ -1350,7 +1455,8 @@
           "title": "Euclidean space ℝ⁴",
           "topics": [
             "mean-curvature-evolution-of-the-whitney-sphere",
-            "ancient-torus-curves-in-higher-codimension"
+            "ancient-torus-curves-in-higher-codimension",
+            "ancient-stacked-pancakes"
           ],
           "related": [
             {
@@ -1359,6 +1465,24 @@
                 {
                   "anchor": "case-ex-catalogue-degenerate-neckpinches-2",
                   "name": "Higher-dimensional neckpinches"
+                }
+              ]
+            },
+            {
+              "section": "haslhofer-hershkovits-ancient-ovals",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-hh-ancient-ovals-2",
+                  "name": "Hypersurface ovals n ≥ 3, 1 ≤ j ≤ n−1"
+                }
+              ]
+            },
+            {
+              "section": "the-eternal-reapernoid",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-reapernoid-2",
+                  "name": "Hypersurface reapernoids n ≥ 3"
                 }
               ]
             }
@@ -1388,6 +1512,24 @@
               ]
             },
             {
+              "section": "haslhofer-hershkovits-ancient-ovals",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-hh-ancient-ovals-2",
+                  "name": "Hypersurface ovals n ≥ 3, 1 ≤ j ≤ n−1"
+                }
+              ]
+            },
+            {
+              "section": "the-eternal-reapernoid",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-reapernoid-2",
+                  "name": "Hypersurface reapernoids n ≥ 3"
+                }
+              ]
+            },
+            {
               "section": "mean-curvature-evolution-of-the-whitney-sphere",
               "cases": [
                 {
@@ -1402,6 +1544,15 @@
                 {
                   "anchor": "case-ex-catalogue-ancient-torus-curves-3",
                   "name": "Higher-codimension torus curves"
+                }
+              ]
+            },
+            {
+              "section": "ancient-stacked-pancakes",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-stacked-pancakes-1",
+                  "name": "n = 3 in ℝ⁴, and n ≥ 4 in ℝⁿ⁺¹"
                 }
               ]
             }
@@ -1516,6 +1667,84 @@
             {
               "anchor": "case-ex-catalogue-double-sphere-flow-2",
               "name": "Higher-dimensional product-manifold flows"
+            }
+          ]
+        },
+        "haslhofer-hershkovits-ancient-ovals": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-hh-ancient-ovals-1",
+              "name": "Surface oval n = 2, j = 1"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-hh-ancient-ovals-2",
+              "name": "Hypersurface ovals n ≥ 3, 1 ≤ j ≤ n−1"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-hh-ancient-ovals-2",
+              "name": "Hypersurface ovals n ≥ 3, 1 ≤ j ≤ n−1"
+            }
+          ]
+        },
+        "ancient-flows-from-unstable-minimal-hypersurfaces": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-minimal-ancient-flows-1",
+              "name": "Early ancient Costa perturbations in ℝ³"
+            }
+          ]
+        },
+        "the-eternal-reapernoid": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-reapernoid-1",
+              "name": "Surface reapernoid n = 2"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-reapernoid-2",
+              "name": "Hypersurface reapernoids n ≥ 3"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-reapernoid-2",
+              "name": "Hypersurface reapernoids n ≥ 3"
+            }
+          ]
+        },
+        "ancient-stacked-pancakes": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-stacked-pancakes-1",
+              "name": "n = 3 in ℝ⁴, and n ≥ 4 in ℝⁿ⁺¹"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-stacked-pancakes-1",
+              "name": "n = 3 in ℝ⁴, and n ≥ 4 in ℝⁿ⁺¹"
+            }
+          ]
+        },
+        "compact-nonconvex-ancient-spiral-curves": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-ancient-spiral-curves-1",
+              "name": "Embedded ancient planar curve"
+            }
+          ]
+        },
+        "eternal-curves-from-chains-of-grim-reapers": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-grim-reaper-chains-1",
+              "name": "Monotone three-reaper chain"
             }
           ]
         }
@@ -1745,7 +1974,7 @@
       "slug": "nonrotational-entire-convex-translators",
       "title": "Nonrotational entire convex translators",
       "description": "",
-      "number": "3.11",
+      "number": "3.14",
       "tag": "BD00A99565D1"
     },
     {
@@ -1787,15 +2016,36 @@
       "slug": "translators-with-an-angenent-torus-end",
       "title": "Translators with an Angenent-torus end",
       "description": "",
-      "number": "3.12",
+      "number": "3.15",
       "tag": "C8173134CEA6"
     },
     {
       "slug": "translators-with-high-genus-spherical-doubling-ends",
       "title": "Translators with high-genus spherical-doubling ends",
       "description": "",
-      "number": "3.13",
+      "number": "3.16",
       "tag": "A0A7AC0D200C"
+    },
+    {
+      "slug": "doubly-periodic-scherk-translators",
+      "title": "Doubly periodic Scherk translators",
+      "description": "",
+      "number": "3.11",
+      "tag": "73DEA085F2F9"
+    },
+    {
+      "slug": "helicoid-like-translators",
+      "title": "Helicoid-like translators",
+      "description": "",
+      "number": "3.12",
+      "tag": "0147E53C30CE"
+    },
+    {
+      "slug": "annuloid-translators-in-slabs",
+      "title": "Annuloid translators in slabs",
+      "description": "",
+      "number": "3.13",
+      "tag": "93A7D23F7FA3"
     },
     {
       "slug": "expanding-smoothings-of-planar-corners",
@@ -1840,24 +2090,45 @@
       "tag": "23B41DF2B95E"
     },
     {
+      "slug": "mountain-pass-self-expanders",
+      "title": "Mountain-pass self-expanders",
+      "description": "",
+      "number": "4.7",
+      "tag": "665EA484B8DC"
+    },
+    {
+      "slug": "expanders-of-unbounded-genus-at-a-fixed-cone",
+      "title": "Expanders of unbounded genus at a fixed cone",
+      "description": "",
+      "number": "4.8",
+      "tag": "FC2EC5926764"
+    },
+    {
+      "slug": "knotted-self-expanders",
+      "title": "Knotted self-expanders",
+      "description": "",
+      "number": "4.9",
+      "tag": "38D2A75429F2"
+    },
+    {
       "slug": "the-catenoid-as-an-eternal-stationary-flow",
       "title": "The catenoid as an eternal stationary flow",
       "description": "",
-      "number": "5.2",
+      "number": "5.4",
       "tag": "C9F0102B7272"
     },
     {
       "slug": "mean-curvature-evolution-of-the-whitney-sphere",
       "title": "Mean curvature evolution of the Whitney sphere",
       "description": "",
-      "number": "5.6",
+      "number": "5.11",
       "tag": "2E15631C1593"
     },
     {
       "slug": "rotational-degenerate-neckpinch-solutions",
       "title": "Rotational degenerate neckpinch solutions",
       "description": "",
-      "number": "5.3",
+      "number": "5.5",
       "tag": "1E4AD3904D39"
     },
     {
@@ -1871,29 +2142,71 @@
       "slug": "ancient-torus-curves-in-higher-codimension",
       "title": "Ancient torus curves in higher codimension",
       "description": "",
-      "number": "5.7",
+      "number": "5.12",
       "tag": "B6082DA55C46"
     },
     {
       "slug": "eternal-shrinking-helices",
       "title": "Eternal shrinking helices",
       "description": "",
-      "number": "5.4",
+      "number": "5.6",
       "tag": "281263153F94"
     },
     {
       "slug": "immortal-annuli-converging-to-a-double-plane",
       "title": "Immortal annuli converging to a double plane",
       "description": "",
-      "number": "5.5",
+      "number": "5.7",
       "tag": "00966387D6EF"
     },
     {
       "slug": "immortal-compact-flows-converging-to-a-double-sphere",
       "title": "Immortal compact flows converging to a double sphere",
       "description": "",
-      "number": "5.8",
+      "number": "5.14",
       "tag": "0806DD487DC4"
+    },
+    {
+      "slug": "haslhofer-hershkovits-ancient-ovals",
+      "title": "Haslhofer–Hershkovits ancient ovals",
+      "description": "",
+      "number": "5.8",
+      "tag": "12F33FD70B5C"
+    },
+    {
+      "slug": "ancient-flows-from-unstable-minimal-hypersurfaces",
+      "title": "Ancient flows from unstable minimal hypersurfaces",
+      "description": "",
+      "number": "5.9",
+      "tag": "C21B5E7431CB"
+    },
+    {
+      "slug": "the-eternal-reapernoid",
+      "title": "The eternal reapernoid",
+      "description": "",
+      "number": "5.10",
+      "tag": "94DC745FE4C9"
+    },
+    {
+      "slug": "ancient-stacked-pancakes",
+      "title": "Ancient stacked pancakes",
+      "description": "",
+      "number": "5.13",
+      "tag": "9C9E3EBC47D4"
+    },
+    {
+      "slug": "compact-nonconvex-ancient-spiral-curves",
+      "title": "Compact nonconvex ancient spiral curves",
+      "description": "",
+      "number": "5.2",
+      "tag": "F98988E964AC"
+    },
+    {
+      "slug": "eternal-curves-from-chains-of-grim-reapers",
+      "title": "Eternal curves from chains of grim reapers",
+      "description": "",
+      "number": "5.3",
+      "tag": "321CCF32BF3F"
     }
   ],
   "entries": [
@@ -1911,7 +2224,7 @@
           "book": "gmt-foundations",
           "tag": "F8390A5C",
           "label": "sec:sources-conventions",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -1930,7 +2243,7 @@
           "book": "gmt-foundations",
           "tag": "B6BB2EC0",
           "label": "rem:source-editions",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -1949,7 +2262,7 @@
           "book": "gmt-foundations",
           "tag": "BA8E466F",
           "label": "rem:notation",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -1968,7 +2281,7 @@
           "book": "gmt-foundations",
           "tag": "6592A3B9",
           "label": "rem:project-scope",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -1987,7 +2300,7 @@
           "book": "gmt-foundations",
           "tag": "3DE9EB04",
           "label": "sec:catalogue-round-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2006,7 +2319,7 @@
           "book": "gmt-foundations",
           "tag": "D203437F",
           "label": "ex:catalogue-round-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2025,7 +2338,7 @@
           "book": "gmt-foundations",
           "tag": "51178EC2",
           "label": "sec:catalogue-round-cylinder",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2044,7 +2357,7 @@
           "book": "gmt-foundations",
           "tag": "EEE3452C",
           "label": "ex:catalogue-round-cylinder",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2063,7 +2376,7 @@
           "book": "gmt-foundations",
           "tag": "E9C051B4",
           "label": "sec:catalogue-plane-shrinker",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2082,7 +2395,7 @@
           "book": "gmt-foundations",
           "tag": "17CD9463",
           "label": "ex:catalogue-plane-shrinker",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2101,7 +2414,7 @@
           "book": "gmt-foundations",
           "tag": "3A437BBD",
           "label": "sec:catalogue-abresch-langer",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2120,7 +2433,7 @@
           "book": "gmt-foundations",
           "tag": "C5E7E766",
           "label": "ex:catalogue-abresch-langer",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2139,7 +2452,7 @@
           "book": "gmt-foundations",
           "tag": "E1B60631",
           "label": "sec:catalogue-angenent-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2158,7 +2471,7 @@
           "book": "gmt-foundations",
           "tag": "8169E438",
           "label": "ex:catalogue-angenent-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2177,7 +2490,7 @@
           "book": "gmt-foundations",
           "tag": "E6A84F3F",
           "label": "sec:catalogue-drugan-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2196,7 +2509,7 @@
           "book": "gmt-foundations",
           "tag": "B9F1DC7E",
           "label": "ex:catalogue-drugan-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2215,7 +2528,7 @@
           "book": "gmt-foundations",
           "tag": "DE851C71",
           "label": "sec:catalogue-clifford-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2234,7 +2547,7 @@
           "book": "gmt-foundations",
           "tag": "88A4481E",
           "label": "ex:catalogue-clifford-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2253,7 +2566,7 @@
           "book": "gmt-foundations",
           "tag": "E42E972F",
           "label": "sec:catalogue-curve-products",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2272,7 +2585,7 @@
           "book": "gmt-foundations",
           "tag": "E690F2D5",
           "label": "ex:catalogue-curve-products",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2291,7 +2604,7 @@
           "book": "gmt-foundations",
           "tag": "0D7837E2",
           "label": "sec:catalogue-spherical-minimal",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2310,7 +2623,7 @@
           "book": "gmt-foundations",
           "tag": "852199B9",
           "label": "ex:catalogue-spherical-minimal",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2329,7 +2642,7 @@
           "book": "gmt-foundations",
           "tag": "830EABD2",
           "label": "sec:catalogue-moller-genus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2348,7 +2661,7 @@
           "book": "gmt-foundations",
           "tag": "CBE08D0B",
           "label": "ex:catalogue-moller-genus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2367,7 +2680,7 @@
           "book": "gmt-foundations",
           "tag": "D6BAA215",
           "label": "sec:catalogue-kkm-one-end",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2386,7 +2699,7 @@
           "book": "gmt-foundations",
           "tag": "57CB963E",
           "label": "ex:catalogue-kkm-one-end",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2405,7 +2718,7 @@
           "book": "gmt-foundations",
           "tag": "74D81451",
           "label": "sec:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2424,7 +2737,7 @@
           "book": "gmt-foundations",
           "tag": "8A25E9F3",
           "label": "ex:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2443,7 +2756,7 @@
           "book": "gmt-foundations",
           "tag": "A24E006E",
           "label": "sec:catalogue-bns-genus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2462,7 +2775,7 @@
           "book": "gmt-foundations",
           "tag": "29FD1848",
           "label": "ex:catalogue-bns-genus",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2481,7 +2794,7 @@
           "book": "gmt-foundations",
           "tag": "8B87958C",
           "label": "sec:catalogue-ketover-doubled-plane",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2500,7 +2813,7 @@
           "book": "gmt-foundations",
           "tag": "B42E22F6",
           "label": "ex:catalogue-ketover-doubled-plane",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2519,7 +2832,7 @@
           "book": "gmt-foundations",
           "tag": "981E6034",
           "label": "sec:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2538,7 +2851,7 @@
           "book": "gmt-foundations",
           "tag": "5EF43C21",
           "label": "ex:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2557,7 +2870,7 @@
           "book": "gmt-foundations",
           "tag": "BA9331C1",
           "label": "sec:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2576,7 +2889,7 @@
           "book": "gmt-foundations",
           "tag": "F6ED71FE",
           "label": "ex:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2595,7 +2908,7 @@
           "book": "gmt-foundations",
           "tag": "4F2641F6",
           "label": "sec:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2614,7 +2927,7 @@
           "book": "gmt-foundations",
           "tag": "185EA272",
           "label": "ex:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2633,7 +2946,7 @@
           "book": "gmt-foundations",
           "tag": "98538DB9",
           "label": "sec:catalogue-iw-two-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2652,7 +2965,7 @@
           "book": "gmt-foundations",
           "tag": "F3DA0C49",
           "label": "ex:catalogue-iw-two-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2671,7 +2984,7 @@
           "book": "gmt-foundations",
           "tag": "AC93AF6C",
           "label": "sec:catalogue-shao-zou-stacking",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2690,7 +3003,7 @@
           "book": "gmt-foundations",
           "tag": "55D3E8EB",
           "label": "ex:catalogue-shao-zou-stacking",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2709,7 +3022,7 @@
           "book": "gmt-foundations",
           "tag": "DDB39012",
           "label": "sec:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2728,7 +3041,7 @@
           "book": "gmt-foundations",
           "tag": "4B406BA4",
           "label": "ex:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2747,7 +3060,7 @@
           "book": "gmt-foundations",
           "tag": "08077F3D",
           "label": "sec:catalogue-hmw-one-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2766,7 +3079,7 @@
           "book": "gmt-foundations",
           "tag": "8D1FB423",
           "label": "ex:catalogue-hmw-one-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2785,7 +3098,7 @@
           "book": "gmt-foundations",
           "tag": "099E25A3",
           "label": "sec:catalogue-hmw-three-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2804,7 +3117,7 @@
           "book": "gmt-foundations",
           "tag": "E526106D",
           "label": "ex:catalogue-hmw-three-ended",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2823,7 +3136,7 @@
           "book": "gmt-foundations",
           "tag": "468F62D8",
           "label": "sec:catalogue-ketover-platonic",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2842,7 +3155,7 @@
           "book": "gmt-foundations",
           "tag": "D8E83785",
           "label": "ex:catalogue-ketover-platonic",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2861,7 +3174,7 @@
           "book": "gmt-foundations",
           "tag": "22D51C11",
           "label": "sec:catalogue-swz-large-entropy",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2880,7 +3193,7 @@
           "book": "gmt-foundations",
           "tag": "2649B70D",
           "label": "ex:catalogue-swz-large-entropy",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2899,7 +3212,7 @@
           "book": "gmt-foundations",
           "tag": "DEB2F0AE",
           "label": "sec:catalogue-chu-sun-genus-one",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2918,7 +3231,7 @@
           "book": "gmt-foundations",
           "tag": "2FE2FC92",
           "label": "ex:catalogue-chu-sun-genus-one",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2937,7 +3250,7 @@
           "book": "gmt-foundations",
           "tag": "7E5C7833",
           "label": "sec:catalogue-grim-reaper",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2956,7 +3269,7 @@
           "book": "gmt-foundations",
           "tag": "B992AB57",
           "label": "ex:catalogue-grim-reaper",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2975,7 +3288,7 @@
           "book": "gmt-foundations",
           "tag": "613D030C",
           "label": "sec:catalogue-tilted-grim-reaper",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -2994,7 +3307,7 @@
           "book": "gmt-foundations",
           "tag": "B95BEB4E",
           "label": "ex:catalogue-tilted-grim-reaper",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3013,7 +3326,7 @@
           "book": "gmt-foundations",
           "tag": "C86A12BD",
           "label": "sec:catalogue-bowl-translator",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3032,7 +3345,7 @@
           "book": "gmt-foundations",
           "tag": "54CBC7FC",
           "label": "ex:catalogue-bowl-translator",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3051,7 +3364,7 @@
           "book": "gmt-foundations",
           "tag": "1B76070C",
           "label": "sec:catalogue-translating-catenoid",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3070,7 +3383,7 @@
           "book": "gmt-foundations",
           "tag": "20DD1EEB",
           "label": "ex:catalogue-translating-catenoid",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3089,7 +3402,7 @@
           "book": "gmt-foundations",
           "tag": "1B861E2A",
           "label": "sec:catalogue-delta-wing",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3108,17 +3421,17 @@
           "book": "gmt-foundations",
           "tag": "40F79154",
           "label": "ex:catalogue-delta-wing",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "BD00A99565D1",
-      "number": "3.11",
+      "number": "3.14",
       "section_intro": true,
       "section_example": false,
-      "title": "3.11 Nonrotational entire convex translators",
+      "title": "3.14 Nonrotational entire convex translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -3127,17 +3440,17 @@
           "book": "gmt-foundations",
           "tag": "2E5159FD",
           "label": "sec:catalogue-wang-entire-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "0F00F9295CD9",
-      "number": "3.11",
+      "number": "3.14",
       "section_intro": false,
       "section_example": true,
-      "title": "3.11 Nonrotational entire convex translators",
+      "title": "3.14 Nonrotational entire convex translators",
       "kind": "example",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -3146,7 +3459,7 @@
           "book": "gmt-foundations",
           "tag": "BCD12F3A",
           "label": "ex:catalogue-wang-entire-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3165,7 +3478,7 @@
           "book": "gmt-foundations",
           "tag": "1907053D",
           "label": "sec:catalogue-prescribed-apex-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3184,7 +3497,7 @@
           "book": "gmt-foundations",
           "tag": "A3CDAF2B",
           "label": "ex:catalogue-prescribed-apex-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3203,7 +3516,7 @@
           "book": "gmt-foundations",
           "tag": "B0D651E7",
           "label": "sec:catalogue-scherkenoids",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3222,7 +3535,7 @@
           "book": "gmt-foundations",
           "tag": "6B56E4AF",
           "label": "ex:catalogue-scherkenoids",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3241,7 +3554,7 @@
           "book": "gmt-foundations",
           "tag": "AF906C13",
           "label": "sec:catalogue-pitchfork",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3260,7 +3573,7 @@
           "book": "gmt-foundations",
           "tag": "474E0E06",
           "label": "ex:catalogue-pitchfork",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3279,7 +3592,7 @@
           "book": "gmt-foundations",
           "tag": "A94B1E75",
           "label": "sec:catalogue-nguyen-tridents",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3298,7 +3611,7 @@
           "book": "gmt-foundations",
           "tag": "F7C75286",
           "label": "ex:catalogue-nguyen-tridents",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3317,7 +3630,7 @@
           "book": "gmt-foundations",
           "tag": "0A64E1E7",
           "label": "sec:catalogue-finite-genus-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3336,17 +3649,17 @@
           "book": "gmt-foundations",
           "tag": "DE343151",
           "label": "ex:catalogue-finite-genus-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "C8173134CEA6",
-      "number": "3.12",
+      "number": "3.15",
       "section_intro": true,
       "section_example": false,
-      "title": "3.12 Translators with an Angenent-torus end",
+      "title": "3.15 Translators with an Angenent-torus end",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "translators-with-an-angenent-torus-end",
@@ -3355,17 +3668,17 @@
           "book": "gmt-foundations",
           "tag": "BEE5F8F6",
           "label": "sec:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "BF18BDD64F8E",
-      "number": "3.12",
+      "number": "3.15",
       "section_intro": false,
       "section_example": true,
-      "title": "3.12 Translators with an Angenent-torus end",
+      "title": "3.15 Translators with an Angenent-torus end",
       "kind": "example",
       "chapter": "translators",
       "topic": "translators-with-an-angenent-torus-end",
@@ -3374,17 +3687,17 @@
           "book": "gmt-foundations",
           "tag": "210DBE2B",
           "label": "ex:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "A0A7AC0D200C",
-      "number": "3.13",
+      "number": "3.16",
       "section_intro": true,
       "section_example": false,
-      "title": "3.13 Translators with high-genus spherical-doubling ends",
+      "title": "3.16 Translators with high-genus spherical-doubling ends",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "translators-with-high-genus-spherical-doubling-ends",
@@ -3393,17 +3706,17 @@
           "book": "gmt-foundations",
           "tag": "8A842DE0",
           "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "9B1B88A4317F",
-      "number": "3.13",
+      "number": "3.16",
       "section_intro": false,
       "section_example": true,
-      "title": "3.13 Translators with high-genus spherical-doubling ends",
+      "title": "3.16 Translators with high-genus spherical-doubling ends",
       "kind": "example",
       "chapter": "translators",
       "topic": "translators-with-high-genus-spherical-doubling-ends",
@@ -3412,7 +3725,121 @@
           "book": "gmt-foundations",
           "tag": "74BE3892",
           "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "73DEA085F2F9",
+      "number": "3.11",
+      "section_intro": true,
+      "section_example": false,
+      "title": "3.11 Doubly periodic Scherk translators",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "doubly-periodic-scherk-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "AC12C225",
+          "label": "sec:catalogue-scherk-translators",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "D24DEEE97A5F",
+      "number": "3.11",
+      "section_intro": false,
+      "section_example": true,
+      "title": "3.11 Doubly periodic Scherk translators",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "doubly-periodic-scherk-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "24A25A90",
+          "label": "ex:catalogue-scherk-translators",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0147E53C30CE",
+      "number": "3.12",
+      "section_intro": true,
+      "section_example": false,
+      "title": "3.12 Helicoid-like translators",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "helicoid-like-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "B8DE98DE",
+          "label": "sec:catalogue-translating-helicoids",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "E6CC94303132",
+      "number": "3.12",
+      "section_intro": false,
+      "section_example": true,
+      "title": "3.12 Helicoid-like translators",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "helicoid-like-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "847E8E44",
+          "label": "ex:catalogue-translating-helicoids",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "93A7D23F7FA3",
+      "number": "3.13",
+      "section_intro": true,
+      "section_example": false,
+      "title": "3.13 Annuloid translators in slabs",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "annuloid-translators-in-slabs",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "4C07D832",
+          "label": "sec:catalogue-translating-annuloids",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "4887FC9B88DC",
+      "number": "3.13",
+      "section_intro": false,
+      "section_example": true,
+      "title": "3.13 Annuloid translators in slabs",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "annuloid-translators-in-slabs",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "FAD58353",
+          "label": "ex:catalogue-translating-annuloids",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3431,7 +3858,7 @@
           "book": "gmt-foundations",
           "tag": "DDDA013A",
           "label": "sec:catalogue-expanding-corners",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3450,7 +3877,7 @@
           "book": "gmt-foundations",
           "tag": "D6F08E15",
           "label": "ex:catalogue-expanding-corners",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3469,7 +3896,7 @@
           "book": "gmt-foundations",
           "tag": "03B823D0",
           "label": "sec:catalogue-rotational-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3488,7 +3915,7 @@
           "book": "gmt-foundations",
           "tag": "10CF4F59",
           "label": "ex:catalogue-rotational-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3507,7 +3934,7 @@
           "book": "gmt-foundations",
           "tag": "E0945D42",
           "label": "sec:catalogue-two-sheet-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3526,7 +3953,7 @@
           "book": "gmt-foundations",
           "tag": "1E167729",
           "label": "ex:catalogue-two-sheet-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3545,7 +3972,7 @@
           "book": "gmt-foundations",
           "tag": "9E9198D4",
           "label": "sec:catalogue-one-sheet-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3564,7 +3991,7 @@
           "book": "gmt-foundations",
           "tag": "4A120F3D",
           "label": "ex:catalogue-one-sheet-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3583,7 +4010,7 @@
           "book": "gmt-foundations",
           "tag": "BD0F3D26",
           "label": "sec:catalogue-mean-convex-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3602,7 +4029,7 @@
           "book": "gmt-foundations",
           "tag": "DC248467",
           "label": "ex:catalogue-mean-convex-expanders",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3621,7 +4048,7 @@
           "book": "gmt-foundations",
           "tag": "05CAD4B7",
           "label": "sec:catalogue-expanding-networks",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3640,17 +4067,131 @@
           "book": "gmt-foundations",
           "tag": "6FB28705",
           "label": "ex:catalogue-expanding-networks",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "665EA484B8DC",
+      "number": "4.7",
+      "section_intro": true,
+      "section_example": false,
+      "title": "4.7 Mountain-pass self-expanders",
+      "kind": "chapter",
+      "chapter": "expanders",
+      "topic": "mountain-pass-self-expanders",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "9C62F2A3",
+          "label": "sec:catalogue-mountain-pass-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "1EA720390291",
+      "number": "4.7",
+      "section_intro": false,
+      "section_example": true,
+      "title": "4.7 Mountain-pass self-expanders",
+      "kind": "example",
+      "chapter": "expanders",
+      "topic": "mountain-pass-self-expanders",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "9EEF8261",
+          "label": "ex:catalogue-mountain-pass-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "FC2EC5926764",
+      "number": "4.8",
+      "section_intro": true,
+      "section_example": false,
+      "title": "4.8 Expanders of unbounded genus at a fixed cone",
+      "kind": "chapter",
+      "chapter": "expanders",
+      "topic": "expanders-of-unbounded-genus-at-a-fixed-cone",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "1E1ABE80",
+          "label": "sec:catalogue-high-genus-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "3A8C3B21B572",
+      "number": "4.8",
+      "section_intro": false,
+      "section_example": true,
+      "title": "4.8 Expanders of unbounded genus at a fixed cone",
+      "kind": "example",
+      "chapter": "expanders",
+      "topic": "expanders-of-unbounded-genus-at-a-fixed-cone",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "3B34FF14",
+          "label": "ex:catalogue-high-genus-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "38D2A75429F2",
+      "number": "4.9",
+      "section_intro": true,
+      "section_example": false,
+      "title": "4.9 Knotted self-expanders",
+      "kind": "chapter",
+      "chapter": "expanders",
+      "topic": "knotted-self-expanders",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "AB0D7EFB",
+          "label": "sec:catalogue-knotted-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "DA3FCE2F354F",
+      "number": "4.9",
+      "section_intro": false,
+      "section_example": true,
+      "title": "4.9 Knotted self-expanders",
+      "kind": "example",
+      "chapter": "expanders",
+      "topic": "knotted-self-expanders",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "D7D485D6",
+          "label": "ex:catalogue-knotted-expanders",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "C9F0102B7272",
-      "number": "5.2",
+      "number": "5.4",
       "section_intro": true,
       "section_example": false,
-      "title": "5.2 The catenoid as an eternal stationary flow",
+      "title": "5.4 The catenoid as an eternal stationary flow",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "the-catenoid-as-an-eternal-stationary-flow",
@@ -3659,17 +4200,17 @@
           "book": "gmt-foundations",
           "tag": "BA55C10D",
           "label": "sec:catalogue-stationary-catenoid",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "AC1C0D984A58",
-      "number": "5.2",
+      "number": "5.4",
       "section_intro": false,
       "section_example": true,
-      "title": "5.2 The catenoid as an eternal stationary flow",
+      "title": "5.4 The catenoid as an eternal stationary flow",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "the-catenoid-as-an-eternal-stationary-flow",
@@ -3678,17 +4219,17 @@
           "book": "gmt-foundations",
           "tag": "7C37C625",
           "label": "ex:catalogue-stationary-catenoid",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "2E15631C1593",
-      "number": "5.6",
+      "number": "5.11",
       "section_intro": true,
       "section_example": false,
-      "title": "5.6 Mean curvature evolution of the Whitney sphere",
+      "title": "5.11 Mean curvature evolution of the Whitney sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -3697,17 +4238,17 @@
           "book": "gmt-foundations",
           "tag": "1E59C846",
           "label": "sec:catalogue-whitney-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "245DFF2BED27",
-      "number": "5.6",
+      "number": "5.11",
       "section_intro": false,
       "section_example": true,
-      "title": "5.6 Mean curvature evolution of the Whitney sphere",
+      "title": "5.11 Mean curvature evolution of the Whitney sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -3716,17 +4257,17 @@
           "book": "gmt-foundations",
           "tag": "64D1A038",
           "label": "ex:catalogue-whitney-sphere",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "1E4AD3904D39",
-      "number": "5.3",
+      "number": "5.5",
       "section_intro": true,
       "section_example": false,
-      "title": "5.3 Rotational degenerate neckpinch solutions",
+      "title": "5.5 Rotational degenerate neckpinch solutions",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "rotational-degenerate-neckpinch-solutions",
@@ -3735,17 +4276,17 @@
           "book": "gmt-foundations",
           "tag": "6548DC53",
           "label": "sec:catalogue-degenerate-neckpinches",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "922034E946EB",
-      "number": "5.3",
+      "number": "5.5",
       "section_intro": false,
       "section_example": true,
-      "title": "5.3 Rotational degenerate neckpinch solutions",
+      "title": "5.5 Rotational degenerate neckpinch solutions",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "rotational-degenerate-neckpinch-solutions",
@@ -3754,7 +4295,7 @@
           "book": "gmt-foundations",
           "tag": "AF275232",
           "label": "ex:catalogue-degenerate-neckpinches",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3773,7 +4314,7 @@
           "book": "gmt-foundations",
           "tag": "22B7F4C2",
           "label": "sec:catalogue-angenent-oval",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
@@ -3792,17 +4333,17 @@
           "book": "gmt-foundations",
           "tag": "F1C9E396",
           "label": "ex:catalogue-angenent-oval",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "B6082DA55C46",
-      "number": "5.7",
+      "number": "5.12",
       "section_intro": true,
       "section_example": false,
-      "title": "5.7 Ancient torus curves in higher codimension",
+      "title": "5.12 Ancient torus curves in higher codimension",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -3811,17 +4352,17 @@
           "book": "gmt-foundations",
           "tag": "11C905C4",
           "label": "sec:catalogue-ancient-torus-curves",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "D28FAF32B556",
-      "number": "5.7",
+      "number": "5.12",
       "section_intro": false,
       "section_example": true,
-      "title": "5.7 Ancient torus curves in higher codimension",
+      "title": "5.12 Ancient torus curves in higher codimension",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -3830,17 +4371,17 @@
           "book": "gmt-foundations",
           "tag": "A3E2C500",
           "label": "ex:catalogue-ancient-torus-curves",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "281263153F94",
-      "number": "5.4",
+      "number": "5.6",
       "section_intro": true,
       "section_example": false,
-      "title": "5.4 Eternal shrinking helices",
+      "title": "5.6 Eternal shrinking helices",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "eternal-shrinking-helices",
@@ -3849,17 +4390,17 @@
           "book": "gmt-foundations",
           "tag": "9BF22915",
           "label": "sec:catalogue-eternal-helices",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "1EF23C4EFFC0",
-      "number": "5.4",
+      "number": "5.6",
       "section_intro": false,
       "section_example": true,
-      "title": "5.4 Eternal shrinking helices",
+      "title": "5.6 Eternal shrinking helices",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "eternal-shrinking-helices",
@@ -3868,17 +4409,17 @@
           "book": "gmt-foundations",
           "tag": "114EAEF2",
           "label": "ex:catalogue-eternal-helices",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "00966387D6EF",
-      "number": "5.5",
+      "number": "5.7",
       "section_intro": true,
       "section_example": false,
-      "title": "5.5 Immortal annuli converging to a double plane",
+      "title": "5.7 Immortal annuli converging to a double plane",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-annuli-converging-to-a-double-plane",
@@ -3887,17 +4428,17 @@
           "book": "gmt-foundations",
           "tag": "E88E6E76",
           "label": "sec:catalogue-double-plane-flow",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "A50018836027",
-      "number": "5.5",
+      "number": "5.7",
       "section_intro": false,
       "section_example": true,
-      "title": "5.5 Immortal annuli converging to a double plane",
+      "title": "5.7 Immortal annuli converging to a double plane",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-annuli-converging-to-a-double-plane",
@@ -3906,17 +4447,17 @@
           "book": "gmt-foundations",
           "tag": "F7864FF4",
           "label": "ex:catalogue-double-plane-flow",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "0806DD487DC4",
-      "number": "5.8",
+      "number": "5.14",
       "section_intro": true,
       "section_example": false,
-      "title": "5.8 Immortal compact flows converging to a double sphere",
+      "title": "5.14 Immortal compact flows converging to a double sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -3925,17 +4466,17 @@
           "book": "gmt-foundations",
           "tag": "BA7E1CBA",
           "label": "sec:catalogue-double-sphere-flow",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
     },
     {
       "tag": "225751B3C7E8",
-      "number": "5.8",
+      "number": "5.14",
       "section_intro": false,
       "section_example": true,
-      "title": "5.8 Immortal compact flows converging to a double sphere",
+      "title": "5.14 Immortal compact flows converging to a double sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -3944,7 +4485,235 @@
           "book": "gmt-foundations",
           "tag": "4D0BC7F8",
           "label": "ex:catalogue-double-sphere-flow",
-          "revision": "sha256:0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4"
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "12F33FD70B5C",
+      "number": "5.8",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.8 Haslhofer–Hershkovits ancient ovals",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "haslhofer-hershkovits-ancient-ovals",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "A443286A",
+          "label": "sec:catalogue-hh-ancient-ovals",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "56D296501918",
+      "number": "5.8",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.8 Haslhofer–Hershkovits ancient ovals",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "haslhofer-hershkovits-ancient-ovals",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "351EC7F0",
+          "label": "ex:catalogue-hh-ancient-ovals",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "C21B5E7431CB",
+      "number": "5.9",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.9 Ancient flows from unstable minimal hypersurfaces",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "ancient-flows-from-unstable-minimal-hypersurfaces",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "BEE5B7F2",
+          "label": "sec:catalogue-minimal-ancient-flows",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "8A13A6308368",
+      "number": "5.9",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.9 Ancient flows from unstable minimal hypersurfaces",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "ancient-flows-from-unstable-minimal-hypersurfaces",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "6F93E4BA",
+          "label": "ex:catalogue-minimal-ancient-flows",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "94DC745FE4C9",
+      "number": "5.10",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.10 The eternal reapernoid",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "the-eternal-reapernoid",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "0307FA2C",
+          "label": "sec:catalogue-reapernoid",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "8EACFCA7AE0F",
+      "number": "5.10",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.10 The eternal reapernoid",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "the-eternal-reapernoid",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "731F87CD",
+          "label": "ex:catalogue-reapernoid",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "9C9E3EBC47D4",
+      "number": "5.13",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.13 Ancient stacked pancakes",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "ancient-stacked-pancakes",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "F4D3BF85",
+          "label": "sec:catalogue-stacked-pancakes",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "1A2B6DF32B79",
+      "number": "5.13",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.13 Ancient stacked pancakes",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "ancient-stacked-pancakes",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "48421D4E",
+          "label": "ex:catalogue-stacked-pancakes",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "F98988E964AC",
+      "number": "5.2",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.2 Compact nonconvex ancient spiral curves",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "compact-nonconvex-ancient-spiral-curves",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "BD702850",
+          "label": "sec:catalogue-ancient-spiral-curves",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "505A2B69BD4F",
+      "number": "5.2",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.2 Compact nonconvex ancient spiral curves",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "compact-nonconvex-ancient-spiral-curves",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "B3F91612",
+          "label": "ex:catalogue-ancient-spiral-curves",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "321CCF32BF3F",
+      "number": "5.3",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.3 Eternal curves from chains of grim reapers",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "eternal-curves-from-chains-of-grim-reapers",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "8A3434FC",
+          "label": "sec:catalogue-grim-reaper-chains",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "B7D6B1E7217F",
+      "number": "5.3",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.3 Eternal curves from chains of grim reapers",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "eternal-curves-from-chains-of-grim-reapers",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "08ECC401",
+          "label": "ex:catalogue-grim-reaper-chains",
+          "revision": "sha256:563d1ffe3117eb2e30be5f5a912c01adaa53eb4787ee7193e84614c4e1b88498"
         }
       ],
       "components": []
