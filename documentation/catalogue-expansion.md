@@ -27,4 +27,4 @@ python3 scripts/generate_expander_schematics.py
 
 The schematic generators use only the standard library; the shrinker script also reads the generated numerical profiles. Regenerate geometry first. All illustrations are original mathematical drawings, not copied paper figures.
 
-The permanent contribution rules are in `AGENTS.md`. Keep additions local until publication is requested.
+The permanent contribution rules are in `AGENTS.md`. Completed modifications are committed and pushed after verification by default, following the user's standing preference; a later request for local-only work takes precedence.

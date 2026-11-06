@@ -16,7 +16,7 @@ Install the dependencies listed in the [README](../README.md), then run `.venv/b
 
 ## Publication
 
-After local tests, link checks, and desktop/mobile checks, publication uses a clean `main` checkout and an authenticated GitHub CLI (`gh`) available on `PATH`, with Git authentication configured for this fork. Commit authored changes **before** the final build so its source revision is exact. Run `.venv/bin/python scripts/publish.py` only when publication is requested. It checks that `origin` is this fork, fast-forwards `main`, checks the build revision, replaces `docs/`, and pushes a normal commit. It never force-pushes.
+After local tests, link checks, and desktop/mobile checks, publication uses a clean `main` checkout and an authenticated GitHub CLI (`gh`) available on `PATH`, with Git authentication configured for this fork. Commit authored changes **before** the final build so its source revision is exact. The user's standing preference authorizes committing and pushing completed modifications after verification, including the updated website; follow any later local-only instruction. Run `.venv/bin/python scripts/publish.py` to publish. It checks that `origin` is this fork, fast-forwards `main`, checks the build revision, replaces `docs/`, and pushes a normal commit. It never force-pushes.
 
 GitHub Pages is configured to deploy from the branch, not a custom workflow. The generated `docs/.nojekyll` makes GitHub serve the prebuilt files without processing the manuscript with Jekyll. All reader pages, assets, search data, citations, and source records are included. Relative internal links work under the `/MCF-stack/` prefix.
 
