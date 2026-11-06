@@ -1,4 +1,5 @@
 // Original lightweight geometry viewer. No external scripts or telemetry.
+import {abreschLanger,ABRESCH_LANGER_LIMIT} from './abresch-langer.mjs';
 export function rotatePoint(p, state) {
   let [x,y,z,w] = p;
   if (w !== undefined) y = y*Math.cos(state.fourD)-w*Math.sin(state.fourD);
@@ -51,9 +52,9 @@ function init(figure, data) {
   let visibleFaces=revolutionFaces(data,degrees), resetRevolution=()=>{};
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
-  const center=lo.map((v,i)=>(v+hi[i])/2);
+  let center=lo.map((v,i)=>(v+hi[i])/2);
   // Keep one scale throughout the time slider, including its largest oval.
-  const radius=data.view?.radius ?? (data.dynamic?.kind==='ancient-oval'
+  let radius=data.view?.radius ?? (data.dynamic?.kind==='ancient-oval'
     ? Math.hypot(Math.PI/2,Math.acosh(Math.exp(-data.dynamic.min)))
     : Math.max(...vertices.map(p=>Math.hypot(...p.slice(0,3).map((v,i)=>v-center[i])))));
   const centered=()=>vertices.map(p=>p.map((v,i)=>i<3?v-center[i]:v));
@@ -130,6 +131,48 @@ function init(figure, data) {
     if(action==='reset'){state={...resetState(),fourD:state.fourD};resetRevolution();requestDraw();}
     if(action==='wire'){wire=!wire;button.setAttribute('aria-pressed',String(wire));requestDraw();}
   });
+  if(data.name==='abresch-langer'){
+    const controls=figure.querySelector('.soliton-controls');
+    const form=document.createElement('form');form.className='al-controls';form.noValidate=true;
+    const makeInput=(text,value,name)=>{
+      const label=document.createElement('label');label.textContent=text;
+      const input=document.createElement('input');input.type='number';input.min='1';input.max=String(ABRESCH_LANGER_LIMIT);input.step='1';input.value=String(value);input.required=true;
+      input.setAttribute('aria-label',name);label.append(input);form.append(label);return input;
+    };
+    const mInput=makeInput('m (turning number)',2,'m, turning number');
+    const ellInput=makeInput('ℓ (curvature periods)',3,'ell, curvature periods');
+    const submit=document.createElement('button');submit.type='submit';submit.textContent='Draw curve';form.append(submit);
+    const examples=document.createElement('div');examples.className='al-presets';
+    const title=document.createElement('span');title.textContent='Try:';examples.append(title);
+    const status=figure.querySelector('.soliton-status');
+    let currentM=2,currentEll=3;
+    const update=()=>{
+      try{
+        const m=mInput.valueAsNumber,ell=ellInput.valueAsNumber,result=abreschLanger(m,ell);
+        vertices=result.vertices;data.paths=[Array.from({length:vertices.length},(_,i)=>i)];
+        center=[0,0,0];radius=vertices.reduce((r,p)=>Math.max(r,Math.hypot(...p)),0);
+        points=centered();state=resetState();currentM=m;currentEll=ell;
+        canvas.dataset.m=String(m);canvas.dataset.ell=String(ell);
+        canvas.dataset.closureError=String(result.closureError);
+        canvas.setAttribute('aria-label',`Numerical Abresch–Langer curve with turning number ${m} and ${ell} curvature periods. Arrow keys rotate; plus and minus zoom.`);
+        status.textContent=`Showing (m, ℓ) = (${m}, ${ell}). Numerical closing gap: ${result.closureError.toExponential(1)}; not a certified error bound.`;
+        status.classList.remove('soliton-error');mInput.removeAttribute('aria-invalid');ellInput.removeAttribute('aria-invalid');
+        requestDraw();
+      }catch(error){
+        status.textContent=`${error.message} Still showing (${currentM}, ${currentEll}).`;
+        status.classList.add('soliton-error');mInput.setAttribute('aria-invalid','true');ellInput.setAttribute('aria-invalid','true');
+      }
+    };
+    form.addEventListener('submit',event=>{event.preventDefault();update();});
+    for(const [m,ell] of [[2,3],[3,5],[5,8],[12,17]]){
+      const button=document.createElement('button');button.type='button';button.textContent=`(${m}, ${ell})`;
+      button.setAttribute('aria-label',`Draw m ${m}, ell ${ell}`);
+      button.addEventListener('click',()=>{mInput.value=String(m);ellInput.value=String(ell);update();});examples.append(button);
+    }
+    const hint=document.createElement('p');hint.className='al-hint';
+    hint.textContent='Use coprime positive integers with 1/2 < m/ℓ < 1/√2. This viewer supports indices up to 100. “Open drawing” shows the fixed (2, 3) reference.';
+    controls.prepend(form,status,examples,hint);update();
+  }
   if(data.revolution){
     const controls=figure.querySelector('.soliton-controls');
     const button=document.createElement('button');button.type='button';button.textContent='Meridian';button.setAttribute('aria-pressed','false');

@@ -57,8 +57,8 @@
       ],
       "model": "abresch-langer",
       "status": "Numerical ODE profile",
-      "caption": "The (m,ell)=(2,3) immersed planar curve. The support function solves h″+h=2/h. Closing residual before mesh rounding is below 1e-9; this is not an existence proof.",
-      "alt": "Abresch--Langer closed shrinking curves. The (m,ell)=(2,3) immersed planar curve. The support function solves h″+h=2/h. Closing residual before mesh rounding is below 1e-9; this is not an existence proof.",
+      "caption": "Choose m (turning number) and ℓ (curvature periods) to compute a numerical Abresch–Langer curve. The support function solves h″+h=2/h with period 2πm/ℓ. The fixed drawing and print version show (2, 3). Numerical closing gaps are diagnostics, not certified error bounds.",
+      "alt": "Numerical Abresch–Langer closed planar curve, initially with turning number 2 and three curvature periods. Controls allow other admissible coprime indices.",
       "interactive": true
     },
     {

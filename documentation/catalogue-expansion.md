@@ -12,6 +12,8 @@ The normal convention is H = div(nu), mean curvature vector = −H nu. Shrinkers
 
 ## Pictures
 
+The [Abresch–Langer index controls](abresch-langer-controls.md) let readers compute other admissible coprime pairs, with numerical period and closure checks. The fixed SVG and print view retain the (2,3) reference.
+
 `catalogue-visualizations.json` binds each mathematical entry to an original illustration. Twenty have an interactive canvas with keyboard rotation and zoom; the remaining twenty-two use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. “Open drawing” shows the larger SVG. The ancient oval, ancient torus curve, and eternal helix have time sliders at fixed spatial scales; the Clifford torus and torus curve have a fourth-coordinate rotation before projection.
 
 The Angenent torus, Drugan sphere, Abresch–Langer curve, bowl, translating catenoid, and graphical/neck expanders use numerical ODE integration. They are not substituted by generic tori, paraboloids, or arbitrary connecting surfaces. Closure residuals in `site/assets/solitons/geometry-audit.json` describe integration before rounding the exported coordinates; they are numerical diagnostics, not error bounds or existence proofs. Displayed finite pieces of noncompact solutions have artificial truncation boundaries. The Whitney figure is the exact initial generating profile, not a formula for its later evolution.

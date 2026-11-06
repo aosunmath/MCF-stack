@@ -803,6 +803,11 @@
           "corpus_id": "068",
           "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
           "pdf_pages_or_locator": "p. 2984 (PDF p. 2)"
+        },
+        {
+          "key": "CatAL1986",
+          "filename": "The normalized curve shortening flow and homothetic solutions_Abresch-Langer.pdf",
+          "pdf_pages_or_locator": "Theorem A, p. 176; Proposition 3.2, p. 181; closing condition and numerical construction, p. 183"
         }
       ],
       "properties": [

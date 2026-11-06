@@ -1486,6 +1486,23 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "url": "https://arxiv.org/pdf/1708.08808v1"
+    },
+    {
+      "bibliography_key": "CatAL1986",
+      "filename": "The normalized curve shortening flow and homothetic solutions_Abresch-Langer.pdf",
+      "title": "The normalized curve shortening flow and homothetic solutions",
+      "edition": "Journal of Differential Geometry 23 (1986), 175–196; supplied published PDF",
+      "sha256": "f74b3bb5e848e0d5da0dd06b74e5afecbb1fc753b624de951048e3ae73052641",
+      "pdf_pages": 22,
+      "role": "Classification, admissible index range and period shooting checked for the interactive Abresch–Langer picture.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem A, p. 176; Proposition 3.2, p. 181; closing condition and numerical construction, p. 183. Proposition 3.2 visually checked."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAL1986"
+      ]
     }
   ],
   "pagination": "Citations specify printed source pages, PDF pages where relevant, and original theorem numbers. Reader numbering is generated independently.",
