@@ -525,10 +525,10 @@
         "CatKetover2024"
       ],
       "model": "ketover-shrinkers",
-      "status": "Doubled-plane schematic",
-      "caption": "Two conical ends and the doubled-plane limit describe the sufficiently large genus regime; the drawing is not a solved shrinker.",
-      "alt": "Two conical ends and the doubled-plane limit describe the sufficiently large genus regime; the drawing is not a solved shrinker.",
-      "interactive": false
+      "status": "Interactive doubled-plane schematic",
+      "caption": "Informed by Ketover, Proposition 7.4 and Section 8: two sheets joined by g + 1 necks near a circle. Rotate, choose a genus, or use Cutaway to inspect the connections. Two ends are proved only for sufficiently large genus; the displayed choices do not specify a threshold. This is not a computed shrinker.",
+      "alt": "Genus-five schematic with six smooth necks joining upper and lower sheets around a circle. Each sheet extends outward toward a conical end. A cutaway exposes the neck walls. Both outer rims are display truncations, not boundaries of the complete surface.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-spherical-doubling-shrinkers",

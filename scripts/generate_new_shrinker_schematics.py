@@ -1,11 +1,11 @@
-"""Generate construction diagrams, preserving the separately generated BNS surface.
+"""Generate construction diagrams, preserving the separately generated BNS and Ketover surfaces.
 
 Only Python's standard library is required. The figures represent construction
 inputs, topology, symmetry, or qualified asymptotic geometry. None represents a
 computed solution. In particular, the variational torus diagram does not use the
 Angenent mesh, and the BNS/Ketover end counts retain their large-genus condition.
 
-KKM now uses generate_kkm_geometry.py.
+KKM now uses generate_kkm_geometry.py; Ketover uses generate_ketover_geometry.py.
 
 Sources: Drugan--Nguyen
 arXiv:1708.08808v1, Theorem 1; BNS arXiv:2110.06027v2, Theorems 1.2--1.3
@@ -138,53 +138,16 @@ def bns():
 
 
 def ketover():
-    f = Figure(
-        "Ketover self-shrinking doubled planes: large-genus end schematic",
-        "Two generic graphical conical annuli indicate the upper and lower "
-        "ends proved for sufficiently large genus. A dashed circle indicates "
-        "a schematic neck region, not a collection of solved necks. The "
-        "theorem gives entropy less than two for every positive genus and "
-        "varifold convergence to a plane with multiplicity two. The figure "
-        "is not an exact or numerical self-shrinker.",
-    )
-    f.text(28, 36, "Ketover’s self-shrinking doubled planes", 23, weight=600)
-    f.text(28, 64, "Large-genus end schematic • not a solved surface", 16, MUTED)
-    p = projection(201, 207, 44, pitch=.42)
-    radii = [1.25, 1.7, 2.3, 3.1]
-    for sign, color in [(-1, MUTED), (1, BLUE)]:
-        for r in radii:
-            f.line([p(v) for v in ring(r, sign*(.18+.24*r))],
-                   color=color, width=1.3, opacity=.75)
-        for a in angles(14)[:-1]:
-            f.line([p((r*math.cos(a), r*math.sin(a), sign*(.18+.24*r)))
-                    for r in radii], color=color, width=1, opacity=.6)
-    f.line([p(v) for v in ring(1.25, 0)], color=SEAM, width=2.8, dash="5 5")
-    # Dashed guides mark a region; they are not physical necks with a genus count.
-    for a in [0, math.pi]:
-        x, y = 1.25*math.cos(a), 1.25*math.sin(a)
-        f.line([p((x, y, -.48)), p((x, y, .48))], color=SEAM,
-               width=1.3, opacity=.8, dash="4 5")
-    for y, color, label in [(136, BLUE, "Upper conical end"),
-                            (279, MUTED, "Lower conical end")]:
-        f.line([(390, y-5), (408, y-5)], color=color, width=2.5)
-        f.text(421, y, label, 16)
-    f.line([(272, 207), (397, 207)], color=SEAM, width=1.3, dash="4 5")
-    f.text(412, 203, "Neck-circle", 16, SEAM)
-    f.text(412, 225, "schematic", 16, SEAM)
-    f.text(28, 323, "Exactly two ends is proved only for sufficiently large genus.", 15)
-    f.box(28, 338, 584, 54)
-    f.text(320, 360, "Entropy < 2 for every positive genus", 20,
-           weight=600, anchor="middle")
-    f.text(320, 383, "Large-genus limit: a plane with multiplicity two (2P).", 15,
-           anchor="middle")
-    f.save("ketover-shrinkers.svg")
+    # The reviewed topology model has its own meshing dependencies.
+    if not (OUT / "ketover-shrinkers.svg").exists():
+        raise RuntimeError("Run scripts/generate_ketover_geometry.py first")
 
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for generate in (variational_torus, bns, ketover):
         generate()
-    print("Generated construction schematics; retained the BNS surface illustration.")
+    print("Generated construction schematics; retained the BNS and Ketover surface illustrations.")
 
 
 if __name__ == "__main__":

@@ -17,3 +17,7 @@ The [source audit](research-expansion-sources.json) records exact versions, PDF 
 The [property browser](https://aosunmath.github.io/MCF-stack/browse/) covers every example, including the original collection. Its [metadata guide](catalogue-properties.md) explains case-specific ambient dimensions, surface genus, ends, entropy, and Gaussian area. The numerical Angenent entropy is distinguished from the proved bound for the variational torus. Fixed-time entropy of the helix is derived directly in the entry, separately from the cited unbounded supremum over time. The Chen–Sun product-manifold construction is not labeled a Euclidean mean curvature flow.
 
 All new drawings have reproducible generators listed in [the illustration guide](catalogue-expansion.md). `site/assets/solitons/ancient-curve-audit.json` records scalar-inversion residuals; these are numerical sampling diagnostics rather than existence proofs. The interactive formulas are tested against their vector curve-shortening equations.
+
+The Ketover doubled-plane figure has since been replaced by an interactive
+two-sheet topology model with individual necks and a cutaway; see
+[the source review and drawing specification](ketover-picture.md).
