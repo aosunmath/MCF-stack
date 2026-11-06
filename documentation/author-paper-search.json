@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-06",
+  "scope": "Requested 15-author online and arXiv survey. Selected relevant papers and passages, not exhaustive publication lists or proof verification.",
+  "authors": [
+    {
+      "name": "Brian White",
+      "sources": [
+        "https://arxiv.org/abs/2308.02210v4",
+        "https://arxiv.org/abs/1903.04617v4",
+        "https://arxiv.org/abs/2411.16889v2",
+        "https://arxiv.org/abs/2605.09657v1"
+      ],
+      "result": "New annuloids, Scherk and helicoid translators, high-genus expanders; updated pitchfork uniqueness. Existing flow-generated shrinkers retained."
+    },
+    {
+      "name": "Tom Ilmanen",
+      "sources": [
+        "https://arxiv.org/abs/1805.10860",
+        "https://www.ugr.es/~fmartin/dvi/notes-tr.pdf"
+      ],
+      "result": "Graphical translator classification and double-cone constructions already represented. Existing Ilmanen–White shrinkers retained; no duplicate family."
+    },
+    {
+      "name": "Gerhard Huisken",
+      "sources": [
+        "https://arxiv.org/abs/1405.7509v1"
+      ],
+      "result": "Ancient-oval entry now contrasts its type-II behavior with the uniform convex-pinching rigidity theorem."
+    },
+    {
+      "name": "Sigurd Angenent",
+      "sources": [
+        "https://arxiv.org/abs/1803.01399v1",
+        "https://arxiv.org/abs/2204.05253v3"
+      ],
+      "result": "New embedded eternal reaper chains and compact ancient spirals. Torus, paperclip, torus curves and neckpinches already represented."
+    },
+    {
+      "name": "David Hoffman",
+      "sources": [
+        "https://arxiv.org/abs/2308.02210v4",
+        "https://arxiv.org/abs/1903.04617v4",
+        "https://arxiv.org/abs/2605.09657v1"
+      ],
+      "result": "New translating and expanding examples; existing shrinkers and prescribed-end references retained."
+    },
+    {
+      "name": "Francisco Martín",
+      "sources": [
+        "https://arxiv.org/abs/2308.02210v4",
+        "https://arxiv.org/abs/1903.04617v4",
+        "https://arxiv.org/abs/2411.16889v2",
+        "https://arxiv.org/abs/2605.09657v1",
+        "https://arxiv.org/abs/2209.01640v3"
+      ],
+      "result": "Constructions plus current semigraphical uniqueness and entropy results."
+    },
+    {
+      "name": "Felix Schulze",
+      "sources": [
+        "https://arxiv.org/abs/2204.13836v2",
+        "https://www.felixschulze.eu/images/felix/CV_FSchulze.pdf"
+      ],
+      "result": "Lagrangian translator classification screened; original Joyce–Lee–Tsui construction not audited, so no unsupported new family. Bowl stability, Clifford torus and expanding networks already present. Felix Schulze is distinct from Mario Schulz."
+    },
+    {
+      "name": "Robert Haslhofer",
+      "sources": [
+        "https://arxiv.org/abs/1308.4095v1",
+        "https://www.math.utoronto.ca/roberth/"
+      ],
+      "result": "New ancient ovals with full dimensional parameter j and bowl-product tip limits."
+    },
+    {
+      "name": "Niels Martin Møller",
+      "sources": [
+        "https://arxiv.org/abs/2209.01640v3",
+        "https://web.math.ku.dk/~nmoller/publications.html"
+      ],
+      "result": "New annuloid entropy and updated pitchfork classification use his joint work. Existing compact and one-ended shrinkers retained."
+    },
+    {
+      "name": "Tobias Holck Colding",
+      "sources": [
+        "https://arxiv.org/abs/1903.03499v1",
+        "https://arxiv.org/abs/1205.2043"
+      ],
+      "result": "Complexity and entropy papers screened; existing basic shrinkers and higher-codimension examples already cover the examples identified."
+    },
+    {
+      "name": "William P. Minicozzi II",
+      "sources": [
+        "https://arxiv.org/abs/1903.03499v1",
+        "https://arxiv.org/abs/1205.2043"
+      ],
+      "result": "Same joint-paper audit; no duplicate fundamental shrinker entry added."
+    },
+    {
+      "name": "Lu Wang",
+      "sources": [
+        "https://arxiv.org/abs/2003.13857v1",
+        "https://drwanglu.github.io/"
+      ],
+      "result": "New mountain-pass expanders, with dimension and genericity restrictions. Distinct from Shengwen Wang and Xu-Jia Wang."
+    },
+    {
+      "name": "Jacob Bernstein",
+      "sources": [
+        "https://arxiv.org/abs/2003.13857v1"
+      ],
+      "result": "New mountain-pass construction; asymptotically conical hypotheses and unknown topology retained."
+    },
+    {
+      "name": "Shengwen Wang",
+      "sources": [
+        "https://arxiv.org/abs/2611.02829v1",
+        "https://host-161-23-16-235.qmul.ac.uk/publications/staff/45707.html"
+      ],
+      "result": "New knotted expanders, including the genus-one, three-ended trefoil example."
+    },
+    {
+      "name": "Alexander Mramor (Alex Mramor)",
+      "sources": [
+        "https://arxiv.org/abs/1904.08439v2",
+        "https://arxiv.org/abs/2509.26515v3",
+        "https://arxiv.org/abs/2611.02829v1"
+      ],
+      "result": "New ancient minimal-surface perturbations, reapernoids, stacked pancakes and knotted expanders."
+    }
+  ],
+  "papers": [
+    {
+      "bibliography_key": "CatHMWAnnuli24",
+      "filename": "arxiv-2308.02210v4.pdf",
+      "title": "Translating Annuli for Mean Curvature Flow",
+      "edition": "arXiv:2308.02210v4",
+      "url": "https://arxiv.org/abs/2308.02210v4",
+      "sha256": "8711f2f445c8d02d18f44767f8cc2bbe33902c45bc9ba36d6b1e614ef76890d1",
+      "pdf_pages": 86,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1; Definition 1.2; Remark 7.9; Sections 7, 13, 22; Figure 4 (PDF p. 5) inspected."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHMWAnnuli24"
+      ]
+    },
+    {
+      "bibliography_key": "CatHH13",
+      "filename": "arxiv-1308.4095v1.pdf",
+      "title": "Ancient solutions of the mean curvature flow",
+      "edition": "arXiv:1308.4095v1",
+      "url": "https://arxiv.org/abs/1308.4095v1",
+      "sha256": "678464508a7736687ddcad21d0796b50189ca690970966f000e44c12de75c6e5",
+      "pdf_pages": 9,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Section 3; parameter j, tip limits, noncollapsing, type-II decay and symmetry."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHH13"
+      ]
+    },
+    {
+      "bibliography_key": "CatMP19",
+      "filename": "arxiv-1904.08439v2.pdf",
+      "title": "Ancient and Eternal Solutions to Mean Curvature Flow from Minimal Surfaces",
+      "edition": "arXiv:1904.08439v2",
+      "url": "https://arxiv.org/abs/1904.08439v2",
+      "sha256": "60252d42eb78ef32ffa0db2c7612d2553ee381efa289a19fd8540f55196a31f1",
+      "pdf_pages": 26,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1 and 1.3, pp. 3–5; normal-graph construction in Section 3; rotational continuation in Section 4."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatMP19"
+      ]
+    },
+    {
+      "bibliography_key": "CatMY26",
+      "filename": "arxiv-2509.26515v3.pdf",
+      "title": "An Ancient Stacked Pancake Solution to Mean Curvature Flow",
+      "edition": "arXiv:2509.26515v3",
+      "url": "https://arxiv.org/abs/2509.26515v3",
+      "sha256": "6d17e7352c78c1d71b69e4cebe6a5e55f07979eba6356a862ebf4517a8d2f114",
+      "pdf_pages": 30,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and limitations, pp. 1–3; Figure 1 (PDF p. 2) inspected. Current v3 author list checked: Mramor and Yudowitz."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatMY26"
+      ]
+    },
+    {
+      "bibliography_key": "CatAY18",
+      "filename": "arxiv-1803.01399v1.pdf",
+      "title": "Ancient Solutions to Curve Shortening with Finite Total Curvature",
+      "edition": "arXiv:1803.01399v1",
+      "url": "https://arxiv.org/abs/1803.01399v1",
+      "sha256": "1ccf170c8fcd3c85c5f0aca66ebe03470402b4f0b98ef0788d93c0b8e9a3db9d",
+      "pdf_pages": 18,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Equation (3), Section 3.1, Lemmas 3.8–3.10, pp. 2 and 8–13. Only monotone-height embedded three-turn case incorporated."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAY18"
+      ]
+    },
+    {
+      "bibliography_key": "CatBWMP20",
+      "filename": "arxiv-2003.13857v1.pdf",
+      "title": "A mountain-pass theorem for asymptotically conical self-expanders",
+      "edition": "arXiv:2003.13857v1",
+      "url": "https://arxiv.org/abs/2003.13857v1",
+      "sha256": "0c0427f601071d854babcbf42ca9c73dbde2d16f5510025b9d02387e501d6563",
+      "pdf_pages": 49,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Corollaries 1.2–1.3, pp. 1–2. Smooth n=2,...,6 case only; instability requires generic cone."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatBWMP20"
+      ]
+    },
+    {
+      "bibliography_key": "CatHMWExpand26",
+      "filename": "arxiv-2605.09657v1.pdf",
+      "title": "Expanders for Mean Curvature Flow and Counterexamples to Ilmanen's Genus-Reduction Conjecture",
+      "edition": "arXiv:2605.09657v1",
+      "url": "https://arxiv.org/abs/2605.09657v1",
+      "sha256": "b29aa74b0cd47a330a3b2794ea0b8699a257f9e30c519fde1e9b55b6b7ec8dc1",
+      "pdf_pages": 43,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.2 and equation (1.5), pp. 2–3; Theorem 5.1 for the embedded expander class."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHMWExpand26"
+      ]
+    },
+    {
+      "bibliography_key": "CatMWKnotted26",
+      "filename": "arxiv-2611.02829v1.pdf",
+      "title": "On knotted self expanders of the mean curvature flow in R3",
+      "edition": "arXiv:2611.02829v1",
+      "url": "https://arxiv.org/abs/2611.02829v1",
+      "sha256": "d0b017f1176f20338003647a462b39f1a4523452aafd3199cb36597894774735",
+      "pdf_pages": 11,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1 and 3.1; Corollary 3.2, pp. 2 and 8–10; Figure 2 (PDF p. 9) inspected. Newly submitted November 2, 2026 preprint."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatMWKnotted26"
+      ]
+    },
+    {
+      "bibliography_key": "CatZOKA23",
+      "filename": "arxiv-2204.05253v3.pdf",
+      "title": "Nonconvex ancient solutions to Curve Shortening Flow",
+      "edition": "arXiv:2204.05253v3",
+      "url": "https://arxiv.org/abs/2204.05253v3",
+      "sha256": "06f5b69b3e4fb25138e351526dbb461af75fa9241db5b9ee56dd6db9c881821f",
+      "pdf_pages": 27,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main Theorem, equations (1.1)–(1.3), pp. 1–3; Appendix A; Figure 1 (PDF p. 2) inspected."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatZOKA23"
+      ]
+    },
+    {
+      "bibliography_key": "CatHS14",
+      "filename": "arxiv-1405.7509v1.pdf",
+      "title": "Convex ancient solutions of the mean curvature flow",
+      "edition": "arXiv:1405.7509v1",
+      "url": "https://arxiv.org/abs/1405.7509v1",
+      "sha256": "91032eef73941a1ebad9689c0836b2ffa8b4d975b5f280ca776988678787d400",
+      "pdf_pages": 21,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 3.2 and pinching (3.1); used only to distinguish uniformly pinched spheres from ancient ovals."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHS14"
+      ]
+    },
+    {
+      "bibliography_key": "CatGMM25",
+      "filename": "arxiv-2209.01640v3.pdf",
+      "title": "Finite entropy translating solitons in slabs",
+      "edition": "arXiv:2209.01640v3",
+      "url": "https://arxiv.org/abs/2209.01640v3",
+      "sha256": "1dedcd6a89aba242d8fe04c8c61b8f16462287a78fdc98b71fbca8d1e8bd82f4",
+      "pdf_pages": 40,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.4–1.5; Corollary 8.5. Finite width, entropy and genus hypotheses retained."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatGMM25"
+      ]
+    },
+    {
+      "bibliography_key": "CatMSTW26",
+      "filename": "arxiv-2411.16889v2.pdf",
+      "title": "Classification of Semigraphical Translators",
+      "edition": "arXiv:2411.16889v2",
+      "url": "https://arxiv.org/abs/2411.16889v2",
+      "sha256": "56456ce75ac569db4276e7f5fad850d2dd2ac9fe916df7a24d674f6699155b2e",
+      "pdf_pages": 16,
+      "role": "Public source reviewed for the requested author survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1, Sections 3–4. Replaces arXiv:2310.06980; version 2 includes Brian White."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatMSTW26"
+      ]
+    },
+    {
+      "bibliography_key": "CatHMW20",
+      "title": "Scherk-like Translators for Mean Curvature Flow",
+      "edition": "arXiv:1903.04617v4",
+      "url": "https://arxiv.org/abs/1903.04617v4",
+      "sha256": "1bee8237730af786cf7f546cfd33c3701120ed85c04b779856853c56b13e47a2",
+      "checked_passages": [
+        "Theorems 2.3, 3.1, 6.1, 11.1; pp. 9 and 17; existing supplied survey compared."
+      ],
+      "redistributed": false
+    },
+    {
+      "bibliography_key": "CatCMComplexity2020",
+      "title": "Complexity of parabolic systems",
+      "edition": "arXiv:1903.03499v3",
+      "url": "https://arxiv.org/abs/1903.03499v3",
+      "sha256": "404d53c887faeb34f1852f2f938593254e48d4afae66a177328fd54e3a48ff89",
+      "checked_passages": [
+        "Introduction and examples screened; Abresch–Langer and higher-codimension examples already catalogued."
+      ],
+      "redistributed": false
+    },
+    {
+      "bibliography_key": null,
+      "title": "Ancient solutions and translators of Lagrangian mean curvature flow",
+      "edition": "arXiv:2204.13836v2",
+      "url": "https://arxiv.org/abs/2204.13836v2",
+      "sha256": "4fdaddf16fde06cbe7b31b146aa9396c05e344499f16845003655e9cba7a14d8",
+      "checked_passages": [
+        "Theorem 1.1 and Section 2.5 screened; the Joyce–Lee–Tsui examples are credited to their original constructors. No new Lagrangian family added without checking that original construction."
+      ],
+      "redistributed": false
+    }
+  ]
+}

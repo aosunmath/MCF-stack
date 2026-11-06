@@ -159,7 +159,7 @@ The pitchfork is a complete, properly embedded, simply connected, nongraphical t
 \item After reflection to upward translation, it is asymptotic to one plane as $z\to-\infty$ and to three parallel planes as $z\to+\infty$. These are height-direction asymptotics, not a claim that the surface has four topological ends.
 \item Its translation yields an eternal noncompact flow. The later construction paper records finite topology and quadratic area growth for its pitchfork subfamily.
 \end{itemize}
-See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{CatHMW20}. The existence proof is external. The supplied notes do not give a complete parameter range or a uniqueness theorem, and the plane diagram is only schematic.
+See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{CatHMW20}. The existence proof is external. The full construction supplies a pitchfork for each half-width $w\geq\pi$, lying in $|y|<w$. Theorem 1 of \cite{CatMSTW26} proves uniqueness up to isometry for fixed width in this semigraphical family. Moreover, \cite{CatGMM25}, Theorem 1.5, characterizes pitchforks among complete embedded simply connected translators of finite width, entropy $3$, and containing a vertical line. These hypotheses are essential to the stated classification; the plane diagram remains schematic.
 \end{example}
 
 
@@ -262,4 +262,31 @@ for some $\epsilon_m>0$. Both the shrinker and the translator are existence cons
 The strict upper bound follows by applying the area inequality of Kapouleas--McGrath in the Gaussian metric $g=e^{-|x|^2/4}g_{\rm Euc}$ and dividing its surface area by $4\pi$. It is a consequence of the two cited theorems, not a numerical approximation. No individual numerical entropy or value of $F_{0,1}(\Sigma_m)$ is recorded.
 \end{itemize}
 For the input shrinkers, see \cite{CatKapouleasMcGrath2023}, Theorem 10.5, with $k_\circ=2$ and $\mathbf m=(m)$ (arXiv version 4, PDF page 66), Theorem 9.40 (page 65), and Definitions 7.10--7.11 and Remark 7.12 (page 40). The genus is $|L|-1=2m-1$; smooth embeddedness and the Gaussian-metric area inequality follow from Theorem 5.7 and equation (5.9) (page 30; also Theorem A on page 3). The application to translators uses \cite{CatSunWang2025}, Theorems 3.7 and 4.1 (pages 12 and 28), with compact core and entropy as in Lemma 2.5 and Corollary 2.4 (pages 8--10). This spherical-doubling specialization uses the explicit nondegeneracy check for the radius-two sphere in Section 10; it does not require the separate Angenent-torus doubling theorem of Kapouleas--McGrath.
+\end{example}
+
+\chapter{Doubly periodic Scherk translators}\label{sec:catalogue-scherk-translators}
+\begin{example}[Doubly periodic Scherk translators]\label{ex:catalogue-scherk-translators}
+For every $0<\alpha<\pi$ and $0<w<\pi$, Hoffman--Mart\'in--White construct a complete properly embedded translator in $\mathbb R^3$. In their downward convention, a fundamental piece is a graph over the parallelogram of height $w$, angle $\alpha$, and a uniquely selected base length $L(\alpha,w)>0$, with boundary values $-\infty$ on the horizontal sides and $+\infty$ on the other sides. Half-turns about its four vertical boundary lines extend it to the complete doubly periodic surface. Reflecting $z$ gives our upward normalization $\mathbf H=e_3^\perp$ and the eternal flow $M_t=M+te_3$, $t\in\mathbb R$.
+
+This is an elliptic boundary-value construction, not Scherk's explicit minimal-surface formula. The surface has infinite genus and strictly negative Gauss curvature. Its infinitely many asymptotic parallel planes force infinite entropy. The topological end count and centered Gaussian area are not evaluated here. Uniqueness up to ambient isometry holds for the specified angle and width. Stability of a graphical fundamental piece does not establish stability of the full reflected surface.
+
+Sources: \cite{CatHMW20}, Theorems 2.3, 3.1 and 6.1 and the discussion on pp.~9 and 17; \cite{CatMSTW26}, Theorem 1. The illustration records the alternating boundary data; it is not a computed translator.
+\end{example}
+
+\chapter{Helicoid-like translators}\label{sec:catalogue-translating-helicoids}
+\begin{example}[Helicoid-like translators]\label{ex:catalogue-translating-helicoids}
+For each $0<w<\pi$, there is a complete properly embedded helicoid-like translator in $\mathbb R^3$. In the downward convention, its fundamental graph over $\mathbb R\times(0,w)$ has alternating infinite boundary values, switching at $(0,0)$ and $(\widehat x,w)$, where $\widehat x>0$ is selected by the solution. Half-turn reflection about the two vertical boundary lines gives horizontal period $2(\widehat x,w,0)$. Reflection in a horizontal plane converts it to $M_t=M+te_3$, $t\in\mathbb R$.
+
+It is noncompact and has strictly negative Gauss curvature. Successive simply connected strip pieces join along a line in a chain, giving a plane topologically, with genus zero and one topological end. This is a topological deduction from the strip decomposition. Its asymptotic family of parallel vertical planes implies $\lambda(M)=+\infty$. No centered Gaussian-area value is recorded. The axis is oblique to these planes; an ordinary minimal helicoid is not this translator.
+
+Sources: \cite{CatHMW20}, Theorems 2.3 and 11.1 and Remark 11.2; \cite{CatMSTW26}, Theorem 1 and Section 4, proves uniqueness up to isometry for fixed fundamental width. The earlier paper's open uniqueness question is therefore superseded. The picture shows only the semigraphical arrangement, not a numerical PDE solution.
+\end{example}
+
+\chapter{Annuloid translators in slabs}\label{sec:catalogue-translating-annuloids}
+\begin{example}[Annuloid translators in slabs]\label{ex:catalogue-translating-annuloids}
+For every inner half-width $b\geq\pi/2$ and necksize $s>0$, Hoffman--Mart\'in--White construct a complete properly embedded annular translator in $\mathbb R^3$. Their necksize is the distance from the $z$-axis to $M\cap\{y=0\}$; it is not assumed to be a circular neck radius. The surface lies in a slab $|y|\leq B$, has both vertical coordinate-plane reflection symmetries, and is nonrotational. Its topology is $S^1\times\mathbb R$: genus zero and two ends.
+
+After reflecting the source's downward translator, $M_t=M+te_3$ for all $t\in\mathbb R$. The positive-height asymptotics are four planes $y=\pm b,\pm B$, counted with multiplicity if $b=B$; the negative-height end of the ambient space sees no surface. Four asymptotic planes in one height direction do not mean four topological ends. The outer half-width $B$ is an output of the construction, not an independent prescribed parameter. Capped and uncapped behaviors occur. No closed formula or uniqueness for fixed $(b,s)$ is supplied.
+
+The entropy is exactly $4$, by \cite{CatHMWAnnuli24}, Remark 7.9, using \cite{CatGMM25}, Corollary 8.5. This is not a fixed-center Gaussian-area identity. Existence and the parameters are in Theorem 1.1, Definition 1.2, and Sections 7 and 22 of \cite{CatHMWAnnuli24}. The displayed neck model is heuristic.
 \end{example}

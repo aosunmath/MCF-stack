@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="title">Two stacked pancakes: a meridian</title>
+  <desc id="description">Heuristic schematic · no geometric PDE is solved</desc>
+  <rect width="640" height="410" fill="#f7fafb" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" stroke="#21667f" stroke-width="0" fill="#21667f" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <text x="24" y="33" fill="#183f52" font-size="22" font-weight="650" text-anchor="start">Two stacked pancakes: a meridian</text>
+  <text x="24" y="59" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">Heuristic schematic · no geometric PDE is solved</text>
+  <path d="M320,81 L320,333" stroke="#526b77" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" />
+  <path d="M320,105 C410,105 565,98 568,137 C572,177 407,168 350,177 C333,180 333,223 350,226 C407,235 572,226 568,266 C565,305 410,298 320,298 C230,298 75,305 72,266 C68,226 233,235 290,226 C307,223 307,180 290,177 C233,168 68,177 72,137 C75,98 230,105 320,105 Z" stroke="#21667f" stroke-width="3" fill="#e5f1f5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="359" y="209" fill="#183f52" font-size="15" font-weight="400" text-anchor="start">neck</text>
+  <text x="320" y="326" fill="#183f52" font-size="14" font-weight="400" text-anchor="middle">rotation axis</text>
+  <text x="24" y="367" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">Hypersurface dimension n ≥ 3; ambient dimension n+1 ≥ 4.</text>
+  <text x="24" y="390" fill="#526b77" font-size="14" font-weight="400" text-anchor="start">A profile drawing does not assert an example in Euclidean three-space.</text>
+</svg>

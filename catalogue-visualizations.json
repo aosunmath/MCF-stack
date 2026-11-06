@@ -293,7 +293,9 @@
       "category": "translators",
       "citations": [
         "CatHIMWNotes19",
-        "CatHMW20"
+        "CatHMW20",
+        "CatMSTW26",
+        "CatGMM25"
       ],
       "model": "pitchfork-ends",
       "status": "Schematic",
@@ -773,6 +775,178 @@
       "interactive": false,
       "caption": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
       "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified."
+    },
+    {
+      "label": "ex:catalogue-scherk-translators",
+      "section": "doubly-periodic-scherk-translators",
+      "title": "Doubly periodic Scherk translators",
+      "category": "translators",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "model": "scherk-translators",
+      "status": "Heuristic schematic",
+      "caption": "A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
+      "alt": "Doubly periodic Scherk translators. A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-translating-helicoids",
+      "section": "helicoid-like-translators",
+      "title": "Helicoid-like translators",
+      "category": "translators",
+      "citations": [
+        "CatHMW20",
+        "CatMSTW26"
+      ],
+      "model": "translating-helicoids",
+      "status": "Heuristic schematic",
+      "caption": "Tilted alignment of vertical reflection lines and alternating strip patches. Only a finite viewing window is shown; the mesh is heuristic and does not solve the translator equation.",
+      "alt": "Helicoid-like translators. Tilted alignment of vertical reflection lines and alternating strip patches. Only a finite viewing window is shown; the mesh is heuristic and does not solve the translator equation.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-translating-annuloids",
+      "section": "annuloid-translators-in-slabs",
+      "title": "Annuloid translators in slabs",
+      "category": "translators",
+      "citations": [
+        "CatHMWAnnuli24",
+        "CatGMM25"
+      ],
+      "model": "translating-annuloids",
+      "status": "Heuristic schematic",
+      "caption": "Heuristic capped annuloid: two strip-like sheets joined around a neck. The shape is not computed from the translator PDE, and no pictured neck size specifies the paper’s parameters.",
+      "alt": "Annuloid translators in slabs. Heuristic capped annuloid: two strip-like sheets joined around a neck. The shape is not computed from the translator PDE, and no pictured neck size specifies the paper’s parameters.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-mountain-pass-expanders",
+      "section": "mountain-pass-self-expanders",
+      "title": "Mountain-pass self-expanders",
+      "category": "expanders",
+      "citations": [
+        "CatBWMP20"
+      ],
+      "model": "mountain-pass-expanders",
+      "status": "Heuristic schematic",
+      "caption": "An ordering diagram for two strictly stable barriers and an intervening expander. The curves are symbolic slices; they do not prescribe topology or demonstrate a solution.",
+      "alt": "Mountain-pass self-expanders. An ordering diagram for two strictly stable barriers and an intervening expander. The curves are symbolic slices; they do not prescribe topology or demonstrate a solution.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-high-genus-expanders",
+      "section": "expanders-of-unbounded-genus-at-a-fixed-cone",
+      "title": "Expanders of unbounded genus at a fixed cone",
+      "category": "expanders",
+      "citations": [
+        "CatHMWExpand26"
+      ],
+      "model": "high-genus-expanders",
+      "status": "Heuristic schematic",
+      "caption": "Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
+      "alt": "Expanders of unbounded genus at a fixed cone. Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-knotted-expanders",
+      "section": "knotted-self-expanders",
+      "title": "Knotted self-expanders",
+      "category": "expanders",
+      "citations": [
+        "CatMWKnotted26"
+      ],
+      "model": "knotted-expanders",
+      "status": "Heuristic schematic",
+      "caption": "An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
+      "alt": "Knotted self-expanders. An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-hh-ancient-ovals",
+      "section": "haslhofer-hershkovits-ancient-ovals",
+      "title": "Haslhofer--Hershkovits ancient ovals",
+      "category": "other-special-flows",
+      "citations": [
+        "CatHH13",
+        "CatHS14"
+      ],
+      "model": "hh-ancient-ovals",
+      "status": "Heuristic schematic",
+      "caption": "A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
+      "alt": "Haslhofer--Hershkovits ancient ovals. A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-minimal-ancient-flows",
+      "section": "ancient-flows-from-unstable-minimal-hypersurfaces",
+      "title": "Ancient flows from unstable minimal hypersurfaces",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMP19"
+      ],
+      "model": "minimal-ancient-flows",
+      "status": "Heuristic schematic",
+      "caption": "A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
+      "alt": "Ancient flows from unstable minimal hypersurfaces. A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-reapernoid",
+      "section": "the-eternal-reapernoid",
+      "title": "The eternal reapernoid",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMP19"
+      ],
+      "model": "reapernoid",
+      "status": "Heuristic schematic",
+      "caption": "Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
+      "alt": "The eternal reapernoid. Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-stacked-pancakes",
+      "section": "ancient-stacked-pancakes",
+      "title": "Ancient stacked pancakes",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMY26"
+      ],
+      "model": "stacked-pancakes",
+      "status": "Heuristic schematic",
+      "caption": "Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
+      "alt": "Ancient stacked pancakes. Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-ancient-spiral-curves",
+      "section": "compact-nonconvex-ancient-spiral-curves",
+      "title": "Compact nonconvex ancient spiral curves",
+      "category": "other-special-flows",
+      "citations": [
+        "CatZOKA23"
+      ],
+      "model": "ancient-spiral-curves",
+      "status": "Heuristic schematic",
+      "caption": "A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
+      "alt": "Compact nonconvex ancient spiral curves. A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-grim-reaper-chains",
+      "section": "eternal-curves-from-chains-of-grim-reapers",
+      "title": "Eternal curves from chains of grim reapers",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAY18"
+      ],
+      "model": "grim-reaper-chains",
+      "status": "Heuristic schematic",
+      "caption": "A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
+      "alt": "Eternal curves from chains of grim reapers. A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
+      "interactive": false
     }
   ]
 }

@@ -57,7 +57,10 @@
         "nguyen-translating-tridents",
         "finite-genus-translators-with-three-ends",
         "translators-with-an-angenent-torus-end",
-        "translators-with-high-genus-spherical-doubling-ends"
+        "translators-with-high-genus-spherical-doubling-ends",
+        "doubly-periodic-scherk-translators",
+        "helicoid-like-translators",
+        "annuloid-translators-in-slabs"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
     },
@@ -70,7 +73,10 @@
         "two-sheeted-expanders-of-rotational-double-cones",
         "one-sheeted-expanders-of-rotational-double-cones",
         "one-sided-expanders-from-mean-convex-cones",
-        "self-expanding-planar-tree-networks"
+        "self-expanding-planar-tree-networks",
+        "mountain-pass-self-expanders",
+        "expanders-of-unbounded-genus-at-a-fixed-cone",
+        "knotted-self-expanders"
       ],
       "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions."
     },
@@ -85,7 +91,13 @@
         "ancient-torus-curves-in-higher-codimension",
         "eternal-shrinking-helices",
         "immortal-annuli-converging-to-a-double-plane",
-        "immortal-compact-flows-converging-to-a-double-sphere"
+        "immortal-compact-flows-converging-to-a-double-sphere",
+        "haslhofer-hershkovits-ancient-ovals",
+        "ancient-flows-from-unstable-minimal-hypersurfaces",
+        "the-eternal-reapernoid",
+        "ancient-stacked-pancakes",
+        "compact-nonconvex-ancient-spiral-curves",
+        "eternal-curves-from-chains-of-grim-reapers"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
     }
