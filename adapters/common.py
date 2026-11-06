@@ -409,7 +409,7 @@ def shell(content, title, records, revision, root=""):
 <main id="content">{content}<footer class="book-footer">{escape(AUTHOR)} · Draft edition · {revision_markup(revision, REPOSITORY)}<br>Tags identify source labels. Formalization status is recorded independently of the mathematical text.</footer></main></div></body></html>'''
 
 
-def export(source, output, prepare=None, transform=None, local=False):
+def export(source, output, prepare=None, transform=None, local=False, chapter_overviews=False):
     global ASSETS
     source, output = source.resolve(), output.resolve()
     ASSETS = output / "assets"
@@ -447,7 +447,10 @@ def export(source, output, prepare=None, transform=None, local=False):
         page.write_text(shell(tag_header + fragment + neighbours, record["title"], records, revision, "../../"))
         inventory.append({k: record[k] for k in ("tag", "label", "title", "kind") } | {"page": str(page.relative_to(output))})
         search.append({"tag": record["tag"], "title": record["title"], "label": record["label"], "text": BeautifulSoup(record["html"], "html.parser").get_text(" ", strip=True)})
-    citations = sorted({anchor["href"].split("/")[-1] for record in records for anchor in BeautifulSoup(record["html"], "html.parser").select('a[href^="/bibliography/"]')})
+    from chapter_overviews import load_overviews
+    overviews = load_overviews(source / DIRECTORY) if chapter_overviews else {}
+    citation_records = [*records, *overviews.values()]
+    citations = sorted({anchor["href"].split("/")[-1] for record in citation_records for anchor in BeautifulSoup(record["html"], "html.parser").select('a[href^="/bibliography/"]')})
     from pybtex.database.input.bibtex import Parser
     from pybtex.plugin import find_plugin
     class CitedBibliography(Parser):
@@ -481,6 +484,8 @@ def export(source, output, prepare=None, transform=None, local=False):
     (output / "tags.json").write_text(json.dumps(inventory, indent=2) + "\n")
     (output / "entries.json").write_text(json.dumps(records, ensure_ascii=False) + "\n")
     (output / "references.json").write_text(json.dumps(reference_records, ensure_ascii=False) + "\n")
+    if overviews:
+        (output / "chapter-overviews.json").write_text(json.dumps(overviews, ensure_ascii=False) + "\n")
     (output / "search.json").write_text(json.dumps(search, ensure_ascii=False) + "\n")
     if local and manuscript_snapshot(source / DIRECTORY) != revision:
         raise ValueError("Local manuscript changed while rendering")

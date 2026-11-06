@@ -434,13 +434,18 @@ def redirect(path, target, destination, fragments=None, anchor="", fragment_rout
 
 def build_collection(books, destination, configuration):
     sources = {book["slug"]: book for book in books if book["status"] == "published"}
-    exports, editions, reference_exports, inventories = {}, {}, {}, {}
+    exports, editions, reference_exports, inventories, overviews = {}, {}, {}, {}, {}
     for source in sources:
         folder = destination / "books" / source
         exports[source] = json.loads((folder / "entries.json").read_text())
         editions[source] = json.loads((folder / "edition.json").read_text())
         reference_exports[source] = json.loads((folder / "references.json").read_text())
         inventories[source] = json.loads((folder / "tags.json").read_text())
+        if (folder / 'chapter-overviews.json').exists():
+            for key, overview in json.loads((folder / 'chapter-overviews.json').read_text()).items():
+                if key in overviews:
+                    raise ValueError(f'Duplicate overview for chapter: {key}')
+                overviews[key] = {**overview, 'source': source, 'label': 'chapter-overview:' + key}
         if (folder / "assets").is_dir():
             shutil.copytree(folder / "assets", destination / "assets" / "sources" / source, dirs_exist_ok=True)
     dependencies = {}
@@ -458,6 +463,8 @@ def build_collection(books, destination, configuration):
     if configuration.get('historical_exposition'):
         configuration, historical_notes = curate_history(entries, topics, source_tags, configuration, Path(__file__).resolve().parents[1] / configuration['historical_exposition'])
     chapters, topic_chapters = chapter_structure(topics, configuration)
+    if overviews.keys() - chapters.keys():
+        raise ValueError('Chapter overview refers to an absent chapter')
     from soliton_visualizations import registry as visualization_registry
     property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
     catalogue_properties.arrange_by_ambient(chapters, property_records)
@@ -484,7 +491,7 @@ def build_collection(books, destination, configuration):
 
     def write(route, content, title, root):
         content, used = page_references(content, references, root)
-        if route.startswith(("sections/", "tag/")):
+        if route.startswith(("chapters/", "sections/", "tag/")):
             for identifier in used:
                 reference_uses.setdefault(identifier, {})[route] = reader.pages[route]["title"]
         page = destination / route / "index.html" if route else destination / "index.html"
@@ -513,11 +520,18 @@ def build_collection(books, destination, configuration):
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():
         content = f'<p class="eyebrow">Chapter {chapter["number"]}</p><h1>{escape(chapter["title"])}{tag_code(chapter["tag"])}</h1><p>{escape(chapter.get("description", ""))}</p>'
+        if key in overviews:
+            prose = prepare_fragment(overviews[key], source_tags, reference_map, '../../')
+            headings = BeautifulSoup(prose, 'html.parser').select('h2[id]')
+            content += '<nav class="chapter-jump" aria-label="On this page">' + ''.join(
+                f'<a href="#{escape(heading["id"], quote=True)}">{escape(heading.get_text())}</a>' for heading in headings
+            ) + ('<a href="#examples">Examples by dimension</a></nav>' if chapter.get('ambient_groups') else '<a href="#examples">Sections and subsections</a></nav>')
+            content += '<div class="chapter-overview">' + prose + '</div>'
         if chapter.get('ambient_groups'):
-            content += '<h2>Examples by ambient dimension</h2><p class="ambient-conventions">Each family is placed once, at its lowest recorded ambient dimension. Links in later groups lead to its cases in those dimensions. These are the spaces stated in the construction; parameter restrictions remain in the linked cases.</p>'
+            content += '<h2 id="examples">Examples by ambient dimension</h2><p class="ambient-conventions">Each family is placed once, at its lowest recorded ambient dimension. Links in later groups lead to its cases in those dimensions. These are the spaces stated in the construction; parameter restrictions remain in the linked cases.</p>'
             content += '<nav class="ambient-jump" aria-label="Jump to ambient dimension">' + ''.join(f'<a href="#ambient-{group["key"]}">{escape(catalogue_properties.AMBIENT_SHORT[group["key"]])}</a>' for group in chapter['ambient_groups']) + '</nav>'
         else:
-            content += '<h2>Sections and subsections</h2>'
+            content += '<h2 id="examples">Sections and subsections</h2>'
         content += reader.section_list(key, "../../", anchors=True, subsections=True)
         write("chapters/" + key, content, chapter["title"], "../../")
         if chapter["tag"] in entries:
@@ -565,7 +579,7 @@ def build_collection(books, destination, configuration):
         if configured["topic"] in configuration.get("excluded_topics", []):
             redirect(destination / "tag" / configured["tag"] / "index.html", contents, destination)
     write("entries", '<h1>All entries</h1>' + ('<p>Search across every source, or follow the shared chapter order below.</p>' if entries else '<p>No entries have been added yet.</p>') + "".join(f'<h2><a href="../chapters/{key}/">{chapter["number"]}. {escape(chapter["title"])}</a></h2>' + entry_list([e for topic in chapter["topics"] for e in entries.values() if e["topic"] == topic], topics, "../") for key, chapter in chapters.items()), "All entries", "../")
-    search = [{"tag": chapter["tag"], "title": f'{chapter["number"]} {chapter["title"]}', "search_title": chapter["title"], "kind": "chapter", "topic": chapter["title"], "text": "", "aliases": []} for chapter in chapters.values()]
+    search = [{"tag": chapter["tag"], "title": f'{chapter["number"]} {chapter["title"]}', "search_title": chapter["title"], "kind": "chapter", "topic": chapter["title"], "text": BeautifulSoup(overviews.get(key, {}).get('html', ''), 'html.parser').get_text(' ', strip=True), "aliases": []} for key, chapter in chapters.items()]
     search += [{"tag": section["tag"], "title": f'{section["number"]} {section["title"]}', "search_title": section["title"], "kind": "section", "topic": chapters[section["chapter"]]["title"], "text": "", "aliases": []} for topic, section in reader.sections.items() if topic not in catalogue_sections and not any(e.get("section_intro") for e in section["entries"])]
     public_entries, merges, section_search = [], [], {}
     for entry in entries.values():

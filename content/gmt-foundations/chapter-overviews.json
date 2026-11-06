@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "chapters": [
+    {
+      "slug": "shrinkers",
+      "file": "overviews/shrinkers.html"
+    },
+    {
+      "slug": "translators",
+      "file": "overviews/translators.html"
+    },
+    {
+      "slug": "expanders",
+      "file": "overviews/expanders.html"
+    },
+    {
+      "slug": "other-special-flows",
+      "file": "overviews/other-special-flows.html"
+    }
+  ]
+}

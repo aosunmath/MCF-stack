@@ -25,7 +25,7 @@ def check_entry_status(source, records):
     return records
 
 
-export(Path(sys.argv[1]), Path(sys.argv[2]), local=True, transform=check_entry_status)
+export(Path(sys.argv[1]), Path(sys.argv[2]), local=True, transform=check_entry_status, chapter_overviews=True)
 
 # These inventories contain citations and hashes, never the supplied scans or OCR.
 for name in ('source-inventory.json', 'entry-review.json'):

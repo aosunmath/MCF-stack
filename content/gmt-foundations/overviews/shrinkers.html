@@ -1,0 +1,41 @@
+<h2 id="equation">The equation and the associated flow</h2>
+<p>A self-shrinker is a submanifold whose mean curvature flow evolves by dilation toward a fixed center. We use the mean curvature vector convention $\vec H=\Delta_\Sigma X$; for a hypersurface with unit normal $\nu$, this means $\vec H=-H\nu$ and $H=\operatorname{div}_\Sigma\nu$. A normalized $n$-dimensional shrinker in $\mathbb R^N$ satisfies</p>
+<div class="equation">\[
+\begin{gathered}\vec H+\frac{X^\perp}{2}=0,\\ M_t=\sqrt{-t}\,\Sigma,\qquad t&lt;0.\end{gathered}
+\]</div>
+<p>Here $\Sigma=M_{-1}$, the center is the origin, and the extinction or singular time is zero. Translation of the center and parabolic rescaling give other normalizations. The vector equation works in every codimension; scalar equations involving one unit normal apply to hypersurfaces. The <a href="../../sections/round-shrinking-spheres/">round spheres</a>, <a href="../../sections/generalized-shrinking-cylinders/">generalized cylinders</a>, and <a href="../../sections/planes-through-the-shrinker-center/">planes through the origin</a> illustrate three different behaviors: collapse to a point, collapse of a spherical factor onto an axis, and stationarity.</p>
+<p>The subject combines two questions. Which submanifolds solve this elliptic equation? Which of them occur, and persist under perturbation, as singularities of an evolving hypersurface? The introductions of Sun–Wang and Chu–Sun approach the first question through topology and compactness and the second through the dynamics of families of initial surfaces. The distinction is useful throughout this catalogue.</p>
+
+<h2 id="singularities">Why shrinkers describe singularities</h2>
+<p>To examine a flow near a spacetime point $(x_0,T)$, magnify space by $r^{-1}$ and time by $r^{-2}$. The rescaled flows are</p>
+<div class="equation">\[
+M_s^{(r)}=r^{-1}(M_{T+r^2s}-x_0),\qquad s&lt;0.
+\]</div>
+<p>As $r\downarrow0$, compactness permits subsequential weak limits under the usual local mass bounds. Huisken's monotonicity formula forces a tangent flow to be backward self-similar. This is the basic reason for studying shrinkers. The weak conclusion alone does not imply that the profile is smooth, has multiplicity one, or is independent of the chosen sequence; those conclusions require further theorems in the relevant setting. This formulation, recalled in <a href="/bibliography/CM12">CM12</a>, Introduction, also explains why shrinkers occur beyond Type I singularities.</p>
+<p>A different description uses logarithmic time: $\tau=-\log(T-t)$ and $\widetilde M_\tau=(T-t)^{-1/2}(M_t-x_0)$. Then</p>
+<div class="equation">\[
+(\partial_\tau X)^\perp=\vec H+\frac{X^\perp}{2}.
+\]</div>
+<p>Shrinkers are precisely the stationary points of this rescaled evolution. Thus convergence toward a singularity becomes a long-time dynamical problem near an equilibrium. A shrinker can have unstable directions and still arise from specially chosen initial data. Conversely, an existence construction for the elliptic equation does not, by itself, show that a general flow approaches that shrinker.</p>
+
+<h2 id="entropy">Gaussian area, entropy, and stability</h2>
+<p>The natural variational quantity is Gaussian area. For an $n$-dimensional submanifold, define</p>
+<div class="equation">\[
+F_{x_0,s}(\Sigma)=(4\pi s)^{-n/2}\int_\Sigma e^{-|X-x_0|^2/(4s)}\,d\mu,\qquad
+\lambda(\Sigma)=\sup_{x_0\in\mathbb R^N,\ s&gt;0}F_{x_0,s}(\Sigma).
+\]</div>
+<p>The shrinker equation is the Euler–Lagrange equation for $F_{0,1}$. Entropy allows the Gaussian center and scale to vary, is invariant under translations and dilations, and is nonincreasing along the flows to which monotonicity applies. For a smooth complete embedded normalized self-shrinking hypersurface without boundary and with polynomial area growth, entropy equals $F_{0,1}$. This equality is specific to the shrinker setting; it should not be transferred to a translator or an arbitrary time slice.</p>
+<p>For a two-sided hypersurface, the linearized rescaled equation and Gaussian second variation involve</p>
+<div class="equation">\[
+L f=\Delta_\Sigma f-\frac12\langle X,\nabla_\Sigma f\rangle+\left(|A|^2+\frac12\right)f.
+\]</div>
+<p>For compactly supported normal variations, the fixed-center second variation is $-\int fLf\,(4\pi)^{-n/2}e^{-|X|^2/4}\,d\mu$. Allowing the center and scale to move changes the stability question. Colding–Minicozzi classify the entropy-stable models among smooth complete embedded hypersurface shrinkers without boundary and with polynomial volume growth: the round generalized cylinders, including the sphere and plane. Their $F$-stability classification leaves the sphere and plane. These are distinct statements with distinct variation classes; neither asserts that every shrinker is dynamically attracting (<a href="/bibliography/CM12">CM12</a>, Theorems 0.12 and 0.16).</p>
+
+<h2 id="geometry">Topology, constructions, and compactness</h2>
+<p>In the plane, the Abresch–Langer family makes the distinction between embedded curves and closed immersed curves essential. In three-space, the Angenent torus shows that embedded shrinkers need not be spherical. Drugan's immersed sphere shows why embeddedness cannot be dropped from genus-zero rigidity: Brendle proves that a compact embedded genus-zero shrinker in $\mathbb R^3$ is round (<a href="/bibliography/CatBrendle2016">CatBrendle2016</a>, Theorem 1). Rotational ODE methods, gluing of simpler surfaces, and variational min-max arguments lead to quite different constructions. The survey <a href="/bibliography/CatDLN2018">CatDLN2018</a>, Sections 3–5, explains the role of symmetry; the linked entries below give the hypotheses and topology of individual families.</p>
+<p>For noncompact surfaces, the geometry at infinity is part of the problem. Under a fixed entropy bound and a fixed finite genus, Sun–Wang prove smooth local sequential compactness for complete embedded shrinkers in $\mathbb R^3$, with the genus preserved in the limit. Their result prevents handles from escaping to infinity; it also gives a uniform bound on the number of ends in terms of genus and entropy. Control of conical and cylindrical ends is central to this argument (<a href="/bibliography/CatSunWang2020">CatSunWang2020</a>, Theorem 1.1 and Corollaries 1.2–1.3). Local smooth convergence of arbitrary noncompact surfaces would not preserve global topology without such control.</p>
+<p>Higher codimension brings additional geometry. Products of shrinking spheres give shrinkers of codimension two, including the Clifford torus in $\mathbb R^4$. Sun–Zhu prove that a product of two round shrinking spheres is isolated among sufficiently $C^{2,\alpha}$-close shrinkers, modulo rotations, in any ambient dimension in which it is embedded. Their explicit Łojasiewicz inequalities also quantify convergence near these products (<a href="/bibliography/CatSunZhu2025">CatSunZhu2025</a>, Introduction and Theorem 1.1). This local rigidity is different from entropy stability, and it does not classify all shrinkers of the same topology.</p>
+
+<h2 id="dynamics">From examples to the dynamics of flows</h2>
+<p>Chu–Sun show how topology of a family of initial conditions can force a non-generic singularity. For a smooth path of embedded tori in $\mathbb R^3$ joining the inward-neck and outward-neck pinching behaviors specified in their theorem, some intermediate level-set flow develops a singularity that is neither a multiplicity-one sphere nor a multiplicity-one cylinder. Their analysis produces genus-one singularities and a genus-one shrinker with entropy below a shrinking doughnut (<a href="/bibliography/CatChuSun2025">CatChuSun2025</a>, Introduction). Robustness here concerns an appropriate family of flows; it is not stability of every individual toroidal shrinker.</p>
+<p>These results suggest how to use the catalogue: compare topology and ends, then examine entropy, index, and the hypotheses of the relevant rigidity or dynamical result. Existence, uniqueness within a symmetry class, local rigidity, and realization as a singularity answer different questions. The entries are a selection of constructions rather than an exhaustive classification. Their pictures distinguish exact models, numerical ODE solutions, and schematics; topology seen in a drawing does not supply an existence proof.</p>
