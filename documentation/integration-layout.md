@@ -14,6 +14,8 @@ Reader locators belong to the current collection structure: chapters use `C`, an
 
 Genuinely separate subordinate statements, equations, and other blocks still share the `C.S.N` counter. Source numbers remain provenance. `scripts/structure.py` places sections, `scripts/numbering.py` assigns locators, and `scripts/collection.py` applies them to headings, equations, references, navigation, and search. Do not globally replace digits in mathematical text.
 
+Section page headings use the standard section sign, for example `§ 2.1 Round shrinking spheres`. Introductory and primary-example tag markers carry `data-section-marker`: they remain available through Show tags, but do not receive formal-proof status badges. Independent statements retain the proof-review machinery.
+
 ## Tags, sources, and review
 
 Global tags derive from source slugs and stable labels. A canonical merge requires explicit source bindings and reviewed statement fingerprints. Changed hypotheses or missing reviewed members must fail the build. Different hypotheses remain distinct. Numbered clauses retain anchors inside their parent statement; formalization badges describe complete statements.

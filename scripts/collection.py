@@ -293,6 +293,8 @@ def prepare_fragment(variant, source_tags, references, root, component_anchors=N
         first.decompose()
     for marker in soup.select("[data-gerby-tag]"):
         record = (numbering or {}).get((source, marker["data-gerby-tag"]), {})
+        if record.get("intro") or record.get("section_example"):
+            marker["data-section-marker"] = ""
         canonical = record.get("canonical_tag")
         if canonical:
             code = soup.new_tag("code", attrs={"class": "tag-id"})
@@ -407,7 +409,8 @@ def continuous_section(relevant, entries, roots, sources, source_tags, reference
         covered.update(represented)
         body = prepare_fragment({**variant, "html": retained}, source_tags, references, root, anchors, numbering, footnotes)
         heading = f'<h2><a href="{root}tag/{entry["tag"]}/">{escape(display_title(entry))}</a>{tag_code(entry["tag"])}</h2>' if variant.get("section") and not entry.get("section_intro") else ""
-        badge = f'<span data-gerby-tag="{variant["tag"]}">{tag_code(entry["tag"]) if entry.get("section_intro") else ""}</span>'
+        section_marker = ' data-section-marker' if entry.get("section_intro") or entry.get("section_example") else ''
+        badge = f'<span data-gerby-tag="{variant["tag"]}"{section_marker}>{tag_code(entry["tag"]) if entry.get("section_intro") else ""}</span>'
         # A source chapter can absorb its example into this reading chunk.
         # Include illustrations for all represented entries, not just the root.
         illustration = ''.join(visualization(entries[tag]['variants'][0]['label'], root) + catalogue_properties.panel(entries[tag]['variants'][0]['label'], root) for tag in sorted(represented))
@@ -525,7 +528,7 @@ def build_collection(books, destination, configuration):
     footnotes = number_notes(note_candidates)
     section_fragments = {}
     for topic, section in reader.sections.items():
-        content = f'<h1>{section["number"]} {escape(section["title"])}{tag_code(section["tag"])}</h1>'
+        content = f'<h1>§ {section["number"]} {escape(section["title"])}{tag_code(section["tag"])}</h1>'
         if section["entries"]:
             content += continuous_section(section["entries"], entries, roots, sources, source_tags, reference_map, "../../", anchors, reader.numbering, footnotes)
         subdivisions = configuration.get("section_promotions", {}).get(topic, [])

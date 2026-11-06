@@ -8,7 +8,10 @@ export function badgeDetails(entry, unavailable = false) {
 }
 
 export async function installBadges(root = document) {
-  const targets = [...root.querySelectorAll('[data-gerby-tag]')];
+  // Section introductions and primary examples share the page's § heading.
+  // Their permanent tags are navigation metadata, not proof-status labels.
+  const targets = [...root.querySelectorAll('[data-gerby-tag]')]
+    .filter(target => !target.hasAttribute('data-section-marker'));
   if (!targets.length) return;
   let entries = [], unavailable = false;
   try {
