@@ -205,7 +205,9 @@ written as axial height $z=\gamma(r)$ for $r>0$, solves
  \frac{\gamma''}{1+(\gamma')^2}
    =\left(\frac r2-\frac1r\right)\gamma'-\frac\gamma2.
 \]
-This is equation~(1.3) of \cite{CatDrugan2015}, p.~3140.
+This is equation~(1.2) of \cite{CatDrugan2015}, p.~3140; the paper's
+radial variable $x$ is denoted here by $r$. Equation~(1.3) describes the
+same curve as a radius depending on height.
 Shooting and continuation through profile turning points produce the
 closed immersed sphere; a single graphical piece does not describe the
 whole surface.
@@ -221,10 +223,55 @@ parametrization nor uniqueness or an exact entropy value. Embedded
 classification and embedded stability theorems cannot be applied to this
 immersion by dropping their embeddedness hypothesis.
 \end{itemize}
-The numerical profile in \cite{CatDrugan2015}, Figure~1, is an illustration
-of the shooting construction. Our diagram records the domain topology
-and the distinction between immersion and embedding; it does not solve
-the shooting problem.
+\emph{Numerical picture.}
+The picture computes the rotational shooting construction in
+\cite{CatDrugan2015}, Sections~2--5, and can be compared with Figure~1
+on p.~3141. It shows the two-dimensional immersed sphere in
+$\mathbb R^3$, not a higher-dimensional projection.
+Let $s$ be arc length along the meridian and let $\theta$ be its tangent
+angle measured from the positive radial direction. Substituting
+$\gamma'=\tan\theta$ into the graph equation gives
+\[
+ \frac{dr}{ds}=\cos\theta,\qquad
+ \frac{dz}{ds}=\sin\theta,\qquad
+ \frac{d\theta}{ds}
+ =\left(\frac r2-\frac1r\right)\sin\theta-\frac z2\cos\theta.
+\]
+This system continues through the vertical tangents where the graph
+equation becomes unsuitable for numerical integration. At the upper
+pole $(r,z)=(0,b)$, smoothness requires $\theta=0$. The even expansion
+from the graph equation, consistent with Section~6 of the paper, is
+\[
+ z(r)=b-\frac b8r^2-\frac{b(b^2+4)}{1024}r^4+O(r^6).
+\]
+We start at $r=10^{-4}$ using this expansion and shoot in $b$ until
+$z=0$ at the second radial turning point, where
+$\theta=-3\pi/2$. This is the orthogonal reflection condition in
+Section~5, pp.~3154--3155. The computation gives
+\[
+ b\simeq0.39345656,\qquad r_{\mathrm{reflection}}\simeq0.83684239.
+\]
+Reflection across $z=0$, with the order of traversal reversed, completes
+the meridian from $(0,b)$ to $(0,-b)$. Revolving it gives
+\[
+ X(s,\varphi)=(r(s)\cos\varphi,r(s)\sin\varphi,z(s)),
+ \qquad 0\leq\varphi<2\pi,
+\]
+with the angular circles collapsed at the two poles. This is a numerical
+parametrization at time $t=-1$; the corresponding flow is
+$X_t=\sqrt{-t}\,X$ for $t<0$.
+
+The meridian view shows the self-intersections directly. The revolution
+angle control reveals interior sheets by removing angular sectors;
+the resulting cut edges are display boundaries, not boundaries of the
+immersed sphere. The two colors distinguish the shot half from its
+reflected continuation. The shooting height residual is below $10^{-10}$
+before rounding the exported mesh. Halving the initial radius and maximum
+step and tightening the integration tolerances changes the computed pole
+height and reflection radius by less than $10^{-9}$. These are
+floating-point convergence diagnostics, not certified error bounds.
+In particular, numerical shooting does not prove existence, uniqueness,
+or that this root is the supremum used in Drugan's proof.
 \end{example}
 
 \chapter{The Clifford shrinking torus in four-space}\label{sec:catalogue-clifford-torus}

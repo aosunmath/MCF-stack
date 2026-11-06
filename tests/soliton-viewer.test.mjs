@@ -1,6 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ancientOval,rotatePoint} from '../site/assets/soliton-viewer.mjs';
+import {ancientOval,rotatePoint,revolutionFaces} from '../site/assets/soliton-viewer.mjs';
+import {readFileSync} from 'node:fs';
+
+test('Drugan cutaway removes only selected angular sectors and restores the complete surface',()=>{
+  const d=JSON.parse(readFileSync(new URL('../site/assets/solitons/drugan-sphere.json',import.meta.url)));
+  const full=revolutionFaces(d,360),cut=revolutionFaces(d,270);
+  assert.equal(full.length,d.faces.length);
+  assert.equal(cut.length,full.length*3/4);
+  assert.ok(cut.every(({index})=>d.revolution.faceSectors[index]<36));
+  assert.equal(revolutionFaces(d,0).length,0);
+  assert.deepEqual(full.map(({face})=>face),d.faces);
+});
 
 test('ancient oval remains on its exact time-dependent implicit curve',()=>{
   for(const t of [-5,-2,-.1]) {

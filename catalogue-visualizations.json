@@ -86,11 +86,11 @@
         "CatDLN2018",
         "CatDrugan2015"
       ],
-      "model": "drugan-schematic",
-      "status": "Topology schematic",
-      "caption": "The domain is a sphere, while the immersion has self-intersections. This diagram is not a numerically solved shrinker profile.",
-      "alt": "Drugan's immersed shrinking spheres. The domain is a sphere, while the immersion has self-intersections. This diagram is not a numerically solved shrinker profile.",
-      "interactive": false
+      "model": "drugan-sphere",
+      "status": "Numerical ODE surface",
+      "caption": "Numerical shooting from pole height b ≈ 0.39345656, reflected at radius ≈ 0.83684239, in R3 with Hvec = −Xperp/2. Blue and orange distinguish the two reflected halves. Use Meridian to see the crossings or change the revolution angle to reveal interior sheets. Cut edges are display boundaries. Numerical diagnostics are not certified error bounds or a uniqueness proof.",
+      "alt": "Numerically integrated Drugan immersed shrinking sphere. A meridian with self-intersections is revolved about the z-axis; a 270-degree cutaway exposes the sheets.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-clifford-torus",

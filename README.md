@@ -48,7 +48,7 @@ The first catalogue contains **31 entries in four categories**:
 | [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 6 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks |
 | [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 4 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval |
 
-Every entry has a figure: 17 support rotation and zoom, including a fourth-coordinate rotation for the Clifford torus and a time slider for the ancient oval. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
+Every entry has a figure: 18 support rotation and zoom, including a fourth-coordinate rotation for the Clifford torus and a time slider for the ancient oval. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
 
 The catalogue records source-supported properties and precise theorem or page locators. It is a first selection from the supplied paper collection, not an exhaustive classification. See the [source and illustration notes](documentation/catalogue-expansion.md) for editions, normalization choices, and reproducible geometry.
 

@@ -12,19 +12,22 @@ The normal convention is H = div(nu), mean curvature vector = −H nu. Shrinkers
 
 ## Pictures
 
-`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Seventeen have an interactive canvas with keyboard rotation and zoom; the remaining fourteen use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. “Open drawing” shows the larger SVG. The ancient oval has a time slider at a fixed spatial scale; the Clifford torus has a fourth-coordinate rotation before projection.
+`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Eighteen have an interactive canvas with keyboard rotation and zoom; the remaining thirteen use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. “Open drawing” shows the larger SVG. The ancient oval has a time slider at a fixed spatial scale; the Clifford torus has a fourth-coordinate rotation before projection.
 
-The Angenent torus, Abresch–Langer curve, bowl, translating catenoid, and graphical/neck expanders use numerical ODE integration. They are not substituted by generic tori, paraboloids, or arbitrary connecting surfaces. Closure residuals in `site/assets/solitons/geometry-audit.json` describe integration before rounding the exported coordinates; they are numerical diagnostics, not error bounds or existence proofs. Displayed finite pieces of noncompact solutions have artificial truncation boundaries. The Whitney figure is the exact initial generating profile, not a formula for its later evolution.
+The Angenent torus, Drugan sphere, Abresch–Langer curve, bowl, translating catenoid, and graphical/neck expanders use numerical ODE integration. They are not substituted by generic tori, paraboloids, or arbitrary connecting surfaces. Closure residuals in `site/assets/solitons/geometry-audit.json` describe integration before rounding the exported coordinates; they are numerical diagnostics, not error bounds or existence proofs. Displayed finite pieces of noncompact solutions have artificial truncation boundaries. The Whitney figure is the exact initial generating profile, not a formula for its later evolution.
 
-Committed assets make the ordinary site build independent of numerical libraries. To regenerate figures, use a Python environment with NumPy and SciPy:
+Committed assets make the ordinary site build independent of numerical libraries. To regenerate figures, use a Python environment with NumPy and SciPy; the Drugan generator also uses Matplotlib:
 
 ```sh
 python3 scripts/generate_soliton_geometry.py
+python3 scripts/generate_drugan_geometry.py
 python3 scripts/generate_shrinker_schematics.py
 python3 scripts/generate_translator_schematics.py
 python3 scripts/generate_expander_schematics.py
 ```
 
 The schematic generators use only the standard library; the shrinker script also reads the generated numerical profiles. Regenerate geometry first. All illustrations are original mathematical drawings, not copied paper figures.
+
+The [Drugan numerical picture](drugan-numerical-picture.md) documents the pole expansion, reflection shooting, convergence checks, and cutaway convention. Its separate `drugan-audit.json` records the numerical settings and residuals.
 
 The permanent contribution rules are in `AGENTS.md`. Completed modifications are committed and pushed after verification by default, following the user's standing preference; a later request for local-only work takes precedence.

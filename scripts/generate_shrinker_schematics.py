@@ -1,4 +1,4 @@
-"""Generate four original, source-conscious shrinker diagrams using stdlib only.
+"""Generate three original, source-conscious shrinker diagrams using stdlib only.
 
 Run generate_soliton_geometry.py first to supply the numerical Abresch--Langer
 curve and Angenent profile. This script neither solves a new shrinker nor
@@ -68,33 +68,6 @@ def round_sphere(svg, cx, cy, radius):
     svg.ellipse(cx, cy, radius, radius * .28, width=1.3,
                 extra='stroke-dasharray="4 4"')
     svg.ellipse(cx, cy, radius * .30, radius, width=1.3)
-
-
-def drugan():
-    svg = SVG("Drugan's immersed shrinking spheres: topology schematic",
-              "A smooth sphere domain maps to an immersed image. Two generic local "
-              "sheets illustrate self-intersection. No solved meridian or exact "
-              "Drugan surface is represented.")
-    svg.text(28, 36, "Drugan’s immersed shrinking spheres", 23, weight=600)
-    svg.text(28, 64, "Topology schematic • existence by rotational shooting", 16, MUTED)
-    svg.text(158, 112, "Smooth domain S²", 18, anchor="middle")
-    svg.text(466, 112, "Two local image sheets", 18, anchor="middle")
-    round_sphere(svg, 158, 201, 76)
-    svg.ellipse(126, 190, 15, 11, width=2.5, fill="#c8e0e9")
-    svg.ellipse(187, 211, 15, 11, color=MUTED, width=2.5, fill="#d8e1e6")
-    svg.arrow(259, 201, 334, 201)
-    svg.text(297, 184, "X", 22, anchor="middle")
-    svg.path([(369, 172), (477, 150), (565, 231), (452, 254), (369, 172)],
-             fill="#dce9ef", opacity=.95)
-    svg.path([(394, 245), (441, 137), (545, 177), (497, 280), (394, 245)],
-             color=MUTED, fill="#e6edf0", opacity=.85)
-    svg.path([(416, 195), (518, 222)], color=CROSS, width=3.4)
-    svg.text(158, 300, "Distinct patches in the domain", 15, anchor="middle")
-    svg.text(473, 300, "Their images can meet", 15, anchor="middle")
-    svg.text(28, 337, "The domain remains smooth at an image self-intersection.", 16)
-    svg.text(28, 364, "No computed Drugan meridian is represented.", 16)
-    svg.text(28, 393, "SCHEMATIC • not a solved surface", 15, ACCENT, weight=600)
-    svg.save("drugan-schematic.svg")
 
 
 def curve_products():
@@ -244,7 +217,6 @@ def moller_gluing():
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    drugan()
     curve_products()
     spherical_products()
     intersections = moller_gluing()

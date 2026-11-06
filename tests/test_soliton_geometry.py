@@ -3,6 +3,7 @@ import json
 import math
 from pathlib import Path
 import unittest
+from collections import Counter
 
 ROOT=Path(__file__).resolve().parents[1]
 ASSETS=ROOT/'site/assets/solitons'
@@ -10,6 +11,49 @@ ASSETS=ROOT/'site/assets/solitons'
 def model(name):return json.loads((ASSETS/(name+'.json')).read_text())
 
 class SolitonGeometryTests(unittest.TestCase):
+    def test_drugan_mesh_has_spherical_domain_and_reflection_symmetry(self):
+        data=model('drugan-sphere')
+        self.assertEqual(data['status'],'numerical-ode')
+        v,f=data['vertices'],data['faces']
+        edges=Counter(tuple(sorted((face[i],face[(i+1)%3]))) for face in f for i in range(3))
+        self.assertEqual(set(edges.values()),{2})
+        self.assertEqual(len(v)-len(edges)+len(f),2)
+        for face in f:
+            self.assertEqual(len(set(face)),3)
+        p=data['revolution']['meridian']
+        self.assertEqual(p[0][0],0)
+        self.assertEqual(p[-1][0],0)
+        self.assertTrue(all(r>0 for r,z in p[1:-1]))
+        for (r,z),(rr,zz) in zip(p,reversed(p)):
+            self.assertAlmostEqual(r,rr,places=8)
+            self.assertAlmostEqual(z,-zz,places=8)
+        # The first graph crosses z=0 before its maximum radius. Its reflection
+        # therefore meets it away from the smooth inner reflection join.
+        half=p[:len(p)//2+1]
+        maximum=max(range(len(half)),key=lambda i:half[i][0])
+        self.assertTrue(any(a[1]>0>b[1] and a[0]>2 for a,b in zip(half[:maximum],half[1:maximum+1])))
+
+    def test_drugan_export_satisfies_arc_length_ode_independently(self):
+        d=model('drugan-sphere')['shooting']
+        states,arc=d['states'],d['arc']
+        errors=[]
+        for i in range(2,len(states)-2):
+            r,z,a=states[i]
+            # Fourth-order difference quotient, independent of solver RHS calls.
+            h=(arc[i+1]-arc[i-1])/2
+            derivative=[(states[i-2][j]-8*states[i-1][j]+8*states[i+1][j]-states[i+2][j])/(12*h) for j in range(3)]
+            expected=[math.cos(a),math.sin(a),(r/2-1/r)*math.sin(a)-z/2*math.cos(a)]
+            errors.extend(abs(x-y) for x,y in zip(derivative,expected))
+        self.assertLess(max(errors),2e-6)
+        audit=json.loads((ASSETS/'drugan-audit.json').read_text())
+        self.assertLess(audit['reflection_height_residual'],1e-10)
+        self.assertLess(audit['reflection_angle_residual'],1e-10)
+        self.assertLess(audit['refinement']['pole_height_change'],1e-9)
+        self.assertLess(audit['refinement']['reflection_radius_change'],1e-9)
+        self.assertLess(audit['refinement']['aligned_profile_max_component_change'],1e-9)
+        self.assertTrue(.39<audit['pole_height']<.40)
+        self.assertTrue(.83<audit['reflection_radius']<.84)
+
     def test_round_shrinker_normalization_and_clifford_dimension(self):
         for p in model('sphere')['vertices']:
             self.assertAlmostEqual(sum(x*x for x in p),4,places=5)
