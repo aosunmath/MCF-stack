@@ -34,6 +34,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = √(2π/e) ≈ 1.52035.",
             "value": 1.520346901066281
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The round spheres, including the planar circle, are embedded hypersurfaces."
           }
         },
         {
@@ -61,6 +65,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = 4/e ≈ 1.47152.",
             "value": 1.4715177646857693
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The round spheres, including the planar circle, are embedded hypersurfaces."
           }
         },
         {
@@ -87,6 +95,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = (4π)^(−n/2) (2n)^(n/2) e^(−n/2) |Sⁿ(1)|; depends on n."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The round spheres, including the planar circle, are embedded hypersurfaces."
           }
         }
       ]
@@ -123,6 +135,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = √(2π/e) ≈ 1.52035.",
             "value": 1.520346901066281
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of the round sphere with its Euclidean factor is embedded."
           }
         },
         {
@@ -149,6 +165,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ equals the entropy of the shrinking Sᵏ factor."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of the round sphere with its Euclidean factor is embedded."
           }
         },
         {
@@ -175,6 +195,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ equals the entropy of the shrinking Sᵏ factor."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of the round sphere with its Euclidean factor is embedded."
           }
         }
       ]
@@ -215,6 +239,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
             "value": 1
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The linear-subspace inclusion is an embedding."
           }
         },
         {
@@ -244,6 +272,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
             "value": 1
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The linear-subspace inclusion is an embedding."
           }
         },
         {
@@ -272,6 +304,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
             "value": 1
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The linear-subspace inclusion is an embedding."
           }
         }
       ]
@@ -308,6 +344,10 @@
           "gaussian": {
             "status": "bound",
             "text": "F₀,₁ = λ for the normalized shrinker. λ > 2 for the noncircular closed curves."
+          },
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "The noncircular primitive Abresch–Langer curves recorded here have self-intersections. The embedded shrinking circle is listed separately."
           }
         }
       ]
@@ -347,6 +387,10 @@
             "status": "numerical",
             "text": "F₀,₁ = λ for this normalized shrinker. λ ≈ 1.85122. Berchenko–Kogan estimate; no certified error enclosure.",
             "value": 1.8512186
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The selected simple closed rotational profile gives an embedded hypersurface in every stated dimension."
           }
         },
         {
@@ -373,6 +417,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The selected simple closed rotational profile gives an embedded hypersurface in every stated dimension."
           }
         }
       ]
@@ -408,6 +456,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          },
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "These rotational sphere immersions have self-intersections in every stated dimension."
           }
         },
         {
@@ -434,6 +486,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          },
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "These rotational sphere immersions have self-intersections in every stated dimension."
           }
         }
       ]
@@ -470,6 +526,10 @@
             "status": "exact",
             "text": "F₀,₁ = λ for the normalized shrinker. λ = 2π/e ≈ 2.31145.",
             "value": 2.3114546995818435
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of two singly covered circles is embedded in ℝ⁴. Crossings in a three-dimensional projection are not self-intersections of this torus."
           }
         }
       ]
@@ -504,6 +564,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for this normalized shrinker. λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "Embedded exactly when every factor is an embedded, singly covered circle. A noncircular Abresch–Langer factor gives self-intersections; a multiple cover is not an embedding."
           }
         },
         {
@@ -529,6 +593,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for this normalized shrinker. λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "Embedded exactly when every factor is an embedded, singly covered circle. A noncircular Abresch–Langer factor gives self-intersections; a multiple cover is not an embedding."
           }
         }
       ]
@@ -565,6 +633,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for this normalized shrinker. λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "Embedded exactly when the chosen minimal immersion into the sphere is embedded. The explicit products of round spheres are embedded; general immersed inputs need not be."
           }
         },
         {
@@ -590,6 +662,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁ = λ for this normalized shrinker. λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "Embedded exactly when the chosen minimal immersion into the sphere is embedded. The explicit products of round spheres are embedded; general immersed inputs need not be."
           }
         }
       ]
@@ -626,6 +702,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed finite-genus surfaces are embedded; the intersecting sphere–torus configuration is only their singular limit."
           }
         }
       ]
@@ -661,6 +741,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The grim-reaper graph and its Euclidean products are properly embedded."
           }
         },
         {
@@ -686,6 +770,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The grim-reaper graph and its Euclidean products are properly embedded."
           }
         },
         {
@@ -712,6 +800,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The grim-reaper graph and its Euclidean products are properly embedded."
           }
         }
       ]
@@ -746,6 +838,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The tilted graph and its stated Euclidean products are properly embedded."
           }
         },
         {
@@ -772,6 +868,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The tilted graph and its stated Euclidean products are properly embedded."
           }
         }
       ]
@@ -810,6 +910,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The entire rotational graph is properly embedded."
           }
         },
         {
@@ -836,6 +940,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The entire rotational graph is properly embedded."
           }
         }
       ]
@@ -871,6 +979,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The two graphical pieces join at a smooth neck to form an embedded hypersurface."
           }
         },
         {
@@ -897,6 +1009,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The two graphical pieces join at a smooth neck to form an embedded hypersurface."
           }
         }
       ]
@@ -931,6 +1047,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The translating graph over the open strip is embedded."
           }
         }
       ]
@@ -966,6 +1086,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The smooth entire translating graphs are embedded."
           }
         }
       ]
@@ -1000,6 +1124,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The construction gives properly embedded translating graphs over their stated domains."
           }
         },
         {
@@ -1026,6 +1154,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The construction gives properly embedded translating graphs over their stated domains."
           }
         }
       ]
@@ -1061,6 +1193,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete Scherkenoid translators in the cited construction are properly embedded."
           }
         }
       ]
@@ -1096,6 +1232,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete pitchfork translator is properly embedded."
           }
         }
       ]
@@ -1131,6 +1271,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The periodic translators are embedded after desingularization; the intersecting plane and grim cylinder are construction inputs."
           }
         }
       ]
@@ -1166,6 +1310,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed finite-genus translators are embedded; the intersecting bowl and translating catenoid are construction inputs."
           }
         }
       ]
@@ -1200,6 +1348,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The graphical smoothing is properly embedded, as is its product with a line."
           }
         },
         {
@@ -1225,6 +1377,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The graphical smoothing is properly embedded, as is its product with a line."
           }
         }
       ]
@@ -1259,6 +1415,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The smooth entire radial graph is properly embedded."
           }
         },
         {
@@ -1285,6 +1445,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The smooth entire radial graph is properly embedded."
           }
         }
       ]
@@ -1319,6 +1483,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The two smooth graphical components are disjoint; their disconnected union is embedded."
           }
         },
         {
@@ -1345,6 +1513,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The two smooth graphical components are disjoint; their disconnected union is embedded."
           }
         }
       ]
@@ -1379,6 +1551,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The rotational neck is a properly embedded hypersurface."
           }
         },
         {
@@ -1405,6 +1581,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The rotational neck is a properly embedded hypersurface."
           }
         }
       ]
@@ -1439,6 +1619,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The stated smooth minimizing-expander theorem gives an embedded hypersurface on the chosen side of the cone."
           }
         },
         {
@@ -1465,6 +1649,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The stated smooth minimizing-expander theorem gives an embedded hypersurface on the chosen side of the cone."
           }
         }
       ]
@@ -1499,6 +1687,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network: branches meet only at their prescribed triple junctions. This is not a smooth embedded curve at a junction."
           }
         },
         {
@@ -1524,6 +1716,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network: branches meet only at their prescribed triple junctions. This is not a smooth embedded curve at a junction."
           }
         }
       ]
@@ -1558,6 +1754,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Every stationary time slice is a properly embedded annulus."
           }
         }
       ]
@@ -1592,6 +1792,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "The initial Whitney immersion has a transverse double point at the origin. The regular flow remains a Lagrangian sphere and cannot become embedded."
           }
         },
         {
@@ -1617,6 +1821,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "The initial Whitney immersion has a transverse double point at the origin. The regular flow remains a Lagrangian sphere and cannot become embedded."
           }
         }
       ]
@@ -1651,6 +1859,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Every regular slice before the singular time is an embedded sphere; the singular limiting profile is not the classified slice."
           }
         },
         {
@@ -1677,6 +1889,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Every regular slice before the singular time is an embedded sphere; the singular limiting profile is not the classified slice."
           }
         }
       ]
@@ -1711,6 +1927,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded in this entry."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Every time slice for t < 0 is an embedded strictly convex closed curve."
           }
         }
       ]
@@ -1746,6 +1966,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for this normalized shrinker. Finite by the stated compactness or area growth; no value recorded."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed surface is embedded after desingularization; the intersecting sphere and plane are its singular limiting configuration."
           }
         }
       ]
@@ -1785,6 +2009,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The variational construction gives a compact embedded rotational hypersurface in every stated dimension."
           }
         },
         {
@@ -1815,6 +2043,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The variational construction gives a compact embedded rotational hypersurface in every stated dimension."
           }
         }
       ]
@@ -1852,6 +2084,10 @@
             "status": "bound",
             "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
             "upper": 2.4915177646857694
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Buzano–Nguyen–Schulz construction gives an embedded surface for every positive genus, including all stated subfamilies."
           }
         },
         {
@@ -1879,6 +2115,10 @@
             "status": "bound",
             "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
             "upper": 2.4915177646857694
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Buzano–Nguyen–Schulz construction gives an embedded surface for every positive genus, including all stated subfamilies."
           }
         },
         {
@@ -1906,6 +2146,10 @@
             "status": "bound",
             "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
             "upper": 2.4915177646857694
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Buzano–Nguyen–Schulz construction gives an embedded surface for every positive genus, including all stated subfamilies."
           }
         }
       ]
@@ -1944,6 +2188,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The surfaces are properly embedded for every stated genus. A multiplicity-two plane occurs only in the large-genus limit."
           }
         },
         {
@@ -1973,6 +2221,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The surfaces are properly embedded for every stated genus. A multiplicity-two plane occurs only in the large-genus limit."
           }
         },
         {
@@ -2002,6 +2254,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The surfaces are properly embedded for every stated genus. A multiplicity-two plane occurs only in the large-genus limit."
           }
         }
       ]
@@ -2040,6 +2296,10 @@
             "text": "F₀,₁ = λ for this normalized shrinker. λ < 8/e ≈ 2.94304 (proved; no individual value).",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each constructed surface is embedded; the doubled sphere occurs only as a limiting configuration."
           }
         }
       ]
@@ -2075,6 +2335,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded for the stated center and scale."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed three-dimensional translators in ℝ⁴ are properly embedded."
           }
         }
       ]
@@ -2112,6 +2376,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded for the stated center and scale."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed three-dimensional translators in ℝ⁴ are properly embedded."
           }
         }
       ]
@@ -2148,6 +2416,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The recorded subfamily has k₁ = 1, so its first two coordinates determine the circle parameter and every finite-time slice is embedded. Higher-multiplicity limits do not change this."
           }
         },
         {
@@ -2173,6 +2445,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The recorded subfamily has k₁ = 1, so its first two coordinates determine the circle parameter and every finite-time slice is embedded. Higher-multiplicity limits do not change this."
           }
         },
         {
@@ -2198,6 +2474,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The recorded subfamily has k₁ = 1, so its first two coordinates determine the circle parameter and every finite-time slice is embedded. Higher-multiplicity limits do not change this."
           }
         }
       ]
@@ -2233,6 +2513,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁(Γₜ) = √(1+D(t)) e^(−B(t)/4), B = Σⱼ r^(2kⱼ²)."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The last coordinate equals the real parameter, making every finite-time slice a proper embedding."
           }
         },
         {
@@ -2258,6 +2542,10 @@
           "gaussian": {
             "status": "exact",
             "text": "F₀,₁(Γₜ) = √(1+D(t)) e^(−B(t)/4), B = Σⱼ r^(2kⱼ²)."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The last coordinate equals the real parameter, making every finite-time slice a proper embedding."
           }
         }
       ]
@@ -2292,6 +2580,10 @@
           "gaussian": {
             "status": "not-recorded",
             "text": "Not recorded for the stated center and scale."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Every smooth positive-time slice is embedded. The multiplicity-two plane is an infinite-time limit, not a regular slice."
           }
         }
       ]
@@ -2326,6 +2618,10 @@
           "gaussian": {
             "status": "not-applicable",
             "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each smooth finite-time slice is embedded in the product ambient manifold. The multiplicity-two sphere is only the infinite-time limit."
           }
         },
         {
@@ -2351,6 +2647,10 @@
           "gaussian": {
             "status": "not-applicable",
             "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each smooth finite-time slice is embedded in the product ambient manifold. The multiplicity-two sphere is only the infinite-time limit."
           }
         }
       ]
@@ -2385,6 +2685,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁=λ for M=√2 times the source shrinker; finite, value unrecorded."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed one-ended surfaces are smooth and embedded."
           }
         }
       ]
@@ -2423,6 +2727,10 @@
             "status": "numerical",
             "text": "Exactly F₀,₁(T²×Rᵏ)=F₀,₁(T²)=λ(T²); numerical estimate ≈1.85122.",
             "value": 1.85122
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of the embedded Angenent torus with a Euclidean factor is embedded."
           }
         },
         {
@@ -2450,6 +2758,10 @@
             "status": "numerical",
             "text": "Exactly F₀,₁(T²×Rᵏ)=F₀,₁(T²)=λ(T²); numerical estimate ≈1.85122.",
             "value": 1.85122
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of the embedded Angenent torus with a Euclidean factor is embedded."
           }
         }
       ]
@@ -2484,6 +2796,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed two-ended surfaces are properly embedded for every stated genus."
           }
         }
       ]
@@ -2518,6 +2834,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each finite-parameter surface is embedded with multiplicity one. The stacked planar limit is not a member of the smooth family."
           }
         },
         {
@@ -2543,6 +2863,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each finite-parameter surface is embedded with multiplicity one. The stacked planar limit is not a member of the smooth family."
           }
         },
         {
@@ -2568,6 +2892,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Each finite-parameter surface is embedded with multiplicity one. The stacked planar limit is not a member of the smooth family."
           }
         }
       ]
@@ -2602,6 +2930,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated shrinkers are smooth and embedded in all recorded symmetry subfamilies."
           }
         },
         {
@@ -2627,6 +2959,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated shrinkers are smooth and embedded in all recorded symmetry subfamilies."
           }
         },
         {
@@ -2652,6 +2988,10 @@
           "gaussian": {
             "status": "finite",
             "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated shrinkers are smooth and embedded in all recorded symmetry subfamilies."
           }
         }
       ]
@@ -2690,6 +3030,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
             "upper": 2.520346901066281,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated surfaces are properly embedded for every stated genus, including the genus-one member."
           }
         },
         {
@@ -2719,6 +3063,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
             "upper": 2.520346901066281,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated surfaces are properly embedded for every stated genus, including the genus-one member."
           }
         },
         {
@@ -2748,6 +3096,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
             "upper": 2.520346901066281,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The flow-generated surfaces are properly embedded for every stated genus, including the genus-one member."
           }
         }
       ]
@@ -2782,6 +3134,10 @@
           "gaussian": {
             "status": "bound",
             "text": "F₀,₁ = λ for the normalized shrinker. λ ≤ Λ < ∞ uniformly in g; no numerical value for Λ is specified."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed three-ended surfaces are smooth and embedded."
           }
         }
       ]
@@ -2820,6 +3176,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "All five recorded symmetry/genus constructions give smooth embedded surfaces."
           }
         },
         {
@@ -2849,6 +3209,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "All five recorded symmetry/genus constructions give smooth embedded surfaces."
           }
         },
         {
@@ -2878,6 +3242,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "All five recorded symmetry/genus constructions give smooth embedded surfaces."
           }
         },
         {
@@ -2907,6 +3275,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "All five recorded symmetry/genus constructions give smooth embedded surfaces."
           }
         },
         {
@@ -2936,6 +3308,10 @@
             "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
             "upper": 2.9430355293715387,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "All five recorded symmetry/genus constructions give smooth embedded surfaces."
           }
         }
       ]
@@ -2970,6 +3346,10 @@
           "gaussian": {
             "status": "bound",
             "text": "F₀,₁(Σₖ) = λ(Σₖ) = ωₖ for the normalized shrinker; growth comparable to k^(1/(n+1))."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Gaussian-width hypersurfaces are smooth and embedded in the stated dimension range; their Euclidean product extensions are also embedded."
           }
         },
         {
@@ -2996,6 +3376,10 @@
           "gaussian": {
             "status": "bound",
             "text": "F₀,₁(Σₖ) = λ(Σₖ) = ωₖ for the normalized shrinker; growth comparable to k^(1/(n+1))."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Gaussian-width hypersurfaces are smooth and embedded in the stated dimension range; their Euclidean product extensions are also embedded."
           }
         },
         {
@@ -3021,6 +3405,10 @@
           "gaussian": {
             "status": "bound",
             "text": "F₀,₁ = λ for the normalized product shrinker; equal to the Gaussian area of the base."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The Gaussian-width hypersurfaces are smooth and embedded in the stated dimension range; their Euclidean product extensions are also embedded."
           }
         }
       ]
@@ -3060,6 +3448,10 @@
             "text": "F₀,₁(Σ) = λ(Σ) < λ(Drugan–Nguyen torus) < 2.",
             "upper": 2,
             "upper_strict": true
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The lower-entropy genus-one shrinker supplied by the cited existence theorem is embedded."
           }
         }
       ]

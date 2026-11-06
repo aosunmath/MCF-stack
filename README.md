@@ -54,7 +54,7 @@ The catalogue records source-supported properties and precise theorem or page lo
 
 ## Browse by geometric properties
 
-The [property browser](https://aosunmath.github.io/MCF-stack/browse/) combines filters for ambient space, intrinsic dimension, compactness, surface genus, topological ends, and Gaussian area or entropy. Group results by ambient space, genus, ends, or the type of entropy information, and share the resulting URL.
+The [property browser](https://aosunmath.github.io/MCF-stack/browse/) combines filters for ambient space, intrinsic dimension, compactness, embeddedness, surface genus, topological ends, and Gaussian area or entropy. Group results by ambient space, embeddedness, genus, ends, or the type of entropy information, and share the resulting URL. Embeddedness distinguishes embedded examples, nonembedded examples, families whose status depends on the construction, and cases where no conclusion is recorded.
 
 Exact formulas, proved bounds, numerical estimates, and unrecorded values remain distinct. The entropy bound filter uses only recorded scalar values or proved upper bounds. Surface genus applies only to two-dimensional objects; cross-sectional genus of a translator in four-space is recorded separately. Curved ambient flows are distinguished from Euclidean MCF, and Gaussian area is not identified with entropy for a general flow. See the [metadata guide](documentation/catalogue-properties.md) and [research expansion notes](documentation/research-expansion.md). The [latest shrinker additions](documentation/prescribed-tangent-shrinkers.md) follow the references in Chen–Lee–Sun–Zhao’s paper on prescribed tangent flows.
 

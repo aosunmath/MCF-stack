@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {matchingCases,entropyBelow,groupedMatches} from '../site/assets/catalogue-properties.mjs';
+import {matchingCases,entropyBelow,groupedMatches,embeddednessNames} from '../site/assets/catalogue-properties.mjs';
 const records=JSON.parse(readFileSync(new URL('../catalogue-properties.json',import.meta.url))).examples;
 const get=label=>records.find(r=>r.label===`ex:catalogue-${label}`);
 test('ambient space, genus and ends must belong to the same geometric case',()=>{
@@ -42,4 +42,46 @@ test('unspecified compactness does not become a noncompactness theorem',()=>{
 test('known higher-dimensional cylinder end counts remain searchable',()=>{
   assert.equal(matchingCases(get('round-cylinder'),{ambient:'r4',ends:'1'}).length,1);
   assert.equal(matchingCases(get('round-cylinder'),{ambient:'r4',ends:'2'}).length,1);
+});
+
+test('embeddedness is recorded for every case and distinguishes known nonembeddings',()=>{
+  for(const record of records)for(const c of record.cases){
+    assert.ok(Object.hasOwn(embeddednessNames,c.embeddedness.key));
+    assert.ok(c.embeddedness.text.trim());
+  }
+  assert.deepEqual(records.filter(r=>matchingCases(r,{embeddedness:'nonembedded'}).length).map(r=>r.label).sort(),
+    ['abresch-langer','drugan-sphere','whitney-sphere'].map(x=>`ex:catalogue-${x}`).sort());
+  assert.equal(matchingCases(get('bns-genus'),{ambient:'r3',genus:'1',embeddedness:'embedded'}).length,1);
+  assert.equal(matchingCases(get('clifford-torus'),{ambient:'r4',embeddedness:'embedded'}).length,1);
+});
+
+test('conditional and unrecorded embeddedness do not become a definite yes or no',()=>{
+  for(const name of ['curve-products','spherical-minimal']){
+    const r=get(name);
+    assert.equal(matchingCases(r,{embeddedness:'depends'}).length,r.cases.length);
+    assert.equal(matchingCases(r,{embeddedness:'embedded'}).length,0);
+    assert.equal(matchingCases(r,{embeddedness:'nonembedded'}).length,0);
+  }
+  const unknown={...get('round-sphere'),cases:[{...get('round-sphere').cases[0],embeddedness:{key:'not-recorded',text:'No conclusion recorded.'}}]};
+  assert.equal(matchingCases(unknown,{embeddedness:'not-recorded'}).length,1);
+  assert.equal(matchingCases(unknown,{embeddedness:'nonembedded'}).length,0);
+  assert.equal(matchingCases(unknown,{embeddedness:'embedded'}).length,0);
+});
+
+test('embedding classification is attached to the original example, not its limit or projection',()=>{
+  for(const name of ['ancient-torus-curves','double-plane-flow','double-sphere-flow','ketover-doubled-plane','expanding-networks']){
+    const r=get(name);
+    assert.equal(matchingCases(r,{embeddedness:'embedded'}).length,r.cases.length);
+  }
+});
+
+test('embeddedness filters combine within a case and grouping counts each family once',()=>{
+  const mixed={...get('round-sphere'),cases:[get('round-sphere').cases[0],get('drugan-sphere').cases[0]]};
+  assert.equal(matchingCases(mixed,{ambient:'r2',embeddedness:'nonembedded'}).length,0);
+  assert.equal(matchingCases(mixed,{ambient:'r3',embeddedness:'nonembedded'}).length,1);
+  const result=groupedMatches([mixed],{group:'embeddedness'});
+  assert.equal(result.families,1);
+  assert.equal(result.cases,2);
+  assert.deepEqual(result.groups.get('embedded')[0].indices,[0]);
+  assert.deepEqual(result.groups.get('nonembedded')[0].indices,[1]);
 });

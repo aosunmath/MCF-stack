@@ -10,6 +10,7 @@ AMBIENT_SHORT = {'r2': 'ℝ²', 'r3': 'ℝ³', 'r4': 'ℝ⁴', 'higher': 'Higher
 STATUS = {'exact':'Exact formula', 'bound':'Proved bound or relation', 'numerical':'Numerical estimate', 'finite':'Finite; value not recorded', 'not-recorded':'Not recorded', 'not-applicable':'Not applicable'}
 GENUS = {'0':'Genus 0', '1':'Genus 1', 'higher':'Finite genus ≥ 2', 'infinite':'Infinite genus', 'varies':'Genus depends on parameters', 'not-recorded':'Genus not recorded', 'na':'Not a surface'}
 ENDS = {'0':'No ends (compact)', '1':'One end', '2':'Two ends', '3':'Three ends', 'many':'At least four ends', 'varies':'Ends depend on parameters', 'not-recorded':'Ends not recorded'}
+EMBEDDEDNESS = {'embedded':'Embedded', 'nonembedded':'Not embedded', 'depends':'Depends on the construction', 'not-recorded':'Not recorded'}
 
 @cache
 def registry():
@@ -23,6 +24,9 @@ def registry():
             if case['dimension'] not in {'curve','surface','higher','network'}: raise ValueError('Invalid intrinsic dimension')
             if case['genus']['key'] not in GENUS or case['ends']['key'] not in ENDS: raise ValueError('Invalid topology facet')
             if case['dimension']!='surface' and case['genus']['key']!='na': raise ValueError('Surface genus attached to a nonsurface')
+            embedding=case.get('embeddedness', {})
+            if embedding.get('key') not in EMBEDDEDNESS or not isinstance(embedding.get('text'), str) or not embedding['text'].strip():
+                raise ValueError('Every geometric case needs an embeddedness status and explanation')
             for quantity in ('entropy','gaussian'):
                 item=case[quantity]
                 if item['status'] not in STATUS or not item['text']: raise ValueError('Invalid measurement metadata')
@@ -75,13 +79,15 @@ def case_html(case,index,identifier=None):
     ambient='; '.join(AMBIENTS[k] for k in case['ambient'])
     heading=case['name'] or case['topology']
     compact = 'Compact' if case['compact'] is True else 'Noncompact' if case['compact'] is False else 'Not specified for this subfamily'
-    fields=[('Ambient space',ambient),('Topology',case['topology']),('Compactness',compact),('Surface genus',case['genus']['text']),('Topological ends',case['ends']['text'])]
+    embedding=case['embeddedness']
+    embedding_label=EMBEDDEDNESS[embedding['key']]
+    fields=[('Ambient space',ambient),('Topology',case['topology']),('Embeddedness',f'{embedding_label}: {embedding["text"]}'),('Compactness',compact),('Surface genus',case['genus']['text']),('Topological ends',case['ends']['text'])]
     for key,title in [('entropy','Entropy'),('gaussian','Gaussian area')]:
         item=case[key]
         fields.append((title,f'{STATUS[item["status"]]}: {item["text"]}'))
     body=''.join(f'<dt>{escape(k)}</dt><dd>{escape(v)}</dd>' for k,v in fields)
     anchor = f' id="{escape(identifier, quote=True)}"' if identifier else ''
-    return f'<details class="property-case" data-case="{index}"{anchor}><summary>{escape(heading)} <span>· {escape(ambient)}</span></summary><dl>{body}</dl></details>'
+    return f'<details class="property-case" data-case="{index}"{anchor}><summary>{escape(heading)} <span>· {escape(ambient)} · {escape(embedding_label)}</span></summary><dl>{body}</dl></details>'
 
 def panel(label,root):
     record=registry().get(label)
@@ -90,7 +96,7 @@ def panel(label,root):
     spaces = ambient_memberships(record)
     links = ' · '.join(f'<a href="#{cases[0]["anchor"]}">{escape(AMBIENT_SHORT[key])}</a>' for key, cases in spaces.items())
     navigation = f'<nav class="ambient-case-links" aria-label="Ambient dimensions of this family">Ambient spaces: {links}</nav>'
-    return navigation+'<details class="property-panel"><summary>Ambient space, topology and entropy</summary>'+note+''.join(case_html(c,i,case_anchor(label,i)) for i,c in enumerate(record['cases']))+f'<p><a href="{root}browse/">Compare examples by these properties →</a></p></details>'
+    return navigation+'<details class="property-panel"><summary>Ambient space, topology, embeddedness and entropy</summary>'+note+''.join(case_html(c,i,case_anchor(label,i)) for i,c in enumerate(record['cases']))+f'<p><a href="{root}browse/">Compare examples by these properties →</a></p></details>'
 
 def prepare(entries,topics,topic_chapters,visuals):
     actual={v['label']:e for e in entries.values() for v in e['variants'] if v['source']=='gmt-foundations' and v['label'].startswith('ex:catalogue-')}
@@ -111,12 +117,13 @@ def page(records):
     controls=select('ambient','Ambient space',{'':'All ambient spaces',**AMBIENTS})
     controls+=select('dimension','Dimension',{'':'All dimensions','surface':'Surfaces (dimension 2)','curve':'Curves','higher':'Dimension ≥ 3','network':'Networks'})
     controls+=select('compact','Compactness',{'':'Any compactness status','compact':'Compact','noncompact':'Noncompact','unspecified':'Not specified'})
+    controls+=select('embeddedness','Embeddedness',{'':'Any embeddedness status',**EMBEDDEDNESS})
     controls+=select('genus','Surface genus',{'':'Any genus',**GENUS})
     controls+=select('ends','Topological ends',{'':'Any number of ends',**ENDS})
     controls+=select('quantity','Quantity',{'entropy':'Entropy λ','gaussian':'Centered Gaussian area F₀,₁'})
     controls+=select('evidence','Information available',{'':'Any status',**STATUS})
     controls+=select('limit','Proved entropy bound',{'':'No bound filter','2':'Entropy < 2','3':'Entropy < 3','4':'Entropy < 4'})
-    controls+=select('group','Group by',{'category':'Solution category','ambient':'Ambient space','genus':'Surface genus','ends':'Topological ends','measure':'Selected quantity / status'})
+    controls+=select('group','Group by',{'category':'Solution category','ambient':'Ambient space','embeddedness':'Embeddedness','genus':'Surface genus','ends':'Topological ends','measure':'Selected quantity / status'})
     controls+='<label class="property-query">Name or property<input name="q" type="search" placeholder="e.g. torus, conical, immersed"></label>'
     cards=[]
     for record in records:
@@ -124,9 +131,10 @@ def page(records):
         cards.append(f'<article class="property-card" data-label="{escape(record["label"],quote=True)}"><div class="property-card-heading"><img src="../assets/solitons/{record["model"]}.svg" alt="" width="100" height="64" loading="lazy"><div><h3><a href="../sections/{record["section"]}/">{escape(record["title"])}</a></h3><p>{escape(record["illustration_status"])}</p></div></div>'+note+''.join(case_html(c,i) for i,c in enumerate(record['cases']))+'</article>')
     payload=json.dumps(records,ensure_ascii=False).replace('<','\\u003c')
     return r'''<h1>Browse by properties</h1>
-<p>Find special flows by their ambient space, topology, and Gaussian area or entropy. Filters are combined within the same dimensional case of a family.</p>
+<p>Find special flows by their ambient space, topology, embeddedness, and Gaussian area or entropy. Filters are combined within the same dimensional case of a family.</p>
 <details class="property-conventions"><summary>Conventions and how to read the data</summary>
 <p>Topology refers to the parameter manifold for an immersion and to a regular time slice for an evolving flow. Surface genus applies only in dimension two. Ends are topological ends; several asymptotic sheets in one height direction need not be different ends. For disconnected examples the text states whether a count is per component. Ambient space means the space stated in the construction, rather than every possible Euclidean inclusion.</p>
+<p>Embeddedness describes the stated immersion or regular time slices in the full ambient space, not a projection or a singular or infinite-time limit. “Immersed” alone does not mean “not embedded.” Multiple covers are not embeddings. “Depends on the construction” identifies families whose status depends on their factors or input immersion; these do not match either definite filter. “Not recorded” means no conclusion is recorded here. Networks are called embedded when their branches meet only at the prescribed junctions; they are not smooth curves at those junctions.</p>
 <p>For an n-dimensional Euclidean submanifold, including immersion multiplicity,</p>
 <div class="displaymath">\[F_{x_0,\tau}(M)=(4\pi\tau)^{-n/2}\int_M e^{-|X-x_0|^2/(4\tau)}\,d\mu,\qquad \lambda(M)=\sup_{x_0,\,\tau>0}F_{x_0,\tau}(M).\]</div>
 <p>Centered Gaussian area means F₀,₁ of the stated slice. It generally differs from entropy and depends on center and scale. For the normalized complete shrinkers with polynomial area growth here, F₀,₁ equals entropy. A bound on the supremum over a flow's times is labeled separately from the entropy of a single slice. Euclidean entropy is not assigned to an intrinsic flow in a curved ambient manifold.</p>

@@ -490,7 +490,7 @@ def build_collection(books, destination, configuration):
             f'<a href="chapters/{key}/">{escape(chapters[key]["title"])}<small>{len(chapters[key]["topics"])} examples and families</small></a>' for key in categories
         ) + '</nav><p>Each catalogue entry records formulas or construction references, source-supported properties, and a picture. Drawings distinguish exact geometry, numerical ODE approximations, projections, and schematics.</p>'
     if property_records:
-        introduction += '<a class="browse-callout" href="browse/"><strong>Browse by properties →</strong><span>Ambient space · Topology, genus and ends · Gaussian area and entropy</span></a>'
+        introduction += '<a class="browse-callout" href="browse/"><strong>Browse by properties →</strong><span>Ambient space · Topology, genus and ends · Embeddedness · Gaussian area and entropy</span></a>'
     if sources:
         introduction += (Path(__file__).resolve().parents[1] / "site" / "home.html").read_text()
     featured = [(slug, title) for slug, title in FEATURED_TOPICS if slug in topics]
