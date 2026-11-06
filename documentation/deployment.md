@@ -1,8 +1,12 @@
 # Deployment and updates
 
-The repository is [aosunmath/GMT-stack](https://github.com/aosunmath/GMT-stack). The complete reading edition is published at **[aosunmath.github.io/GMT-stack/](https://aosunmath.github.io/GMT-stack/)** using GitHub Pages with `main` and `/docs` as its publishing source. The repository name, public root, and reader identity live in `scripts/project.py`.
+The repository is [aosunmath/MCF-stack](https://github.com/aosunmath/MCF-stack). The target address for the complete reading edition is **[aosunmath.github.io/MCF-stack/](https://aosunmath.github.io/MCF-stack/)** using GitHub Pages with `main` and `/docs` as its publishing source. The repository name, public root, and reader identity live in `scripts/project.py`.
 
-The personal homepage at [aosunmath.github.io](https://aosunmath.github.io/) is maintained separately in [aosunmath/aosunmath.github.io](https://github.com/aosunmath/aosunmath.github.io), with `main` and `/` as its publishing source. It currently links to this project.
+## Initial GitHub Pages setup
+
+In [MCF-stack Settings → Pages](https://github.com/aosunmath/MCF-stack/settings/pages), choose **Deploy from a branch**, then **main** and **/docs**, and save. This uses GitHub's native Pages deployment without adding a custom workflow. Repository creation or import does not itself enable Pages. See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+Publication requires authenticated write access to `aosunmath/MCF-stack`; fetching a public repository does not establish that access. Keep `upstream` pointed at GMT-stack for reference, and publish only to `origin`, MCF-stack.
 
 ## Build the reading edition
 
@@ -14,9 +18,9 @@ Install the dependencies listed in the [README](../README.md), then run `.venv/b
 
 After local tests, link checks, and desktop/mobile checks, publication uses a clean `main` checkout and an authenticated GitHub CLI (`gh`) available on `PATH`, with Git authentication configured for this fork. Commit authored changes **before** the final build so its source revision is exact. Run `.venv/bin/python scripts/publish.py` only when publication is requested. It checks that `origin` is this fork, fast-forwards `main`, checks the build revision, replaces `docs/`, and pushes a normal commit. It never force-pushes.
 
-GitHub Pages is configured to deploy from the branch, not a custom workflow. The generated `docs/.nojekyll` makes GitHub serve the prebuilt files without processing the manuscript with Jekyll. All reader pages, assets, search data, citations, and source records are included. Relative internal links work under the `/GMT-stack/` prefix.
+GitHub Pages is configured to deploy from the branch, not a custom workflow. The generated `docs/.nojekyll` makes GitHub serve the prebuilt files without processing the manuscript with Jekyll. All reader pages, assets, search data, citations, and source records are included. Relative internal links work under the `/MCF-stack/` prefix.
 
-The publisher requests native Pages delivery and checks the live `upstream.json` against the local build receipt. A successful Git push alone does not confirm that the public site has updated. To inspect deployment state, use `gh api repos/aosunmath/GMT-stack/pages` and `gh api repos/aosunmath/GMT-stack/pages/builds/latest`.
+The publisher requests native Pages delivery and checks the live `upstream.json` against the local build receipt. A successful Git push alone does not confirm that the public site has updated. To inspect deployment state, use `gh api repos/aosunmath/MCF-stack/pages` and `gh api repos/aosunmath/MCF-stack/pages/builds/latest`.
 
 No source-build workflow or scheduled update is included. On a requested update, `scripts/update.py` checks registered sources and proof revisions, rebuilds changed content, and invokes the publisher. A generated-only publication commit does not trigger another rebuild.
 

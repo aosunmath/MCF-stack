@@ -1,5 +1,5 @@
 {
   "enabled": false,
-  "repo": "aosunmath/GMT-stack",
-  "term_prefix": "Stack Project of Geometric Measure Theory and Variational Problems"
+  "repo": "aosunmath/MCF-stack",
+  "term_prefix": "MCF-stack: Special Solutions of Mean Curvature Flow"
 }

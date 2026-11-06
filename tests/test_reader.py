@@ -209,7 +209,7 @@ class ReaderTests(unittest.TestCase):
                 soup = BeautifulSoup((root / page["route"] / "index.html").read_text(), "html.parser")
                 self.assertFalse(soup.select('[data-comment-term], [data-load-comments]'))
                 self.assertIn('Comments are not enabled yet.', soup.select_one('#comments').get_text())
-                self.assertTrue(soup.select_one('link[rel="canonical"]')['href'].startswith('https://aosunmath.github.io/GMT-stack/'))
+                self.assertTrue(soup.select_one('link[rel="canonical"]')['href'].startswith('https://aosunmath.github.io/MCF-stack/'))
                 self.assertEqual(soup.select_one('.brand').get_text(strip=True), TITLE)
                 self.assertIn(CONTRIBUTORS, soup.select_one('#citation-text').get_text())
                 self.assertIn(TITLE, soup.title.get_text())
@@ -218,7 +218,7 @@ class ReaderTests(unittest.TestCase):
 
     def test_configured_comments_keep_stable_routes_and_github_fallback(self):
         reader = Reader({}, {}, {}, {}, {
-            'enabled': True, 'repo': 'aosunmath/GMT-stack', 'repo_id': 'TEST_REPO',
+            'enabled': True, 'repo': 'aosunmath/MCF-stack', 'repo_id': 'TEST_REPO',
             'category': 'General', 'category_id': 'TEST_CATEGORY',
             'category_slug': 'general', 'term_prefix': 'GMT Stack',
         })
@@ -226,9 +226,9 @@ class ReaderTests(unittest.TestCase):
         for route in reader.order:
             panel = BeautifulSoup(reader.comment_panel(route), 'html.parser').section
             terms.append(panel['data-comment-term'])
-            self.assertEqual(panel['data-repo'], 'aosunmath/GMT-stack')
+            self.assertEqual(panel['data-repo'], 'aosunmath/MCF-stack')
             self.assertTrue(panel['data-comment-term'].startswith('GMT Stack /'))
-            self.assertIn('aosunmath/GMT-stack/discussions/new?', panel.select_one('.comment-actions a:last-child')['href'])
+            self.assertIn('aosunmath/MCF-stack/discussions/new?', panel.select_one('.comment-actions a:last-child')['href'])
         self.assertEqual(len(terms), len(set(terms)))
 
 

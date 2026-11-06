@@ -26,7 +26,7 @@ def bibtex(title, route):
     def field(value):
         replacements = {"\\": r"\textbackslash{}", "{": r"\{", "}": r"\}", "\n": " "}
         return "".join(replacements.get(char, char) for char in value)
-    key = "gmt-stack-" + (route.replace("/", "-") or "home")
+    key = "mcf-stack-" + (route.replace("/", "-") or "home")
     return f'@misc{{{key},\n  author = {{{{{field(CONTRIBUTORS)}}}}},\n  title = {{{field(title)}}},\n  howpublished = {{{field(TITLE)}}},\n  url = {{{PUBLIC_ROOT}{route + "/" if route else ""}}}\n}}'
 
 

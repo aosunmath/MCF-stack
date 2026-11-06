@@ -23,7 +23,7 @@ from numbering import assign_numbers
 from history import curate_history
 from reader_references import page_references, bibliography, source_catalogue
 from search_index import write_search_index
-from project import TITLE, DESCRIPTION, REPOSITORY
+from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
 from source_snapshot import revision_id, revision_markup
 
 
@@ -472,8 +472,15 @@ def build_collection(books, destination, configuration):
         page.write_text(reader.shell(content, route, root, asset_revision()))
 
     introduction = f'<section class="collection-intro"><div><h1>{TITLE}</h1><p>{DESCRIPTION}</p><p class="collection-count">{len(entries):,} entries · {len(chapters)} chapters · {len(topics)} sections · {len(sources)} manuscript{"s" if len(sources) != 1 else ""} · {len(references)} references</p></div></section>'
+    if sources:
+        introduction += (Path(__file__).resolve().parents[1] / "site" / "home.html").read_text()
+    featured = [(slug, title) for slug, title in FEATURED_TOPICS if slug in topics]
+    if featured:
+        introduction += '<h2>Explore special solutions</h2><ul>' + ''.join(
+            f'<li><a href="sections/{slug}/">{escape(title)}</a></li>' for slug, title in featured
+        ) + '</ul><p>The inherited GMT and variational chapters provide background for this growing collection. Existing statements, proofs, references, and permanent tags remain available below.</p>'
     if not entries:
-        introduction += '<p>Content on geometric measure theory and variational problems will be added here.</p>'
+        introduction += '<p>Special solutions of mean curvature flow will be collected here.</p>'
     write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():

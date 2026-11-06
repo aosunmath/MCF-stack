@@ -3,11 +3,11 @@ from pathlib import Path
 import sys
 import json
 from common import configure, export
-from project import CONTRIBUTORS
+from project import CONTRIBUTORS, REPOSITORY
 from source_snapshot import manuscript_snapshot
 
 configure('gmt-foundations', 'Geometric measure theory and variational problems: a first reading',
-          'https://github.com/aosunmath/GMT-stack', author=CONTRIBUTORS)
+          REPOSITORY, author=CONTRIBUTORS)
 def check_entry_status(source, records):
     review = json.loads((source / 'entry-review.json').read_text())
     registered = {item['label']: item for item in review['entries']}

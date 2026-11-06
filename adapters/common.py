@@ -20,11 +20,11 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from source_snapshot import manuscript_snapshot, revision_markup
-from project import CONTRIBUTORS
+from project import CONTRIBUTORS, REPOSITORY as PROJECT_REPOSITORY
 
 SLUG = "gmt-source"
 TITLE = "GMT source"
-REPOSITORY = "https://github.com/aosunmath/GMT-stack"
+REPOSITORY = PROJECT_REPOSITORY
 AUTHOR = CONTRIBUTORS
 DIRECTORY = ""
 BIBLIOGRAPHY = "references.bib"

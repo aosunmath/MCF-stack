@@ -24,7 +24,7 @@ test('empty and one-character queries do not list the whole collection', () => {
 
 test('chunked search retains records and resolves chunk paths under the project root', async () => {
   const {loadSearchIndex} = await import('../site/assets/search.mjs');
-  const root = 'https://aosunmath.github.io/GMT-stack/';
+  const root = 'https://aosunmath.github.io/MCF-stack/';
   const records = [{tag: 'A', title: 'First', aliases: [], topic: '', text: ''}, {tag: 'B', title: 'Second', aliases: [], topic: '', text: 'Kelvin transform'}];
   const calls = [];
   const request = async url => {calls.push(url); return {ok: true, json: async () => url.endsWith('search.json') ? {version: 2, chunks: ['search-data/000.json', 'search-data/001.json']} : [records[url.endsWith('000.json') ? 0 : 1]]};};
@@ -37,5 +37,5 @@ test('chunked search retains records and resolves chunk paths under the project 
 
 test('a failed search chunk rejects the entire load', async () => {
   const {loadSearchIndex} = await import('../site/assets/search.mjs');
-  await assert.rejects(loadSearchIndex('https://example.org/GMT-stack/search.json', async url => ({ok: url.endsWith('search.json'), json: async () => ({version: 2, chunks: ['search-data/000.json']})})), /Search unavailable/);
+  await assert.rejects(loadSearchIndex('https://example.org/MCF-stack/search.json', async url => ({ok: url.endsWith('search.json'), json: async () => ({version: 2, chunks: ['search-data/000.json']})})), /Search unavailable/);
 });
