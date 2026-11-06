@@ -643,10 +643,10 @@
         "CatNguyenShrinker2014"
       ],
       "model": "nguyen-m-saddles",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Normalized sphere of radius two intersecting a plane. The highlighted circle is replaced by a bent Scherk core. The smaller periodic wave represents the core symbolically, not a solved shrinker. For sufficiently large m the construction has genus m minus one and one conical end.",
-      "alt": "Normalized sphere of radius two intersecting a plane. The highlighted circle is replaced by a bent Scherk core. The smaller periodic wave represents the core symbolically, not a solved shrinker. For sufficiently large m the construction has genus m minus one and one conical end."
+      "status": "Scherk-based construction schematic",
+      "interactive": true,
+      "caption": "A connected sphere–plane construction model with two caps, an inner disk, and one outer sheet joined through a Scherk saddle belt. Rotate it, open the cutaway, or inspect the unwrapped Scherk minimal surface. The displayed period counts illustrate genus m − 1; the existence theorem requires sufficiently large m. The global shape and conical profile are schematic, not a solved shrinker.",
+      "alt": "Connected Nguyen construction schematic with a periodic saddle belt, a cutaway exposing the inner disk and lower cap, and an unwrapped Scherk ingredient. Not a computed self-shrinker."
     },
     {
       "label": "ex:catalogue-angenent-torus-cylinders",
