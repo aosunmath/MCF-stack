@@ -18,12 +18,21 @@ export function ancientOval(t, count=240) {
   return a.concat(b.reverse());
 }
 
+// A cutaway removes angular sectors without modifying the solved meridian.
+export function revolutionFaces(data, degrees) {
+  if (!data.revolution) return data.faces.map((face,index)=>({face,index}));
+  const count=Math.round(Math.max(0,Math.min(360,degrees))*data.revolution.segments/360);
+  return data.faces.map((face,index)=>({face,index})).filter(({index})=>data.revolution.faceSectors[index]<count);
+}
+
 function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
   const stage=figure.querySelector('.soliton-stage');
   const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:(data.view?.pitch??.43),zoom:1,fourD:.55});
   let state=resetState(), vertices=data.vertices, dragging=null, wire=false, scheduled=false;
+  let degrees=data.revolution?.degrees??360, meridian=false;
+  let visibleFaces=revolutionFaces(data,degrees), resetRevolution=()=>{};
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
   const center=lo.map((v,i)=>(v+hi[i])/2);
@@ -41,18 +50,40 @@ function init(figure, data) {
       canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
     }
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
-    const scale=Math.min(width*.43,height*.42)/(radius||1)*state.zoom;
+    let scale=Math.min(width*.43,height*.42)/(radius||1)*state.zoom;
+    if(meridian){
+      const curve=data.revolution.meridian;
+      const rmax=Math.max(...curve.map(p=>p[0])),zmax=Math.max(...curve.map(p=>Math.abs(p[1])));
+      scale=Math.min(width*.78/rmax,height*.7/(2*zmax))*state.zoom;
+      const screen=([r,z])=>[width/2+scale*(r-rmax/2),height/2-scale*z];
+      ctx.strokeStyle='#8a9fa9';ctx.lineWidth=1;ctx.setLineDash([4,4]);
+      for(const line of [[[0,-zmax*1.12],[0,zmax*1.12]],[[0,0],[rmax*1.08,0]]]){
+        ctx.beginPath();ctx.moveTo(...screen(line[0]));ctx.lineTo(...screen(line[1]));ctx.stroke();
+      }
+      ctx.setLineDash([]);
+      const mid=(curve.length-1)/2;
+      for(const [piece,color] of [[curve.slice(0,mid+1),'#21667f'],[curve.slice(mid),'#af673b']]){
+        ctx.strokeStyle=color;ctx.lineWidth=2.5;ctx.beginPath();
+        piece.forEach((p,i)=>i?ctx.lineTo(...screen(p)):ctx.moveTo(...screen(p)));ctx.stroke();
+      }
+      ctx.fillStyle='#183f52';ctx.font='13px sans-serif';
+      ctx.fillText('Height z',12,22);ctx.fillText('Radius r',width-65,height-15);
+      canvas.dataset.view='meridian';canvas.dataset.zoom=state.zoom.toFixed(3);
+      return;
+    }
     const q=points.map(p=>rotatePoint(p,state));
     const screen=q.map(p=>[width/2+scale*p[0],height/2-scale*p[1]]);
-    const faces=data.faces.map(face=>({face,z:face.reduce((v,i)=>v+q[i][2],0)/3})).sort((a,b)=>a.z-b.z);
-    for(const {face} of faces) {
+    const faces=visibleFaces.map(({face,index})=>({face,index,z:face.reduce((v,i)=>v+q[i][2],0)/3})).sort((a,b)=>a.z-b.z);
+    for(const {face,index} of faces) {
       const [a,b,c]=face.map(i=>q[i]);
       const u=b.map((v,i)=>v-a[i]),v=c.map((val,i)=>val-a[i]);
       const normal=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
       const light=.42+.52*Math.abs((.3*normal[0]+.5*normal[1]+.8*normal[2])/(Math.hypot(...normal)||1));
-      const rgb=[67,139,169].map(base=>Math.round(base*light+255*(1-light)*.25));
+      const rgb=(data.palette?.[data.faceGroups?.[index]]??[67,139,169]).map(base=>Math.round(base*light+255*(1-light)*.25));
       ctx.beginPath();face.forEach((i,j)=>j?ctx.lineTo(...screen[i]):ctx.moveTo(...screen[i]));ctx.closePath();
       ctx.fillStyle=`rgb(${rgb.join(',')})`;ctx.fill();
+      // Cover antialias seams between adjacent triangles in the cutaway mesh.
+      if(data.revolution&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.4;ctx.stroke();}
       if(wire){ctx.strokeStyle='rgba(24,63,82,.32)';ctx.lineWidth=.5;ctx.stroke();}
     }
     ctx.strokeStyle='#21667f';ctx.lineWidth=2.5;
@@ -61,16 +92,18 @@ function init(figure, data) {
     }
     canvas.dataset.rotation=`${state.yaw.toFixed(3)},${state.pitch.toFixed(3)}`;
     canvas.dataset.zoom=state.zoom.toFixed(3);
+    canvas.dataset.view='surface';canvas.dataset.revolution=String(degrees);
   }
   function requestDraw(){if(!scheduled){scheduled=true;requestAnimationFrame(draw);}}
   function zoom(f){state.zoom=Math.max(.35,Math.min(4,state.zoom*f));requestDraw();}
-  canvas.addEventListener('pointerdown',e=>{dragging={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId);});
+  canvas.addEventListener('pointerdown',e=>{if(meridian)return;dragging={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId);});
   canvas.addEventListener('pointermove',e=>{if(!dragging)return;state.yaw+=(e.clientX-dragging.x)*.009;state.pitch+=(e.clientY-dragging.y)*.009;dragging={x:e.clientX,y:e.clientY};requestDraw();});
   canvas.addEventListener('pointerup',()=>{dragging=null;});
   canvas.addEventListener('pointercancel',()=>{dragging=null;});
   // Wheel zoom requires focus: scrolling the reading page remains predictable.
   canvas.addEventListener('wheel',e=>{if(document.activeElement!==canvas)return;e.preventDefault();zoom(Math.exp(-e.deltaY*.0015));},{passive:false});
   canvas.addEventListener('keydown',e=>{
+    if(meridian&&e.key.startsWith('Arrow'))return;
     const keys={ArrowLeft:()=>state.yaw-=.12,ArrowRight:()=>state.yaw+=.12,ArrowUp:()=>state.pitch-=.12,ArrowDown:()=>state.pitch+=.12,'+':()=>zoom(1.15),'=':()=>zoom(1.15),'-':()=>zoom(1/1.15)};
     if(keys[e.key]){e.preventDefault();keys[e.key]();requestDraw();}
   });
@@ -78,9 +111,27 @@ function init(figure, data) {
     const action=button.dataset.viewAction;
     if(action==='in')zoom(1.2);
     if(action==='out')zoom(1/1.2);
-    if(action==='reset'){state={...resetState(),fourD:state.fourD};requestDraw();}
+    if(action==='reset'){state={...resetState(),fourD:state.fourD};resetRevolution();requestDraw();}
     if(action==='wire'){wire=!wire;button.setAttribute('aria-pressed',String(wire));requestDraw();}
   });
+  if(data.revolution){
+    const controls=figure.querySelector('.soliton-controls');
+    const button=document.createElement('button');button.type='button';button.textContent='Meridian';button.setAttribute('aria-pressed','false');
+    const label=document.createElement('label'),output=document.createElement('output'),input=document.createElement('input');
+    input.type='range';input.min='90';input.max='360';input.step=String(360/data.revolution.segments);
+    input.setAttribute('aria-label','Revolution angle');
+    const help=figure.querySelector('.soliton-help');
+    const sync=()=>{
+      button.setAttribute('aria-pressed',String(meridian));input.disabled=meridian;
+      input.value=String(degrees);output.textContent=`Revolve: ${degrees}°`;
+      visibleFaces=revolutionFaces(data,degrees);
+      help.textContent=meridian?'Generating curve in the (r, z) half-plane. Blue: shot from the upper pole. Orange: reflected continuation. Zoom buttons remain active.':'Drag to rotate; + / − zoom. The angle control removes sectors to reveal the sheets; cut edges are display boundaries. Meridian shows the generating curve.';
+    };
+    input.addEventListener('input',()=>{degrees=Number(input.value);sync();requestDraw();});
+    button.addEventListener('click',()=>{meridian=!meridian;dragging=null;state.zoom=1;sync();requestDraw();});
+    resetRevolution=()=>{meridian=false;degrees=data.revolution.degrees;sync();};
+    label.append(output,input);controls.append(button,label);sync();
+  }
   if(vertices[0].length===4){
     const label=document.createElement('label');label.textContent='4D rotation ';
     const input=document.createElement('input');input.type='range';input.min='0';input.max=String(Math.PI/2);input.step='.01';input.value=String(state.fourD);input.setAttribute('aria-label','Rotation in the second and fourth coordinates');
