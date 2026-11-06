@@ -1,0 +1,187 @@
+% Translator catalogue: source-checked summaries; external proofs are not reproduced.
+\chapter{The grim reaper and its cylinders}\label{sec:catalogue-grim-reaper}
+\begin{example}[The grim reaper and its cylinders]\label{ex:catalogue-grim-reaper}
+For unit upward translation, an exact parametrization in $\mathbb R^{n+1}$ is
+\[
+ X(x,y,t)=(x,y,-\log\cos x+t),\qquad |x|<\pi/2,\quad y\in\mathbb R^{n-1},\quad t\in\mathbb R.
+\]
+For $n=1$ omit $y$. More generally the planar curve of speed $c>0$ has height $-c^{-1}\log\cos(cx)+ct$, on $|x|<\pi/(2c)$.
+\begin{itemize}
+\item The curve and all its Euclidean products are complete, properly embedded, noncompact, and diffeomorphic to $\mathbb R^n$. Their motion is eternal.
+\item At unit speed the curve has curvature magnitude $\cos x$ and total curvature $\pi$. Its two ends have the vertical asymptotes $x=\pm\pi/2$.
+\item The product is invariant under translations in its $\mathbb R^{n-1}$ factor. For $n\geq2$ its second fundamental form has rank one; in $\mathbb R^3$ its Gauss curvature is zero, so it is not strictly convex.
+\item As a translating graph it is stable for compactly supported variations of the translator weighted area. This is weighted stability, not a claim about stability for unweighted Euclidean area.
+\end{itemize}
+The supplied notes \cite{CatHIMWNotes19}, Example 1.6, PDF page 4, use downward translation; the displayed surface is its reflection in a horizontal plane. The completeness and curvature calculations are also given in Proposition~\ref{prop:grim-reaper-speed-family}; graphical weighted minimality is discussed in \cite{CatHIMWGraphical18}, Section 2, PDF page 5.
+\end{example}
+
+
+\chapter{Tilted grim-reaper cylinders}\label{sec:catalogue-tilted-grim-reaper}
+\begin{example}[Tilted grim-reaper cylinders]\label{ex:catalogue-tilted-grim-reaper}
+Let $a\in\mathbb R$ and $A=1+a^2$. An exact unit-speed upward translator in $\mathbb R^3$ is
+\[
+ X(x,y,t)=\left(x,y,-A\log\cos(x/\sqrt A)+ay+t\right),\quad
+ |x|<\frac\pi2\sqrt A,\quad y,t\in\mathbb R.
+\]
+\begin{itemize}
+\item This is a complete, properly embedded noncompact surface diffeomorphic to $\mathbb R^2$. It has zero Gauss curvature and is invariant under translation in the direction $(0,1,a)$.
+\item Its horizontal graph domain is a strip of width $\pi\sqrt{1+a^2}$. The case $a=0$ is the ordinary grim-reaper cylinder. The underlying surface is a rotation and dilation of that cylinder.
+\item At a fixed width greater than $\pi$, the two signs of $a$ give the two opposite tilts. Translation in a tangent invariant direction does not change the evolving image.
+\item Products with Euclidean factors give higher-dimensional translators. Graphical weighted stability holds, as in the preceding example.
+\end{itemize}
+See \cite{CatHIMWGraphical18}, equation (1.4), PDF page 3, with exchanged horizontal coordinates and reflected vertical direction. Example~\ref{ex:tilted-grim-reaper} verifies the upward formula directly. These cylinders must be distinguished from the strictly convex $\Delta$-wings on strips of the same width.
+\end{example}
+
+
+\chapter{The rotational bowl translator}\label{sec:catalogue-bowl-translator}
+\begin{example}[The rotational bowl translator]\label{ex:catalogue-bowl-translator}
+For each $n\geq2$, the bowl is the entire graph $z=f(r)$, $r=|x|$ in $\mathbb R^n$, moving by $z\mapsto z+t$. Its radial profile is specified by the regular ODE
+\[
+ \frac{f''}{1+(f')^2}+\frac{n-1}{r}f'=1,\qquad
+ f(0)=f'(0)=0,\qquad f''(0)=1/n.
+\]
+This is an ODE characterization, not an elementary closed formula.
+\begin{itemize}
+\item The bowl is complete, properly embedded, strictly convex, rotationally invariant, and diffeomorphic to $\mathbb R^n$. For $n\geq2$ it has one topological end and gives an eternal flow.
+\item Up to a vertical additive constant, its height has asymptotic expansion
+\[
+ f(r)=\frac{r^2}{2(n-1)}-\log r+C+O(r^{-1})\quad(r\to\infty).
+\]
+A paraboloid is only a leading approximation, not the exact translator.
+\item It is unique among entire rotationally invariant translating graphs, up to translation. In $\mathbb R^3$ it is the only complete entire translating graph, up to the natural rigid motions and normalization.
+\item In $\mathbb R^3$, Brendle--Choi's theorem characterizes its flow among noncompact, strictly convex, noncollapsed ancient flows, up to scaling and ambient isometries. These are the hypotheses of the cited classification.
+\item Graphical weighted stability holds. The stronger dynamical stability theorem of Clutterbuck--Schn\"urer--Schulze concerns continuous graphical initial data whose height difference from the bowl tends to zero at spatial infinity; the resulting height difference tends uniformly to zero as time tends to infinity.
+\end{itemize}
+The supplied notes \cite{CatHIMWNotes19}, Section 4 and Theorem 4.1, PDF pages 10--11, describe the construction and classification. The original ODE and asymptotic analysis is \cite{CSS07}, Section 2, Lemmas 2.1--2.2; its Theorem 1.1 gives the stated dynamical stability. The ancient classification is \cite{CatBrendleChoi19}, Theorem 1.1, printed page 36 (PDF page 2). A local construction and estimates are recorded in Theorem~\ref{thm:rotational-bowl-construction}.
+\end{example}
+
+
+\chapter{Rotational translating catenoids}\label{sec:catalogue-translating-catenoid}
+\begin{example}[Rotational translating catenoids]\label{ex:catalogue-translating-catenoid}
+For every neck radius $R>0$ and $n\geq2$, there is a rotational translating hypersurface with two ends. These are also called winglike translators. They move upward with unit speed. A convenient numerical description uses meridian arclength $s$ and tangent angle $\alpha$:
+\[
+ r'=\cos\alpha,\qquad z'=\sin\alpha,\qquad
+ \alpha'=\cos\alpha-\frac{n-1}{r}\sin\alpha,
+ \qquad (r,z,\alpha)(0)=(R,0,\pi/2).
+\]
+Revolution gives $(r(s)\omega,z(s)+t)$ with $\omega\in S^{n-1}$ and $t\in\mathbb R$. The arclength system is obtained from $\vec H=e_{n+1}^{\perp}$ and is not a closed formula.
+\begin{itemize}
+\item The surface is complete, embedded, noncompact and nonconvex, with topology $S^{n-1}\times\mathbb R$. In $\mathbb R^3$ it is an annulus, not an entire graph.
+\item Outside the neck the two ends are radial graphs. Each has expansion
+\[
+ f_\pm(r)=\frac{r^2}{2(n-1)}-\log r+C_\pm+O(r^{-1}).
+\]
+In particular the two ends go to spatial infinity and the complete surface is proper.
+\item The parameter controls the neck radius. The supplied survey describes the limiting double bowl with a singular point on the axis as the neck parameter tends to zero.
+\end{itemize}
+See \cite{CatHIMWNotes19}, Section 4, PDF page 10. The original construction and end expansion are \cite{CSS07}, Lemma 2.3, PDF pages 5--7 of the author preprint. No uniqueness beyond the radial initial-value construction, nor an entropy or stability classification for this non-graphical surface, is asserted here.
+\end{example}
+
+
+\chapter{Strictly convex delta-wing translators}\label{sec:catalogue-delta-wing}
+\begin{example}[Strictly convex delta-wing translators]\label{ex:catalogue-delta-wing}
+For every $b>\pi/2$, there is a complete strictly convex unit-speed translator that is a graph $z=u_b(x,y)$ over
+\[
+ (x,y)\in\mathbb R\times(-b,b),\qquad
+ \left(\delta_{ij}-\frac{(u_b)_i(u_b)_j}{1+|Du_b|^2}\right)(u_b)_{ij}=1.
+\]
+This is a nonlinear PDE characterization; no explicit height formula is supplied.
+\begin{itemize}
+\item The graph is embedded, noncompact, diffeomorphic to $\mathbb R^2$, and has positive Gauss curvature everywhere. After centering and a vertical translation, $u_b(0,0)=0$ is its minimum and $u_b$ is even in both coordinates.
+\item The width is exactly $2b>\pi$. Among complete translators on this strip that are not tilted grim reapers, it is unique up to translation. The centered solution depends smoothly on compact sets under limits of the width parameter.
+\item Along the two unbounded horizontal directions, translated graphs converge smoothly to the two oppositely tilted grim-reaper cylinders of the same strip width. Their angle is determined by
+\[
+ \cos\theta=\frac{\pi}{2b}.
+\]
+This relation follows from the explicit tilted-cylinder width; the supplied preprint has an inverted ratio in its printed statement of Theorem 2.4.
+\item Graphical weighted stability holds. This is a strictly convex surface, whereas the tilted grim-reaper cylinders on the same strip have zero Gauss curvature.
+\end{itemize}
+See \cite{CatHIMWGraphical18}, Theorems 1.1, 2.4, 4.1 and 5.7 and Corollary 5.5 (PDF pages 4, 6, 10--12). The construction, uniqueness, and asymptotic results are cited rather than reproduced here. An illustration of the strip and its two limiting grim cylinders is a schematic of its asymptotics, not a computed solution $u_b$.
+\end{example}
+
+
+\chapter{Nonrotational entire convex translators}\label{sec:catalogue-wang-entire-translators}
+\begin{example}[Nonrotational entire convex translators]\label{ex:catalogue-wang-entire-translators}
+In every dimension $n\geq3$, Xu-Jia Wang constructs entire convex solutions $u:\mathbb R^n\to\mathbb R$ of the unit-speed upward translator equation
+\[
+ \left(\delta_{ij}-\frac{u_i u_j}{1+|Du|^2}\right)u_{ij}=1
+\]
+whose level sets are not spheres or round cylinders in any orthogonal coordinate system. This is an existence construction, not an explicit formula.
+\begin{itemize}
+\item The graphs are embedded, complete, proper and diffeomorphic to $\mathbb R^n$; the last three facts also follow directly from being smooth entire graphs. Their flows exist for all $t\in\mathbb R$ by translation.
+\item They are convex and break the spherical or cylindrical rotational pattern of the bowl and its Euclidean products. The corresponding statement for complete entire graphs in $\mathbb R^3$ is false: there the bowl is the only example.
+\item Under spatial blow-down $u_h(x)=h^{-1}u(\sqrt h\,x)$, Wang's theorem gives, after rotations depending on $h$, a quadratic limit of the form
+\[
+ \frac{x_1^2+\cdots+x_k^2}{2(k-1)},\qquad 2\leq k\leq n.
+\]
+The theorem does not rule out slow rotation of the axes as $h\to\infty$. This is an asymptotic limit, not a formula for $u$.
+\item The same paper also constructs nonrotational complete convex graphical translators over slab regions. No uniqueness theorem for the general higher-dimensional families is claimed here.
+\end{itemize}
+See \cite{CatXJWang11}, Theorems 1.2--1.3, printed pages 1187--1188 (PDF pages 3--4), using the case $\sigma=1$ of equation (1.2); the $\sigma=0$ case describes a different, level-set formulation. Any three-dimensional drawing of these higher-dimensional examples is only a projected or sectional schematic.
+\end{example}
+
+
+\chapter{Translators with prescribed apex curvatures}\label{sec:catalogue-prescribed-apex-translators}
+\begin{example}[Translators with prescribed apex curvatures]\label{ex:catalogue-prescribed-apex-translators}
+Let $k_1,\ldots,k_n\geq0$ with $\sum_i k_i=1$. Hoffman--Ilmanen--Mart\'in--White construct a complete properly embedded translating graph over an open domain $\Omega\subset\mathbb R^n$. After reflecting their downward convention to upward translation, it satisfies
+\[
+ \min u=u(0)=0,\qquad D^2u(0)=\operatorname{diag}(k_1,\ldots,k_n).
+\]
+These equations specify apex data, not an explicit global formula.
+\begin{itemize}
+\item The function is even in every coordinate. If $k_i=0$ it is invariant under translation in the $i$-th coordinate; if $k_i>0$, then $D_i u$ has the same sign as $x_i$ away from $x_i=0$.
+\item Equal apex curvatures $k_i=k_j$ give invariance under rotations in the $(x_i,x_j)$-plane.
+\item The domain is either all of $\mathbb R^n$ or a slab $\{|x_i|<b\}$. In the slab case the corresponding $k_i$ is strictly larger than every other $k_j$.
+\item If the two largest prescribed curvatures are equal, the resulting graph is entire. The supplied edition obtains an $(n-2)$-parameter family of pairwise noncongruent entire examples this way.
+\item The construction gives existence and the listed symmetries, but does not assert general uniqueness or convexity of every higher-dimensional graph. In particular, apex positivity alone is not a global convexity theorem.
+\end{itemize}
+See \cite{CatHIMWGraphical18}, Theorem 8.1 and Corollary 8.2, PDF page 18. The source also has a prescribed-width slab construction in Section 11; its final discussion explicitly leaves general convexity open. A curvature-ellipse illustration displays only the local Hessian data, not the global surface.
+\end{example}
+
+
+\chapter{Scherkenoid translators}\label{sec:catalogue-scherkenoids}
+\begin{example}[Scherkenoid translators]\label{ex:catalogue-scherkenoids}
+The supplied notes describe Scherkenoids as complete, properly embedded, nongraphical translators in $\mathbb R^3$, obtained as limits of Scherk-type translators. Their height is not given by an explicit formula.
+\begin{itemize}
+\item They are singly periodic. The notes describe a one-parameter family using the angle between two asymptotic plane directions; no exhaustive parameterization of all Scherkenoids is asserted here.
+\item In the source's downward convention there is one asymptotic plane as $z\to+\infty$ and an infinite family of parallel asymptotic planes as $z\to-\infty$. For the upward convention used in this catalogue these two height directions are reversed.
+\item These are noncompact eternal flows. A picture of their asymptotic planes records only end arrangement and periodicity, not an exact or numerically solved Scherkenoid.
+\end{itemize}
+See \cite{CatHIMWNotes19}, Section 5 and Figure 6, PDF pages 11--12. That supplied edition surveys constructions proved elsewhere; the present entry retains that external-proof status. A later detailed source is \cite{CatHMW20}. No uniqueness, genus, entropy, or stability claim is inferred from the schematic.
+\end{example}
+
+
+\chapter{The pitchfork translator}\label{sec:catalogue-pitchfork}
+\begin{example}[The pitchfork translator]\label{ex:catalogue-pitchfork}
+The pitchfork is a complete, properly embedded, simply connected, nongraphical translator in $\mathbb R^3$. The supplied notes describe it as a limit of Scherk-type examples, without an explicit formula.
+\begin{itemize}
+\item It has genus zero. This distinguishes it from Nguyen's periodic infinite-genus tridents despite their similar asymptotic plane arrangements.
+\item After reflection to upward translation, it is asymptotic to one plane as $z\to-\infty$ and to three parallel planes as $z\to+\infty$. These are height-direction asymptotics, not a claim that the surface has four topological ends.
+\item Its translation yields an eternal noncompact flow. The later construction paper records finite topology and quadratic area growth for its pitchfork subfamily.
+\end{itemize}
+See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{CatHMW20}. The existence proof is external. The supplied notes do not give a complete parameter range or a uniqueness theorem, and the plane diagram is only schematic.
+\end{example}
+
+
+\chapter{Nguyen translating tridents}\label{sec:catalogue-nguyen-tridents}
+\begin{example}[Nguyen translating tridents]\label{ex:catalogue-nguyen-tridents}
+Nguyen's tridents are complete periodic embedded translators in $\mathbb R^3$ constructed by desingularizing the intersection of a grim-reaper cylinder and a plane. There is no explicit global parametrization in the supplied survey.
+\begin{itemize}
+\item They are noncompact and have infinite genus. The construction uses repeated small connecting regions; a smooth union of the input grim cylinder and plane is not itself the translator.
+\item The supplied notes compare their asymptotics with the pitchfork: in the upward convention there is a single asymptotic plane in the negative-height direction and three parallel asymptotic planes in the positive-height direction.
+\item They generate eternal flows by translation. Periodicity and infinite genus distinguish them from the simply connected pitchfork.
+\end{itemize}
+See \cite{CatHIMWNotes19}, Section 4, PDF page 11, and Section 5, PDF page 12, referring to \cite{CatNguyen09}. The construction is externally cited; the survey does not specify a full parameter range or a uniqueness, entropy, or stability result. A drawing of the intersecting plane and grim cylinder illustrates the gluing configuration only.
+\end{example}
+
+
+\chapter{Finite-genus translators with three ends}\label{sec:catalogue-finite-genus-translators}
+\begin{example}[Finite-genus translators with three ends]\label{ex:catalogue-finite-genus-translators}
+D\'avila--del Pino--Nguyen construct complete embedded orientable translating surfaces in $\mathbb R^3$ with finite topology and large genus. The construction desingularizes an intersecting bowl translator and translating catenoid. It is a gluing construction, not an explicit formula.
+\begin{itemize}
+\item The examples have three asymptotically paraboloidal ends. They are noncompact; their translation gives an eternal flow.
+\item The high-genus connecting region replaces a circle of intersection of the model surfaces by a Scherk-like arrangement of small tunnels.
+\item The genus restriction is part of the construction: this statement does not supply examples of every prescribed small genus or a uniqueness theorem.
+\end{itemize}
+The supplied notes \cite{CatHIMWNotes19}, Section 4, PDF page 11, describe the gluing configuration and the large-genus restriction. The original reference is \cite{CatDPN17}; its abstract states completeness, embeddedness, orientability, finite topology, and the three paraboloidal ends. A diagram of the intersecting bowl and catenoid is the singular input configuration, not the constructed surface, and no unproved stability or entropy value is assigned.
+\end{example}

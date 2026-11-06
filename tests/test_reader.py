@@ -4,6 +4,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from bs4 import BeautifulSoup
 
@@ -80,8 +81,11 @@ class ReaderTests(unittest.TestCase):
         self.records.insert(0, parent)
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
-            self.build(root)
+            illustrated_label = self.records[1]['label']
+            with patch('collection.visualization', side_effect=lambda label, prefix: '<figure class="soliton-figure">A mathematical drawing.</figure>' if label == illustrated_label else ''):
+                self.build(root)
             soup = BeautifulSoup((root / 'sections/alpha/index.html').read_text(), 'html.parser')
+            self.assertEqual(len(soup.select('.soliton-figure')), 1)
             self.assertEqual(len(soup.select('.reading-chunk')), 1)
             self.assertEqual(len(soup.select('.env-definition')), 2)
             self.assertEqual(len(soup.select('.env-proof')), 1)

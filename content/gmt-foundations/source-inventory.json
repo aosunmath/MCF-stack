@@ -1715,7 +1715,7 @@
       "sha256": "158cf668e44a6d7e9650ed0d418eeeff3b7622e014f586f923d87b0371027842",
       "pdf_pages": 79,
       "redistributed": false,
-      "role": "Weighted shrinker identities and Gaussian variation formulas; local proofs supplied, with spherical harmonic and compact elliptic spectral facts explicitly external.",
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
       "review_status": "selected-passages-checked",
       "metadata_status": "source-checked",
       "checked_passages": [
@@ -1727,7 +1727,14 @@
         "Lemma 7.2 and Gaussian scale derivative, pp. 783--785",
         "Lemma 7.10 and proof, equations (7.14)--(7.27), pp. 785--788",
         "Lemma 7.28 and proof of Theorem 0.15, pp. 788--792",
-        "Lemma10.8 and proof, printed808–809 (PDF54–55): tensor shrinker Simons. Equations(10.15)–(10.17), p.809: log-H compact-test estimate; the full global conclusion of Proposition10.14 is not imported."
+        "Lemma10.8 and proof, printed808–809 (PDF54–55): tensor shrinker Simons. Equations(10.15)–(10.17), p.809: log-H compact-test estimate; the full global conclusion of Proposition10.14 is not imported.",
+        "Theorems 0.12 and 0.16",
+        "Theorems 0.12 and 0.17",
+        "pp. 757-759; Theorems 0.12, 0.16, 0.17 (PDF pp. 8-10)",
+        "pp. 758-759; Theorems 0.12 and 0.16 (PDF pp. 8-9)"
+      ],
+      "catalogue_bibliography_keys": [
+        "CM12"
       ]
     },
     {
@@ -2104,6 +2111,1168 @@
         "Publisher metadata and DOI10.1007/BF01232278 checked2026-10-29;volume105,pages547–569,1991. No issue number inferred from secondary records.",
         "Theorem2.3 proof,printed552–553/PDF6–7,visually inspected:intrinsic gradient cross term,64n beta² exponential weight,positive support and center lower bound. Explicit constants derived locally with beta>=1."
       ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "1-dimensional solutions of the λ-self shrinkers_Chang.pdf",
+      "title": "1-dimensional solutions of the λ-self shrinkers",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "f29cf5135a941ce62860c93b7867508ccbb7c5705699ecdfeac0bc155eed0fa7",
+      "pdf_pages": 16,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "2014 Schulze - Uniqueness of compact tangent flows in Mean Curvature Flow.pdf",
+      "title": "2014 Schulze - Uniqueness of compact tangent flows in Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "2410ed3ddedb99e56f3435a9d27303bea46bb4f4888c1a7da7c6582932772603",
+      "pdf_pages": 10,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatDLN2018",
+      "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+      "title": "A Survey of Closed Self-Shrinkers with Symmetry",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "550ea95be28d63fe3568e4530c3e0c93ae37091459021ad74d44f7eb77d2ece5",
+      "pdf_pages": 32,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 3.3, PDF p. 8",
+        "Section 3.3, PDF pp. 10-11",
+        "Section 3.3, PDF pp. 8-11; equation (5.2), PDF p. 14",
+        "Sections 2.5 and 3.3, PDF pp. 4 and 8",
+        "Theorem 1 and Section 3.1, PDF pp. 5-6",
+        "Theorem 1 for factor curvature ODE, PDF pp.5-6",
+        "Theorem 3, PDF pp. 14-15"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatDLN2018"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A Unique Continuation Property for the Level Set Equation_Strehlke.pdf",
+      "title": "A Unique Continuation Property for the Level Set Equation",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "deedf9ff780e45592d8cf0ebbf6de11a9eafcfcef6ddb2a8121f345cf5da63ee",
+      "pdf_pages": 9,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatAIC95",
+      "filename": "A computed example of nonuniqueness of mean curvature flow in R3_Angenent-Ilmanen-Chopp.pdf",
+      "title": "A computed example of nonuniqueness of mean curvature flow in R3",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "39fac17afcfc8efb3de3d31ed6f47f78132e0234c921ba49f319b50d0021f370",
+      "pdf_pages": 23,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 2 Lemmas 2,3 and Theorem 4 read; PDF14 visually inspected. Qualitative double-cone results proved. Computed genus-three shrinker and angle decimals excluded from proof claims."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAIC95"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A general regularity theory for weak mean curvature flow_Kasai-Tonegawa.pdf",
+      "title": "A general regularity theory for weak mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "6eab600849d6adef3e9fd44bfcd9bf3773d13b1ff81705bf2b61f06d78a8857f",
+      "pdf_pages": 68,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A local monotonicity formula for mean curvature flow_Ecker.pdf",
+      "title": "A local monotonicity formula for mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "bd3138f5eb9ca4d02ee849531ddaac7bbd92d47fc56d26f1bb6b1ea8b5c2498f",
+      "pdf_pages": 24,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A local regularity theorem for mean curvature flow with triple edges_Schulze-White.pdf",
+      "title": "A local regularity theorem for mean curvature flow with triple edges",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "9110b8be7b50799e4db454cdd2dae6122019323898a345ba26c36048a0248983",
+      "pdf_pages": 25,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A local regularity theorem for mean curvature flow_White.pdf",
+      "title": "A local regularity theorem for mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "2cfb0208034b37b7c7ba7f6610288770f91a56af57a4bcce5d3d2f06ba3805f9",
+      "pdf_pages": 33,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A note of the Hamiltonian area conjecture_Ilmanen.pdf",
+      "title": "A note of the Hamiltonian area conjecture",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "278bb9d8721b1c72697bcf0fbc2a7034af205fae1483391b80f4e478ee93ac14",
+      "pdf_pages": 7,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatViana18",
+      "filename": "A note on the evolution of the Whitney sphere along mean curvature flow_Viana.pdf",
+      "title": "A note on the evolution of the Whitney sphere along mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "992f374dc9b387fdc371dad9291f068fb5c4cb8ceb5e7e48b8391e2b5c756fd3",
+      "pdf_pages": 13,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Supplied version 2 Dec12 2018 pages1–3 and theorem1.3 read; explicit immersion is initial data only."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatViana18"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "A numerical stability analysis of mean curvature flow of noncompact hypersurfaces with Type-II curvature blowup_Garfinkle-Isenberg-Knopf-Wu.pdf",
+      "title": "A numerical stability analysis of mean curvature flow of noncompact hypersurfaces with Type-II curvature blowup",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "47e1eef1401d8bc159acff72c981e3ac76a535b31344121ebf40a48ee7601889",
+      "pdf_pages": 23,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatDrugan2015",
+      "filename": "An immersed S2 self-shrinkers_Drugan.pdf",
+      "title": "An immersed S2 self-shrinkers",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "2bd7af8d848b7baa07fd9a84f259583835e15454a42a3d75eb26dd8eb7ed9160",
+      "pdf_pages": 21,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1, p. 3139; eq. (1.3), p. 3140; Figure 1, p. 3141"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatDrugan2015"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Arnold-Thom Gradient Conjecture for the Arrival Time_Colding-Minicozzi.pdf",
+      "title": "Arnold-Thom Gradient Conjecture for the Arrival Time",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "c5fb60676715155dfc1b6604600a55ce6a018eb1c7ef955ee8c9e634fc6c9070",
+      "pdf_pages": 30,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Asymptotic structure of almost eigenfunctions of drift Laplacians on conical ends_Bernstein.pdf",
+      "title": "Asymptotic structure of almost eigenfunctions of drift Laplacians on conical ends",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "03e7e39de206d50b268d8221c92af7dc10f60f68a7fac6d514830a537a6b5367",
+      "pdf_pages": 26,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Asymptotics for the level set equation near a maximum_Strehlke.pdf",
+      "title": "Asymptotics for the level set equation near a maximum",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "12cf809db246096416c080d746a8df508f7d270aee2ef717e44f49d3edef6ac9",
+      "pdf_pages": 21,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Brakke's mean curvature flow. An introduction_Tonegawa.pdf",
+      "title": "Brakke's mean curvature flow. An introduction",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "283e75f4291c2ee2aa09a7b5afa806e64d2143d1ae2621d234ba5ede48b8c45b",
+      "pdf_pages": 108,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Complexity of Parabolic System_Colding-Minicozzi.pdf",
+      "title": "Complexity of Parabolic System",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "ad27df560b9c444a09df37f2cdd2b5f346399f06c04e075c1dc17b9bffc7a12a",
+      "pdf_pages": 29,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatCMComplexity2020",
+      "filename": "Complexity of parabolic systems - IHES_Colding-Minicozzi.pdf",
+      "title": "Complexity of parabolic systems - IHES",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "6eeb43b0327270f073485098f5108115facc51ac0675ce39ad8f82698e5d40d7",
+      "pdf_pages": 53,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 6.3, PDF p. 22 (IHES 53-page edition)"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatCMComplexity2020"
+      ]
+    },
+    {
+      "bibliography_key": "CatXJWang11",
+      "filename": "Convex solutions to the mean curvature flow_Wang.pdf",
+      "title": "Convex solutions to the mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "3b4f09329bb085ee78160205f70e52966ea647d7047594fed98800698050dc46",
+      "pdf_pages": 55,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "equations (1.1)–(1.3); Theorems 1.2–1.3; PDF pages 2, 3, 4"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatXJWang11"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Convexity estimates for mean curvature flow and singularities of mean convex surfaces_Huisken-Sinestrari.pdf",
+      "title": "Convexity estimates for mean curvature flow and singularities of mean convex surfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0f404c51e01eee9c86a2d801258cb2cd874878326b88e82143d7c271d33af2a8",
+      "pdf_pages": 26,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatAV97",
+      "filename": "Degenerate neckpinches in mean curvature flow_Angenent-Velaquez.pdf",
+      "title": "Degenerate neckpinches in mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "2666a5c4e2a29709fc03a50aabccd368ad2b7fb082c61255bc30efc2a5b4c256",
+      "pdf_pages": 52,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Supplied PDF introduction read, PDF2–3 visually inspected for asymptotic coefficients; Section7 identifies rigorous justification."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAV97"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Differentiability of the Arrival Time_Colding-Minicozzi.pdf",
+      "title": "Differentiability of the Arrival Time",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "db4c9203db9a8dd6372b16893f198faff4b1f72e141bfccc28eb3bf1b47ad72c",
+      "pdf_pages": 15,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Dynamic of Closed Singularities_j.v_Colding-Minicozzi.pdf",
+      "title": "Dynamic of Closed Singularities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "8f409cd9366c26b5cf451bd794704a41c9f8a7f0f39a42ee4777ecda314d08c1",
+      "pdf_pages": 45,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Elliptic regularization and partial regularity for motion by mean curvature_Ilmanen.pdf",
+      "title": "Elliptic regularization and partial regularity for motion by mean curvature",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "a1fc1df998d37f52c6f76f10c2247cd25eee367323661d0b47bf6f40d6526c58",
+      "pdf_pages": 106,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Entropy and codimension bounds for generic singularities_Colding-Minicozzi.pdf",
+      "title": "Entropy and codimension bounds for generic singularities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "5697ac8df9dbf58044c82cd3ef3746db0327413b08cc3a5b8c8707ccd7951cd7",
+      "pdf_pages": 13,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Evolution of Curves and Surfaces by Mean Curvature_White.pdf",
+      "title": "Evolution of Curves and Surfaces by Mean Curvature",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "7d7ded6ea72cb66bfb7087184000ef62957272c3b6761ad1342bf0e92305bc4f",
+      "pdf_pages": 14,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Generalized Flow of Sets by Mean Curvature on a Manifold_Ilmanen.pdf",
+      "title": "Generalized Flow of Sets by Mean Curvature on a Manifold",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0e86d3734392240f0a06ed93d86b358562f6dd17afe224d6a7e92da2cadf894e",
+      "pdf_pages": 35,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatHIMWGraphical18",
+      "filename": "Graphical Translators for Mean Curvature Flow_Hoffman-Ilmanen-Martin-White.pdf",
+      "title": "Graphical Translators for Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "f61168494746c580d5b5bca95f28b742671b305cf8130bc06901d1e7e5b25a22",
+      "pdf_pages": 28,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 2; PDF pages 5",
+        "Theorem 8.1, Corollary 8.2; Section 11 convexity caveat; PDF pages 18, 25",
+        "Theorems 1.1, 2.4, 4.1, 5.7; Corollary 5.5; PDF pages 4, 6, 10, 11, 12",
+        "equation (1.4); PDF pages 3"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHIMWGraphical18"
+      ]
+    },
+    {
+      "bibliography_key": "CatMan11",
+      "filename": "Lecture Notes on Mean Curvature Flow_Mantegazza.pdf",
+      "title": "Lecture Notes on Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "41ac690e19a3c1fe963a904d13ea8c176eebd505dfe5bae1df032b7d6d685dcf",
+      "pdf_pages": 175,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Remark 4.4.7 PDF116 printed105 extracted; stationary and geometric assertions also directly verified by existing manuscript examples-minimal.tex; DOI metadata checked Springer."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatMan11"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Lectures on Mean Curvature Flow and Related Equations_Ilmanen.pdf",
+      "title": "Lectures on Mean Curvature Flow and Related Equations",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "4ec85935c7ac261af5ae3330b2d2542e8fec20c273ad718175598836cd713f57",
+      "pdf_pages": 63,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Local monotonicity and mean value formulas for evolving Riemannian manifolds_Ecker-Knopf-Ni-Topping.pdf",
+      "title": "Local monotonicity and mean value formulas for evolving Riemannian manifolds",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "756d43319e4b7044ec7caa19c706cdcbd7f5203566b9e9ffd5d715d9252f5cdc",
+      "pdf_pages": 42,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Long-time existence and convergence of graphic mean curvature flow in arbitrary codimension_Wang.pdf",
+      "title": "Long-time existence and convergence of graphic mean curvature flow in arbitrary codimension",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "9706944123e025d3600ff3cf7775a8ad8305803e35e9135dbd2b52a4d78f424f",
+      "pdf_pages": 19,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean Curvature Flow of Mean Convex Hypersurfaces_Haslhofer-Kleiner.pdf",
+      "title": "Mean Curvature Flow of Mean Convex Hypersurfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "ff2a96fe6d4a8db983423760deaae3c98122c3da5541e66b4f8f299802e2dde3",
+      "pdf_pages": 36,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean Curvature Flow with Boundary_White.pdf",
+      "title": "Mean Curvature Flow with Boundary",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "beff96080530c6c51492fea3e13d64c619ca6c79f1b365e4f4f64e09b9985881",
+      "pdf_pages": 43,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean curvature flow of pinched submanifolds to spheres_Andrews-Baker.pdf",
+      "title": "Mean curvature flow of pinched submanifolds to spheres",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "a6a49ef7b420f2cbfa2b3cb7501476e06caba0b8012008824b1ecc2b973542dd",
+      "pdf_pages": 39,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean curvature flow singularities for mean convex surfaces_Huisken-Sinstrari.pdf",
+      "title": "Mean curvature flow singularities for mean convex surfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "103ce7a1db6da91c4c11c117eb3131d88a1b320cd25b9952c38336bdd6b0dfc5",
+      "pdf_pages": 14,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean curvature flow through singularities for surfaces of rotation_AAG.pdf",
+      "title": "Mean curvature flow through singularities for surfaces of rotation",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "14abc4dbb8e0d59b57e792b78ee65ff68964e64467306ab147e0f63022c4a90a",
+      "pdf_pages": 66,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean curvature flow with surgeries of two–convex hypersurfaces_Huisken-Sinestrari.pdf",
+      "title": "Mean curvature flow with surgeries of two–convex hypersurfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "e642aaaf6c5f89221a9f225d7ca35b55b19f59ade2b3298f191a2db743f079d9",
+      "pdf_pages": 85,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Mean curvature flow_Colding-Minicozzi-Pedersen.pdf",
+      "title": "Mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "de9739e35a1e5c5a7650c1810bde9e37c14d5292f7caaa0be79bfb4dee147c2e",
+      "pdf_pages": 37,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatDing20",
+      "filename": "Minimal cones and self-expanding solutions for mean curvature flows_Ding.pdf",
+      "title": "Minimal cones and self-expanding solutions for mean curvature flows",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "1b9a338a255072aba002b7353b2f55d0e277007fe3ccee22a05470c281ae3b15",
+      "pdf_pages": 47,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Supplied published PDF read; Section 4 and Theorems 1.1,6.12; journal metadata matched arXiv."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatDing20"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Neck Pinching Dynamics under Mean Curvature Flow_Gang-Sigal.pdf",
+      "title": "Neck Pinching Dynamics under Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "149d44d63557c069eca1cb45e038d601cda7d17d614b57bd1739b20137cddc88",
+      "pdf_pages": 45,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatHIMWNotes19",
+      "filename": "Notes on Translating Solutions for Mean Curvature Flow_Hoffman-Ilmanen-Martin-White.pdf",
+      "title": "Notes on Translating Solutions for Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "4524ac2edc4251a193d8993172d6503ebe386a756bdc5f1369921e5393d28d5f",
+      "pdf_pages": 20,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Example 1.6; PDF pages 4",
+        "Section 4; PDF pages 10",
+        "Section 4; PDF pages 11",
+        "Section 4; Theorem 4.1; PDF pages 10, 11",
+        "Section 5; Figure 6; PDF pages 11, 12",
+        "Section 5; Figure 7; PDF pages 11, 12",
+        "Sections 4–5; PDF pages 11, 12"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatHIMWNotes19"
+      ]
+    },
+    {
+      "bibliography_key": "CatINS19",
+      "filename": "On short time existence for the planar network flow_Ilmanen-Neves-Schulze.pdf",
+      "title": "On short time existence for the planar network flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d413ecb8ec6128b45e44668a782c3fe80ca59866be578c5e40e2c240f25b91e5",
+      "pdf_pages": 51,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 4 and Section 7 read; existence attribution for ray trees is explicitly secondary within supplied paper."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatINS19"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "On the Mean Curvature Evolution of Two-Convex Hypersurfaces_Head.pdf",
+      "title": "On the Mean Curvature Evolution of Two-Convex Hypersurfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "cd78e59513a02b0fcd8bc84258fc1d785f0688f0993a5450c8d48d3f55380675",
+      "pdf_pages": 26,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "On the dynamics of formation of generic singularities of mean curvature flow_Gang.pdf",
+      "title": "On the dynamics of formation of generic singularities of mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d86bbb850a4df6612242fa54a10fec2c2bb167823178182efca320fcc838d5c0",
+      "pdf_pages": 78,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "On the existence of mean curvature ﬂow with transport term_Liu-Sato-Tonegawa.pdf",
+      "title": "On the existence of mean curvature ﬂow with transport term",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "1ab1f4ac51c7aea472ede2c80cd2b45377e9c376914d07cd109f78d6e9ee0fa3",
+      "pdf_pages": 27,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "On the mean convexity of a space-and-time neighborhood of generic singularities formed by mean curvature flow_Gang.pdf",
+      "title": "On the mean convexity of a space-and-time neighborhood of generic singularities formed by mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "dbd9d6014f74110037b648148d0a9c8314ecab9f14f07ab69687d2babdf63ab5",
+      "pdf_pages": 72,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Partial regularity of mean-convex hypersurfaces flowing by mean curvature_White.pdf",
+      "title": "Partial regularity of mean-convex hypersurfaces flowing by mean curvature",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "10835e89005b36035af27a77f8941a2eff49d4d900d9352fe6d69e72255e25c6",
+      "pdf_pages": 8,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Precise asymptotics near a pinched disk singularity formed by mean curvature flow_Gang-Wang.pdf",
+      "title": "Precise asymptotics near a pinched disk singularity formed by mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "f48aab9823f04390c96bae37098fb5c9d104c25785a1980d62a3462de79cfb1c",
+      "pdf_pages": 10,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Problems in Mean Curvature Flow_Ilmanen.pdf",
+      "title": "Problems in Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "9d76ca3585dd59055bf47161137bda08275d384e2789e78133473bd1d66adbb5",
+      "pdf_pages": 3,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Quantitative Stratification and the Regularity of Mean Curvature Flow_Cheeger-Haslhofer-Naber.pdf",
+      "title": "Quantitative Stratification and the Regularity of Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "50fe720b638605094d12b6e706a81abd9af05b2785f7d719fa56c7891ef0e90d",
+      "pdf_pages": 20,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Rate of convergence of the mean curvature flow_Sesum.pdf",
+      "title": "Rate of convergence of the mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "fba35133d462aac621f76f10acbaff59089a94abc70005c52db84de25ff635f1",
+      "pdf_pages": 22,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Regularity Theory for Mean Curvature Flow_Ecker.pdf",
+      "title": "Regularity Theory for Mean Curvature Flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "19ec377dfffad71e61a81bb379ce2c931597fecc2f653ba981eec534c8935202",
+      "pdf_pages": 173,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Regularity of elliptic and parabolic systems_2_Colding-Minicozzi.pdf",
+      "title": "Regularity of elliptic and parabolic systems",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "cc8610c16ebfc09117e618d6defb883fa1abb13c842e437fd2464bbbc2f15203",
+      "pdf_pages": 33,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Regularity of elliptic and parabolic systems_3_Colding-Minicozzi.pdf",
+      "title": "Regularity of elliptic and parabolic systems",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "ede552ed8bebecb35fe30198a1b00352a471fc2c935cacf82577051fa90d52e8",
+      "pdf_pages": 36,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Regularity of elliptic and parabolic systems_Colding-Minicozzi.pdf",
+      "title": "Regularity of elliptic and parabolic systems",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "11eb5b218124bc1cd062f0ffcb48f668c76bf98e939328886aa8a6babab56f40",
+      "pdf_pages": 32,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Regularity of the level set flow_Colding-Minicozzi.pdf",
+      "title": "Regularity of the level set flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "628090434c342d75b407c081079f8afd9024f887e0adb5f0adff0996f2adcfe0",
+      "pdf_pages": 11,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatELS2020",
+      "filename": "Remarks on the self-shrinking Clifford torus_2020_Evans-Lotay-Schulze.pdf",
+      "title": "Remarks on the self-shrinking Clifford torus",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "e9e77e2e1f08c67dfc2c873a9924f6b24e790813b5891942b4fdc98bde0397a5",
+      "pdf_pages": 31,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 2 and Lemma 2.4, PDF pp. 3-6; Lemmas 4.1-4.2 and Theorem 4.3 p.13; Corollary 4.8 and Theorem 4.9 p.16; Theorem 5.7 p.29"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatELS2020"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Remarks on the self-shrinking Clifford torus_Evans-Lotay-Schulze.pdf",
+      "title": "Remarks on the self-shrinking Clifford torus",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "51b864e554fcc4eb86d3cd4bddc030564f00f28f9dc6dbfaf2fe2316add668c5",
+      "pdf_pages": 26,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Older v2 reviewed only for edition comparison; rigidity theorem is 5.6 in v2"
+      ],
+      "catalogue_bibliography_keys": []
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Rigidity of generic singularities of mean curvature flow_Colding-Ilmanen-Minicozzi.pdf",
+      "title": "Rigidity of generic singularities of mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "33baf8ab25613445820a0e432c5cb7ab2eb3e05091c554b58647c3cf241c24b2",
+      "pdf_pages": 20,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatSmoczyk2005",
+      "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
+      "title": "Self-shrinkers of the mean curvature flow in arbitrary codimension",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0413c6efce6ca092867232f63481a9191a1df31c17184201340cbe45ade4282a",
+      "pdf_pages": 22,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Equation (1.4), p. 2984; product observation p. 2985",
+        "p. 2984 (PDF p. 2)",
+        "p. 2985 (PDF p. 3), Theorem 1.1 and spherical/product observations"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatSmoczyk2005"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Sharp entropy bounds for self-shrinkers in mean curvature flow_Hershkovits-White.pdf",
+      "title": "Sharp entropy bounds for self-shrinkers in mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0fe22313c58b31ed2893ada66dcc1894f85b846c57532c129c7411ed079f7c28",
+      "pdf_pages": 10,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Sharp estimates for mean curvature flow of graphs_Colding-Minicozzi.pdf",
+      "title": "Sharp estimates for mean curvature flow of graphs",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "55a66395cd9edd06a20137bd901c0cf51a5c808f68e7c6dd8070b64ddb4f3209",
+      "pdf_pages": 9,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Sharp lower bounds on density for area-minimizing cones_Ilmanen-White.pdf",
+      "title": "Sharp lower bounds on density for area-minimizing cones",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "c9a8be89a868233c204933a93cc80690272b6b1414caa554ff3e69607e05cd16",
+      "pdf_pages": 18,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Shortening space curves and flow through singularities_Altschuler-Grayon.pdf",
+      "title": "Shortening space curves and flow through singularities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0f63ba5ecd3eb359d07ccc11c57be68c75a8fc01478a7f829adf07773053fb5c",
+      "pdf_pages": 16,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatAngenent1992",
+      "filename": "Shrinking donuts_angenent.pdf",
+      "title": "Shrinking donuts",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "1b7bd96463bcd5bc6fd0e6b2883f1e5e2a48a6a01616f0794a297a6a7c88dc2d",
+      "pdf_pages": 18,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Introduction and closed geodesic shooting construction; supplied preprint 18 pages"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAngenent1992"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Singularities of Mean Curvature Flow of Surfaces_Ilmanen.pdf",
+      "title": "Singularities of Mean Curvature Flow of Surfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d0e7e800148e6264a184d4a81a9039623c58633c59836e42d964c8b0af5a6785",
+      "pdf_pages": 37,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Singularities of the curve shrinking flow for space curves_Altschuler.pdf",
+      "title": "Singularities of the curve shrinking flow for space curves",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "9c7f7ae0d8db1da30e855c5b1b8caf835a6f2263d8cd2f4c873c78c28dce13fc",
+      "pdf_pages": 24,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Singularity profile in the mean curvature flow_Sheng-Wang.pdf",
+      "title": "Singularity profile in the mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "f25ef4b1deaf8354c536461ce47fbac3e61cbfa4f2739bec1e016c6d2f1d5371",
+      "pdf_pages": 18,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Smooth compactness of self-shrinkers_Colding-Minicozzi.pdf",
+      "title": "Smooth compactness of self-shrinkers",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0c652b36f4c26e6fbceb824cc38ff64c39ae2f7dc500f23b79e49c982b6d1e89",
+      "pdf_pages": 13,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Stability and area growth of lambda-hypersurfaces_Cheng-Wei.pdf",
+      "title": "Stability and area growth of lambda-hypersurfaces",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "50a1360f42a920e486d5cccac7e5847bb5787a90b95908bdd6448b977c02aa84",
+      "pdf_pages": 26,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Stability of neckpinch singularities_Schulze-Sesum.pdf",
+      "title": "Stability of neckpinch singularities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "80692fe6aba6724ebfa693b0dd4e48cea86cceea445377d0ce36660254c42ead",
+      "pdf_pages": 14,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Starshaped hypersurfaces and the mean curvature flow_Smoczyk.pdf",
+      "title": "Starshaped hypersurfaces and the mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "5ce635352f2940cfba62ca6de832a1c9759b7459d59149fcfb16a23176c5c777",
+      "pdf_pages": 12,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Stratification of minimal surfaces, mean curvature flows, and harmonic maps_White.pdf",
+      "title": "Stratification of minimal surfaces, mean curvature flows, and harmonic maps",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d3ea31eb4f10f194e694209ccafeb4f3e52fe922ee7ec7d0afca2bc929f0c395",
+      "pdf_pages": 36,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Subsequent singularities in mean-convex mean curvature flow_White.pdf",
+      "title": "Subsequent singularities in mean-convex mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "ea92a0f559db565a1174bb41f541f8664ede753acf5076d3da3a8f7e2d20bb18",
+      "pdf_pages": 12,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The heat equation shrinking convex plane curves_Gage-Hamilton.pdf",
+      "title": "The heat equation shrinking convex plane curves",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "87d04ef4e97a17b5a31b373550a6dfe2d9cd16a05de94da02b5b887ebd07e986",
+      "pdf_pages": 28,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The motion of a surface by its mean curvature_Brakke.pdf",
+      "title": "The motion of a surface by its mean curvature",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "cfb2573c2da4db54c8d63bc13f998dddc6383d0cbad772b2f893da402571877e",
+      "pdf_pages": 132,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The nature of singularities in mean curvature flow of mean-convex sets_White.pdf",
+      "title": "The nature of singularities in mean curvature flow of mean-convex sets",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "93a40b2be2c6ee3599744d33ef5d18b53b9eaec379538a8ce8c7f77b89d04533",
+      "pdf_pages": 16,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The round sphere minimizes entropy among closed self-shrinkers_Colding-Ilmanen-Minicozzi-White.pdf",
+      "title": "The round sphere minimizes entropy among closed self-shrinkers",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "4f273e6a3816fcdfa1c03c8466b089bd3b2c626858d21d86661a590238180900",
+      "pdf_pages": 17,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The singular set of mean curvature flow with generic singularities_Colding-Minicozzi.pdf",
+      "title": "The singular set of mean curvature flow with generic singularities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "6feb622fd7db78493df5cc6277047d379a505c83d5858ab4a26518510bf45e6f",
+      "pdf_pages": 29,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The size of the singular set in mean curvature flow of mean-convex sets_White.pdf",
+      "title": "The size of the singular set in mean curvature flow of mean-convex sets",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "acce760eb1c29c7975f367bbbde6cc687e58aeb3eddf6d2f08941b85695d95bc",
+      "pdf_pages": 31,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The topology of hypersurfaces moving by mean curvature_White.pdf",
+      "title": "The topology of hypersurfaces moving by mean curvature",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "0c7f7303c45ffc483cbd5782235f380db821593080966322169cc320826fe8e6",
+      "pdf_pages": 17,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "The volume preserving mean curvature flow_Huisken.pdf",
+      "title": "The volume preserving mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "366ec18a12887fe3ce7b95408c5b40da18940821a9a3d500c4b28828a0a81b47",
+      "pdf_pages": 15,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Topological change in mean convex mean curvature flow_White.pdf",
+      "title": "Topological change in mean convex mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "07cbfe4fed9aa3c313b4d1648db113040812edcb6d8a4b13f2ab9cc6d2a865c3",
+      "pdf_pages": 25,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness and pseudolocality theorems of the mean curvature flow_Chen-Yin.pdf",
+      "title": "Uniqueness and pseudolocality theorems of the mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d1d89bda8bf269fc536e3c2a65f5fefa828e9fa09155d296c87b1b6fc357ad21",
+      "pdf_pages": 56,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness of asymptotically conical tangent flows_Chodosh-Schulze.pdf",
+      "title": "Uniqueness of asymptotically conical tangent flows",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "a48361cae37db2bc43e357769a74d3fec616deac17158623d5a4a2bee1b4d217",
+      "pdf_pages": 40,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness of blowups and Łojasiewicz inequalities_Colding-Minicozzi.pdf",
+      "title": "Uniqueness of blowups and Łojasiewicz inequalities",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "41b644987ae4ff8b8e3ac9e492b0bc379f1c593bccf931ce6b9e685c16003128",
+      "pdf_pages": 66,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness of compact tangent flows in mean curvature flow_Schulze.pdf",
+      "title": "Uniqueness of compact tangent flows in mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "3210380dae5578f18113ffe0d6a954d9c145b1543942d79cac4ddffbb34d366e",
+      "pdf_pages": 10,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": "CatBrendleChoi19",
+      "filename": "Uniqueness of convex ancient solutions to mean curvature flow in R3_Brendle-Choi.pdf",
+      "title": "Uniqueness of convex ancient solutions to mean curvature flow in R3",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "d683a70152a306a9fc2bef493f8cb0f09855c88f3b3efd92c3c4d9909eff3d0b",
+      "pdf_pages": 42,
+      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1; PDF pages 2"
+      ],
+      "catalogue_bibliography_keys": [
+        "CatBrendleChoi19"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness of self-similar shrinkers with asymptotically conical ends_Wang.pdf",
+      "title": "Uniqueness of self-similar shrinkers with asymptotically conical ends",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "5447919a7b9713ad4de6c8bbc3dd766932acd08d10dceceafd0e8d55b5057d31",
+      "pdf_pages": 26,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Uniqueness of self-similar shrinkers with asymptotically cylindrical ends_Wang.pdf",
+      "title": "Uniqueness of self-similar shrinkers with asymptotically cylindrical ends",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "aaacf66e3bd84b8e709b2414e32998fb2bce8b4f5c05d6c036f75566a41c7b80",
+      "pdf_pages": 24,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Universality in mean curvature flow neckpinches_Gang-Knopf.pdf",
+      "title": "Universality in mean curvature flow neckpinches",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "2cf4aabb55a3ffd06a6583bb4c3083b712072c24f26dad3305867254a781491e",
+      "pdf_pages": 66,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "Width and mean curvature flow_Colding-Minicozzi.pdf",
+      "title": "Width and mean curvature flow",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "b5ef321db71f9b9a183ff5f6a45d57a1b2371df6e7a968e54173f32098bf69a8",
+      "pdf_pages": 19,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
+    },
+    {
+      "bibliography_key": null,
+      "filename": "motion of a set by the curvature of its boundary_Soner.pdf",
+      "title": "motion of a set by the curvature of its boundary",
+      "edition": "Supplied PDF; see cited edition where reviewed",
+      "sha256": "a0b24d4e6e3b2482c234ba0500a0509d0e4f3763969ca0985625d7fb7a8872a8",
+      "pdf_pages": 60,
+      "role": "Inventoried for future study; no incorporation implied.",
+      "redistributed": false,
+      "review_status": "catalogued-not-reviewed"
     }
   ],
   "pagination": "Citations use printed source pages and original theorem numbers. Pitts printed page 1 is PDF page 11; LMN printed page 933 is PDF page 2. Simon PDFs generally contain two-page spreads. Reader numbering is generated independently.",

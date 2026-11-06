@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "label": "ex:catalogue-round-sphere",
+      "section": "round-shrinking-spheres",
+      "title": "Round shrinking spheres",
+      "category": "shrinkers",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "model": "sphere",
+      "status": "Exact formula",
+      "caption": "The normalized sphere in R3 has radius 2. This is the n=2 member of the family.",
+      "alt": "Round shrinking spheres. The normalized sphere in R3 has radius 2. This is the n=2 member of the family.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-round-cylinder",
+      "section": "generalized-shrinking-cylinders",
+      "title": "Generalized shrinking cylinders",
+      "category": "shrinkers",
+      "citations": [
+        "CM12"
+      ],
+      "model": "cylinder",
+      "status": "Exact formula",
+      "caption": "The R3 cylinder has radius sqrt(2). Only a finite axial window is displayed; there are no end caps.",
+      "alt": "Generalized shrinking cylinders. The R3 cylinder has radius sqrt(2). Only a finite axial window is displayed; there are no end caps.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-plane-shrinker",
+      "section": "planes-through-the-shrinker-center",
+      "title": "Planes through the shrinker center",
+      "category": "shrinkers",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "model": "plane",
+      "status": "Exact formula",
+      "caption": "A finite viewing patch of a plane through the origin. Its visible boundary is not part of the complete solution.",
+      "alt": "Planes through the shrinker center. A finite viewing patch of a plane through the origin. Its visible boundary is not part of the complete solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-abresch-langer",
+      "section": "abresch-langer-closed-shrinking-curves",
+      "title": "Abresch--Langer closed shrinking curves",
+      "category": "shrinkers",
+      "citations": [
+        "CatAL1986",
+        "CatCMComplexity2020",
+        "CatDLN2018"
+      ],
+      "model": "abresch-langer",
+      "status": "Numerical ODE profile",
+      "caption": "The (m,ell)=(2,3) immersed planar curve. The support function solves h″+h=2/h. Closing residual before mesh rounding is below 1e-9; this is not an existence proof.",
+      "alt": "Abresch--Langer closed shrinking curves. The (m,ell)=(2,3) immersed planar curve. The support function solves h″+h=2/h. Closing residual before mesh rounding is below 1e-9; this is not an existence proof.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-angenent-torus",
+      "section": "angenent-s-shrinking-torus",
+      "title": "Angenent's shrinking torus",
+      "category": "shrinkers",
+      "citations": [
+        "CM12",
+        "CatAngenent1992",
+        "CatDLN2018"
+      ],
+      "model": "angenent-torus",
+      "status": "Numerical ODE surface",
+      "caption": "A closed rotational shrinking profile in R3, with outer radius approximately 3.31470827 and inner radius 0.43712397. Return position and angle residuals before mesh rounding are below 1e-9. Numerical closure does not prove existence or uniqueness.",
+      "alt": "Angenent's shrinking torus. A closed rotational shrinking profile in R3, with outer radius approximately 3.31470827 and inner radius 0.43712397. Return position and angle residuals before mesh rounding are below 1e-9. Numerical closure does not prove existence or uniqueness.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-drugan-sphere",
+      "section": "drugan-s-immersed-shrinking-spheres",
+      "title": "Drugan's immersed shrinking spheres",
+      "category": "shrinkers",
+      "citations": [
+        "CatDLN2018",
+        "CatDrugan2015"
+      ],
+      "model": "drugan-schematic",
+      "status": "Topology schematic",
+      "caption": "The domain is a sphere, while the immersion has self-intersections. This diagram is not a numerically solved shrinker profile.",
+      "alt": "Drugan's immersed shrinking spheres. The domain is a sphere, while the immersion has self-intersections. This diagram is not a numerically solved shrinker profile.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-clifford-torus",
+      "section": "the-clifford-shrinking-torus-in-four-space",
+      "title": "The Clifford shrinking torus in four-space",
+      "category": "shrinkers",
+      "citations": [
+        "CatELS2020"
+      ],
+      "model": "clifford",
+      "status": "Exact R4 geometry, projected to R3",
+      "caption": "A linear projection of the Clifford torus. The 4D rotation control changes the projection by rotating the second and fourth coordinates. Projected overlaps are not self-intersections of the embedded torus in R4.",
+      "alt": "The Clifford shrinking torus in four-space. A linear projection of the Clifford torus. The 4D rotation control changes the projection by rotating the second and fourth coordinates. Projected overlaps are not self-intersections of the embedded torus in R4.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-curve-products",
+      "section": "products-of-closed-shrinking-curves",
+      "title": "Products of closed shrinking curves",
+      "category": "shrinkers",
+      "citations": [
+        "CatSmoczyk2005"
+      ],
+      "model": "curve-products",
+      "status": "Factor diagram",
+      "caption": "The product lives in R^(2m). The nonround curve is a numerical Abresch–Langer profile; the product construction is exact once its factors are fixed.",
+      "alt": "Products of closed shrinking curves. The product lives in R^(2m). The nonround curve is a numerical Abresch–Langer profile; the product construction is exact once its factors are fixed.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-spherical-minimal",
+      "section": "higher-codimension-spherical-shrinkers",
+      "title": "Higher-codimension spherical shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatSmoczyk2005"
+      ],
+      "model": "spherical-products",
+      "status": "Dimension and factor diagram",
+      "caption": "The spherical product formula is exact. This shows its factors and ambient dimensions rather than an embedding of a higher-dimensional product in R3.",
+      "alt": "Higher-codimension spherical shrinkers. The spherical product formula is exact. This shows its factors and ambient dimensions rather than an embedding of a higher-dimensional product in R3.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-moller-genus",
+      "section": "moller-closed-shrinkers-of-large-even-genus",
+      "title": "Moller closed shrinkers of large even genus",
+      "category": "shrinkers",
+      "citations": [
+        "CM12",
+        "CatDLN2018",
+        "CatMoller2014"
+      ],
+      "model": "moller-gluing",
+      "status": "Gluing schematic",
+      "caption": "The sphere and numerical shrinking-torus model indicate a limiting configuration and two gluing circles. This is not the constructed smooth surface of large genus.",
+      "alt": "Moller closed shrinkers of large even genus. The sphere and numerical shrinking-torus model indicate a limiting configuration and two gluing circles. This is not the constructed smooth surface of large genus.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-grim-reaper",
+      "section": "the-grim-reaper-and-its-cylinders",
+      "title": "The grim reaper and its cylinders",
+      "category": "translators",
+      "citations": [
+        "CatHIMWGraphical18",
+        "CatHIMWNotes19"
+      ],
+      "model": "grim-reaper",
+      "status": "Exact formula",
+      "caption": "Exact formula on a truncated strip. Infinite vertical ends are clipped for display.",
+      "alt": "The grim reaper and its cylinders. Exact formula on a truncated strip. Infinite vertical ends are clipped for display.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-tilted-grim-reaper",
+      "section": "tilted-grim-reaper-cylinders",
+      "title": "Tilted grim-reaper cylinders",
+      "category": "translators",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "model": "tilted-grim",
+      "status": "Exact formula",
+      "caption": "Exact tilted grim-reaper formula, with the infinite ends clipped. The displayed tilt parameter is a = 0.65.",
+      "alt": "Tilted grim-reaper cylinders. Exact tilted grim-reaper formula, with the infinite ends clipped.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-bowl-translator",
+      "section": "the-rotational-bowl-translator",
+      "title": "The rotational bowl translator",
+      "category": "translators",
+      "citations": [
+        "CSS07",
+        "CatBrendleChoi19",
+        "CatHIMWNotes19"
+      ],
+      "model": "bowl",
+      "status": "Numerical ODE surface",
+      "caption": "Numerical integration of the bowl ODE, revolved about its axis; not an exact paraboloid.",
+      "alt": "The rotational bowl translator. Numerical integration of the bowl ODE, revolved about its axis; not an exact paraboloid.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-translating-catenoid",
+      "section": "rotational-translating-catenoids",
+      "title": "Rotational translating catenoids",
+      "category": "translators",
+      "citations": [
+        "CSS07",
+        "CatHIMWNotes19"
+      ],
+      "model": "translating-catenoid",
+      "status": "Numerical ODE surface",
+      "caption": "Numerical meridian ODE revolved about the translation axis. Both infinite ends are truncated. The displayed neck radius is 1.",
+      "alt": "Rotational translating catenoids. Numerical meridian ODE revolved about the translation axis. Both infinite ends are truncated.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-delta-wing",
+      "section": "strictly-convex-delta-wing-translators",
+      "title": "Strictly convex delta-wing translators",
+      "category": "translators",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "model": "strip-grim-limits",
+      "status": "Schematic",
+      "caption": "Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
+      "alt": "Strictly convex delta-wing translators. Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-wang-entire-translators",
+      "section": "nonrotational-entire-convex-translators",
+      "title": "Nonrotational entire convex translators",
+      "category": "translators",
+      "citations": [
+        "CatXJWang11"
+      ],
+      "model": "anisotropic-quadratic",
+      "status": "Schematic",
+      "caption": "Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
+      "alt": "Nonrotational entire convex translators. Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-prescribed-apex-translators",
+      "section": "translators-with-prescribed-apex-curvatures",
+      "title": "Translators with prescribed apex curvatures",
+      "category": "translators",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "model": "apex-ellipsoid",
+      "status": "Schematic",
+      "caption": "Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
+      "alt": "Translators with prescribed apex curvatures. Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-scherkenoids",
+      "section": "scherkenoid-translators",
+      "title": "Scherkenoid translators",
+      "category": "translators",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "model": "scherkenoid-ends",
+      "status": "Schematic",
+      "caption": "Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
+      "alt": "Scherkenoid translators. Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-pitchfork",
+      "section": "the-pitchfork-translator",
+      "title": "The pitchfork translator",
+      "category": "translators",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "model": "pitchfork-ends",
+      "status": "Schematic",
+      "caption": "One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
+      "alt": "The pitchfork translator. One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-nguyen-tridents",
+      "section": "nguyen-translating-tridents",
+      "title": "Nguyen translating tridents",
+      "category": "translators",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatNguyen09"
+      ],
+      "model": "grim-plane-gluing",
+      "status": "Schematic",
+      "caption": "Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
+      "alt": "Nguyen translating tridents. Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-finite-genus-translators",
+      "section": "finite-genus-translators-with-three-ends",
+      "title": "Finite-genus translators with three ends",
+      "category": "translators",
+      "citations": [
+        "CatDPN17",
+        "CatHIMWNotes19"
+      ],
+      "model": "bowl-catenoid-gluing",
+      "status": "Schematic",
+      "caption": "Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
+      "alt": "Finite-genus translators with three ends. Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-expanding-corners",
+      "section": "expanding-smoothings-of-planar-corners",
+      "title": "Expanding smoothings of planar corners",
+      "category": "expanders",
+      "citations": [
+        "CatDing20"
+      ],
+      "model": "expanding-corner",
+      "status": "Numerical ODE curve",
+      "caption": "The even time-one profile has tip height 1 and is integrated over |x| <= 6. Its asymptotic cone slope is determined by the ODE, not prescribed independently.",
+      "alt": "Expanding smoothings of planar corners. The even time-one profile has tip height 1 and is integrated over |x| <= 6. Its asymptotic cone slope is determined by the ODE, not prescribed independently.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-rotational-expanders",
+      "section": "rotational-graphical-expanders-over-round-cones",
+      "title": "Rotational graphical expanders over round cones",
+      "category": "expanders",
+      "citations": [
+        "CatDing20"
+      ],
+      "model": "expanding-graph",
+      "status": "Numerical ODE surface",
+      "caption": "The R3 time-one profile has tip height 1 and is displayed up to radius 6. Its asymptotic cone is determined by this initial value.",
+      "alt": "Rotational graphical expanders over round cones. The R3 time-one profile has tip height 1 and is displayed up to radius 6. Its asymptotic cone is determined by this initial value.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-two-sheet-expanders",
+      "section": "two-sheeted-expanders-of-rotational-double-cones",
+      "title": "Two-sheeted expanders of rotational double cones",
+      "category": "expanders",
+      "citations": [
+        "CatAIC95"
+      ],
+      "model": "two-sheet-expander",
+      "status": "Numerical ODE surface",
+      "caption": "Two reflected rotational graphical sheets with tip heights +1 and -1. The sheets share a double cone at infinity and are truncated at radius 6.",
+      "alt": "Two-sheeted expanders of rotational double cones. Two reflected rotational graphical sheets with tip heights +1 and -1. The sheets share a double cone at infinity and are truncated at radius 6.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-one-sheet-expanders",
+      "section": "one-sheeted-expanders-of-rotational-double-cones",
+      "title": "One-sheeted expanders of rotational double cones",
+      "category": "expanders",
+      "citations": [
+        "CatAIC95"
+      ],
+      "model": "one-sheet-expander",
+      "status": "Numerical ODE surface",
+      "caption": "Connected rotational expander with neck radius 0.8, shown in the axial window [-5,5]. The drawing makes no claim about a numerically estimated critical cone angle.",
+      "alt": "One-sheeted expanders of rotational double cones. Connected rotational expander with neck radius 0.8, shown in the axial window [-5,5]. The drawing makes no claim about a numerically estimated critical cone angle.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-mean-convex-expanders",
+      "section": "one-sided-expanders-from-mean-convex-cones",
+      "title": "One-sided expanders from mean-convex cones",
+      "category": "expanders",
+      "citations": [
+        "CatDing20"
+      ],
+      "model": "mean-convex-cone",
+      "status": "Foliation schematic",
+      "caption": "The cone, chosen side, and homothetic leaves illustrate the theorem. No explicit general-cone expander has been computed.",
+      "alt": "One-sided expanders from mean-convex cones. The cone, chosen side, and homothetic leaves illustrate the theorem. No explicit general-cone expander has been computed.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-expanding-networks",
+      "section": "self-expanding-planar-tree-networks",
+      "title": "Self-expanding planar tree networks",
+      "category": "expanders",
+      "citations": [
+        "CatINS19"
+      ],
+      "model": "expanding-network",
+      "status": "Network schematic",
+      "caption": "A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
+      "alt": "Self-expanding planar tree networks. A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-stationary-catenoid",
+      "section": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "The catenoid as an eternal stationary flow",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMan11"
+      ],
+      "model": "catenoid",
+      "status": "Exact formula",
+      "caption": "The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
+      "alt": "The catenoid as an eternal stationary flow. The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-whitney-sphere",
+      "section": "mean-curvature-evolution-of-the-whitney-sphere",
+      "title": "Mean curvature evolution of the Whitney sphere",
+      "category": "other-special-flows",
+      "citations": [
+        "CatViana18"
+      ],
+      "model": "whitney-profile",
+      "status": "Exact initial generating profile",
+      "caption": "The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
+      "alt": "Mean curvature evolution of the Whitney sphere. The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-degenerate-neckpinches",
+      "section": "rotational-degenerate-neckpinch-solutions",
+      "title": "Rotational degenerate neckpinch solutions",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAV97"
+      ],
+      "model": "neckpinch-scales",
+      "status": "Asymptotic scale diagram",
+      "caption": "The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
+      "alt": "Rotational degenerate neckpinch solutions. The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-angenent-oval",
+      "section": "the-angenent-oval-as-an-explicit-ancient-flow",
+      "title": "The Angenent oval as an explicit ancient flow",
+      "category": "other-special-flows",
+      "citations": [
+        "BV11"
+      ],
+      "model": "ancient-oval",
+      "status": "Exact implicit solution",
+      "caption": "The planar ancient oval satisfies cos(x)=exp(t) cosh(y). The time slider shows finite negative times; its smooth flow exists for all t<0. The time slider uses a fixed spatial scale.",
+      "alt": "The Angenent oval as an explicit ancient flow. The planar ancient oval satisfies cos(x)=exp(t) cosh(y). The time slider shows finite negative times; its smooth flow exists for all t<0.",
+      "interactive": true
+    }
+  ]
+}

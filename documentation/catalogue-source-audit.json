@@ -1,0 +1,1325 @@
+{
+  "version": 1,
+  "scope": "First 31 examples. Selected passages, not complete readings of all 101 files; no formal verification. Original PDFs and extracted text are not redistributed.",
+  "files": [
+    {
+      "id": "001",
+      "filename": "1-dimensional solutions of the λ-self shrinkers_Chang.pdf",
+      "sha256": "f29cf5135a941ce62860c93b7867508ccbb7c5705699ecdfeac0bc155eed0fa7",
+      "pages": 16,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "002",
+      "filename": "2014 Schulze - Uniqueness of compact tangent flows in Mean Curvature Flow.pdf",
+      "sha256": "2410ed3ddedb99e56f3435a9d27303bea46bb4f4888c1a7da7c6582932772603",
+      "pages": 10,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "003",
+      "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+      "sha256": "550ea95be28d63fe3568e4530c3e0c93ae37091459021ad74d44f7eb77d2ece5",
+      "pages": 32,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "004",
+      "filename": "A Unique Continuation Property for the Level Set Equation_Strehlke.pdf",
+      "sha256": "deedf9ff780e45592d8cf0ebbf6de11a9eafcfcef6ddb2a8121f345cf5da63ee",
+      "pages": 9,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "005",
+      "filename": "A computed example of nonuniqueness of mean curvature flow in R3_Angenent-Ilmanen-Chopp.pdf",
+      "sha256": "39fac17afcfc8efb3de3d31ed6f47f78132e0234c921ba49f319b50d0021f370",
+      "pages": 23,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "006",
+      "filename": "A general regularity theory for weak mean curvature flow_Kasai-Tonegawa.pdf",
+      "sha256": "6eab600849d6adef3e9fd44bfcd9bf3773d13b1ff81705bf2b61f06d78a8857f",
+      "pages": 68,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "007",
+      "filename": "A local monotonicity formula for mean curvature flow_Ecker.pdf",
+      "sha256": "bd3138f5eb9ca4d02ee849531ddaac7bbd92d47fc56d26f1bb6b1ea8b5c2498f",
+      "pages": 24,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "008",
+      "filename": "A local regularity theorem for mean curvature flow with triple edges_Schulze-White.pdf",
+      "sha256": "9110b8be7b50799e4db454cdd2dae6122019323898a345ba26c36048a0248983",
+      "pages": 25,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "009",
+      "filename": "A local regularity theorem for mean curvature flow_White.pdf",
+      "sha256": "2cfb0208034b37b7c7ba7f6610288770f91a56af57a4bcce5d3d2f06ba3805f9",
+      "pages": 33,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "010",
+      "filename": "A note of the Hamiltonian area conjecture_Ilmanen.pdf",
+      "sha256": "278bb9d8721b1c72697bcf0fbc2a7034af205fae1483391b80f4e478ee93ac14",
+      "pages": 7,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "011",
+      "filename": "A note on the evolution of the Whitney sphere along mean curvature flow_Viana.pdf",
+      "sha256": "992f374dc9b387fdc371dad9291f068fb5c4cb8ceb5e7e48b8391e2b5c756fd3",
+      "pages": 13,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "012",
+      "filename": "A numerical stability analysis of mean curvature flow of noncompact hypersurfaces with Type-II curvature blowup_Garfinkle-Isenberg-Knopf-Wu.pdf",
+      "sha256": "47e1eef1401d8bc159acff72c981e3ac76a535b31344121ebf40a48ee7601889",
+      "pages": 23,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "013",
+      "filename": "An immersed S2 self-shrinkers_Drugan.pdf",
+      "sha256": "2bd7af8d848b7baa07fd9a84f259583835e15454a42a3d75eb26dd8eb7ed9160",
+      "pages": 21,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "014",
+      "filename": "Arnold-Thom Gradient Conjecture for the Arrival Time_Colding-Minicozzi.pdf",
+      "sha256": "c5fb60676715155dfc1b6604600a55ce6a018eb1c7ef955ee8c9e634fc6c9070",
+      "pages": 30,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "015",
+      "filename": "Asymptotic behavior for singularities of the mean curvature flow_Huisken.pdf",
+      "sha256": "af9d6ef507e0a0cc47267538c4959a469bea64e6672b85d0d9554994448d334e",
+      "pages": 16,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "016",
+      "filename": "Asymptotic structure of almost eigenfunctions of drift Laplacians on conical ends_Bernstein.pdf",
+      "sha256": "03e7e39de206d50b268d8221c92af7dc10f60f68a7fac6d514830a537a6b5367",
+      "pages": 26,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "017",
+      "filename": "Asymptotics for the level set equation near a maximum_Strehlke.pdf",
+      "sha256": "12cf809db246096416c080d746a8df508f7d270aee2ef717e44f49d3edef6ac9",
+      "pages": 21,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "018",
+      "filename": "Brakke's mean curvature flow. An introduction_Tonegawa.pdf",
+      "sha256": "283e75f4291c2ee2aa09a7b5afa806e64d2143d1ae2621d234ba5ede48b8c45b",
+      "pages": 108,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "019",
+      "filename": "Complexity of Parabolic System_Colding-Minicozzi.pdf",
+      "sha256": "ad27df560b9c444a09df37f2cdd2b5f346399f06c04e075c1dc17b9bffc7a12a",
+      "pages": 29,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "020",
+      "filename": "Complexity of parabolic systems - IHES_Colding-Minicozzi.pdf",
+      "sha256": "6eeb43b0327270f073485098f5108115facc51ac0675ce39ad8f82698e5d40d7",
+      "pages": 53,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "021",
+      "filename": "Convex solutions to the mean curvature flow_Wang.pdf",
+      "sha256": "3b4f09329bb085ee78160205f70e52966ea647d7047594fed98800698050dc46",
+      "pages": 55,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "022",
+      "filename": "Convexity estimates for mean curvature flow and singularities of mean convex surfaces_Huisken-Sinestrari.pdf",
+      "sha256": "0f404c51e01eee9c86a2d801258cb2cd874878326b88e82143d7c271d33af2a8",
+      "pages": 26,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "023",
+      "filename": "Degenerate neckpinches in mean curvature flow_Angenent-Velaquez.pdf",
+      "sha256": "2666a5c4e2a29709fc03a50aabccd368ad2b7fb082c61255bc30efc2a5b4c256",
+      "pages": 52,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "024",
+      "filename": "Differentiability of the Arrival Time_Colding-Minicozzi.pdf",
+      "sha256": "db4c9203db9a8dd6372b16893f198faff4b1f72e141bfccc28eb3bf1b47ad72c",
+      "pages": 15,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "025",
+      "filename": "Dynamic of Closed Singularities_j.v_Colding-Minicozzi.pdf",
+      "sha256": "8f409cd9366c26b5cf451bd794704a41c9f8a7f0f39a42ee4777ecda314d08c1",
+      "pages": 45,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "026",
+      "filename": "Elliptic regularization and partial regularity for motion by mean curvature_Ilmanen.pdf",
+      "sha256": "a1fc1df998d37f52c6f76f10c2247cd25eee367323661d0b47bf6f40d6526c58",
+      "pages": 106,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "027",
+      "filename": "Entropy and codimension bounds for generic singularities_Colding-Minicozzi.pdf",
+      "sha256": "5697ac8df9dbf58044c82cd3ef3746db0327413b08cc3a5b8c8707ccd7951cd7",
+      "pages": 13,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "028",
+      "filename": "Evolution of Curves and Surfaces by Mean Curvature_White.pdf",
+      "sha256": "7d7ded6ea72cb66bfb7087184000ef62957272c3b6761ad1342bf0e92305bc4f",
+      "pages": 14,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "029",
+      "filename": "Generalized Flow of Sets by Mean Curvature on a Manifold_Ilmanen.pdf",
+      "sha256": "0e86d3734392240f0a06ed93d86b358562f6dd17afe224d6a7e92da2cadf894e",
+      "pages": 35,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "030",
+      "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+      "sha256": "158cf668e44a6d7e9650ed0d418eeeff3b7622e014f586f923d87b0371027842",
+      "pages": 79,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "031",
+      "filename": "Geometric Evolution Equations for Hypersurfaces_Huisken-Polden.pdf",
+      "sha256": "1335f1418176ff533199937d62ed6ff83db2bdc94bf3996680f73188959b062e",
+      "pages": 40,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "032",
+      "filename": "Graphical Translators for Mean Curvature Flow_Hoffman-Ilmanen-Martin-White.pdf",
+      "sha256": "f61168494746c580d5b5bca95f28b742671b305cf8130bc06901d1e7e5b25a22",
+      "pages": 28,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "033",
+      "filename": "Interior estimates for hypersurfaces moving by mean curvature_Ecker-Huisken.pdf",
+      "sha256": "20994acbbe9575a8436f8ed1e106f20d77beafd25f245de8002a37690b7d0123",
+      "pages": 23,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "034",
+      "filename": "Lecture Notes on Mean Curvature Flow_Mantegazza.pdf",
+      "sha256": "41ac690e19a3c1fe963a904d13ea8c176eebd505dfe5bae1df032b7d6d685dcf",
+      "pages": 175,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "035",
+      "filename": "Lectures on Mean Curvature Flow and Related Equations_Ilmanen.pdf",
+      "sha256": "4ec85935c7ac261af5ae3330b2d2542e8fec20c273ad718175598836cd713f57",
+      "pages": 63,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "036",
+      "filename": "Local monotonicity and mean value formulas for evolving Riemannian manifolds_Ecker-Knopf-Ni-Topping.pdf",
+      "sha256": "756d43319e4b7044ec7caa19c706cdcbd7f5203566b9e9ffd5d715d9252f5cdc",
+      "pages": 42,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "037",
+      "filename": "Long-time existence and convergence of graphic mean curvature flow in arbitrary codimension_Wang.pdf",
+      "sha256": "9706944123e025d3600ff3cf7775a8ad8305803e35e9135dbd2b52a4d78f424f",
+      "pages": 19,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "038",
+      "filename": "Mean Curvature Evolution of Entire Graphs_Ecker-Huisken.pdf",
+      "sha256": "7c57249225f879fcd01c93ba5723d170d448fe6b518d4d9eea583511880bcfe5",
+      "pages": 20,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "039",
+      "filename": "Mean Curvature Flow of Mean Convex Hypersurfaces_Haslhofer-Kleiner.pdf",
+      "sha256": "ff2a96fe6d4a8db983423760deaae3c98122c3da5541e66b4f8f299802e2dde3",
+      "pages": 36,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "040",
+      "filename": "Mean Curvature Flow with Boundary_White.pdf",
+      "sha256": "beff96080530c6c51492fea3e13d64c619ca6c79f1b365e4f4f64e09b9985881",
+      "pages": 43,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "041",
+      "filename": "Mean curvature flow of pinched submanifolds to spheres_Andrews-Baker.pdf",
+      "sha256": "a6a49ef7b420f2cbfa2b3cb7501476e06caba0b8012008824b1ecc2b973542dd",
+      "pages": 39,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "042",
+      "filename": "Mean curvature flow singularities for mean convex surfaces_Huisken-Sinstrari.pdf",
+      "sha256": "103ce7a1db6da91c4c11c117eb3131d88a1b320cd25b9952c38336bdd6b0dfc5",
+      "pages": 14,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "043",
+      "filename": "Mean curvature flow through singularities for surfaces of rotation_AAG.pdf",
+      "sha256": "14abc4dbb8e0d59b57e792b78ee65ff68964e64467306ab147e0f63022c4a90a",
+      "pages": 66,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "044",
+      "filename": "Mean curvature flow through singularities for surfaces of rotation_Altschuler-Angenent-Giga.pdf",
+      "sha256": "14abc4dbb8e0d59b57e792b78ee65ff68964e64467306ab147e0f63022c4a90a",
+      "pages": 66,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "045",
+      "filename": "Mean curvature flow with surgeries of two–convex hypersurfaces_Huisken-Sinestrari.pdf",
+      "sha256": "e642aaaf6c5f89221a9f225d7ca35b55b19f59ade2b3298f191a2db743f079d9",
+      "pages": 85,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "046",
+      "filename": "Mean curvature flow_Colding-Minicozzi-Pedersen.pdf",
+      "sha256": "de9739e35a1e5c5a7650c1810bde9e37c14d5292f7caaa0be79bfb4dee147c2e",
+      "pages": 37,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "047",
+      "filename": "Minimal cones and self-expanding solutions for mean curvature flows_Ding.pdf",
+      "sha256": "1b9a338a255072aba002b7353b2f55d0e277007fe3ccee22a05470c281ae3b15",
+      "pages": 47,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "048",
+      "filename": "Neck Pinching Dynamics under Mean Curvature Flow_Gang-Sigal.pdf",
+      "sha256": "149d44d63557c069eca1cb45e038d601cda7d17d614b57bd1739b20137cddc88",
+      "pages": 45,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "049",
+      "filename": "Notes on Translating Solutions for Mean Curvature Flow_Hoffman-Ilmanen-Martin-White.pdf",
+      "sha256": "4524ac2edc4251a193d8993172d6503ebe386a756bdc5f1369921e5393d28d5f",
+      "pages": 20,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "050",
+      "filename": "On short time existence for the planar network flow_Ilmanen-Neves-Schulze.pdf",
+      "sha256": "d413ecb8ec6128b45e44668a782c3fe80ca59866be578c5e40e2c240f25b91e5",
+      "pages": 51,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "051",
+      "filename": "On the Mean Curvature Evolution of Two-Convex Hypersurfaces_Head.pdf",
+      "sha256": "cd78e59513a02b0fcd8bc84258fc1d785f0688f0993a5450c8d48d3f55380675",
+      "pages": 26,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "052",
+      "filename": "On the dynamics of formation of generic singularities of mean curvature flow_Gang.pdf",
+      "sha256": "d86bbb850a4df6612242fa54a10fec2c2bb167823178182efca320fcc838d5c0",
+      "pages": 78,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "053",
+      "filename": "On the existence of mean curvature ﬂow with transport term_Liu-Sato-Tonegawa.pdf",
+      "sha256": "1ab1f4ac51c7aea472ede2c80cd2b45377e9c376914d07cd109f78d6e9ee0fa3",
+      "pages": 27,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "054",
+      "filename": "On the mean convexity of a space-and-time neighborhood of generic singularities formed by mean curvature flow_Gang.pdf",
+      "sha256": "dbd9d6014f74110037b648148d0a9c8314ecab9f14f07ab69687d2babdf63ab5",
+      "pages": 72,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "055",
+      "filename": "Partial regularity of mean-convex hypersurfaces flowing by mean curvature_White.pdf",
+      "sha256": "10835e89005b36035af27a77f8941a2eff49d4d900d9352fe6d69e72255e25c6",
+      "pages": 8,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "056",
+      "filename": "Precise asymptotics near a pinched disk singularity formed by mean curvature flow_Gang-Wang.pdf",
+      "sha256": "f48aab9823f04390c96bae37098fb5c9d104c25785a1980d62a3462de79cfb1c",
+      "pages": 10,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "057",
+      "filename": "Problems in Mean Curvature Flow_Ilmanen.pdf",
+      "sha256": "9d76ca3585dd59055bf47161137bda08275d384e2789e78133473bd1d66adbb5",
+      "pages": 3,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "058",
+      "filename": "Quantitative Stratification and the Regularity of Mean Curvature Flow_Cheeger-Haslhofer-Naber.pdf",
+      "sha256": "50fe720b638605094d12b6e706a81abd9af05b2785f7d719fa56c7891ef0e90d",
+      "pages": 20,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "059",
+      "filename": "Rate of convergence of the mean curvature flow_Sesum.pdf",
+      "sha256": "fba35133d462aac621f76f10acbaff59089a94abc70005c52db84de25ff635f1",
+      "pages": 22,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "060",
+      "filename": "Regularity Theory for Mean Curvature Flow_Ecker.pdf",
+      "sha256": "19ec377dfffad71e61a81bb379ce2c931597fecc2f653ba981eec534c8935202",
+      "pages": 173,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "061",
+      "filename": "Regularity of elliptic and parabolic systems_2_Colding-Minicozzi.pdf",
+      "sha256": "cc8610c16ebfc09117e618d6defb883fa1abb13c842e437fd2464bbbc2f15203",
+      "pages": 33,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "062",
+      "filename": "Regularity of elliptic and parabolic systems_3_Colding-Minicozzi.pdf",
+      "sha256": "ede552ed8bebecb35fe30198a1b00352a471fc2c935cacf82577051fa90d52e8",
+      "pages": 36,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "063",
+      "filename": "Regularity of elliptic and parabolic systems_Colding-Minicozzi.pdf",
+      "sha256": "11eb5b218124bc1cd062f0ffcb48f668c76bf98e939328886aa8a6babab56f40",
+      "pages": 32,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "064",
+      "filename": "Regularity of the level set flow_Colding-Minicozzi.pdf",
+      "sha256": "628090434c342d75b407c081079f8afd9024f887e0adb5f0adff0996f2adcfe0",
+      "pages": 11,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "065",
+      "filename": "Remarks on the self-shrinking Clifford torus_2020_Evans-Lotay-Schulze.pdf",
+      "sha256": "e9e77e2e1f08c67dfc2c873a9924f6b24e790813b5891942b4fdc98bde0397a5",
+      "pages": 31,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "066",
+      "filename": "Remarks on the self-shrinking Clifford torus_Evans-Lotay-Schulze.pdf",
+      "sha256": "51b864e554fcc4eb86d3cd4bddc030564f00f28f9dc6dbfaf2fe2316add668c5",
+      "pages": 26,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "067",
+      "filename": "Rigidity of generic singularities of mean curvature flow_Colding-Ilmanen-Minicozzi.pdf",
+      "sha256": "33baf8ab25613445820a0e432c5cb7ab2eb3e05091c554b58647c3cf241c24b2",
+      "pages": 20,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "068",
+      "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
+      "sha256": "0413c6efce6ca092867232f63481a9191a1df31c17184201340cbe45ade4282a",
+      "pages": 22,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "069",
+      "filename": "Sharp entropy bounds for self-shrinkers in mean curvature flow_Hershkovits-White.pdf",
+      "sha256": "0fe22313c58b31ed2893ada66dcc1894f85b846c57532c129c7411ed079f7c28",
+      "pages": 10,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "070",
+      "filename": "Sharp estimates for mean curvature flow of graphs_Colding-Minicozzi.pdf",
+      "sha256": "55a66395cd9edd06a20137bd901c0cf51a5c808f68e7c6dd8070b64ddb4f3209",
+      "pages": 9,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "071",
+      "filename": "Sharp lower bounds on density for area-minimizing cones_Ilmanen-White.pdf",
+      "sha256": "c9a8be89a868233c204933a93cc80690272b6b1414caa554ff3e69607e05cd16",
+      "pages": 18,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "072",
+      "filename": "Shortening space curves and flow through singularities_Altschuler-Grayon.pdf",
+      "sha256": "0f63ba5ecd3eb359d07ccc11c57be68c75a8fc01478a7f829adf07773053fb5c",
+      "pages": 16,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "073",
+      "filename": "Shrinking donuts_angenent.pdf",
+      "sha256": "1b7bd96463bcd5bc6fd0e6b2883f1e5e2a48a6a01616f0794a297a6a7c88dc2d",
+      "pages": 18,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "074",
+      "filename": "Singularities of Mean Curvature Flow of Surfaces_Ilmanen.pdf",
+      "sha256": "d0e7e800148e6264a184d4a81a9039623c58633c59836e42d964c8b0af5a6785",
+      "pages": 37,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "075",
+      "filename": "Singularities of the curve shrinking flow for space curves_Altschuler.pdf",
+      "sha256": "9c7f7ae0d8db1da30e855c5b1b8caf835a6f2263d8cd2f4c873c78c28dce13fc",
+      "pages": 24,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "076",
+      "filename": "Singularity profile in the mean curvature flow_Sheng-Wang.pdf",
+      "sha256": "f25ef4b1deaf8354c536461ce47fbac3e61cbfa4f2739bec1e016c6d2f1d5371",
+      "pages": 18,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "077",
+      "filename": "Smooth compactness of self-shrinkers_Colding-Minicozzi.pdf",
+      "sha256": "0c652b36f4c26e6fbceb824cc38ff64c39ae2f7dc500f23b79e49c982b6d1e89",
+      "pages": 13,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "078",
+      "filename": "Stability and area growth of lambda-hypersurfaces_Cheng-Wei.pdf",
+      "sha256": "50a1360f42a920e486d5cccac7e5847bb5787a90b95908bdd6448b977c02aa84",
+      "pages": 26,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "079",
+      "filename": "Stability of neckpinch singularities_Schulze-Sesum.pdf",
+      "sha256": "80692fe6aba6724ebfa693b0dd4e48cea86cceea445377d0ce36660254c42ead",
+      "pages": 14,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "080",
+      "filename": "Starshaped hypersurfaces and the mean curvature flow_Smoczyk.pdf",
+      "sha256": "5ce635352f2940cfba62ca6de832a1c9759b7459d59149fcfb16a23176c5c777",
+      "pages": 12,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "081",
+      "filename": "Stratification of minimal surfaces, mean curvature flows, and harmonic maps_White.pdf",
+      "sha256": "d3ea31eb4f10f194e694209ccafeb4f3e52fe922ee7ec7d0afca2bc929f0c395",
+      "pages": 36,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "082",
+      "filename": "Subsequent singularities in mean-convex mean curvature flow_White.pdf",
+      "sha256": "ea92a0f559db565a1174bb41f541f8664ede753acf5076d3da3a8f7e2d20bb18",
+      "pages": 12,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "083",
+      "filename": "The heat equation shrinking convex plane curves_Gage-Hamilton.pdf",
+      "sha256": "87d04ef4e97a17b5a31b373550a6dfe2d9cd16a05de94da02b5b887ebd07e986",
+      "pages": 28,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "084",
+      "filename": "The motion of a surface by its mean curvature_Brakke.pdf",
+      "sha256": "cfb2573c2da4db54c8d63bc13f998dddc6383d0cbad772b2f893da402571877e",
+      "pages": 132,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "085",
+      "filename": "The nature of singularities in mean curvature flow of mean-convex sets_White.pdf",
+      "sha256": "93a40b2be2c6ee3599744d33ef5d18b53b9eaec379538a8ce8c7f77b89d04533",
+      "pages": 16,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "086",
+      "filename": "The round sphere minimizes entropy among closed self-shrinkers_Colding-Ilmanen-Minicozzi-White.pdf",
+      "sha256": "4f273e6a3816fcdfa1c03c8466b089bd3b2c626858d21d86661a590238180900",
+      "pages": 17,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "087",
+      "filename": "The singular set of mean curvature flow with generic singularities_Colding-Minicozzi.pdf",
+      "sha256": "6feb622fd7db78493df5cc6277047d379a505c83d5858ab4a26518510bf45e6f",
+      "pages": 29,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "088",
+      "filename": "The size of the singular set in mean curvature flow of mean-convex sets_White.pdf",
+      "sha256": "acce760eb1c29c7975f367bbbde6cc687e58aeb3eddf6d2f08941b85695d95bc",
+      "pages": 31,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "089",
+      "filename": "The topology of hypersurfaces moving by mean curvature_White.pdf",
+      "sha256": "0c7f7303c45ffc483cbd5782235f380db821593080966322169cc320826fe8e6",
+      "pages": 17,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "090",
+      "filename": "The volume preserving mean curvature flow_Huisken.pdf",
+      "sha256": "366ec18a12887fe3ce7b95408c5b40da18940821a9a3d500c4b28828a0a81b47",
+      "pages": 15,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "091",
+      "filename": "Topological change in mean convex mean curvature flow_White.pdf",
+      "sha256": "07cbfe4fed9aa3c313b4d1648db113040812edcb6d8a4b13f2ab9cc6d2a865c3",
+      "pages": 25,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "092",
+      "filename": "Uniqueness and pseudolocality theorems of the mean curvature flow_Chen-Yin.pdf",
+      "sha256": "d1d89bda8bf269fc536e3c2a65f5fefa828e9fa09155d296c87b1b6fc357ad21",
+      "pages": 56,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "093",
+      "filename": "Uniqueness of asymptotically conical tangent flows_Chodosh-Schulze.pdf",
+      "sha256": "a48361cae37db2bc43e357769a74d3fec616deac17158623d5a4a2bee1b4d217",
+      "pages": 40,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "094",
+      "filename": "Uniqueness of blowups and Łojasiewicz inequalities_Colding-Minicozzi.pdf",
+      "sha256": "41b644987ae4ff8b8e3ac9e492b0bc379f1c593bccf931ce6b9e685c16003128",
+      "pages": 66,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "095",
+      "filename": "Uniqueness of compact tangent flows in mean curvature flow_Schulze.pdf",
+      "sha256": "3210380dae5578f18113ffe0d6a954d9c145b1543942d79cac4ddffbb34d366e",
+      "pages": 10,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "096",
+      "filename": "Uniqueness of convex ancient solutions to mean curvature flow in R3_Brendle-Choi.pdf",
+      "sha256": "d683a70152a306a9fc2bef493f8cb0f09855c88f3b3efd92c3c4d9909eff3d0b",
+      "pages": 42,
+      "review_status": "selected-passages-checked"
+    },
+    {
+      "id": "097",
+      "filename": "Uniqueness of self-similar shrinkers with asymptotically conical ends_Wang.pdf",
+      "sha256": "5447919a7b9713ad4de6c8bbc3dd766932acd08d10dceceafd0e8d55b5057d31",
+      "pages": 26,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "098",
+      "filename": "Uniqueness of self-similar shrinkers with asymptotically cylindrical ends_Wang.pdf",
+      "sha256": "aaacf66e3bd84b8e709b2414e32998fb2bce8b4f5c05d6c036f75566a41c7b80",
+      "pages": 24,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "099",
+      "filename": "Universality in mean curvature flow neckpinches_Gang-Knopf.pdf",
+      "sha256": "2cf4aabb55a3ffd06a6583bb4c3083b712072c24f26dad3305867254a781491e",
+      "pages": 66,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "100",
+      "filename": "Width and mean curvature flow_Colding-Minicozzi.pdf",
+      "sha256": "b5ef321db71f9b9a183ff5f6a45d57a1b2371df6e7a968e54173f32098bf69a8",
+      "pages": 19,
+      "review_status": "inventoried"
+    },
+    {
+      "id": "101",
+      "filename": "motion of a set by the curvature of its boundary_Soner.pdf",
+      "sha256": "a0b24d4e6e3b2482c234ba0500a0509d0e4f3763969ca0985625d7fb7a8872a8",
+      "pages": 60,
+      "review_status": "inventoried"
+    }
+  ],
+  "entries": [
+    {
+      "label": "ex:catalogue-round-sphere",
+      "formula_kind": "exact_formula",
+      "sources": [
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Section 3.3, PDF p. 8"
+        },
+        {
+          "corpus_id": "030",
+          "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "pp. 757-759; Theorems 0.12, 0.16, 0.17 (PDF pp. 8-10)"
+        }
+      ],
+      "properties": [
+        "compact",
+        "embedded",
+        "complete",
+        "proper",
+        "strictly convex",
+        "Type I extinction",
+        "entropy stable",
+        "F-stable with center/scale variations"
+      ]
+    },
+    {
+      "label": "ex:catalogue-round-cylinder",
+      "formula_kind": "exact_formula",
+      "sources": [
+        {
+          "corpus_id": "030",
+          "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "pp. 758-759; Theorems 0.12 and 0.16 (PDF pp. 8-9)"
+        }
+      ],
+      "properties": [
+        "embedded",
+        "complete",
+        "proper",
+        "noncompact",
+        "weakly convex",
+        "H>0",
+        "entropy stable",
+        "F-unstable",
+        "two ends if n-k=1; one end if n-k>=2"
+      ]
+    },
+    {
+      "label": "ex:catalogue-plane-shrinker",
+      "formula_kind": "exact_formula",
+      "sources": [
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Sections 2.5 and 3.3, PDF pp. 4 and 8"
+        },
+        {
+          "corpus_id": "030",
+          "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "Theorems 0.12 and 0.16"
+        }
+      ],
+      "properties": [
+        "stationary",
+        "embedded",
+        "complete",
+        "proper",
+        "flat",
+        "entropy 1",
+        "no finite singularity",
+        "hypersurface F/entropy stability"
+      ]
+    },
+    {
+      "label": "ex:catalogue-abresch-langer",
+      "formula_kind": "ode_construction",
+      "sources": [
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Theorem 1 and Section 3.1, PDF pp. 5-6"
+        },
+        {
+          "corpus_id": "020",
+          "filename": "Complexity of parabolic systems - IHES_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "Section 6.3, PDF p. 22 (IHES 53-page edition)"
+        },
+        {
+          "corpus_id": "068",
+          "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
+          "pdf_pages_or_locator": "p. 2984 (PDF p. 2)"
+        }
+      ],
+      "properties": [
+        "compact immersed S1",
+        "noncircular examples self-intersect",
+        "positive curvature after orientation",
+        "only embedded closed shrinker is circle",
+        "entropy>2 for noncircular examples",
+        "Type I extinction"
+      ]
+    },
+    {
+      "label": "ex:catalogue-angenent-torus",
+      "formula_kind": "ode_construction",
+      "sources": [
+        {
+          "corpus_id": "073",
+          "filename": "Shrinking donuts_angenent.pdf",
+          "pdf_pages_or_locator": "Introduction and closed geodesic shooting construction; supplied preprint 18 pages"
+        },
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Section 3.3, PDF pp. 8-11; equation (5.2), PDF p. 14"
+        },
+        {
+          "corpus_id": "030",
+          "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "Theorems 0.12 and 0.17"
+        }
+      ],
+      "properties": [
+        "compact",
+        "embedded",
+        "complete",
+        "proper",
+        "S1 x S^(n-1)",
+        "rotational and reflection symmetry",
+        "not mean convex",
+        "entropy unstable",
+        "Type I extinction",
+        "no uniqueness asserted"
+      ]
+    },
+    {
+      "label": "ex:catalogue-drugan-sphere",
+      "formula_kind": "existence_ode",
+      "sources": [
+        {
+          "corpus_id": "013",
+          "filename": "An immersed S2 self-shrinkers_Drugan.pdf",
+          "pdf_pages_or_locator": "Theorem 1.1, p. 3139; eq. (1.3), p. 3140; Figure 1, p. 3141"
+        },
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Theorem 3, PDF pp. 14-15"
+        }
+      ],
+      "properties": [
+        "compact immersed Sn",
+        "not embedded",
+        "complete induced metric",
+        "proper immersion",
+        "rotational and reflection symmetry",
+        "Type I extinction",
+        "no uniqueness/entropy value asserted"
+      ]
+    },
+    {
+      "label": "ex:catalogue-clifford-torus",
+      "formula_kind": "exact_formula",
+      "sources": [
+        {
+          "corpus_id": "065",
+          "filename": "Remarks on the self-shrinking Clifford torus_2020_Evans-Lotay-Schulze.pdf",
+          "pdf_pages_or_locator": "Section 2 and Lemma 2.4, PDF pp. 3-6; Lemmas 4.1-4.2 and Theorem 4.3 p.13; Corollary 4.8 and Theorem 4.9 p.16; Theorem 5.7 p.29"
+        },
+        {
+          "corpus_id": "066",
+          "filename": "Remarks on the self-shrinking Clifford torus_Evans-Lotay-Schulze.pdf",
+          "pdf_pages_or_locator": "Older v2 reviewed only for edition comparison; rigidity theorem is 5.6 in v2"
+        }
+      ],
+      "properties": [
+        "embedded compact flat torus",
+        "Lagrangian",
+        "minimal in S3(2)",
+        "area 8pi^2",
+        "entropy 2pi/e",
+        "Hamiltonian F-stable",
+        "Lagrangian F-unstable",
+        "locally Hamiltonian volume minimizing",
+        "Hamiltonian entropy and flow unstable",
+        "local C^(2,alpha) rigidity modulo similarities"
+      ]
+    },
+    {
+      "label": "ex:catalogue-curve-products",
+      "formula_kind": "product_of_ode_factors",
+      "sources": [
+        {
+          "corpus_id": "068",
+          "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
+          "pdf_pages_or_locator": "Equation (1.4), p. 2984; product observation p. 2985"
+        },
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Theorem 1 for factor curvature ODE, PDF pp.5-6"
+        }
+      ],
+      "properties": [
+        "compact immersed T^m",
+        "complete",
+        "proper",
+        "Lagrangian",
+        "flat normal bundle",
+        "intrinsically flat",
+        "mean curvature nonzero",
+        "non-spherical unless all factors round",
+        "embedded for embedded circle factors; self-intersections if noncircular factor"
+      ]
+    },
+    {
+      "label": "ex:catalogue-spherical-minimal",
+      "formula_kind": "general_construction_and_exact_product",
+      "sources": [
+        {
+          "corpus_id": "068",
+          "filename": "Self-shrinkers of the mean curvature flow in arbitrary codimension_Smoczyk.pdf",
+          "pdf_pages_or_locator": "p. 2985 (PDF p. 3), Theorem 1.1 and spherical/product observations"
+        }
+      ],
+      "properties": [
+        "compact complete proper immersion",
+        "embedded when original minimal sphere immersion embedded",
+        "parallel principal normal",
+        "|H|=sqrt(n/2)",
+        "explicit products embedded codimension two",
+        "explicit product |A|^2=1",
+        "general topology/symmetry not prescribed"
+      ]
+    },
+    {
+      "label": "ex:catalogue-moller-genus",
+      "formula_kind": "existence_gluing",
+      "sources": [
+        {
+          "corpus_id": "003",
+          "filename": "A Survey of Closed Self-Shrinkers with Symmetry_Drugan-Lee-Nguyen.pdf",
+          "pdf_pages_or_locator": "Section 3.3, PDF pp. 10-11"
+        },
+        {
+          "corpus_id": "030",
+          "filename": "Generic mean curvature flow I- generic singularities_Colding-Minicozzi.pdf",
+          "pdf_pages_or_locator": "Theorems 0.12 and 0.17"
+        },
+        {
+          "bibkey": "CatMoller2014",
+          "url": "https://arxiv.org/abs/1111.7318v2",
+          "pdf_pages_or_locator": "Theorem 1 pp.1-2; Proposition 2.1 p.5",
+          "reviewed_online": true
+        }
+      ],
+      "properties": [
+        "closed embedded orientable genus g",
+        "complete",
+        "proper",
+        "dihedral symmetry order 2g",
+        "Hausdorff limit sphere union torus",
+        "smooth convergence off two intersection circles",
+        "not mean convex",
+        "entropy unstable",
+        "Type I extinction",
+        "no claim for low genus or uniqueness"
+      ]
+    },
+    {
+      "label": "ex:catalogue-grim-reaper",
+      "formula_status": "explicit formula",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            4
+          ],
+          "locator": "Example 1.6"
+        },
+        {
+          "key": "CatHIMWGraphical18",
+          "pdf_pages": [
+            5
+          ],
+          "locator": "Section 2"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-tilted-grim-reaper",
+      "formula_status": "explicit formula",
+      "references": [
+        {
+          "key": "CatHIMWGraphical18",
+          "pdf_pages": [
+            3
+          ],
+          "locator": "equation (1.4)"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-bowl-translator",
+      "formula_status": "ODE; existence and uniqueness theorem",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "locator": "Section 4; Theorem 4.1"
+        },
+        {
+          "key": "CSS07",
+          "pdf_pages": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "locator": "Theorem 1.1; Lemmas 2.1–2.2; author preprint"
+        },
+        {
+          "key": "CatBrendleChoi19",
+          "pdf_pages": [
+            2
+          ],
+          "printed_pages": [
+            36
+          ],
+          "locator": "Theorem 1.1"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-translating-catenoid",
+      "formula_status": "ODE construction",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            10
+          ],
+          "locator": "Section 4"
+        },
+        {
+          "key": "CSS07",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ],
+          "locator": "Lemma 2.3; author preprint"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-delta-wing",
+      "formula_status": "PDE existence and uniqueness theorem",
+      "references": [
+        {
+          "key": "CatHIMWGraphical18",
+          "pdf_pages": [
+            4,
+            6,
+            10,
+            11,
+            12
+          ],
+          "locator": "Theorems 1.1, 2.4, 4.1, 5.7; Corollary 5.5"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-wang-entire-translators",
+      "formula_status": "existence theorem; higher dimension",
+      "references": [
+        {
+          "key": "CatXJWang11",
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ],
+          "printed_pages": [
+            1186,
+            1187,
+            1188
+          ],
+          "locator": "equations (1.1)–(1.3); Theorems 1.2–1.3"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-prescribed-apex-translators",
+      "formula_status": "existence theorem with prescribed local data",
+      "references": [
+        {
+          "key": "CatHIMWGraphical18",
+          "pdf_pages": [
+            18,
+            25
+          ],
+          "locator": "Theorem 8.1, Corollary 8.2; Section 11 convexity caveat"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-scherkenoids",
+      "formula_status": "surveyed external construction",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            11,
+            12
+          ],
+          "locator": "Section 5; Figure 6"
+        },
+        {
+          "key": "CatHMW20",
+          "locator": "later external construction; abstract and bibliographic metadata verified"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-pitchfork",
+      "formula_status": "surveyed external construction",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            11,
+            12
+          ],
+          "locator": "Section 5; Figure 7"
+        },
+        {
+          "key": "CatHMW20",
+          "locator": "abstract: finite topology and quadratic area growth of pitchfork subfamily"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-nguyen-tridents",
+      "formula_status": "surveyed gluing construction",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            11,
+            12
+          ],
+          "locator": "Sections 4–5"
+        },
+        {
+          "key": "CatNguyen09",
+          "locator": "original externally cited gluing construction"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-finite-genus-translators",
+      "formula_status": "surveyed gluing construction",
+      "references": [
+        {
+          "key": "CatHIMWNotes19",
+          "pdf_pages": [
+            11
+          ],
+          "locator": "Section 4"
+        },
+        {
+          "key": "CatDPN17",
+          "locator": "original paper abstract; proof remains external"
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-expanding-corners",
+      "formula_status": "ODE construction",
+      "citations": [
+        "CatDing20"
+      ],
+      "source_locators": [
+        "Section4 (4.9)–(4.15), printed373–374/PDF15–16"
+      ],
+      "source_audit": "Gaussian conical-end estimate; even strict-convex graph; E-minimizing. Do not imply prescribed a and prescribed kappa independent."
+    },
+    {
+      "label": "ex:catalogue-rotational-expanders",
+      "formula_status": "ODE construction",
+      "citations": [
+        "CatDing20"
+      ],
+      "source_locators": [
+        "Section4 (4.1),(4.7),(4.8), printed371–373/PDF13–15"
+      ],
+      "source_audit": "Entire complete proper R^n; E-minimizing; radial symmetry; one conical end; O(1/r) height difference."
+    },
+    {
+      "label": "ex:catalogue-two-sheet-expanders",
+      "formula_status": "ODE construction using radial graph",
+      "citations": [
+        "CatDing20",
+        "CatAIC95"
+      ],
+      "source_locators": [
+        "AIC Lemma2(i) PDF12/1947; Theorem4 PDF15–16/1950–1951"
+      ],
+      "source_audit": "Disconnected two convex graphical R^n components; any alpha exists. Equals levelset flow only below critical angle. No universal uniqueness above threshold."
+    },
+    {
+      "label": "ex:catalogue-one-sheet-expanders",
+      "formula_status": "ODE construction",
+      "citations": [
+        "CatAIC95"
+      ],
+      "source_locators": [
+        "Lemmas2(ii),3 and Theorem4 PDF12–16/1947–1951"
+      ],
+      "source_audit": "Connected complete proper S^(n-1)xR; two ends; exists for alpha>critical. No endpoint or uniqueness assertion. Critical angle decimal numerical and omitted."
+    },
+    {
+      "label": "ex:catalogue-mean-convex-expanders",
+      "formula_status": "Existence theorem",
+      "citations": [
+        "CatDing20"
+      ],
+      "source_locators": [
+        "Theorem1.1 PDF3/361; Theorem6.12 PDF44–45/402–403"
+      ],
+      "source_audit": "Smooth complete embedded E-minimizer; mean curvature vector points into Omega; sqrt(t)M foliates Omega. Unique in stated side/minimizing class. Do not replace with potentially singular arbitrary-cone current theorem."
+    },
+    {
+      "label": "ex:catalogue-expanding-networks",
+      "formula_status": "Geodesic/ODE boundary-value construction",
+      "citations": [
+        "CatINS19"
+      ],
+      "source_locators": [
+        "Lemmas4.1,4.3,Theorem4.4 PDF11–13/49–51; Section7 PDF32/70"
+      ],
+      "source_audit": "Regular tree network is not smooth hypersurface. Same rays plus same topological class required for uniqueness. Source normalization rescaled sqrt2."
+    },
+    {
+      "label": "ex:catalogue-stationary-catenoid",
+      "formula_status": "Exact parametrization",
+      "citations": [
+        "CatMan11"
+      ],
+      "source_locators": [
+        "Remark4.4.7 PDF116/105; existing ex:explicit-catenoid and curvature/stability propositions"
+      ],
+      "source_audit": "Eternal stationary; complete proper embedded annulus; area-unstable whole surface, stable open halves; existing proof retained, no new proof badge."
+    },
+    {
+      "label": "ex:catalogue-whitney-sphere",
+      "formula_status": "Exact initial immersion; subsequent evolution by PDE",
+      "citations": [
+        "CatViana18"
+      ],
+      "source_locators": [
+        "PDF1–3, special-case result PDF2 and Theorem1.3 PDF3"
+      ],
+      "source_audit": "Compact Lagrangian equivariant immersion with one transverse double point; nonselfsimilar; collapse0; tangent plane multiplicity2. Initial formula is NOT closed time-dependent solution."
+    },
+    {
+      "label": "ex:catalogue-degenerate-neckpinches",
+      "formula_status": "Theorem construction; asymptotic formulas",
+      "citations": [
+        "CatAV97"
+      ],
+      "source_locators": [
+        "Introduction1–5 PDF2–3/16–17; construction Sections3–7"
+      ],
+      "source_audit": "Compact embedded rotational sphere beforeT; typeII at tip; max curvature there; cylinder at parabolic scale, bowl at tip; not asserted ancient, convex globally or uniquely classified."
+    },
+    {
+      "label": "ex:catalogue-angenent-oval",
+      "formula_status": "Exact implicit equation",
+      "citations": [
+        "BV11"
+      ],
+      "source_locators": [
+        "Section3.1 equation14 PDF7; existing thm:explicit-ancient-oval and subsequent3 propositions"
+      ],
+      "source_audit": "Ancient compact strictlyconvex embedded circle; notsoliton; extinction0; curvature extremes and area explicit. Existing direct proof retained; avoid duplicated canonical claims."
+    }
+  ],
+  "normalization_notes": [
+    "Smoczyk uses H=-X_perp. Multiply source positions by sqrt(2) to use H=-X_perp/2.",
+    "The supplied Angenent preprint has inconsistent scale/exponent displays. Use DLN2018 equation (5.2) and Section 3.3 for normalized ODE and metric; source pages were visually inspected.",
+    "ELS 2019 and 2020 PDFs are versions of the same work. Cite v3 2020 (31pp) with Theorem 5.7; v2 2019 (26pp) labels rigidity Theorem 5.6.",
+    "The survey explicitly does not identify Drugan-Nguyen variational torus with Angenent torus. Do not transfer its profile length bound to Angenent without qualification.",
+    "Only lambda=0 in Chang lambda-self-shrinker paper describes ordinary MCF shrinkers. No nonzero-lambda examples imported.",
+    "DLN birotational numerical S3/T3 proposals are not existence theorems; not included.",
+    "Compactness/properness/Type I statements for compact examples are direct geometric consequences of the stated smooth compact immersion and homothety.",
+    "Smooth compactness of self-shrinkers (CM,2012,CMH87,463-475,DOI10.4171/CMH/260) reviewed for context; its compactness theorem is not a new example and no additional entry was created.",
+    "Existing CM12 bibliographic entry may represent CatCM2012; parent may canonically reuse it after checking the edition. No implementation registry has been changed.",
+    "Supplied Graphical Theorem 2.4 has a visibly confirmed typo arccos(2b/pi); use the width relation cos(theta)=pi/(2b).",
+    "Graphical Theorem 11.1 prints nonnegative k_i together with a positive-definite apex Hessian; avoid reproducing its boundary case without a separate audit.",
+    "Supplied Notes gives the downward convention but writes the positive bowl-height asymptotic; upward formulas were checked against CSS original.",
+    "The Graphical preprint supplied is dated July 5, 2018; Notes is dated January 29, 2019. Keep locators tied to those editions.",
+    "Do not describe a translated bowl end as an ordinary fixed-radius asymptotically cylindrical end; its graph has quadratic-minus-logarithmic height growth.",
+    "No latest general classification or full source coverage is claimed.",
+    "For the Angenent–Velazquez neckpinch, |A|tip=|Hvec|tip/sqrt(n); Amax normalization gives translating speed sqrt(n)."
+  ]
+}

@@ -10,6 +10,65 @@
       ]
     },
     {
+      "slug": "shrinkers",
+      "title": "Shrinkers",
+      "topics": [
+        "round-shrinking-spheres",
+        "generalized-shrinking-cylinders",
+        "planes-through-the-shrinker-center",
+        "abresch-langer-closed-shrinking-curves",
+        "angenent-s-shrinking-torus",
+        "drugan-s-immersed-shrinking-spheres",
+        "the-clifford-shrinking-torus-in-four-space",
+        "products-of-closed-shrinking-curves",
+        "higher-codimension-spherical-shrinkers",
+        "moller-closed-shrinkers-of-large-even-genus"
+      ],
+      "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
+    },
+    {
+      "slug": "translators",
+      "title": "Translators",
+      "topics": [
+        "the-grim-reaper-and-its-cylinders",
+        "tilted-grim-reaper-cylinders",
+        "the-rotational-bowl-translator",
+        "rotational-translating-catenoids",
+        "strictly-convex-delta-wing-translators",
+        "nonrotational-entire-convex-translators",
+        "translators-with-prescribed-apex-curvatures",
+        "scherkenoid-translators",
+        "the-pitchfork-translator",
+        "nguyen-translating-tridents",
+        "finite-genus-translators-with-three-ends"
+      ],
+      "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
+    },
+    {
+      "slug": "expanders",
+      "title": "Expanders",
+      "topics": [
+        "expanding-smoothings-of-planar-corners",
+        "rotational-graphical-expanders-over-round-cones",
+        "two-sheeted-expanders-of-rotational-double-cones",
+        "one-sheeted-expanders-of-rotational-double-cones",
+        "one-sided-expanders-from-mean-convex-cones",
+        "self-expanding-planar-tree-networks"
+      ],
+      "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions."
+    },
+    {
+      "slug": "other-special-flows",
+      "title": "Other special flows",
+      "topics": [
+        "the-catenoid-as-an-eternal-stationary-flow",
+        "mean-curvature-evolution-of-the-whitney-sphere",
+        "rotational-degenerate-neckpinch-solutions",
+        "the-angenent-oval-as-an-explicit-ancient-flow"
+      ],
+      "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
+    },
+    {
       "slug": "measure-theory",
       "title": "Measure theory",
       "tag": "94502970C691",

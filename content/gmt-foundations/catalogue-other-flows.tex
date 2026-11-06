@@ -1,0 +1,86 @@
+\chapter{The catenoid as an eternal stationary flow}\label{sec:catalogue-stationary-catenoid}
+\begin{example}[Stationary catenoid flow]\label{ex:catalogue-stationary-catenoid}
+For $a>0$ the explicit immersion
+\[
+ X(\theta,s,t)=a(\cosh s\cos\theta,\cosh s\sin\theta,s),
+ \quad \theta\in\mathbb R/2\pi\mathbb Z,\quad s\in\mathbb R,\quad t\in\mathbb R,
+\]
+is independent of time and has $\vec H=0$. It is therefore an eternal stationary mean curvature flow in $\mathbb R^3$.
+
+Every time slice is a complete properly embedded noncompact rotational annulus, with two ends and a waist circle of radius $a$. Its metric and curvature are
+\[
+ g=a^2\cosh^2s(d\theta^2+ds^2),\qquad
+ K=-\frac1{a^2\cosh^4s},\qquad
+ \int K\,dA=-4\pi.
+\]
+The geometric calculations are retained in Example \ref{ex:explicit-catenoid} and Proposition \ref{prop:catenoid-curvature-example}; Proposition \ref{prop:catenoid-unstable-example} proves that the complete catenoid is unstable for compactly supported area variations, while each open half is stable. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
+\end{example}
+
+\chapter{Mean curvature evolution of the Whitney sphere}\label{sec:catalogue-whitney-sphere}
+\begin{example}[A collapsing Lagrangian immersed sphere]\label{ex:catalogue-whitney-sphere}
+For $n\geq2$, the initial Whitney immersion in $\mathbb R^{2n}=\mathbb C^n$ is explicitly
+\[
+ F_0(x_1,\ldots,x_{n+1})
+ =\frac{(x_1,x_1x_{n+1},\ldots,x_n,x_nx_{n+1})}{1+x_{n+1}^2},
+ \qquad (x_1,\ldots,x_{n+1})\in S^n.
+\]
+It is a compact Lagrangian immersion, of dimension and codimension $n$, with one transverse double image point at the origin coming from the two poles. It is complete and proper as an immersion of a compact domain, and it is not embedded. Its equivariance reduces the geometry to the planar initial profile
+\[
+ \gamma_0(u)=\left(\frac{\sin u}{1+\cos^2u},
+ \frac{\sin u\cos u}{1+\cos^2u}\right),
+ \qquad u\in\mathbb R/2\pi\mathbb Z.
+\]
+For $n\geq2$ the profile evolution is the equivariant equation
+\[
+ (\partial_t\gamma)^\perp
+ =\vec k-(n-1)\frac{\gamma^\perp}{|\gamma|^2},
+\]
+interpreted by the smooth equivariant immersion at the double point. It is not ordinary planar curve shortening.
+
+The maximal smooth mean curvature flow $F_t$, $t\in[0,T)$, remains Lagrangian and equivariant. It collapses to the origin in finite time, and its tangent flow there is a Lagrangian plane with multiplicity two. The Whitney sphere is not a self-similar solution. These statements are the special case stated in \cite{CatViana18}, pp.~1--3, especially the result on p.~2 and Theorem 1.3 on p.~3. The formulas above specify the initial geometry and its reduced equation, not a closed expression for $F_t$ at positive time. A plot of $\gamma_0$ is an exact generating-profile picture of a higher-codimension immersion; it should not be labeled an embedding of the Whitney sphere in $\mathbb R^3$.
+\end{example}
+
+\chapter{Rotational degenerate neckpinch solutions}\label{sec:catalogue-degenerate-neckpinches}
+\begin{example}[Angenent--Vel\'azquez type-II singularities]\label{ex:catalogue-degenerate-neckpinches}
+Let $n\geq2$, let $m\geq3$ be odd, and let $K>0$. Choose a compact rotational target hypersurface in $\mathbb R^{n+1}$, smooth away from a cusp at the origin, whose radius satisfies $u_*(x)\sim\sqrt K\,x^{m/2}$ as $x\downarrow0$ and whose other tip closes smoothly. Angenent and Vel\'azquez construct smooth compact rotational mean curvature flows
+\[
+ M_t=\{(x,u(x,t)\omega):a(t)\leq x\leq b(t),\ \omega\in S^{n-1}\},
+ \qquad t_0<t<T,
+\]
+with smooth caps and positive radius between them. Each regular slice is an embedded sphere, hence complete and proper. The constructed flows remain close to the chosen target outside a small neighborhood of the origin as the construction interval is shortened. They are not supplied as ancient solutions or as solitons, and no closed formula for $u(x,t)$ is given.
+
+Set $\xi_*=(2(n-1)/K)^{1/m}$. At the left tip,
+\[
+ a(t)=-(\xi_*+o(1))(T-t)^{1/m},\qquad
+ |\vec H|_{\rm tip}(t)=\left(\frac{\xi_*}{m}+o(1)\right)(T-t)^{1/m-1}.
+\]
+Here the curvature coefficient is for the trace mean curvature, equivalently the magnitude $|\vec H|$ at this convex tip. Rotational smoothness makes the $n$ principal curvatures equal at the tip, so $|A|_{\rm tip}=|\vec H|_{\rm tip}/\sqrt n$. The maximum of $|A|$ is attained there; its blow-up rate is type II. The parabolic rescalings at the origin converge smoothly on compact sets to $S^{n-1}_{\sqrt{2(n-1)}}\times\mathbb R$, whereas rescaling about the tip by $A_{\max}(t)=\max_{M_t}|A|$ yields the rotational translating bowl with tip $|A|=1$. This last normalization has translation speed $\sqrt n$; rescaling instead by $|\vec H|_{\rm tip}$ gives the speed-one bowl.
+
+Under the intermediate scaling $x\mapsto x/(T-t)^{1/m}$ and $r\mapsto r/(T-t)^{1/2}$, the limiting profile is
+\[
+ r=\sqrt{2(n-1)+Kx^m},\qquad x\geq-\xi_*.
+\]
+This last expression is an asymptotic limiting profile, not an exact formula for the evolving compact hypersurface. Source: \cite{CatAV97}, Introduction, items 1--5, printed pp.~16--17, supplied PDF pp.~2--3; the construction is justified in Sections 3--7. The even-$m$ modifications and the formal $m=2$ discussion are not included in this entry. A visualization can compare the three scaling regimes, with the full compact surface labeled schematic and the intermediate profile labeled as a limit. The construction does not classify all type-II singularities or impose global convexity on every allowed target.
+\end{example}
+
+\chapter{The Angenent oval as an explicit ancient flow}\label{sec:catalogue-angenent-oval}
+\begin{example}[The ancient paperclip curve]\label{ex:catalogue-angenent-oval}
+With the speed-one curve-shortening convention, the exact implicit equation
+\[
+ \Gamma_t=\{(x,y)\in\mathbb R^2:|x|<\pi/2,\ e^t\cosh y=\cos x\},
+ \qquad -\infty<t<0,
+\]
+defines the Angenent oval. Equivalently, its two graph branches are
+\[
+ y=\pm\operatorname{arcosh}(e^{-t}\cos x),
+ \qquad |x|\leq\arccos(e^t).
+\]
+Their endpoints join smoothly as a curve, even though those graph charts cease to be regular there. This is an exact implicit formula, rather than a single global graph parametrization. It is recorded in \cite{BV11}, Section 3.1, equation (14), p.~7; Theorem \ref{thm:explicit-ancient-oval} verifies the equation and flow directly in this project.
+
+Every time slice is a smooth compact embedded strictly convex curve, hence complete and proper, with topology $S^1$ and reflection symmetries across both coordinate axes. It shrinks to the origin at time zero but changes shape and is not a soliton. Its enclosed area is $-2\pi t$, and
+\[
+ \kappa_{\max}=(1-e^{2t})^{-1/2},\qquad
+ \kappa_{\min}=e^t(1-e^{2t})^{-1/2}.
+\]
+The rescaling $(-t)^{-1/2}\Gamma_t$ converges smoothly to the radius-$\sqrt2$ circle at extinction. As $t\to-\infty$, translating its upper and lower branches to keep their tips fixed gives the two oppositely directed grim-reaper profiles, locally in $|x|<\pi/2$. The detailed statements and calculations remain in Propositions \ref{prop:ancient-oval-curvature-ratio}, \ref{prop:ancient-oval-extinction-model}, and \ref{prop:ancient-oval-translator-limits}. A time slider can plot the exact implicit curve; finite display times do not represent the entire ancient interval.
+\end{example}

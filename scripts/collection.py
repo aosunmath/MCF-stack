@@ -25,6 +25,7 @@ from reader_references import page_references, bibliography, source_catalogue
 from search_index import write_search_index
 from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
 from source_snapshot import revision_id, revision_markup
+from soliton_visualizations import visualization, validate_visualizations
 
 
 def slugify(title):
@@ -322,7 +323,7 @@ def prepare_fragment(variant, source_tags, references, root, component_anchors=N
 @cache
 def asset_revision():
     folder = Path(__file__).resolve().parents[1] / "site" / "assets"
-    names = ("book.css", "collection.css", "formalization.css", "math-config.js", "formalization.mjs", "collection.mjs", "comments.mjs", "search.mjs")
+    names = ("book.css", "collection.css", "formalization.css", "math-config.js", "formalization.mjs", "collection.mjs", "comments.mjs", "search.mjs", "soliton-viewer.css", "soliton-viewer.mjs")
     return sha256(b"".join((folder / name).read_bytes() for name in names)).hexdigest()[:12]
 
 
@@ -404,7 +405,10 @@ def continuous_section(relevant, entries, roots, sources, source_tags, reference
         body = prepare_fragment({**variant, "html": retained}, source_tags, references, root, anchors, numbering, footnotes)
         heading = f'<h2><a href="{root}tag/{entry["tag"]}/">{escape(display_title(entry))}</a>{tag_code(entry["tag"])}</h2>' if variant.get("section") and not entry.get("section_intro") else ""
         badge = f'<span data-gerby-tag="{variant["tag"]}">{tag_code(entry["tag"]) if entry.get("section_intro") else ""}</span>'
-        chunks.append(f'<section class="reading-chunk" id="entry-{entry["tag"]}" data-section-entries="{" ".join(sorted(represented))}"><div class="source-variant" data-gerby-book="{source}">{heading}{badge}{body}</div></section>')
+        # A source chapter can absorb its example into this reading chunk.
+        # Include illustrations for all represented entries, not just the root.
+        illustration = ''.join(visualization(entries[tag]['variants'][0]['label'], root) for tag in sorted(represented))
+        chunks.append(f'<section class="reading-chunk" id="entry-{entry["tag"]}" data-section-entries="{" ".join(sorted(represented))}"><div class="source-variant" data-gerby-book="{source}">{heading}{badge}{body}</div>{illustration}</section>')
     expected = {entry["tag"] for entry in relevant}
     if covered != expected:
         raise ValueError(f"Section reading coverage differs: missing {sorted(expected - covered)}, extra {sorted(covered - expected)}")
@@ -441,6 +445,7 @@ def build_collection(books, destination, configuration):
         registry = Path(__file__).resolve().parents[1] / configuration["proof_expansions"]
         exports, dependencies = apply_expansions(exports, registry, statement_fingerprint)
     entries, topics, source_tags = organize(exports, configuration)
+    validate_visualizations(entries, destination)
     check_dependencies(entries, dependencies)
     configuration = arrange_sections(entries, topics, configuration)
     historical_notes = []
@@ -472,11 +477,16 @@ def build_collection(books, destination, configuration):
         page.write_text(reader.shell(content, route, root, asset_revision()))
 
     introduction = f'<section class="collection-intro"><div><h1>{TITLE}</h1><p>{DESCRIPTION}</p><p class="collection-count">{len(entries):,} entries · {len(chapters)} chapters · {len(topics)} sections · {len(sources)} manuscript{"s" if len(sources) != 1 else ""} · {len(references)} references</p></div></section>'
+    categories = [key for key in ('shrinkers', 'translators', 'expanders', 'other-special-flows') if key in chapters]
+    if categories:
+        introduction += '<nav class="catalogue-links" aria-label="Special solution categories">' + ''.join(
+            f'<a href="chapters/{key}/">{escape(chapters[key]["title"])}<small>{len(chapters[key]["topics"])} examples and families</small></a>' for key in categories
+        ) + '</nav><p>Each catalogue entry records formulas or construction references, source-supported properties, and a picture. Drawings distinguish exact geometry, numerical ODE approximations, projections, and schematics.</p>'
     if sources:
         introduction += (Path(__file__).resolve().parents[1] / "site" / "home.html").read_text()
     featured = [(slug, title) for slug, title in FEATURED_TOPICS if slug in topics]
     if featured:
-        introduction += '<h2>Explore special solutions</h2><ul>' + ''.join(
+        introduction += '<h2>Calculations and background</h2><ul>' + ''.join(
             f'<li><a href="sections/{slug}/">{escape(title)}</a></li>' for slug, title in featured
         ) + '</ul><p>The inherited GMT and variational chapters provide background for this growing collection. Existing statements, proofs, references, and permanent tags remain available below.</p>'
     if not entries:
@@ -547,7 +557,7 @@ def build_collection(books, destination, configuration):
             badge = '' if parsed_body.find(attrs={"data-gerby-tag": local}) else f'<span data-gerby-tag="{local}"></span>'
             if number:
                 body = '<details class="source-alternative"><summary>Read the alternative statement and proof</summary>' + body + '</details>'
-            content += f'<section class="source-variant" data-gerby-book="{source}">{badge}{body}</section>'
+            content += f'<section class="source-variant" data-gerby-book="{source}">{badge}{body}</section>' + visualization(variant['label'], root)
             texts.append(parsed_body.get_text(" ", strip=True))
             variants.append({"book": source, "tag": local, "label": variant["label"], "revision": revision_id(editions[source])})
         if entry.get("section_intro"):

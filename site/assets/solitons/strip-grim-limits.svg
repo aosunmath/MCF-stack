@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title desc">
+<title id="title">Delta-wing: domain and limiting tilts</title>
+<desc id="desc">A strip of width 2b greater than pi, with opposite limiting grim-reaper tilt directions. This is a domain and asymptotic-direction diagram, not a delta-wing surface.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#21667f"/></marker>
+ <marker id="arrow-start" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 10 0 L 0 5 L 10 10 z" fill="#21667f"/></marker>
+</defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<text x="26" y="34" font-size="21" text-anchor="start" font-weight="bold" fill="#183f52">Delta-wing: domain and limiting tilts</text>
+<text x="26" y="62" font-size="16" text-anchor="start" font-weight="normal" fill="#183f52">Width 2b &gt; π; cos θ = π/(2b); upward translation</text>
+<rect x="80" y="112" width="440" height="112" fill="#e7f1f4"/><line x1="80" y1="112" x2="520" y2="112" stroke="#21667f" stroke-width="2" stroke-dasharray="7 6"/><line x1="80" y1="224" x2="520" y2="224" stroke="#21667f" stroke-width="2" stroke-dasharray="7 6"/><text x="300" y="154" font-size="18" text-anchor="middle" font-weight="normal" fill="#183f52">Graph domain: ℝ × (−b, b)</text><text x="300" y="188" font-size="16" text-anchor="middle" font-weight="normal" fill="#183f52">(x, y) plane</text><line x1="98" y1="169" x2="45" y2="169" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/><line x1="501" y1="169" x2="542" y2="169" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/><line x1="562" y1="116" x2="562" y2="220" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/><text x="576" y="174" font-size="18" text-anchor="start" font-weight="normal" fill="#183f52">2b</text><line x1="89" y1="271" x2="198" y2="313" stroke="#21667f" stroke-width="4"/><line x1="405" y1="313" x2="514" y2="271" stroke="#21667f" stroke-width="4"/><line x1="88" y1="317" x2="206" y2="317" stroke="#21667f" stroke-width="1" stroke-dasharray="4 4"/><line x1="397" y1="317" x2="520" y2="317" stroke="#21667f" stroke-width="1" stroke-dasharray="4 4"/><text x="146" y="342" font-size="16" text-anchor="middle" font-weight="normal" fill="#183f52">x → −∞: tilt −θ</text><text x="460" y="342" font-size="16" text-anchor="middle" font-weight="normal" fill="#183f52">x → +∞: tilt +θ</text><text x="300" y="290" font-size="16" text-anchor="middle" font-weight="normal" fill="#183f52">Limiting tilts</text><text x="300" y="314" font-size="15" text-anchor="middle" font-weight="normal" fill="#183f52">in the (x, z) plane</text>
+<line x1="26" y1="362" x2="614" y2="362" stroke="#c5d8df" stroke-width="1"/>
+<text x="26" y="388" font-size="15" text-anchor="start" font-weight="normal" fill="#183f52">Domain and tilt directions only; the surface is not plotted.</text>
+</g>
+</svg>

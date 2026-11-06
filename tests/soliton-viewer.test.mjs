@@ -1,0 +1,23 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {ancientOval,rotatePoint} from '../site/assets/soliton-viewer.mjs';
+
+test('ancient oval remains on its exact time-dependent implicit curve',()=>{
+  for(const t of [-5,-2,-.1]) {
+    const curve=ancientOval(t);
+    for(const [x,y,z] of curve){assert.ok(Math.abs(Math.cos(x)-Math.exp(t)*Math.cosh(y))<1e-12);assert.equal(z,0);}
+    assert.ok(Math.max(...curve.map(p=>p[0]))<Math.PI/2);
+    assert.ok(Math.hypot(...curve[0].map((v,i)=>v-curve.at(-1)[i]))<1e-10);
+  }
+  assert.throws(()=>ancientOval(0));
+});
+
+test('camera rotations preserve distances, while R4 projection is labeled by dimension',()=>{
+  const s={yaw:.7,pitch:-.4,fourD:.55};
+  const p=[2,3,-1], q=rotatePoint(p,s);
+  assert.ok(Math.abs(Math.hypot(...p)-Math.hypot(...q))<1e-12);
+  const p4=[1,2,3,4];
+  const q4=rotatePoint(p4,s), changed=rotatePoint(p4,{...s,fourD:0});
+  assert.ok(Math.hypot(...q4)<=Math.hypot(...p4));
+  assert.ok(Math.hypot(...q4.map((v,i)=>v-changed[i]))>.1);
+});

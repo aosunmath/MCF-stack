@@ -39,7 +39,18 @@ The following equations use the mean curvature vector convention above. The norm
 
 The collection also includes **ancient solutions**, defined for all $t<T$ for a finite $T$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
-Start with the existing material on [self-similar models](https://aosunmath.github.io/MCF-stack/sections/rescaled-flow-and-self-similar-models/), [explicit translators](https://aosunmath.github.io/MCF-stack/sections/explicit-solitons-and-translating-graphs/), [the bowl translator](https://aosunmath.github.io/MCF-stack/sections/constructing-the-rotational-bowl-soliton/), [expanding curves](https://aosunmath.github.io/MCF-stack/sections/expanding-curves-that-smooth-a-corner/), [graphical expanders](https://aosunmath.github.io/MCF-stack/sections/graphical-expanders-from-homogeneous-cones/), and [an ancient oval](https://aosunmath.github.io/MCF-stack/sections/an-explicit-ancient-oval/).
+The first catalogue contains **31 entries in four categories**:
+
+| Category | Entries | Examples |
+| --- | ---: | --- |
+| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 10 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus constructions |
+| [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 11 | Grim reapers, bowl, translating catenoids, delta-wings, Scherkenoids, pitchforks, gluing constructions |
+| [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 6 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks |
+| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 4 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval |
+
+Every entry has a figure: 17 support rotation and zoom, including a fourth-coordinate rotation for the Clifford torus and a time slider for the ancient oval. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
+
+The catalogue records source-supported properties and precise theorem or page locators. It is a first selection from the supplied paper collection, not an exhaustive classification. See the [source and illustration notes](documentation/catalogue-expansion.md) for editions, normalization choices, and reproducible geometry.
 
 ## Reading and contributing
 

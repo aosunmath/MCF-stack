@@ -1,0 +1,383 @@
+\chapter{Round shrinking spheres}\label{sec:catalogue-round-sphere}
+Throughout this collection, the normalized self-shrinker equation is
+$\vec H=-X^\perp/2$, and a normalized shrinker $\Sigma$ generates
+$M_t=\sqrt{-t}\,\Sigma$, $-\infty<t<0$.
+The standard examples appear in \cite{CM12}, pp.~757--759, and
+\cite{CatDLN2018}, Section~3.3, PDF p.~8.
+
+\begin{example}[Round shrinking spheres]\label{ex:catalogue-round-sphere}
+For an integer $n\geq1$, an extinction time $T\in\mathbb R$, and a center
+$a\in\mathbb R^{n+1}$, the exact family is
+\[
+ M_t=\{a+\sqrt{2n(T-t)}\,\omega:\omega\in S^n(1)\},
+ \qquad -\infty<t<T.
+\]
+The centered normalized slice is $S^n(\sqrt{2n})$ at $t=-1$.
+\begin{itemize}
+\item These are smooth compact embedded hypersurfaces without boundary,
+complete and proper, with topology $S^n$ and full rotational symmetry.
+The case $n=1$ is the shrinking circle in the plane.
+\item With outward normal and $H=\operatorname{div}\nu$, all principal
+curvatures are $1/\sqrt{2n(T-t)}$. Thus the flow is strictly convex,
+$H=\sqrt{n/(2(T-t))}$ and $|A|^2=1/(2(T-t))$.
+It becomes extinct at $a$ in a Type~I singularity at time $T$.
+\item The round sphere is entropy stable and $F$-stable, where $F$-stability
+allows the Gaussian center and scale to vary. These are the stability
+notions in \cite{CM12}, Theorems~0.12 and~0.16; stability of Gaussian
+area with center and scale fixed is a different question.
+\item The normalized Gaussian integral gives
+\[
+ \lambda(S^n(\sqrt{2n}))
+ =(4\pi)^{-n/2}(2n)^{n/2}e^{-n/2}|S^n(1)|.
+\]
+In particular, a two-sphere has entropy $4/e$.
+\end{itemize}
+The three-dimensional picture is the exact surface for $n=2$; for other
+dimensions a round profile represents the symmetry reduction.
+\end{example}
+
+\chapter{Generalized shrinking cylinders}\label{sec:catalogue-round-cylinder}
+The cylinder family is recorded in \cite{CM12}, pp.~758--759.
+The spherical factor and the number of Euclidean directions are independent
+discrete parameters.
+
+\begin{example}[Generalized shrinking cylinders]\label{ex:catalogue-round-cylinder}
+Let $n\geq2$ and $1\leq k<n$. In
+$\mathbb R^{k+1}\times\mathbb R^{n-k}=\mathbb R^{n+1}$ the exact flow is
+\[
+ M_t=S^k(\sqrt{2k(-t)})\times\mathbb R^{n-k},\qquad -\infty<t<0.
+\]
+Equivalently, $(\omega,z)\mapsto(\sqrt{2k(-t)}\,\omega,z)$,
+with $\omega\in S^k(1)$ and $z\in\mathbb R^{n-k}$, is a normal
+parametrization of the flow.
+\begin{itemize}
+\item These are complete, proper, noncompact embedded hypersurfaces without
+boundary, with topology $S^k\times\mathbb R^{n-k}$ and polynomial area
+growth. Their symmetries include $O(k+1)$ on the spherical factor and all
+Euclidean isometries in the axial factor.
+\item There are $k$ positive principal curvatures
+$1/\sqrt{2k(-t)}$ and $n-k$ zero principal curvatures. Hence they are
+mean convex and weakly convex, and $|A|^2=1/(2(-t))$.
+At time zero the spherical factor collapses onto the axial subspace.
+\item Topologically there are two ends if $n-k=1$, and one end if
+$n-k\geq2$. Each end has exactly the displayed product geometry.
+\item They are entropy stable among the complete embedded hypersurfaces
+considered by \cite{CM12}, but are not $F$-stable when $1\leq k<n$;
+see Theorems~0.12 and~0.16. The Euclidean factor leaves entropy unchanged:
+$\lambda(M_{-1})=\lambda(S^k(\sqrt{2k}))$.
+For the round cylinder in $\mathbb R^3$, this is $\sqrt{2\pi/e}$.
+\end{itemize}
+For $n=2$, $k=1$, an interactive picture displays an exact finite window of
+the infinite cylinder. End caps are not part of the solution.
+\end{example}
+
+\chapter{Planes through the shrinker center}\label{sec:catalogue-plane-shrinker}
+Planes are stationary solutions that also satisfy the shrinker equation;
+see \cite{CatDLN2018}, Sections~2.5 and~3.3, and \cite{CM12},
+Theorem~0.16.
+
+\begin{example}[Planes through the shrinker center]\label{ex:catalogue-plane-shrinker}
+Let $P$ be an $n$-dimensional linear subspace of $\mathbb R^N$, where
+$1\leq n<N$. Then
+\[
+ M_t=P,\qquad -\infty<t<\infty,
+ \qquad \vec H=0,\quad X^\perp=0.
+\]
+Thus $P$ is both a stationary flow and a normalized self-shrinker.
+An affine plane is a shrinker centered at any point of that plane; it
+satisfies the centered equation at the origin only if it contains the origin.
+\begin{itemize}
+\item The inclusion is complete, proper, embedded, flat, noncompact and
+boundaryless, with topology $\mathbb R^n$ and Euclidean volume growth.
+It has two ends for $n=1$ and one end for $n\geq2$.
+\item The solution has no finite singular time. The identity
+$\sqrt{-t}\,P=P$ does not describe a geometric collapse.
+Its entropy is exactly one.
+\item In codimension one it is entropy stable and $F$-stable under the
+notions in \cite{CM12}; no conclusion about a different constrained
+variation problem is intended.
+\end{itemize}
+The picture shows a bounded patch of a plane in $\mathbb R^3$. Its boundary
+is a viewing boundary, not a boundary of the flow.
+\end{example}
+
+\chapter{Abresch--Langer closed shrinking curves}\label{sec:catalogue-abresch-langer}
+The closed planar curves are classified by \cite{CatAL1986}.
+The supplied sources record the curvature conservation laws in
+\cite{CatDLN2018}, Theorem~1, PDF pp.~5--6, and the rotation-index
+description in \cite{CatCMComplexity2020}, Section~6.3, supplied PDF p.~22.
+
+\begin{example}[Abresch--Langer closed shrinking curves]\label{ex:catalogue-abresch-langer}
+Besides the round circle, there are noncircular closed immersed curves
+$\gamma_{m,\ell}\subset\mathbb R^2$, indexed primitively by coprime
+positive integers satisfying
+\[
+ \frac12<\frac m\ell<\frac1{\sqrt2}.
+\]
+Here $m$ is the rotation index and $\ell$ is the number of periods of the
+curvature. Their flows are $\sqrt{-t}\,\gamma_{m,\ell}$ for $t<0$.
+An ODE description in the normalization of this collection is
+\[
+ \kappa_{\theta\theta}+\kappa=\frac1{2\kappa},\qquad
+ \kappa>0,\qquad
+ \kappa_\theta^2+\kappa^2-\log\kappa=E.
+\]
+Choose the nonconstant periodic solution with curvature period
+$2\pi m/\ell$. With
+$T(\theta)=(\cos\theta,\sin\theta)$ and
+$N(\theta)=(-\sin\theta,\cos\theta)$, reconstruction gives
+\[
+ X(\theta)=2\kappa_\theta T(\theta)-2\kappa N(\theta),
+ \qquad \theta\in\mathbb R/(2\pi m\mathbb Z).
+\]
+This is an ODE construction with a closing condition, not a closed
+elementary formula for $\kappa$.
+\begin{itemize}
+\item The domain is $S^1$. These are compact, complete, proper immersions
+with self-intersections. Their curvature is positive after orienting the
+curve, so they are locally strictly convex; their images do not bound
+convex embedded domains.
+\item The round circle is the only embedded closed shrinking curve.
+The noncircular curves have finite entropy strictly greater than two,
+as recorded in \cite{CatCMComplexity2020}, Section~6.3.
+\item The conservation law $\kappa e^{-|X|^2/4}=C>0$ relates curvature
+to distance from the shrinking center. Compactness makes the shrinking
+flow a Type~I flow becoming extinct at the origin.
+\end{itemize}
+A plotted closed profile must be labelled as a numerical solution of the
+curvature ODE, with its chosen pair $(m,\ell)$ and closure error.
+\end{example}
+
+\chapter{Angenent's shrinking torus}\label{sec:catalogue-angenent-torus}
+Angenent constructs an embedded rotational self-shrinker with topology
+$S^1\times S^{n-1}$ for each $n\geq2$ in \cite{CatAngenent1992}.
+We use the normalized profile equation from \cite{CatDLN2018},
+Section~3.3 and equation~(5.2), PDF pp.~8 and~14.
+
+\begin{example}[Angenent's shrinking torus]\label{ex:catalogue-angenent-torus}
+There is a simple closed profile $s\mapsto(x(s),r(s))$ in $r>0$ whose
+rotation gives
+\[
+ X(s,\omega)=(x(s),r(s)\omega)\in\mathbb R\times\mathbb R^n,
+ \qquad \omega\in S^{n-1}(1).
+\]
+For Euclidean arclength $s$ and tangent angle $\alpha$, the profile solves
+\[
+ x'=\cos\alpha,\qquad r'=\sin\alpha,\qquad
+ \alpha'=\left(\frac{n-1}{r}-\frac r2\right)\cos\alpha
+                +\frac x2\sin\alpha.
+\]
+Equivalently, it is a closed geodesic of
+$r^{2(n-1)}e^{-(x^2+r^2)/2}(dx^2+dr^2)$ on $r>0$.
+The theorem selects a closed orbit by shooting; the profile is not given
+by a closed formula. Its flow is $\sqrt{-t}\,\Sigma$, $t<0$.
+\begin{itemize}
+\item The hypersurface is compact, embedded, complete and proper, with
+topology $S^1\times S^{n-1}$, rotational $O(n)$ symmetry and reflection
+symmetry across $x=0$. When $n=2$ it is a torus in $\mathbb R^3$.
+\item It is not mean convex. Indeed, the compact embedded mean-convex
+classification in \cite{CM12}, Theorem~0.17, would force a sphere.
+It shrinks to the origin with a Type~I singularity.
+\item It is entropy unstable by \cite{CM12}, Theorem~0.12,
+which applies to this compact embedded non-spherical hypersurface.
+No explicit entropy value or global uniqueness assertion is supplied here.
+\end{itemize}
+An interactive surface of revolution must use a numerically closed solution
+of this ODE and report the shooting tolerance. A torus with circular
+cross-section is only a schematic and is not Angenent's shrinker.
+The variational torus in \cite{CatDLN2018}, Theorem~2, is a separate
+existence construction; that survey does not identify it with Angenent's torus.
+\end{example}
+
+\chapter{Drugan's immersed shrinking spheres}\label{sec:catalogue-drugan-sphere}
+\cite{CatDrugan2015}, Theorem~1.1, p.~3139, proves the existence of a
+nonembedded immersed $S^2$ self-shrinker in $\mathbb R^3$.
+\cite{CatDLN2018}, Theorem~3, PDF pp.~14--15, gives the corresponding
+existence statement for $S^n\subset\mathbb R^{n+1}$, $n\geq2$.
+
+\begin{example}[Drugan's immersed shrinking spheres]\label{ex:catalogue-drugan-sphere}
+For each $n\geq2$, there is a smooth rotational immersion
+$X:S^n\to\mathbb R^{n+1}$ satisfying $\vec H=-X^\perp/2$ whose image
+is not embedded. The associated immersed flow is
+$X_t=\sqrt{-t}\,X$, $-\infty<t<0$.
+In the three-dimensional construction, a graphical piece of the profile,
+written as axial height $z=\gamma(r)$ for $r>0$, solves
+\[
+ \frac{\gamma''}{1+(\gamma')^2}
+   =\left(\frac r2-\frac1r\right)\gamma'-\frac\gamma2.
+\]
+This is equation~(1.3) of \cite{CatDrugan2015}, p.~3140.
+Shooting and continuation through profile turning points produce the
+closed immersed sphere; a single graphical piece does not describe the
+whole surface.
+\begin{itemize}
+\item The parameter domain is the compact sphere, so the induced metric
+is complete and the immersion is proper. The image has self-intersections
+and is not the round sphere.
+\item The construction has rotational symmetry and reflection symmetry
+across a hyperplane perpendicular to the rotation axis. It has no ends.
+The homothetic flow contracts to the origin with Type~I curvature growth.
+\item The cited existence argument supplies neither an elementary
+parametrization nor uniqueness or an exact entropy value. Embedded
+classification and embedded stability theorems cannot be applied to this
+immersion by dropping their embeddedness hypothesis.
+\end{itemize}
+The numerical profile in \cite{CatDrugan2015}, Figure~1, is an illustration
+of the shooting construction. A schematic profile or topology diagram
+must be labelled as such; an arbitrary self-crossing rotational curve
+does not establish the shrinker equation.
+\end{example}
+
+\chapter{The Clifford shrinking torus in four-space}\label{sec:catalogue-clifford-torus}
+We follow the supplied June~2020 version of \cite{CatELS2020}; its
+Sections~2, 4 and~5 distinguish exact geometry, Hamiltonian stability,
+flow instability and local rigidity.
+
+\begin{example}[The Clifford shrinking torus in four-space]\label{ex:catalogue-clifford-torus}
+The exact normalized immersion is
+\[
+ X(\theta_1,\theta_2)=\sqrt2
+ (\cos\theta_1,\sin\theta_1,\cos\theta_2,\sin\theta_2),
+ \qquad (\theta_1,\theta_2)\in(\mathbb R/2\pi\mathbb Z)^2.
+\]
+It lies in $\mathbb R^4=\mathbb C^2$, and
+$X_t=\sqrt{-t}\,X$ gives a smooth flow for $t<0$.
+\begin{itemize}
+\item This is a compact embedded Lagrangian torus of dimension two and
+codimension two, complete and proper. It is minimal in $S^3(2)$ and has
+the product rotation symmetry $U(1)\times U(1)$.
+\item The induced metric is $2(d\theta_1^2+d\theta_2^2)$; it is
+intrinsically flat, has area $8\pi^2$, $|\vec H|=1$, and
+$\vec H=-X/2$. Its entropy is exactly $2\pi/e$
+(\cite{CatELS2020}, Section~2 and Lemma~2.4, PDF pp.~3--6).
+\item It is $F$-unstable under Lagrangian variations but $F$-stable under
+Hamiltonian variations after accounting for translations. It is locally
+volume minimizing under Hamiltonian variations (Lemmas~4.1--4.2 and
+Theorem~4.3, PDF p.~13).
+\item Nevertheless it is not a local entropy minimum, even within
+Hamiltonian variations. For every $\varepsilon>0$ and $k\in\mathbb N$
+there is a compact embedded Lagrangian torus Hamiltonian isotopic and
+$\varepsilon$-close in $C^k$ whose first finite-time singularity has a
+blow-up outside the $U(2)$-orbit of the Clifford torus
+(Corollary~4.8 and Theorem~4.9, PDF p.~16).
+\item A compact embedded two-dimensional self-shrinker in $\mathbb C^2$
+sufficiently $C^{2,\alpha}$-close, for $0<\alpha<1$, is the Clifford
+torus up to translation, dilation and rotation (Theorem~5.7, PDF p.~29).
+This is a local rigidity statement.
+\end{itemize}
+An interactive picture can show a specified projection from $\mathbb R^4$
+to $\mathbb R^3$ or the two circle factors. Apparent intersections in a
+projection do not mean that the original torus is immersed nonembedded.
+\end{example}
+
+\chapter{Products of closed shrinking curves}\label{sec:catalogue-curve-products}
+\cite{CatSmoczyk2005}, equation~(1.4), p.~2984, describes these
+Lagrangian products. That paper uses $\vec H=-X^\perp$; spatial dilation
+by $\sqrt2$ converts its examples to the convention used here.
+
+\begin{example}[Products of closed shrinking curves]\label{ex:catalogue-curve-products}
+Let $m\geq2$ and let each
+$\gamma_j:S^1\to\mathbb R^2$ be a normalized closed Abresch--Langer
+shrinker, including the round circle if desired. Then
+\[
+ X(u_1,\ldots,u_m)
+   =(\gamma_1(u_1),\ldots,\gamma_m(u_m))\in\mathbb R^{2m},
+ \qquad (u_1,\ldots,u_m)\in(S^1)^m
+\]
+satisfies $\vec H=-X^\perp/2$, and $X_t=\sqrt{-t}\,X$ for $t<0$.
+The product formula is exact, but any noncircular factor still requires
+the curvature ODE and closing condition.
+\begin{itemize}
+\item The domain is the compact $m$-torus. These are complete proper
+immersions of dimension and codimension $m$, Lagrangian in $\mathbb C^m$,
+with flat normal bundle and nowhere vanishing mean-curvature vector.
+The product metric is intrinsically flat.
+\item A product is embedded when every factor is an embedded circle.
+A noncircular factor has self-intersections, and so does the product
+immersion. Multiple covers must not be treated as embeddings.
+\item Unless all factor images are circles, the image is not contained
+in a sphere. The all-circle product in $\mathbb R^4$ is the Clifford
+torus described separately above.
+\item These compact products have no ends, finite entropy and a Type~I
+homothetic extinction at the origin. No general stability or uniqueness
+claim for this family is taken from the cited product construction.
+\end{itemize}
+For noncircular factors, an appropriate picture displays the constituent
+planar ODE curves and a labelled product or projection. It is not an
+unlabelled surface in Euclidean three-space.
+\end{example}
+
+\chapter{Higher-codimension spherical shrinkers}\label{sec:catalogue-spherical-minimal}
+Minimal submanifolds of a round sphere give Euclidean self-shrinkers.
+This correspondence, and a converse with hypotheses, appear in
+\cite{CatSmoczyk2005}, p.~2985 and Theorem~1.1. We use the
+$\vec H=-X^\perp/2$ scaling.
+
+\begin{example}[Higher-codimension spherical shrinkers]\label{ex:catalogue-spherical-minimal}
+Let $n\geq2$ and let $F:M^n\to S^{N-1}(\sqrt{2n})$ be a smooth
+compact minimal immersion. Viewed in $\mathbb R^N$, it satisfies
+\[
+ \vec H=-\frac12F,
+ \qquad F_t=\sqrt{-t}\,F,\quad -\infty<t<0.
+\]
+An explicit family is obtained for integers $p,q\geq1$, $n=p+q$, by
+\[
+ F(u,v)=(\sqrt{2p}\,u,\sqrt{2q}\,v),
+ \quad (u,v)\in S^p(1)\times S^q(1),
+ \quad N=p+q+2.
+\]
+To avoid repeating the Clifford torus entry, one may take $p+q\geq3$
+in this explicit family.
+\begin{itemize}
+\item For a general compact minimal immersion, the resulting shrinker is
+complete and proper; it is embedded when the original immersion is
+embedded. Topology, symmetry and further curvature properties depend
+on the chosen minimal submanifold and are not fixed by this construction.
+\item Its mean-curvature vector has constant length $\sqrt{n/2}$, and
+the principal normal $\vec H/|\vec H|$ is parallel in the normal bundle.
+Conversely, a compact self-shrinker of dimension $n\geq2$ is spherical
+if and only if its mean-curvature vector is nowhere zero and its
+principal normal is parallel (Smoczyk's Theorem~1.1).
+\item The displayed product family is compact embedded of Euclidean
+codimension two, with topology $S^p\times S^q$ and
+$O(p+1)\times O(q+1)$ symmetry. It has $|A|^2=1$ and is minimal
+inside $S^{n+1}(\sqrt{2n})$; these identities follow directly from its
+two round factors.
+\end{itemize}
+The formula determines the product geometry exactly. A picture in three
+dimensions must be labelled as a slice, factor diagram or projection,
+with the full ambient dimension stated.
+\end{example}
+
+\chapter{Moller closed shrinkers of large even genus}\label{sec:catalogue-moller-genus}
+M{\o}ller's construction is stated in \cite{CatMoller2014}, Theorem~1,
+and summarized in the supplied \cite{CatDLN2018}, Section~3.3,
+PDF pp.~10--11.
+
+\begin{example}[Moller closed shrinkers of large even genus]\label{ex:catalogue-moller-genus}
+There is an integer $g_0$ such that for every even $g\geq g_0$ there
+exists a compact smooth embedded orientable surface
+$\Sigma_g\subset\mathbb R^3$ of genus $g$ satisfying
+$\vec H=-X^\perp/2$. Its flow is
+$M_t=\sqrt{-t}\,\Sigma_g$, $t<0$.
+This is an existence construction by desingularization, not an explicit
+formula and not an existence assertion for every positive genus.
+\begin{itemize}
+\item Each surface is complete and proper, has no ends, and is invariant
+under a dihedral group of order $2g$.
+\item Along the constructed family as $g\to\infty$, the surfaces
+converge in Hausdorff distance to the union of a round shrinking sphere
+and a rotational shrinking torus. Convergence is locally smooth away
+from their two intersection circles (\cite{CatMoller2014}, pp.~1--2).
+The limiting union is singular and is not one of the smooth members.
+\item These surfaces are not mean convex and are entropy unstable:
+apply \cite{CM12}, Theorems~0.17 and~0.12, to the compact
+embedded non-spherical surfaces. Their homothetic flows have Type~I
+extinction at the origin.
+\item The cited construction supplies no exact coordinates or exact
+entropy value and makes no uniqueness assertion for a specified genus.
+\end{itemize}
+A picture of the sphere--torus configuration and its intersection circles
+is a schematic of the desingularization. It must not be captioned as an
+exact surface $\Sigma_g$ or as a numerically solved shrinker.
+\end{example}
