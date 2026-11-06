@@ -21,7 +21,7 @@ from proof_expansions import apply_expansions, check_dependencies
 from reading_edits import apply_reading_edits, validate_reading_edits
 from numbering import assign_numbers
 from history import curate_history
-from reader_references import page_references, bibliography, source_catalogue
+from reader_references import citation_label, page_references, bibliography, source_catalogue
 from search_index import write_search_index
 import catalogue_properties
 from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
@@ -262,6 +262,8 @@ def prepare_fragment(variant, source_tags, references, root, component_anchors=N
         anchor["href"] = root + "tag/" + source_tags[(source, local)] + "/" + fragment
     for anchor in soup.select('a[href^="/bibliography/"]'):
         key = anchor["href"].split("/")[-1]
+        if anchor.get_text(strip=True) == key:
+            anchor.string = citation_label(source, key)
         anchor["href"] = root + "references/#" + references[(source, key)]
         anchor["data-reference"] = references[(source, key)]
     for marker in soup.select("[data-tag]"):

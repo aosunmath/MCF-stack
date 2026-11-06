@@ -1,6 +1,19 @@
 """Page-local citations and links back from the shared bibliography."""
 from html import escape
+import re
 from bs4 import BeautifulSoup
+
+
+def citation_label(source, key):
+    """Hide the catalogue's internal namespace without changing source keys."""
+    if source == "gmt-foundations" and re.match(r"Cat(?=[A-Z])", key):
+        return key[3:]
+    return key
+
+
+def reference_label(record):
+    return ", ".join(dict.fromkeys(citation_label(item["source"], item["key"])
+                                  for item in record["sources"]))
 
 
 def page_references(content, references, root):
@@ -21,7 +34,7 @@ def page_references(content, references, root):
     section = '<section class="page-references" aria-label="References on this page"><h2>References on this page</h2><ol>'
     for identifier, occurrences in used.items():
         record = references[identifier]
-        keys = ", ".join(dict.fromkeys(item["key"] for item in record["sources"]))
+        keys = reference_label(record)
         section += f'<li id="reference-{identifier}"><span class="reference-key">[{escape(keys)}]</span> {record["html"]}'
         section += f'<span class="reference-actions"><a href="{root}references/#{identifier}">All uses in this project</a>'
         for number, citation_id in enumerate(occurrences, 1):
@@ -36,7 +49,7 @@ def bibliography(references, uses):
         return content + '<p>No references have been added yet.</p>'
     ordered = sorted(references.items(), key=lambda item: BeautifulSoup(item[1]["html"], "html.parser").get_text().casefold())
     for identifier, record in ordered:
-        keys = ", ".join(dict.fromkeys(item["key"] for item in record["sources"]))
+        keys = reference_label(record)
         content += f'<article class="bibliography-entry" id="{identifier}"><h2 class="reference-key">[{escape(keys)}]</h2><p>{record["html"]}</p>'
         pages = uses.get(identifier, {})
         if pages:
