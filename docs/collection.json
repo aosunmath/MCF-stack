@@ -15,14 +15,11 @@
       "title": "Shrinkers",
       "topics": [
         "round-shrinking-spheres",
-        "generalized-shrinking-cylinders",
         "planes-through-the-shrinker-center",
         "abresch-langer-closed-shrinking-curves",
+        "generalized-shrinking-cylinders",
         "angenent-s-shrinking-torus",
         "drugan-s-immersed-shrinking-spheres",
-        "the-clifford-shrinking-torus-in-four-space",
-        "products-of-closed-shrinking-curves",
-        "higher-codimension-spherical-shrinkers",
         "moller-closed-shrinkers-of-large-even-genus",
         "kapouleas-kleene-moller-shrinkers-with-one-end",
         "drugan-nguyen-variational-shrinking-tori",
@@ -30,7 +27,6 @@
         "ketover-self-shrinking-doubled-planes",
         "closed-shrinkers-from-spherical-doubling",
         "nguyen-s-one-ended-shrinking-saddles",
-        "angenent-torus-cylinders",
         "ilmanen-white-two-ended-shrinkers",
         "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
         "flow-generated-platonic-and-polygonal-shrinkers",
@@ -38,10 +34,686 @@
         "flow-generated-three-ended-shrinkers",
         "ketover-shrinkers-with-platonic-symmetry",
         "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
-        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
+        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+        "the-clifford-shrinking-torus-in-four-space",
+        "products-of-closed-shrinking-curves",
+        "higher-codimension-spherical-shrinkers",
+        "angenent-torus-cylinders"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions.",
       "number": 2,
+      "ambient_groups": [
+        {
+          "key": "r2",
+          "title": "Euclidean plane ℝ²",
+          "topics": [
+            "round-shrinking-spheres",
+            "planes-through-the-shrinker-center",
+            "abresch-langer-closed-shrinking-curves"
+          ],
+          "related": []
+        },
+        {
+          "key": "r3",
+          "title": "Euclidean space ℝ³",
+          "topics": [
+            "generalized-shrinking-cylinders",
+            "angenent-s-shrinking-torus",
+            "drugan-s-immersed-shrinking-spheres",
+            "moller-closed-shrinkers-of-large-even-genus",
+            "kapouleas-kleene-moller-shrinkers-with-one-end",
+            "drugan-nguyen-variational-shrinking-tori",
+            "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+            "ketover-self-shrinking-doubled-planes",
+            "closed-shrinkers-from-spherical-doubling",
+            "nguyen-s-one-ended-shrinking-saddles",
+            "ilmanen-white-two-ended-shrinkers",
+            "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+            "flow-generated-platonic-and-polygonal-shrinkers",
+            "flow-generated-sphere-plane-shrinkers",
+            "flow-generated-three-ended-shrinkers",
+            "ketover-shrinkers-with-platonic-symmetry",
+            "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+            "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
+          ],
+          "related": [
+            {
+              "section": "round-shrinking-spheres",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-round-sphere-2",
+                  "name": "Round two-sphere"
+                }
+              ]
+            },
+            {
+              "section": "planes-through-the-shrinker-center",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-1",
+                  "name": "Lines in ℝᴺ, N ≥ 2"
+                },
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-2",
+                  "name": "Planes in ℝᴺ, N ≥ 3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "r4",
+          "title": "Euclidean space ℝ⁴",
+          "topics": [
+            "the-clifford-shrinking-torus-in-four-space",
+            "products-of-closed-shrinking-curves",
+            "higher-codimension-spherical-shrinkers",
+            "angenent-torus-cylinders"
+          ],
+          "related": [
+            {
+              "section": "round-shrinking-spheres",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-round-sphere-3",
+                  "name": "Higher-dimensional spheres"
+                }
+              ]
+            },
+            {
+              "section": "planes-through-the-shrinker-center",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-1",
+                  "name": "Lines in ℝᴺ, N ≥ 2"
+                },
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-2",
+                  "name": "Planes in ℝᴺ, N ≥ 3"
+                },
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-3",
+                  "name": "Higher-dimensional planes"
+                }
+              ]
+            },
+            {
+              "section": "generalized-shrinking-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-round-cylinder-2",
+                  "name": "Higher-dimensional cylinders with one axial direction"
+                },
+                {
+                  "anchor": "case-ex-catalogue-round-cylinder-3",
+                  "name": "Cylinders with at least two Euclidean directions"
+                }
+              ]
+            },
+            {
+              "section": "angenent-s-shrinking-torus",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-angenent-torus-2",
+                  "name": "Higher-dimensional rotational tori"
+                }
+              ]
+            },
+            {
+              "section": "drugan-s-immersed-shrinking-spheres",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-drugan-sphere-2",
+                  "name": "Higher-dimensional immersed spheres"
+                }
+              ]
+            },
+            {
+              "section": "drugan-nguyen-variational-shrinking-tori",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-drugan-nguyen-torus-2",
+                  "name": "Higher-dimensional variational tori"
+                }
+              ]
+            },
+            {
+              "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-swz-large-entropy-2",
+                  "name": "Gaussian-width hypersurfaces, 3 ≤ n ≤ 6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "higher",
+          "title": "Euclidean dimension ≥ 5",
+          "topics": [],
+          "related": [
+            {
+              "section": "round-shrinking-spheres",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-round-sphere-3",
+                  "name": "Higher-dimensional spheres"
+                }
+              ]
+            },
+            {
+              "section": "planes-through-the-shrinker-center",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-1",
+                  "name": "Lines in ℝᴺ, N ≥ 2"
+                },
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-2",
+                  "name": "Planes in ℝᴺ, N ≥ 3"
+                },
+                {
+                  "anchor": "case-ex-catalogue-plane-shrinker-3",
+                  "name": "Higher-dimensional planes"
+                }
+              ]
+            },
+            {
+              "section": "generalized-shrinking-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-round-cylinder-2",
+                  "name": "Higher-dimensional cylinders with one axial direction"
+                },
+                {
+                  "anchor": "case-ex-catalogue-round-cylinder-3",
+                  "name": "Cylinders with at least two Euclidean directions"
+                }
+              ]
+            },
+            {
+              "section": "angenent-s-shrinking-torus",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-angenent-torus-2",
+                  "name": "Higher-dimensional rotational tori"
+                }
+              ]
+            },
+            {
+              "section": "drugan-s-immersed-shrinking-spheres",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-drugan-sphere-2",
+                  "name": "Higher-dimensional immersed spheres"
+                }
+              ]
+            },
+            {
+              "section": "drugan-nguyen-variational-shrinking-tori",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-drugan-nguyen-torus-2",
+                  "name": "Higher-dimensional variational tori"
+                }
+              ]
+            },
+            {
+              "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-swz-large-entropy-2",
+                  "name": "Gaussian-width hypersurfaces, 3 ≤ n ≤ 6"
+                },
+                {
+                  "anchor": "case-ex-catalogue-swz-large-entropy-3",
+                  "name": "Euclidean product extension, n ≥ 7"
+                }
+              ]
+            },
+            {
+              "section": "products-of-closed-shrinking-curves",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-curve-products-2",
+                  "name": "Three or more curve factors"
+                }
+              ]
+            },
+            {
+              "section": "higher-codimension-spherical-shrinkers",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-spherical-minimal-1",
+                  "name": "Surface inputs"
+                },
+                {
+                  "anchor": "case-ex-catalogue-spherical-minimal-2",
+                  "name": "Higher-dimensional inputs"
+                }
+              ]
+            },
+            {
+              "section": "angenent-torus-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-angenent-torus-cylinders-2",
+                  "name": "Torus times at least two Euclidean directions"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ambient_families": {
+        "round-shrinking-spheres": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-round-sphere-1",
+              "name": "Shrinking circle"
+            }
+          ],
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-round-sphere-2",
+              "name": "Round two-sphere"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-round-sphere-3",
+              "name": "Higher-dimensional spheres"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-round-sphere-3",
+              "name": "Higher-dimensional spheres"
+            }
+          ]
+        },
+        "generalized-shrinking-cylinders": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-round-cylinder-1",
+              "name": "Surface cylinder"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-round-cylinder-2",
+              "name": "Higher-dimensional cylinders with one axial direction"
+            },
+            {
+              "anchor": "case-ex-catalogue-round-cylinder-3",
+              "name": "Cylinders with at least two Euclidean directions"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-round-cylinder-2",
+              "name": "Higher-dimensional cylinders with one axial direction"
+            },
+            {
+              "anchor": "case-ex-catalogue-round-cylinder-3",
+              "name": "Cylinders with at least two Euclidean directions"
+            }
+          ]
+        },
+        "planes-through-the-shrinker-center": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-1",
+              "name": "Lines in ℝᴺ, N ≥ 2"
+            }
+          ],
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-1",
+              "name": "Lines in ℝᴺ, N ≥ 2"
+            },
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-2",
+              "name": "Planes in ℝᴺ, N ≥ 3"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-1",
+              "name": "Lines in ℝᴺ, N ≥ 2"
+            },
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-2",
+              "name": "Planes in ℝᴺ, N ≥ 3"
+            },
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-3",
+              "name": "Higher-dimensional planes"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-1",
+              "name": "Lines in ℝᴺ, N ≥ 2"
+            },
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-2",
+              "name": "Planes in ℝᴺ, N ≥ 3"
+            },
+            {
+              "anchor": "case-ex-catalogue-plane-shrinker-3",
+              "name": "Higher-dimensional planes"
+            }
+          ]
+        },
+        "abresch-langer-closed-shrinking-curves": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-abresch-langer-1",
+              "name": "Immersed circle S¹"
+            }
+          ]
+        },
+        "angenent-s-shrinking-torus": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-angenent-torus-1",
+              "name": "Angenent surface torus"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-angenent-torus-2",
+              "name": "Higher-dimensional rotational tori"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-angenent-torus-2",
+              "name": "Higher-dimensional rotational tori"
+            }
+          ]
+        },
+        "drugan-s-immersed-shrinking-spheres": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-drugan-sphere-1",
+              "name": "Immersed two-sphere"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-drugan-sphere-2",
+              "name": "Higher-dimensional immersed spheres"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-drugan-sphere-2",
+              "name": "Higher-dimensional immersed spheres"
+            }
+          ]
+        },
+        "the-clifford-shrinking-torus-in-four-space": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-clifford-torus-1",
+              "name": "Torus S¹ × S¹"
+            }
+          ]
+        },
+        "products-of-closed-shrinking-curves": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-curve-products-1",
+              "name": "Two curve factors"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-curve-products-2",
+              "name": "Three or more curve factors"
+            }
+          ]
+        },
+        "higher-codimension-spherical-shrinkers": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-spherical-minimal-1",
+              "name": "Surface inputs"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-spherical-minimal-1",
+              "name": "Surface inputs"
+            },
+            {
+              "anchor": "case-ex-catalogue-spherical-minimal-2",
+              "name": "Higher-dimensional inputs"
+            }
+          ]
+        },
+        "moller-closed-shrinkers-of-large-even-genus": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-moller-genus-1",
+              "name": "Closed orientable surface"
+            }
+          ]
+        },
+        "kapouleas-kleene-moller-shrinkers-with-one-end": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-kkm-one-end-1",
+              "name": "Closed genus-g surface minus one point"
+            }
+          ]
+        },
+        "drugan-nguyen-variational-shrinking-tori": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-drugan-nguyen-torus-1",
+              "name": "Torus S¹ × S¹"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-drugan-nguyen-torus-2",
+              "name": "Higher-dimensional variational tori"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-drugan-nguyen-torus-2",
+              "name": "Higher-dimensional variational tori"
+            }
+          ]
+        },
+        "buzano-nguyen-schulz-shrinkers-of-every-positive-genus": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-bns-genus-1",
+              "name": "Genus one"
+            },
+            {
+              "anchor": "case-ex-catalogue-bns-genus-2",
+              "name": "Arbitrary positive genus"
+            },
+            {
+              "anchor": "case-ex-catalogue-bns-genus-3",
+              "name": "Sufficiently large genus"
+            }
+          ]
+        },
+        "ketover-self-shrinking-doubled-planes": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-ketover-doubled-plane-1",
+              "name": "Genus one"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-doubled-plane-2",
+              "name": "Arbitrary positive genus"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-doubled-plane-3",
+              "name": "Sufficiently large genus"
+            }
+          ]
+        },
+        "closed-shrinkers-from-spherical-doubling": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-spherical-doubling-shrinkers-1",
+              "name": "Closed orientable surface from doubling S²"
+            }
+          ]
+        },
+        "nguyen-s-one-ended-shrinking-saddles": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-nguyen-shrinking-saddles-1",
+              "name": "Sufficiently large m; genus m−1"
+            }
+          ]
+        },
+        "angenent-torus-cylinders": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-angenent-torus-cylinders-1",
+              "name": "Torus times one Euclidean direction"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-angenent-torus-cylinders-2",
+              "name": "Torus times at least two Euclidean directions"
+            }
+          ]
+        },
+        "ilmanen-white-two-ended-shrinkers": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-iw-two-ended-1",
+              "name": "All genera h ≥ 2"
+            }
+          ]
+        },
+        "shao-zou-shrinkers-with-any-prescribed-number-of-ends": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-shao-zou-stacking-1",
+              "name": "Two stacked planes"
+            },
+            {
+              "anchor": "case-ex-catalogue-shao-zou-stacking-2",
+              "name": "Three stacked planes"
+            },
+            {
+              "anchor": "case-ex-catalogue-shao-zou-stacking-3",
+              "name": "k stacked planes, k ≥ 4"
+            }
+          ]
+        },
+        "flow-generated-platonic-and-polygonal-shrinkers": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-hmw-platonic-polygon-1",
+              "name": "Platonic face-center ray configurations"
+            },
+            {
+              "anchor": "case-ex-catalogue-hmw-platonic-polygon-2",
+              "name": "Regular n-gon ray configurations, n ≥ 3"
+            },
+            {
+              "anchor": "case-ex-catalogue-hmw-platonic-polygon-3",
+              "name": "Regular n-gon, sufficiently large n"
+            }
+          ]
+        },
+        "flow-generated-sphere-plane-shrinkers": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-hmw-one-ended-1",
+              "name": "Genus-one member"
+            },
+            {
+              "anchor": "case-ex-catalogue-hmw-one-ended-2",
+              "name": "Genus g ≥ 2"
+            },
+            {
+              "anchor": "case-ex-catalogue-hmw-one-ended-3",
+              "name": "Sufficiently large genus"
+            }
+          ]
+        },
+        "flow-generated-three-ended-shrinkers": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-hmw-three-ended-1",
+              "name": "Large-genus three-ended subfamily"
+            }
+          ]
+        },
+        "ketover-shrinkers-with-platonic-symmetry": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-ketover-platonic-1",
+              "name": "Tetrahedral symmetry: genus 3"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-platonic-2",
+              "name": "Cubic symmetry: genus 5"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-platonic-3",
+              "name": "Octahedral symmetry: genus 7"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-platonic-4",
+              "name": "Dodecahedral symmetry: genus 11"
+            },
+            {
+              "anchor": "case-ex-catalogue-ketover-platonic-5",
+              "name": "Icosahedral symmetry: genus 19"
+            }
+          ]
+        },
+        "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-swz-large-entropy-1",
+              "name": "Gaussian-width surfaces, n = 2"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-swz-large-entropy-2",
+              "name": "Gaussian-width hypersurfaces, 3 ≤ n ≤ 6"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-swz-large-entropy-2",
+              "name": "Gaussian-width hypersurfaces, 3 ≤ n ≤ 6"
+            },
+            {
+              "anchor": "case-ex-catalogue-swz-large-entropy-3",
+              "name": "Euclidean product extension, n ≥ 7"
+            }
+          ]
+        },
+        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-chu-sun-genus-one-1",
+              "name": "Lower-entropy genus-one shrinker"
+            }
+          ]
+        }
+      },
       "tag": "766061837311"
     },
     {
@@ -53,17 +725,348 @@
         "the-rotational-bowl-translator",
         "rotational-translating-catenoids",
         "strictly-convex-delta-wing-translators",
-        "nonrotational-entire-convex-translators",
         "translators-with-prescribed-apex-curvatures",
         "scherkenoid-translators",
         "the-pitchfork-translator",
         "nguyen-translating-tridents",
         "finite-genus-translators-with-three-ends",
+        "nonrotational-entire-convex-translators",
         "translators-with-an-angenent-torus-end",
         "translators-with-high-genus-spherical-doubling-ends"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references.",
       "number": 3,
+      "ambient_groups": [
+        {
+          "key": "r2",
+          "title": "Euclidean plane ℝ²",
+          "topics": [
+            "the-grim-reaper-and-its-cylinders"
+          ],
+          "related": []
+        },
+        {
+          "key": "r3",
+          "title": "Euclidean space ℝ³",
+          "topics": [
+            "tilted-grim-reaper-cylinders",
+            "the-rotational-bowl-translator",
+            "rotational-translating-catenoids",
+            "strictly-convex-delta-wing-translators",
+            "translators-with-prescribed-apex-curvatures",
+            "scherkenoid-translators",
+            "the-pitchfork-translator",
+            "nguyen-translating-tridents",
+            "finite-genus-translators-with-three-ends"
+          ],
+          "related": [
+            {
+              "section": "the-grim-reaper-and-its-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-grim-reaper-2",
+                  "name": "Grim-reaper cylinder"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "r4",
+          "title": "Euclidean space ℝ⁴",
+          "topics": [
+            "nonrotational-entire-convex-translators",
+            "translators-with-an-angenent-torus-end",
+            "translators-with-high-genus-spherical-doubling-ends"
+          ],
+          "related": [
+            {
+              "section": "the-grim-reaper-and-its-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-grim-reaper-3",
+                  "name": "Higher-dimensional products"
+                }
+              ]
+            },
+            {
+              "section": "tilted-grim-reaper-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-tilted-grim-reaper-2",
+                  "name": "Products in higher dimensions"
+                }
+              ]
+            },
+            {
+              "section": "the-rotational-bowl-translator",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-bowl-translator-2",
+                  "name": "Higher-dimensional bowls"
+                }
+              ]
+            },
+            {
+              "section": "rotational-translating-catenoids",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-translating-catenoid-2",
+                  "name": "Higher-dimensional winglike translators"
+                }
+              ]
+            },
+            {
+              "section": "translators-with-prescribed-apex-curvatures",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-prescribed-apex-translators-2",
+                  "name": "Higher-dimensional graphs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "higher",
+          "title": "Euclidean dimension ≥ 5",
+          "topics": [],
+          "related": [
+            {
+              "section": "the-grim-reaper-and-its-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-grim-reaper-3",
+                  "name": "Higher-dimensional products"
+                }
+              ]
+            },
+            {
+              "section": "tilted-grim-reaper-cylinders",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-tilted-grim-reaper-2",
+                  "name": "Products in higher dimensions"
+                }
+              ]
+            },
+            {
+              "section": "the-rotational-bowl-translator",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-bowl-translator-2",
+                  "name": "Higher-dimensional bowls"
+                }
+              ]
+            },
+            {
+              "section": "rotational-translating-catenoids",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-translating-catenoid-2",
+                  "name": "Higher-dimensional winglike translators"
+                }
+              ]
+            },
+            {
+              "section": "translators-with-prescribed-apex-curvatures",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-prescribed-apex-translators-2",
+                  "name": "Higher-dimensional graphs"
+                }
+              ]
+            },
+            {
+              "section": "nonrotational-entire-convex-translators",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-wang-entire-translators-1",
+                  "name": "Euclidean space ℝⁿ, n ≥ 3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ambient_families": {
+        "the-grim-reaper-and-its-cylinders": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-grim-reaper-1",
+              "name": "Grim-reaper curve"
+            }
+          ],
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-grim-reaper-2",
+              "name": "Grim-reaper cylinder"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-grim-reaper-3",
+              "name": "Higher-dimensional products"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-grim-reaper-3",
+              "name": "Higher-dimensional products"
+            }
+          ]
+        },
+        "tilted-grim-reaper-cylinders": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-tilted-grim-reaper-1",
+              "name": "Plane ℝ²"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-tilted-grim-reaper-2",
+              "name": "Products in higher dimensions"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-tilted-grim-reaper-2",
+              "name": "Products in higher dimensions"
+            }
+          ]
+        },
+        "the-rotational-bowl-translator": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-bowl-translator-1",
+              "name": "Surface bowl"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-bowl-translator-2",
+              "name": "Higher-dimensional bowls"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-bowl-translator-2",
+              "name": "Higher-dimensional bowls"
+            }
+          ]
+        },
+        "rotational-translating-catenoids": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-translating-catenoid-1",
+              "name": "Annulus S¹ × ℝ"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-translating-catenoid-2",
+              "name": "Higher-dimensional winglike translators"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-translating-catenoid-2",
+              "name": "Higher-dimensional winglike translators"
+            }
+          ]
+        },
+        "strictly-convex-delta-wing-translators": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-delta-wing-1",
+              "name": "Plane ℝ² (graph over a strip)"
+            }
+          ]
+        },
+        "nonrotational-entire-convex-translators": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-wang-entire-translators-1",
+              "name": "Euclidean space ℝⁿ, n ≥ 3"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-wang-entire-translators-1",
+              "name": "Euclidean space ℝⁿ, n ≥ 3"
+            }
+          ]
+        },
+        "translators-with-prescribed-apex-curvatures": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-prescribed-apex-translators-1",
+              "name": "Surface cases"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-prescribed-apex-translators-2",
+              "name": "Higher-dimensional graphs"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-prescribed-apex-translators-2",
+              "name": "Higher-dimensional graphs"
+            }
+          ]
+        },
+        "scherkenoid-translators": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-scherkenoids-1",
+              "name": "Periodic surface; global topology not recorded"
+            }
+          ]
+        },
+        "the-pitchfork-translator": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-pitchfork-1",
+              "name": "Plane ℝ² (simply connected noncompact surface)"
+            }
+          ]
+        },
+        "nguyen-translating-tridents": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-nguyen-tridents-1",
+              "name": "Periodic surface of infinite genus"
+            }
+          ]
+        },
+        "finite-genus-translators-with-three-ends": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-finite-genus-translators-1",
+              "name": "Orientable surface with three ends"
+            }
+          ]
+        },
+        "translators-with-an-angenent-torus-end": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-sun-wang-torus-translators-1",
+              "name": "Compact core with one T² × [z₀,∞) end"
+            }
+          ]
+        },
+        "translators-with-high-genus-spherical-doubling-ends": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-sun-wang-sphere-doubling-translators-1",
+              "name": "Compact core with one S_m × [z₀,∞) end"
+            }
+          ]
+        }
+      },
       "tag": "2760875656EF"
     },
     {
@@ -71,31 +1074,452 @@
       "title": "Expanders",
       "topics": [
         "expanding-smoothings-of-planar-corners",
+        "self-expanding-planar-tree-networks",
         "rotational-graphical-expanders-over-round-cones",
         "two-sheeted-expanders-of-rotational-double-cones",
         "one-sheeted-expanders-of-rotational-double-cones",
-        "one-sided-expanders-from-mean-convex-cones",
-        "self-expanding-planar-tree-networks"
+        "one-sided-expanders-from-mean-convex-cones"
       ],
       "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions.",
       "number": 4,
+      "ambient_groups": [
+        {
+          "key": "r2",
+          "title": "Euclidean plane ℝ²",
+          "topics": [
+            "expanding-smoothings-of-planar-corners",
+            "self-expanding-planar-tree-networks"
+          ],
+          "related": []
+        },
+        {
+          "key": "r3",
+          "title": "Euclidean space ℝ³",
+          "topics": [
+            "rotational-graphical-expanders-over-round-cones",
+            "two-sheeted-expanders-of-rotational-double-cones",
+            "one-sheeted-expanders-of-rotational-double-cones",
+            "one-sided-expanders-from-mean-convex-cones"
+          ],
+          "related": [
+            {
+              "section": "expanding-smoothings-of-planar-corners",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-expanding-corners-2",
+                  "name": "Product with a line"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "r4",
+          "title": "Euclidean space ℝ⁴",
+          "topics": [],
+          "related": [
+            {
+              "section": "rotational-graphical-expanders-over-round-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-rotational-expanders-2",
+                  "name": "Higher-dimensional radial graphs"
+                }
+              ]
+            },
+            {
+              "section": "two-sheeted-expanders-of-rotational-double-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-two-sheet-expanders-2",
+                  "name": "Higher-dimensional double-cone smoothings"
+                }
+              ]
+            },
+            {
+              "section": "one-sheeted-expanders-of-rotational-double-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-one-sheet-expanders-2",
+                  "name": "Higher-dimensional necks"
+                }
+              ]
+            },
+            {
+              "section": "one-sided-expanders-from-mean-convex-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-mean-convex-expanders-2",
+                  "name": "Higher-dimensional cone smoothings"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "higher",
+          "title": "Euclidean dimension ≥ 5",
+          "topics": [],
+          "related": [
+            {
+              "section": "rotational-graphical-expanders-over-round-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-rotational-expanders-2",
+                  "name": "Higher-dimensional radial graphs"
+                }
+              ]
+            },
+            {
+              "section": "two-sheeted-expanders-of-rotational-double-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-two-sheet-expanders-2",
+                  "name": "Higher-dimensional double-cone smoothings"
+                }
+              ]
+            },
+            {
+              "section": "one-sheeted-expanders-of-rotational-double-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-one-sheet-expanders-2",
+                  "name": "Higher-dimensional necks"
+                }
+              ]
+            },
+            {
+              "section": "one-sided-expanders-from-mean-convex-cones",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-mean-convex-expanders-2",
+                  "name": "Higher-dimensional cone smoothings"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ambient_families": {
+        "expanding-smoothings-of-planar-corners": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-expanding-corners-1",
+              "name": "Expanding corner curve"
+            }
+          ],
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-expanding-corners-2",
+              "name": "Product with a line"
+            }
+          ]
+        },
+        "rotational-graphical-expanders-over-round-cones": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-rotational-expanders-1",
+              "name": "Radial graph surface"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-rotational-expanders-2",
+              "name": "Higher-dimensional radial graphs"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-rotational-expanders-2",
+              "name": "Higher-dimensional radial graphs"
+            }
+          ]
+        },
+        "two-sheeted-expanders-of-rotational-double-cones": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-two-sheet-expanders-1",
+              "name": "Two disjoint planes ℝ² ⊔ ℝ²"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-two-sheet-expanders-2",
+              "name": "Higher-dimensional double-cone smoothings"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-two-sheet-expanders-2",
+              "name": "Higher-dimensional double-cone smoothings"
+            }
+          ]
+        },
+        "one-sheeted-expanders-of-rotational-double-cones": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-one-sheet-expanders-1",
+              "name": "Annulus S¹ × ℝ"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-one-sheet-expanders-2",
+              "name": "Higher-dimensional necks"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-one-sheet-expanders-2",
+              "name": "Higher-dimensional necks"
+            }
+          ]
+        },
+        "one-sided-expanders-from-mean-convex-cones": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-mean-convex-expanders-1",
+              "name": "Depends on the chosen cone and side"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-mean-convex-expanders-2",
+              "name": "Higher-dimensional cone smoothings"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-mean-convex-expanders-2",
+              "name": "Higher-dimensional cone smoothings"
+            }
+          ]
+        },
+        "self-expanding-planar-tree-networks": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-expanding-networks-1",
+              "name": "Three prescribed rays"
+            },
+            {
+              "anchor": "case-ex-catalogue-expanding-networks-2",
+              "name": "Four or more prescribed rays"
+            }
+          ]
+        }
+      },
       "tag": "EE91DF9C2CB0"
     },
     {
       "slug": "other-special-flows",
       "title": "Other special flows",
       "topics": [
-        "the-catenoid-as-an-eternal-stationary-flow",
-        "mean-curvature-evolution-of-the-whitney-sphere",
-        "rotational-degenerate-neckpinch-solutions",
         "the-angenent-oval-as-an-explicit-ancient-flow",
-        "ancient-torus-curves-in-higher-codimension",
+        "the-catenoid-as-an-eternal-stationary-flow",
+        "rotational-degenerate-neckpinch-solutions",
         "eternal-shrinking-helices",
         "immortal-annuli-converging-to-a-double-plane",
+        "mean-curvature-evolution-of-the-whitney-sphere",
+        "ancient-torus-curves-in-higher-codimension",
         "immortal-compact-flows-converging-to-a-double-sphere"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons.",
       "number": 5,
+      "ambient_groups": [
+        {
+          "key": "r2",
+          "title": "Euclidean plane ℝ²",
+          "topics": [
+            "the-angenent-oval-as-an-explicit-ancient-flow"
+          ],
+          "related": []
+        },
+        {
+          "key": "r3",
+          "title": "Euclidean space ℝ³",
+          "topics": [
+            "the-catenoid-as-an-eternal-stationary-flow",
+            "rotational-degenerate-neckpinch-solutions",
+            "eternal-shrinking-helices",
+            "immortal-annuli-converging-to-a-double-plane"
+          ],
+          "related": []
+        },
+        {
+          "key": "r4",
+          "title": "Euclidean space ℝ⁴",
+          "topics": [
+            "mean-curvature-evolution-of-the-whitney-sphere",
+            "ancient-torus-curves-in-higher-codimension"
+          ],
+          "related": [
+            {
+              "section": "rotational-degenerate-neckpinch-solutions",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-degenerate-neckpinches-2",
+                  "name": "Higher-dimensional neckpinches"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "higher",
+          "title": "Euclidean dimension ≥ 5",
+          "topics": [],
+          "related": [
+            {
+              "section": "rotational-degenerate-neckpinch-solutions",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-degenerate-neckpinches-2",
+                  "name": "Higher-dimensional neckpinches"
+                }
+              ]
+            },
+            {
+              "section": "eternal-shrinking-helices",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-eternal-helices-2",
+                  "name": "Higher-codimension helices"
+                }
+              ]
+            },
+            {
+              "section": "mean-curvature-evolution-of-the-whitney-sphere",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-whitney-sphere-2",
+                  "name": "Higher-dimensional Whitney spheres"
+                }
+              ]
+            },
+            {
+              "section": "ancient-torus-curves-in-higher-codimension",
+              "cases": [
+                {
+                  "anchor": "case-ex-catalogue-ancient-torus-curves-3",
+                  "name": "Higher-codimension torus curves"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "manifold",
+          "title": "Riemannian ambient manifold",
+          "topics": [
+            "immortal-compact-flows-converging-to-a-double-sphere"
+          ],
+          "related": []
+        }
+      ],
+      "ambient_families": {
+        "the-catenoid-as-an-eternal-stationary-flow": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-stationary-catenoid-1",
+              "name": "Annulus S¹ × ℝ"
+            }
+          ]
+        },
+        "mean-curvature-evolution-of-the-whitney-sphere": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-whitney-sphere-1",
+              "name": "Whitney two-sphere"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-whitney-sphere-2",
+              "name": "Higher-dimensional Whitney spheres"
+            }
+          ]
+        },
+        "rotational-degenerate-neckpinch-solutions": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-degenerate-neckpinches-1",
+              "name": "Surface neckpinches"
+            }
+          ],
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-degenerate-neckpinches-2",
+              "name": "Higher-dimensional neckpinches"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-degenerate-neckpinches-2",
+              "name": "Higher-dimensional neckpinches"
+            }
+          ]
+        },
+        "the-angenent-oval-as-an-explicit-ancient-flow": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-angenent-oval-1",
+              "name": "Circle S¹"
+            }
+          ]
+        },
+        "ancient-torus-curves-in-higher-codimension": {
+          "r4": [
+            {
+              "anchor": "case-ex-catalogue-ancient-torus-curves-1",
+              "name": "R4 frequencies (1,2)"
+            },
+            {
+              "anchor": "case-ex-catalogue-ancient-torus-curves-2",
+              "name": "R4 frequencies (1,k), k ≥ 2"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-ancient-torus-curves-3",
+              "name": "Higher-codimension torus curves"
+            }
+          ]
+        },
+        "eternal-shrinking-helices": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-eternal-helices-1",
+              "name": "R3 helix"
+            }
+          ],
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-eternal-helices-2",
+              "name": "Higher-codimension helices"
+            }
+          ]
+        },
+        "immortal-annuli-converging-to-a-double-plane": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-double-plane-flow-1",
+              "name": "Annulus S¹ × ℝ"
+            }
+          ]
+        },
+        "immortal-compact-flows-converging-to-a-double-sphere": {
+          "manifold": [
+            {
+              "anchor": "case-ex-catalogue-double-sphere-flow-1",
+              "name": "Surface flow in S² × ℝ"
+            },
+            {
+              "anchor": "case-ex-catalogue-double-sphere-flow-2",
+              "name": "Higher-dimensional product-manifold flows"
+            }
+          ]
+        }
+      },
       "tag": "52A98BA8F5C1"
     }
   ],
@@ -118,21 +1542,21 @@
       "slug": "generalized-shrinking-cylinders",
       "title": "Generalized shrinking cylinders",
       "description": "",
-      "number": "2.2",
+      "number": "2.4",
       "tag": "1A070FD35EB2"
     },
     {
       "slug": "planes-through-the-shrinker-center",
       "title": "Planes through the shrinker center",
       "description": "",
-      "number": "2.3",
+      "number": "2.2",
       "tag": "CB99B1567911"
     },
     {
       "slug": "abresch-langer-closed-shrinking-curves",
       "title": "Abresch–Langer closed shrinking curves",
       "description": "",
-      "number": "2.4",
+      "number": "2.3",
       "tag": "B4D1BD157D4B"
     },
     {
@@ -153,133 +1577,133 @@
       "slug": "the-clifford-shrinking-torus-in-four-space",
       "title": "The Clifford shrinking torus in four-space",
       "description": "",
-      "number": "2.7",
+      "number": "2.22",
       "tag": "CDFAEA3DDEF8"
     },
     {
       "slug": "products-of-closed-shrinking-curves",
       "title": "Products of closed shrinking curves",
       "description": "",
-      "number": "2.8",
+      "number": "2.23",
       "tag": "44DD8966BC9A"
     },
     {
       "slug": "higher-codimension-spherical-shrinkers",
       "title": "Higher-codimension spherical shrinkers",
       "description": "",
-      "number": "2.9",
+      "number": "2.24",
       "tag": "6C99F82AA214"
     },
     {
       "slug": "moller-closed-shrinkers-of-large-even-genus",
       "title": "Møller closed shrinkers of large even genus",
       "description": "",
-      "number": "2.10",
+      "number": "2.7",
       "tag": "1AD8ABE5C210"
     },
     {
       "slug": "kapouleas-kleene-moller-shrinkers-with-one-end",
       "title": "Kapouleas–Kleene–Møller shrinkers with one end",
       "description": "",
-      "number": "2.11",
+      "number": "2.8",
       "tag": "2285B0C987A6"
     },
     {
       "slug": "drugan-nguyen-variational-shrinking-tori",
       "title": "Drugan–Nguyen variational shrinking tori",
       "description": "",
-      "number": "2.12",
+      "number": "2.9",
       "tag": "7E48D8C7D552"
     },
     {
       "slug": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
       "title": "Buzano–Nguyen–Schulz shrinkers of every positive genus",
       "description": "",
-      "number": "2.13",
+      "number": "2.10",
       "tag": "0E02104583BA"
     },
     {
       "slug": "ketover-self-shrinking-doubled-planes",
       "title": "Ketover self-shrinking doubled planes",
       "description": "",
-      "number": "2.14",
+      "number": "2.11",
       "tag": "8423ACEAF2E2"
     },
     {
       "slug": "closed-shrinkers-from-spherical-doubling",
       "title": "Closed shrinkers from spherical doubling",
       "description": "",
-      "number": "2.15",
+      "number": "2.12",
       "tag": "EB175520B015"
     },
     {
       "slug": "nguyen-s-one-ended-shrinking-saddles",
       "title": "Nguyen's one-ended shrinking saddles",
       "description": "",
-      "number": "2.16",
+      "number": "2.13",
       "tag": "EDE40E8E1379"
     },
     {
       "slug": "angenent-torus-cylinders",
       "title": "Angenent torus cylinders",
       "description": "",
-      "number": "2.17",
+      "number": "2.25",
       "tag": "99055D91C188"
     },
     {
       "slug": "ilmanen-white-two-ended-shrinkers",
       "title": "Ilmanen–White two-ended shrinkers",
       "description": "",
-      "number": "2.18",
+      "number": "2.14",
       "tag": "C7322187A6FC"
     },
     {
       "slug": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
       "title": "Shao–Zou shrinkers with any prescribed number of ends",
       "description": "",
-      "number": "2.19",
+      "number": "2.15",
       "tag": "EB2734BB2E46"
     },
     {
       "slug": "flow-generated-platonic-and-polygonal-shrinkers",
       "title": "Flow-generated Platonic and polygonal shrinkers",
       "description": "",
-      "number": "2.20",
+      "number": "2.16",
       "tag": "1AF8BDC11238"
     },
     {
       "slug": "flow-generated-sphere-plane-shrinkers",
       "title": "Flow-generated sphere–plane shrinkers",
       "description": "",
-      "number": "2.21",
+      "number": "2.17",
       "tag": "036F44595178"
     },
     {
       "slug": "flow-generated-three-ended-shrinkers",
       "title": "Flow-generated three-ended shrinkers",
       "description": "",
-      "number": "2.22",
+      "number": "2.18",
       "tag": "5245200FA4A7"
     },
     {
       "slug": "ketover-shrinkers-with-platonic-symmetry",
       "title": "Ketover shrinkers with Platonic symmetry",
       "description": "",
-      "number": "2.23",
+      "number": "2.19",
       "tag": "B675C6112328"
     },
     {
       "slug": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
       "title": "Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
       "description": "",
-      "number": "2.24",
+      "number": "2.20",
       "tag": "879F42A66D65"
     },
     {
       "slug": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
       "title": "Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "description": "",
-      "number": "2.25",
+      "number": "2.21",
       "tag": "B050FA22AB2D"
     },
     {
@@ -321,42 +1745,42 @@
       "slug": "nonrotational-entire-convex-translators",
       "title": "Nonrotational entire convex translators",
       "description": "",
-      "number": "3.6",
+      "number": "3.11",
       "tag": "BD00A99565D1"
     },
     {
       "slug": "translators-with-prescribed-apex-curvatures",
       "title": "Translators with prescribed apex curvatures",
       "description": "",
-      "number": "3.7",
+      "number": "3.6",
       "tag": "DCD9F7224DF3"
     },
     {
       "slug": "scherkenoid-translators",
       "title": "Scherkenoid translators",
       "description": "",
-      "number": "3.8",
+      "number": "3.7",
       "tag": "9E847D647A0C"
     },
     {
       "slug": "the-pitchfork-translator",
       "title": "The pitchfork translator",
       "description": "",
-      "number": "3.9",
+      "number": "3.8",
       "tag": "64055D697644"
     },
     {
       "slug": "nguyen-translating-tridents",
       "title": "Nguyen translating tridents",
       "description": "",
-      "number": "3.10",
+      "number": "3.9",
       "tag": "31505E08B028"
     },
     {
       "slug": "finite-genus-translators-with-three-ends",
       "title": "Finite-genus translators with three ends",
       "description": "",
-      "number": "3.11",
+      "number": "3.10",
       "tag": "8609A35E7601"
     },
     {
@@ -384,49 +1808,49 @@
       "slug": "rotational-graphical-expanders-over-round-cones",
       "title": "Rotational graphical expanders over round cones",
       "description": "",
-      "number": "4.2",
+      "number": "4.3",
       "tag": "A178E87D4BA0"
     },
     {
       "slug": "two-sheeted-expanders-of-rotational-double-cones",
       "title": "Two-sheeted expanders of rotational double cones",
       "description": "",
-      "number": "4.3",
+      "number": "4.4",
       "tag": "ADE41440A542"
     },
     {
       "slug": "one-sheeted-expanders-of-rotational-double-cones",
       "title": "One-sheeted expanders of rotational double cones",
       "description": "",
-      "number": "4.4",
+      "number": "4.5",
       "tag": "40FCBC562153"
     },
     {
       "slug": "one-sided-expanders-from-mean-convex-cones",
       "title": "One-sided expanders from mean-convex cones",
       "description": "",
-      "number": "4.5",
+      "number": "4.6",
       "tag": "5C7DD27422AD"
     },
     {
       "slug": "self-expanding-planar-tree-networks",
       "title": "Self-expanding planar tree networks",
       "description": "",
-      "number": "4.6",
+      "number": "4.2",
       "tag": "23B41DF2B95E"
     },
     {
       "slug": "the-catenoid-as-an-eternal-stationary-flow",
       "title": "The catenoid as an eternal stationary flow",
       "description": "",
-      "number": "5.1",
+      "number": "5.2",
       "tag": "C9F0102B7272"
     },
     {
       "slug": "mean-curvature-evolution-of-the-whitney-sphere",
       "title": "Mean curvature evolution of the Whitney sphere",
       "description": "",
-      "number": "5.2",
+      "number": "5.6",
       "tag": "2E15631C1593"
     },
     {
@@ -440,28 +1864,28 @@
       "slug": "the-angenent-oval-as-an-explicit-ancient-flow",
       "title": "The Angenent oval as an explicit ancient flow",
       "description": "",
-      "number": "5.4",
+      "number": "5.1",
       "tag": "34E98635F82B"
     },
     {
       "slug": "ancient-torus-curves-in-higher-codimension",
       "title": "Ancient torus curves in higher codimension",
       "description": "",
-      "number": "5.5",
+      "number": "5.7",
       "tag": "B6082DA55C46"
     },
     {
       "slug": "eternal-shrinking-helices",
       "title": "Eternal shrinking helices",
       "description": "",
-      "number": "5.6",
+      "number": "5.4",
       "tag": "281263153F94"
     },
     {
       "slug": "immortal-annuli-converging-to-a-double-plane",
       "title": "Immortal annuli converging to a double plane",
       "description": "",
-      "number": "5.7",
+      "number": "5.5",
       "tag": "00966387D6EF"
     },
     {
@@ -583,9 +2007,9 @@
     },
     {
       "tag": "1A070FD35EB2",
-      "number": "2.2",
+      "number": "2.4",
       "section_intro": true,
-      "title": "2.2 Generalized shrinking cylinders",
+      "title": "2.4 Generalized shrinking cylinders",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "generalized-shrinking-cylinders",
@@ -601,9 +2025,9 @@
     },
     {
       "tag": "D20709465D01",
-      "number": "2.2.1",
+      "number": "2.4.1",
       "section_intro": false,
-      "title": "Example 2.2.1 (Generalized shrinking cylinders)",
+      "title": "Example 2.4.1 (Generalized shrinking cylinders)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "generalized-shrinking-cylinders",
@@ -619,9 +2043,9 @@
     },
     {
       "tag": "CB99B1567911",
-      "number": "2.3",
+      "number": "2.2",
       "section_intro": true,
-      "title": "2.3 Planes through the shrinker center",
+      "title": "2.2 Planes through the shrinker center",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "planes-through-the-shrinker-center",
@@ -637,9 +2061,9 @@
     },
     {
       "tag": "97FD822B6630",
-      "number": "2.3.1",
+      "number": "2.2.1",
       "section_intro": false,
-      "title": "Example 2.3.1 (Planes through the shrinker center)",
+      "title": "Example 2.2.1 (Planes through the shrinker center)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "planes-through-the-shrinker-center",
@@ -655,9 +2079,9 @@
     },
     {
       "tag": "B4D1BD157D4B",
-      "number": "2.4",
+      "number": "2.3",
       "section_intro": true,
-      "title": "2.4 Abresch–Langer closed shrinking curves",
+      "title": "2.3 Abresch–Langer closed shrinking curves",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "abresch-langer-closed-shrinking-curves",
@@ -673,9 +2097,9 @@
     },
     {
       "tag": "55D5743A6941",
-      "number": "2.4.1",
+      "number": "2.3.1",
       "section_intro": false,
-      "title": "Example 2.4.1 (Abresch–Langer closed shrinking curves)",
+      "title": "Example 2.3.1 (Abresch–Langer closed shrinking curves)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "abresch-langer-closed-shrinking-curves",
@@ -763,9 +2187,9 @@
     },
     {
       "tag": "CDFAEA3DDEF8",
-      "number": "2.7",
+      "number": "2.22",
       "section_intro": true,
-      "title": "2.7 The Clifford shrinking torus in four-space",
+      "title": "2.22 The Clifford shrinking torus in four-space",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "the-clifford-shrinking-torus-in-four-space",
@@ -781,9 +2205,9 @@
     },
     {
       "tag": "635FBEF68A7E",
-      "number": "2.7.1",
+      "number": "2.22.1",
       "section_intro": false,
-      "title": "Example 2.7.1 (The Clifford shrinking torus in four-space)",
+      "title": "Example 2.22.1 (The Clifford shrinking torus in four-space)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "the-clifford-shrinking-torus-in-four-space",
@@ -799,9 +2223,9 @@
     },
     {
       "tag": "44DD8966BC9A",
-      "number": "2.8",
+      "number": "2.23",
       "section_intro": true,
-      "title": "2.8 Products of closed shrinking curves",
+      "title": "2.23 Products of closed shrinking curves",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "products-of-closed-shrinking-curves",
@@ -817,9 +2241,9 @@
     },
     {
       "tag": "AD717A30B415",
-      "number": "2.8.1",
+      "number": "2.23.1",
       "section_intro": false,
-      "title": "Example 2.8.1 (Products of closed shrinking curves)",
+      "title": "Example 2.23.1 (Products of closed shrinking curves)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "products-of-closed-shrinking-curves",
@@ -835,9 +2259,9 @@
     },
     {
       "tag": "6C99F82AA214",
-      "number": "2.9",
+      "number": "2.24",
       "section_intro": true,
-      "title": "2.9 Higher-codimension spherical shrinkers",
+      "title": "2.24 Higher-codimension spherical shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "higher-codimension-spherical-shrinkers",
@@ -853,9 +2277,9 @@
     },
     {
       "tag": "45597E4891F4",
-      "number": "2.9.1",
+      "number": "2.24.1",
       "section_intro": false,
-      "title": "Example 2.9.1 (Higher-codimension spherical shrinkers)",
+      "title": "Example 2.24.1 (Higher-codimension spherical shrinkers)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "higher-codimension-spherical-shrinkers",
@@ -871,9 +2295,9 @@
     },
     {
       "tag": "1AD8ABE5C210",
-      "number": "2.10",
+      "number": "2.7",
       "section_intro": true,
-      "title": "2.10 Møller closed shrinkers of large even genus",
+      "title": "2.7 Møller closed shrinkers of large even genus",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "moller-closed-shrinkers-of-large-even-genus",
@@ -889,9 +2313,9 @@
     },
     {
       "tag": "A105C87CB202",
-      "number": "2.10.1",
+      "number": "2.7.1",
       "section_intro": false,
-      "title": "Example 2.10.1 (Møller closed shrinkers of large even genus)",
+      "title": "Example 2.7.1 (Møller closed shrinkers of large even genus)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "moller-closed-shrinkers-of-large-even-genus",
@@ -907,9 +2331,9 @@
     },
     {
       "tag": "2285B0C987A6",
-      "number": "2.11",
+      "number": "2.8",
       "section_intro": true,
-      "title": "2.11 Kapouleas–Kleene–Møller shrinkers with one end",
+      "title": "2.8 Kapouleas–Kleene–Møller shrinkers with one end",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
@@ -925,9 +2349,9 @@
     },
     {
       "tag": "A515DF7C7C60",
-      "number": "2.11.1",
+      "number": "2.8.1",
       "section_intro": false,
-      "title": "Example 2.11.1 (Kapouleas–Kleene–Møller shrinkers with one end)",
+      "title": "Example 2.8.1 (Kapouleas–Kleene–Møller shrinkers with one end)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
@@ -943,9 +2367,9 @@
     },
     {
       "tag": "7E48D8C7D552",
-      "number": "2.12",
+      "number": "2.9",
       "section_intro": true,
-      "title": "2.12 Drugan–Nguyen variational shrinking tori",
+      "title": "2.9 Drugan–Nguyen variational shrinking tori",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "drugan-nguyen-variational-shrinking-tori",
@@ -961,9 +2385,9 @@
     },
     {
       "tag": "9F3C76F8391F",
-      "number": "2.12.1",
+      "number": "2.9.1",
       "section_intro": false,
-      "title": "Example 2.12.1 (Drugan–Nguyen variational shrinking tori)",
+      "title": "Example 2.9.1 (Drugan–Nguyen variational shrinking tori)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "drugan-nguyen-variational-shrinking-tori",
@@ -979,9 +2403,9 @@
     },
     {
       "tag": "0E02104583BA",
-      "number": "2.13",
+      "number": "2.10",
       "section_intro": true,
-      "title": "2.13 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "title": "2.10 Buzano–Nguyen–Schulz shrinkers of every positive genus",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
@@ -997,9 +2421,9 @@
     },
     {
       "tag": "40F2B3444C2E",
-      "number": "2.13.1",
+      "number": "2.10.1",
       "section_intro": false,
-      "title": "Example 2.13.1 (Buzano–Nguyen–Schulz shrinkers of every positive genus)",
+      "title": "Example 2.10.1 (Buzano–Nguyen–Schulz shrinkers of every positive genus)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
@@ -1015,9 +2439,9 @@
     },
     {
       "tag": "8423ACEAF2E2",
-      "number": "2.14",
+      "number": "2.11",
       "section_intro": true,
-      "title": "2.14 Ketover self-shrinking doubled planes",
+      "title": "2.11 Ketover self-shrinking doubled planes",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ketover-self-shrinking-doubled-planes",
@@ -1033,9 +2457,9 @@
     },
     {
       "tag": "9E9A8A1CC506",
-      "number": "2.14.1",
+      "number": "2.11.1",
       "section_intro": false,
-      "title": "Example 2.14.1 (Ketover self-shrinking doubled planes)",
+      "title": "Example 2.11.1 (Ketover self-shrinking doubled planes)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ketover-self-shrinking-doubled-planes",
@@ -1051,9 +2475,9 @@
     },
     {
       "tag": "EB175520B015",
-      "number": "2.15",
+      "number": "2.12",
       "section_intro": true,
-      "title": "2.15 Closed shrinkers from spherical doubling",
+      "title": "2.12 Closed shrinkers from spherical doubling",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "closed-shrinkers-from-spherical-doubling",
@@ -1069,9 +2493,9 @@
     },
     {
       "tag": "826D61792601",
-      "number": "2.15.1",
+      "number": "2.12.1",
       "section_intro": false,
-      "title": "Example 2.15.1 (Closed shrinkers from spherical doubling)",
+      "title": "Example 2.12.1 (Closed shrinkers from spherical doubling)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "closed-shrinkers-from-spherical-doubling",
@@ -1087,9 +2511,9 @@
     },
     {
       "tag": "EDE40E8E1379",
-      "number": "2.16",
+      "number": "2.13",
       "section_intro": true,
-      "title": "2.16 Nguyen's one-ended shrinking saddles",
+      "title": "2.13 Nguyen's one-ended shrinking saddles",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "nguyen-s-one-ended-shrinking-saddles",
@@ -1105,9 +2529,9 @@
     },
     {
       "tag": "B28BB2912147",
-      "number": "2.16.1",
+      "number": "2.13.1",
       "section_intro": false,
-      "title": "Example 2.16.1 (Nguyen's one-ended shrinking saddles)",
+      "title": "Example 2.13.1 (Nguyen's one-ended shrinking saddles)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "nguyen-s-one-ended-shrinking-saddles",
@@ -1123,9 +2547,9 @@
     },
     {
       "tag": "99055D91C188",
-      "number": "2.17",
+      "number": "2.25",
       "section_intro": true,
-      "title": "2.17 Angenent torus cylinders",
+      "title": "2.25 Angenent torus cylinders",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "angenent-torus-cylinders",
@@ -1141,9 +2565,9 @@
     },
     {
       "tag": "FA65887C28F1",
-      "number": "2.17.1",
+      "number": "2.25.1",
       "section_intro": false,
-      "title": "Example 2.17.1 (Angenent torus cylinders)",
+      "title": "Example 2.25.1 (Angenent torus cylinders)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "angenent-torus-cylinders",
@@ -1159,9 +2583,9 @@
     },
     {
       "tag": "C7322187A6FC",
-      "number": "2.18",
+      "number": "2.14",
       "section_intro": true,
-      "title": "2.18 Ilmanen–White two-ended shrinkers",
+      "title": "2.14 Ilmanen–White two-ended shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ilmanen-white-two-ended-shrinkers",
@@ -1177,9 +2601,9 @@
     },
     {
       "tag": "4522A41972E4",
-      "number": "2.18.1",
+      "number": "2.14.1",
       "section_intro": false,
-      "title": "Example 2.18.1 (Ilmanen–White two-ended shrinkers)",
+      "title": "Example 2.14.1 (Ilmanen–White two-ended shrinkers)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ilmanen-white-two-ended-shrinkers",
@@ -1195,9 +2619,9 @@
     },
     {
       "tag": "EB2734BB2E46",
-      "number": "2.19",
+      "number": "2.15",
       "section_intro": true,
-      "title": "2.19 Shao–Zou shrinkers with any prescribed number of ends",
+      "title": "2.15 Shao–Zou shrinkers with any prescribed number of ends",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
@@ -1213,9 +2637,9 @@
     },
     {
       "tag": "4BFAC8529BEA",
-      "number": "2.19.1",
+      "number": "2.15.1",
       "section_intro": false,
-      "title": "Example 2.19.1 (Shao–Zou plane stackings)",
+      "title": "Example 2.15.1 (Shao–Zou plane stackings)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
@@ -1231,9 +2655,9 @@
     },
     {
       "tag": "1AF8BDC11238",
-      "number": "2.20",
+      "number": "2.16",
       "section_intro": true,
-      "title": "2.20 Flow-generated Platonic and polygonal shrinkers",
+      "title": "2.16 Flow-generated Platonic and polygonal shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-platonic-and-polygonal-shrinkers",
@@ -1249,9 +2673,9 @@
     },
     {
       "tag": "A455BCCC51D0",
-      "number": "2.20.1",
+      "number": "2.16.1",
       "section_intro": false,
-      "title": "Example 2.20.1 (Hoffman–Martin–White ray-avoiding shrinkers)",
+      "title": "Example 2.16.1 (Hoffman–Martin–White ray-avoiding shrinkers)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-platonic-and-polygonal-shrinkers",
@@ -1267,9 +2691,9 @@
     },
     {
       "tag": "036F44595178",
-      "number": "2.21",
+      "number": "2.17",
       "section_intro": true,
-      "title": "2.21 Flow-generated sphere–plane shrinkers",
+      "title": "2.17 Flow-generated sphere–plane shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-sphere-plane-shrinkers",
@@ -1285,9 +2709,9 @@
     },
     {
       "tag": "45B364E949D5",
-      "number": "2.21.1",
+      "number": "2.17.1",
       "section_intro": false,
-      "title": "Example 2.21.1 (Hoffman–Martin–White sphere–plane family)",
+      "title": "Example 2.17.1 (Hoffman–Martin–White sphere–plane family)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-sphere-plane-shrinkers",
@@ -1303,9 +2727,9 @@
     },
     {
       "tag": "5245200FA4A7",
-      "number": "2.22",
+      "number": "2.18",
       "section_intro": true,
-      "title": "2.22 Flow-generated three-ended shrinkers",
+      "title": "2.18 Flow-generated three-ended shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-three-ended-shrinkers",
@@ -1321,9 +2745,9 @@
     },
     {
       "tag": "5CED6ED3B586",
-      "number": "2.22.1",
+      "number": "2.18.1",
       "section_intro": false,
-      "title": "Example 2.22.1 (Hoffman–Martin–White three-ended family)",
+      "title": "Example 2.18.1 (Hoffman–Martin–White three-ended family)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-three-ended-shrinkers",
@@ -1339,9 +2763,9 @@
     },
     {
       "tag": "B675C6112328",
-      "number": "2.23",
+      "number": "2.19",
       "section_intro": true,
-      "title": "2.23 Ketover shrinkers with Platonic symmetry",
+      "title": "2.19 Ketover shrinkers with Platonic symmetry",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ketover-shrinkers-with-platonic-symmetry",
@@ -1357,9 +2781,9 @@
     },
     {
       "tag": "AE0CC89EB3E2",
-      "number": "2.23.1",
+      "number": "2.19.1",
       "section_intro": false,
-      "title": "Example 2.23.1 (Ketover shrinkers with Platonic symmetry)",
+      "title": "Example 2.19.1 (Ketover shrinkers with Platonic symmetry)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ketover-shrinkers-with-platonic-symmetry",
@@ -1375,9 +2799,9 @@
     },
     {
       "tag": "879F42A66D65",
-      "number": "2.24",
+      "number": "2.20",
       "section_intro": true,
-      "title": "2.24 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+      "title": "2.20 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
@@ -1393,9 +2817,9 @@
     },
     {
       "tag": "0177A2718D72",
-      "number": "2.24.1",
+      "number": "2.20.1",
       "section_intro": false,
-      "title": "Example 2.24.1 (Sun–Wang–Zhou Gaussian-width shrinkers)",
+      "title": "Example 2.20.1 (Sun–Wang–Zhou Gaussian-width shrinkers)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
@@ -1411,9 +2835,9 @@
     },
     {
       "tag": "B050FA22AB2D",
-      "number": "2.25",
+      "number": "2.21",
       "section_intro": true,
-      "title": "2.25 Chu–Sun genus-one shrinkers below the shrinking doughnut",
+      "title": "2.21 Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
@@ -1429,9 +2853,9 @@
     },
     {
       "tag": "AE7721D6799F",
-      "number": "2.25.1",
+      "number": "2.21.1",
       "section_intro": false,
-      "title": "Example 2.25.1 (Chu–Sun lower-entropy genus-one shrinkers)",
+      "title": "Example 2.21.1 (Chu–Sun lower-entropy genus-one shrinkers)",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
@@ -1627,9 +3051,9 @@
     },
     {
       "tag": "BD00A99565D1",
-      "number": "3.6",
+      "number": "3.11",
       "section_intro": true,
-      "title": "3.6 Nonrotational entire convex translators",
+      "title": "3.11 Nonrotational entire convex translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -1645,9 +3069,9 @@
     },
     {
       "tag": "0F00F9295CD9",
-      "number": "3.6.1",
+      "number": "3.11.1",
       "section_intro": false,
-      "title": "Example 3.6.1 (Nonrotational entire convex translators)",
+      "title": "Example 3.11.1 (Nonrotational entire convex translators)",
       "kind": "example",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -1663,9 +3087,9 @@
     },
     {
       "tag": "DCD9F7224DF3",
-      "number": "3.7",
+      "number": "3.6",
       "section_intro": true,
-      "title": "3.7 Translators with prescribed apex curvatures",
+      "title": "3.6 Translators with prescribed apex curvatures",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "translators-with-prescribed-apex-curvatures",
@@ -1681,9 +3105,9 @@
     },
     {
       "tag": "D68656E88625",
-      "number": "3.7.1",
+      "number": "3.6.1",
       "section_intro": false,
-      "title": "Example 3.7.1 (Translators with prescribed apex curvatures)",
+      "title": "Example 3.6.1 (Translators with prescribed apex curvatures)",
       "kind": "example",
       "chapter": "translators",
       "topic": "translators-with-prescribed-apex-curvatures",
@@ -1699,9 +3123,9 @@
     },
     {
       "tag": "9E847D647A0C",
-      "number": "3.8",
+      "number": "3.7",
       "section_intro": true,
-      "title": "3.8 Scherkenoid translators",
+      "title": "3.7 Scherkenoid translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "scherkenoid-translators",
@@ -1717,9 +3141,9 @@
     },
     {
       "tag": "C6C5A44F27CC",
-      "number": "3.8.1",
+      "number": "3.7.1",
       "section_intro": false,
-      "title": "Example 3.8.1 (Scherkenoid translators)",
+      "title": "Example 3.7.1 (Scherkenoid translators)",
       "kind": "example",
       "chapter": "translators",
       "topic": "scherkenoid-translators",
@@ -1735,9 +3159,9 @@
     },
     {
       "tag": "64055D697644",
-      "number": "3.9",
+      "number": "3.8",
       "section_intro": true,
-      "title": "3.9 The pitchfork translator",
+      "title": "3.8 The pitchfork translator",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "the-pitchfork-translator",
@@ -1753,9 +3177,9 @@
     },
     {
       "tag": "B5E7AB44607B",
-      "number": "3.9.1",
+      "number": "3.8.1",
       "section_intro": false,
-      "title": "Example 3.9.1 (The pitchfork translator)",
+      "title": "Example 3.8.1 (The pitchfork translator)",
       "kind": "example",
       "chapter": "translators",
       "topic": "the-pitchfork-translator",
@@ -1771,9 +3195,9 @@
     },
     {
       "tag": "31505E08B028",
-      "number": "3.10",
+      "number": "3.9",
       "section_intro": true,
-      "title": "3.10 Nguyen translating tridents",
+      "title": "3.9 Nguyen translating tridents",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "nguyen-translating-tridents",
@@ -1789,9 +3213,9 @@
     },
     {
       "tag": "27C982677562",
-      "number": "3.10.1",
+      "number": "3.9.1",
       "section_intro": false,
-      "title": "Example 3.10.1 (Nguyen translating tridents)",
+      "title": "Example 3.9.1 (Nguyen translating tridents)",
       "kind": "example",
       "chapter": "translators",
       "topic": "nguyen-translating-tridents",
@@ -1807,9 +3231,9 @@
     },
     {
       "tag": "8609A35E7601",
-      "number": "3.11",
+      "number": "3.10",
       "section_intro": true,
-      "title": "3.11 Finite-genus translators with three ends",
+      "title": "3.10 Finite-genus translators with three ends",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "finite-genus-translators-with-three-ends",
@@ -1825,9 +3249,9 @@
     },
     {
       "tag": "85D3C19BE7E6",
-      "number": "3.11.1",
+      "number": "3.10.1",
       "section_intro": false,
-      "title": "Example 3.11.1 (Finite-genus translators with three ends)",
+      "title": "Example 3.10.1 (Finite-genus translators with three ends)",
       "kind": "example",
       "chapter": "translators",
       "topic": "finite-genus-translators-with-three-ends",
@@ -1951,9 +3375,9 @@
     },
     {
       "tag": "A178E87D4BA0",
-      "number": "4.2",
+      "number": "4.3",
       "section_intro": true,
-      "title": "4.2 Rotational graphical expanders over round cones",
+      "title": "4.3 Rotational graphical expanders over round cones",
       "kind": "chapter",
       "chapter": "expanders",
       "topic": "rotational-graphical-expanders-over-round-cones",
@@ -1969,9 +3393,9 @@
     },
     {
       "tag": "D3CC5E948716",
-      "number": "4.2.1",
+      "number": "4.3.1",
       "section_intro": false,
-      "title": "Example 4.2.1 (Entire radial cone smoothings)",
+      "title": "Example 4.3.1 (Entire radial cone smoothings)",
       "kind": "example",
       "chapter": "expanders",
       "topic": "rotational-graphical-expanders-over-round-cones",
@@ -1987,9 +3411,9 @@
     },
     {
       "tag": "ADE41440A542",
-      "number": "4.3",
+      "number": "4.4",
       "section_intro": true,
-      "title": "4.3 Two-sheeted expanders of rotational double cones",
+      "title": "4.4 Two-sheeted expanders of rotational double cones",
       "kind": "chapter",
       "chapter": "expanders",
       "topic": "two-sheeted-expanders-of-rotational-double-cones",
@@ -2005,9 +3429,9 @@
     },
     {
       "tag": "4F35D93CA4BD",
-      "number": "4.3.1",
+      "number": "4.4.1",
       "section_intro": false,
-      "title": "Example 4.3.1 (Disconnected double-cone smoothings)",
+      "title": "Example 4.4.1 (Disconnected double-cone smoothings)",
       "kind": "example",
       "chapter": "expanders",
       "topic": "two-sheeted-expanders-of-rotational-double-cones",
@@ -2023,9 +3447,9 @@
     },
     {
       "tag": "40FCBC562153",
-      "number": "4.4",
+      "number": "4.5",
       "section_intro": true,
-      "title": "4.4 One-sheeted expanders of rotational double cones",
+      "title": "4.5 One-sheeted expanders of rotational double cones",
       "kind": "chapter",
       "chapter": "expanders",
       "topic": "one-sheeted-expanders-of-rotational-double-cones",
@@ -2041,9 +3465,9 @@
     },
     {
       "tag": "3A4775A9BD2C",
-      "number": "4.4.1",
+      "number": "4.5.1",
       "section_intro": false,
-      "title": "Example 4.4.1 (Connected double-cone smoothings)",
+      "title": "Example 4.5.1 (Connected double-cone smoothings)",
       "kind": "example",
       "chapter": "expanders",
       "topic": "one-sheeted-expanders-of-rotational-double-cones",
@@ -2059,9 +3483,9 @@
     },
     {
       "tag": "5C7DD27422AD",
-      "number": "4.5",
+      "number": "4.6",
       "section_intro": true,
-      "title": "4.5 One-sided expanders from mean-convex cones",
+      "title": "4.6 One-sided expanders from mean-convex cones",
       "kind": "chapter",
       "chapter": "expanders",
       "topic": "one-sided-expanders-from-mean-convex-cones",
@@ -2077,9 +3501,9 @@
     },
     {
       "tag": "A6044506F79A",
-      "number": "4.5.1",
+      "number": "4.6.1",
       "section_intro": false,
-      "title": "Example 4.5.1 (Ding's smooth minimizing expanders)",
+      "title": "Example 4.6.1 (Ding's smooth minimizing expanders)",
       "kind": "example",
       "chapter": "expanders",
       "topic": "one-sided-expanders-from-mean-convex-cones",
@@ -2095,9 +3519,9 @@
     },
     {
       "tag": "23B41DF2B95E",
-      "number": "4.6",
+      "number": "4.2",
       "section_intro": true,
-      "title": "4.6 Self-expanding planar tree networks",
+      "title": "4.2 Self-expanding planar tree networks",
       "kind": "chapter",
       "chapter": "expanders",
       "topic": "self-expanding-planar-tree-networks",
@@ -2113,9 +3537,9 @@
     },
     {
       "tag": "16898F334139",
-      "number": "4.6.1",
+      "number": "4.2.1",
       "section_intro": false,
-      "title": "Example 4.6.1 (Regular expanding trees with prescribed rays)",
+      "title": "Example 4.2.1 (Regular expanding trees with prescribed rays)",
       "kind": "example",
       "chapter": "expanders",
       "topic": "self-expanding-planar-tree-networks",
@@ -2131,9 +3555,9 @@
     },
     {
       "tag": "C9F0102B7272",
-      "number": "5.1",
+      "number": "5.2",
       "section_intro": true,
-      "title": "5.1 The catenoid as an eternal stationary flow",
+      "title": "5.2 The catenoid as an eternal stationary flow",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "the-catenoid-as-an-eternal-stationary-flow",
@@ -2149,9 +3573,9 @@
     },
     {
       "tag": "AC1C0D984A58",
-      "number": "5.1.1",
+      "number": "5.2.1",
       "section_intro": false,
-      "title": "Example 5.1.1 (Stationary catenoid flow)",
+      "title": "Example 5.2.1 (Stationary catenoid flow)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "the-catenoid-as-an-eternal-stationary-flow",
@@ -2167,9 +3591,9 @@
     },
     {
       "tag": "2E15631C1593",
-      "number": "5.2",
+      "number": "5.6",
       "section_intro": true,
-      "title": "5.2 Mean curvature evolution of the Whitney sphere",
+      "title": "5.6 Mean curvature evolution of the Whitney sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -2185,9 +3609,9 @@
     },
     {
       "tag": "245DFF2BED27",
-      "number": "5.2.1",
+      "number": "5.6.1",
       "section_intro": false,
-      "title": "Example 5.2.1 (A collapsing Lagrangian immersed sphere)",
+      "title": "Example 5.6.1 (A collapsing Lagrangian immersed sphere)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -2239,9 +3663,9 @@
     },
     {
       "tag": "34E98635F82B",
-      "number": "5.4",
+      "number": "5.1",
       "section_intro": true,
-      "title": "5.4 The Angenent oval as an explicit ancient flow",
+      "title": "5.1 The Angenent oval as an explicit ancient flow",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "the-angenent-oval-as-an-explicit-ancient-flow",
@@ -2257,9 +3681,9 @@
     },
     {
       "tag": "B008243C5D96",
-      "number": "5.4.1",
+      "number": "5.1.1",
       "section_intro": false,
-      "title": "Example 5.4.1 (The ancient paperclip curve)",
+      "title": "Example 5.1.1 (The ancient paperclip curve)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "the-angenent-oval-as-an-explicit-ancient-flow",
@@ -2275,9 +3699,9 @@
     },
     {
       "tag": "B6082DA55C46",
-      "number": "5.5",
+      "number": "5.7",
       "section_intro": true,
-      "title": "5.5 Ancient torus curves in higher codimension",
+      "title": "5.7 Ancient torus curves in higher codimension",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -2293,9 +3717,9 @@
     },
     {
       "tag": "D28FAF32B556",
-      "number": "5.5.1",
+      "number": "5.7.1",
       "section_intro": false,
-      "title": "Example 5.5.1 (Compact ancient torus curves)",
+      "title": "Example 5.7.1 (Compact ancient torus curves)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -2311,9 +3735,9 @@
     },
     {
       "tag": "281263153F94",
-      "number": "5.6",
+      "number": "5.4",
       "section_intro": true,
-      "title": "5.6 Eternal shrinking helices",
+      "title": "5.4 Eternal shrinking helices",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "eternal-shrinking-helices",
@@ -2329,9 +3753,9 @@
     },
     {
       "tag": "1EF23C4EFFC0",
-      "number": "5.6.1",
+      "number": "5.4.1",
       "section_intro": false,
-      "title": "Example 5.6.1 (Helical curve-shortening flows)",
+      "title": "Example 5.4.1 (Helical curve-shortening flows)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "eternal-shrinking-helices",
@@ -2347,9 +3771,9 @@
     },
     {
       "tag": "00966387D6EF",
-      "number": "5.7",
+      "number": "5.5",
       "section_intro": true,
-      "title": "5.7 Immortal annuli converging to a double plane",
+      "title": "5.5 Immortal annuli converging to a double plane",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-annuli-converging-to-a-double-plane",
@@ -2365,9 +3789,9 @@
     },
     {
       "tag": "A50018836027",
-      "number": "5.7.1",
+      "number": "5.5.1",
       "section_intro": false,
-      "title": "Example 5.7.1 (Chen–Sun's noncompact multiplicity-two limit)",
+      "title": "Example 5.5.1 (Chen–Sun's noncompact multiplicity-two limit)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-annuli-converging-to-a-double-plane",
