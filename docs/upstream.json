@@ -1,21 +1,26 @@
 {
-  "built_at": "2026-11-06T22:31:36.572953+00:00",
-  "publishing_commit": "9f810abf19437e4f9a5ed05da57c55ab38a1bdbe",
+  "built_at": "2026-11-06T22:33:47.836627+00:00",
+  "publishing_commit": "508f594526b4425b5b8db0245e96b6bf0072f579",
   "sources": [
     {
       "repository": "https://github.com/aosunmath/MCF-stack",
       "ref": "local:content/gmt-foundations",
       "kind": "local-manuscript",
-      "source_sha256": "1e9f9b1d0de0eae06226ab3d2cd88e5c89260922ffc3813c0970a3262b6005db",
+      "source_sha256": "0404b2c9c933ba5e66d563544f9794e438c6e4f569959d9fe1d3a623aebd18d4",
       "files": {
         "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
         "catalogue-expanders.tex": "b0c746edabcaa8ecd840c1af6659dd35f572f7f89bbcfa035af6374fbbe70e7a",
         "catalogue-other-flows.tex": "d79eded311659729080a9957f9b497e72d0be98b6787c60ab34aa76e7126b6e2",
         "catalogue-shrinkers.tex": "4698c6b11448003c9dfba276e78ccd3f0be754abfc899c6d56168c5c29b7e81e",
         "catalogue-translators.tex": "637539beeea59ee0921d2c6af91943e5736e3e0aeb77753f99028e69e4bd666f",
+        "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
         "entry-review.json": "b208e41174e7729f989fdde13edcdad4b710f9905de434591ea2c2b88516e94a",
         "orientation.tex": "64ac571b0fa16df9c1aa35fa00f693bcdc73258da46f922e9424e26607e207cf",
-        "references.bib": "5d2f4e2072cbc92f11881c7d5907d75c6603b0f6856cdcf7126aad2faaca66c1",
+        "overviews/expanders.html": "3e897e44c698df6bc01175658ec93f6aa858f1d34802b0be2e137b8d41c5d6e4",
+        "overviews/other-special-flows.html": "ca73c3c4cb5e05a71952d229cd0a2d1bfb902a951ad95b35de2b83cae17882de",
+        "overviews/shrinkers.html": "70862eefa0438483575ba7c06ea20299fa1e8e18c0ddf8d784ea54118f474f50",
+        "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
+        "references.bib": "2af2de022980807511bf50c3c22591e1ca7a1a6c19fd8311e537cf87ef38fe37",
         "source-inventory.json": "d46ff05dde5182ae1c95402c70d47677ff5a6796e32ab664d4d0f0d701075503"
       }
     }
