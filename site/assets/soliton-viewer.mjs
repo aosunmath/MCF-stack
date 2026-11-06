@@ -228,6 +228,9 @@ if(typeof document!=='undefined') {
       } else if(data.construction?.kind==='kkm'){
         const {initKKMFigure}=await import('./kkm-viewer.mjs');
         initKKMFigure(figure,data,rotatePoint);
+      } else if(data.kind==='bns-schematic'){
+        const {initBnsFigure}=await import('./bns-viewer.mjs');
+        initBnsFigure(figure,data);
       } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };

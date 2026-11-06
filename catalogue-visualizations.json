@@ -511,10 +511,10 @@
         "CatChuSun2025"
       ],
       "model": "bns-shrinkers",
-      "status": "Symmetry and topology schematic",
-      "caption": "Equivariant min-max construction; exactly one end is established only for sufficiently large genus.",
-      "alt": "Equivariant min-max construction; exactly one end is established only for sufficiently large genus.",
-      "interactive": false
+      "status": "Interactive topology schematic",
+      "caption": "Informed by Buzano–Nguyen–Schulz, Section 4, Figures 3–4; not a numerical solution of the shrinker equation. Choose a genus or use Cutaway to see the interior. Outer rims and cut edges are display boundaries.",
+      "alt": "Genus-three schematic: a rounded cap with alternating openings joins a central sheet to one noncompact outer sheet; a vertical cutaway exposes the interior. Not a computed shrinker.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-ketover-doubled-plane",

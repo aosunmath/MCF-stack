@@ -1,0 +1,78 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/2110.06027v2",
+  "source_locations": "Lemma 2.2; Theorems 1.2\u20131.3; Section 4, Figures 3\u20134",
+  "resolution": [
+    222,
+    222,
+    160
+  ],
+  "display_radius": 5,
+  "models": {
+    "1": {
+      "vertices": 7398,
+      "faces": 14300,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -1,
+      "genus": 1
+    },
+    "2": {
+      "vertices": 7565,
+      "faces": 14603,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -3,
+      "genus": 2
+    },
+    "3": {
+      "vertices": 6562,
+      "faces": 12625,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -5,
+      "genus": 3
+    },
+    "5": {
+      "vertices": 7835,
+      "faces": 15146,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -9,
+      "genus": 5
+    },
+    "11": {
+      "vertices": 7850,
+      "faces": 15192,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -21,
+      "genus": 11
+    }
+  }
+}

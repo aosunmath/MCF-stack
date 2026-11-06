@@ -1,4 +1,4 @@
-"""Generate original diagrams for three reviewed shrinker constructions.
+"""Generate construction diagrams, preserving the separately generated BNS surface.
 
 Only Python's standard library is required. The figures represent construction
 inputs, topology, symmetry, or qualified asymptotic geometry. None represents a
@@ -131,42 +131,10 @@ def variational_torus():
 
 
 def bns():
-    f = Figure(
-        "Buzano--Nguyen--Schulz shrinkers: symmetry and quantified end statements",
-        "The diagram shows only the three horizontal half-turn axes for the "
-        "dihedral symmetry of the genus-two case, together with the vertical "
-        "axis. It does not plot a self-shrinker. The family exists for all positive "
-        "genera, is noncompact with at least one conical end, and is proved to "
-        "have exactly one end only for sufficiently large genus. The displayed "
-        "Gaussian-area bound is rigorous, not a simulation value.",
-    )
-    f.text(28, 36, "BNS arbitrary-genus shrinkers", 23, weight=600)
-    f.text(28, 64, "Equivariant min–max • existence for every genus g ≥ 1", 16, MUTED)
-    f.text(174, 108, "Shown: symmetry axes at g = 2", 15, anchor="middle")
-    p = projection(174, 202, 37, pitch=.63)
-    f.line([p(v) for v in ring(3, 0)], color=MUTED, width=1,
-           fill=PALE, dash="4 5")
-    for a in [i*math.pi/3 for i in range(3)]:
-        f.line([p((-3*math.cos(a), -3*math.sin(a), 0)),
-                p((3*math.cos(a), 3*math.sin(a), 0))], width=2.5)
-    f.line([p((0, 0, -2.55)), p((0, 0, 2.55))], color=MUTED, width=1.5,
-           dash="4 5")
-    f.ellipse(174, 202, 4, 4, color=SEAM, fill=SEAM, width=1)
-    f.text(189, 130, "vertical axis", 15, MUTED)
-    f.text(174, 295, "Axes only • no surface is plotted", 15, anchor="middle")
-    f.box(336, 107, 277, 194)
-    f.text(474, 137, "All positive genera", 20, weight=600, anchor="middle")
-    f.text(474, 166, "Complete and noncompact", 16, anchor="middle")
-    f.text(474, 193, "At least one conical end", 16, anchor="middle")
-    f.line([(355, 213), (594, 213)], color=MUTED, width=1, opacity=.45)
-    f.text(474, 240, "Exactly one end", 18, weight=600, anchor="middle")
-    f.text(474, 267, "proved for sufficiently large g", 15, anchor="middle")
-    f.box(28, 324, 584, 63)
-    f.text(320, 350, "Gaussian area ≤ 1.02 + 4/e < 3", 21,
-           weight=600, anchor="middle")
-    f.text(320, 376, "Numerical low-genus shapes and values are separate evidence.", 15,
-           anchor="middle")
-    f.save("bns-shrinkers.svg")
+    # The reviewed surface picture has its own numerical meshing dependencies.
+    # Keep it intact when regenerating the standard-library-only diagrams.
+    if not (OUT / "bns-shrinkers.svg").exists():
+        raise RuntimeError("Run scripts/generate_bns_geometry.py first")
 
 
 def ketover():
@@ -216,7 +184,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for generate in (variational_torus, bns, ketover):
         generate()
-    print("Generated three original 640 x 410 shrinker construction schematics.")
+    print("Generated construction schematics; retained the BNS surface illustration.")
 
 
 if __name__ == "__main__":
