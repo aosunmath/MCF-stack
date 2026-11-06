@@ -1,0 +1,56 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/1106.5272v3",
+  "source_locations": "Theorem 1; Section 2, pp. 7\u20139; Definition 13 and Proposition 14; Definition 21",
+  "grid": [
+    221,
+    221,
+    132
+  ],
+  "models": {
+    "6": {
+      "vertices": 11657,
+      "faces": 22996,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -9,
+      "genus": 5
+    },
+    "10": {
+      "vertices": 11667,
+      "faces": 23025,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -17,
+      "genus": 9
+    },
+    "14": {
+      "vertices": 11676,
+      "faces": 23044,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -25,
+      "genus": 13
+    }
+  },
+  "scherk_detail": {
+    "vertices": 9171,
+    "faces": 17999,
+    "max_vertex_equation_residual": 2.5053400232177836e-07
+  }
+}

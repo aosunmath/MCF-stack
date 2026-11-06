@@ -234,6 +234,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='ketover-schematic'){
         const {initKetoverFigure}=await import('./ketover-viewer.mjs');
         initKetoverFigure(figure,data);
+      } else if(data.kind==='nguyen-scherk-schematic'){
+        const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
+        initNguyenFigure(figure,data);
       } else if(data.kind==='spherical-doubling-schematic'){
         const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
         initSphericalDoublingFigure(figure,data);
