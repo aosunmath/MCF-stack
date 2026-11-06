@@ -1,0 +1,106 @@
+{
+  "status": "mesh topology checks, not shrinker verification",
+  "source": "https://arxiv.org/abs/1111.7318v2",
+  "resolutions": [
+    144,
+    192
+  ],
+  "models": {
+    "8": {
+      "144": {
+        "vertices": 75096,
+        "faces": 150220,
+        "edges": 225330,
+        "euler": -14,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 8
+      },
+      "192": {
+        "vertices": 133776,
+        "faces": 267580,
+        "edges": 401370,
+        "euler": -14,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 8
+      },
+      "export": {
+        "vertices": 12986,
+        "faces": 26000,
+        "edges": 39000,
+        "euler": -14,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 8
+      }
+    },
+    "16": {
+      "144": {
+        "vertices": 76568,
+        "faces": 153196,
+        "edges": 229794,
+        "euler": -30,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 16
+      },
+      "192": {
+        "vertices": 136288,
+        "faces": 272636,
+        "edges": 408954,
+        "euler": -30,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 16
+      },
+      "export": {
+        "vertices": 12970,
+        "faces": 26000,
+        "edges": 39000,
+        "euler": -30,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 16
+      }
+    },
+    "24": {
+      "144": {
+        "vertices": 77320,
+        "faces": 154732,
+        "edges": 232098,
+        "euler": -46,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 24
+      },
+      "192": {
+        "vertices": 137472,
+        "faces": 275036,
+        "edges": 412554,
+        "euler": -46,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 24
+      },
+      "export": {
+        "vertices": 12954,
+        "faces": 26000,
+        "edges": 39000,
+        "euler": -46,
+        "components": 1,
+        "watertight": true,
+        "orientable": true,
+        "genus": 24
+      }
+    }
+  }
+}

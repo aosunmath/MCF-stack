@@ -222,6 +222,9 @@ if(typeof document!=='undefined') {
       if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
+      } else if(data.kind==='moller-genus-model'){
+        const {initMollerGenusFigure}=await import('./moller-genus-viewer.mjs');
+        initMollerGenusFigure(figure,data);
       } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };

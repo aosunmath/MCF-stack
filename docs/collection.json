@@ -1910,7 +1910,7 @@
           "book": "gmt-foundations",
           "tag": "F8390A5C",
           "label": "sec:sources-conventions",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -1928,7 +1928,7 @@
           "book": "gmt-foundations",
           "tag": "B6BB2EC0",
           "label": "rem:source-editions",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -1946,7 +1946,7 @@
           "book": "gmt-foundations",
           "tag": "BA8E466F",
           "label": "rem:notation",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -1964,7 +1964,7 @@
           "book": "gmt-foundations",
           "tag": "6592A3B9",
           "label": "rem:project-scope",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -1982,7 +1982,7 @@
           "book": "gmt-foundations",
           "tag": "3DE9EB04",
           "label": "sec:catalogue-round-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2000,7 +2000,7 @@
           "book": "gmt-foundations",
           "tag": "D203437F",
           "label": "ex:catalogue-round-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2018,7 +2018,7 @@
           "book": "gmt-foundations",
           "tag": "51178EC2",
           "label": "sec:catalogue-round-cylinder",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2036,7 +2036,7 @@
           "book": "gmt-foundations",
           "tag": "EEE3452C",
           "label": "ex:catalogue-round-cylinder",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2054,7 +2054,7 @@
           "book": "gmt-foundations",
           "tag": "E9C051B4",
           "label": "sec:catalogue-plane-shrinker",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2072,7 +2072,7 @@
           "book": "gmt-foundations",
           "tag": "17CD9463",
           "label": "ex:catalogue-plane-shrinker",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2090,7 +2090,7 @@
           "book": "gmt-foundations",
           "tag": "3A437BBD",
           "label": "sec:catalogue-abresch-langer",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2108,7 +2108,7 @@
           "book": "gmt-foundations",
           "tag": "C5E7E766",
           "label": "ex:catalogue-abresch-langer",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2126,7 +2126,7 @@
           "book": "gmt-foundations",
           "tag": "E1B60631",
           "label": "sec:catalogue-angenent-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2144,7 +2144,7 @@
           "book": "gmt-foundations",
           "tag": "8169E438",
           "label": "ex:catalogue-angenent-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2162,7 +2162,7 @@
           "book": "gmt-foundations",
           "tag": "E6A84F3F",
           "label": "sec:catalogue-drugan-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2180,7 +2180,7 @@
           "book": "gmt-foundations",
           "tag": "B9F1DC7E",
           "label": "ex:catalogue-drugan-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2198,7 +2198,7 @@
           "book": "gmt-foundations",
           "tag": "DE851C71",
           "label": "sec:catalogue-clifford-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2216,7 +2216,7 @@
           "book": "gmt-foundations",
           "tag": "88A4481E",
           "label": "ex:catalogue-clifford-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2234,7 +2234,7 @@
           "book": "gmt-foundations",
           "tag": "E42E972F",
           "label": "sec:catalogue-curve-products",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2252,7 +2252,7 @@
           "book": "gmt-foundations",
           "tag": "E690F2D5",
           "label": "ex:catalogue-curve-products",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2270,7 +2270,7 @@
           "book": "gmt-foundations",
           "tag": "0D7837E2",
           "label": "sec:catalogue-spherical-minimal",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2288,7 +2288,7 @@
           "book": "gmt-foundations",
           "tag": "852199B9",
           "label": "ex:catalogue-spherical-minimal",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2306,7 +2306,7 @@
           "book": "gmt-foundations",
           "tag": "830EABD2",
           "label": "sec:catalogue-moller-genus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2324,7 +2324,7 @@
           "book": "gmt-foundations",
           "tag": "CBE08D0B",
           "label": "ex:catalogue-moller-genus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2342,7 +2342,7 @@
           "book": "gmt-foundations",
           "tag": "D6BAA215",
           "label": "sec:catalogue-kkm-one-end",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2360,7 +2360,7 @@
           "book": "gmt-foundations",
           "tag": "57CB963E",
           "label": "ex:catalogue-kkm-one-end",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2378,7 +2378,7 @@
           "book": "gmt-foundations",
           "tag": "74D81451",
           "label": "sec:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2396,7 +2396,7 @@
           "book": "gmt-foundations",
           "tag": "8A25E9F3",
           "label": "ex:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2414,7 +2414,7 @@
           "book": "gmt-foundations",
           "tag": "A24E006E",
           "label": "sec:catalogue-bns-genus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2432,7 +2432,7 @@
           "book": "gmt-foundations",
           "tag": "29FD1848",
           "label": "ex:catalogue-bns-genus",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2450,7 +2450,7 @@
           "book": "gmt-foundations",
           "tag": "8B87958C",
           "label": "sec:catalogue-ketover-doubled-plane",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2468,7 +2468,7 @@
           "book": "gmt-foundations",
           "tag": "B42E22F6",
           "label": "ex:catalogue-ketover-doubled-plane",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2486,7 +2486,7 @@
           "book": "gmt-foundations",
           "tag": "981E6034",
           "label": "sec:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2504,7 +2504,7 @@
           "book": "gmt-foundations",
           "tag": "5EF43C21",
           "label": "ex:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2522,7 +2522,7 @@
           "book": "gmt-foundations",
           "tag": "BA9331C1",
           "label": "sec:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2540,7 +2540,7 @@
           "book": "gmt-foundations",
           "tag": "F6ED71FE",
           "label": "ex:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2558,7 +2558,7 @@
           "book": "gmt-foundations",
           "tag": "4F2641F6",
           "label": "sec:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2576,7 +2576,7 @@
           "book": "gmt-foundations",
           "tag": "185EA272",
           "label": "ex:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2594,7 +2594,7 @@
           "book": "gmt-foundations",
           "tag": "98538DB9",
           "label": "sec:catalogue-iw-two-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2612,7 +2612,7 @@
           "book": "gmt-foundations",
           "tag": "F3DA0C49",
           "label": "ex:catalogue-iw-two-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2630,7 +2630,7 @@
           "book": "gmt-foundations",
           "tag": "AC93AF6C",
           "label": "sec:catalogue-shao-zou-stacking",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2648,7 +2648,7 @@
           "book": "gmt-foundations",
           "tag": "55D3E8EB",
           "label": "ex:catalogue-shao-zou-stacking",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2666,7 +2666,7 @@
           "book": "gmt-foundations",
           "tag": "DDB39012",
           "label": "sec:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2684,7 +2684,7 @@
           "book": "gmt-foundations",
           "tag": "4B406BA4",
           "label": "ex:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2702,7 +2702,7 @@
           "book": "gmt-foundations",
           "tag": "08077F3D",
           "label": "sec:catalogue-hmw-one-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2720,7 +2720,7 @@
           "book": "gmt-foundations",
           "tag": "8D1FB423",
           "label": "ex:catalogue-hmw-one-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2738,7 +2738,7 @@
           "book": "gmt-foundations",
           "tag": "099E25A3",
           "label": "sec:catalogue-hmw-three-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2756,7 +2756,7 @@
           "book": "gmt-foundations",
           "tag": "E526106D",
           "label": "ex:catalogue-hmw-three-ended",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2774,7 +2774,7 @@
           "book": "gmt-foundations",
           "tag": "468F62D8",
           "label": "sec:catalogue-ketover-platonic",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2792,7 +2792,7 @@
           "book": "gmt-foundations",
           "tag": "D8E83785",
           "label": "ex:catalogue-ketover-platonic",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2810,7 +2810,7 @@
           "book": "gmt-foundations",
           "tag": "22D51C11",
           "label": "sec:catalogue-swz-large-entropy",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2828,7 +2828,7 @@
           "book": "gmt-foundations",
           "tag": "2649B70D",
           "label": "ex:catalogue-swz-large-entropy",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2846,7 +2846,7 @@
           "book": "gmt-foundations",
           "tag": "DEB2F0AE",
           "label": "sec:catalogue-chu-sun-genus-one",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2864,7 +2864,7 @@
           "book": "gmt-foundations",
           "tag": "2FE2FC92",
           "label": "ex:catalogue-chu-sun-genus-one",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2882,7 +2882,7 @@
           "book": "gmt-foundations",
           "tag": "7E5C7833",
           "label": "sec:catalogue-grim-reaper",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2900,7 +2900,7 @@
           "book": "gmt-foundations",
           "tag": "B992AB57",
           "label": "ex:catalogue-grim-reaper",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2918,7 +2918,7 @@
           "book": "gmt-foundations",
           "tag": "613D030C",
           "label": "sec:catalogue-tilted-grim-reaper",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2936,7 +2936,7 @@
           "book": "gmt-foundations",
           "tag": "B95BEB4E",
           "label": "ex:catalogue-tilted-grim-reaper",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2954,7 +2954,7 @@
           "book": "gmt-foundations",
           "tag": "C86A12BD",
           "label": "sec:catalogue-bowl-translator",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2972,7 +2972,7 @@
           "book": "gmt-foundations",
           "tag": "54CBC7FC",
           "label": "ex:catalogue-bowl-translator",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -2990,7 +2990,7 @@
           "book": "gmt-foundations",
           "tag": "1B76070C",
           "label": "sec:catalogue-translating-catenoid",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3008,7 +3008,7 @@
           "book": "gmt-foundations",
           "tag": "20DD1EEB",
           "label": "ex:catalogue-translating-catenoid",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3026,7 +3026,7 @@
           "book": "gmt-foundations",
           "tag": "1B861E2A",
           "label": "sec:catalogue-delta-wing",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3044,7 +3044,7 @@
           "book": "gmt-foundations",
           "tag": "40F79154",
           "label": "ex:catalogue-delta-wing",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3062,7 +3062,7 @@
           "book": "gmt-foundations",
           "tag": "2E5159FD",
           "label": "sec:catalogue-wang-entire-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3080,7 +3080,7 @@
           "book": "gmt-foundations",
           "tag": "BCD12F3A",
           "label": "ex:catalogue-wang-entire-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3098,7 +3098,7 @@
           "book": "gmt-foundations",
           "tag": "1907053D",
           "label": "sec:catalogue-prescribed-apex-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3116,7 +3116,7 @@
           "book": "gmt-foundations",
           "tag": "A3CDAF2B",
           "label": "ex:catalogue-prescribed-apex-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3134,7 +3134,7 @@
           "book": "gmt-foundations",
           "tag": "B0D651E7",
           "label": "sec:catalogue-scherkenoids",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3152,7 +3152,7 @@
           "book": "gmt-foundations",
           "tag": "6B56E4AF",
           "label": "ex:catalogue-scherkenoids",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3170,7 +3170,7 @@
           "book": "gmt-foundations",
           "tag": "AF906C13",
           "label": "sec:catalogue-pitchfork",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3188,7 +3188,7 @@
           "book": "gmt-foundations",
           "tag": "474E0E06",
           "label": "ex:catalogue-pitchfork",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3206,7 +3206,7 @@
           "book": "gmt-foundations",
           "tag": "A94B1E75",
           "label": "sec:catalogue-nguyen-tridents",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3224,7 +3224,7 @@
           "book": "gmt-foundations",
           "tag": "F7C75286",
           "label": "ex:catalogue-nguyen-tridents",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3242,7 +3242,7 @@
           "book": "gmt-foundations",
           "tag": "0A64E1E7",
           "label": "sec:catalogue-finite-genus-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3260,7 +3260,7 @@
           "book": "gmt-foundations",
           "tag": "DE343151",
           "label": "ex:catalogue-finite-genus-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3278,7 +3278,7 @@
           "book": "gmt-foundations",
           "tag": "BEE5F8F6",
           "label": "sec:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3296,7 +3296,7 @@
           "book": "gmt-foundations",
           "tag": "210DBE2B",
           "label": "ex:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3314,7 +3314,7 @@
           "book": "gmt-foundations",
           "tag": "8A842DE0",
           "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3332,7 +3332,7 @@
           "book": "gmt-foundations",
           "tag": "74BE3892",
           "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3350,7 +3350,7 @@
           "book": "gmt-foundations",
           "tag": "DDDA013A",
           "label": "sec:catalogue-expanding-corners",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3368,7 +3368,7 @@
           "book": "gmt-foundations",
           "tag": "D6F08E15",
           "label": "ex:catalogue-expanding-corners",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3386,7 +3386,7 @@
           "book": "gmt-foundations",
           "tag": "03B823D0",
           "label": "sec:catalogue-rotational-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3404,7 +3404,7 @@
           "book": "gmt-foundations",
           "tag": "10CF4F59",
           "label": "ex:catalogue-rotational-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3422,7 +3422,7 @@
           "book": "gmt-foundations",
           "tag": "E0945D42",
           "label": "sec:catalogue-two-sheet-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3440,7 +3440,7 @@
           "book": "gmt-foundations",
           "tag": "1E167729",
           "label": "ex:catalogue-two-sheet-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3458,7 +3458,7 @@
           "book": "gmt-foundations",
           "tag": "9E9198D4",
           "label": "sec:catalogue-one-sheet-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3476,7 +3476,7 @@
           "book": "gmt-foundations",
           "tag": "4A120F3D",
           "label": "ex:catalogue-one-sheet-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3494,7 +3494,7 @@
           "book": "gmt-foundations",
           "tag": "BD0F3D26",
           "label": "sec:catalogue-mean-convex-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3512,7 +3512,7 @@
           "book": "gmt-foundations",
           "tag": "DC248467",
           "label": "ex:catalogue-mean-convex-expanders",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3530,7 +3530,7 @@
           "book": "gmt-foundations",
           "tag": "05CAD4B7",
           "label": "sec:catalogue-expanding-networks",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3548,7 +3548,7 @@
           "book": "gmt-foundations",
           "tag": "6FB28705",
           "label": "ex:catalogue-expanding-networks",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3566,7 +3566,7 @@
           "book": "gmt-foundations",
           "tag": "BA55C10D",
           "label": "sec:catalogue-stationary-catenoid",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3584,7 +3584,7 @@
           "book": "gmt-foundations",
           "tag": "7C37C625",
           "label": "ex:catalogue-stationary-catenoid",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3602,7 +3602,7 @@
           "book": "gmt-foundations",
           "tag": "1E59C846",
           "label": "sec:catalogue-whitney-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3620,7 +3620,7 @@
           "book": "gmt-foundations",
           "tag": "64D1A038",
           "label": "ex:catalogue-whitney-sphere",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3638,7 +3638,7 @@
           "book": "gmt-foundations",
           "tag": "6548DC53",
           "label": "sec:catalogue-degenerate-neckpinches",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3656,7 +3656,7 @@
           "book": "gmt-foundations",
           "tag": "AF275232",
           "label": "ex:catalogue-degenerate-neckpinches",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3674,7 +3674,7 @@
           "book": "gmt-foundations",
           "tag": "22B7F4C2",
           "label": "sec:catalogue-angenent-oval",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3692,7 +3692,7 @@
           "book": "gmt-foundations",
           "tag": "F1C9E396",
           "label": "ex:catalogue-angenent-oval",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3710,7 +3710,7 @@
           "book": "gmt-foundations",
           "tag": "11C905C4",
           "label": "sec:catalogue-ancient-torus-curves",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3728,7 +3728,7 @@
           "book": "gmt-foundations",
           "tag": "A3E2C500",
           "label": "ex:catalogue-ancient-torus-curves",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3746,7 +3746,7 @@
           "book": "gmt-foundations",
           "tag": "9BF22915",
           "label": "sec:catalogue-eternal-helices",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3764,7 +3764,7 @@
           "book": "gmt-foundations",
           "tag": "114EAEF2",
           "label": "ex:catalogue-eternal-helices",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3782,7 +3782,7 @@
           "book": "gmt-foundations",
           "tag": "E88E6E76",
           "label": "sec:catalogue-double-plane-flow",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3800,7 +3800,7 @@
           "book": "gmt-foundations",
           "tag": "F7864FF4",
           "label": "ex:catalogue-double-plane-flow",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3818,7 +3818,7 @@
           "book": "gmt-foundations",
           "tag": "BA7E1CBA",
           "label": "sec:catalogue-double-sphere-flow",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
@@ -3836,7 +3836,7 @@
           "book": "gmt-foundations",
           "tag": "4D0BC7F8",
           "label": "ex:catalogue-double-sphere-flow",
-          "revision": "sha256:94eea5db27f2576d79ed853934ce7ab476038b5b6a72914a08cad6b43dd8cb0c"
+          "revision": "sha256:23ad0ddcdad1d09b8c38d16954499269e6fa82b9855a3085186c2317d3f9f10c"
         }
       ],
       "components": []
