@@ -113,22 +113,9 @@ def doubled_sphere_end():
 
 
 def spherical_doubling():
-    body = [text(183,108,"Two nearby sphere sheets",16,"middle"),
-            text(482,108,"Local bridge model",16,"middle")]
-    body += doubled_sphere_icon(183,224,101)
-    # Two sheet patches joined by the schematic sides of a catenoidal bridge.
-    body += [line(374,172,448,172,2.5), line(516,172,590,172,2.5),
-             line(374,264,448,264,2.5), line(516,264,590,264,2.5),
-             path('M 448 172 C 479 192, 479 244, 448 264', 3),
-             path('M 516 172 C 485 192, 485 244, 516 264', 3),
-             line(482,150,482,283,1,dash="4 5"),
-             text(482,314,"2m bridges; g = 2m − 1",17,"middle"),
-             text(183,347,"Bridge sites are symbolic",15,"middle"),
-             text(482,347,"m sufficiently large",16,"middle")]
-    write("sphere-doubling-shrinker", "Spherical-doubling shrinker in R³",
-          "m bridge sites on each of two latitude circles",
-          "Construction schematic; the displayed dots do not fix m.", body,
-          "A schematic of two nearby sphere sheets with symbolic bridge sites on two latitude circles, beside a local catenoidal bridge model. The Kapouleas–McGrath subfamily has two m bridges and genus two m minus one for sufficiently large m. This is a construction diagram, not an exact or numerically computed self-shrinker; the number of drawn dots does not specify a permitted construction parameter.")
+    # Preserve the reviewed connected mesh illustration when regenerating icons.
+    if not (OUT / "sphere-doubling-shrinker.svg").exists():
+        raise RuntimeError("Run scripts/generate_spherical_doubling_geometry.py first")
 
 
 def main():

@@ -539,10 +539,10 @@
         "CatKapouleasMcGrath2023"
       ],
       "model": "sphere-doubling-shrinker",
-      "status": "Spherical-doubling schematic",
-      "caption": "Two sphere sheets joined by symbolic bridge sites. The theorem requires sufficiently large m; displayed dots do not specify a proved small-genus example.",
-      "alt": "Two sphere sheets joined by symbolic bridge sites. The theorem requires sufficiently large m; displayed dots do not specify a proved small-genus example.",
-      "interactive": false
+      "status": "Interactive spherical-doubling construction schematic",
+      "caption": "Two nearby spherical sheets are joined through 2m radial necks on two aligned latitude circles. Rotate, zoom, or use Cutaway to see the inner sheet. The sites follow a numerically computed balanced linearized latitude guide; neck sizes and sheet separation are enlarged drawing choices. The m = 6, 10, 14 models illustrate genus 2m − 1 and are not asserted to lie in the theorem’s sufficiently-large-m range. This is not a solved self-shrinker or a certified approximation.",
+      "alt": "A connected closed surface with blue outer and gold inner spherical sheets joined through copper-colored radial necks on two aligned latitude circles. A cutaway exposes the inner sheet; the standalone drawing also shows a local neck section. Construction schematic, not a numerical self-shrinker.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-sun-wang-torus-translators",

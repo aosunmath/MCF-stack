@@ -1,0 +1,65 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/2001.04240v4",
+  "source_locations": "Theorem A; Definitions 7.10\u20137.11, 7.29; equation (10.3); Theorem 10.5",
+  "balanced_s": 0.6225416992962937,
+  "latitude_degrees": 33.56586529692509,
+  "flux_balance_residual": 1.7763568394002505e-15,
+  "refined_latitude_s_change": 8.04800670550776e-13,
+  "models": {
+    "6": {
+      "vertices": 21458,
+      "faces": 42956,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -20,
+      "genus": 11,
+      "minimum_triangle_area": 0.00010610547533960637,
+      "bridge_count": 12,
+      "patch_radius": 0.4,
+      "waist_radius": 0.08800000000000001,
+      "half_gap": 0.1931555294798608,
+      "minimum_site_angle": 0.8594600551012183
+    },
+    "10": {
+      "vertices": 28968,
+      "faces": 58008,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -36,
+      "genus": 19,
+      "minimum_triangle_area": 9.892960992053868e-05,
+      "bridge_count": 20,
+      "patch_radius": 0.3862329788131222,
+      "waist_radius": 0.08497125533888689,
+      "half_gap": 0.1865075888130812,
+      "minimum_site_angle": 0.5208446353888955
+    },
+    "14": {
+      "vertices": 37844,
+      "faces": 75792,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -52,
+      "genus": 27,
+      "minimum_triangle_area": 5.1306015281904065e-05,
+      "bridge_count": 28,
+      "patch_radius": 0.27812361369984595,
+      "waist_radius": 0.06118719501396611,
+      "half_gap": 0.13430278466261503,
+      "minimum_site_angle": 0.3729898480730785
+    }
+  }
+}
