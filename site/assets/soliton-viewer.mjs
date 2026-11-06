@@ -22,7 +22,7 @@ function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
   const stage=figure.querySelector('.soliton-stage');
-  const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:.43,zoom:1,fourD:.55});
+  const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:(data.view?.pitch??.43),zoom:1,fourD:.55});
   let state=resetState(), vertices=data.vertices, dragging=null, wire=false, scheduled=false;
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
@@ -78,7 +78,7 @@ function init(figure, data) {
     const action=button.dataset.viewAction;
     if(action==='in')zoom(1.2);
     if(action==='out')zoom(1/1.2);
-    if(action==='reset'){state=resetState();requestDraw();}
+    if(action==='reset'){state={...resetState(),fourD:state.fourD};requestDraw();}
     if(action==='wire'){wire=!wire;button.setAttribute('aria-pressed',String(wire));requestDraw();}
   });
   if(vertices[0].length===4){

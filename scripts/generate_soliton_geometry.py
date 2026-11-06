@@ -51,7 +51,7 @@ def svg(name, data):
     if data.get('flat'):
         q=p
     else:
-        yaw,pitch=.64,.43
+        yaw,pitch=.64,data.get('view',{}).get('pitch',.43)
         horizontal=p[:,0]*np.cos(yaw)-p[:,1]*np.sin(yaw)
         depth=p[:,0]*np.sin(yaw)+p[:,1]*np.cos(yaw)
         q=np.column_stack([horizontal,p[:,2]*np.cos(pitch)-depth*np.sin(pitch),p[:,2]*np.sin(pitch)+depth*np.cos(pitch)])
@@ -123,7 +123,7 @@ def main():
     v=sol.sol(np.linspace(0,end,100)).T
     half=v[:,:2]
     profile=np.concatenate([half,half[-2::-1]*np.array([-1,1])])
-    revolution('angenent-torus',profile,description='Numerical closed rotational shrinker profile; a shooting approximation of an Angenent torus, not a circular torus.',status='numerical-ode')
+    revolution('angenent-torus',profile,description='Numerical closed rotational shrinker profile; a shooting approximation of an Angenent torus, not a circular torus.',status='numerical-ode',view={'pitch':.79})
     AUDIT['angenent-torus']={'equation':"x'=cos(alpha); r'=sin(alpha); alpha'=(1/r-r/2)cos(alpha)+(x/2)sin(alpha)",'outer_radius':float(R),'inner_radius':float(v[-1,1]),'half_length':float(end),'return_angle_error':float(abs(v[-1,2]+np.pi)),'return_position_error':float(abs(v[-1,0])),'normalization':'Hvec=-Xperp/2','proof_status':'numerical illustration only'}
     # Positive support function for the (m,n)=(2,3) Abresch--Langer curve.
     def al_period(a):
