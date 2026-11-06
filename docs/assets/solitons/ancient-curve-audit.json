@@ -1,0 +1,24 @@
+{
+  "ancient-torus-curve": {
+    "formula_status": "exact parametrization; scalar time relation numerically inverted",
+    "source": "Stryker\u2013Sun arXiv:1908.02688v2, Sections 2.1\u20132.2, Appendices A.1\u2013A.2",
+    "max_scalar_residual": 1.2434497875801753e-14,
+    "times_checked": [
+      -6,
+      -1,
+      -0.05
+    ],
+    "fixed_view_radius": 3.4641016151377544
+  },
+  "eternal-helix": {
+    "formula_status": "exact parametrization; scalar time relation numerically inverted",
+    "source": "Stryker\u2013Sun arXiv:1908.02688v2, Sections 2.1\u20132.2, Appendices A.1\u2013A.2",
+    "max_scalar_residual": 1.7763568394002505e-15,
+    "times_checked": [
+      -4,
+      0,
+      4
+    ],
+    "fixed_view_radius": 8.290499143803471
+  }
+}

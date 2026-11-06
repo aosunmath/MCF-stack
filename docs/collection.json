@@ -23,7 +23,12 @@
         "the-clifford-shrinking-torus-in-four-space",
         "products-of-closed-shrinking-curves",
         "higher-codimension-spherical-shrinkers",
-        "moller-closed-shrinkers-of-large-even-genus"
+        "moller-closed-shrinkers-of-large-even-genus",
+        "kapouleas-kleene-moller-shrinkers-with-one-end",
+        "drugan-nguyen-variational-shrinking-tori",
+        "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+        "ketover-self-shrinking-doubled-planes",
+        "closed-shrinkers-from-spherical-doubling"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions.",
       "number": 2,
@@ -43,7 +48,9 @@
         "scherkenoid-translators",
         "the-pitchfork-translator",
         "nguyen-translating-tridents",
-        "finite-genus-translators-with-three-ends"
+        "finite-genus-translators-with-three-ends",
+        "translators-with-an-angenent-torus-end",
+        "translators-with-high-genus-spherical-doubling-ends"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references.",
       "number": 3,
@@ -71,7 +78,11 @@
         "the-catenoid-as-an-eternal-stationary-flow",
         "mean-curvature-evolution-of-the-whitney-sphere",
         "rotational-degenerate-neckpinch-solutions",
-        "the-angenent-oval-as-an-explicit-ancient-flow"
+        "the-angenent-oval-as-an-explicit-ancient-flow",
+        "ancient-torus-curves-in-higher-codimension",
+        "eternal-shrinking-helices",
+        "immortal-annuli-converging-to-a-double-plane",
+        "immortal-compact-flows-converging-to-a-double-sphere"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons.",
       "number": 5,
@@ -157,6 +168,41 @@
       "tag": "1AD8ABE5C210"
     },
     {
+      "slug": "kapouleas-kleene-moller-shrinkers-with-one-end",
+      "title": "Kapouleas–Kleene–Moller shrinkers with one end",
+      "description": "",
+      "number": "2.11",
+      "tag": "2285B0C987A6"
+    },
+    {
+      "slug": "drugan-nguyen-variational-shrinking-tori",
+      "title": "Drugan–Nguyen variational shrinking tori",
+      "description": "",
+      "number": "2.12",
+      "tag": "7E48D8C7D552"
+    },
+    {
+      "slug": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+      "title": "Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "description": "",
+      "number": "2.13",
+      "tag": "0E02104583BA"
+    },
+    {
+      "slug": "ketover-self-shrinking-doubled-planes",
+      "title": "Ketover self-shrinking doubled planes",
+      "description": "",
+      "number": "2.14",
+      "tag": "8423ACEAF2E2"
+    },
+    {
+      "slug": "closed-shrinkers-from-spherical-doubling",
+      "title": "Closed shrinkers from spherical doubling",
+      "description": "",
+      "number": "2.15",
+      "tag": "EB175520B015"
+    },
+    {
       "slug": "the-grim-reaper-and-its-cylinders",
       "title": "The grim reaper and its cylinders",
       "description": "",
@@ -234,6 +280,20 @@
       "tag": "8609A35E7601"
     },
     {
+      "slug": "translators-with-an-angenent-torus-end",
+      "title": "Translators with an Angenent-torus end",
+      "description": "",
+      "number": "3.12",
+      "tag": "C8173134CEA6"
+    },
+    {
+      "slug": "translators-with-high-genus-spherical-doubling-ends",
+      "title": "Translators with high-genus spherical-doubling ends",
+      "description": "",
+      "number": "3.13",
+      "tag": "A0A7AC0D200C"
+    },
+    {
       "slug": "expanding-smoothings-of-planar-corners",
       "title": "Expanding smoothings of planar corners",
       "description": "",
@@ -302,6 +362,34 @@
       "description": "",
       "number": "5.4",
       "tag": "34E98635F82B"
+    },
+    {
+      "slug": "ancient-torus-curves-in-higher-codimension",
+      "title": "Ancient torus curves in higher codimension",
+      "description": "",
+      "number": "5.5",
+      "tag": "B6082DA55C46"
+    },
+    {
+      "slug": "eternal-shrinking-helices",
+      "title": "Eternal shrinking helices",
+      "description": "",
+      "number": "5.6",
+      "tag": "281263153F94"
+    },
+    {
+      "slug": "immortal-annuli-converging-to-a-double-plane",
+      "title": "Immortal annuli converging to a double plane",
+      "description": "",
+      "number": "5.7",
+      "tag": "00966387D6EF"
+    },
+    {
+      "slug": "immortal-compact-flows-converging-to-a-double-sphere",
+      "title": "Immortal compact flows converging to a double sphere",
+      "description": "",
+      "number": "5.8",
+      "tag": "0806DD487DC4"
     }
   ],
   "entries": [
@@ -318,7 +406,7 @@
           "book": "gmt-foundations",
           "tag": "F8390A5C",
           "label": "sec:sources-conventions",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -336,7 +424,7 @@
           "book": "gmt-foundations",
           "tag": "B6BB2EC0",
           "label": "rem:source-editions",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -354,7 +442,7 @@
           "book": "gmt-foundations",
           "tag": "BA8E466F",
           "label": "rem:notation",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -372,7 +460,7 @@
           "book": "gmt-foundations",
           "tag": "6592A3B9",
           "label": "rem:project-scope",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -390,7 +478,7 @@
           "book": "gmt-foundations",
           "tag": "3DE9EB04",
           "label": "sec:catalogue-round-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -408,7 +496,7 @@
           "book": "gmt-foundations",
           "tag": "D203437F",
           "label": "ex:catalogue-round-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -426,7 +514,7 @@
           "book": "gmt-foundations",
           "tag": "51178EC2",
           "label": "sec:catalogue-round-cylinder",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -444,7 +532,7 @@
           "book": "gmt-foundations",
           "tag": "EEE3452C",
           "label": "ex:catalogue-round-cylinder",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -462,7 +550,7 @@
           "book": "gmt-foundations",
           "tag": "E9C051B4",
           "label": "sec:catalogue-plane-shrinker",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -480,7 +568,7 @@
           "book": "gmt-foundations",
           "tag": "17CD9463",
           "label": "ex:catalogue-plane-shrinker",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -498,7 +586,7 @@
           "book": "gmt-foundations",
           "tag": "3A437BBD",
           "label": "sec:catalogue-abresch-langer",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -516,7 +604,7 @@
           "book": "gmt-foundations",
           "tag": "C5E7E766",
           "label": "ex:catalogue-abresch-langer",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -534,7 +622,7 @@
           "book": "gmt-foundations",
           "tag": "E1B60631",
           "label": "sec:catalogue-angenent-torus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -552,7 +640,7 @@
           "book": "gmt-foundations",
           "tag": "8169E438",
           "label": "ex:catalogue-angenent-torus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -570,7 +658,7 @@
           "book": "gmt-foundations",
           "tag": "E6A84F3F",
           "label": "sec:catalogue-drugan-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -588,7 +676,7 @@
           "book": "gmt-foundations",
           "tag": "B9F1DC7E",
           "label": "ex:catalogue-drugan-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -606,7 +694,7 @@
           "book": "gmt-foundations",
           "tag": "DE851C71",
           "label": "sec:catalogue-clifford-torus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -624,7 +712,7 @@
           "book": "gmt-foundations",
           "tag": "88A4481E",
           "label": "ex:catalogue-clifford-torus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -642,7 +730,7 @@
           "book": "gmt-foundations",
           "tag": "E42E972F",
           "label": "sec:catalogue-curve-products",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -660,7 +748,7 @@
           "book": "gmt-foundations",
           "tag": "E690F2D5",
           "label": "ex:catalogue-curve-products",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -678,7 +766,7 @@
           "book": "gmt-foundations",
           "tag": "0D7837E2",
           "label": "sec:catalogue-spherical-minimal",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -696,7 +784,7 @@
           "book": "gmt-foundations",
           "tag": "852199B9",
           "label": "ex:catalogue-spherical-minimal",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -714,7 +802,7 @@
           "book": "gmt-foundations",
           "tag": "830EABD2",
           "label": "sec:catalogue-moller-genus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -732,7 +820,187 @@
           "book": "gmt-foundations",
           "tag": "CBE08D0B",
           "label": "ex:catalogue-moller-genus",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "2285B0C987A6",
+      "number": "2.11",
+      "section_intro": true,
+      "title": "2.11 Kapouleas–Kleene–Moller shrinkers with one end",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "D6BAA215",
+          "label": "sec:catalogue-kkm-one-end",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "A515DF7C7C60",
+      "number": "2.11.1",
+      "section_intro": false,
+      "title": "Example 2.11.1 (Kapouleas–Kleene–Moller shrinkers with one end)",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "57CB963E",
+          "label": "ex:catalogue-kkm-one-end",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "7E48D8C7D552",
+      "number": "2.12",
+      "section_intro": true,
+      "title": "2.12 Drugan–Nguyen variational shrinking tori",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "drugan-nguyen-variational-shrinking-tori",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "74D81451",
+          "label": "sec:catalogue-drugan-nguyen-torus",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "9F3C76F8391F",
+      "number": "2.12.1",
+      "section_intro": false,
+      "title": "Example 2.12.1 (Drugan–Nguyen variational shrinking tori)",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "drugan-nguyen-variational-shrinking-tori",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "8A25E9F3",
+          "label": "ex:catalogue-drugan-nguyen-torus",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0E02104583BA",
+      "number": "2.13",
+      "section_intro": true,
+      "title": "2.13 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "A24E006E",
+          "label": "sec:catalogue-bns-genus",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "40F2B3444C2E",
+      "number": "2.13.1",
+      "section_intro": false,
+      "title": "Example 2.13.1 (Buzano–Nguyen–Schulz shrinkers of every positive genus)",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "29FD1848",
+          "label": "ex:catalogue-bns-genus",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "8423ACEAF2E2",
+      "number": "2.14",
+      "section_intro": true,
+      "title": "2.14 Ketover self-shrinking doubled planes",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "ketover-self-shrinking-doubled-planes",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "8B87958C",
+          "label": "sec:catalogue-ketover-doubled-plane",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "9E9A8A1CC506",
+      "number": "2.14.1",
+      "section_intro": false,
+      "title": "Example 2.14.1 (Ketover self-shrinking doubled planes)",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "ketover-self-shrinking-doubled-planes",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "B42E22F6",
+          "label": "ex:catalogue-ketover-doubled-plane",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "EB175520B015",
+      "number": "2.15",
+      "section_intro": true,
+      "title": "2.15 Closed shrinkers from spherical doubling",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "closed-shrinkers-from-spherical-doubling",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "981E6034",
+          "label": "sec:catalogue-spherical-doubling-shrinkers",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "826D61792601",
+      "number": "2.15.1",
+      "section_intro": false,
+      "title": "Example 2.15.1 (Closed shrinkers from spherical doubling)",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "closed-shrinkers-from-spherical-doubling",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "5EF43C21",
+          "label": "ex:catalogue-spherical-doubling-shrinkers",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -750,7 +1018,7 @@
           "book": "gmt-foundations",
           "tag": "7E5C7833",
           "label": "sec:catalogue-grim-reaper",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -768,7 +1036,7 @@
           "book": "gmt-foundations",
           "tag": "B992AB57",
           "label": "ex:catalogue-grim-reaper",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -786,7 +1054,7 @@
           "book": "gmt-foundations",
           "tag": "613D030C",
           "label": "sec:catalogue-tilted-grim-reaper",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -804,7 +1072,7 @@
           "book": "gmt-foundations",
           "tag": "B95BEB4E",
           "label": "ex:catalogue-tilted-grim-reaper",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -822,7 +1090,7 @@
           "book": "gmt-foundations",
           "tag": "C86A12BD",
           "label": "sec:catalogue-bowl-translator",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -840,7 +1108,7 @@
           "book": "gmt-foundations",
           "tag": "54CBC7FC",
           "label": "ex:catalogue-bowl-translator",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -858,7 +1126,7 @@
           "book": "gmt-foundations",
           "tag": "1B76070C",
           "label": "sec:catalogue-translating-catenoid",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -876,7 +1144,7 @@
           "book": "gmt-foundations",
           "tag": "20DD1EEB",
           "label": "ex:catalogue-translating-catenoid",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -894,7 +1162,7 @@
           "book": "gmt-foundations",
           "tag": "1B861E2A",
           "label": "sec:catalogue-delta-wing",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -912,7 +1180,7 @@
           "book": "gmt-foundations",
           "tag": "40F79154",
           "label": "ex:catalogue-delta-wing",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -930,7 +1198,7 @@
           "book": "gmt-foundations",
           "tag": "2E5159FD",
           "label": "sec:catalogue-wang-entire-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -948,7 +1216,7 @@
           "book": "gmt-foundations",
           "tag": "BCD12F3A",
           "label": "ex:catalogue-wang-entire-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -966,7 +1234,7 @@
           "book": "gmt-foundations",
           "tag": "1907053D",
           "label": "sec:catalogue-prescribed-apex-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -984,7 +1252,7 @@
           "book": "gmt-foundations",
           "tag": "A3CDAF2B",
           "label": "ex:catalogue-prescribed-apex-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1002,7 +1270,7 @@
           "book": "gmt-foundations",
           "tag": "B0D651E7",
           "label": "sec:catalogue-scherkenoids",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1020,7 +1288,7 @@
           "book": "gmt-foundations",
           "tag": "6B56E4AF",
           "label": "ex:catalogue-scherkenoids",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1038,7 +1306,7 @@
           "book": "gmt-foundations",
           "tag": "AF906C13",
           "label": "sec:catalogue-pitchfork",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1056,7 +1324,7 @@
           "book": "gmt-foundations",
           "tag": "474E0E06",
           "label": "ex:catalogue-pitchfork",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1074,7 +1342,7 @@
           "book": "gmt-foundations",
           "tag": "A94B1E75",
           "label": "sec:catalogue-nguyen-tridents",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1092,7 +1360,7 @@
           "book": "gmt-foundations",
           "tag": "F7C75286",
           "label": "ex:catalogue-nguyen-tridents",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1110,7 +1378,7 @@
           "book": "gmt-foundations",
           "tag": "0A64E1E7",
           "label": "sec:catalogue-finite-genus-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1128,7 +1396,79 @@
           "book": "gmt-foundations",
           "tag": "DE343151",
           "label": "ex:catalogue-finite-genus-translators",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "C8173134CEA6",
+      "number": "3.12",
+      "section_intro": true,
+      "title": "3.12 Translators with an Angenent-torus end",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "translators-with-an-angenent-torus-end",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "BEE5F8F6",
+          "label": "sec:catalogue-sun-wang-torus-translators",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "BF18BDD64F8E",
+      "number": "3.12.1",
+      "section_intro": false,
+      "title": "Example 3.12.1 (Translators with an Angenent-torus end)",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "translators-with-an-angenent-torus-end",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "210DBE2B",
+          "label": "ex:catalogue-sun-wang-torus-translators",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "A0A7AC0D200C",
+      "number": "3.13",
+      "section_intro": true,
+      "title": "3.13 Translators with high-genus spherical-doubling ends",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "translators-with-high-genus-spherical-doubling-ends",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "8A842DE0",
+          "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "9B1B88A4317F",
+      "number": "3.13.1",
+      "section_intro": false,
+      "title": "Example 3.13.1 (Translators with high-genus spherical-doubling ends)",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "translators-with-high-genus-spherical-doubling-ends",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "74BE3892",
+          "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1146,7 +1486,7 @@
           "book": "gmt-foundations",
           "tag": "DDDA013A",
           "label": "sec:catalogue-expanding-corners",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1164,7 +1504,7 @@
           "book": "gmt-foundations",
           "tag": "D6F08E15",
           "label": "ex:catalogue-expanding-corners",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1182,7 +1522,7 @@
           "book": "gmt-foundations",
           "tag": "03B823D0",
           "label": "sec:catalogue-rotational-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1200,7 +1540,7 @@
           "book": "gmt-foundations",
           "tag": "10CF4F59",
           "label": "ex:catalogue-rotational-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1218,7 +1558,7 @@
           "book": "gmt-foundations",
           "tag": "E0945D42",
           "label": "sec:catalogue-two-sheet-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1236,7 +1576,7 @@
           "book": "gmt-foundations",
           "tag": "1E167729",
           "label": "ex:catalogue-two-sheet-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1254,7 +1594,7 @@
           "book": "gmt-foundations",
           "tag": "9E9198D4",
           "label": "sec:catalogue-one-sheet-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1272,7 +1612,7 @@
           "book": "gmt-foundations",
           "tag": "4A120F3D",
           "label": "ex:catalogue-one-sheet-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1290,7 +1630,7 @@
           "book": "gmt-foundations",
           "tag": "BD0F3D26",
           "label": "sec:catalogue-mean-convex-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1308,7 +1648,7 @@
           "book": "gmt-foundations",
           "tag": "DC248467",
           "label": "ex:catalogue-mean-convex-expanders",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1326,7 +1666,7 @@
           "book": "gmt-foundations",
           "tag": "05CAD4B7",
           "label": "sec:catalogue-expanding-networks",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1344,7 +1684,7 @@
           "book": "gmt-foundations",
           "tag": "6FB28705",
           "label": "ex:catalogue-expanding-networks",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1362,7 +1702,7 @@
           "book": "gmt-foundations",
           "tag": "BA55C10D",
           "label": "sec:catalogue-stationary-catenoid",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1380,7 +1720,7 @@
           "book": "gmt-foundations",
           "tag": "7C37C625",
           "label": "ex:catalogue-stationary-catenoid",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1398,7 +1738,7 @@
           "book": "gmt-foundations",
           "tag": "1E59C846",
           "label": "sec:catalogue-whitney-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1416,7 +1756,7 @@
           "book": "gmt-foundations",
           "tag": "64D1A038",
           "label": "ex:catalogue-whitney-sphere",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1434,7 +1774,7 @@
           "book": "gmt-foundations",
           "tag": "6548DC53",
           "label": "sec:catalogue-degenerate-neckpinches",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1452,7 +1792,7 @@
           "book": "gmt-foundations",
           "tag": "AF275232",
           "label": "ex:catalogue-degenerate-neckpinches",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1470,7 +1810,7 @@
           "book": "gmt-foundations",
           "tag": "22B7F4C2",
           "label": "sec:catalogue-angenent-oval",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []
@@ -1488,7 +1828,151 @@
           "book": "gmt-foundations",
           "tag": "F1C9E396",
           "label": "ex:catalogue-angenent-oval",
-          "revision": "sha256:e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806"
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "B6082DA55C46",
+      "number": "5.5",
+      "section_intro": true,
+      "title": "5.5 Ancient torus curves in higher codimension",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "ancient-torus-curves-in-higher-codimension",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "11C905C4",
+          "label": "sec:catalogue-ancient-torus-curves",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "D28FAF32B556",
+      "number": "5.5.1",
+      "section_intro": false,
+      "title": "Example 5.5.1 (Compact ancient torus curves)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "ancient-torus-curves-in-higher-codimension",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "A3E2C500",
+          "label": "ex:catalogue-ancient-torus-curves",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "281263153F94",
+      "number": "5.6",
+      "section_intro": true,
+      "title": "5.6 Eternal shrinking helices",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "eternal-shrinking-helices",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "9BF22915",
+          "label": "sec:catalogue-eternal-helices",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "1EF23C4EFFC0",
+      "number": "5.6.1",
+      "section_intro": false,
+      "title": "Example 5.6.1 (Helical curve-shortening flows)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "eternal-shrinking-helices",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "114EAEF2",
+          "label": "ex:catalogue-eternal-helices",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "00966387D6EF",
+      "number": "5.7",
+      "section_intro": true,
+      "title": "5.7 Immortal annuli converging to a double plane",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "immortal-annuli-converging-to-a-double-plane",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "E88E6E76",
+          "label": "sec:catalogue-double-plane-flow",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "A50018836027",
+      "number": "5.7.1",
+      "section_intro": false,
+      "title": "Example 5.7.1 (Chen–Sun's noncompact multiplicity-two limit)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "immortal-annuli-converging-to-a-double-plane",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "F7864FF4",
+          "label": "ex:catalogue-double-plane-flow",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0806DD487DC4",
+      "number": "5.8",
+      "section_intro": true,
+      "title": "5.8 Immortal compact flows converging to a double sphere",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "immortal-compact-flows-converging-to-a-double-sphere",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "BA7E1CBA",
+          "label": "sec:catalogue-double-sphere-flow",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "225751B3C7E8",
+      "number": "5.8.1",
+      "section_intro": false,
+      "title": "Example 5.8.1 (Chen–Sun's product-manifold construction)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "immortal-compact-flows-converging-to-a-double-sphere",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "4D0BC7F8",
+          "label": "ex:catalogue-double-sphere-flow",
+          "revision": "sha256:05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab"
         }
       ],
       "components": []

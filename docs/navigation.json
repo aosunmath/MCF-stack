@@ -175,6 +175,71 @@
     "tag": "A105C87CB202"
   },
   {
+    "route": "sections/kapouleas-kleene-moller-shrinkers-with-one-end",
+    "title": "2.11 Kapouleas–Kleene–Moller shrinkers with one end",
+    "chapter": "shrinkers",
+    "section": "kapouleas-kleene-moller-shrinkers-with-one-end"
+  },
+  {
+    "route": "tag/A515DF7C7C60",
+    "title": "Example 2.11.1 (Kapouleas–Kleene–Moller shrinkers with one end)",
+    "chapter": "shrinkers",
+    "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
+    "tag": "A515DF7C7C60"
+  },
+  {
+    "route": "sections/drugan-nguyen-variational-shrinking-tori",
+    "title": "2.12 Drugan–Nguyen variational shrinking tori",
+    "chapter": "shrinkers",
+    "section": "drugan-nguyen-variational-shrinking-tori"
+  },
+  {
+    "route": "tag/9F3C76F8391F",
+    "title": "Example 2.12.1 (Drugan–Nguyen variational shrinking tori)",
+    "chapter": "shrinkers",
+    "section": "drugan-nguyen-variational-shrinking-tori",
+    "tag": "9F3C76F8391F"
+  },
+  {
+    "route": "sections/buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+    "title": "2.13 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+    "chapter": "shrinkers",
+    "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus"
+  },
+  {
+    "route": "tag/40F2B3444C2E",
+    "title": "Example 2.13.1 (Buzano–Nguyen–Schulz shrinkers of every positive genus)",
+    "chapter": "shrinkers",
+    "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+    "tag": "40F2B3444C2E"
+  },
+  {
+    "route": "sections/ketover-self-shrinking-doubled-planes",
+    "title": "2.14 Ketover self-shrinking doubled planes",
+    "chapter": "shrinkers",
+    "section": "ketover-self-shrinking-doubled-planes"
+  },
+  {
+    "route": "tag/9E9A8A1CC506",
+    "title": "Example 2.14.1 (Ketover self-shrinking doubled planes)",
+    "chapter": "shrinkers",
+    "section": "ketover-self-shrinking-doubled-planes",
+    "tag": "9E9A8A1CC506"
+  },
+  {
+    "route": "sections/closed-shrinkers-from-spherical-doubling",
+    "title": "2.15 Closed shrinkers from spherical doubling",
+    "chapter": "shrinkers",
+    "section": "closed-shrinkers-from-spherical-doubling"
+  },
+  {
+    "route": "tag/826D61792601",
+    "title": "Example 2.15.1 (Closed shrinkers from spherical doubling)",
+    "chapter": "shrinkers",
+    "section": "closed-shrinkers-from-spherical-doubling",
+    "tag": "826D61792601"
+  },
+  {
     "route": "chapters/translators",
     "title": "3 Translators",
     "chapter": "translators"
@@ -323,6 +388,32 @@
     "tag": "85D3C19BE7E6"
   },
   {
+    "route": "sections/translators-with-an-angenent-torus-end",
+    "title": "3.12 Translators with an Angenent-torus end",
+    "chapter": "translators",
+    "section": "translators-with-an-angenent-torus-end"
+  },
+  {
+    "route": "tag/BF18BDD64F8E",
+    "title": "Example 3.12.1 (Translators with an Angenent-torus end)",
+    "chapter": "translators",
+    "section": "translators-with-an-angenent-torus-end",
+    "tag": "BF18BDD64F8E"
+  },
+  {
+    "route": "sections/translators-with-high-genus-spherical-doubling-ends",
+    "title": "3.13 Translators with high-genus spherical-doubling ends",
+    "chapter": "translators",
+    "section": "translators-with-high-genus-spherical-doubling-ends"
+  },
+  {
+    "route": "tag/9B1B88A4317F",
+    "title": "Example 3.13.1 (Translators with high-genus spherical-doubling ends)",
+    "chapter": "translators",
+    "section": "translators-with-high-genus-spherical-doubling-ends",
+    "tag": "9B1B88A4317F"
+  },
+  {
     "route": "chapters/expanders",
     "title": "4 Expanders",
     "chapter": "expanders"
@@ -461,6 +552,62 @@
     "chapter": "other-special-flows",
     "section": "the-angenent-oval-as-an-explicit-ancient-flow",
     "tag": "B008243C5D96"
+  },
+  {
+    "route": "sections/ancient-torus-curves-in-higher-codimension",
+    "title": "5.5 Ancient torus curves in higher codimension",
+    "chapter": "other-special-flows",
+    "section": "ancient-torus-curves-in-higher-codimension"
+  },
+  {
+    "route": "tag/D28FAF32B556",
+    "title": "Example 5.5.1 (Compact ancient torus curves)",
+    "chapter": "other-special-flows",
+    "section": "ancient-torus-curves-in-higher-codimension",
+    "tag": "D28FAF32B556"
+  },
+  {
+    "route": "sections/eternal-shrinking-helices",
+    "title": "5.6 Eternal shrinking helices",
+    "chapter": "other-special-flows",
+    "section": "eternal-shrinking-helices"
+  },
+  {
+    "route": "tag/1EF23C4EFFC0",
+    "title": "Example 5.6.1 (Helical curve-shortening flows)",
+    "chapter": "other-special-flows",
+    "section": "eternal-shrinking-helices",
+    "tag": "1EF23C4EFFC0"
+  },
+  {
+    "route": "sections/immortal-annuli-converging-to-a-double-plane",
+    "title": "5.7 Immortal annuli converging to a double plane",
+    "chapter": "other-special-flows",
+    "section": "immortal-annuli-converging-to-a-double-plane"
+  },
+  {
+    "route": "tag/A50018836027",
+    "title": "Example 5.7.1 (Chen–Sun's noncompact multiplicity-two limit)",
+    "chapter": "other-special-flows",
+    "section": "immortal-annuli-converging-to-a-double-plane",
+    "tag": "A50018836027"
+  },
+  {
+    "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
+    "title": "5.8 Immortal compact flows converging to a double sphere",
+    "chapter": "other-special-flows",
+    "section": "immortal-compact-flows-converging-to-a-double-sphere"
+  },
+  {
+    "route": "tag/225751B3C7E8",
+    "title": "Example 5.8.1 (Chen–Sun's product-manifold construction)",
+    "chapter": "other-special-flows",
+    "section": "immortal-compact-flows-converging-to-a-double-sphere",
+    "tag": "225751B3C7E8"
+  },
+  {
+    "route": "browse",
+    "title": "Browse by properties"
   },
   {
     "route": "entries",

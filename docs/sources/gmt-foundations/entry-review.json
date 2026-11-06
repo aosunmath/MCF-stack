@@ -33,275 +33,6 @@
       "formal_verification": "none"
     },
     {
-      "label": "ex:catalogue-round-sphere",
-      "title": "Round shrinking spheres",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CM12",
-        "CatDLN2018"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-round-cylinder",
-      "title": "Generalized shrinking cylinders",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CM12"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-plane-shrinker",
-      "title": "Planes through the shrinker center",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CM12",
-        "CatDLN2018"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-abresch-langer",
-      "title": "Abresch--Langer closed shrinking curves",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatAL1986",
-        "CatCMComplexity2020",
-        "CatDLN2018"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-angenent-torus",
-      "title": "Angenent's shrinking torus",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CM12",
-        "CatAngenent1992",
-        "CatDLN2018"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-drugan-sphere",
-      "title": "Drugan's immersed shrinking spheres",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatDLN2018",
-        "CatDrugan2015"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-clifford-torus",
-      "title": "The Clifford shrinking torus in four-space",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatELS2020"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-curve-products",
-      "title": "Products of closed shrinking curves",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatSmoczyk2005"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-spherical-minimal",
-      "title": "Higher-codimension spherical shrinkers",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatSmoczyk2005"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-moller-genus",
-      "title": "Moller closed shrinkers of large even genus",
-      "kind": "example",
-      "file": "catalogue-shrinkers.tex",
-      "status": "cited-example",
-      "citations": [
-        "CM12",
-        "CatDLN2018",
-        "CatMoller2014"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-grim-reaper",
-      "title": "The grim reaper and its cylinders",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWGraphical18",
-        "CatHIMWNotes19"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-tilted-grim-reaper",
-      "title": "Tilted grim-reaper cylinders",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWGraphical18"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-bowl-translator",
-      "title": "The rotational bowl translator",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CSS07",
-        "CatBrendleChoi19",
-        "CatHIMWNotes19"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-translating-catenoid",
-      "title": "Rotational translating catenoids",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CSS07",
-        "CatHIMWNotes19"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-delta-wing",
-      "title": "Strictly convex delta-wing translators",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWGraphical18"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-wang-entire-translators",
-      "title": "Nonrotational entire convex translators",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatXJWang11"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-prescribed-apex-translators",
-      "title": "Translators with prescribed apex curvatures",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWGraphical18"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-scherkenoids",
-      "title": "Scherkenoid translators",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWNotes19",
-        "CatHMW20"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-pitchfork",
-      "title": "The pitchfork translator",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWNotes19",
-        "CatHMW20"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-nguyen-tridents",
-      "title": "Nguyen translating tridents",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatHIMWNotes19",
-        "CatNguyen09"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
-      "label": "ex:catalogue-finite-genus-translators",
-      "title": "Finite-genus translators with three ends",
-      "kind": "example",
-      "file": "catalogue-translators.tex",
-      "status": "cited-example",
-      "citations": [
-        "CatDPN17",
-        "CatHIMWNotes19"
-      ],
-      "dependencies": [],
-      "formal_verification": "none"
-    },
-    {
       "label": "ex:catalogue-expanding-corners",
       "title": "Even graphical corner expanders",
       "kind": "example",
@@ -424,6 +155,419 @@
       ],
       "dependencies": [],
       "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ancient-torus-curves",
+      "title": "Compact ancient torus curves",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-eternal-helices",
+      "title": "Helical curve-shortening flows",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-double-plane-flow",
+      "title": "Chen--Sun's noncompact multiplicity-two limit",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatCS26R3"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-double-sphere-flow",
+      "title": "Chen--Sun's product-manifold construction",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatCS25Man"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-round-sphere",
+      "title": "Round shrinking spheres",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-round-cylinder",
+      "title": "Generalized shrinking cylinders",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CM12"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-plane-shrinker",
+      "title": "Planes through the shrinker center",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-abresch-langer",
+      "title": "Abresch--Langer closed shrinking curves",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAL1986",
+        "CatCMComplexity2020",
+        "CatDLN2018"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-angenent-torus",
+      "title": "Angenent's shrinking torus",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CM12",
+        "CatAngenent1992",
+        "CatBerchenkoKogan2021",
+        "CatDLN2018"
+      ],
+      "dependencies": [
+        "ex:catalogue-drugan-nguyen-torus"
+      ],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-drugan-sphere",
+      "title": "Drugan's immersed shrinking spheres",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatDLN2018",
+        "CatDrugan2015"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-clifford-torus",
+      "title": "The Clifford shrinking torus in four-space",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatELS2020"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-curve-products",
+      "title": "Products of closed shrinking curves",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSmoczyk2005"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-spherical-minimal",
+      "title": "Higher-codimension spherical shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSmoczyk2005",
+        "CatSunZhu2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-moller-genus",
+      "title": "Moller closed shrinkers of large even genus",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CM12",
+        "CatDLN2018",
+        "CatMoller2014"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-kkm-one-end",
+      "title": "Kapouleas--Kleene--Moller shrinkers with one end",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatKKM2018",
+        "CatSunWang2020"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-drugan-nguyen-torus",
+      "title": "Drugan--Nguyen variational shrinking tori",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatChuSun2025",
+        "CatDruganNguyen2018"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-bns-genus",
+      "title": "Buzano--Nguyen--Schulz shrinkers of every positive genus",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatBNS2025",
+        "CatChuSun2025"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-ketover-doubled-plane",
+      "title": "Ketover self-shrinking doubled planes",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatKetover2024"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-spherical-doubling-shrinkers",
+      "title": "Closed shrinkers from spherical doubling",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatKapouleasMcGrath2023"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-grim-reaper",
+      "title": "The grim reaper and its cylinders",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWGraphical18",
+        "CatHIMWNotes19"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-tilted-grim-reaper",
+      "title": "Tilted grim-reaper cylinders",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-bowl-translator",
+      "title": "The rotational bowl translator",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CSS07",
+        "CatBrendleChoi19",
+        "CatHIMWNotes19",
+        "CatSunWang2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-translating-catenoid",
+      "title": "Rotational translating catenoids",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CSS07",
+        "CatHIMWNotes19"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-delta-wing",
+      "title": "Strictly convex delta-wing translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-wang-entire-translators",
+      "title": "Nonrotational entire convex translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatXJWang11"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-prescribed-apex-translators",
+      "title": "Translators with prescribed apex curvatures",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-scherkenoids",
+      "title": "Scherkenoid translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-pitchfork",
+      "title": "The pitchfork translator",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-nguyen-tridents",
+      "title": "Nguyen translating tridents",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatNguyen09"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-finite-genus-translators",
+      "title": "Finite-genus translators with three ends",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatDPN17",
+        "CatHIMWNotes19"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-sun-wang-torus-translators",
+      "title": "Translators with an Angenent-torus end",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatAngenent1992",
+        "CatSunWang2025"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
+      "title": "Translators with high-genus spherical-doubling ends",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatKapouleasMcGrath2023",
+        "CatSunWang2025"
+      ],
+      "dependencies": []
     }
   ],
   "external_proof_dependencies": [

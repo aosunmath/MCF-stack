@@ -1,18 +1,18 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "e2f306eb45e0fb01a08bd4380bfdda429347be47b7d7afd92eabffa451a2e806",
+  "source_sha256": "05774422b9398c75c449519b0d3933ba986ef1c7b8a3a9747c4de804cc7cb5ab",
   "files": {
     "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
     "catalogue-expanders.tex": "b0c746edabcaa8ecd840c1af6659dd35f572f7f89bbcfa035af6374fbbe70e7a",
-    "catalogue-other-flows.tex": "5b78aaf3aa7ab213eb96d100c9a0a1f734428c335cb2a6253a45206b83780866",
-    "catalogue-shrinkers.tex": "d1e291fe53953b8f0341c5cc8b2497919be87e4705c20fb55fd5298c87816f09",
-    "catalogue-translators.tex": "3779def000c003d8f908172d0b30c1b1132ca5043b6debcb181954c378df055b",
-    "entry-review.json": "5e0309dc69267c1fa62eceeef575e43057396b7043a8f9fbe73f3453869d925b",
-    "orientation.tex": "569d02a0367368781b26e3b6c4dbba1a69ce512b8a53ced17b5341b124f7d3e3",
-    "references.bib": "9cee12caaedb194532c4295bfefcc51c82339eba524995ff8e1a3f60016777de",
-    "source-inventory.json": "5b7fbe3dfb4cf94404be15b192c34e249d59620c7fe5f04ecb9a8ddb57080e8f"
+    "catalogue-other-flows.tex": "d79eded311659729080a9957f9b497e72d0be98b6787c60ab34aa76e7126b6e2",
+    "catalogue-shrinkers.tex": "d2cdc6ddb0e1984d630e03d050974a27858c53987285d31465d7ad9bdb4e665f",
+    "catalogue-translators.tex": "637539beeea59ee0921d2c6af91943e5736e3e0aeb77753f99028e69e4bd666f",
+    "entry-review.json": "b913c7a8429eac1ea85d136131faaa562ce15141bead71b6c0749a80d5b87335",
+    "orientation.tex": "c39882cfff12124d06d1008887e7ecf8670a24da3e3bc781cd0e72b7537b7410",
+    "references.bib": "04b682597cd39b95237a6449c3573de275403aada1da35c32b8bb4ca36d98c5c",
+    "source-inventory.json": "dbb7fffb5de5b211b2705f331863d0892acd70ff40f2a2019809a1a06de73155"
   },
   "renderer": "Gerby",
-  "tags": 66
+  "tags": 88
 }
