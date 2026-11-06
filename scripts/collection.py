@@ -458,6 +458,11 @@ def build_collection(books, destination, configuration):
     from soliton_visualizations import registry as visualization_registry
     property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
     catalogue_properties.arrange_by_ambient(chapters, property_records)
+    catalogue_sections = {record['section']: record['tag'] for record in property_records}
+    for record in property_records:
+        entry = entries[record['tag']]
+        entry['section_example'] = True
+        entry['section_title'] = topics[entry['topic']]['title']
     assign_numbers(chapters, entries)
     reading_notes, reading_audit = apply_reading_edits(entries, topic_chapters, reading_registry) if reading_registry else ([], {})
     reading_notes.extend(historical_notes)
@@ -518,6 +523,7 @@ def build_collection(books, destination, configuration):
     note_candidates = {}
     roots = source_roots(entries, note_candidates)
     footnotes = number_notes(note_candidates)
+    section_fragments = {}
     for topic, section in reader.sections.items():
         content = f'<h1>{section["number"]} {escape(section["title"])}{tag_code(section["tag"])}</h1>'
         if section["entries"]:
@@ -530,6 +536,9 @@ def build_collection(books, destination, configuration):
                 rows.append(f'<li><a href="../{subdivision["slug"]}/">{child["number"]} {escape(child["title"])}</a>{tag_code(child["tag"])}</li>')
             content += '<nav aria-label="Sections in this subject"><ol class="section-list">' + "".join(rows) + '</ol></nav>'
         write("sections/" + topic, content, section["title"], "../../")
+        if topic in catalogue_sections:
+            page = BeautifulSoup((destination / 'sections' / topic / 'index.html').read_text(), 'html.parser')
+            section_fragments[topic] = {element['id']: element['id'] for element in page.select('[id]')}
         if section["tag"] not in entries:
             redirect(destination / "tag" / section["tag"] / "index.html", destination / "sections" / topic / "index.html", destination)
     redirect(destination / "topics" / "index.html", destination / "chapters" / "index.html", destination)
@@ -554,7 +563,7 @@ def build_collection(books, destination, configuration):
             redirect(destination / "tag" / configured["tag"] / "index.html", contents, destination)
     write("entries", '<h1>All entries</h1>' + ('<p>Search across every source, or follow the shared chapter order below.</p>' if entries else '<p>No entries have been added yet.</p>') + "".join(f'<h2><a href="../chapters/{key}/">{chapter["number"]}. {escape(chapter["title"])}</a></h2>' + entry_list([e for topic in chapter["topics"] for e in entries.values() if e["topic"] == topic], topics, "../") for key, chapter in chapters.items()), "All entries", "../")
     search = [{"tag": chapter["tag"], "title": f'{chapter["number"]} {chapter["title"]}', "search_title": chapter["title"], "kind": "chapter", "topic": chapter["title"], "text": "", "aliases": []} for chapter in chapters.values()]
-    search += [{"tag": section["tag"], "title": f'{section["number"]} {section["title"]}', "search_title": section["title"], "kind": "section", "topic": chapters[section["chapter"]]["title"], "text": "", "aliases": []} for section in reader.sections.values() if not any(e.get("section_intro") for e in section["entries"])]
+    search += [{"tag": section["tag"], "title": f'{section["number"]} {section["title"]}', "search_title": section["title"], "kind": "section", "topic": chapters[section["chapter"]]["title"], "text": "", "aliases": []} for topic, section in reader.sections.items() if topic not in catalogue_sections and not any(e.get("section_intro") for e in section["entries"])]
     public_entries, merges, section_search = [], [], {}
     for entry in entries.values():
         tag, root = entry["tag"], "../../"
@@ -575,14 +584,26 @@ def build_collection(books, destination, configuration):
             content += f'<section class="source-variant" data-gerby-book="{source}">{badge}{body}</section>' + visualization(variant['label'], root) + catalogue_properties.panel(variant['label'], root)
             texts.append(parsed_body.get_text(" ", strip=True))
             variants.append({"book": source, "tag": local, "label": variant["label"], "revision": revision_id(editions[source])})
-        if entry.get("section_intro"):
+        if entry.get('section_example'):
+            redirect(destination / 'tag' / tag / 'index.html', destination / 'sections' / entry['topic'] / 'index.html', destination, section_fragments[entry['topic']])
+        elif entry.get("section_intro"):
             fragments = {v["source"] + "-" + v["tag"]: v["source"] + "-" + v["tag"] for v in entry["components"]}
             redirect(destination / "tag" / tag / "index.html", destination / "sections" / entry["topic"] / "index.html", destination, fragments, anchor="#entry-" + tag)
         else:
             write("tag/" + tag, content, display_title(entry), root)
         component_aliases = [value for v in entry["components"] for value in (v["tag"], v["label"])]
         search_record = {"tag": tag, "title": display_title(entry), "search_title": entry["title"], "kind": entry["kind"], "topic": chapter["title"], "section": reader.sections[entry["topic"]]["number"] + " " + topics[entry["topic"]]["title"], "text": " ".join(texts), "aliases": [v["tag"] for v in variants] + [v["label"] for v in variants] + component_aliases + ([global_tag(v["source"], v["label"]) for v in entry["variants"]] if entry.get("historical") else [])}
-        if entry["section_intro"] and entry["topic"] in section_search:
+        if entry['topic'] in catalogue_sections and (entry['section_intro'] or entry.get('section_example')):
+            search_record['aliases'].extend([tag, reader.sections[entry['topic']]['tag']])
+            search_record.update(tag=catalogue_sections[entry['topic']], title=reader.pages['sections/' + entry['topic']]['title'], search_title=topics[entry['topic']]['title'], kind='example')
+            if entry['topic'] in section_search:
+                previous = section_search[entry['topic']]
+                previous['aliases'] = list(dict.fromkeys([*previous['aliases'], *search_record['aliases']]))
+                previous['text'] += ' ' + search_record['text']
+            else:
+                search.append(search_record)
+                section_search[entry['topic']] = search_record
+        elif entry["section_intro"] and entry["topic"] in section_search:
             previous = section_search[entry["topic"]]
             previous["aliases"] += [tag, *search_record["aliases"]]
             previous["text"] += " " + search_record["text"]
@@ -591,7 +612,7 @@ def build_collection(books, destination, configuration):
             if entry["section_intro"]:
                 search_record["kind"] = "section"
                 section_search[entry["topic"]] = search_record
-        public_entries.append({"tag": tag, "number": entry["number"], "section_intro": entry["section_intro"], "title": display_title(entry), "kind": entry["kind"], "chapter": chapter_key, "topic": entry["topic"], "sources": variants, "components": [{"book": v["source"], "tag": v["tag"], "label": v["label"]} for v in entry["components"]]})
+        public_entries.append({"tag": tag, "number": entry["number"], "section_intro": entry["section_intro"], "section_example": bool(entry.get('section_example')), "title": display_title(entry), "kind": entry["kind"], "chapter": chapter_key, "topic": entry["topic"], "sources": variants, "components": [{"book": v["source"], "tag": v["tag"], "label": v["label"]} for v in entry["components"]]})
         if len(variants) > 1 and not entry.get('historical'):
             merges.append({"tag": tag, "title": entry["title"], "note": entry["merge_note"], "sources": variants})
         for variant in entry["variants"] + entry["components"]:

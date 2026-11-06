@@ -43,6 +43,25 @@ class NumberingTests(unittest.TestCase):
         _, numbers = self.arrange()
         self.assertEqual(numbers["second", variant["tag"]]["number"], "3.2.1")
 
+    def test_section_example_uses_section_number_without_consuming_a_subordinate_number(self):
+        config, _ = self.arrange()
+        primary = self.entries['00000003']
+        primary.update(section_example=True, section_title='Inversion')
+        numbers = assign_numbers({c['slug']: c for c in config['chapters']}, self.entries)
+        self.assertEqual(primary['number'], '3.2')
+        self.assertEqual(display_title(primary), '3.2 Inversion')
+        self.assertEqual(self.entries['00000004']['number'], '3.2.1')
+        self.assertEqual(numbers['first', primary['variants'][0]['label']]['number'], '3.2')
+        self.assertEqual(primary['variants'][0]['number'], '4.1')
+        # A different descriptive caption survives without a second locator.
+        variant = {**primary['variants'][0], 'html': '<article id="00000003"><p><a class="environment-identifier" href="/tag/00000003">Theorem <span data-tag="00000003">4.1</span> <span class="named">(Kelvin transform)</span>.</a> Complete statement.</p></article>'}
+        rendered = prepare_fragment(variant, {('first', '00000003'): '00000003'}, {}, '../../', numbering=numbers)
+        soup = BeautifulSoup(rendered, 'html.parser')
+        self.assertIn('(Kelvin transform)', soup.get_text())
+        self.assertIn('Complete statement.', soup.get_text())
+        self.assertFalse(soup.select('.environment-identifier'))
+        self.assertIsNotNone(soup.find(id='first-00000003'))
+
     def test_descendant_of_a_merged_clause_follows_its_canonical_statement(self):
         parent = self.entries['00000003']
         parent['components'] = [{'source': 'second', 'label': 'condition', 'tag': '000000AA', 'number': 'i'}]

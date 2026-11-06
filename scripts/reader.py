@@ -48,7 +48,7 @@ class Reader:
                 self.sections[topic]["tag"] = intro["tag"] if intro else route_tag("sections/" + topic)
                 self.add("sections/" + topic, f'{chapter["number"]}.{number} {topics[topic]["title"]}', chapter=key, section=topic)
                 for entry in relevant:
-                    if not entry.get("section_intro"):
+                    if not entry.get("section_intro") and not entry.get("section_example"):
                         self.add("tag/" + entry["tag"], display_title(entry), chapter=key, section=topic, tag=entry["tag"])
         self.add("browse", "Browse by properties")
         self.add("entries", "All entries")
@@ -58,9 +58,9 @@ class Reader:
             self.add("sources/" + source, book["title"])
         self.add("search", "Search")
         self.add("comments", "Comments")
-        expected = {"tag/" + tag for tag, entry in entries.items() if not entry.get("section_intro")}
+        expected = {"tag/" + tag for tag, entry in entries.items() if not entry.get("section_intro") and not entry.get("section_example")}
         if {route for route in self.order if route.startswith("tag/")} != expected:
-            raise ValueError("Reading order must contain every canonical entry exactly once")
+            raise ValueError("Reading order must contain every independent entry exactly once")
         self.positions = {route: number for number, route in enumerate(self.order)}
 
     def add(self, route, title, **context):

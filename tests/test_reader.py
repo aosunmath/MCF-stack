@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from collection import build_collection, check_links, continuous_section, global_tag, source_roots
 from reader import Reader, bibtex
 from project import TITLE, CONTRIBUTORS
+from catalogue_properties import registry as property_registry
 
 
 class ReaderTests(unittest.TestCase):
@@ -161,6 +162,49 @@ class ReaderTests(unittest.TestCase):
                         self.assertEqual(len(links), 2)
                         target = (page.parent / links[0]["href"] / "index.html").resolve()
                         self.assertEqual(target, (root / routes[index + offset] / "index.html").resolve())
+
+    def test_catalogue_example_has_one_page_number_and_search_result_with_legacy_links(self):
+        examples = [self.records[0], self.records[2]]
+        labels = ['ex:catalogue-round-sphere', 'ex:catalogue-round-cylinder']
+        properties = []
+        for record, label, title, model in zip(examples, labels, ['Alpha', 'Beta'], ['sphere', 'cylinder']):
+            record.update(label=label, kind='example', caption=title, semantic_title=title)
+            record['html'] = f'<article class="env-example" id="{record["tag"]}"><p><a class="environment-identifier" href="/tag/{record["tag"]}">Example <span data-tag="{record["tag"]}">9.1</span> <span class="named">({title})</span>.</a> Complete {title} statement.</p></article>'
+            properties.append({**property_registry()[label], 'section': title.lower(), 'title': title, 'tag': global_tag('source', label), 'category': 'first', 'model': model, 'illustration_status': 'Exact formula'})
+        heading = {'tag': '00000010', 'label': 'sec:alpha', 'kind': 'chapter', 'section': True, 'topic': 'Alpha', 'caption': 'Alpha', 'number': '9', 'title': '9 Alpha', 'html': '<h2 id="00000010">9 Alpha</h2><p>Introduction.</p>' + examples[0]['html']}
+        examples[1]['html'] += '<p>See Example <a href="/tag/00000001" data-tag="00000001">9.1</a>.</p>'
+        self.records = [heading, *examples, self.records[-1]]
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            with patch('collection.catalogue_properties.prepare', return_value=properties):
+                order = self.build(root)
+            routes = [page['route'] for page in order]
+            self.assertEqual(routes[routes.index('sections/alpha') + 1], 'sections/beta')
+            self.assertEqual(routes[routes.index('sections/beta') + 1], 'chapters/second')
+            search = json.loads((root / 'search.json').read_text())
+            for example, prop in zip(examples, properties):
+                tag, topic = prop['tag'], prop['section']
+                number = '1.1' if topic == 'alpha' else '1.2'
+                self.assertNotIn('tag/' + tag, routes)
+                page = BeautifulSoup((root / 'sections' / topic / 'index.html').read_text(), 'html.parser')
+                self.assertTrue(page.h1.get_text().startswith(number + ' '))
+                self.assertFalse(page.select('.environment-identifier'))
+                self.assertIn('Complete ' + prop['title'] + ' statement.', page.get_text())
+                self.assertIsNotNone(page.find(id='source-' + example['tag']))
+                self.assertIsNotNone(page.select_one(f'[data-gerby-tag="{example["tag"]}"]'))
+                legacy = BeautifulSoup((root / 'tag' / tag / 'index.html').read_text(), 'html.parser')
+                self.assertEqual(legacy.html['data-redirect'], '../../sections/' + topic + '/')
+                fragments = json.loads(legacy.html['data-fragments'])
+                self.assertEqual(fragments['source-' + example['tag']], 'source-' + example['tag'])
+                self.assertIn('case-' + example['label'].replace(':', '-') + '-1', fragments)
+                matches = [r for r in search if r['tag'] == tag or tag in r['aliases']]
+                self.assertEqual(len(matches), 1)
+                self.assertEqual(matches[0]['title'], number + ' ' + prop['title'])
+            alpha_result = next(r for r in search if r['tag'] == properties[0]['tag'])
+            self.assertIn(global_tag('source', 'sec:alpha'), alpha_result['aliases'])
+            beta = BeautifulSoup((root / 'sections/beta/index.html').read_text(), 'html.parser')
+            self.assertEqual(beta.select_one('a[data-tag="00000001"]').get_text(), '1.1')
+            check_links(root)
 
     def test_a_section_named_comments_does_not_replace_the_comment_panel_anchor(self):
         self.records[-1]['topic'] = 'Comments'

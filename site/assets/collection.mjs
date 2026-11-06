@@ -66,7 +66,7 @@ function bindSearch(input, results, fullPage = false) {
           const title = document.createElement('strong');
           title.textContent = item.title;
           const context = document.createElement('small');
-          context.textContent = item.section ?? item.topic;
+          context.textContent = item.section && item.section !== item.title ? item.section : item.topic;
           anchor.append(title, context);
           results.insertBefore(anchor, more.parentElement ? more : null);
         }

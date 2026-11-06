@@ -1,6 +1,7 @@
 """Assign reading-edition locators after chapter placement and deduplication."""
 import re
 from hashlib import sha256
+from structure import title_key
 
 
 def numbered_title(variant, number):
@@ -22,15 +23,19 @@ def assign_numbers(chapters, entries):
             ordinal = 0
             for entry in relevant:
                 prefix = f'{chapter["number"]}.{section}'
-                if entry.get("section_intro"):
+                if entry.get("section_intro") or entry.get("section_example"):
                     number = prefix
                 else:
                     ordinal += 1
                     number = f'{prefix}.{ordinal}'
                 entry["number"] = number
                 entry["reader_title"] = numbered_title(entry["variants"][0], number)
+                if entry.get('section_example'):
+                    entry['reader_title'] = f'{number} {entry["section_title"]}'
                 for variant in entry["variants"]:
                     record = {"number": number, "title": numbered_title(variant, number), "section": variant.get("section", False), "intro": entry.get("section_intro", False), "tag": variant["tag"], "canonical_tag": entry["tag"], "math_row": variant.get("math_row", False)}
+                    if entry.get('section_example'):
+                        record.update(section_example=True, repeated_caption=title_key(variant['caption']) == title_key(entry['section_title']))
                     for identifier in (variant["tag"], variant["label"], *variant.get("aliases", [])):
                         references[variant["source"], identifier] = record
                 # Clause numbers describe the logical list within a statement.
@@ -67,3 +72,15 @@ def renumber_markup(soup, source, references):
                 if isinstance(preceding, str):
                     name = "section" if record.get("intro") else "subsection"
                     preceding.replace_with(re.sub(r"\b(?:chapter|section|subsection|subsubsection)(\s*)$", lambda m: (name.title() if m[0][0].isupper() else name) + m[1], preceding, flags=re.I))
+    # The catalogue section already supplies this example's title and locator.
+    # Keep a distinct descriptive caption, but never repeat a numbered heading.
+    for identifier in soup.select('.environment-identifier'):
+        marker = identifier.find(attrs={'data-tag': True})
+        record = references.get((source, marker['data-tag'])) if marker else None
+        if record and record.get('section_example'):
+            caption = identifier.find(class_='named')
+            if caption and not record['repeated_caption']:
+                caption.extract()
+                identifier.replace_with(caption)
+            else:
+                identifier.decompose()
