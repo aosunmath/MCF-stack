@@ -10,3 +10,5 @@
 @media(max-width:699px){.al-controls input[type=number]{min-height:44px}.al-controls{gap:10px}}
 @media print{.soliton-figure[data-soliton$="abresch-langer.json"] .soliton-status{display:none}}
 .soliton-controls .soliton-status{flex-basis:100%;padding:0;margin:0;font-size:12px;line-height:1.5}
+.kkm-legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:10px}.soliton-controls select{font:inherit;min-height:36px;padding:4px 8px;background:var(--background,#fff);color:inherit;border:1px solid #8b9ba3;border-radius:3px}
+@media(max-width:699px){.soliton-controls select{min-height:44px}}

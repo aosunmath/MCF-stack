@@ -1903,7 +1903,7 @@
     },
     {
       "label": "ex:catalogue-kkm-one-end",
-      "notes": "",
+      "notes": "Existence is proved for every sufficiently large genus, with no explicit threshold. The Scherk-based interactive picture is a construction schematic; its period counts and cone profiles are not computed KKM solutions or entropy data.",
       "citations": [
         "CatKKM2018",
         "CatSunWang2020"
@@ -1940,7 +1940,7 @@
       "category": "shrinkers",
       "tag": "A515DF7C7C60",
       "model": "kkm-shrinker",
-      "illustration_status": "Gluing schematic"
+      "illustration_status": "Scherk-based construction schematic"
     },
     {
       "label": "ex:catalogue-drugan-nguyen-torus",
