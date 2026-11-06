@@ -1,10 +1,10 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "d38a0382da5495ea63ea34100c952c04dcb64cba8696a7e840778feaaf747759",
+  "source_sha256": "032f4276a1b783b26ee29a9f2f0c5e93a94042ca10249943bb5750b380b28650",
   "files": {
     "allen-cahn.tex": "e83e29527057db852a886628ed3c458c538c48ad6245618ed5e5b68d2035e36c",
-    "book.tex": "225f46a13a94a71ab8656b06696c3c7845e61ec62b225deb8ea331f1f8b06889",
+    "book.tex": "070f0970a5717fcf04627a64baf387c66bdcea2aba9be4dd7bbc9cc00942560b",
     "brakke-flow.tex": "9e8ef5dc76e7a4814d1703566e54ece216f0302c47f2cc9339b61f4e278c0f68",
     "bv-coarea.tex": "79110d4ed8d0630caa45ca1a78530bf626bf4d828c65df35770a02bd25a57eff",
     "bv-compactness.tex": "ea6f18934d88e9af2916b71b7b6e7d8e06e1c16c8ce821c41e713e4aeb020faf",
@@ -13,6 +13,10 @@
     "bv-representation.tex": "2269409a070c8d085a64643ff9d891b83e518badb21a3bba226d7f520421cf2f",
     "calibrated-currents.tex": "516094c24b9a00ddbc1b59a253cb19ac416339e1918c60540baa02154013ae6e",
     "calibrated-curves.tex": "14cc65fccf2dd95a39c0a8209c7b6c9dcd8c4b698e8eac0c8688bd35c841dc54",
+    "catalogue-expanders.tex": "b0c746edabcaa8ecd840c1af6659dd35f572f7f89bbcfa035af6374fbbe70e7a",
+    "catalogue-other-flows.tex": "02a82a5cb4acbd247e7016b9e6b17ba349a6a47e5b8563bb72eedb7338c82a62",
+    "catalogue-shrinkers.tex": "758c42bb216c9ace164a550787744d4a4a20c79b7d571fb74717a06bf3376eef",
+    "catalogue-translators.tex": "264db8c25157a6be5b420d6c1cef004659a3340c4c74b9e6f47f9f0ddaf6ce35",
     "catenoid-neck.tex": "04202caa198906ca4dd316dddd298952b0339e71ef3a56db06748931b4dd3597",
     "cmc-jacobi.tex": "39a2890f0688d1a98f91987d73cf6fdfabd866a1d9257ce503eb8401745a2ece",
     "cmc-minkowski.tex": "a40921d060382f4915092544d408e4e9ab1529979ffa0d53279dca74daeeef38",
@@ -37,7 +41,7 @@
     "elliptic-tools.tex": "677f7d1d2531604a17c70adeee1074f3577b855c271613e8651c0366bc52f485",
     "entropy-convergence.tex": "c463af2938b9c31c7246234ca5aa0e51bc846f57726e39216e978820ba63a0a2",
     "entropy-perturbations.tex": "791086299f156ae2ce541b46e14d4de0096198b5172dea57491dee4079ba61c3",
-    "entry-review.json": "7ffd25f816960c830f04e5bdef72b14389e70e0a07ec3dc3b8ff40c2b2b81c23",
+    "entry-review.json": "10297bd5921b341ccf2269cabd098cda087392bbd0aa461dd3a19eedced6afc2",
     "euclidean-area-metric-proof.tex": "d3bf5fe824ece5f467cdce154860b5d89b5ac70ec16db3c671e6bae0ca957c5a",
     "euclidean-coarea-from-area.tex": "dc39ea1e95ffb95138f55be572f7e7d7a06cc0bf54a9d57d5b71897f5e9f41bf",
     "examples-ancient-curves.tex": "1b418c0bd50410f1500b0104db5c97a185f36d6ed3cde2e643a5e0e8dca313c2",
@@ -143,7 +147,7 @@
     "rectifiable-projection-structure.tex": "b61b4a01bbe094a2920a78487a35d2f2e9d11576ed960d4f41f2739bbc2eadd7",
     "rectifiable-tangent-transfer.tex": "6ed17c2b92f6ee849765e958b24110217f85ca183edee8e021041bd8bb225ab4",
     "rectifiable-varifold-tangents.tex": "6b58881d5b3495852db78381f52c602587b0af734e7ff340f7668554bab3d68b",
-    "references.bib": "ae0da38fca88d483445400c6d267acaab2d0235e6ac99e019673a0f3b0d6fb29",
+    "references.bib": "ebf3cd9cb83cf40e33cffe0486792278ffaaa8ee05af6849bdeb57d2bad4a256",
     "shrinker-calculus.tex": "ea680cd1ce73bd7629a96a817d0e800010732bc55cde1500a45aa9d2afe243c0",
     "shrinker-entropy.tex": "e01cefce78b02eb699d85995dd7cc3652392205b6be7b4d0f09b6f35f47b2546",
     "shrinker-gap.tex": "af78c9653428e909d4a0e0cacf14bdd66ecada41d1e7752e6da56df23e7d0cdb",
@@ -151,7 +155,7 @@
     "shrinker-variation.tex": "3c7316ad322600f5f3fd872c30c98cca2faa1d199adc78e9f474586d429fe2a6",
     "slice-flat-continuity.tex": "c57e91b347590276e01a3f82f77508e0815f9ab293b8584b9d413073d8069442",
     "sobolev-foundations.tex": "25c07e13bab1ea2d558f49e8b9f4999f795898778c8e251431214056012e9a6e",
-    "source-inventory.json": "fe2a3f055756feb262b541dfd8415e71d520d179bc04b8ce8e87e7cc36255385",
+    "source-inventory.json": "a064994709e0a160b18e8bc24f881a11eb9249c7a7f70d437481c3c510da826e",
     "spherical-harmonics.tex": "51fb94a2ed8a9038f0755d425e72ead200545938e8e79c2d1fcc1e06fccbd351",
     "stability-applications.tex": "9a08c2f0c3f6a4114106cfe34c2bfa7b28021922604e586ed71efa46917ae443",
     "stable-cones.tex": "9ecf00a60d578fcc88ddab9423c7be02b4c4d93519ac7cc1bd44603c01bd92d5",
@@ -181,5 +185,5 @@
     "willmore-weak-energy.tex": "5a43d5726a8e4fbaef1c12bb0583b0f1ce371493fdea5c9f4179c638f046618b"
   },
   "renderer": "Gerby",
-  "tags": 1463
+  "tags": 1525
 }

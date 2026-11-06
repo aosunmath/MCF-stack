@@ -1,0 +1,64 @@
+{
+  "bowl": {
+    "equation": "f prime=p; p prime=(1+p^2)(1-p/r)",
+    "tip_expansion": "f=r^2/4+r^4/128+O(r^6)",
+    "radius": 5,
+    "rtol": 2e-11
+  },
+  "translating-catenoid": {
+    "equation": "r'=cos(alpha); z'=sin(alpha); alpha'=cos(alpha)-sin(alpha)/r",
+    "initial": [
+      1,
+      0,
+      1.5707963267948966
+    ],
+    "arc_length_window": [
+      -9,
+      9
+    ]
+  },
+  "angenent-torus": {
+    "equation": "x'=cos(alpha); r'=sin(alpha); alpha'=(1/r-r/2)cos(alpha)+(x/2)sin(alpha)",
+    "outer_radius": 3.3147082665545797,
+    "inner_radius": 0.43712396709641527,
+    "half_length": 3.7542119985262388,
+    "return_angle_error": 5.773159728050814e-15,
+    "return_position_error": 1.5265566588595902e-16,
+    "normalization": "Hvec=-Xperp/2",
+    "proof_status": "numerical illustration only"
+  },
+  "abresch-langer": {
+    "equation": "h''+h=2/h; X=h(cos theta,sin theta)+h'(-sin theta,cos theta)",
+    "turning_number": 2,
+    "oscillations": 3,
+    "support_maximum": 2.7345192018514184,
+    "period_error": 8.881784197001252e-16,
+    "closure_error": 2.272280567502258e-15
+  },
+  "expanding-graph": {
+    "equation": "f'=p; p'=(1+p^2)((f-rp)/2-p/r)",
+    "tip_height": 1,
+    "tip_expansion": "f=1+r^2/8+O(r^4)",
+    "radius": 6
+  },
+  "one-sheet-expander": {
+    "equation": "u''=(1+u'^2)(1/u+(u-xu')/2)",
+    "neck_radius": 0.8,
+    "axial_window": [
+      -5,
+      5
+    ],
+    "critical_angle_claim": null
+  },
+  "expanding-corner": {
+    "equation": "f''=(1+f'^2)(f-xf')/2",
+    "initial": [
+      1,
+      0
+    ],
+    "window": [
+      -6,
+      6
+    ]
+  }
+}

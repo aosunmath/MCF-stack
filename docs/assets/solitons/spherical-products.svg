@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Exact products of round sphere factors as higher-codimension shrinkers</title>
+<desc id="description">For positive integers p and q, the factors of radii square root of 2p and square root of 2q give a shrinker of dimension p+q in Euclidean dimension p+q+2. The displayed example is the circle of radius square root of two and an orthographic picture of the two-sphere of radius two; their product belongs to five-space.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="23" font-weight="600" text-anchor="start" fill="#183f52">Higher-codimension spherical products</text>
+<text x="28" y="65" font-size="18">S<tspan dy="-5" font-size="15">p</tspan><tspan dy="5">(√(2p)) × S</tspan><tspan dy="-5" font-size="15">q</tspan><tspan dy="5">(√(2q)) ⊂ ℝ</tspan><tspan dy="-5" font-size="15">p+q+2</tspan><tspan dy="5">,    p, q ≥ 1</tspan></text>
+<ellipse cx="174" cy="173" rx="48.083261120685236" ry="48.083261120685236" stroke="#21667f" stroke-width="2.5" fill="none" />
+<ellipse cx="464" cy="173" rx="68" ry="68" stroke="#21667f" stroke-width="2" fill="#e5eff3" />
+<ellipse cx="464" cy="173" rx="68" ry="19.040000000000003" stroke="#21667f" stroke-width="1.3" fill="none" stroke-dasharray="4 4"/>
+<ellipse cx="464" cy="173" rx="20.4" ry="68" stroke="#21667f" stroke-width="1.3" fill="none" />
+<text x="320" y="184" font-size="38" font-weight="400" text-anchor="middle" fill="#183f52">×</text>
+<text x="174" y="267" font-size="17" font-weight="400" text-anchor="middle" fill="#183f52">p = 1: circle factor</text>
+<text x="174" y="290" font-size="15" font-weight="400" text-anchor="middle" fill="#6a8793">Exact radius √2</text>
+<text x="464" y="267" font-size="17" font-weight="400" text-anchor="middle" fill="#183f52">q = 2: sphere factor</text>
+<text x="464" y="290" font-size="15" font-weight="400" text-anchor="middle" fill="#6a8793">Radius 2 • orthographic view</text>
+<rect x="28" y="313" width="584" height="70" rx="10" fill="#e5eff3"/>
+<text x="320" y="340" font-size="20" font-weight="600" text-anchor="middle" fill="#183f52">Representative: S¹(√2) × S²(2) ⊂ ℝ⁵</text>
+<text x="320" y="367" font-size="15" font-weight="400" text-anchor="middle" fill="#183f52">An exact factor diagram; the 3-manifold is not drawn in ℝ³.</text>
+</g></svg>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="title">Expanding planar tree: schematic and junction condition</title>
+  <desc id="description">An illustrative four-ended tree has two triple junctions. The branches are not solutions of the expander equation. An inset shows the exact local 120-degree junction angle condition, rather than a nonstationary network.</desc>
+  <rect width="640" height="410" fill="#f7fafb" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" stroke="#21667f" stroke-width="0" fill="#21667f" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <text x="24" y="33" fill="#183f52" font-size="23" font-weight="650" text-anchor="start">Expanding planar tree networks</text>
+  <text x="24" y="59" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">Schematic topology · the curved branches have not been solved</text>
+  <rect x="20" y="79" width="380" height="251" rx="12" fill="#ffffff" stroke="#d3e2e8" stroke-width="1" />
+  <rect x="415" y="79" width="205" height="251" rx="12" fill="#ffffff" stroke="#d3e2e8" stroke-width="1" />
+  <text x="36" y="108" fill="#183f52" font-size="18" font-weight="600" text-anchor="start">Four asymptotic ends</text>
+  <path d="M160,207 C140,172 120,147 70,133" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M160,207 C140,242 120,268 70,282" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M280,207 C300,172 320,147 370,133" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M280,207 C300,242 320,268 370,282" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M160,207 L280,207" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="160" cy="207" r="4" fill="#183f52" />
+  <circle cx="280" cy="207" r="4" fill="#183f52" />
+  <path d="M70,133 L44,126" stroke="#526b77" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5" />
+  <path d="M70,282 L44,289" stroke="#526b77" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5" />
+  <path d="M370,133 L386,129" stroke="#526b77" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5" />
+  <path d="M370,282 L386,286" stroke="#526b77" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5" />
+  <text x="36" y="313" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">Tree structure, not numerical geometry</text>
+  <text x="429" y="108" fill="#183f52" font-size="17" font-weight="600" text-anchor="start">Junction condition</text>
+  <path d="M516,201 L516.0,141.0" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M516,201 L567.9615242270663,231.0" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M516,201 L464.0384757729337,231.0" stroke="#21667f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M516.0,177.0 A24,24 0 0 1 536.7846096908265,213.0" stroke="#21667f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="516" cy="201" r="4" fill="#183f52" />
+  <text x="546" y="181" fill="#183f52" font-size="16" font-weight="400" text-anchor="start">120°</text>
+  <text x="432" y="283" fill="#183f52" font-size="15" font-weight="400" text-anchor="start">Three tangent rays</text>
+  <text x="432" y="307" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">with equal angles</text>
+  <text x="24" y="361" fill="#183f52" font-size="16" font-weight="400" text-anchor="start">The curvature equation holds along each open branch.</text>
+  <text x="24" y="389" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">A junction is not a smooth curve point.</text>
+</svg>

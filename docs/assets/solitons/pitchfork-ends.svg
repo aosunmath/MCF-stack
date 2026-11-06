@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title desc">
+<title id="title">Pitchfork: limiting planes</title>
+<desc id="desc">One asymptotic plane as height tends to minus infinity and three parallel planes as height tends to plus infinity. These height-direction limits do not assert four topological ends. Each slanted segment represents a horizontal section of a vertical plane, not a piece of the translator itself.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#21667f"/></marker>
+ <marker id="arrow-start" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 10 0 L 0 5 L 10 10 z" fill="#21667f"/></marker>
+</defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<text x="26" y="34" font-size="21" text-anchor="start" font-weight="bold" fill="#183f52">Pitchfork: limiting planes</text>
+<text x="26" y="62" font-size="16" text-anchor="start" font-weight="normal" fill="#183f52">Height-direction asymptotics for upward translation</text>
+<line x1="77" y1="329" x2="77" y2="100" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/><text x="36" y="213" font-size="19" text-anchor="start" font-weight="normal" fill="#183f52">z</text><text x="111" y="119" font-size="17" text-anchor="start" font-weight="normal" fill="#183f52">z → +∞</text><text x="111" y="307" font-size="17" text-anchor="start" font-weight="normal" fill="#183f52">z → −∞</text><rect x="241" y="108" width="335" height="92" rx="8" fill="#e7f1f4"/><rect x="241" y="250" width="335" height="92" rx="8" fill="#e7f1f4"/><line x1="387" y1="318" x2="430" y2="275" stroke="#21667f" stroke-width="4"/><text x="408" y="239" font-size="17" text-anchor="middle" font-weight="normal" fill="#183f52">One plane</text><line x1="330" y1="177" x2="373" y2="134" stroke="#21667f" stroke-width="4"/><line x1="394" y1="177" x2="437" y2="134" stroke="#21667f" stroke-width="4"/><line x1="458" y1="177" x2="501" y2="134" stroke="#21667f" stroke-width="4"/><text x="408" y="96" font-size="17" text-anchor="middle" font-weight="normal" fill="#183f52">Three parallel planes</text>
+<line x1="26" y1="362" x2="614" y2="362" stroke="#c5d8df" stroke-width="1"/>
+<text x="26" y="388" font-size="15" text-anchor="start" font-weight="normal" fill="#183f52">Horizontal sections of end planes; this is not the surface.</text>
+</g>
+</svg>

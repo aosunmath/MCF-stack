@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title desc">
+<title id="title">Prescribed apex curvatures</title>
+<desc id="desc">Axes and elliptical level curves illustrate a two-coordinate slice of prescribed apex Hessian data. The nonnegative eigenvalues sum to one. This is a local quadratic model, not a graph of the constructed translator or a global convexity assertion.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#21667f"/></marker>
+ <marker id="arrow-start" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 10 0 L 0 5 L 10 10 z" fill="#21667f"/></marker>
+</defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<text x="26" y="34" font-size="21" text-anchor="start" font-weight="bold" fill="#183f52">Prescribed apex curvatures</text>
+<text x="26" y="62" font-size="16" text-anchor="start" font-weight="normal" fill="#183f52">Local Hessian data: D²u(0) = diag(k₁, …, k_n)</text>
+<ellipse cx="304" cy="226" rx="143" ry="53" fill="#e7f1f4" stroke="#21667f" stroke-width="2"/><ellipse cx="304" cy="226" rx="103" ry="38" fill="none" stroke="#21667f" stroke-width="2"/><ellipse cx="304" cy="226" rx="61" ry="23" fill="none" stroke="#21667f" stroke-width="2"/><line x1="131" y1="226" x2="479" y2="226" stroke="#21667f" stroke-width="1.5" marker-end="url(#arrow)"/><line x1="204" y1="294" x2="404" y2="158" stroke="#21667f" stroke-width="1.5" marker-end="url(#arrow)"/><line x1="304" y1="306" x2="304" y2="105" stroke="#21667f" stroke-width="1.5" marker-end="url(#arrow)"/><circle cx="304" cy="226" r="4" fill="#21667f"/><text x="490" y="231" font-size="18" text-anchor="start" font-weight="normal" fill="#183f52">x₁</text><text x="414" y="157" font-size="18" text-anchor="start" font-weight="normal" fill="#183f52">x₂</text><text x="315" y="109" font-size="18" text-anchor="start" font-weight="normal" fill="#183f52">z</text><text x="313" y="249" font-size="16" text-anchor="start" font-weight="normal" fill="#183f52">0</text><text x="64" y="135" font-size="17" text-anchor="start" font-weight="bold" fill="#183f52">Apex data</text><text x="64" y="160" font-size="17" text-anchor="start" font-weight="normal" fill="#183f52">kᵢ ≥ 0</text><text x="64" y="185" font-size="17" text-anchor="start" font-weight="normal" fill="#183f52">Σ kᵢ = 1</text><text x="320" y="333" font-size="18" text-anchor="middle" font-weight="normal" fill="#183f52">Quadratic model: q(x) = ½ Σ kᵢ xᵢ²</text>
+<line x1="26" y1="362" x2="614" y2="362" stroke="#c5d8df" stroke-width="1"/>
+<text x="26" y="388" font-size="15" text-anchor="start" font-weight="normal" fill="#183f52">Local quadratic level curves; the global surface is not drawn.</text>
+</g>
+</svg>
