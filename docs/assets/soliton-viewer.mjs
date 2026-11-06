@@ -234,6 +234,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='ketover-schematic'){
         const {initKetoverFigure}=await import('./ketover-viewer.mjs');
         initKetoverFigure(figure,data);
+      } else if(data.kind==='spherical-doubling-schematic'){
+        const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
+        initSphericalDoublingFigure(figure,data);
       } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };
