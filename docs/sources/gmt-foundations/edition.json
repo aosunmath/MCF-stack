@@ -1,7 +1,7 @@
 {
-  "source": "https://github.com/aosunmath/GMT-stack",
+  "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "d3a83a1bb27cb2eb692bd229fce6e9bdac9cda437d1bdb52e2e51d6d3b49dd9f",
+  "source_sha256": "d38a0382da5495ea63ea34100c952c04dcb64cba8696a7e840778feaaf747759",
   "files": {
     "allen-cahn.tex": "e83e29527057db852a886628ed3c458c538c48ad6245618ed5e5b68d2035e36c",
     "book.tex": "225f46a13a94a71ab8656b06696c3c7845e61ec62b225deb8ea331f1f8b06889",
@@ -113,7 +113,7 @@
     "obstacle-monotonicity.tex": "f044e300ba04029ebda7bae7ce833739f378bd021349dd714fd83c8a0c573bd9",
     "obstacle-problems.tex": "e5f8b649acadf500e5f2bf2bef9802bb9ce5d02486f9c4ead25717e3955bb6c4",
     "obstacle-variational.tex": "c0f072d03898bdcd171896dd805d740398b7da171a24b9881cf3243f3c7f1789",
-    "orientation.tex": "874c016224a4ad05295b2e02830a95f6f26b615ab6c7e43f930c0b2ad340511d",
+    "orientation.tex": "ebc2f0b1a347c54c03c0babf2dd50b7fa527f09c43fbd4dfcd8de8066949aaec",
     "perimeter-graph-cover.tex": "ae8e4c8b8c150237a336d171c1f303f20e5b392e64d465c9345e2f6bda29c48f",
     "perimeter-halfspace.tex": "9e215f04fab6c4c8f6e41066da1b08270022db185d7c566dc586a91ae8c6de59",
     "perimeter-measure-identification.tex": "24dc1d56bc358384c6257c2c17df252ba8851063787c18e4f443971f9487cdcf",
