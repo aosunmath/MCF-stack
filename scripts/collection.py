@@ -453,6 +453,9 @@ def build_collection(books, destination, configuration):
     if configuration.get('historical_exposition'):
         configuration, historical_notes = curate_history(entries, topics, source_tags, configuration, Path(__file__).resolve().parents[1] / configuration['historical_exposition'])
     chapters, topic_chapters = chapter_structure(topics, configuration)
+    from soliton_visualizations import registry as visualization_registry
+    property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
+    catalogue_properties.arrange_by_ambient(chapters, property_records)
     assign_numbers(chapters, entries)
     reading_notes, reading_audit = apply_reading_edits(entries, topic_chapters, reading_registry) if reading_registry else ([], {})
     reading_notes.extend(historical_notes)
@@ -466,8 +469,6 @@ def build_collection(books, destination, configuration):
             references.setdefault(identifier, {**record, "sources": []})["sources"].append({"source": source, "key": record["key"]})
             reference_map[(source, record["key"])] = identifier
 
-    from soliton_visualizations import registry as visualization_registry
-    property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
     (destination / "catalogue-properties.json").write_text(json.dumps({"version": 1, "examples": property_records}, ensure_ascii=False, indent=2) + "\n")
     reference_uses = {}
 
@@ -502,7 +503,12 @@ def build_collection(books, destination, configuration):
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():
         content = f'<p class="eyebrow">Chapter {chapter["number"]}</p><h1>{escape(chapter["title"])}{tag_code(chapter["tag"])}</h1><p>{escape(chapter.get("description", ""))}</p>'
-        content += '<h2>Sections and subsections</h2>' + reader.section_list(key, "../../", anchors=True, subsections=True)
+        if chapter.get('ambient_groups'):
+            content += '<h2>Examples by ambient dimension</h2><p class="ambient-conventions">Each family is placed once, at its lowest recorded ambient dimension. Links in later groups lead to its cases in those dimensions. These are the spaces stated in the construction; parameter restrictions remain in the linked cases.</p>'
+            content += '<nav class="ambient-jump" aria-label="Jump to ambient dimension">' + ''.join(f'<a href="#ambient-{group["key"]}">{escape(catalogue_properties.AMBIENT_SHORT[group["key"]])}</a>' for group in chapter['ambient_groups']) + '</nav>'
+        else:
+            content += '<h2>Sections and subsections</h2>'
+        content += reader.section_list(key, "../../", anchors=True, subsections=True)
         write("chapters/" + key, content, chapter["title"], "../../")
         if chapter["tag"] in entries:
             raise ValueError("A chapter tag collides with an entry")
@@ -544,7 +550,7 @@ def build_collection(books, destination, configuration):
     for configured in configuration["entries"]:
         if configured["topic"] in configuration.get("excluded_topics", []):
             redirect(destination / "tag" / configured["tag"] / "index.html", contents, destination)
-    write("entries", '<h1>All entries</h1>' + ('<p>Search across every source, or follow the shared chapter order below.</p>' if entries else '<p>No entries have been added yet.</p>') + "".join(f'<h2><a href="../chapters/{key}/">{chapter["number"]}. {escape(chapter["title"])}</a></h2>' + entry_list([e for e in entries.values() if e["topic"] in chapter["topics"]], topics, "../") for key, chapter in chapters.items()), "All entries", "../")
+    write("entries", '<h1>All entries</h1>' + ('<p>Search across every source, or follow the shared chapter order below.</p>' if entries else '<p>No entries have been added yet.</p>') + "".join(f'<h2><a href="../chapters/{key}/">{chapter["number"]}. {escape(chapter["title"])}</a></h2>' + entry_list([e for topic in chapter["topics"] for e in entries.values() if e["topic"] == topic], topics, "../") for key, chapter in chapters.items()), "All entries", "../")
     search = [{"tag": chapter["tag"], "title": f'{chapter["number"]} {chapter["title"]}', "search_title": chapter["title"], "kind": "chapter", "topic": chapter["title"], "text": "", "aliases": []} for chapter in chapters.values()]
     search += [{"tag": section["tag"], "title": f'{section["number"]} {section["title"]}', "search_title": section["title"], "kind": "section", "topic": chapters[section["chapter"]]["title"], "text": "", "aliases": []} for section in reader.sections.values() if not any(e.get("section_intro") for e in section["entries"])]
     public_entries, merges, section_search = [], [], {}

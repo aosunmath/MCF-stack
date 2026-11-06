@@ -8,6 +8,8 @@ The inherited GMT chapters, formerly numbered 6 onward, have been removed from t
 
 Organize content by mathematical subject across contributing sources. Split long or mixed sections using reviewed `section_promotions` boundaries. Absorb a source heading that repeats the containing section title while preserving its introductory text and permanent tags. Chapter pages list sections and retained subsections; section pages show connected prose and complete statements and proofs.
 
+Within the four solution categories, the build orders families by their lowest recorded ambient dimension using `catalogue-properties.json`: ℝ², ℝ³, ℝ⁴, then higher Euclidean dimensions. Curved ambient manifolds form a separate group. The order in `collection.json` breaks ties within each group. Each family has one primary section in the reading sequence; other applicable groups link directly to its dimensional cases. Chapter pages, the contents, and sidebars share this arrangement, and the resolved groups are exported in the public `collection.json`. Case links open the corresponding property disclosures. Higher-dimension groups retain the precise parameter restrictions in their linked case names and statements.
+
 Reader locators belong to the current collection structure: chapters use `C`, sections use `C.S`, and addressable subordinate blocks share the `C.S.N` counter. Source numbers remain provenance. `scripts/structure.py` places sections, `scripts/numbering.py` assigns locators, and `scripts/collection.py` applies them to headings, equations, references, navigation, and search. Do not globally replace digits in mathematical text.
 
 ## Tags, sources, and review

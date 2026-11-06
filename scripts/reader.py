@@ -90,8 +90,9 @@ class Reader:
         return f'<nav class="page-navigation" aria-label="Page navigation{" bottom" if bottom else ""}">{"".join(links)}</nav>'
 
     def section_list(self, chapter, root, current=None, anchors=False, subsections=False):
-        rows = []
-        for topic in self.chapters[chapter]["topics"]:
+        from catalogue_properties import AMBIENT_SHORT
+        configuration = self.chapters[chapter]
+        def row(topic):
             section = self.sections[topic]
             active = ' aria-current="page"' if current == topic else ""
             anchor = "section-" + topic if topic in {"comments", "cite", "content", "collection-search", "citation-text", "search-results"} else topic
@@ -101,8 +102,36 @@ class Reader:
                 headings = [entry for entry in section["entries"] if entry["variants"][0].get("section") and not entry.get("section_intro")]
                 if headings:
                     children = '<ol class="subsection-list">' + "".join(f'<li><a href="{self.href("tag/" + entry["tag"], root)}">{escape(display_title(entry))}</a>{tag_code(entry["tag"])}</li>' for entry in headings) + '</ol>'
-            rows.append(f'<li{identifier}><a href="{self.href("sections/" + topic, root)}"{active}><span>{section["number"]}</span> {escape(section["title"])}</a>{tag_code(section["tag"])}{children}</li>')
-        return '<ol class="section-list">' + "".join(rows) + '</ol>'
+            spaces = list(configuration.get('ambient_families', {}).get(topic, {}))
+            other = ''
+            if subsections and len(spaces) > 1:
+                links = ' · '.join(f'<a href="#ambient-{key}">{escape(AMBIENT_SHORT[key])}</a>' for key in spaces[1:])
+                other = f'<small class="ambient-also">Also in {links}</small>'
+            return f'<li{identifier}><a href="{self.href("sections/" + topic, root)}"{active}><span>{section["number"]}</span> {escape(section["title"])}</a>{tag_code(section["tag"])}{other}{children}</li>'
+        def listing(topics):
+            return '<ol class="section-list">' + ''.join(row(topic) for topic in topics) + '</ol>' if topics else ''
+        if not configuration.get('ambient_groups'):
+            return listing(configuration['topics'])
+        parts = []
+        for group in configuration['ambient_groups']:
+            identifier = f' id="ambient-{group["key"]}"' if anchors else ''
+            heading = group['title'] if subsections else AMBIENT_SHORT[group['key']]
+            body = f'<h3{identifier}>{escape(heading)}</h3>' + listing(group['topics'])
+            if group['related']:
+                if subsections:
+                    references = []
+                    for related in group['related']:
+                        section = self.sections[related['section']]
+                        url = self.href('sections/' + related['section'], root)
+                        cases = ' · '.join(f'<a href="{url}#{case["anchor"]}">{escape(case["name"])}</a>' for case in related['cases'])
+                        references.append(f'<li><a href="{url}#{related["cases"][0]["anchor"]}">{section["number"]} {escape(section["title"])}</a><small>{cases}</small></li>')
+                    body += '<div class="ambient-related"><p>Families introduced in lower dimensions</p><ul>' + ''.join(references) + '</ul></div>'
+                else:
+                    count = len(group['related'])
+                    caption = f'{count} ' + ('family' if count == 1 else 'families') + ' from lower dimensions →'
+                    body += f'<p class="ambient-related-link"><a href="{self.href("chapters/" + chapter, root)}#ambient-{group["key"]}">{caption}</a></p>'
+            parts.append('<section class="ambient-group">' + body + '</section>')
+        return '<div class="ambient-sections">' + ''.join(parts) + '</div>'
 
     def contents(self, root):
         if not self.chapters:

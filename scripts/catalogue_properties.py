@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 AMBIENTS = {'r2': 'Euclidean plane ℝ²', 'r3': 'Euclidean space ℝ³', 'r4': 'Euclidean space ℝ⁴', 'higher': 'Euclidean dimension ≥ 5', 'manifold': 'Riemannian ambient manifold'}
+AMBIENT_SHORT = {'r2': 'ℝ²', 'r3': 'ℝ³', 'r4': 'ℝ⁴', 'higher': 'Higher dimensions (N ≥ 5)', 'manifold': 'Curved ambient spaces'}
 STATUS = {'exact':'Exact formula', 'bound':'Proved bound or relation', 'numerical':'Numerical estimate', 'finite':'Finite; value not recorded', 'not-recorded':'Not recorded', 'not-applicable':'Not applicable'}
 GENUS = {'0':'Genus 0', '1':'Genus 1', 'higher':'Finite genus ≥ 2', 'infinite':'Infinite genus', 'varies':'Genus depends on parameters', 'not-recorded':'Genus not recorded', 'na':'Not a surface'}
 ENDS = {'0':'No ends (compact)', '1':'One end', '2':'Two ends', '3':'Three ends', 'many':'At least four ends', 'varies':'Ends depend on parameters', 'not-recorded':'Ends not recorded'}
@@ -28,7 +29,49 @@ def registry():
                 if item.get('value') is not None and item['status'] not in {'exact','numerical'}: raise ValueError('A scalar value needs an exact or numerical status')
     return result
 
-def case_html(case,index):
+def case_anchor(label, index):
+    return f'case-{label.replace(":", "-")}-{index + 1}'
+
+
+def ambient_memberships(record):
+    """Stated construction spaces, ordered by the lowest Euclidean dimension."""
+    return {key: [{'anchor': case_anchor(record['label'], i), 'name': case['name'] or case['topology']}
+                  for i, case in enumerate(record['cases']) if key in case['ambient']]
+            for key in AMBIENTS if any(key in case['ambient'] for case in record['cases'])}
+
+
+def arrange_by_ambient(chapters, records):
+    """Place each family once, before reader numbering; retain other cases as links."""
+    by_section = {}
+    for record in records:
+        if record['section'] in by_section:
+            raise ValueError('Ambient arrangement requires one catalogue family per section')
+        by_section[record['section']] = record
+    for chapter_key, chapter in chapters.items():
+        families = {topic: ambient_memberships(by_section[topic])
+                    for topic in chapter['topics'] if topic in by_section}
+        if not families:
+            continue
+        if set(families) != set(chapter['topics']):
+            raise ValueError('Every section in an ambient-organized chapter needs property metadata')
+        if any(by_section[topic]['category'] != chapter_key for topic in families):
+            raise ValueError('Catalogue family assigned to the wrong chapter')
+        groups = []
+        for key, title in AMBIENTS.items():
+            primary = [topic for topic, spaces in families.items() if next(iter(spaces)) == key]
+            related = [{'section': topic, 'cases': spaces[key]}
+                       for topic, spaces in families.items() if key in spaces and next(iter(spaces)) != key]
+            if primary or related:
+                groups.append({'key': key, 'title': title, 'topics': primary, 'related': related})
+        chapter['ambient_groups'] = groups
+        chapter['ambient_families'] = families
+        chapter['topics'] = [topic for group in groups for topic in group['topics']]
+        positions = {topic: i for i, topic in enumerate(chapter['topics'])}
+        for group in groups:
+            group['related'].sort(key=lambda item: positions[item['section']])
+
+
+def case_html(case,index,identifier=None):
     ambient='; '.join(AMBIENTS[k] for k in case['ambient'])
     heading=case['name'] or case['topology']
     compact = 'Compact' if case['compact'] is True else 'Noncompact' if case['compact'] is False else 'Not specified for this subfamily'
@@ -37,13 +80,17 @@ def case_html(case,index):
         item=case[key]
         fields.append((title,f'{STATUS[item["status"]]}: {item["text"]}'))
     body=''.join(f'<dt>{escape(k)}</dt><dd>{escape(v)}</dd>' for k,v in fields)
-    return f'<details class="property-case" data-case="{index}"><summary>{escape(heading)} <span>· {escape(ambient)}</span></summary><dl>{body}</dl></details>'
+    anchor = f' id="{escape(identifier, quote=True)}"' if identifier else ''
+    return f'<details class="property-case" data-case="{index}"{anchor}><summary>{escape(heading)} <span>· {escape(ambient)}</span></summary><dl>{body}</dl></details>'
 
 def panel(label,root):
     record=registry().get(label)
     if not record:return ''
     note=f'<p>{escape(record["notes"])}</p>' if record['notes'] else ''
-    return '<details class="property-panel"><summary>Ambient space, topology and entropy</summary>'+note+''.join(case_html(c,i) for i,c in enumerate(record['cases']))+f'<p><a href="{root}browse/">Compare examples by these properties →</a></p></details>'
+    spaces = ambient_memberships(record)
+    links = ' · '.join(f'<a href="#{cases[0]["anchor"]}">{escape(AMBIENT_SHORT[key])}</a>' for key, cases in spaces.items())
+    navigation = f'<nav class="ambient-case-links" aria-label="Ambient dimensions of this family">Ambient spaces: {links}</nav>'
+    return navigation+'<details class="property-panel"><summary>Ambient space, topology and entropy</summary>'+note+''.join(case_html(c,i,case_anchor(label,i)) for i,c in enumerate(record['cases']))+f'<p><a href="{root}browse/">Compare examples by these properties →</a></p></details>'
 
 def prepare(entries,topics,topic_chapters,visuals):
     actual={v['label']:e for e in entries.values() for v in e['variants'] if v['source']=='gmt-foundations' and v['label'].startswith('ex:catalogue-')}
