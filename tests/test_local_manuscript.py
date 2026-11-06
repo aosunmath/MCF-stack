@@ -61,9 +61,11 @@ class LocalManuscriptTests(unittest.TestCase):
     def test_reference_copies_and_proof_coverage_are_explicit(self):
         folder = ROOT / 'content' / 'gmt-foundations'
         inventory = json.loads((folder / 'source-inventory.json').read_text())
-        white = [f for f in inventory['files'] if f['bibliography_key'] == 'WhiCho14']
-        self.assertEqual(len(white), 2)
-        self.assertEqual(white[0]['sha256'], white[1]['sha256'])
+        audit = json.loads((ROOT / 'documentation' / 'catalogue-source-audit.json').read_text())
+        recorded = {f['filename']: f['sha256'] for f in inventory['files']}
+        for supplied in audit['files']:
+            self.assertEqual(recorded[supplied['filename']], supplied['sha256'])
+        self.assertEqual(len(audit['files']) - len({f['sha256'] for f in audit['files']}), 1)
         self.assertTrue(all(f['redistributed'] is False for f in inventory['files']))
         review = json.loads((folder / 'entry-review.json').read_text())
         known = {e['label'] for e in review['entries']}

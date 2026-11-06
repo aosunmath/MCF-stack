@@ -13,7 +13,11 @@ Every time slice is a complete properly embedded noncompact rotational annulus, 
  K=-\frac1{a^2\cosh^4s},\qquad
  \int K\,dA=-4\pi.
 \]
-The geometric calculations are retained in Example \ref{ex:explicit-catenoid} and Proposition \ref{prop:catenoid-curvature-example}; Proposition \ref{prop:catenoid-unstable-example} proves that the complete catenoid is unstable for compactly supported area variations, while each open half is stable. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
+The metric follows by differentiation, and the conformal curvature formula gives $K$ and its integral. The complete catenoid is unstable for compactly supported area variations: for a test function $f(s)$ independent of $\theta$, its second variation is
+\[
+ Q(f,f)=2\pi\int_{\mathbb R}\bigl((f')^2-2\operatorname{sech}^2s\,f^2\bigr)\,ds.
+\]
+Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
 \end{example}
 
 \chapter{Mean curvature evolution of the Whitney sphere}\label{sec:catalogue-whitney-sphere}
@@ -75,12 +79,12 @@ defines the Angenent oval. Equivalently, its two graph branches are
  y=\pm\operatorname{arcosh}(e^{-t}\cos x),
  \qquad |x|\leq\arccos(e^t).
 \]
-Their endpoints join smoothly as a curve, even though those graph charts cease to be regular there. This is an exact implicit formula, rather than a single global graph parametrization. It is recorded in \cite{BV11}, Section 3.1, equation (14), p.~7; Theorem \ref{thm:explicit-ancient-oval} verifies the equation and flow directly in this project.
+Their endpoints join smoothly as a curve, even though those graph charts cease to be regular there. This is an exact implicit formula, rather than a single global graph parametrization. It is recorded in \cite{BV11}, Section 3.1, equation (14), p.~7.
 
 Every time slice is a smooth compact embedded strictly convex curve, hence complete and proper, with topology $S^1$ and reflection symmetries across both coordinate axes. It shrinks to the origin at time zero but changes shape and is not a soliton. Its enclosed area is $-2\pi t$, and
 \[
  \kappa_{\max}=(1-e^{2t})^{-1/2},\qquad
  \kappa_{\min}=e^t(1-e^{2t})^{-1/2}.
 \]
-The rescaling $(-t)^{-1/2}\Gamma_t$ converges smoothly to the radius-$\sqrt2$ circle at extinction. As $t\to-\infty$, translating its upper and lower branches to keep their tips fixed gives the two oppositely directed grim-reaper profiles, locally in $|x|<\pi/2$. The detailed statements and calculations remain in Propositions \ref{prop:ancient-oval-curvature-ratio}, \ref{prop:ancient-oval-extinction-model}, and \ref{prop:ancient-oval-translator-limits}. The time slider plots the exact implicit curve for $-5\leq t\leq-0.1$ on a fixed spatial scale.
+The rescaling $(-t)^{-1/2}\Gamma_t$ converges smoothly to the radius-$\sqrt2$ circle at extinction. As $t\to-\infty$, translating its upper and lower branches to keep their tips fixed gives the two oppositely directed grim-reaper profiles, locally in $|x|<\pi/2$. These limits can be read from the implicit equation: near extinction its quadratic expansion gives $x^2+y^2\sim-2t$, and subtracting the upper tip height gives the limiting graph $\log\cos x$ as $t\to-\infty$. The time slider plots the exact implicit curve for $-5\leq t\leq-0.1$ on a fixed spatial scale.
 \end{example}

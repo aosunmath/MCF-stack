@@ -9,10 +9,10 @@ PUBLIC_ROOT = "https://aosunmath.github.io/MCF-stack/"
 CONTRIBUTORS = TITLE + " contributors"
 
 FEATURED_TOPICS = (
-    ("rescaled-flow-and-self-similar-models", "Self-shrinkers and rescaled flow"),
-    ("explicit-solitons-and-translating-graphs", "Translators and explicit solitons"),
-    ("constructing-the-rotational-bowl-soliton", "The bowl translator"),
-    ("expanding-curves-that-smooth-a-corner", "Self-expanding curves"),
-    ("graphical-expanders-from-homogeneous-cones", "Graphical self-expanders"),
-    ("an-explicit-ancient-oval", "An ancient oval"),
+    ("round-shrinking-spheres", "Round shrinking spheres"),
+    ("angenent-s-shrinking-torus", "Angenent’s shrinking torus"),
+    ("the-rotational-bowl-translator", "The bowl translator"),
+    ("expanding-smoothings-of-planar-corners", "Expanding curves"),
+    ("rotational-graphical-expanders-over-round-cones", "Graphical cone expanders"),
+    ("the-angenent-oval-as-an-explicit-ancient-flow", "The ancient Angenent oval"),
 )

@@ -1,12 +1,12 @@
 # Special-solution catalogue
 
-The first addition has 31 entries: 10 shrinkers, 11 translators, 6 expanders, and 4 other special flows. Each has its own stable source label and a picture. The four `catalogue-*.tex` manuscripts in `content/gmt-foundations/` are the mathematical source; `collection.json` groups their sections. Existing tags and background sections are retained.
+The first addition has 31 entries: 10 shrinkers, 11 translators, 6 expanders, and 4 other special flows. Each has its own stable source label and a picture. The four `catalogue-*.tex` manuscripts in `content/gmt-foundations/` are the mathematical source; `collection.json` groups their sections. The introduction and these four categories are the complete reading collection. Catalogue tags are retained; the inherited GMT background chapters have been removed.
 
 ## Sources and scope
 
 The supplied collection contains 101 PDF files, representing 100 distinct file hashes. Selected passages were read to identify examples and check their stated properties. The [evidence map](catalogue-source-audit.json) records files, hashes, entry-level locators, and normalization notes. The manuscript's `source-inventory.json` records supplied editions and review status. Inventory status does not imply a complete reading. Original PDFs, extracted text, and private absolute paths are excluded from exports.
 
-Formulas specify normalization, dimension, parameters, domain, and time where available. Other entries collect the properties established in the cited sources, with qualifications on uniqueness, stability, asymptotics, and existence ranges. These lists are limited to those sources. Construction proofs remain external unless an existing local proof is explicitly linked; no formal verification is claimed.
+Formulas specify normalization, dimension, parameters, domain, and time where available. Other entries collect the properties established in the cited sources, with qualifications on uniqueness, stability, asymptotics, and existence ranges. These lists are limited to those sources. Construction proofs remain in the cited papers; selected elementary calculations are given directly in the entries. No formal verification is claimed.
 
 The normal convention is H = div(nu), mean curvature vector = −H nu. Shrinkers satisfy Hvec = −Xperp/2, expanders Hvec = Xperp/2, and translator diagrams move upward at unit speed. Smoczyk's shrinkers and the network-flow expanders require a sqrt(2) spatial conversion. The supplied translator papers often use downward velocity. The width ratio in the supplied Graphical Translators Theorem 2.4 is corrected using its defining formula. Neckpinch tip mean curvature and the norm of the second fundamental form differ by sqrt(n). Exact editions and details are recorded in the evidence map.
 

@@ -54,7 +54,7 @@ The catalogue records source-supported properties and precise theorem or page lo
 
 ## Reading and contributing
 
-The website supports keyword and tag search, permanent links, citations, and expandable proofs. This initial edition inherits the mathematical library of [GMT-stack](https://github.com/aosunmath/GMT-stack); its GMT and variational chapters remain available as background while the special-solutions collection develops. The collection is not exhaustive, and no independent human review or formal verification is claimed.
+The website supports keyword and tag search, permanent links, citations, and expandable proofs. The reading collection has five chapters: an introduction followed by shrinkers, translators, expanders, and other special flows. The inherited GMT chapters have been removed. The collection is not exhaustive, and no independent human review or formal verification is claimed.
 
 Corrections and contributions are welcome through [issues](https://github.com/aosunmath/MCF-stack/issues) and pull requests. Include precise references, complete hypotheses, and a clear account of proof status. Preserve existing tags and source labels. See [AGENTS.md](AGENTS.md) and the [integration guide](documentation/integration-layout.md).
 

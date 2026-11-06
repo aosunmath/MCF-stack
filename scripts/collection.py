@@ -486,9 +486,9 @@ def build_collection(books, destination, configuration):
         introduction += (Path(__file__).resolve().parents[1] / "site" / "home.html").read_text()
     featured = [(slug, title) for slug, title in FEATURED_TOPICS if slug in topics]
     if featured:
-        introduction += '<h2>Calculations and background</h2><ul>' + ''.join(
+        introduction += '<h2>Selected examples</h2><ul>' + ''.join(
             f'<li><a href="sections/{slug}/">{escape(title)}</a></li>' for slug, title in featured
-        ) + '</ul><p>The inherited GMT and variational chapters provide background for this growing collection. Existing statements, proofs, references, and permanent tags remain available below.</p>'
+        ) + '</ul><p>The reading collection consists of an introduction and four categories: shrinkers, translators, expanders, and other special flows. Each example includes a figure and precise references.</p>'
     if not entries:
         introduction += '<p>Special solutions of mean curvature flow will be collected here.</p>'
     write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
