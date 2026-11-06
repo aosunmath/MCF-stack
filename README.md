@@ -10,19 +10,19 @@ For each family of solutions, the goal is to record its defining equation, dimen
 
 ## A quick introduction to mean curvature flow
 
-Mean curvature flow evolves a curve, surface, or higher-dimensional submanifold by its mean curvature vector. If $X:M^n\times I\to\mathbb R^{n+1}$ describes a family of immersed hypersurfaces, the geometric equation is
+Mean curvature flow evolves a curve, surface, or higher-dimensional submanifold by its mean curvature vector. If $`X:M^n\times I\to\mathbb R^{n+1}`$ describes a family of immersed hypersurfaces, the geometric equation is
 
-$$
-(\partial_t X)^\perp=\mathbf H,
-$$
+```math
+(\partial_t X)^\perp=\mathbf{H},
+```
 
-where $\mathbf H$ is the mean curvature vector and $\perp$ denotes projection onto the normal space. We use $H=\operatorname{div}_M\nu$ and $\mathbf H=-H\nu$; for a round sphere, $\nu$ points outward and $H>0$, so the sphere shrinks.
+where $`\mathbf{H}`$ is the mean curvature vector and $`\perp`$ denotes projection onto the normal space. We use $`H=\mathrm{div}_M\nu`$ and $`\mathbf{H}=-H\nu`$; for a round sphere, $`\nu`$ points outward and $`H>0`$, so the sphere shrinks.
 
 The flow is the gradient flow of area. For a smooth closed submanifold,
 
-$$
-\frac{d}{dt}\operatorname{Area}(M_t)=-\int_{M_t}|\mathbf H|^2\,d\mu_t.
-$$
+```math
+\frac{d}{dt}\mathrm{Area}(M_t)=-\int_{M_t}|\mathbf{H}|^2\mathrm{d}\mu_t.
+```
 
 Although the flow decreases area, it can develop singularities. Special solutions provide concrete examples and geometric models for understanding singularities, rescaling limits, and long-time behavior.
 
@@ -32,12 +32,12 @@ The following equations use the mean curvature vector convention above. The norm
 
 | Family | Defining equation | Associated flow |
 | --- | --- | --- |
-| Self-shrinkers | $\mathbf H+X^\perp/2=0$ | $M_t=\sqrt{-t}\,\Sigma$, $t<0$ |
-| Translators | $\mathbf H=V^\perp$, with constant velocity $V$ | $M_t=\Sigma+tV$ |
-| Self-expanders | $\mathbf H-X^\perp/2=0$ | $M_t=\sqrt{t}\,\Sigma$, $t>0$ |
-| Stationary solutions | $\mathbf H=0$ | $M_t=\Sigma$ |
+| Self-shrinkers | $`\mathbf{H}+X^\perp/2=0`$ | $`M_t=\sqrt{-t}\Sigma`$, $`t<0`$ |
+| Translators | $`\mathbf{H}=V^\perp`$, with constant velocity $`V`$ | $`M_t=\Sigma+tV`$ |
+| Self-expanders | $`\mathbf{H}-X^\perp/2=0`$ | $`M_t=\sqrt{t}\Sigma`$, $`t>0`$ |
+| Stationary solutions | $`\mathbf{H}=0`$ | $`M_t=\Sigma`$ |
 
-The collection also includes **ancient solutions**, defined for all $t<T$ for a finite $T$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
+The collection also includes **ancient solutions**, defined for all $`t<T`$ for a finite $`T`$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
 The first catalogue contains **31 entries in four categories**:
 
