@@ -163,26 +163,26 @@
   },
   {
     "route": "sections/moller-closed-shrinkers-of-large-even-genus",
-    "title": "2.10 Moller closed shrinkers of large even genus",
+    "title": "2.10 Møller closed shrinkers of large even genus",
     "chapter": "shrinkers",
     "section": "moller-closed-shrinkers-of-large-even-genus"
   },
   {
     "route": "tag/A105C87CB202",
-    "title": "Example 2.10.1 (Moller closed shrinkers of large even genus)",
+    "title": "Example 2.10.1 (Møller closed shrinkers of large even genus)",
     "chapter": "shrinkers",
     "section": "moller-closed-shrinkers-of-large-even-genus",
     "tag": "A105C87CB202"
   },
   {
     "route": "sections/kapouleas-kleene-moller-shrinkers-with-one-end",
-    "title": "2.11 Kapouleas–Kleene–Moller shrinkers with one end",
+    "title": "2.11 Kapouleas–Kleene–Møller shrinkers with one end",
     "chapter": "shrinkers",
     "section": "kapouleas-kleene-moller-shrinkers-with-one-end"
   },
   {
     "route": "tag/A515DF7C7C60",
-    "title": "Example 2.11.1 (Kapouleas–Kleene–Moller shrinkers with one end)",
+    "title": "Example 2.11.1 (Kapouleas–Kleene–Møller shrinkers with one end)",
     "chapter": "shrinkers",
     "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
     "tag": "A515DF7C7C60"

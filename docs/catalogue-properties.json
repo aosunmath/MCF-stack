@@ -650,7 +650,7 @@
     },
     {
       "label": "ex:catalogue-moller-genus",
-      "notes": "",
+      "notes": "Properties refer to the smooth constructed surfaces. The illustration shows their singular sphere–torus limit, not a finite-genus member; no entropy is computed from that picture.",
       "citations": [
         "CM12",
         "CatDLN2018",
@@ -683,12 +683,12 @@
           }
         }
       ],
-      "title": "Moller closed shrinkers of large even genus",
+      "title": "Møller closed shrinkers of large even genus",
       "section": "moller-closed-shrinkers-of-large-even-genus",
       "category": "shrinkers",
       "tag": "A105C87CB202",
       "model": "moller-gluing",
-      "illustration_status": "Gluing schematic"
+      "illustration_status": "Numerical limiting configuration"
     },
     {
       "label": "ex:catalogue-grim-reaper",
@@ -1935,7 +1935,7 @@
           }
         }
       ],
-      "title": "Kapouleas–Kleene–Moller shrinkers with one end",
+      "title": "Kapouleas–Kleene–Møller shrinkers with one end",
       "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
       "category": "shrinkers",
       "tag": "A515DF7C7C60",

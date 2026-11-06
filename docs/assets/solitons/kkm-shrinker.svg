@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
-<title id="title">Kapouleas--Kleene--Moller shrinkers: gluing and end schematics</title>
+<title id="title">Kapouleas--Kleene--Møller shrinkers: gluing and end schematics</title>
 <desc id="description">The left panel shows the exact sphere-plane input configuration, not a desingularized surface. The right panel is a generic nonplanar cone schematic, not the computed cone of a KKM shrinker. The theorem gives one end for every sufficiently large prescribed genus.</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
 <rect width="640" height="410" fill="#f7fafb"/>

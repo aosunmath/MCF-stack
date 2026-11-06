@@ -200,7 +200,7 @@
   {
     "tag": "830EABD2",
     "label": "sec:catalogue-moller-genus",
-    "title": "11 Moller closed shrinkers of large even genus",
+    "title": "11 M\u00f8ller closed shrinkers of large even genus",
     "kind": "chapter",
     "page": "tag/830EABD2/index.html",
     "canonical_tag": "1AD8ABE5C210",
@@ -209,7 +209,7 @@
   {
     "tag": "CBE08D0B",
     "label": "ex:catalogue-moller-genus",
-    "title": "Example 11.1 (Moller closed shrinkers of large even genus)",
+    "title": "Example 11.1 (M\u00f8ller closed shrinkers of large even genus)",
     "kind": "example",
     "page": "tag/CBE08D0B/index.html",
     "canonical_tag": "A105C87CB202",
@@ -218,7 +218,7 @@
   {
     "tag": "D6BAA215",
     "label": "sec:catalogue-kkm-one-end",
-    "title": "12 Kapouleas\u2013Kleene\u2013Moller shrinkers with one end",
+    "title": "12 Kapouleas\u2013Kleene\u2013M\u00f8ller shrinkers with one end",
     "kind": "chapter",
     "page": "tag/D6BAA215/index.html",
     "canonical_tag": "2285B0C987A6",
@@ -227,7 +227,7 @@
   {
     "tag": "57CB963E",
     "label": "ex:catalogue-kkm-one-end",
-    "title": "Example 12.1 (Kapouleas\u2013Kleene\u2013Moller shrinkers with one end)",
+    "title": "Example 12.1 (Kapouleas\u2013Kleene\u2013M\u00f8ller shrinkers with one end)",
     "kind": "example",
     "page": "tag/57CB963E/index.html",
     "canonical_tag": "A515DF7C7C60",
