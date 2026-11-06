@@ -1,0 +1,52 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/1106.5454v3",
+  "source_equation": "(5.1), p. 9",
+  "resolution": [
+    181,
+    181,
+    108
+  ],
+  "display_radius": 3.65,
+  "models": {
+    "6": {
+      "vertices": 7919,
+      "faces": 15643,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -9,
+      "genus": 5
+    },
+    "9": {
+      "vertices": 7917,
+      "faces": 15668,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -15,
+      "genus": 8
+    },
+    "12": {
+      "vertices": 7945,
+      "faces": 15756,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -21,
+      "genus": 11
+    }
+  }
+}

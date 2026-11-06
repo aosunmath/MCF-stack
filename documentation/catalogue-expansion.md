@@ -14,7 +14,7 @@ The normal convention is H = div(nu), mean curvature vector = −H nu. Shrinkers
 
 The [Abresch–Langer index controls](abresch-langer-controls.md) let readers compute other admissible coprime pairs, with numerical period and closure checks. The fixed SVG and print view retain the (2,3) reference.
 
-`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Twenty-two have an interactive canvas with keyboard rotation and zoom; the remaining thirty use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. The Møller entry additionally has a separate interactive handle schematic with three genus choices. “Open drawing” shows the larger SVG. The ancient oval, ancient torus curve, and eternal helix have time sliders at fixed spatial scales; the Clifford torus and torus curve have a fourth-coordinate rotation before projection.
+`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Twenty-three have an interactive canvas with keyboard rotation and zoom; the remaining twenty-nine use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. The Møller entry additionally has a separate interactive handle schematic with three genus choices. “Open drawing” shows the larger SVG. The ancient oval, ancient torus curve, and eternal helix have time sliders at fixed spatial scales; the Clifford torus and torus curve have a fourth-coordinate rotation before projection.
 
 The Angenent torus, Drugan sphere, Abresch–Langer curve, bowl, translating catenoid, and graphical/neck expanders use numerical ODE integration. They are not substituted by generic tori, paraboloids, or arbitrary connecting surfaces. Closure residuals in `site/assets/solitons/geometry-audit.json` describe integration before rounding the exported coordinates; they are numerical diagnostics, not error bounds or existence proofs. Displayed finite pieces of noncompact solutions have artificial truncation boundaries. The Whitney figure is the exact initial generating profile, not a formula for its later evolution.
 
@@ -27,6 +27,7 @@ python3 scripts/generate_shrinker_schematics.py
 python3 scripts/generate_moller_geometry.py
 # Additional numerical meshing dependencies are listed in moller-picture.md:
 python3 scripts/generate_moller_genus_models.py
+python3 scripts/generate_kkm_geometry.py
 python3 scripts/generate_translator_schematics.py
 python3 scripts/generate_expander_schematics.py
 python3 scripts/generate_ancient_curve_geometry.py
@@ -44,3 +45,5 @@ The [Drugan numerical picture](drugan-numerical-picture.md) documents the pole e
 The permanent contribution rules are in `AGENTS.md`. Completed modifications are committed and pushed after verification by default, following the user's standing preference; a later request for local-only work takes precedence.
 
 The [Møller picture](moller-picture.md) records the sphere–torus cutaway, numerical intersection checks, and the distinction between the singular gluing input and a smooth finite-genus surface.
+
+The [KKM construction picture](kkm-picture.md) uses the paper’s Scherk ingredient to show a connected joining belt, with a cutaway, illustrative period counts, and adjustable end waviness. Its generator additionally requires scikit-image and fast-simplification. It does not solve the shrinker equation.

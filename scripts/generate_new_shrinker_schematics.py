@@ -1,11 +1,13 @@
-"""Generate original diagrams for four newly reviewed shrinker constructions.
+"""Generate original diagrams for three reviewed shrinker constructions.
 
 Only Python's standard library is required. The figures represent construction
 inputs, topology, symmetry, or qualified asymptotic geometry. None represents a
 computed solution. In particular, the variational torus diagram does not use the
 Angenent mesh, and the BNS/Ketover end counts retain their large-genus condition.
 
-Sources: KKM arXiv:1106.5454v3, Theorem 1.1; Drugan--Nguyen
+KKM now uses generate_kkm_geometry.py.
+
+Sources: Drugan--Nguyen
 arXiv:1708.08808v1, Theorem 1; BNS arXiv:2110.06027v2, Theorems 1.2--1.3
 and Lemmas 2.5--2.6; Ketover arXiv:2407.01240v2, Theorem 1.1.
 """
@@ -85,52 +87,6 @@ def angles(count=120):
 
 def ring(radius, z, count=120):
     return [(radius*math.cos(a), radius*math.sin(a), z) for a in angles(count)]
-
-
-def kkm():
-    f = Figure(
-        "Kapouleas--Kleene--Møller shrinkers: gluing and end schematics",
-        "The left panel shows the exact sphere-plane input configuration, not "
-        "a desingularized surface. The right panel is a generic nonplanar cone "
-        "schematic, not the computed cone of a KKM shrinker. The theorem gives "
-        "one end for every sufficiently large prescribed genus.",
-    )
-    f.text(28, 36, "KKM high-genus shrinkers", 23, weight=600)
-    f.text(28, 64, "Existence for every sufficiently large integer genus", 16, MUTED)
-    f.text(175, 103, "Sphere–plane input", 18, anchor="middle")
-    f.text(474, 103, "End-shape schematic", 18, anchor="middle")
-    p = projection(175, 199, 36)
-    plane = [(-2.8, -2.8, 0), (2.8, -2.8, 0), (2.8, 2.8, 0),
-             (-2.8, 2.8, 0), (-2.8, -2.8, 0)]
-    f.line([p(v) for v in plane], color=MUTED, width=1.3, fill=PALE)
-    for phi in [math.pi*i/6 for i in range(1, 6)]:
-        f.line([p(v) for v in ring(2*math.sin(phi), 2*math.cos(phi))],
-               width=.9, opacity=.75)
-    for a in [math.pi*i/6 for i in range(6)]:
-        f.line([p((2*math.sin(t)*math.cos(a), 2*math.sin(t)*math.sin(a),
-                   2*math.cos(t))) for t in angles()], width=.9, opacity=.75)
-    f.ellipse(175, 199, 72, 72, width=1.8)
-    f.line([p(v) for v in ring(2, 0)], color=SEAM, width=2.8)
-    f.text(175, 294, "S²(2) ∪ P; circle to be resolved", 15, anchor="middle")
-
-    # A homogeneous graph supplies a generic cone picture. Its four oscillations
-    # are illustrative and are not assigned the symmetry/genus of a solved example.
-    q = projection(474, 199, 38, pitch=.55)
-
-    def cone(r, a):
-        return r*math.cos(a), r*math.sin(a), .24*r*math.sin(4*a)
-
-    for r in (.7, 1.3, 1.9, 2.55):
-        f.line([q(cone(r, a)) for a in angles()], width=1.1,
-               opacity=.65 if r < 2.55 else 1)
-    for a in angles(16)[:-1]:
-        f.line([q((0, 0, 0)), q(cone(2.55, a))], width=.9, opacity=.6)
-    f.text(474, 294, "One nonplanar conical end", 15, anchor="middle")
-    f.text(28, 337, "Exactly one end for all constructed large-genus surfaces.", 16)
-    f.text(28, 364, "Neither panel is a solved shrinker or its computed cone.", 16)
-    f.text(28, 393, "SCHEMATIC • gluing input and asymptotic geometry", 15,
-           BLUE, weight=600)
-    f.save("kkm-shrinker.svg")
 
 
 def variational_torus():
@@ -258,9 +214,9 @@ def ketover():
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    for generate in (kkm, variational_torus, bns, ketover):
+    for generate in (variational_torus, bns, ketover):
         generate()
-    print("Generated four original 640 x 410 shrinker construction schematics.")
+    print("Generated three original 640 x 410 shrinker construction schematics.")
 
 
 if __name__ == "__main__":

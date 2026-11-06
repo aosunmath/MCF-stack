@@ -1009,12 +1009,24 @@
           ],
           "locator": "equation (4.1), radius-2 spherical cap in Section 5",
           "url": "https://arxiv.org/pdf/1106.5454v3"
+        },
+        {
+          "source_id": "kkm-2014-v3",
+          "bibkey": "CatKKM2018",
+          "pdf_pages": [
+            3,
+            9,
+            11,
+            12
+          ],
+          "locator": "Figure 1; equation (5.1); Definitions 5.1, 5.7 and 5.10; Remark 5.12",
+          "url": "https://arxiv.org/pdf/1106.5454v3"
         }
       ],
       "illustration": {
-        "type": "original schematic",
-        "brief": "Sphere of radius 2 intersecting a plane; highlight equatorial gluing circle. Separate schematic conical graph with nonzero wavy link. Label high-genus gluing scheme, not an exact or computed KKM shrinker.",
-        "interactive_parameters": "Illustrative genus/sector count only; do not assign a finite threshold or imply numerical existence."
+        "type": "Scherk-based construction schematic",
+        "brief": "Connected sphere–plane desingularization model based on equation (5.1), with cutaway and illustrative conical shear; not a solved KKM shrinker. See documentation/kkm-picture.md.",
+        "interactive_parameters": "Rotation, zoom, cutaway, k=6,9,12 illustrative Scherk periods, and illustrative conical amplitude; no existence threshold or computed end profile asserted."
       }
     },
     {

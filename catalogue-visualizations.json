@@ -481,10 +481,10 @@
         "CatSunWang2020"
       ],
       "model": "kkm-shrinker",
-      "status": "Gluing schematic",
-      "caption": "Sphere–plane gluing configuration and one conical end; this is not a solved shrinker mesh.",
-      "alt": "Sphere–plane gluing configuration and one conical end; this is not a solved shrinker mesh.",
-      "interactive": false
+      "status": "Scherk-based construction schematic",
+      "caption": "A connected model joins two sphere-like caps, an inner disk, and one outer sheet through a periodic Scherk belt. Rotate or use Cutaway to inspect the joining region. The period count and conical waviness are illustrative; this is not a numerically solved KKM shrinker. The theorem applies only to sufficiently large genus, with no explicit threshold. The outer edge is a display truncation.",
+      "alt": "Connected Scherk-based sphere–plane construction model with a ring of saddle-shaped openings, spherical caps, an inner disk and one wavy outer sheet. Not a computed self-shrinker.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-drugan-nguyen-torus",
