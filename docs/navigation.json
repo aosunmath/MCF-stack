@@ -240,6 +240,136 @@
     "tag": "826D61792601"
   },
   {
+    "route": "sections/nguyen-s-one-ended-shrinking-saddles",
+    "title": "2.16 Nguyen's one-ended shrinking saddles",
+    "chapter": "shrinkers",
+    "section": "nguyen-s-one-ended-shrinking-saddles"
+  },
+  {
+    "route": "tag/B28BB2912147",
+    "title": "Example 2.16.1 (Nguyen's one-ended shrinking saddles)",
+    "chapter": "shrinkers",
+    "section": "nguyen-s-one-ended-shrinking-saddles",
+    "tag": "B28BB2912147"
+  },
+  {
+    "route": "sections/angenent-torus-cylinders",
+    "title": "2.17 Angenent torus cylinders",
+    "chapter": "shrinkers",
+    "section": "angenent-torus-cylinders"
+  },
+  {
+    "route": "tag/FA65887C28F1",
+    "title": "Example 2.17.1 (Angenent torus cylinders)",
+    "chapter": "shrinkers",
+    "section": "angenent-torus-cylinders",
+    "tag": "FA65887C28F1"
+  },
+  {
+    "route": "sections/ilmanen-white-two-ended-shrinkers",
+    "title": "2.18 Ilmanen–White two-ended shrinkers",
+    "chapter": "shrinkers",
+    "section": "ilmanen-white-two-ended-shrinkers"
+  },
+  {
+    "route": "tag/4522A41972E4",
+    "title": "Example 2.18.1 (Ilmanen–White two-ended shrinkers)",
+    "chapter": "shrinkers",
+    "section": "ilmanen-white-two-ended-shrinkers",
+    "tag": "4522A41972E4"
+  },
+  {
+    "route": "sections/shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+    "title": "2.19 Shao–Zou shrinkers with any prescribed number of ends",
+    "chapter": "shrinkers",
+    "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends"
+  },
+  {
+    "route": "tag/4BFAC8529BEA",
+    "title": "Example 2.19.1 (Shao–Zou plane stackings)",
+    "chapter": "shrinkers",
+    "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+    "tag": "4BFAC8529BEA"
+  },
+  {
+    "route": "sections/flow-generated-platonic-and-polygonal-shrinkers",
+    "title": "2.20 Flow-generated Platonic and polygonal shrinkers",
+    "chapter": "shrinkers",
+    "section": "flow-generated-platonic-and-polygonal-shrinkers"
+  },
+  {
+    "route": "tag/A455BCCC51D0",
+    "title": "Example 2.20.1 (Hoffman–Martin–White ray-avoiding shrinkers)",
+    "chapter": "shrinkers",
+    "section": "flow-generated-platonic-and-polygonal-shrinkers",
+    "tag": "A455BCCC51D0"
+  },
+  {
+    "route": "sections/flow-generated-sphere-plane-shrinkers",
+    "title": "2.21 Flow-generated sphere–plane shrinkers",
+    "chapter": "shrinkers",
+    "section": "flow-generated-sphere-plane-shrinkers"
+  },
+  {
+    "route": "tag/45B364E949D5",
+    "title": "Example 2.21.1 (Hoffman–Martin–White sphere–plane family)",
+    "chapter": "shrinkers",
+    "section": "flow-generated-sphere-plane-shrinkers",
+    "tag": "45B364E949D5"
+  },
+  {
+    "route": "sections/flow-generated-three-ended-shrinkers",
+    "title": "2.22 Flow-generated three-ended shrinkers",
+    "chapter": "shrinkers",
+    "section": "flow-generated-three-ended-shrinkers"
+  },
+  {
+    "route": "tag/5CED6ED3B586",
+    "title": "Example 2.22.1 (Hoffman–Martin–White three-ended family)",
+    "chapter": "shrinkers",
+    "section": "flow-generated-three-ended-shrinkers",
+    "tag": "5CED6ED3B586"
+  },
+  {
+    "route": "sections/ketover-shrinkers-with-platonic-symmetry",
+    "title": "2.23 Ketover shrinkers with Platonic symmetry",
+    "chapter": "shrinkers",
+    "section": "ketover-shrinkers-with-platonic-symmetry"
+  },
+  {
+    "route": "tag/AE0CC89EB3E2",
+    "title": "Example 2.23.1 (Ketover shrinkers with Platonic symmetry)",
+    "chapter": "shrinkers",
+    "section": "ketover-shrinkers-with-platonic-symmetry",
+    "tag": "AE0CC89EB3E2"
+  },
+  {
+    "route": "sections/sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+    "title": "2.24 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+    "chapter": "shrinkers",
+    "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy"
+  },
+  {
+    "route": "tag/0177A2718D72",
+    "title": "Example 2.24.1 (Sun–Wang–Zhou Gaussian-width shrinkers)",
+    "chapter": "shrinkers",
+    "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+    "tag": "0177A2718D72"
+  },
+  {
+    "route": "sections/chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+    "title": "2.25 Chu–Sun genus-one shrinkers below the shrinking doughnut",
+    "chapter": "shrinkers",
+    "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
+  },
+  {
+    "route": "tag/AE7721D6799F",
+    "title": "Example 2.25.1 (Chu–Sun lower-entropy genus-one shrinkers)",
+    "chapter": "shrinkers",
+    "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+    "tag": "AE7721D6799F"
+  },
+  {
     "route": "chapters/translators",
     "title": "3 Translators",
     "chapter": "translators"

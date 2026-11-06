@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Hoffman–Martin–White three-ended shrinkers: limit schematic</title>
+<desc id="description">Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="22" font-weight="600" fill="#183f52" text-anchor="start">HMW three-ended shrinkers</text>
+<text x="28" y="64" font-size="15" font-weight="400" fill="#6a8793" text-anchor="start">For sufficiently large g: genus 2g and three conical ends</text>
+<polyline points="49.000,245.000 145.000,217.000 331.000,245.000 235.000,273.000 49.000,245.000" fill="#e5eff3" stroke="#6a8793" stroke-width="1.4" opacity="1"/>
+<polyline points="49.000,194.000 145.000,166.000 331.000,194.000 235.000,222.000 49.000,194.000" fill="#e5eff3" stroke="#6a8793" stroke-width="1.4" opacity="1"/>
+<polyline points="49.000,143.000 145.000,115.000 331.000,143.000 235.000,171.000 49.000,143.000" fill="#e5eff3" stroke="#6a8793" stroke-width="1.4" opacity="1"/>
+<text x="190" y="300" font-size="14" font-weight="400" fill="#183f52" text-anchor="middle">Multiplicity displayed as separated sheets</text>
+<path d="M352 194L414 194" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="383" y="169" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">g → ∞</text>
+<polyline points="418.000,194.000 465.000,167.000 602.000,194.000 555.000,221.000 418.000,194.000" fill="#e5eff3" stroke="#6a8793" stroke-width="1.4" opacity="1"/>
+<text x="510" y="248" font-size="25" font-weight="600" fill="#183f52" text-anchor="middle">3P</text>
+<text x="28" y="335" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">The finite-genus shrinker is connected; it is not drawn here.</text>
+<text x="28" y="360" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">The diagram records the limit, not the shape of its three ends.</text>
+<text x="28" y="387" font-size="15" font-weight="600" fill="#21667f" text-anchor="start">SCHEMATIC • large-genus limit and multiplicity</text>
+</g></svg>

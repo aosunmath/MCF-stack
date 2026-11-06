@@ -2606,6 +2606,775 @@
       "tag": "225751B3C7E8",
       "model": "immortal-product",
       "illustration_status": "Product-manifold schematic"
+    },
+    {
+      "label": "ex:catalogue-nguyen-shrinking-saddles",
+      "notes": "Nguyen uses H-vector = −X-perp. Multiply the source surface by √2 for this catalogue. No identification with the KKM construction is asserted.",
+      "citations": [
+        "CatNguyenShrinker2014"
+      ],
+      "cases": [
+        {
+          "name": "Sufficiently large m; genus m−1",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Connected orientable genus-(m−1) surface with one puncture; m sufficiently large.",
+          "genus": {
+            "key": "higher",
+            "text": "g=m−1, for every sufficiently large integer m."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One asymptotically conical graphical end."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by quadratic area growth; no scalar value or uniform numerical bound recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁=λ for M=√2 times the source shrinker; finite, value unrecorded."
+          }
+        }
+      ],
+      "title": "Nguyen's one-ended shrinking saddles",
+      "section": "nguyen-s-one-ended-shrinking-saddles",
+      "category": "shrinkers",
+      "tag": "B28BB2912147",
+      "model": "nguyen-m-saddles",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-angenent-torus-cylinders",
+      "notes": "The product formula and entropy factorization are exact; the torus factor and its quoted entropy are numerical in the picture. Surface genus does not apply to the product.",
+      "citations": [
+        "CatAngenent1992",
+        "CatBerchenkoKogan2021",
+        "CatCLSZ2026"
+      ],
+      "cases": [
+        {
+          "name": "Torus times one Euclidean direction",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "T²×R",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface: intrinsic dimension k+2≥3; its torus factor has genus one."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends with compact torus cross-sections."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "numerical",
+            "text": "Exactly λ(T²×Rᵏ)=λ(T²); the torus estimate ≈1.85122 is numerical, without certified error bounds.",
+            "value": 1.85122
+          },
+          "gaussian": {
+            "status": "numerical",
+            "text": "Exactly F₀,₁(T²×Rᵏ)=F₀,₁(T²)=λ(T²); numerical estimate ≈1.85122.",
+            "value": 1.85122
+          }
+        },
+        {
+          "name": "Torus times at least two Euclidean directions",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "T²×Rᵏ, k≥2",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface: intrinsic dimension k+2≥3; its torus factor has genus one."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end for k≥2."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "numerical",
+            "text": "Exactly λ(T²×Rᵏ)=λ(T²); the torus estimate ≈1.85122 is numerical, without certified error bounds.",
+            "value": 1.85122
+          },
+          "gaussian": {
+            "status": "numerical",
+            "text": "Exactly F₀,₁(T²×Rᵏ)=F₀,₁(T²)=λ(T²); numerical estimate ≈1.85122.",
+            "value": 1.85122
+          }
+        }
+      ],
+      "title": "Angenent torus cylinders",
+      "section": "angenent-torus-cylinders",
+      "category": "shrinkers",
+      "tag": "FA65887C28F1",
+      "model": "angenent-torus-cylinder",
+      "illustration_status": "Numerical R4 product slices"
+    },
+    {
+      "label": "ex:catalogue-iw-two-ended",
+      "notes": "Write h for shrinker genus; the source uses a compact wheel of genus g=h+1. This construction is not identified with Ketover’s family.",
+      "citations": [
+        "CatIlmanenWhite2025"
+      ],
+      "cases": [
+        {
+          "name": "All genera h ≥ 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-h surface with two punctures",
+          "genus": {
+            "key": "higher",
+            "text": "Every integer h ≥ 2"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Exactly 2, both asymptotically conical"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        }
+      ],
+      "title": "Ilmanen–White two-ended shrinkers",
+      "section": "ilmanen-white-two-ended-shrinkers",
+      "category": "shrinkers",
+      "tag": "4522A41972E4",
+      "model": "iw-two-ended",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-shao-zou-stacking",
+      "notes": "For each fixed k ≥ 2, m must be sufficiently large depending on k. There are m bridges between each pair of neighboring sheets.",
+      "citations": [
+        "CatShaoZou2025"
+      ],
+      "cases": [
+        {
+          "name": "Two stacked planes",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-(m−1) surface with two punctures",
+          "genus": {
+            "key": "higher",
+            "text": "m−1 for sufficiently large m"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Exactly 2 conical ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        },
+        {
+          "name": "Three stacked planes",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-2(m−1) surface with three punctures",
+          "genus": {
+            "key": "higher",
+            "text": "2(m−1) for sufficiently large m"
+          },
+          "ends": {
+            "key": "3",
+            "text": "Exactly 3 conical ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        },
+        {
+          "name": "k stacked planes, k ≥ 4",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-(k−1)(m−1) surface with k punctures",
+          "genus": {
+            "key": "higher",
+            "text": "(k−1)(m−1), m sufficiently large for fixed k"
+          },
+          "ends": {
+            "key": "many",
+            "text": "Exactly k conical ends, any fixed k ≥ 4"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        }
+      ],
+      "title": "Shao–Zou shrinkers with any prescribed number of ends",
+      "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+      "category": "shrinkers",
+      "tag": "4BFAC8529BEA",
+      "model": "shao-zou-stacking",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-hmw-platonic-polygon",
+      "notes": "MCF construction, separate from the min-max entries; no equality or noncongruence theorem is asserted. Compact numerical pictures do not determine compactness of the theorem’s selected surfaces.",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "cases": [
+        {
+          "name": "Platonic face-center ray configurations",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable surface of genus q−1, where q is the number of faces; compactness and ends unresolved",
+          "genus": {
+            "key": "higher",
+            "text": "3, 5, 7, 11, 19 for tetrahedron, cube, octahedron, dodecahedron, icosahedron"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not determined by Theorem 12"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        },
+        {
+          "name": "Regular n-gon ray configurations, n ≥ 3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable surface of genus n−1; compactness and end count not specified in the general theorem",
+          "genus": {
+            "key": "higher",
+            "text": "n−1, n ≥ 3"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not determined by Theorem 12"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        },
+        {
+          "name": "Regular n-gon, sufficiently large n",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact orientable genus-(n−1) surface",
+          "genus": {
+            "key": "higher",
+            "text": "n−1 for sufficiently large n"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Exact end count not recorded"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; an exact value or numerical upper bound is not recorded for this construction."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; an exact value or numerical upper bound is not recorded for this construction."
+          }
+        }
+      ],
+      "title": "Flow-generated Platonic and polygonal shrinkers",
+      "section": "flow-generated-platonic-and-polygonal-shrinkers",
+      "category": "shrinkers",
+      "tag": "A455BCCC51D0",
+      "model": "hmw-platonic-polygon",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-hmw-one-ended",
+      "notes": "The Euclidean shrinker is a tangent flow of an intrinsic compact flow in S²×ℝ. Choose 1+4/e < δ < 1+√(2π/e); the constructed member depends on this choice.",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "cases": [
+        {
+          "name": "Genus-one member",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact orientable genus-one surface containing two horizontal lines",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Exact number not specified for small genus"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Genus g ≥ 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact orientable genus-g surface containing g+1 horizontal lines",
+          "genus": {
+            "key": "higher",
+            "text": "Every integer g ≥ 2"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Exact number not specified in the all-genus theorem"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Sufficiently large genus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-g surface with one puncture",
+          "genus": {
+            "key": "higher",
+            "text": "Every sufficiently large integer g"
+          },
+          "ends": {
+            "key": "1",
+            "text": "Exactly 1 asymptotically conical end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ < δ < 1+√(2π/e) < 3, for a chosen δ > 1+4/e.",
+            "upper": 2.520346901066281,
+            "upper_strict": true
+          }
+        }
+      ],
+      "title": "Flow-generated sphere–plane shrinkers",
+      "section": "flow-generated-sphere-plane-shrinkers",
+      "category": "shrinkers",
+      "tag": "45B364E949D5",
+      "model": "hmw-one-ended",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-hmw-three-ended",
+      "notes": "The genus 2g and exactly three ends are proved only for g sufficiently large. The Euclidean shrinker arises from an initial compact flow in S²×ℝ.",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "cases": [
+        {
+          "name": "Large-genus three-ended subfamily",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable genus-2g surface with three punctures",
+          "genus": {
+            "key": "higher",
+            "text": "2g for sufficiently large integers g"
+          },
+          "ends": {
+            "key": "3",
+            "text": "Exactly 3 asymptotically conical annular ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ ≤ Λ < ∞ uniformly in g; no numerical value for Λ is specified."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ ≤ Λ < ∞ uniformly in g; no numerical value for Λ is specified."
+          }
+        }
+      ],
+      "title": "Flow-generated three-ended shrinkers",
+      "section": "flow-generated-three-ended-shrinkers",
+      "category": "shrinkers",
+      "tag": "5CED6ED3B586",
+      "model": "hmw-three-ended",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-ketover-platonic",
+      "notes": "Five equivariant min-max constructions. Compactness and ends are not proved; the diagram illustrates sweepout topology. No identification with later constructions is assumed.",
+      "citations": [
+        "CatKetover2016"
+      ],
+      "cases": [
+        {
+          "name": "Tetrahedral symmetry: genus 3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable embedded surface of genus 3; T₁₂ rotation symmetry. The doubled 4-face sweepout does not establish compactness of its limit.",
+          "genus": {
+            "key": "higher",
+            "text": "3"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "4/e < λ < 8/e; exact value not given.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Cubic symmetry: genus 5",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable embedded surface of genus 5; O₂₄ rotation symmetry. The doubled 6-face sweepout does not establish compactness of its limit.",
+          "genus": {
+            "key": "higher",
+            "text": "5"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "4/e < λ < 8/e; exact value not given.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Octahedral symmetry: genus 7",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable embedded surface of genus 7; O₂₄ rotation symmetry. The doubled 8-face sweepout does not establish compactness of its limit.",
+          "genus": {
+            "key": "higher",
+            "text": "7"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "4/e < λ < 8/e; exact value not given.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Dodecahedral symmetry: genus 11",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable embedded surface of genus 11; I₆₀ rotation symmetry. The doubled 12-face sweepout does not establish compactness of its limit.",
+          "genus": {
+            "key": "higher",
+            "text": "11"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "4/e < λ < 8/e; exact value not given.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Icosahedral symmetry: genus 19",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable embedded surface of genus 19; I₆₀ rotation symmetry. The doubled 20-face sweepout does not establish compactness of its limit.",
+          "genus": {
+            "key": "higher",
+            "text": "19"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "4/e < λ < 8/e; exact value not given.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker; 4/e < F₀,₁ < 8/e.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        }
+      ],
+      "title": "Ketover shrinkers with Platonic symmetry",
+      "section": "ketover-shrinkers-with-platonic-symmetry",
+      "category": "shrinkers",
+      "tag": "AE0CC89EB3E2",
+      "model": "ketover-platonic",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-swz-large-entropy",
+      "notes": "Gaussian-width sequence for dimensions 2–6; a separate Euclidean-product argument extends unbounded entropy with finite index to all dimensions ≥ 2. The theorem does not prescribe genus, ends, or compactness of the base examples.",
+      "citations": [
+        "CatSunWangZhou2024"
+      ],
+      "cases": [
+        {
+          "name": "Gaussian-width surfaces, n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Connected embedded surface; topology not specified by the width theorem",
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "λ(Σₖ) = ωₖ, with growth comparable to k^(1/(n+1)); finite for each k and unbounded as k → ∞. No individual numerical values given."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁(Σₖ) = λ(Σₖ) = ωₖ for the normalized shrinker; growth comparable to k^(1/(n+1))."
+          }
+        },
+        {
+          "name": "Gaussian-width hypersurfaces, 3 ≤ n ≤ 6",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Connected embedded n-dimensional hypersurface; topology not specified by the width theorem",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "λ(Σₖ) = ωₖ, with growth comparable to k^(1/(n+1)); finite for each k and unbounded as k → ∞. No individual numerical values given."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁(Σₖ) = λ(Σₖ) = ωₖ for the normalized shrinker; growth comparable to k^(1/(n+1))."
+          }
+        },
+        {
+          "name": "Euclidean product extension, n ≥ 7",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Σ⁶ × ℝ^(n−6), for a six-dimensional Gaussian-width shrinker; base topology not specified",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "For every Λ > 0 choose λ > Λ finite; λ(Σ⁶ × ℝ^(n−6)) = λ(Σ⁶). Finite Gaussian index is preserved."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized product shrinker; equal to the Gaussian area of the base."
+          }
+        }
+      ],
+      "title": "Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+      "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+      "category": "shrinkers",
+      "tag": "0177A2718D72",
+      "model": "swz-large-entropy",
+      "illustration_status": "Original schematic"
+    },
+    {
+      "label": "ex:catalogue-chu-sun-genus-one",
+      "notes": "A multiplicity-one genus-one tangent-flow model with entropy strictly below the Drugan–Nguyen shrinking doughnut. Compactness and ends are not specified. No identification with the BNS genus-one shrinker is established.",
+      "citations": [
+        "CatChuSun2025",
+        "CatDruganNguyen2018"
+      ],
+      "cases": [
+        {
+          "name": "Lower-entropy genus-one shrinker",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Embedded orientable genus-one surface; compactness not specified",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established in the cited existence theorem"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "λ(Σ) < λ(Drugan–Nguyen torus) < 2; no exact value supplied.",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁(Σ) = λ(Σ) < λ(Drugan–Nguyen torus) < 2.",
+            "upper": 2,
+            "upper_strict": true
+          }
+        }
+      ],
+      "title": "Chu–Sun genus-one shrinkers below the shrinking doughnut",
+      "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+      "category": "shrinkers",
+      "tag": "AE7721D6799F",
+      "model": "chu-sun-genus-one",
+      "illustration_status": "Original schematic"
     }
   ]
 }

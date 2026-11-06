@@ -306,9 +306,189 @@
     "anchor": ""
   },
   {
+    "tag": "BA9331C1",
+    "label": "sec:catalogue-nguyen-shrinking-saddles",
+    "title": "17 Nguyen's one-ended shrinking saddles",
+    "kind": "chapter",
+    "page": "tag/BA9331C1/index.html",
+    "canonical_tag": "EDE40E8E1379",
+    "anchor": ""
+  },
+  {
+    "tag": "F6ED71FE",
+    "label": "ex:catalogue-nguyen-shrinking-saddles",
+    "title": "Example 17.1 (Nguyen's one-ended shrinking saddles)",
+    "kind": "example",
+    "page": "tag/F6ED71FE/index.html",
+    "canonical_tag": "B28BB2912147",
+    "anchor": ""
+  },
+  {
+    "tag": "4F2641F6",
+    "label": "sec:catalogue-angenent-torus-cylinders",
+    "title": "18 Angenent torus cylinders",
+    "kind": "chapter",
+    "page": "tag/4F2641F6/index.html",
+    "canonical_tag": "99055D91C188",
+    "anchor": ""
+  },
+  {
+    "tag": "185EA272",
+    "label": "ex:catalogue-angenent-torus-cylinders",
+    "title": "Example 18.1 (Angenent torus cylinders)",
+    "kind": "example",
+    "page": "tag/185EA272/index.html",
+    "canonical_tag": "FA65887C28F1",
+    "anchor": ""
+  },
+  {
+    "tag": "98538DB9",
+    "label": "sec:catalogue-iw-two-ended",
+    "title": "19 Ilmanen\u2013White two-ended shrinkers",
+    "kind": "chapter",
+    "page": "tag/98538DB9/index.html",
+    "canonical_tag": "C7322187A6FC",
+    "anchor": ""
+  },
+  {
+    "tag": "F3DA0C49",
+    "label": "ex:catalogue-iw-two-ended",
+    "title": "Example 19.1 (Ilmanen\u2013White two-ended shrinkers)",
+    "kind": "example",
+    "page": "tag/F3DA0C49/index.html",
+    "canonical_tag": "4522A41972E4",
+    "anchor": ""
+  },
+  {
+    "tag": "AC93AF6C",
+    "label": "sec:catalogue-shao-zou-stacking",
+    "title": "20 Shao\u2013Zou shrinkers with any prescribed number of ends",
+    "kind": "chapter",
+    "page": "tag/AC93AF6C/index.html",
+    "canonical_tag": "EB2734BB2E46",
+    "anchor": ""
+  },
+  {
+    "tag": "55D3E8EB",
+    "label": "ex:catalogue-shao-zou-stacking",
+    "title": "Example 20.1 (Shao\u2013Zou plane stackings)",
+    "kind": "example",
+    "page": "tag/55D3E8EB/index.html",
+    "canonical_tag": "4BFAC8529BEA",
+    "anchor": ""
+  },
+  {
+    "tag": "DDB39012",
+    "label": "sec:catalogue-hmw-platonic-polygon",
+    "title": "21 Flow-generated Platonic and polygonal shrinkers",
+    "kind": "chapter",
+    "page": "tag/DDB39012/index.html",
+    "canonical_tag": "1AF8BDC11238",
+    "anchor": ""
+  },
+  {
+    "tag": "4B406BA4",
+    "label": "ex:catalogue-hmw-platonic-polygon",
+    "title": "Example 21.1 (Hoffman\u2013Martin\u2013White ray-avoiding shrinkers)",
+    "kind": "example",
+    "page": "tag/4B406BA4/index.html",
+    "canonical_tag": "A455BCCC51D0",
+    "anchor": ""
+  },
+  {
+    "tag": "08077F3D",
+    "label": "sec:catalogue-hmw-one-ended",
+    "title": "22 Flow-generated sphere\u2013plane shrinkers",
+    "kind": "chapter",
+    "page": "tag/08077F3D/index.html",
+    "canonical_tag": "036F44595178",
+    "anchor": ""
+  },
+  {
+    "tag": "8D1FB423",
+    "label": "ex:catalogue-hmw-one-ended",
+    "title": "Example 22.1 (Hoffman\u2013Martin\u2013White sphere\u2013plane family)",
+    "kind": "example",
+    "page": "tag/8D1FB423/index.html",
+    "canonical_tag": "45B364E949D5",
+    "anchor": ""
+  },
+  {
+    "tag": "099E25A3",
+    "label": "sec:catalogue-hmw-three-ended",
+    "title": "23 Flow-generated three-ended shrinkers",
+    "kind": "chapter",
+    "page": "tag/099E25A3/index.html",
+    "canonical_tag": "5245200FA4A7",
+    "anchor": ""
+  },
+  {
+    "tag": "E526106D",
+    "label": "ex:catalogue-hmw-three-ended",
+    "title": "Example 23.1 (Hoffman\u2013Martin\u2013White three-ended family)",
+    "kind": "example",
+    "page": "tag/E526106D/index.html",
+    "canonical_tag": "5CED6ED3B586",
+    "anchor": ""
+  },
+  {
+    "tag": "468F62D8",
+    "label": "sec:catalogue-ketover-platonic",
+    "title": "24 Ketover shrinkers with Platonic symmetry",
+    "kind": "chapter",
+    "page": "tag/468F62D8/index.html",
+    "canonical_tag": "B675C6112328",
+    "anchor": ""
+  },
+  {
+    "tag": "D8E83785",
+    "label": "ex:catalogue-ketover-platonic",
+    "title": "Example 24.1 (Ketover shrinkers with Platonic symmetry)",
+    "kind": "example",
+    "page": "tag/D8E83785/index.html",
+    "canonical_tag": "AE0CC89EB3E2",
+    "anchor": ""
+  },
+  {
+    "tag": "22D51C11",
+    "label": "sec:catalogue-swz-large-entropy",
+    "title": "25 Sun\u2013Wang\u2013Zhou shrinkers of arbitrarily large entropy",
+    "kind": "chapter",
+    "page": "tag/22D51C11/index.html",
+    "canonical_tag": "879F42A66D65",
+    "anchor": ""
+  },
+  {
+    "tag": "2649B70D",
+    "label": "ex:catalogue-swz-large-entropy",
+    "title": "Example 25.1 (Sun\u2013Wang\u2013Zhou Gaussian-width shrinkers)",
+    "kind": "example",
+    "page": "tag/2649B70D/index.html",
+    "canonical_tag": "0177A2718D72",
+    "anchor": ""
+  },
+  {
+    "tag": "DEB2F0AE",
+    "label": "sec:catalogue-chu-sun-genus-one",
+    "title": "26 Chu\u2013Sun genus-one shrinkers below the shrinking doughnut",
+    "kind": "chapter",
+    "page": "tag/DEB2F0AE/index.html",
+    "canonical_tag": "B050FA22AB2D",
+    "anchor": ""
+  },
+  {
+    "tag": "2FE2FC92",
+    "label": "ex:catalogue-chu-sun-genus-one",
+    "title": "Example 26.1 (Chu\u2013Sun lower-entropy genus-one shrinkers)",
+    "kind": "example",
+    "page": "tag/2FE2FC92/index.html",
+    "canonical_tag": "AE7721D6799F",
+    "anchor": ""
+  },
+  {
     "tag": "7E5C7833",
     "label": "sec:catalogue-grim-reaper",
-    "title": "17 The grim reaper and its cylinders",
+    "title": "27 The grim reaper and its cylinders",
     "kind": "chapter",
     "page": "tag/7E5C7833/index.html",
     "canonical_tag": "505486401C44",
@@ -317,7 +497,7 @@
   {
     "tag": "B992AB57",
     "label": "ex:catalogue-grim-reaper",
-    "title": "Example 17.1 (The grim reaper and its cylinders)",
+    "title": "Example 27.1 (The grim reaper and its cylinders)",
     "kind": "example",
     "page": "tag/B992AB57/index.html",
     "canonical_tag": "3B1939BC4D74",
@@ -326,7 +506,7 @@
   {
     "tag": "613D030C",
     "label": "sec:catalogue-tilted-grim-reaper",
-    "title": "18 Tilted grim-reaper cylinders",
+    "title": "28 Tilted grim-reaper cylinders",
     "kind": "chapter",
     "page": "tag/613D030C/index.html",
     "canonical_tag": "9A8E5E528EEB",
@@ -335,7 +515,7 @@
   {
     "tag": "B95BEB4E",
     "label": "ex:catalogue-tilted-grim-reaper",
-    "title": "Example 18.1 (Tilted grim-reaper cylinders)",
+    "title": "Example 28.1 (Tilted grim-reaper cylinders)",
     "kind": "example",
     "page": "tag/B95BEB4E/index.html",
     "canonical_tag": "56A3E33A9D04",
@@ -344,7 +524,7 @@
   {
     "tag": "C86A12BD",
     "label": "sec:catalogue-bowl-translator",
-    "title": "19 The rotational bowl translator",
+    "title": "29 The rotational bowl translator",
     "kind": "chapter",
     "page": "tag/C86A12BD/index.html",
     "canonical_tag": "38B2DD284E09",
@@ -353,7 +533,7 @@
   {
     "tag": "54CBC7FC",
     "label": "ex:catalogue-bowl-translator",
-    "title": "Example 19.1 (The rotational bowl translator)",
+    "title": "Example 29.1 (The rotational bowl translator)",
     "kind": "example",
     "page": "tag/54CBC7FC/index.html",
     "canonical_tag": "ECF360A3D482",
@@ -362,7 +542,7 @@
   {
     "tag": "1B76070C",
     "label": "sec:catalogue-translating-catenoid",
-    "title": "20 Rotational translating catenoids",
+    "title": "30 Rotational translating catenoids",
     "kind": "chapter",
     "page": "tag/1B76070C/index.html",
     "canonical_tag": "FEA31DEDC853",
@@ -371,7 +551,7 @@
   {
     "tag": "20DD1EEB",
     "label": "ex:catalogue-translating-catenoid",
-    "title": "Example 20.1 (Rotational translating catenoids)",
+    "title": "Example 30.1 (Rotational translating catenoids)",
     "kind": "example",
     "page": "tag/20DD1EEB/index.html",
     "canonical_tag": "72E3A9DEA98C",
@@ -380,7 +560,7 @@
   {
     "tag": "1B861E2A",
     "label": "sec:catalogue-delta-wing",
-    "title": "21 Strictly convex delta-wing translators",
+    "title": "31 Strictly convex delta-wing translators",
     "kind": "chapter",
     "page": "tag/1B861E2A/index.html",
     "canonical_tag": "9BBF93D61D7A",
@@ -389,7 +569,7 @@
   {
     "tag": "40F79154",
     "label": "ex:catalogue-delta-wing",
-    "title": "Example 21.1 (Strictly convex delta-wing translators)",
+    "title": "Example 31.1 (Strictly convex delta-wing translators)",
     "kind": "example",
     "page": "tag/40F79154/index.html",
     "canonical_tag": "B72E7DC6B42E",
@@ -398,7 +578,7 @@
   {
     "tag": "2E5159FD",
     "label": "sec:catalogue-wang-entire-translators",
-    "title": "22 Nonrotational entire convex translators",
+    "title": "32 Nonrotational entire convex translators",
     "kind": "chapter",
     "page": "tag/2E5159FD/index.html",
     "canonical_tag": "BD00A99565D1",
@@ -407,7 +587,7 @@
   {
     "tag": "BCD12F3A",
     "label": "ex:catalogue-wang-entire-translators",
-    "title": "Example 22.1 (Nonrotational entire convex translators)",
+    "title": "Example 32.1 (Nonrotational entire convex translators)",
     "kind": "example",
     "page": "tag/BCD12F3A/index.html",
     "canonical_tag": "0F00F9295CD9",
@@ -416,7 +596,7 @@
   {
     "tag": "1907053D",
     "label": "sec:catalogue-prescribed-apex-translators",
-    "title": "23 Translators with prescribed apex curvatures",
+    "title": "33 Translators with prescribed apex curvatures",
     "kind": "chapter",
     "page": "tag/1907053D/index.html",
     "canonical_tag": "DCD9F7224DF3",
@@ -425,7 +605,7 @@
   {
     "tag": "A3CDAF2B",
     "label": "ex:catalogue-prescribed-apex-translators",
-    "title": "Example 23.1 (Translators with prescribed apex curvatures)",
+    "title": "Example 33.1 (Translators with prescribed apex curvatures)",
     "kind": "example",
     "page": "tag/A3CDAF2B/index.html",
     "canonical_tag": "D68656E88625",
@@ -434,7 +614,7 @@
   {
     "tag": "B0D651E7",
     "label": "sec:catalogue-scherkenoids",
-    "title": "24 Scherkenoid translators",
+    "title": "34 Scherkenoid translators",
     "kind": "chapter",
     "page": "tag/B0D651E7/index.html",
     "canonical_tag": "9E847D647A0C",
@@ -443,7 +623,7 @@
   {
     "tag": "6B56E4AF",
     "label": "ex:catalogue-scherkenoids",
-    "title": "Example 24.1 (Scherkenoid translators)",
+    "title": "Example 34.1 (Scherkenoid translators)",
     "kind": "example",
     "page": "tag/6B56E4AF/index.html",
     "canonical_tag": "C6C5A44F27CC",
@@ -452,7 +632,7 @@
   {
     "tag": "AF906C13",
     "label": "sec:catalogue-pitchfork",
-    "title": "25 The pitchfork translator",
+    "title": "35 The pitchfork translator",
     "kind": "chapter",
     "page": "tag/AF906C13/index.html",
     "canonical_tag": "64055D697644",
@@ -461,7 +641,7 @@
   {
     "tag": "474E0E06",
     "label": "ex:catalogue-pitchfork",
-    "title": "Example 25.1 (The pitchfork translator)",
+    "title": "Example 35.1 (The pitchfork translator)",
     "kind": "example",
     "page": "tag/474E0E06/index.html",
     "canonical_tag": "B5E7AB44607B",
@@ -470,7 +650,7 @@
   {
     "tag": "A94B1E75",
     "label": "sec:catalogue-nguyen-tridents",
-    "title": "26 Nguyen translating tridents",
+    "title": "36 Nguyen translating tridents",
     "kind": "chapter",
     "page": "tag/A94B1E75/index.html",
     "canonical_tag": "31505E08B028",
@@ -479,7 +659,7 @@
   {
     "tag": "F7C75286",
     "label": "ex:catalogue-nguyen-tridents",
-    "title": "Example 26.1 (Nguyen translating tridents)",
+    "title": "Example 36.1 (Nguyen translating tridents)",
     "kind": "example",
     "page": "tag/F7C75286/index.html",
     "canonical_tag": "27C982677562",
@@ -488,7 +668,7 @@
   {
     "tag": "0A64E1E7",
     "label": "sec:catalogue-finite-genus-translators",
-    "title": "27 Finite-genus translators with three ends",
+    "title": "37 Finite-genus translators with three ends",
     "kind": "chapter",
     "page": "tag/0A64E1E7/index.html",
     "canonical_tag": "8609A35E7601",
@@ -497,7 +677,7 @@
   {
     "tag": "DE343151",
     "label": "ex:catalogue-finite-genus-translators",
-    "title": "Example 27.1 (Finite-genus translators with three ends)",
+    "title": "Example 37.1 (Finite-genus translators with three ends)",
     "kind": "example",
     "page": "tag/DE343151/index.html",
     "canonical_tag": "85D3C19BE7E6",
@@ -506,7 +686,7 @@
   {
     "tag": "BEE5F8F6",
     "label": "sec:catalogue-sun-wang-torus-translators",
-    "title": "28 Translators with an Angenent-torus end",
+    "title": "38 Translators with an Angenent-torus end",
     "kind": "chapter",
     "page": "tag/BEE5F8F6/index.html",
     "canonical_tag": "C8173134CEA6",
@@ -515,7 +695,7 @@
   {
     "tag": "210DBE2B",
     "label": "ex:catalogue-sun-wang-torus-translators",
-    "title": "Example 28.1 (Translators with an Angenent-torus end)",
+    "title": "Example 38.1 (Translators with an Angenent-torus end)",
     "kind": "example",
     "page": "tag/210DBE2B/index.html",
     "canonical_tag": "BF18BDD64F8E",
@@ -524,7 +704,7 @@
   {
     "tag": "8A842DE0",
     "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
-    "title": "29 Translators with high-genus spherical-doubling ends",
+    "title": "39 Translators with high-genus spherical-doubling ends",
     "kind": "chapter",
     "page": "tag/8A842DE0/index.html",
     "canonical_tag": "A0A7AC0D200C",
@@ -533,7 +713,7 @@
   {
     "tag": "74BE3892",
     "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
-    "title": "Example 29.1 (Translators with high-genus spherical-doubling ends)",
+    "title": "Example 39.1 (Translators with high-genus spherical-doubling ends)",
     "kind": "example",
     "page": "tag/74BE3892/index.html",
     "canonical_tag": "9B1B88A4317F",
@@ -542,7 +722,7 @@
   {
     "tag": "DDDA013A",
     "label": "sec:catalogue-expanding-corners",
-    "title": "30 Expanding smoothings of planar corners",
+    "title": "40 Expanding smoothings of planar corners",
     "kind": "chapter",
     "page": "tag/DDDA013A/index.html",
     "canonical_tag": "D2DB1F7A1178",
@@ -551,7 +731,7 @@
   {
     "tag": "D6F08E15",
     "label": "ex:catalogue-expanding-corners",
-    "title": "Example 30.1 (Even graphical corner expanders)",
+    "title": "Example 40.1 (Even graphical corner expanders)",
     "kind": "example",
     "page": "tag/D6F08E15/index.html",
     "canonical_tag": "72808FA576A9",
@@ -560,7 +740,7 @@
   {
     "tag": "03B823D0",
     "label": "sec:catalogue-rotational-expanders",
-    "title": "31 Rotational graphical expanders over round cones",
+    "title": "41 Rotational graphical expanders over round cones",
     "kind": "chapter",
     "page": "tag/03B823D0/index.html",
     "canonical_tag": "A178E87D4BA0",
@@ -569,7 +749,7 @@
   {
     "tag": "10CF4F59",
     "label": "ex:catalogue-rotational-expanders",
-    "title": "Example 31.1 (Entire radial cone smoothings)",
+    "title": "Example 41.1 (Entire radial cone smoothings)",
     "kind": "example",
     "page": "tag/10CF4F59/index.html",
     "canonical_tag": "D3CC5E948716",
@@ -578,7 +758,7 @@
   {
     "tag": "E0945D42",
     "label": "sec:catalogue-two-sheet-expanders",
-    "title": "32 Two-sheeted expanders of rotational double cones",
+    "title": "42 Two-sheeted expanders of rotational double cones",
     "kind": "chapter",
     "page": "tag/E0945D42/index.html",
     "canonical_tag": "ADE41440A542",
@@ -587,7 +767,7 @@
   {
     "tag": "1E167729",
     "label": "ex:catalogue-two-sheet-expanders",
-    "title": "Example 32.1 (Disconnected double-cone smoothings)",
+    "title": "Example 42.1 (Disconnected double-cone smoothings)",
     "kind": "example",
     "page": "tag/1E167729/index.html",
     "canonical_tag": "4F35D93CA4BD",
@@ -596,7 +776,7 @@
   {
     "tag": "9E9198D4",
     "label": "sec:catalogue-one-sheet-expanders",
-    "title": "33 One-sheeted expanders of rotational double cones",
+    "title": "43 One-sheeted expanders of rotational double cones",
     "kind": "chapter",
     "page": "tag/9E9198D4/index.html",
     "canonical_tag": "40FCBC562153",
@@ -605,7 +785,7 @@
   {
     "tag": "4A120F3D",
     "label": "ex:catalogue-one-sheet-expanders",
-    "title": "Example 33.1 (Connected double-cone smoothings)",
+    "title": "Example 43.1 (Connected double-cone smoothings)",
     "kind": "example",
     "page": "tag/4A120F3D/index.html",
     "canonical_tag": "3A4775A9BD2C",
@@ -614,7 +794,7 @@
   {
     "tag": "BD0F3D26",
     "label": "sec:catalogue-mean-convex-expanders",
-    "title": "34 One-sided expanders from mean-convex cones",
+    "title": "44 One-sided expanders from mean-convex cones",
     "kind": "chapter",
     "page": "tag/BD0F3D26/index.html",
     "canonical_tag": "5C7DD27422AD",
@@ -623,7 +803,7 @@
   {
     "tag": "DC248467",
     "label": "ex:catalogue-mean-convex-expanders",
-    "title": "Example 34.1 (Ding's smooth minimizing expanders)",
+    "title": "Example 44.1 (Ding's smooth minimizing expanders)",
     "kind": "example",
     "page": "tag/DC248467/index.html",
     "canonical_tag": "A6044506F79A",
@@ -632,7 +812,7 @@
   {
     "tag": "05CAD4B7",
     "label": "sec:catalogue-expanding-networks",
-    "title": "35 Self-expanding planar tree networks",
+    "title": "45 Self-expanding planar tree networks",
     "kind": "chapter",
     "page": "tag/05CAD4B7/index.html",
     "canonical_tag": "23B41DF2B95E",
@@ -641,7 +821,7 @@
   {
     "tag": "6FB28705",
     "label": "ex:catalogue-expanding-networks",
-    "title": "Example 35.1 (Regular expanding trees with prescribed rays)",
+    "title": "Example 45.1 (Regular expanding trees with prescribed rays)",
     "kind": "example",
     "page": "tag/6FB28705/index.html",
     "canonical_tag": "16898F334139",
@@ -650,7 +830,7 @@
   {
     "tag": "BA55C10D",
     "label": "sec:catalogue-stationary-catenoid",
-    "title": "36 The catenoid as an eternal stationary flow",
+    "title": "46 The catenoid as an eternal stationary flow",
     "kind": "chapter",
     "page": "tag/BA55C10D/index.html",
     "canonical_tag": "C9F0102B7272",
@@ -659,7 +839,7 @@
   {
     "tag": "7C37C625",
     "label": "ex:catalogue-stationary-catenoid",
-    "title": "Example 36.1 (Stationary catenoid flow)",
+    "title": "Example 46.1 (Stationary catenoid flow)",
     "kind": "example",
     "page": "tag/7C37C625/index.html",
     "canonical_tag": "AC1C0D984A58",
@@ -668,7 +848,7 @@
   {
     "tag": "1E59C846",
     "label": "sec:catalogue-whitney-sphere",
-    "title": "37 Mean curvature evolution of the Whitney sphere",
+    "title": "47 Mean curvature evolution of the Whitney sphere",
     "kind": "chapter",
     "page": "tag/1E59C846/index.html",
     "canonical_tag": "2E15631C1593",
@@ -677,7 +857,7 @@
   {
     "tag": "64D1A038",
     "label": "ex:catalogue-whitney-sphere",
-    "title": "Example 37.1 (A collapsing Lagrangian immersed sphere)",
+    "title": "Example 47.1 (A collapsing Lagrangian immersed sphere)",
     "kind": "example",
     "page": "tag/64D1A038/index.html",
     "canonical_tag": "245DFF2BED27",
@@ -686,7 +866,7 @@
   {
     "tag": "6548DC53",
     "label": "sec:catalogue-degenerate-neckpinches",
-    "title": "38 Rotational degenerate neckpinch solutions",
+    "title": "48 Rotational degenerate neckpinch solutions",
     "kind": "chapter",
     "page": "tag/6548DC53/index.html",
     "canonical_tag": "1E4AD3904D39",
@@ -695,7 +875,7 @@
   {
     "tag": "AF275232",
     "label": "ex:catalogue-degenerate-neckpinches",
-    "title": "Example 38.1 (Angenent\u2013Vel\u00e1zquez type-II singularities)",
+    "title": "Example 48.1 (Angenent\u2013Vel\u00e1zquez type-II singularities)",
     "kind": "example",
     "page": "tag/AF275232/index.html",
     "canonical_tag": "922034E946EB",
@@ -704,7 +884,7 @@
   {
     "tag": "22B7F4C2",
     "label": "sec:catalogue-angenent-oval",
-    "title": "39 The Angenent oval as an explicit ancient flow",
+    "title": "49 The Angenent oval as an explicit ancient flow",
     "kind": "chapter",
     "page": "tag/22B7F4C2/index.html",
     "canonical_tag": "34E98635F82B",
@@ -713,7 +893,7 @@
   {
     "tag": "F1C9E396",
     "label": "ex:catalogue-angenent-oval",
-    "title": "Example 39.1 (The ancient paperclip curve)",
+    "title": "Example 49.1 (The ancient paperclip curve)",
     "kind": "example",
     "page": "tag/F1C9E396/index.html",
     "canonical_tag": "B008243C5D96",
@@ -722,7 +902,7 @@
   {
     "tag": "11C905C4",
     "label": "sec:catalogue-ancient-torus-curves",
-    "title": "40 Ancient torus curves in higher codimension",
+    "title": "50 Ancient torus curves in higher codimension",
     "kind": "chapter",
     "page": "tag/11C905C4/index.html",
     "canonical_tag": "B6082DA55C46",
@@ -731,7 +911,7 @@
   {
     "tag": "A3E2C500",
     "label": "ex:catalogue-ancient-torus-curves",
-    "title": "Example 40.1 (Compact ancient torus curves)",
+    "title": "Example 50.1 (Compact ancient torus curves)",
     "kind": "example",
     "page": "tag/A3E2C500/index.html",
     "canonical_tag": "D28FAF32B556",
@@ -740,7 +920,7 @@
   {
     "tag": "9BF22915",
     "label": "sec:catalogue-eternal-helices",
-    "title": "41 Eternal shrinking helices",
+    "title": "51 Eternal shrinking helices",
     "kind": "chapter",
     "page": "tag/9BF22915/index.html",
     "canonical_tag": "281263153F94",
@@ -749,7 +929,7 @@
   {
     "tag": "114EAEF2",
     "label": "ex:catalogue-eternal-helices",
-    "title": "Example 41.1 (Helical curve-shortening flows)",
+    "title": "Example 51.1 (Helical curve-shortening flows)",
     "kind": "example",
     "page": "tag/114EAEF2/index.html",
     "canonical_tag": "1EF23C4EFFC0",
@@ -758,7 +938,7 @@
   {
     "tag": "E88E6E76",
     "label": "sec:catalogue-double-plane-flow",
-    "title": "42 Immortal annuli converging to a double plane",
+    "title": "52 Immortal annuli converging to a double plane",
     "kind": "chapter",
     "page": "tag/E88E6E76/index.html",
     "canonical_tag": "00966387D6EF",
@@ -767,7 +947,7 @@
   {
     "tag": "F7864FF4",
     "label": "ex:catalogue-double-plane-flow",
-    "title": "Example 42.1 (Chen\u2013Sun's noncompact multiplicity-two limit)",
+    "title": "Example 52.1 (Chen\u2013Sun's noncompact multiplicity-two limit)",
     "kind": "example",
     "page": "tag/F7864FF4/index.html",
     "canonical_tag": "A50018836027",
@@ -776,7 +956,7 @@
   {
     "tag": "BA7E1CBA",
     "label": "sec:catalogue-double-sphere-flow",
-    "title": "43 Immortal compact flows converging to a double sphere",
+    "title": "53 Immortal compact flows converging to a double sphere",
     "kind": "chapter",
     "page": "tag/BA7E1CBA/index.html",
     "canonical_tag": "0806DD487DC4",
@@ -785,7 +965,7 @@
   {
     "tag": "4D0BC7F8",
     "label": "ex:catalogue-double-sphere-flow",
-    "title": "Example 43.1 (Chen\u2013Sun's product-manifold construction)",
+    "title": "Example 53.1 (Chen\u2013Sun's product-manifold construction)",
     "kind": "example",
     "page": "tag/4D0BC7F8/index.html",
     "canonical_tag": "225751B3C7E8",

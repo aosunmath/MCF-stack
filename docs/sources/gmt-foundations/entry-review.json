@@ -403,6 +403,136 @@
       "dependencies": []
     },
     {
+      "label": "ex:catalogue-nguyen-shrinking-saddles",
+      "title": "Nguyen's one-ended shrinking saddles",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatNguyenShrinker2014"
+      ],
+      "dependencies": [
+        "ex:catalogue-kkm-one-end"
+      ]
+    },
+    {
+      "label": "ex:catalogue-angenent-torus-cylinders",
+      "title": "Angenent torus cylinders",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatAngenent1992",
+        "CatBerchenkoKogan2021",
+        "CatCLSZ2026"
+      ],
+      "dependencies": [
+        "ex:catalogue-angenent-torus"
+      ]
+    },
+    {
+      "label": "ex:catalogue-iw-two-ended",
+      "title": "Ilmanen--White two-ended shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatIlmanenWhite2025"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-shao-zou-stacking",
+      "title": "Shao--Zou plane stackings",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatShaoZou2025"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-hmw-platonic-polygon",
+      "title": "Hoffman--Martin--White ray-avoiding shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-hmw-one-ended",
+      "title": "Hoffman--Martin--White sphere--plane family",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-hmw-three-ended",
+      "title": "Hoffman--Martin--White three-ended family",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "dependencies": [
+        "ex:catalogue-hmw-one-ended"
+      ]
+    },
+    {
+      "label": "ex:catalogue-ketover-platonic",
+      "title": "Ketover shrinkers with Platonic symmetry",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatKetover2016"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-swz-large-entropy",
+      "title": "Sun--Wang--Zhou Gaussian-width shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatSunWangZhou2024"
+      ],
+      "dependencies": []
+    },
+    {
+      "label": "ex:catalogue-chu-sun-genus-one",
+      "title": "Chu--Sun lower-entropy genus-one shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "formal_verification": "none",
+      "citations": [
+        "CatChuSun2025"
+      ],
+      "dependencies": [
+        "ex:catalogue-drugan-nguyen-torus"
+      ]
+    },
+    {
       "label": "ex:catalogue-grim-reaper",
       "title": "The grim reaper and its cylinders",
       "kind": "example",

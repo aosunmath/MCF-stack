@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Hoffman–Martin–White shrinkers avoiding prescribed rays</title>
+<desc id="description">The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="22" font-weight="600" fill="#183f52" text-anchor="start">HMW Platonic and polygonal shrinkers</text>
+<text x="28" y="64" font-size="15" font-weight="400" fill="#6a8793" text-anchor="start">Prescribed rays Q encode symmetry and genus</text>
+<polyline points="177.000,204.000 245.802,218.637" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="245.80247285220523" cy="218.63705252268858" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="177.000,204.000 108.198,189.363" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="108.19752714779477" cy="189.36294747731142" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="177.000,204.000 139.413,230.793" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="139.4130377734305" cy="230.7929449248417" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="177.000,204.000 214.587,177.207" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="214.5869622265695" cy="177.2070550751583" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="177.000,204.000 177.000,131.789" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="177.0" cy="131.78881807017382" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="177.000,204.000 177.000,276.211" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="177.0" cy="276.2111819298262" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<ellipse cx="177" cy="204" rx="4" ry="4" fill="#183f52" stroke="#21667f" stroke-width="1"/>
+<polyline points="475.000,204.000 543.802,218.637" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="543.8024728522053" cy="218.63705252268858" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 488.511,234.074" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="488.5109697669437" cy="234.0736208274402" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 423.045,226.864" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="423.04543087361685" cy="226.8641392590622" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 396.703,202.437" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="396.70274221252737" cy="202.43749448516616" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 429.319,179.187" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="429.31948563839615" cy="179.1874482332439" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 496.335,174.622" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="496.3345880912298" cy="174.62175954550523" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<polyline points="475.000,204.000 547.284,192.178" fill="none" stroke="#a9572f" stroke-width="1.8" opacity="1"/>
+<ellipse cx="547.284310565081" cy="192.17848512689372" rx="3" ry="3" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<ellipse cx="475" cy="204" rx="4" ry="4" fill="#183f52" stroke="#21667f" stroke-width="1"/>
+<text x="177" y="109" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">Cube face-center rays</text>
+<text x="475" y="109" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">Regular polygon rays</text>
+<text x="177" y="302" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">6 rays → genus 5</text>
+<text x="475" y="302" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">n rays → genus n − 1</text>
+<text x="28" y="335" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">The constructed shrinker avoids Q; Q is not the surface.</text>
+<text x="28" y="360" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">Compactness and exact end counts are not fixed in general.</text>
+<text x="28" y="387" font-size="15" font-weight="600" fill="#21667f" text-anchor="start">SCHEMATIC • symmetry data, not a computed shrinker</text>
+</g></svg>
