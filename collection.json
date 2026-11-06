@@ -27,7 +27,17 @@
         "drugan-nguyen-variational-shrinking-tori",
         "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
         "ketover-self-shrinking-doubled-planes",
-        "closed-shrinkers-from-spherical-doubling"
+        "closed-shrinkers-from-spherical-doubling",
+        "nguyen-s-one-ended-shrinking-saddles",
+        "angenent-torus-cylinders",
+        "ilmanen-white-two-ended-shrinkers",
+        "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+        "flow-generated-platonic-and-polygonal-shrinkers",
+        "flow-generated-sphere-plane-shrinkers",
+        "flow-generated-three-ended-shrinkers",
+        "ketover-shrinkers-with-platonic-symmetry",
+        "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Chu–Sun lower-entropy genus-one shrinker: construction logic</title>
+<desc id="description">A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="22" font-weight="600" fill="#183f52" text-anchor="start">Chu–Sun lower-entropy genus-one shrinker</text>
+<text x="28" y="64" font-size="15" font-weight="400" fill="#6a8793" text-anchor="start">Ancient-flow construction followed by a singular blow-up</text>
+<ellipse cx="115" cy="183" rx="68" ry="45" fill="#e5eff3" stroke="#21667f" stroke-width="2.2"/>
+<ellipse cx="115" cy="183" rx="28" ry="16" fill="#f7fafb" stroke="#21667f" stroke-width="2.2"/>
+<text x="115" y="261" font-size="16" font-weight="400" fill="#183f52" text-anchor="middle">Starting torus T</text>
+<text x="115" y="282" font-size="14" font-weight="400" fill="#6a8793" text-anchor="middle">topology only</text>
+<path d="M197 183L249 183" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="264" y="138" width="126" height="91" rx="10" fill="#e5eff3"/>
+<text x="327" y="175" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">ancient</text>
+<text x="327" y="199" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">MCF</text>
+<path d="M405 183L454 183" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="429" y="252" font-size="14" font-weight="400" fill="#183f52" text-anchor="middle">blow-up</text>
+<rect x="470" y="129" width="142" height="110" rx="10" fill="#e5eff3"/>
+<text x="541" y="168" font-size="29" font-weight="600" fill="#183f52" text-anchor="middle">Σ</text>
+<text x="541" y="205" font-size="18" font-weight="400" fill="#183f52" text-anchor="middle">genus one</text>
+<text x="541" y="282" font-size="14" font-weight="400" fill="#6a8793" text-anchor="middle">shape unspecified</text>
+<text x="28" y="335" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">Strict entropy comparison: λ(Σ) &lt; λ(T) &lt; 2.</text>
+<text x="28" y="360" font-size="15" font-weight="400" fill="#183f52" text-anchor="start">No compactness, end count, or symmetry is assigned to Σ.</text>
+<text x="28" y="387" font-size="15" font-weight="600" fill="#21667f" text-anchor="start">SCHEMATIC • construction logic, not an identified surface</text>
+</g></svg>

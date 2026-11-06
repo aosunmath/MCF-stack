@@ -1,0 +1,282 @@
+"""Original diagrams for shrinkers cited in arXiv:2607.23879v1.
+
+These pictures encode construction inputs, topology, symmetry, or proved
+inequalities. None is a numerical solution of the shrinker equation. Small
+numbers of drawn necks are symbols, not claims about existence thresholds.
+Run with --output to keep draft or review assets outside the published tree.
+Only Python's standard library is required.
+"""
+from pathlib import Path
+import argparse
+import importlib.util
+import math
+
+ROOT = next(p for p in Path(__file__).resolve().parents
+            if (p / 'catalogue-visualizations.json').is_file())
+spec = importlib.util.spec_from_file_location('shrinker_figure_helpers', ROOT / 'scripts/generate_new_shrinker_schematics.py')
+base = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(base)
+BG, INK, BLUE, MUTED, PALE, SEAM = base.BG, base.INK, base.BLUE, base.MUTED, base.PALE, base.SEAM
+OUT = ROOT / 'site/assets/solitons'
+
+
+class Figure(base.Figure):
+    def save(self, filename):
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / filename).write_text('\n'.join(self.parts + ['</g></svg>']) + '\n')
+
+
+def heading(f, title, subtitle):
+    f.text(28, 36, title, 22, weight=600)
+    f.text(28, 64, subtitle, 15, MUTED)
+
+
+def footer(f, lines):
+    for y, text in zip([335, 360, 387], lines):
+        f.text(28, y, text, 15, BLUE if y == 387 else INK,
+               weight=600 if y == 387 else 400)
+
+
+def project(cx, cy, scale, yaw=.45, pitch=.38):
+    def p(v):
+        x, y, z = v
+        return (cx + scale*(x*math.cos(yaw)-y*math.sin(yaw)),
+                cy-scale*(z*math.cos(pitch)-(x*math.sin(yaw)+y*math.cos(yaw))*math.sin(pitch)))
+    return p
+
+
+def plane(f, cx, cy, rx=120, ry=28, fill=PALE):
+    f.line([(cx-rx,cy),(cx-45,cy-ry),(cx+rx,cy),(cx+45,cy+ry),(cx-rx,cy)],
+           color=MUTED,width=1.4,fill=fill)
+
+
+def neck(f, x, top, bottom, width=8):
+    f.raw(f'<path d="M{x-width} {top} C{x-width*.35} {(top+bottom)/2} {x-width*.35} {(top+bottom)/2} {x-width} {bottom} '
+          f'L{x+width} {bottom} C{x+width*.35} {(top+bottom)/2} {x+width*.35} {(top+bottom)/2} {x+width} {top} Z" '
+          f'fill="{BG}" stroke="{SEAM}" stroke-width="1.7"/>')
+    f.ellipse(x,top,width,2.8,color=SEAM,width=1.3)
+    f.ellipse(x,bottom,width,2.8,color=SEAM,width=1.3)
+
+
+def sphere_plane(f, cx, cy, scale=42, axes=False):
+    p=project(cx,cy,scale,yaw=0,pitch=.42)
+    f.line([p(v) for v in [(-2.9,-2.7,0),(2.9,-2.7,0),(2.9,2.7,0),(-2.9,2.7,0),(-2.9,-2.7,0)]],color=MUTED,width=1.3,fill=PALE)
+    for a in [math.pi*j/6 for j in range(6)]:
+        f.line([p((2*math.sin(t)*math.cos(a),2*math.sin(t)*math.sin(a),2*math.cos(t))) for t in base.angles()],width=.9,opacity=.6)
+    for phi in [math.pi*j/6 for j in range(1,6)]:
+        f.line([p(v) for v in base.ring(2*math.sin(phi),2*math.cos(phi))],width=.9,opacity=.6)
+    f.line([p(v) for v in base.ring(2,0)],color=SEAM,width=2.5)
+    if axes:
+        for a in [0,math.pi/3,2*math.pi/3]:
+            f.line([p((-3*math.cos(a),-3*math.sin(a),0)),p((3*math.cos(a),3*math.sin(a),0))],color=SEAM,width=1.4,dash='5 4')
+
+
+def nguyen():
+    f=Figure('Nguyen one-ended m-saddles: construction input',
+             'Normalized sphere of radius two intersecting a plane. The highlighted circle is replaced by a bent Scherk core. The smaller periodic wave represents the core symbolically, not a solved shrinker. For sufficiently large m the construction has genus m minus one and one conical end.')
+    heading(f,'Nguyen one-ended m-saddles','Sphere–plane desingularization; m sufficiently large')
+    sphere_plane(f,192,198,43)
+    f.text(192,302,'Normalized input: S²(2) ∪ P',16,anchor='middle')
+    f.arrow(329,189,381,189)
+    f.text(355,166,'replace',14,anchor='middle')
+    f.box(400,112,207,167)
+    for j in [-1,0,1]:
+        points=[(412+182*i/180,184+j*25+12*math.sin(6*math.pi*i/180)) for i in range(181)]
+        f.line(points,color=SEAM if j==0 else MUTED,width=1.8 if j==0 else 1)
+    f.text(504,143,'Bent Scherk core',17,anchor='middle')
+    f.text(504,255,'m periods around the circle',14,anchor='middle')
+    footer(f,['Genus m − 1; one end asymptotic to a cone.',
+              'The perturbation is established by gluing, not drawn here.',
+              'SCHEMATIC • construction input, not a computed surface'])
+    f.save('nguyen-m-saddles.svg')
+
+
+def iw():
+    f=Figure('Ilmanen–White two-ended shrinkers: topology schematic',
+             'Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.')
+    heading(f,'Ilmanen–White two-ended shrinkers','Every genus h ≥ 2; two asymptotically conical ends')
+    plane(f,204,235,150,33)
+    for x in [120,204,288]:neck(f,x,162,228,9)
+    plane(f,204,154,150,33,fill='#edf4f6')
+    for x in [120,204,288]:f.ellipse(x,162,9,3,color=SEAM,width=1.7)
+    f.text(204,290,'Topology symbols: h + 1 necks',16,anchor='middle')
+    f.arrow(382,195,439,195)
+    f.text(410,172,'h → ∞',15,anchor='middle')
+    plane(f,523,196,69,23)
+    f.text(523,242,'2P',23,weight=600,anchor='middle')
+    footer(f,['Three neck symbols illustrate h = 2; geometry is schematic.',
+              'The large-genus convergence is to a multiplicity-two plane.',
+              'SCHEMATIC • topology and limiting multiplicity'])
+    f.save('iw-two-ended.svg')
+
+
+def stacking():
+    f=Figure('Shao–Zou stacked-plane shrinkers: gluing schematic',
+             'Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed.')
+    heading(f,'Shao–Zou shrinkers with k ends','k ≥ 2; m sufficiently large for each fixed k')
+    for y in [257,195,133]:
+        plane(f,215,y,163,26)
+        if y>133:
+            for x in [105,178,251,324]:neck(f,x,y-55,y-7,7)
+    for x in [105,178,251,324]:f.ellipse(x,140,7,2.6,color=SEAM,width=1.4)
+    f.text(215,302,'k layers; bridges between adjacent pairs',15,anchor='middle')
+    f.box(420,120,192,167)
+    f.text(516,154,'k conical ends',20,weight=600,anchor='middle')
+    f.text(516,193,'genus',17,anchor='middle')
+    f.text(516,220,'(k − 1)(m − 1)',21,weight=600,anchor='middle')
+    f.text(516,261,'limit: kP as m → ∞',15,anchor='middle')
+    footer(f,['The drawn bridge count is illustrative, not an existence threshold.',
+              'Flat sheets represent the gluing input, not the final conical ends.',
+              'SCHEMATIC • plane stacking and topological counts'])
+    f.save('shao-zou-stacking.svg')
+
+
+def rays(f,cx,cy,kind):
+    p=project(cx,cy,56,yaw=.5,pitch=.4)
+    if kind=='cube':vectors=[(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
+    else:vectors=[(math.cos(a),math.sin(a),0) for a in base.angles(7)[:-1]]
+    for v in vectors:
+        a,b=p((0,0,0)),p(tuple(1.4*x for x in v));f.line([a,b],color=SEAM,width=1.8)
+        f.ellipse(*b,3,3,color=SEAM,fill=SEAM,width=1)
+    f.ellipse(cx,cy,4,4,fill=INK,width=1)
+
+
+def hmw_platonic():
+    f=Figure('Hoffman–Martin–White shrinkers avoiding prescribed rays',
+             'The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.')
+    heading(f,'HMW Platonic and polygonal shrinkers','Prescribed rays Q encode symmetry and genus')
+    rays(f,177,204,'cube');rays(f,475,204,'polygon')
+    f.text(177,109,'Cube face-center rays',17,anchor='middle')
+    f.text(475,109,'Regular polygon rays',17,anchor='middle')
+    f.text(177,302,'6 rays → genus 5',17,anchor='middle')
+    f.text(475,302,'n rays → genus n − 1',17,anchor='middle')
+    footer(f,['The constructed shrinker avoids Q; Q is not the surface.',
+              'Compactness and exact end counts are not fixed in general.',
+              'SCHEMATIC • symmetry data, not a computed shrinker'])
+    f.save('hmw-platonic-polygon.svg')
+
+
+def hmw_one():
+    f=Figure('Hoffman–Martin–White genus-g shrinkers: limit and end theorem',
+             'The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.')
+    heading(f,'HMW genus-g shrinkers','One conical end is proved when g is sufficiently large')
+    sphere_plane(f,205,201,43,axes=True)
+    f.text(205,303,'Large-genus limit: P ∪ S²(2)',16,anchor='middle')
+    f.box(403,117,209,176)
+    f.text(508,153,'g ≥ 1',23,weight=600,anchor='middle')
+    f.text(508,188,'contains g + 1',17,anchor='middle')
+    f.text(508,211,'horizontal lines',17,anchor='middle')
+    f.text(508,254,'exactly one end:',16,anchor='middle')
+    f.text(508,277,'only for large g',16,weight=600,anchor='middle')
+    footer(f,['The limit sphere has radius 2 in the catalogue normalization.',
+              'The small-genus end count is left unspecified.',
+              'SCHEMATIC • limiting configuration and qualified end count'])
+    f.save('hmw-one-ended.svg')
+
+
+def hmw_three():
+    f=Figure('Hoffman–Martin–White three-ended shrinkers: limit schematic',
+             'Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.')
+    heading(f,'HMW three-ended shrinkers','For sufficiently large g: genus 2g and three conical ends')
+    for y in [245,194,143]:plane(f,190,y,141,28)
+    f.text(190,300,'Multiplicity displayed as separated sheets',14,anchor='middle')
+    f.arrow(352,194,414,194)
+    f.text(383,169,'g → ∞',15,anchor='middle')
+    plane(f,510,194,92,27)
+    f.text(510,248,'3P',25,weight=600,anchor='middle')
+    footer(f,['The finite-genus shrinker is connected; it is not drawn here.',
+              'The diagram records the limit, not the shape of its three ends.',
+              'SCHEMATIC • large-genus limit and multiplicity'])
+    f.save('hmw-three-ended.svg')
+
+
+def polyhedron(f,cx,cy,kind,size=32):
+    phi=(1+math.sqrt(5))/2
+    if kind=='tetra':vs=[(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)]
+    elif kind=='cube':vs=[(x,y,z) for x in [-1,1] for y in [-1,1] for z in [-1,1]]
+    elif kind=='octa':vs=[tuple(a if i==k else 0 for i in range(3)) for k in range(3) for a in [-1,1]]
+    elif kind=='icosa':
+        vs=[]
+        for a in [-1,1]:
+            for b in [-phi,phi]:vs.extend([(0,a,b),(a,b,0),(b,0,a)])
+    else:
+        vs=[(x,y,z) for x in [-1,1] for y in [-1,1] for z in [-1,1]]
+        for a in [-1/phi,1/phi]:
+            for b in [-phi,phi]:vs.extend([(0,a,b),(a,b,0),(b,0,a)])
+    distance=lambda u,v:sum((a-b)**2 for a,b in zip(u,v))
+    edge=min(distance(u,v) for i,u in enumerate(vs) for v in vs[i+1:])
+    norm=max(math.sqrt(sum(x*x for x in v)) for v in vs);p=project(cx,cy,size/norm,yaw=.32,pitch=.35)
+    for i,u in enumerate(vs):
+        for v in vs[i+1:]:
+            if abs(distance(u,v)-edge)<1e-8:f.line([p(u),p(v)],width=1.2)
+
+
+def ketover():
+    f=Figure('Ketover Platonic shrinkers: sweepout symmetry and genus',
+             'Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.')
+    heading(f,'Ketover Platonic shrinkers','Doubling-sweepout symmetry; five prescribed genera')
+    for x,kind,name,faces in zip([84,202,320,438,556],['tetra','cube','octa','dodeca','icosa'],['Tetrahedron','Cube','Octahedron','Dodecahedron','Icosahedron'],[4,6,8,12,20]):
+        polyhedron(f,x,180,kind,47)
+        f.text(x,113,name,13,anchor='middle')
+        f.text(x,251,f'{faces} faces',15,anchor='middle')
+        f.text(x,276,f'genus {faces-1}',17,weight=600,anchor='middle')
+    footer(f,['Proved entropy bounds: 4/e < λ < 8/e.',
+              'Compactness and exact end counts are not determined here.',
+              'SCHEMATIC • symmetry / sweepout data, not shrinker shapes'])
+    f.save('ketover-platonic.svg')
+
+
+def swz():
+    f=Figure('Sun–Wang–Zhou shrinkers of unbounded entropy',
+             'A qualitative increasing curve illustrates the growth of Gaussian widths with the min-max parameter k. For dimensions two through six the constructed shrinker has entropy equal to the kth width, with growth comparable to k to the power one over n plus one and Gaussian Morse index at most k. No numerical entropy values or shapes are plotted.')
+    heading(f,'Sun–Wang–Zhou large-entropy shrinkers','Gaussian min–max widths in dimensions 2 ≤ n ≤ 6')
+    f.arrow(68,283,355,283);f.arrow(68,283,68,104)
+    f.text(47,113,'λ',20);f.text(347,306,'k',18)
+    points=[(81+262*t,262-141*t**.35) for t in [i/120 for i in range(121)]]
+    f.line(points,width=2.8)
+    f.text(214,310,'Qualitative growth; no numeric scale',13,anchor='middle')
+    f.box(392,118,220,172)
+    f.raw('<text x="502" y="153" font-size="23" font-weight="600" text-anchor="middle">λ(Σ<tspan baseline-shift="sub" font-size="14">k</tspan>) = ω<tspan baseline-shift="sub" font-size="14">k</tspan></text>')
+    f.raw('<text x="502" y="191" font-size="23" text-anchor="middle">ω<tspan baseline-shift="sub" font-size="14">k</tspan> ≍ k<tspan baseline-shift="super" font-size="13">1/(n+1)</tspan></text>')
+    f.text(502,231,'Gaussian index ≤ k',17,anchor='middle')
+    f.text(502,266,'entropy is unbounded',16,anchor='middle')
+    footer(f,['Genus, compactness, and ends are not prescribed by this theorem.',
+              'The curve is a growth diagram, not computed width data.',
+              'SCHEMATIC • proved growth order and index bound'])
+    f.save('swz-large-entropy.svg')
+
+
+def chu_sun():
+    f=Figure('Chu–Sun lower-entropy genus-one shrinker: construction logic',
+             'A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.')
+    heading(f,'Chu–Sun lower-entropy genus-one shrinker','Ancient-flow construction followed by a singular blow-up')
+    f.ellipse(115,183,68,45,width=2.2,fill=PALE)
+    f.ellipse(115,183,28,16,width=2.2,fill=BG)
+    f.text(115,261,'Starting torus T',16,anchor='middle')
+    f.text(115,282,'topology only',14,MUTED,anchor='middle')
+    f.arrow(197,183,249,183)
+    f.box(264,138,126,91)
+    f.text(327,175,'ancient',17,anchor='middle')
+    f.text(327,199,'MCF',17,anchor='middle')
+    f.arrow(405,183,454,183)
+    f.text(429,252,'blow-up',14,anchor='middle')
+    f.box(470,129,142,110)
+    f.text(541,168,'Σ',29,weight=600,anchor='middle')
+    f.text(541,205,'genus one',18,anchor='middle')
+    f.text(541,282,'shape unspecified',14,MUTED,anchor='middle')
+    footer(f,['Strict entropy comparison: λ(Σ) < λ(T) < 2.',
+              'No compactness, end count, or symmetry is assigned to Σ.',
+              'SCHEMATIC • construction logic, not an identified surface'])
+    f.save('chu-sun-genus-one.svg')
+
+
+def main():
+    global OUT
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=OUT)
+    OUT=parser.parse_args().output
+    for make in [nguyen,iw,stacking,hmw_platonic,hmw_one,hmw_three,ketover,swz,chu_sun]:make()
+    print(f'Wrote 9 original schematic illustrations to {OUT}')
+
+
+if __name__=='__main__':main()

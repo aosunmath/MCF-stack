@@ -612,6 +612,148 @@
       "caption": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
       "alt": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
       "interactive": false
+    },
+    {
+      "label": "ex:catalogue-nguyen-shrinking-saddles",
+      "section": "nguyen-s-one-ended-shrinking-saddles",
+      "title": "Nguyen's one-ended shrinking saddles",
+      "category": "shrinkers",
+      "citations": [
+        "CatNguyenShrinker2014"
+      ],
+      "model": "nguyen-m-saddles",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "Normalized sphere of radius two intersecting a plane. The highlighted circle is replaced by a bent Scherk core. The smaller periodic wave represents the core symbolically, not a solved shrinker. For sufficiently large m the construction has genus m minus one and one conical end.",
+      "alt": "Normalized sphere of radius two intersecting a plane. The highlighted circle is replaced by a bent Scherk core. The smaller periodic wave represents the core symbolically, not a solved shrinker. For sufficiently large m the construction has genus m minus one and one conical end."
+    },
+    {
+      "label": "ex:catalogue-angenent-torus-cylinders",
+      "section": "angenent-torus-cylinders",
+      "title": "Angenent torus cylinders",
+      "category": "shrinkers",
+      "citations": [
+        "CatAngenent1992",
+        "CatBerchenkoKogan2021",
+        "CatCLSZ2026"
+      ],
+      "model": "angenent-torus-cylinder",
+      "status": "Numerical R4 product slices",
+      "interactive": true,
+      "caption": "Three slices w = −12, 0, 12 of the numerical Angenent torus × R in R4, projected into R3. Use 4D rotation to change the projection. These are selected slices of one connected three-dimensional hypersurface, not three components or its entire geometry.",
+      "alt": "Three selected slices of the torus-cylinder in R4, with fourth-coordinate rotation before projection."
+    },
+    {
+      "label": "ex:catalogue-iw-two-ended",
+      "section": "ilmanen-white-two-ended-shrinkers",
+      "title": "Ilmanen–White two-ended shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatIlmanenWhite2025"
+      ],
+      "model": "iw-two-ended",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.",
+      "alt": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane."
+    },
+    {
+      "label": "ex:catalogue-shao-zou-stacking",
+      "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
+      "title": "Shao–Zou shrinkers with any prescribed number of ends",
+      "category": "shrinkers",
+      "citations": [
+        "CatShaoZou2025"
+      ],
+      "model": "shao-zou-stacking",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed.",
+      "alt": "Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed."
+    },
+    {
+      "label": "ex:catalogue-hmw-platonic-polygon",
+      "section": "flow-generated-platonic-and-polygonal-shrinkers",
+      "title": "Flow-generated Platonic and polygonal shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "model": "hmw-platonic-polygon",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.",
+      "alt": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact."
+    },
+    {
+      "label": "ex:catalogue-hmw-one-ended",
+      "section": "flow-generated-sphere-plane-shrinkers",
+      "title": "Flow-generated sphere–plane shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "model": "hmw-one-ended",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.",
+      "alt": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker."
+    },
+    {
+      "label": "ex:catalogue-hmw-three-ended",
+      "section": "flow-generated-three-ended-shrinkers",
+      "title": "Flow-generated three-ended shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatHMW2026"
+      ],
+      "model": "hmw-three-ended",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.",
+      "alt": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows."
+    },
+    {
+      "label": "ex:catalogue-ketover-platonic",
+      "section": "ketover-shrinkers-with-platonic-symmetry",
+      "title": "Ketover shrinkers with Platonic symmetry",
+      "category": "shrinkers",
+      "citations": [
+        "CatKetover2016"
+      ],
+      "model": "ketover-platonic",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.",
+      "alt": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction."
+    },
+    {
+      "label": "ex:catalogue-swz-large-entropy",
+      "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
+      "title": "Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+      "category": "shrinkers",
+      "citations": [
+        "CatSunWangZhou2024"
+      ],
+      "model": "swz-large-entropy",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "A qualitative increasing curve illustrates the growth of Gaussian widths with the min-max parameter k. For dimensions two through six the constructed shrinker has entropy equal to the kth width, with growth comparable to k to the power one over n plus one and Gaussian Morse index at most k. No numerical entropy values or shapes are plotted.",
+      "alt": "A qualitative increasing curve illustrates the growth of Gaussian widths with the min-max parameter k. For dimensions two through six the constructed shrinker has entropy equal to the kth width, with growth comparable to k to the power one over n plus one and Gaussian Morse index at most k. No numerical entropy values or shapes are plotted."
+    },
+    {
+      "label": "ex:catalogue-chu-sun-genus-one",
+      "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+      "title": "Chu–Sun genus-one shrinkers below the shrinking doughnut",
+      "category": "shrinkers",
+      "citations": [
+        "CatChuSun2025"
+      ],
+      "model": "chu-sun-genus-one",
+      "status": "Original schematic",
+      "interactive": false,
+      "caption": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
+      "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified."
     }
   ]
 }

@@ -652,3 +652,304 @@ This is a rigorous bound obtained from the gluing theorem, not a numerical entro
 \end{itemize}
 See \cite{CatKapouleasMcGrath2023}, arXiv version 4: Theorem 10.5 (PDF page 66), Theorem 9.40 (page 65), Definitions 7.10--7.11 and Remark 7.12 (page 40), and Theorem 5.7 with equation (5.9) (page 30; also Theorem A on page 3). The genus formula is $2g_{S^2}-1+|L|=-1+2m$. The bridge diagram is schematic and does not compute a solution or assert that its displayed number of dots is in the existence range.
 \end{example}
+
+\chapter{Nguyen's one-ended shrinking saddles}\label{sec:catalogue-nguyen-shrinking-saddles}
+\begin{example}[Nguyen's one-ended shrinking saddles]\label{ex:catalogue-nguyen-shrinking-saddles}
+For every sufficiently large integer $m$, Nguyen constructs a smooth complete embedded surface $\widetilde M_m\subset\mathbb R^3$ of genus $m-1$, with one asymptotically conical end. The source uses
+\[
+ \mathbf H_{\widetilde M_m}=-\widetilde X^\perp.
+\]
+Thus the catalogue's normalized example is $M_m=\sqrt{2}\,\widetilde M_m$, which satisfies $\mathbf H=-X^\perp/2$, and its flow is $M_m(t)=\sqrt{-t}\,M_m$ for $t<0$.
+
+The construction replaces the intersection circle of a sphere and a plane by a bent, scaled singly periodic Scherk surface, then solves the nonlinear shrinker equation by a perturbation argument. In the catalogue normalization the input sphere has radius $2$. This is an existence construction, with no closed parametrization of the completed shrinker. Its proved properties and construction data include the following.
+\begin{itemize}
+\item The surface has dimension two and codimension one. It is connected, orientable, noncompact, proper, and without boundary. Outside a compact set it is a graph over the exterior of a planar disk. Consequently it has one topological end; the asymptotic cone is not an assertion that the end is planar.
+\item The $m$ periods of the Scherk piece produce genus $m-1$. The existence theorem requires $m$ sufficiently large and does not establish the small-$m$ cases.
+\item The surface is invariant under a half-turn about the $x$-axis and under reflections in vertical planes making angles $\pi/(2m)+j\pi/m$, $j\in\mathbb Z$, with that axis. These are finite symmetries, not full rotational symmetry.
+\item As $m\to\infty$, the source proves convergence to the spherical input on compact subsets of the upper half-ball in Theorem~1(iv), and convergence to the singly periodic Scherk model after translating and rescaling the joining region in Theorem~1(vi). These limits describe different spatial scales.
+\item The conical graphical end gives quadratic area growth and finite entropy. In the stated normalization $F_{0,1}(M_m)=\lambda(M_m)$; no scalar entropy value or uniform numerical bound is recorded here. The theorem does not give a global uniqueness or stability classification.
+\end{itemize}
+
+Source: \cite{CatNguyenShrinker2014}, Theorem~1 and its preceding topology paragraph, PDF p.~2; the construction of the outer graphical piece and Proposition~14, PDF p.~13; Definition~21, PDF p.~20; the final fixed-point argument, PDF pp.~24--25. This is another sphere--plane desingularization construction beside Example~\ref{ex:catalogue-kkm-one-end}; no identification or noncongruence between the two families is asserted. The illustration shows construction inputs and a symbolic joining region, not a solved shrinker.
+\end{example}
+
+\chapter{Angenent torus cylinders}\label{sec:catalogue-angenent-torus-cylinders}
+\begin{example}[Angenent torus cylinders]\label{ex:catalogue-angenent-torus-cylinders}
+Let $T^2\subset\mathbb R^3$ be a normalized embedded Angenent shrinking torus as in Example~\ref{ex:catalogue-angenent-torus}. For every integer $k\geq1$, its Euclidean product
+\[
+ \Sigma_k=T^2\times\mathbb R^k\subset\mathbb R^{k+3}
+\]
+is a smooth embedded shrinker of dimension $k+2$ and codimension one. If $X_T(p)$ parametrizes the torus, the exact product and flow formulas are
+\[
+ X(p,z)=(X_T(p),z),\qquad
+ \Sigma_k(t)=\sqrt{-t}\,T^2\times\mathbb R^k,\quad t<0.
+\]
+The torus factor itself is specified by its closed weighted geodesic or rotational ODE, not by a closed elementary formula. Since the Euclidean factor is tangent to the product,
+\[
+ \mathbf H_{\Sigma_k}=(\mathbf H_T,0)=-\tfrac12(X_T^\perp,0)
+ =-\tfrac12X^\perp.
+\]
+This verifies the product construction directly.
+\begin{itemize}
+\item Each product is connected, complete, proper, noncompact, and without boundary, with topology $T^2\times\mathbb R^k$. It has two topological ends when $k=1$ and one when $k\geq2$. Its intrinsic dimension is at least three, so a surface genus is not assigned; genus one describes the torus factor only.
+\item The product inherits the torus's axial rotational symmetry and is invariant under translations and orthogonal transformations in the Euclidean factor. The two ends of $\Sigma_1\subset\mathbb R^4$ have the fixed torus as cross-section.
+\item Gaussian integration in the Euclidean factor gives, for $a\in\mathbb R^3$, $b\in\mathbb R^k$, and $\tau>0$,
+\[
+ F_{(a,b),\tau}(\Sigma_k)=F_{a,\tau}(T^2),\qquad
+ \lambda(\Sigma_k)=\lambda(T^2)=F_{0,1}(\Sigma_k).
+\]
+Indeed, the extra factor is $(4\pi\tau)^{-k/2}\int_{\mathbb R^k}e^{-|z-b|^2/(4\tau)}\,dz=1$. Thus the numerical estimate $1.85122$ for the torus also estimates these products, with the same lack of a certified error enclosure; the product identity itself is exact.
+\item As Euclidean products of a closed nonflat embedded shrinker, these examples fall within the realization theorem of \cite{CatCLSZ2026}, Theorem~1.2, PDF p.~2: each can occur with multiplicity one as a first-singularity tangent flow of a closed embedded hypersurface in the corresponding Euclidean space. The theorem does not assert that the initial closed hypersurface is this noncompact product.
+\end{itemize}
+The factor is constructed in \cite{CatAngenent1992}; the numerical entropy estimate is \cite{CatBerchenkoKogan2021}, Section~5, with its error-bound limitation in Section~6. The interactive picture shows only three $z$-slices of $\Sigma_1$ after projection from $\mathbb R^4$ to $\mathbb R^3$. It uses the catalogue's numerical torus mesh. Apparent intersections are projection artifacts; the three slices do not represent three components or the entire three-dimensional hypersurface.
+\end{example}
+
+\chapter{Ilmanen--White two-ended shrinkers}\label{sec:catalogue-iw-two-ended}
+\begin{example}[Ilmanen--White two-ended shrinkers]\label{ex:catalogue-iw-two-ended}
+For every integer $h\geq2$, Ilmanen--White construct a smooth complete properly embedded self-shrinking surface $\Sigma_h\subset\mathbb R^3$ of genus $h$ with exactly two ends. In their notation the initial wheel has genus $g=h+1$ and its tangent shrinker has genus $g-1$. The normalized flow is
+\[
+ \vec H=-X^\perp/2,\qquad M_t=\sqrt{-t}\,\Sigma_h,\quad t<0.
+\]
+There is no explicit formula: $\Sigma_h$ is obtained as a tangent flow of a critical wheel.
+\begin{itemize}
+\item This is a connected orientable noncompact surface, of dimension two and codimension one, with topology a closed genus-$h$ surface with two punctures. Both ends are smoothly asymptotically conical. The part above $P=\{z=0\}$ is a graph over the unbounded component of $P\setminus\Sigma_h$; the lower part is its reflection. The intersection with $P$ consists of $h+1$ disjoint smooth closed curves.
+\item Its symmetries include reflection in $P$, reflections in the vertical planes at angles $j\pi/(h+1)$, and rotation through $2\pi/(h+1)$ about the vertical axis. The two cone links lie on opposite sides of the equator.
+\item The authors construct a compact embedded initial surface of genus $h+1$ whose first singular time has exactly one singular point and this multiplicity-one tangent shrinker. Corollary~4.11 gives uniqueness of the tangent flow at that point, not uniqueness of all shrinkers with these topological data.
+\item As $h\to\infty$, the shrinkers converge as varifolds to $2P$. After passage to a subsequence, convergence is smooth with multiplicity two away from one circle in $P$. For sufficiently large $h$, the initial compact wheel fattens immediately after its first singular time. No effective genus threshold for fattening is given.
+\item The conical ends imply quadratic area growth and finite entropy, with $\lambda(\Sigma_h)=F_{0,1}(\Sigma_h)$. An exact value or a numerical upper bound for this particular construction is not recorded here. In particular, the entropy bound for Ketover's construction is not transferred to this one.
+\end{itemize}
+See \cite{CatIlmanenWhite2025}, version~3: Theorem~1.1 (PDF p.~2), Theorem~4.8 and Corollary~4.11 (pp.~10--12), Theorem~7.6 (pp.~20--21), Theorem~9.4 (p.~26), and Theorem~10.5 (p.~31). The paper leaves open whether these shrinkers coincide with Ketover's doubled-plane examples. The illustration is a topology and limiting-configuration schematic, not a numerical solution.
+\end{example}
+
+\chapter{Shao--Zou shrinkers with any prescribed number of ends}\label{sec:catalogue-shao-zou-stacking}
+\begin{example}[Shao--Zou plane stackings]\label{ex:catalogue-shao-zou-stacking}
+Fix an integer $k\geq2$. For every sufficiently large integer $m$, with the threshold allowed to depend on $k$, Shao--Zou construct an embedded self-shrinker $\Sigma_{k,m}\subset\mathbb R^3$ with
+\[
+ \operatorname{genus}(\Sigma_{k,m})=(k-1)(m-1),\qquad
+ \#\operatorname{ends}(\Sigma_{k,m})=k,
+ \qquad \vec H=-X^\perp/2.
+\]
+Their parameter is $J=(k-1)/2$. The smooth flow is $\sqrt{-t}\,\Sigma_{k,m}$ for $t<0$. The surface is obtained by elliptic gluing, rather than an explicit parametrization.
+\begin{itemize}
+\item The construction stacks $k$ perturbations of the horizontal plane and connects each consecutive pair by $m$ catenoidal bridges. Thus there are $(k-1)m$ bridges in total, placed on alternating equally spaced neck configurations around a circle. The compact core and graphical ends give a connected, orientable, complete, proper, boundaryless noncompact surface.
+\item Each of the $k$ annular ends is asymptotic to a cone. Theorem~8.1 gives the leading cone slopes in terms of the solved bridge parameters with error estimates; these asymptotic expressions are not formulas for the whole shrinker.
+\item For even $k$, the asserted symmetry is the $m$-gonal prism group $D_{mh}$; for odd $k$, it is the $m$-gonal antiprism group $D_{md}$. Both have order $4m$. Horizontal reflection is a symmetry in the even-$k$ case and is not an element of the stated antiprism group in the odd-$k$ case.
+\item For fixed $k$ and $m\to\infty$, $\Sigma_{k,m}$ converges as a varifold to the horizontal plane with multiplicity $k$. Each surface before the limit is embedded with multiplicity one. The limiting plane is not a smooth member of the positive-genus family.
+\item Conical ends imply quadratic area growth and finite entropy, and $F_{0,1}(\Sigma_{k,m})=\lambda(\Sigma_{k,m})$. No exact value or numerical entropy upper bound is asserted here. A local varifold limit alone is not used to assign a numerical entropy limit.
+\item The source expects its $k=2$ and $k=3$ examples to agree with earlier doubled- and tripled-plane constructions when the parameters overlap, but it does not prove those identifications. It supplies no uniqueness or exact Morse-index classification.
+\end{itemize}
+See \cite{CatShaoZou2025}, version~1: the introductory theorem (PDF p.~2), Definition~2.28 and Remark~2.29 (p.~7), and Theorem~8.1 (pp.~31--32). In particular, this gives examples with four or more ends, beyond the one-, two-, and three-ended constructions already listed. The bridge-and-sheet illustration is schematic; its small displayed bridge count is not asserted to meet the large-$m$ hypothesis.
+\end{example}
+
+\chapter{Flow-generated Platonic and polygonal shrinkers}\label{sec:catalogue-hmw-platonic-polygon}
+\begin{example}[Hoffman--Martin--White ray-avoiding shrinkers]\label{ex:catalogue-hmw-platonic-polygon}
+Let $Q\subset\mathbb R^3$ be the union of rays from the origin through either the face centers of a regular Platonic solid or the vertices of a regular horizontal $n$-gon, $n\geq3$. If $q$ is the number of rays, Hoffman--Martin--White construct a smooth embedded shrinker $\Sigma_Q$ of genus $q-1$ such that
+\[
+ \Sigma_Q\cap Q=\varnothing,\qquad
+ \vec H_{\Sigma_Q}=-X^\perp/2.
+\]
+The associated smooth flow is $\sqrt{-t}\,\Sigma_Q$, $t<0$. This is a construction through singularities of mean curvature flow, not an explicit formula.
+\begin{itemize}
+\item The surface has dimension two and codimension one, is complete, proper, orientable and without boundary, and has all symmetries of $Q$. The genera are $3,5,7,11,19$ for the tetrahedron, cube, octahedron, dodecahedron and icosahedron respectively. For the regular $n$-gon the genus is $n-1$.
+\item It occurs with multiplicity one as a tangent shrinker of an initially compact, smoothly embedded surface in $\mathbb R^3\setminus Q$. This realization statement is part of the construction, rather than an identification with Ketover's min-max surface.
+\item The theorem does not determine compactness or the number and types of ends for the Platonic examples or the small-$n$ polygonal examples. The discussion after the theorem states that the polygonal examples are noncompact for sufficiently large $n$ and converge to a multiplicity-two plane as $n\to\infty$; it does not give an exact end count there.
+\item Each example has finite entropy as a tangent shrinker of a compact initial flow, and $\lambda(\Sigma_Q)=F_{0,1}(\Sigma_Q)$. No numerical entropy bound or exact value is recorded here. No uniqueness or equality with the corresponding Ketover or Ilmanen--White constructions is asserted.
+\end{itemize}
+See \cite{CatHMW2026}, version~3: Theorem~12 and its discussion (PDF pp.~8--9), with the multiplicity-one tangent-flow convention on p.~4. The compact numerical pictures mentioned in the paper do not establish compactness of the members selected by the theorem. The illustration depicts the excluded rays and symmetry data only.
+\end{example}
+
+\chapter{Flow-generated sphere--plane shrinkers}\label{sec:catalogue-hmw-one-ended}
+\begin{example}[Hoffman--Martin--White sphere--plane family]\label{ex:catalogue-hmw-one-ended}
+Write $d_1=\sqrt{2\pi/e}$ and $d_2=4/e$. For every integer $g\geq1$ and every fixed
+\[
+ 1+d_2<\delta<1+d_1,
+\]
+Hoffman--Martin--White construct a smooth embedded shrinker $\Sigma_g\subset\mathbb R^3$ of genus $g$ with $\lambda(\Sigma_g)<\delta$. They produce it as a tangent shrinker of an intrinsically flowing compact surface in $S^2\times\mathbb R$; the tangent shrinker itself is Euclidean. It satisfies $\vec H=-X^\perp/2$, with homothetic flow $\sqrt{-t}\,\Sigma_g$ for $t<0$. No explicit parametrization is known from this construction.
+\begin{itemize}
+\item This is a connected, orientable, complete, properly embedded surface of dimension two and codimension one. It contains the union $Q_g$ of $g+1$ horizontal lines through the origin at angles $j\pi/(g+1)$, and $\Sigma_g\cap\{z=0\}=Q_g$. In particular it is noncompact. Its complement of the horizontal plane has genus zero.
+\item The symmetry group $G_g$ used here is generated by reflection in vertical planes at angles $(2j+1)\pi/(2(g+1))$, rotations about the vertical axis through $2\pi/(g+1)$, and half-turns about the lines in $Q_g$. This is the Costa--Hoffman--Meeks symmetry group specified in Section~5.
+\item For all sufficiently large $g$, $\Sigma_g$ has exactly one asymptotically conical end. For small $g$, the theorem does not specify an exact number of ends. For a fixed admissible $\delta$, as $g\to\infty$ the surfaces converge to $\{z=0\}\cup S^2(2)$, smoothly with multiplicity one away from the equatorial intersection circle.
+\item The normalized Gaussian area equals entropy and obeys
+\[
+ F_{0,1}(\Sigma_g)=\lambda(\Sigma_g)<\delta<1+\sqrt{2\pi/e}<3.
+\]
+The choice of $\delta$ is part of the existence statement; it does not assign an exact entropy to a fixed uniquely determined member.
+\item No identification with the Buzano--Nguyen--Schulz min-max examples or the Kapouleas--Kleene--Moller and Nguyen gluing examples is proved. The shared topology and limiting configuration do not establish that they coincide or are distinct.
+\end{itemize}
+See \cite{CatHMW2026}, version~3: Section~5 (PDF pp.~16--17), Theorems~40--42 (pp.~26--31), Section~9 (p.~40), and Lemma~64 (pp.~45--46). The source uses $\leq\delta$ in Theorem~40; the strict bound above is its refined choice in Theorem~41. The picture shows the sphere--plane limit and prescribed symmetry, not a computed shrinker.
+\end{example}
+
+\chapter{Flow-generated three-ended shrinkers}\label{sec:catalogue-hmw-three-ended}
+\begin{example}[Hoffman--Martin--White three-ended family]\label{ex:catalogue-hmw-three-ended}
+For every sufficiently large integer $g$, Hoffman--Martin--White construct a smooth embedded shrinker $\Sigma_g\subset\mathbb R^3$ with genus $2g$ and exactly three ends. It has the normalization and smooth evolution
+\[
+ \vec H=-X^\perp/2,\qquad M_t=\sqrt{-t}\,\Sigma_g,\quad t<0.
+\]
+The construction obtains the surface as a multiplicity-one tangent shrinker of a flow whose initial surface is compact and embedded in $S^2\times\mathbb R$ with its product metric. The shrinker lives in the Euclidean tangent space. There is no explicit parametrization.
+\begin{itemize}
+\item It is a connected, orientable, complete, proper noncompact surface of dimension two and codimension one. Its topology is a closed genus-$2g$ surface with three punctures; the three ends are annular and asymptotically conical.
+\item It has the group $G_g$ and the union of lines $Q_g$ specified in Example~\ref{ex:catalogue-hmw-one-ended}. In particular, $\Sigma_g\cap\{z=0\}=Q_g$ and $\Sigma_g\setminus\{z=0\}$ has genus zero. These are the symmetries of the genus-$g$ Costa--Hoffman--Meeks minimal surface, but the shrinker has genus $2g$.
+\item As $g\to\infty$, the surfaces converge to the horizontal plane with multiplicity three. After passage to a subsequence, convergence is smooth away from one circle in that plane. The circle is part of the limiting analysis, not an independently prescribed radius.
+\item The entropy has a bound $\lambda(\Sigma_g)\leq\Lambda<\infty$ independent of $g$, and $F_{0,1}(\Sigma_g)=\lambda(\Sigma_g)$. The paper does not specify a numerical value of $\Lambda$ in this theorem. This entry therefore does not assert $\lambda<3$ or an exact entropy limit.
+\item For each small $g$ the preceding construction produces a shrinker with genus $g$ or $2g$ and a uniform entropy bound; the assertions of genus $2g$ and three ends require $g$ sufficiently large. The paper's genus-two picture is explicitly conjectural and is not a numerical approximation. No uniqueness or identification with Shao--Zou's tripling construction is proved.
+\end{itemize}
+See \cite{CatHMW2026}, version~3: Theorem~43 (PDF p.~31), Theorem~55 and Conjecture~56 (p.~38), Theorem~59 (p.~39), Proposition~62 and Lemma~64 (pp.~45--46). The schematic depicts the three-sheet limit and topological data only; it does not assert existence for the small number of handles drawn.
+\end{example}
+
+\chapter{Ketover shrinkers with Platonic symmetry}\label{sec:catalogue-ketover-platonic}
+\cite{CatKetover2016}, Theorem~0.1, constructs five families by
+equivariant Gaussian min-max. The compact doubled solids used in the
+sweepout describe the genus and symmetry of the construction; compactness
+of the limiting shrinker is not proved.
+
+\begin{example}[Ketover shrinkers with Platonic symmetry]\label{ex:catalogue-ketover-platonic}
+There are smooth connected embedded self-shrinking surfaces
+$\Sigma\subset\mathbb R^3$ with the following pairs of genus and
+rotational symmetry group:
+\[
+ (g,G)=(3,T_{12}),\quad(5,O_{24}),\quad(7,O_{24}),
+ \quad(11,I_{60}),\quad(19,I_{60}).
+\]
+Here the subscripts give the orders of the tetrahedral, octahedral,
+and icosahedral rotation groups. The normalization is
+$\vec H=-X^\perp/2$, and $M_t=\sqrt{-t}\,\Sigma$ for $t<0$.
+No explicit parametrization is supplied.
+\begin{itemize}
+\item The sweepout joins two spherical sheets by one neck for each
+face of a tetrahedron, cube, octahedron, dodecahedron, or icosahedron,
+respectively. The numbers of necks are $4,6,8,12,20$; the first neck
+connects the components, so the genus is one less than this number.
+This is a construction description, not an exact metric model.
+\item The min-max limit is multiplicity one. It is complete and proper,
+has no boundary, and retains the stated genus and symmetry. The
+construction controls the genus but does not determine compactness,
+the number of ends, or end asymptotics. In particular, a compact
+picture suggested by numerical work must not be used to assign zero
+ends to these proved examples.
+\item The proof gives a useful strict Gaussian-area bound:
+\[
+ \frac4e < F_{0,1}(\Sigma)=\lambda(\Sigma)<\frac8e.
+\]
+For the doubled cube, the first equivariant width is $4/e$, the
+second is strictly below twice the first by Lemma~2.4, and the equality
+of the two widths is excluded in Remark~2.7. Remark~2.5 gives the same
+construction for the other four symmetry types. These are bounds,
+not computed entropy values.
+\item No uniqueness or stability classification is asserted. The
+two-parameter equivariant construction alone does not give an index
+bound for unrestricted variations. Later constructions with similar
+symmetries need not be different surfaces, and no identification is
+assumed here.
+\end{itemize}
+Sources: \cite{CatKetover2016}, Theorem~0.1 and the compactness
+discussion, PDF pp.~2--3; Theorems~1.1 and~1.3, p.~5;
+Lemma~2.4 and multiplicity-one argument, p.~12;
+Remark~2.5 and Remark~2.7, pp.~14--15.
+The illustration shows the neck counts and symmetry of the sweepout,
+not a numerical solution or a proof of compactness of the limit.
+\end{example}
+
+\chapter{Sun--Wang--Zhou shrinkers of arbitrarily large entropy}\label{sec:catalogue-swz-large-entropy}
+The Gaussian-width construction of \cite{CatSunWangZhou2024}
+produces shrinkers whose entropy is unbounded, in contrast with the
+uniform upper bounds for several gluing and low-parameter min-max
+families.
+
+\begin{example}[Sun--Wang--Zhou Gaussian-width shrinkers]\label{ex:catalogue-swz-large-entropy}
+For every $2\leq n\leq6$ there is a sequence of smooth, connected,
+embedded self-shrinking hypersurfaces $\Sigma_k^n\subset\mathbb R^{n+1}$.
+They are normalized by $\vec H=-X^\perp/2$, with associated smooth
+flows $M_t=\sqrt{-t}\,\Sigma_k$ for $t<0$. The construction is
+variational and does not give explicit parametrizations.
+\begin{itemize}
+\item Each shrinker is complete, proper, boundaryless, and has finite
+entropy. The construction is a multiplicity-one limit of free-boundary
+min-max hypersurfaces in exhausting balls with metrics approaching the
+Gaussian metric. The final shrinker has no free boundary.
+\item Write $G_n=(4\pi)^{-1}e^{-|x|^2/(2n)}g_{\mathrm{Euc}}$ and
+let $\omega_k(\mathbb R^{n+1},G_n)$ be its Gaussian $k$-width,
+defined by exhaustion. Then
+\[
+ F_{0,1}(\Sigma_k)=\lambda(\Sigma_k)
+ =\omega_k(\mathbb R^{n+1},G_n),\qquad
+ \lambda(\Sigma_k)\asymp k^{1/(n+1)}.
+\]
+The growth statement means comparison up to positive constants
+depending on $n$, and in particular $\lambda(\Sigma_k)\to\infty$.
+It is not a closed formula for an individual width or a plotted list
+of computed values. The unbounded entropies ensure infinitely many
+different examples, without requiring consecutive widths to be
+strictly different.
+\item The Gaussian Morse index for compactly supported normal
+variations satisfies $\mathrm{index}(\Sigma_k)\leq k$.
+This is an upper bound, not an equality or an entropy-stability claim.
+\item The theorem does not specify a genus, a number of ends, end
+asymptotics, compactness, or a symmetry group for each member.
+In dimension two the genus is therefore left unrecorded in the
+property browser, rather than inferred from the min-max parameter.
+\item In every dimension $n\geq2$ and for every $\Lambda>0$, there
+is a smooth embedded shrinker with
+$\Lambda<\lambda(\Sigma)<\infty$ and finite Gaussian index.
+For $n\geq7$ this follows by taking a lower-dimensional example
+and a Euclidean product. For example,
+$\Sigma^6\times\mathbb R^{n-6}\subset\mathbb R^{n+1}$ has the
+same entropy as $\Sigma^6$, and Theorem~5.3 preserves finiteness
+of index under each line product. These higher-dimensional product
+examples are noncompact; this extension does not assert the
+$n$-dimensional Gaussian-width growth law above beyond $n=6$.
+\end{itemize}
+Sources: \cite{CatSunWangZhou2024}, Theorem~1.6 and Corollary~1.7,
+arXiv version~1, PDF p.~4; Definition~5.1 and the proof of
+Theorem~1.6, pp.~39--42; Definition~5.2, p.~40;
+Theorem~5.3 and its proof, pp.~42--44. The illustration is a diagram of the
+width-growth conclusion, not numerical entropy data or a surface model.
+\end{example}
+
+\chapter{Chu--Sun genus-one shrinkers below the shrinking doughnut}\label{sec:catalogue-chu-sun-genus-one}
+The flow construction in \cite{CatChuSun2025} gives an embedded
+genus-one shrinker with strictly less entropy than the
+Drugan--Nguyen shrinking doughnut. It does not identify the
+resulting surface with any particular previously constructed example.
+
+\begin{example}[Chu--Sun lower-entropy genus-one shrinkers]\label{ex:catalogue-chu-sun-genus-one}
+Let $\mathcal T\subset\mathbb R^3$ be the rotationally symmetric
+compact genus-one shrinker constructed by Drugan--Nguyen
+(Example~\ref{ex:catalogue-drugan-nguyen-torus}). There is a smooth
+embedded genus-one shrinker $\Sigma\subset\mathbb R^3$ satisfying
+\[
+ F_{0,1}(\Sigma)=\lambda(\Sigma)
+ <\lambda(\mathcal T)<2.
+\]
+It has dimension two and codimension one, is normalized by
+$\vec H=-X^\perp/2$, and yields the smooth self-similar flow
+$\sqrt{-t}\,\Sigma$ for $t<0$.
+\begin{itemize}
+\item The surface is a multiplicity-one tangent-flow model at a
+genus-one singularity of an ancient level-set flow which is
+asymptotic, after rescaling as $t\to-\infty$, to $\mathcal T$.
+The ancient flow is allowed to pass through cylindrical and spherical
+singularities before the genus-one singularity. Thus the theorem does
+not assert that this is the first singularity of a smooth ancient flow.
+\item The resulting shrinker is complete, proper, and boundaryless.
+Its compactness, end count, end asymptotics, and symmetry are not
+determined by this existence statement. No explicit parametrization,
+exact entropy value, or numerical shape is supplied.
+\item Strictly smaller entropy rules out congruence with the chosen
+shrinking doughnut $\mathcal T$. It does not prove that $\Sigma$
+differs from the Buzano--Nguyen--Schulz genus-one example.
+Remark~1.5 discusses that example and its numerical evidence,
+without proving the identification. It also does not identify
+$\mathcal T$ with Angenent's shooting torus.
+\item For a shrinker minimizing entropy among all embedded genus-one
+shrinkers, Theorem~1.4 gives a further alternative: it is noncompact
+or has Gaussian Morse index exactly $5$. This statement applies to
+an entropy minimizer, not to every shrinker obtained by the
+interpolation construction. No uniqueness is asserted.
+\end{itemize}
+Sources: \cite{CatChuSun2025}, Theorems~1.4 and~1.6,
+Remark~1.5 and Corollary~1.7, arXiv version~3, PDF pp.~3--4;
+proofs in Sections~5.2--5.5, pp.~33--34.
+The diagram records the flow construction and strict entropy drop;
+the final genus-one shrinker is left abstract because its compactness
+and ends are not specified.
+\end{example}

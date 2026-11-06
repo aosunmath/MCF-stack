@@ -1,6 +1,6 @@
 # Expansion from Ao Sun's research papers
 
-The catalogue now has 42 example families. This addition follows [Ao Sun's research page](https://sites.google.com/view/aosun/research) to primary papers and their construction references. It adds 11 entries, while preserving the five-chapter structure and the tags of the original 31 examples.
+This expansion brought the catalogue to 42 example families; later additions are recorded in [the prescribed-tangent-flow reference expansion](prescribed-tangent-shrinkers.md). This addition follows [Ao Sun's research page](https://sites.google.com/view/aosun/research) to primary papers and their construction references. It adds 11 entries, while preserving the five-chapter structure and the tags of the original 31 examples.
 
 | Category | New constructions |
 | --- | --- |
