@@ -32,3 +32,17 @@ test('camera rotations preserve distances, while R4 projection is labeled by dim
   assert.ok(Math.hypot(...q4)<=Math.hypot(...p4));
   assert.ok(Math.hypot(...q4.map((v,i)=>v-changed[i]))>.1);
 });
+
+test('explicit ancient torus curves and helices satisfy the vector flow equation', async()=>{
+  const {explicitCurve}=await import('../site/assets/soliton-viewer.mjs');
+  const dt=1e-5,index=73,count=600;
+  for(const [kind,t] of [['torus-curve',-1.7],['helix',.4]]){
+    const p=explicitCurve(kind,t,count)[index];
+    const before=explicitCurve(kind,t-dt,count)[index],after=explicitCurve(kind,t+dt,count)[index];
+    const r=Math.hypot(p[0],p[1]);
+    const D=kind==='torus-curve'?r*r+4*r**8:1+r*r;
+    const curvature=kind==='torus-curve'?[-p[0]/D,-p[1]/D,-4*p[2]/D,-4*p[3]/D]:[-p[0]/D,-p[1]/D,0];
+    for(let i=0;i<p.length;i++)assert.ok(Math.abs((after[i]-before[i])/(2*dt)-curvature[i])<1e-7);
+  }
+  assert.throws(()=>explicitCurve('torus-curve',0));
+});

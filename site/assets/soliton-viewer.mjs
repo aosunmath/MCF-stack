@@ -25,6 +25,22 @@ export function revolutionFaces(data, degrees) {
   return data.faces.map((face,index)=>({face,index})).filter(({index})=>data.revolution.faceSectors[index]<count);
 }
 
+export function explicitCurve(kind,t,count=600) {
+  if(!['torus-curve','helix'].includes(kind))throw new Error('Unknown curve family');
+  if(kind==='torus-curve'&&!(t<0))throw new Error('Ancient torus curves require t < 0.');
+  let lo=0,hi=Math.max(1,Math.sqrt(Math.max(0,kind==='torus-curve'?-2*t:1-2*t)));
+  for(let j=0;j<90;j++){
+    const r=(lo+hi)/2;
+    const f=kind==='torus-curve'?r*r+r**8+2*t:Math.log(r)+r*r/2-.5+t;
+    if(f>0)hi=r;else lo=r;
+  }
+  const r=(lo+hi)/2;
+  return Array.from({length:count+1},(_,i)=>{
+    if(kind==='torus-curve'){const a=2*Math.PI*i/count;return [r*Math.cos(a),r*Math.sin(a),r**4*Math.cos(2*a),r**4*Math.sin(2*a)];}
+    const s=-2.5*Math.PI+5*Math.PI*i/count;return [r*Math.cos(s),r*Math.sin(s),s];
+  });
+}
+
 function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
@@ -37,9 +53,9 @@ function init(figure, data) {
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
   const center=lo.map((v,i)=>(v+hi[i])/2);
   // Keep one scale throughout the time slider, including its largest oval.
-  const radius=data.dynamic?.kind==='ancient-oval'
+  const radius=data.view?.radius ?? (data.dynamic?.kind==='ancient-oval'
     ? Math.hypot(Math.PI/2,Math.acosh(Math.exp(-data.dynamic.min)))
-    : Math.max(...vertices.map(p=>Math.hypot(...p.slice(0,3).map((v,i)=>v-center[i]))));
+    : Math.max(...vertices.map(p=>Math.hypot(...p.slice(0,3).map((v,i)=>v-center[i])))));
   const centered=()=>vertices.map(p=>p.map((v,i)=>i<3?v-center[i]:v));
   let points=centered();
   function draw() {
@@ -141,6 +157,14 @@ function init(figure, data) {
     const label=document.createElement('label');const output=document.createElement('output');output.textContent='t = -2.00';
     const input=document.createElement('input');input.type='range';input.min=String(data.dynamic.min);input.max=String(data.dynamic.max);input.step='.02';input.value=String(data.dynamic.value);input.setAttribute('aria-label','Ancient oval time');
     input.addEventListener('input',()=>{const t=Number(input.value);vertices=ancientOval(t);data.paths=[Array.from({length:vertices.length},(_,i)=>i)];points=centered();output.textContent=`t = ${t.toFixed(2)}`;requestDraw();});
+    label.append(output,input);figure.querySelector('.soliton-controls').append(label);
+  }
+  if(['torus-curve','helix'].includes(data.dynamic?.kind)){
+    const label=document.createElement('label'),output=document.createElement('output');
+    output.textContent=`t = ${data.dynamic.value.toFixed(2)}`;
+    const input=document.createElement('input');input.type='range';input.min=String(data.dynamic.min);input.max=String(data.dynamic.max);input.step='.01';input.value=String(data.dynamic.value);
+    input.setAttribute('aria-label',data.dynamic.kind==='helix'?'Eternal helix time':'Ancient torus curve time');
+    input.addEventListener('input',()=>{const t=Number(input.value);vertices=explicitCurve(data.dynamic.kind,t);points=centered();output.textContent=`t = ${t.toFixed(2)}`;canvas.dataset.time=String(t);requestDraw();});
     label.append(output,input);figure.querySelector('.soliton-controls').append(label);
   }
   figure.querySelector('.soliton-controls').hidden=false;

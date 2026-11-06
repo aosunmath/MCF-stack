@@ -451,6 +451,167 @@
       "caption": "The planar ancient oval satisfies cos(x)=exp(t) cosh(y). The time slider shows finite negative times; its smooth flow exists for all t<0. The time slider uses a fixed spatial scale.",
       "alt": "The Angenent oval as an explicit ancient flow. The planar ancient oval satisfies cos(x)=exp(t) cosh(y). The time slider shows finite negative times; its smooth flow exists for all t<0.",
       "interactive": true
+    },
+    {
+      "label": "ex:catalogue-kkm-one-end",
+      "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
+      "title": "Kapouleas–Kleene–Moller shrinkers with one end",
+      "category": "shrinkers",
+      "citations": [
+        "CatKKM2018",
+        "CatSunWang2020"
+      ],
+      "model": "kkm-shrinker",
+      "status": "Gluing schematic",
+      "caption": "Sphere–plane gluing configuration and one conical end; this is not a solved shrinker mesh.",
+      "alt": "Sphere–plane gluing configuration and one conical end; this is not a solved shrinker mesh.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-drugan-nguyen-torus",
+      "section": "drugan-nguyen-variational-shrinking-tori",
+      "title": "Drugan–Nguyen variational shrinking tori",
+      "category": "shrinkers",
+      "citations": [
+        "CatChuSun2025",
+        "CatDruganNguyen2018"
+      ],
+      "model": "variational-torus",
+      "status": "Variational construction schematic",
+      "caption": "Weighted half-plane construction of a closed geodesic; no identity with the numerical Angenent profile is assumed.",
+      "alt": "Weighted half-plane construction of a closed geodesic; no identity with the numerical Angenent profile is assumed.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-bns-genus",
+      "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+      "title": "Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "category": "shrinkers",
+      "citations": [
+        "CatBNS2025",
+        "CatChuSun2025"
+      ],
+      "model": "bns-shrinkers",
+      "status": "Symmetry and topology schematic",
+      "caption": "Equivariant min-max construction; exactly one end is established only for sufficiently large genus.",
+      "alt": "Equivariant min-max construction; exactly one end is established only for sufficiently large genus.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-ketover-doubled-plane",
+      "section": "ketover-self-shrinking-doubled-planes",
+      "title": "Ketover self-shrinking doubled planes",
+      "category": "shrinkers",
+      "citations": [
+        "CatKetover2024"
+      ],
+      "model": "ketover-shrinkers",
+      "status": "Doubled-plane schematic",
+      "caption": "Two conical ends and the doubled-plane limit describe the sufficiently large genus regime; the drawing is not a solved shrinker.",
+      "alt": "Two conical ends and the doubled-plane limit describe the sufficiently large genus regime; the drawing is not a solved shrinker.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-spherical-doubling-shrinkers",
+      "section": "closed-shrinkers-from-spherical-doubling",
+      "title": "Closed shrinkers from spherical doubling",
+      "category": "shrinkers",
+      "citations": [
+        "CatKapouleasMcGrath2023"
+      ],
+      "model": "sphere-doubling-shrinker",
+      "status": "Spherical-doubling schematic",
+      "caption": "Two sphere sheets joined by symbolic bridge sites. The theorem requires sufficiently large m; displayed dots do not specify a proved small-genus example.",
+      "alt": "Two sphere sheets joined by symbolic bridge sites. The theorem requires sufficiently large m; displayed dots do not specify a proved small-genus example.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-sun-wang-torus-translators",
+      "section": "translators-with-an-angenent-torus-end",
+      "title": "Translators with an Angenent-torus end",
+      "category": "translators",
+      "citations": [
+        "CatAngenent1992",
+        "CatSunWang2025"
+      ],
+      "model": "sun-wang-torus-end",
+      "status": "R4 end schematic",
+      "caption": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
+      "alt": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
+      "section": "translators-with-high-genus-spherical-doubling-ends",
+      "title": "Translators with high-genus spherical-doubling ends",
+      "category": "translators",
+      "citations": [
+        "CatKapouleasMcGrath2023",
+        "CatSunWang2025"
+      ],
+      "model": "sun-wang-doubled-sphere-end",
+      "status": "R4 end schematic",
+      "caption": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
+      "alt": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-ancient-torus-curves",
+      "section": "ancient-torus-curves-in-higher-codimension",
+      "title": "Ancient torus curves in higher codimension",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "model": "ancient-torus-curve",
+      "status": "Exact R4 curve, projected to R3",
+      "caption": "Frequencies (1,2). The time slider numerically inverts r²+r⁸=−2t in the exact formula; the viewing scale stays fixed. Apparent crossings may result from projection.",
+      "alt": "Frequencies (1,2). The time slider numerically inverts r²+r⁸=−2t in the exact formula; the viewing scale stays fixed. Apparent crossings may result from projection.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-eternal-helices",
+      "section": "eternal-shrinking-helices",
+      "title": "Eternal shrinking helices",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "model": "eternal-helix",
+      "status": "Exact R3 curve",
+      "caption": "The time slider inverts log r+r²/2=1/2−t. Only −5π/2 ≤ s ≤ 5π/2 is drawn; both infinite ends are omitted. The viewing scale stays fixed.",
+      "alt": "The time slider inverts log r+r²/2=1/2−t. Only −5π/2 ≤ s ≤ 5π/2 is drawn; both infinite ends are omitted. The viewing scale stays fixed.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-double-plane-flow",
+      "section": "immortal-annuli-converging-to-a-double-plane",
+      "title": "Immortal annuli converging to a double plane",
+      "category": "other-special-flows",
+      "citations": [
+        "CatCS26R3"
+      ],
+      "model": "immortal-annulus",
+      "status": "Immortal-flow schematic",
+      "caption": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
+      "alt": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-double-sphere-flow",
+      "section": "immortal-compact-flows-converging-to-a-double-sphere",
+      "title": "Immortal compact flows converging to a double sphere",
+      "category": "other-special-flows",
+      "citations": [
+        "CatCS25Man"
+      ],
+      "model": "immortal-product",
+      "status": "Product-manifold schematic",
+      "caption": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
+      "alt": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
+      "interactive": false
     }
   ]
 }

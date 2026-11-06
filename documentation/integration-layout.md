@@ -1,6 +1,6 @@
 # Integration layout and numbering
 
-MCF-stack collects special solutions of mean curvature flow in five chapters: Introduction, Shrinkers, Translators, Expanders, and Other special flows. `collection.json` places 32 sections in those chapters: one introductory section and 31 illustrated catalogue entries. The active manuscript is `content/gmt-foundations/`; its source slug and retained labels remain stable for permanent tags. See [the catalogue expansion](catalogue-expansion.md) for sources, normalization, illustration conventions, and reproducible geometry. Project identity is centralized in `scripts/project.py`.
+MCF-stack collects special solutions of mean curvature flow in five chapters: Introduction, Shrinkers, Translators, Expanders, and Other special flows. `collection.json` places 43 sections in those chapters: one introductory section and 42 illustrated catalogue entries. The active manuscript is `content/gmt-foundations/`; its source slug and retained labels remain stable for permanent tags. See [the catalogue expansion](catalogue-expansion.md) for sources, normalization, illustration conventions, and reproducible geometry. Project identity is centralized in `scripts/project.py`.
 
 The inherited GMT chapters, formerly numbered 6 onward, have been removed from the manuscript, published routes, search, and source listings. Their former source files and development notes remain available through Git history. Older expansion documents describe that inherited edition and are not the current reading plan. Do not restore these chapters when extending the special-solution catalogue.
 
@@ -24,6 +24,6 @@ Record source licenses, exact revisions, attribution, and unresolved proof depen
 
 Show tags reveals chapter, section, statement, equation, and clause identifiers. Cite this page must open on repeated clicks and direct `#cite` links, and its BibTeX must identify MCF-stack: Special Solutions of Mean Curvature Flow and the current page. Footnotes retain paired references and return links. Long equations scroll within the reading column on narrow screens.
 
-Before publication, run the commands in the README and inspect desktop and mobile layouts. The build must contain only the five active chapters, all 31 catalogue figures, and no removed background routes or links. Check that retained tags are unchanged and that citations and search resolve within the current edition.
+Before publication, run the commands in the README and inspect desktop and mobile layouts. The build must contain only the five active chapters, all registered catalogue figures, and no removed background routes or links. Check that retained tags are unchanged and that citations and search resolve within the current edition.
 
 Proofs use native closed `details.proof` panels. Fragment links reopen a containing proof, and print events temporarily expand proofs. Citations retain their canonical bibliography identifiers and also receive page-local reference targets with unique return links. Bibliography backlinks point to the exact local reference list; source catalogues distinguish cited sources from files awaiting review.

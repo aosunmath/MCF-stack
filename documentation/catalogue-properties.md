@@ -1,0 +1,22 @@
+# Catalogue property records
+
+`catalogue-properties.json` contains one record per permanent example label. The build requires its labels to agree exactly with the active examples and illustration registry. The [public browser](https://aosunmath.github.io/MCF-stack/browse/) also exports the resolved metadata as `catalogue-properties.json`, including the corresponding section routes and tags.
+
+Each record has one or more **geometric cases**. Ambient space, intrinsic dimension, compactness, genus, ends, and quantitative information must describe the same case. For instance, a grim-reaper curve has two ends; its product surface is a plane topologically and has one end. The two cases cannot be combined to invent a genus-zero surface with two ends. Higher-dimensional cylinders split according to the dimension of their Euclidean factor. Ambient tags record the construction's stated ambient space, not every trivial Euclidean inclusion.
+
+Genus applies to two-dimensional parameter manifolds. Immersion self-intersections do not change the domain genus. Genus of a cross-section of a three-dimensional translator is recorded in the explanatory text; it is not a surface genus of the translator. For disconnected examples, counts are qualified componentwise. Topology of evolving examples means the regular time slices described in the entry, before any specified singular event.
+
+A known count is distinct from a count that depends on parameters or is not established in the reviewed statement. In particular, small-genus Ketover shrinkers have `compact: null` and an unrecorded end count; the large-genus subfamily has two ends. Unknown compactness matches neither the compact nor noncompact filter. No missing datum is converted to zero.
+
+The two quantities are recorded separately:
+
+- Gaussian area means the centered integral `F_(0,1)` of the stated normalized or time-dependent slice.
+- Entropy means the supremum over all Euclidean centers and positive Gaussian scales. A supremum over the times of a flow is an additional operation and must be labeled as such.
+
+For normalized proper shrinkers with polynomial area growth, centered Gaussian area equals entropy. For translators and general flows this equality must not be assumed. The exact eternal-helix entropy in the new entry follows from a direct Gaussian integration; its value is finite at every finite time even though the supremum over eternal time is infinite. Euclidean entropy is not assigned to intrinsic MCF in a curved ambient product manifold.
+
+Statuses are `exact`, `bound`, `numerical`, `finite`, `not-recorded`, and `not-applicable`. An exact formula can depend on parameters without supplying a numerical value. Numerical estimates are never admitted by the proved-entropy-bound filter. That filter uses only recorded scalar values or uniform upper bounds; an upper bound equal to the filter threshold must be explicitly strict. A lower bound cannot be used as an upper bound. The numerical Angenent estimate and the proved Drugan–Nguyen bound remain attached to their respective constructions, whose identification is not established in the cited paper.
+
+The browser combines filters within a case, groups matching cases, and counts each example family once even when it appears in more than one group. Filter selections are encoded in the URL. The full case records remain readable without JavaScript, and every example page links back to the property browser. Mathematical references and hypotheses remain in the linked catalogue entries; the source audit records exact checked editions.
+
+When adding an example, update its manuscript statement, status register, bibliography and source evidence, illustration registry, and property record together. Check the combined filters on desktop and mobile and run the property and geometry tests before publication.

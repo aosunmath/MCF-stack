@@ -1,0 +1,1378 @@
+{
+  "version": 1,
+  "scope": "Selected construction and property passages checked from Ao Sun’s research page and its references; not complete readings of every paper or independent formal verification.",
+  "discovery_url": "https://sites.google.com/view/aosun/research",
+  "sources": [
+    {
+      "key": "CatSunWang2025",
+      "title": "On Mean Curvature Flow Translators with Prescribed Ends",
+      "url": "https://arxiv.org/abs/2301.08224v2",
+      "pdf_url": "https://arxiv.org/pdf/2301.08224v2",
+      "version": "arXiv v2",
+      "sha256": "1f9be092ccba6905d1de1e308056f7dd4789fcd049919801d035cdcf2b58caca",
+      "pdf_pages": 45,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        43,
+        44,
+        45
+      ],
+      "posted": "2025-08-20",
+      "printed_document_date": "2025-08-21"
+    },
+    {
+      "key": "CatKapouleasMcGrath2023",
+      "title": "Generalizing the Linearized Doubling Approach, I: General Theory and New Minimal Surfaces and Self-Shrinkers",
+      "url": "https://arxiv.org/abs/2001.04240v4",
+      "pdf_url": "https://arxiv.org/pdf/2001.04240v4",
+      "version": "arXiv v4",
+      "sha256": "96a48fcb392232182c43ab232540e3d6d45d826aee98a0a9c99f90de148895a1",
+      "pdf_pages": 86,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        30,
+        40,
+        65,
+        66,
+        67
+      ],
+      "posted": "2022-12-05"
+    },
+    {
+      "key": "CatAngenent1992",
+      "title": "Shrinking Doughnuts",
+      "url": "https://link.springer.com/chapter/10.1007/978-1-4612-0393-3_2",
+      "pdf_url": "https://link.springer.com/chapter/10.1007/978-1-4612-0393-3_2",
+      "version": "User-supplied 18-page preprint",
+      "sha256": "1b7bd96463bcd5bc6fd0e6b2883f1e5e2a48a6a01616f0794a297a6a7c88dc2d",
+      "pdf_pages": 18,
+      "read_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "CatSS19",
+      "title": "Construction of High Codimension Ancient Mean Curvature Flows",
+      "url": "https://arxiv.org/abs/1908.02688v2",
+      "pdf_url": "https://arxiv.org/pdf/1908.02688v2",
+      "version": "1908.02688v2",
+      "sha256": "f0b9e2192467b7226d89761ebee27d16d8cf3424914b06157a4f1c4ef050ccf3",
+      "pdf_pages": 11,
+      "page_locators": "PDF pages equal printed preprint pages. Journal pages are different.",
+      "version_date": "2019-09-05"
+    },
+    {
+      "key": "CatCS26R3",
+      "title": "Mean curvature flow with multiplicity 2 convergence in R³",
+      "url": "https://arxiv.org/abs/2312.17457v3",
+      "pdf_url": "https://arxiv.org/pdf/2312.17457v3",
+      "version": "2312.17457v3",
+      "sha256": "a1c78051bbb16367d624ce1548ec6cc3616e3edc8874c1f9f56a3c41724c48e9",
+      "pdf_pages": 30,
+      "page_locators": "PDF pages equal printed preprint pages. Journal pages are different.",
+      "version_date": "2025-08-20"
+    },
+    {
+      "key": "CatCS25Man",
+      "title": "Mean curvature flow with multiplicity 2 convergence in manifolds",
+      "url": "https://arxiv.org/abs/2402.04521v2",
+      "pdf_url": "https://arxiv.org/pdf/2402.04521v2",
+      "version": "2402.04521v2",
+      "sha256": "7edbf5ae12cbb2ea50f880be00dd8862a62f077c292d0f64a99f9cf7a2c9f8e7",
+      "pdf_pages": 19,
+      "page_locators": "PDF pages equal printed preprint pages. Journal pages are different.",
+      "version_date": "2025-03-09"
+    },
+    {
+      "key": "CatAAAW13",
+      "title": "The Zoo of Solitons for Curve Shortening in Rⁿ",
+      "url": "https://arxiv.org/abs/1207.4051v1",
+      "pdf_url": "https://arxiv.org/pdf/1207.4051v1",
+      "version": "1207.4051v1",
+      "sha256": "052f77d9247a90a49fa15a12490e8de885b9a14b24e09b5a6ed86ea67813cf10",
+      "pdf_pages": 39,
+      "page_locators": "PDF pages equal printed preprint pages. Journal pages are different.",
+      "version_date": "2012-07-17"
+    },
+    {
+      "key": "CatChuSun2025",
+      "title": "Genus one singularities in mean curvature flow",
+      "url": "https://arxiv.org/pdf/2308.05923v3",
+      "pdf_url": "https://arxiv.org/pdf/2308.05923v3",
+      "version": "v3",
+      "sha256": "38a7932a505da7404c1ee6727cce0517f04a94174fbf010ea72bec57352e9795",
+      "pdf_pages": 37
+    },
+    {
+      "key": "CatSunWang2020",
+      "title": "Compactness of self-shrinkers in ℝ³ with fixed genus",
+      "url": "https://arxiv.org/pdf/1811.05387v2",
+      "pdf_url": "https://arxiv.org/pdf/1811.05387v2",
+      "version": "v2",
+      "sha256": "93d8b8a2f1ba2ec37c357df6d3ec5d84b3b089c76c09d6ebe24b773597a3bc77",
+      "pdf_pages": 33
+    },
+    {
+      "key": "CatSunZhu2025",
+      "title": "Rigidity and Łojasiewicz inequalities for Clifford self-shrinkers",
+      "url": "https://arxiv.org/pdf/2011.01636v1",
+      "pdf_url": "https://arxiv.org/pdf/2011.01636v1",
+      "version": "v1",
+      "sha256": "c2dd8ad45502297b29647c753bc890ca4080cd5b342d7d244599fcf8f1161ac0",
+      "pdf_pages": 31
+    },
+    {
+      "key": "CatKKM2018",
+      "title": "Mean curvature self-shrinkers of high genus: Non-compact examples",
+      "url": "https://arxiv.org/pdf/1106.5454v3",
+      "pdf_url": "https://arxiv.org/pdf/1106.5454v3",
+      "version": "v3",
+      "sha256": "2a6ae6a30910e33a0376c1b4ff1360e3ddf4d44b8f75de91bad3d623dbaebc9b",
+      "pdf_pages": 41
+    },
+    {
+      "key": "CatBNS2025",
+      "title": "Noncompact self-shrinkers for mean curvature flow with arbitrary genus",
+      "url": "https://arxiv.org/pdf/2110.06027v2",
+      "pdf_url": "https://arxiv.org/pdf/2110.06027v2",
+      "version": "v2",
+      "sha256": "98b331d5e7c2a8eafd579c123e7056a37393e3c11b59e5a368c754ca6c277507",
+      "pdf_pages": 18
+    },
+    {
+      "key": "CatKetover2024",
+      "title": "Self-shrinkers whose asymptotic cones fatten",
+      "url": "https://arxiv.org/pdf/2407.01240v2",
+      "pdf_url": "https://arxiv.org/pdf/2407.01240v2",
+      "version": "v2",
+      "sha256": "e634d4f4e88bbd489116372e488e48ab05defbd91396f4515afdab9cd26ad922",
+      "pdf_pages": 47
+    },
+    {
+      "key": "CatBerchenkoKogan2021",
+      "title": "The entropy of the Angenent torus is approximately 1.85122",
+      "url": "https://arxiv.org/pdf/1808.08163v2",
+      "pdf_url": "https://arxiv.org/pdf/1808.08163v2",
+      "version": "v2",
+      "sha256": "55158918359fa8d7f042080cffad0f968b994ec3e8890b529439f022b0d0bccc",
+      "pdf_pages": 14
+    },
+    {
+      "key": "CatDruganNguyen2018",
+      "title": "Shrinking doughnuts via variational methods",
+      "url": "https://arxiv.org/pdf/1708.08808v1",
+      "pdf_url": "https://arxiv.org/pdf/1708.08808v1",
+      "version": "v1",
+      "sha256": "1a8bb8277a2faa8307f369e5547808a02df0d8f2e8c09168a64b39a33578ee91",
+      "pdf_pages": 18
+    }
+  ],
+  "entries": [
+    {
+      "slug": "sun-wang-torus-translators",
+      "title": "Translators with an Angenent-torus end",
+      "label": "ex:catalogue-sun-wang-torus-translators",
+      "section_label": "sec:catalogue-sun-wang-torus-translators",
+      "category": "translators",
+      "formula_status": "variational existence; exact graph representation has unknown correction",
+      "browsing_metadata": {
+        "ambient_space": "Euclidean R4",
+        "ambient_dimension": 4,
+        "intrinsic_dimension": 3,
+        "codimension": 1,
+        "compact": false,
+        "complete": true,
+        "embedded": true,
+        "proper": true,
+        "smooth": true,
+        "time_interval": "all real t",
+        "translation_velocity": "e4 (unit upward)",
+        "surface_genus": null,
+        "surface_genus_status": "not applicable: intrinsic dimension three",
+        "topological_ends": 1,
+        "topological_ends_status": "compact-core + connected graphical end consequence",
+        "global_topology": "not recorded beyond compact core and product end",
+        "gaussian_area_at_origin": null,
+        "gaussian_area_at_origin_status": "not recorded",
+        "weighted_stability": "stable for compactly supported variations of I=integral exp(z) dH3, as a consequence of minimizing",
+        "entropy_stability": "not recorded",
+        "dynamical_stability": "not recorded",
+        "end_topology": "T2 × [z0,infinity)",
+        "cross_section_dimension": 2,
+        "cross_section_genus": 1,
+        "backward_tangent": "Angenent torus × R, multiplicity one",
+        "entropy": {
+          "status": "exact source identity",
+          "formula": "lambda(Sigma)=F(S_A)=lambda(S_A)",
+          "integral": "(4*pi)^(-1) integral_{S_A} exp(-|x|^2/4) dH2",
+          "numeric_value": null,
+          "upper_bound": null,
+          "numeric_status": "not recorded; do not promote any torus numerical estimate to an exact entropy"
+        },
+        "nonuniqueness": "at least two distinct minimizing completions for some rotational end; not a count of all translators"
+      },
+      "construction_parameters": {
+        "continuous": "I_A = Gaussian index of Angenent torus; construction includes translations",
+        "index_value": null,
+        "selected_symmetric_subfamily": "rotationally invariant in R3_x",
+        "moduli_quotient_dimension": "not assigned"
+      },
+      "source_locators": [
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            2,
+            12
+          ],
+          "locator": "Theorems1.1,3.7",
+          "claim": "I-parameter translating-end construction; input smooth closed embedded hypersurface shrinker; polynomial decay; multiplicity-one backward cylinder; I is Gaussian index before quotienting translations.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "locator": "Lemma3.2; Definition3.3; Remark3.4",
+          "claim": "High-height scaled graph ES[u], and polynomial decay of the normalized graph, not a closed formula.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            28,
+            32
+          ],
+          "locator": "Theorem4.1, equation(4.1); completion of proof",
+          "claim": "Complete I-minimizing boundary; exponential completion error; singular set dimension at most n−7; symmetry may be preserved.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "locator": "Proof of Lemma2.5 and Lemma3.2",
+          "claim": "Compact lower-height core plus graphical high end; when S is connected this gives one topological end and properness.",
+          "status": "direct consequence of source proof and graph topology"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "locator": "Corollary2.4 and Lemma2.5",
+          "claim": "Finite entropy; lambda(Sigma)=F(S×R)=F(S)=lambda(S).",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            28,
+            32
+          ],
+          "locator": "Theorems4.1,4.3",
+          "claim": "I-minimizing implies nonnegative second variation for compactly supported fixed-boundary variations.",
+          "status": "elementary variational consequence; not entropy stability"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            32,
+            34
+          ],
+          "locator": "Theorem4.3 and Corollary4.5",
+          "claim": "Unique minimizing completion outside a meager parameter subset; no uniqueness theorem for all translators.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatAngenent1992",
+          "pdf_pages": [
+            1
+          ],
+          "locator": "Unnumbered theorem",
+          "claim": "Embedded torus shrinker; convert original normalization by sqrt(2).",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            35,
+            38,
+            39
+          ],
+          "locator": "Theorem5.1; proof; final discussion",
+          "claim": "There is a fattened closed set bounded by two distinct complete I-minimizing translators with the same exponentially prescribed end. No assertion of exactly two all-class translators.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            34
+          ],
+          "locator": "Conjecture4.6",
+          "claim": "Realization as type-II blow-ups of closed flows is conjectural in this paper, not supplied by the construction.",
+          "status": "source statement"
+        }
+      ],
+      "picture": {
+        "model": "sun-wang-torus-end",
+        "type": "asymptotic cross-section / nonuniqueness schematic",
+        "brief": "Use existing numerical Angenent torus only as the limiting cross-section S_A in R3_x; show its sqrt(z) scaling for several high z, with the fourth coordinate represented by a labelled height slider or separated panels. Label the result auxiliary end ES[0], not the actual translator. A separate small two-curve diagram can show the distinct minimizing completions enclosing a region and approaching the same end; do not imply known cap topology.",
+        "caption": "Asymptotic cross-sections in R3 of an R4 translator; unknown correction u is not computed.",
+        "alt": "Schematic of toroidal high-height cross-sections and two distinct minimizing completions approaching the same end; no exact translator surface is plotted.",
+        "interactive_controls": [
+          "height z controlling sqrt(z) scale of auxiliary cross-section",
+          "rotation and zoom of cross-section only"
+        ]
+      }
+    },
+    {
+      "slug": "sun-wang-sphere-doubling-translators",
+      "title": "Translators with high-genus spherical-doubling ends",
+      "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
+      "section_label": "sec:catalogue-sun-wang-sphere-doubling-translators",
+      "category": "translators",
+      "formula_status": "composition of two existence constructions; no explicit shrinker or translator formula",
+      "browsing_metadata": {
+        "ambient_space": "Euclidean R4",
+        "ambient_dimension": 4,
+        "intrinsic_dimension": 3,
+        "codimension": 1,
+        "compact": false,
+        "complete": true,
+        "embedded": true,
+        "proper": true,
+        "smooth": true,
+        "time_interval": "all real t",
+        "translation_velocity": "e4 (unit upward)",
+        "surface_genus": null,
+        "surface_genus_status": "not applicable: intrinsic dimension three",
+        "topological_ends": 1,
+        "topological_ends_status": "compact-core + connected graphical end consequence",
+        "global_topology": "not recorded beyond compact core and product end",
+        "gaussian_area_at_origin": null,
+        "gaussian_area_at_origin_status": "not recorded",
+        "weighted_stability": "stable for compactly supported variations of I=integral exp(z) dH3, as a consequence of minimizing",
+        "entropy_stability": "not recorded",
+        "dynamical_stability": "not recorded",
+        "end_topology": "S_m × [z0,infinity), genus(S_m)=2m−1",
+        "cross_section_dimension": 2,
+        "cross_section_genus": "2m−1 for sufficiently large m",
+        "backward_tangent": "S_m × R, multiplicity one",
+        "entropy": {
+          "status": "exact identity with rigorous upper bound",
+          "formula": "lambda(Sigma_m)=F(S_m)=lambda(S_m)",
+          "numeric_value": null,
+          "upper_bound": "8/e",
+          "upper_bound_strict": true,
+          "upper_bound_provenance": "KM Gaussian-metric area <2 area(radius-two sphere), divided by4pi, and SW Cor2.4/Lemma2.5",
+          "individual_value_status": "not recorded"
+        },
+        "nonuniqueness": "no specific fattening example proved for these input shrinkers in reviewed sources"
+      },
+      "construction_parameters": {
+        "integer": "m sufficiently large; k_circle=2 and vector m=(m) in KM Theorem10.5",
+        "continuous": "I_m = Gaussian index of the fixed shrinker S_m; includes translations",
+        "threshold": "not explicit",
+        "index_value": null,
+        "selected_symmetry": "G_m = D_(2m) × Z2, order4m; D_(2m) denotes dihedral group of order2m",
+        "bridge_sites_note": "two latitude circles, m sites each; total bridge count is 2m",
+        "latitude_circles": 2,
+        "total_bridge_sites": "2m"
+      },
+      "source_locators": [
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            2,
+            12
+          ],
+          "locator": "Theorems1.1,3.7",
+          "claim": "I-parameter translating-end construction; input smooth closed embedded hypersurface shrinker; polynomial decay; multiplicity-one backward cylinder; I is Gaussian index before quotienting translations.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "locator": "Lemma3.2; Definition3.3; Remark3.4",
+          "claim": "High-height scaled graph ES[u], and polynomial decay of the normalized graph, not a closed formula.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            28,
+            32
+          ],
+          "locator": "Theorem4.1, equation(4.1); completion of proof",
+          "claim": "Complete I-minimizing boundary; exponential completion error; singular set dimension at most n−7; symmetry may be preserved.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "locator": "Proof of Lemma2.5 and Lemma3.2",
+          "claim": "Compact lower-height core plus graphical high end; when S is connected this gives one topological end and properness.",
+          "status": "direct consequence of source proof and graph topology"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "locator": "Corollary2.4 and Lemma2.5",
+          "claim": "Finite entropy; lambda(Sigma)=F(S×R)=F(S)=lambda(S).",
+          "status": "source statement"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            28,
+            32
+          ],
+          "locator": "Theorems4.1,4.3",
+          "claim": "I-minimizing implies nonnegative second variation for compactly supported fixed-boundary variations.",
+          "status": "elementary variational consequence; not entropy stability"
+        },
+        {
+          "source": "CatSunWang2025",
+          "pdf_pages": [
+            32,
+            34
+          ],
+          "locator": "Theorem4.3 and Corollary4.5",
+          "claim": "Unique minimizing completion outside a meager parameter subset; no uniqueness theorem for all translators.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatKapouleasMcGrath2023",
+          "pdf_pages": [
+            66
+          ],
+          "locator": "Theorem10.5; Section10 spherical Jacobi calculation",
+          "claim": "Closed spherical self-shrinker doublings for k_circle≥2, m large depending on k_circle, vector m in {m,-m,-2m}^{ceil(k_circle/2)}. Use k_circle=2, vector(m).",
+          "status": "source statement"
+        },
+        {
+          "source": "CatKapouleasMcGrath2023",
+          "pdf_pages": [
+            40,
+            65
+          ],
+          "locator": "Definitions7.10–7.11, Remark7.12; Theorem9.40",
+          "claim": "Selected input has 2m bridges, genus2m−1, finite symmetry G_m, and is smooth closed embedded.",
+          "status": "source statement"
+        },
+        {
+          "source": "CatKapouleasMcGrath2023",
+          "pdf_pages": [
+            3,
+            30,
+            66
+          ],
+          "locator": "TheoremA(v), Theorem5.7 equation(5.9), Gaussian metric in Section10",
+          "claim": "Weighted area of input is strictly less than twice sphere weighted area; combined with SW entropy identity gives lambda(Sigma_m)<8/e.",
+          "status": "direct corollary combining two published constructions with Gaussian normalization"
+        }
+      ],
+      "picture": {
+        "model": "sun-wang-spherical-doubling-end",
+        "type": "topology and asymptotic cross-section schematic",
+        "brief": "Show two nearby spherical shells connected at schematic bridge sites on two latitude circles as the input S_m, with total sites 2m and cross-sectional genus2m−1; use a deliberately schematic small number of drawn bridge icons and label that m must be sufficiently large. Then use an arrow to indicate sqrt(z) scaling of the high-height cross-section of a translator in R4. Do not draw a fake smooth translator or imply the displayed small m lies in the theorem range.",
+        "caption": "Schematic of the closed shrinker input and its scaling as a translator cross-section; neither constructed surface is computed.",
+        "alt": "Two nearby spherical shells connected by many small bridges represent a high-genus shrinker input; a scaling diagram represents the single end of an R4 translator.",
+        "interactive_controls": [
+          "rotate and zoom schematic cross-section",
+          "height z for auxiliary scaling only"
+        ]
+      }
+    },
+    {
+      "title": "Ancient torus curves in higher codimension",
+      "section_label": "sec:catalogue-ancient-torus-curves",
+      "label": "ex:catalogue-ancient-torus-curves",
+      "category": "other special flows",
+      "formula_status": "exact parametrization with exact implicitly defined scale",
+      "flow_type": "smooth ancient curve-shortening flow",
+      "time_interval": "(-infinity,0)",
+      "ambient": {
+        "kind": "Euclidean",
+        "space": "R^(2m)",
+        "ambient_dimension": "2m",
+        "intrinsic_dimension": 1,
+        "codimension": "2m-1",
+        "parameters": "m>=2; 1=k1<...<km positive integers",
+        "display_ambient": "R4 for m=2, frequencies(1,2)"
+      },
+      "topology": {
+        "name": "S1",
+        "compact": true,
+        "connected": true,
+        "embedded": true,
+        "complete": true,
+        "proper": true,
+        "ends": 0,
+        "genus": null,
+        "genus_status": "not applicable: this is a one-dimensional curve, not a torus surface",
+        "embedding_scope": "The catalogue restricts k1=1. General frequencies with gcd d>1 give a d-fold immersion; all mass/entropy counts source parameter multiplicity."
+      },
+      "formula": {
+        "coordinates": "gamma_j pair=(r^(kj^2)cos(kj theta),r^(kj^2)sin(kj theta))",
+        "parameter_domain": "theta in R/(2pi Z)",
+        "scale": "sum_j r^(2kj^2)=-2t; r>0",
+        "scale_ode": "r_prime=-r/D; D=sum_j kj^2 r^(2kj^2)",
+        "normalization": "d_t gamma=Delta_gamma gamma=Hvec; source calls its oppositely signed vector -Hvec"
+      },
+      "entropy": {
+        "status": "proved exact temporal supremum, finite",
+        "expression": "sup_(t<0) lambda(gamma_t)=km*sqrt(2pi/e)",
+        "pointwise_bound": "lambda(gamma_t)<=km*sqrt(2pi/e)",
+        "pointwise_value": null,
+        "warning": "Do not assign the time supremum as exact entropy at each finite time.",
+        "source": "CatSS19 Corollary2.3 PDF5"
+      },
+      "gaussian_area": {
+        "status": "exact centered direct calculation",
+        "normalization": "F01=(4pi)^(-1/2) integral exp(-|X|^2/4) ds",
+        "expression": "F01=sqrt(pi)*sqrt(D)*exp(t/2)",
+        "derivation": "|gamma|^2=B=-2t; speed=sqrt(D); length=2pi*sqrt(D).",
+        "is_full_entropy": false
+      },
+      "ordinary_area": {
+        "measure": "length",
+        "expression": "2pi*sqrt(D)",
+        "status": "direct identity from source parametrization"
+      },
+      "evidence": [
+        {
+          "claim": "Coordinates, existence and full ambient linear span",
+          "source": "CatSS19",
+          "locator": "equation2.1 and Proposition2.1, PDF3–4",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Unique implicit scale and time normalization",
+          "source": "CatSS19",
+          "locator": "TheoremA.1, PDF8–9; visual check PDF3,9",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Backward k_m-cover and forward k_1-cover of radius-sqrt2 circle after scaling by(-t)^-1/2",
+          "source": "CatSS19",
+          "locator": "Proposition2.2, PDF4–5",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Embeddedness for k1=1, compactness, properness, completeness and no ends",
+          "source": "CatSS19",
+          "locator": "equation2.1, PDF3",
+          "basis": "direct deduction: first coordinate pair determines theta; compact domain"
+        },
+        {
+          "claim": "Not homothetically selfsimilar for m>=2",
+          "source": "CatSS19",
+          "locator": "equations2.1,2.5, PDF3–4",
+          "basis": "direct deduction: distinct coordinate radii have changing ratios"
+        },
+        {
+          "claim": "Earlier discovery acknowledged; earlier static-symmetry construction actually checked",
+          "source": "CatSS19 and CatAAAW13",
+          "locator": "SS Remark1.3 PDF3; AAAW Section3 equations11–14 PDF8–9",
+          "basis": "source theorem/construction"
+        }
+      ],
+      "illustration": {
+        "mode": "interactive exact R4 projection",
+        "coordinates": "(r cos theta,r sin theta,r^4 cos(2theta)); color optional fourth coordinate r^4 sin(2theta)",
+        "time_inversion": "unique positive root r^2+r^8=-2t; use bisection in log r or positive r",
+        "controls": [
+          "time t<0",
+          "rotate",
+          "zoom",
+          "projection choice if supported"
+        ],
+        "caption": "Projection of an exact curve in R4. The implicit time scale is solved numerically.",
+        "critical_caution": "Do not label the projection itself as an R3 mean curvature flow; do not call the curve a genus-one surface."
+      }
+    },
+    {
+      "title": "Eternal shrinking helices",
+      "section_label": "sec:catalogue-eternal-helices",
+      "label": "ex:catalogue-eternal-helices",
+      "category": "other special flows",
+      "formula_status": "exact parametrization with exact implicitly defined scale",
+      "flow_type": "smooth eternal curve-shortening flow",
+      "time_interval": "all real t",
+      "ambient": {
+        "kind": "Euclidean",
+        "space": "R^(2m+1)",
+        "ambient_dimension": "2m+1",
+        "intrinsic_dimension": 1,
+        "codimension": "2m",
+        "parameters": "m>=1; increasing positive integers k_j",
+        "display_ambient": "R3 for m=1,k1=1"
+      },
+      "topology": {
+        "name": "R",
+        "compact": false,
+        "connected": true,
+        "embedded": true,
+        "complete": true,
+        "proper": true,
+        "ends": 2,
+        "genus": null,
+        "genus_status": "not applicable: curve",
+        "end_behavior": "Helical ends at every finite time; neither is asymptotic to the axis as parameter tends to infinity. Entire flow converges to axis as t tends to positive infinity."
+      },
+      "formula": {
+        "coordinates": "Gamma(s)=(r^(kj^2)cos(kj s),r^(kj^2)sin(kj s))_(j=1..m) concatenated with s",
+        "parameter_domain": "s in R",
+        "scale": "log r+(1/2)sum_j r^(2kj^2)=m/2-t; r>0; r(0)=1",
+        "scale_ode": "r_prime=-r/(1+D), D=sum_j kj^2 r^(2kj^2)",
+        "normalization": "d_t Gamma=Delta_Gamma Gamma=Hvec"
+      },
+      "entropy": {
+        "status": "proved unbounded temporal supremum",
+        "expression": "sup_(t in R) lambda(Gamma_t)=infinity",
+        "pointwise_value": null,
+        "warning": "The theorem is a supremum over all time. Do not mark every time slice as infinite entropy.",
+        "source": "CatSS19 Proposition2.7 PDF7"
+      },
+      "gaussian_area": {
+        "status": "exact centered direct calculation",
+        "expression": "sqrt(1+D)*exp(-B/4), B=sum_j r^(2kj^2); for m=k1=1: sqrt(1+r^2)*exp(-r^2/4)",
+        "normalization": "one-dimensional F01",
+        "derivation": "|Gamma|^2=B+s^2 and arclength density sqrt(1+D); integral_R exp(-s^2/4) ds=sqrt(4pi).",
+        "is_full_entropy": false
+      },
+      "ordinary_area": {
+        "measure": "length",
+        "value": null,
+        "status": "infinite total length; direct identity from constant positive arclength density"
+      },
+      "evidence": [
+        {
+          "claim": "Exact generalized helix and all-time existence",
+          "source": "CatSS19",
+          "locator": "equation2.6 PDF6; Proposition2.6 PDF7; TheoremA.2 PDF9",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "r tends to infinity backward and zero forward; exponential axis convergence discussed in earlier source",
+          "source": "CatSS19 and CatAAAW13",
+          "locator": "SS Proposition2.6 PDF7; AAAW Section3 PDF10",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Embedded proper complete two-ended line topology",
+          "source": "CatSS19",
+          "locator": "equation2.6 and TheoremA.2, PDF6,9",
+          "basis": "direct deduction: last coordinate=s; metric=(1+D)ds^2"
+        },
+        {
+          "claim": "Earlier symmetry construction and helix example",
+          "source": "CatAAAW13",
+          "locator": "Section3 equations11–14, PDF8–10",
+          "basis": "source theorem/construction"
+        }
+      ],
+      "illustration": {
+        "mode": "interactive exact R3 curve",
+        "coordinates": "(r cos s,r sin s,s)",
+        "time_inversion": "unique root log r+r^2/2=1/2-t; numerical bisection in log r stable across long times",
+        "controls": [
+          "time",
+          "rotate",
+          "zoom",
+          "displayed turns if practical"
+        ],
+        "caption": "Exact eternal helix; the implicit scale is solved numerically. Only a finite interval of the infinite curve is displayed.",
+        "critical_caution": "Shrinking radius at fixed pitch is not a homothetic shrinker."
+      }
+    },
+    {
+      "title": "Immortal annuli converging to a double plane",
+      "section_label": "sec:catalogue-double-plane-flow",
+      "label": "ex:catalogue-double-plane-flow",
+      "category": "other special flows",
+      "formula_status": "critical PDE/exhaustion construction, no closed time-dependent formula",
+      "flow_type": "immortal smooth hypersurface flow for t>0, initial locally Lipschitz trace",
+      "time_interval": "[0,infinity), smooth for t>0; shift any positive time to obtain smooth initial data",
+      "ambient": {
+        "kind": "Euclidean",
+        "space": "R3",
+        "ambient_dimension": 3,
+        "intrinsic_dimension": 2,
+        "codimension": 1
+      },
+      "topology": {
+        "name": "S1 x R",
+        "compact": false,
+        "connected": true,
+        "embedded": true,
+        "complete": true,
+        "proper": true,
+        "ends": 2,
+        "genus": 0,
+        "basis": "direct deduction from positive neck radius and two complete radial graphs joined smoothly",
+        "end_behavior": "Two fixed asymptotic parallel planes at every finite time; convergence to double middle plane is local, not uniform at spatial infinity."
+      },
+      "formula": {
+        "profile_description": "z=+/-f(rho,t), rho>=a(t)>0, joined smoothly at neck; f is constructed, not explicit",
+        "pde": "f_t=f_rhorho/(1+f_rho^2)+f_rho/rho; inverse u_t=u_zz/(1+u_z^2)-1/u",
+        "construction": "interpolation in finite free-boundary cylinders, then subsequential exhaustion limit; no asserted uniqueness"
+      },
+      "entropy": {
+        "status": "not recorded",
+        "value": null,
+        "reason": "Cited paper supplies no exact entropy or numeric global entropy bound for this selected constructed flow. Limiting multiplicity2 plane is not an equality lambda(M_t)=2."
+      },
+      "gaussian_area": {
+        "status": "not recorded",
+        "value": null,
+        "reason": "No exact f or explicit fixed-center Gaussian-area value is supplied."
+      },
+      "ordinary_area": {
+        "status": "not recorded",
+        "value": null,
+        "reason": "No finite total area claimed; catalogue should not substitute mass of the limiting plane."
+      },
+      "evidence": [
+        {
+          "claim": "Immortal connected rotationally symmetric embedded flow, smooth at positive times",
+          "source": "CatCS26R3",
+          "locator": "Theorem1.1 PDF1; Proposition4.6 PDF23–24; Theorem4.13 PDF27",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Initial piecewise-linear/Lipschitz profile, then smoothing",
+          "source": "CatCS26R3",
+          "locator": "equations3.4–3.5 and Remark3.11 PDF14",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Rotational and reflection symmetries, two-graph form and PDE",
+          "source": "CatCS26R3",
+          "locator": "Section2.1 PDF4–5; equation2.5 PDF6",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Slab bound and increasing radial graph",
+          "source": "CatCS26R3",
+          "locator": "Remark4.7 PDF24",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Neck tends to zero and local multiplicity2 limit",
+          "source": "CatCS26R3",
+          "locator": "Proposition4.10 PDF25; Theorem4.13 PDF27",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Two asymptotic planes remain fixed; convergence not uniform globally",
+          "source": "CatCS26R3",
+          "locator": "Section1.1 PDF3; PropositionA.2 PDF28",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Genus0, two ends, proper and complete",
+          "source": "CatCS26R3",
+          "locator": "two-graph construction in Section2.1 and Proposition4.6",
+          "basis": "direct topological/geometric deduction, not a separately named source theorem"
+        }
+      ],
+      "illustration": {
+        "mode": "interactive R3 schematic or static profile",
+        "brief": "Two near-parallel sheets connected by a narrowing neck. Show early/later/limit with explicit schematic labels. Do not provide a supposed calibrated time parameter.",
+        "critical_caution": "A changing catenoid family is not this MCF. Do not simulate a chosen arbitrary neck profile and label it the theorem solution."
+      }
+    },
+    {
+      "title": "Immortal compact flows converging to a double sphere",
+      "section_label": "sec:catalogue-double-sphere-flow",
+      "label": "ex:catalogue-double-sphere-flow",
+      "category": "other special flows",
+      "formula_status": "critical PDE interpolation construction in a product manifold",
+      "flow_type": "smooth immortal compact hypersurface flow",
+      "time_interval": "[0,infinity)",
+      "ambient": {
+        "kind": "Riemannian product",
+        "space": "unit round S^n x [-1,1], with g_round+dy^2",
+        "ambient_dimension": "n+1",
+        "intrinsic_dimension": "n>=2",
+        "codimension": 1,
+        "extensions": [
+          "S^n x R",
+          "closed product S^n x (R/4Z)"
+        ],
+        "extension_basis": "The constructed flow stays in |y|<=1/(2n), allowing unchanged isometric inclusion into either ambient.",
+        "not_euclidean": "Its embedding in R^(n+2) changes the ambient MCF equation by an additional normal force; do not tag it as unforced Euclidean MCF."
+      },
+      "topology": {
+        "name": "S1 x S^(n-1)",
+        "compact": true,
+        "connected": true,
+        "embedded": true,
+        "complete": true,
+        "proper": true,
+        "ends": 0,
+        "genus": 1,
+        "genus_scope": "n=2 only",
+        "basis": "direct deduction: closed orbit-space profile avoids x=0,pi at finite time; product parametrization with non-collapsed S^(n-1) orbits"
+      },
+      "formula": {
+        "profile_description": "F(sigma,omega)=(cos x(sigma,t),sin x(sigma,t) omega,y(sigma,t)), sigma in S1,omega in S^(n-1); x in(0,pi)",
+        "pde": "v_t=v_xx/(1+v_x^2)+(n-1)cot(x)v_x; inverse u_t=u_yy/(1+u_y^2)-(n-1)cot(u)",
+        "construction": "critical interpolation between pole-neck singularity and equatorial escape/collapse alternatives",
+        "height_bound": "|y|<=1/(2n)"
+      },
+      "entropy": {
+        "status": "not applicable",
+        "value": null,
+        "reason": "Standard Euclidean Gaussian entropy is not an invariant assigned by the source to this intrinsic product-manifold flow."
+      },
+      "gaussian_area": {
+        "status": "not applicable",
+        "value": null,
+        "reason": "No canonical Euclidean F01 in this ambient; do not use coordinate drawing or ambient embedding to manufacture one."
+      },
+      "ordinary_area": {
+        "status": "not recorded",
+        "value": null,
+        "reason": "Source proves convergence to the double unit minimal sphere but no exact finite-time area is stated. No area limit is assigned in this draft without a separate mass audit."
+      },
+      "evidence": [
+        {
+          "claim": "Ambient unit sphere/product metric, n>=2, immortal flow and multiplicity2 limit",
+          "source": "CatCS25Man",
+          "locator": "Theorem1.1 PDF1; Section2.1 PDF2–4; Theorem3.17 PDF15",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Rotation/reflection symmetries and orbit-space parametrization",
+          "source": "CatCS25Man",
+          "locator": "Section2.1 PDF2–3",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Actual PDE and reflection conditions",
+          "source": "CatCS25Man",
+          "locator": "equation2.2 PDF4",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Height bound and reflection construction",
+          "source": "CatCS25Man",
+          "locator": "Definition3.10 and Lemma3.11 PDF11–12; visual check PDF11",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Heads avoid axes at every finite time; critical immortal construction",
+          "source": "CatCS25Man",
+          "locator": "Theorem3.12 PDF12–13",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "Two-sheet smooth convergence away from poles, necks collapse only in infinite time",
+          "source": "CatCS25Man",
+          "locator": "Section3.3 PDF13; Corollaries3.15–3.16 and Theorem3.17 PDF15",
+          "basis": "source theorem/construction"
+        },
+        {
+          "claim": "S1 x S^(n-1), genus1 for n=2, no ends",
+          "source": "CatCS25Man",
+          "locator": "Section2.1 parametrization PDF3; Definition3.10 PDF11; Theorem3.12 PDF12–13",
+          "basis": "direct deduction from closed profile away from degenerate rotational orbits"
+        },
+        {
+          "claim": "Extensions into S^n x R or closed product of circle length4",
+          "source": "CatCS25Man",
+          "locator": "Theorem1.1 paragraph after theorem PDF1; height bound PDF11–12",
+          "basis": "source permits ambient completion; concrete circle-length4 inclusion is direct geometric deduction"
+        }
+      ],
+      "illustration": {
+        "mode": "orbit-space schematic in (x,y) rectangle or labeled ambient-manifold schematic",
+        "brief": "Closed profile loop in 0<x<pi with upper/lower graphs, symmetry at equator, two narrowing necks near poles. Late-time double segment y=0 corresponds to doubled S^n slice.",
+        "critical_caution": "A spatial R3 image of two spheres and necks is only schematic for n=2; S2xR is not Euclidean R3. No exact PDE-time data are available."
+      }
+    },
+    {
+      "category": "shrinkers",
+      "normalization": "Hvec=-Xperp/2; normal MCF velocity Hvec; M_t=sqrt(-t)*Sigma, t<0",
+      "formula_status": "existence construction; no explicit parametrization",
+      "proof_status": "cited result; no new formal verification",
+      "id": "kkm-one-end",
+      "title": "Kapouleas--Kleene--Moller shrinkers with one end",
+      "label": "ex:catalogue-kkm-one-end",
+      "section_label": "sec:catalogue-kkm-one-end",
+      "ambient_space": "Euclidean",
+      "ambient_dimension": 3,
+      "dimension": 2,
+      "codimension": 1,
+      "parameter_range": "Every integer g >= g0 for an unspecified sufficiently large g0",
+      "genus": {
+        "value": "g",
+        "range": "all sufficiently large integers",
+        "domain_or_image": "embedded surface"
+      },
+      "compactness": "noncompact",
+      "complete": true,
+      "proper": true,
+      "properness_basis": "Compact core plus one proper graphical asymptotically conical end in Theorem 1.1(iv).",
+      "embedded": true,
+      "orientable": true,
+      "topology": "closed orientable genus-g surface minus one point",
+      "ends": {
+        "count": 1,
+        "count_qualifier": "all members in the proved range g>=g0",
+        "models": [
+          "regular cone"
+        ],
+        "graphical": true,
+        "asymptotic_model": "Nonzero smooth vertical graph over a great circle in S2; nonplanar cone; height rho*sigma(theta)+O(rho^-1)."
+      },
+      "symmetry": "Dihedral symmetry group of order 4g+4, as defined by the source; do not silently replace with BNS order 2(g+1).",
+      "entropy": {
+        "status": "finite, value unknown",
+        "exact": null,
+        "numeric": null,
+        "bound": null,
+        "finite_basis": "Conical graphical end gives quadratic area growth; normalized shrinker entropy equals F0,1.",
+        "stability": "entropy unstable, source PDF p4"
+      },
+      "limits": "Local Hausdorff limit S2(2) union a plane through the origin; bound C*R/g in BR; locally smooth off the equatorial intersection circle.",
+      "sources": [
+        {
+          "source_id": "kkm-2014-v3",
+          "bibkey": "CatKKM2018",
+          "pdf_pages": [
+            2
+          ],
+          "locator": "Theorem 1.1(i)-(v)",
+          "url": "https://arxiv.org/pdf/1106.5454v3"
+        },
+        {
+          "source_id": "kkm-2014-v3",
+          "bibkey": "CatKKM2018",
+          "pdf_pages": [
+            4
+          ],
+          "locator": "equation (1.2); entropy-instability discussion",
+          "url": "https://arxiv.org/pdf/1106.5454v3"
+        },
+        {
+          "source_id": "kkm-2014-v3",
+          "bibkey": "CatKKM2018",
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "locator": "equation (4.1), radius-2 spherical cap in Section 5",
+          "url": "https://arxiv.org/pdf/1106.5454v3"
+        }
+      ],
+      "illustration": {
+        "type": "original schematic",
+        "brief": "Sphere of radius 2 intersecting a plane; highlight equatorial gluing circle. Separate schematic conical graph with nonzero wavy link. Label high-genus gluing scheme, not an exact or computed KKM shrinker.",
+        "interactive_parameters": "Illustrative genus/sector count only; do not assign a finite threshold or imply numerical existence."
+      }
+    },
+    {
+      "category": "shrinkers",
+      "normalization": "Hvec=-Xperp/2; normal MCF velocity Hvec; M_t=sqrt(-t)*Sigma, t<0",
+      "formula_status": "existence construction; no explicit parametrization",
+      "proof_status": "cited result; no new formal verification",
+      "id": "bns-genus",
+      "title": "Buzano--Nguyen--Schulz shrinkers of every positive genus",
+      "label": "ex:catalogue-bns-genus",
+      "section_label": "sec:catalogue-bns-genus",
+      "ambient_space": "Euclidean",
+      "ambient_dimension": 3,
+      "dimension": 2,
+      "codimension": 1,
+      "parameter_range": "Every positive integer g",
+      "genus": {
+        "value": "g",
+        "range": "g>=1",
+        "domain_or_image": "embedded surface"
+      },
+      "compactness": "noncompact",
+      "complete": true,
+      "proper": true,
+      "properness_basis": "Theorem 1.2; Corollary 2.8 gives proper embedded compact cores and annular ends.",
+      "embedded": true,
+      "orientable": true,
+      "topology": "connected orientable genus-g surface with finitely many punctures; puncture count not specified for all g",
+      "ends": {
+        "count": null,
+        "known_counts": [
+          {
+            "count": 1,
+            "condition": "g sufficiently large, Theorem 1.3"
+          }
+        ],
+        "count_qualifier": "At least one conical end for every g; exact count unknown in the cited theorem for small g.",
+        "models": [
+          "regular cone",
+          "round cylinder (not ruled out for additional small-genus ends)"
+        ],
+        "at_least_one_conical": true
+      },
+      "symmetry": "Proved D_(g+1), order 2(g+1), generated by horizontal half-turns. Extra anti-prismatic reflection symmetry is expected/numerical, not established.",
+      "entropy": {
+        "status": "proven upper bound and separate numerical evidence",
+        "exact": null,
+        "numeric": null,
+        "bound": "1 < lambda(Theta_g)=F0,1(Theta_g) <= 1.02+4/e < 3",
+        "upper": 2.4915177646857694,
+        "upper_inclusive": true,
+        "bound_qualifier": "all g; F equals width W by multiplicity one, then normalized shrinker entropy identity",
+        "numerical_values": [
+          {
+            "genus": 1,
+            "gaussian_area": 1.7143
+          },
+          {
+            "genus": 2,
+            "gaussian_area": 2.0433
+          },
+          {
+            "genus": 3,
+            "gaussian_area": 2.1817
+          },
+          {
+            "genus": 11,
+            "gaussian_area": 2.3854
+          }
+        ],
+        "numerical_caution": "Surface Evolver expected models, truncated to B8 with free boundary; no certified error bound or uniqueness identifying numerical model with min-max output.",
+        "unproved": [
+          "Theta_1 entropy below Angenent",
+          "Theta_1 Gaussian Morse index 5"
+        ]
+      },
+      "limits": "Varifold limit is horizontal plane union S2(2), locally smooth away from intersection circle as g tends to infinity.",
+      "sources": [
+        {
+          "source_id": "bns-2024-v2",
+          "bibkey": "CatBNS2025",
+          "pdf_pages": [
+            2
+          ],
+          "locator": "Theorems 1.2, 1.3; conical-end discussion",
+          "url": "https://arxiv.org/pdf/2110.06027v2"
+        },
+        {
+          "source_id": "bns-2024-v2",
+          "bibkey": "CatBNS2025",
+          "pdf_pages": [
+            3,
+            4
+          ],
+          "locator": "Section 2 dihedral definition and conjectured extra reflection symmetry",
+          "url": "https://arxiv.org/pdf/2110.06027v2"
+        },
+        {
+          "source_id": "bns-2024-v2",
+          "bibkey": "CatBNS2025",
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "locator": "Lemmas 2.5, 2.6; Corollary 2.8",
+          "url": "https://arxiv.org/pdf/2110.06027v2"
+        },
+        {
+          "source_id": "bns-2024-v2",
+          "bibkey": "CatBNS2025",
+          "pdf_pages": [
+            13,
+            14,
+            15
+          ],
+          "locator": "Section 4 and Table 1; numerical method/values",
+          "url": "https://arxiv.org/pdf/2110.06027v2"
+        }
+      ],
+      "illustration": {
+        "type": "original schematic",
+        "brief": "Depict g+1 horizontal axes, genus-g compact core, and at least one end. Make a separate large-genus one-ended sphere-plane gluing panel. Do not draw precisely one end for all g as if proved.",
+        "numerical_reuse": "Do not redistribute source images or use conjectural surface evolver images as theorem evidence."
+      },
+      "identity_caution": "Not known to coincide with the KKM construction at the same large genus; not known to be distinct either."
+    },
+    {
+      "category": "shrinkers",
+      "normalization": "Hvec=-Xperp/2; normal MCF velocity Hvec; M_t=sqrt(-t)*Sigma, t<0",
+      "formula_status": "existence construction; no explicit parametrization",
+      "proof_status": "cited result; no new formal verification",
+      "id": "ketover-doubled-plane",
+      "title": "Ketover self-shrinking doubled planes",
+      "label": "ex:catalogue-ketover-doubled-plane",
+      "section_label": "sec:catalogue-ketover-doubled-plane",
+      "ambient_space": "Euclidean",
+      "ambient_dimension": 3,
+      "dimension": 2,
+      "codimension": 1,
+      "parameter_range": "Every positive integer g; two conical ends and fattening for sufficiently large g",
+      "genus": {
+        "value": "g",
+        "range": "g>=1",
+        "domain_or_image": "embedded surface"
+      },
+      "compactness": "noncompact for g sufficiently large; unspecified by this theorem for small g",
+      "complete": true,
+      "proper": true,
+      "properness_basis": "Global smooth min-max varifold support, Theorem 2.2; smooth closed support in Euclidean space gives properness and completeness. For large g also follows from compact core plus graphical conical ends.",
+      "embedded": true,
+      "orientable": true,
+      "topology": "For sufficiently large g: closed orientable genus-g surface minus two points. Small-genus end count unspecified.",
+      "ends": {
+        "count": null,
+        "known_counts": [
+          {
+            "count": 2,
+            "condition": "g sufficiently large, Theorem 1.1(e)"
+          }
+        ],
+        "count_qualifier": "Do not tag all g with exactly two ends.",
+        "models": [
+          "regular cone"
+        ],
+        "graphical": true,
+        "asymptotic_model": "For large g, one graphical end above and one below horizontal plane; links converge C0 to equator as g tends to infinity."
+      },
+      "symmetry": "Prismatic D_(g+1) x Z_2 of order 4(g+1), with horizontal reflection.",
+      "entropy": {
+        "status": "proven strict upper bound",
+        "exact": null,
+        "numeric": null,
+        "bound": "lambda(Sigma_g)<2 for all g; lambda(Sigma_g) tends to 2 as g tends to infinity",
+        "upper": 2,
+        "upper_inclusive": false,
+        "limit": 2,
+        "unproved": [
+          "entropy minimizer for each genus g"
+        ]
+      },
+      "limits": "Sigma_g tends as varifolds to multiplicity-two horizontal plane. Every subsequence has a further subsequence and radius r>0 with two smooth graphical sheets off circle C_r.",
+      "flow_property": "For sufficiently large g, level set flow from smooth initial Sigma_g fattens, Theorem 1.3. This concerns weak continuation beyond the conical singularity.",
+      "sources": [
+        {
+          "source_id": "ketover-2024-v2",
+          "bibkey": "CatKetover2024",
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "locator": "Theorem 1.1(a)-(f), Remark 1.2",
+          "url": "https://arxiv.org/pdf/2407.01240v2"
+        },
+        {
+          "source_id": "ketover-2024-v2",
+          "bibkey": "CatKetover2024",
+          "pdf_pages": [
+            4
+          ],
+          "locator": "Theorem 1.3 and comparison with Ilmanen-White",
+          "url": "https://arxiv.org/pdf/2407.01240v2"
+        },
+        {
+          "source_id": "ketover-2024-v2",
+          "bibkey": "CatKetover2024",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "locator": "Theorem 2.2 global smooth min-max limit",
+          "url": "https://arxiv.org/pdf/2407.01240v2"
+        },
+        {
+          "source_id": "ketover-2024-v2",
+          "bibkey": "CatKetover2024",
+          "pdf_pages": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42
+          ],
+          "locator": "Theorem 8.1 and its proof",
+          "url": "https://arxiv.org/pdf/2407.01240v2"
+        }
+      ],
+      "illustration": {
+        "type": "original schematic",
+        "brief": "Two nearly planar sheets joined near a neck circle, with upper/lower conical ends. Caption: sufficiently large genus regime; schematic only. Show 2P as a multiplicity-two varifold limit, not a smooth member."
+      }
+    },
+    {
+      "category": "shrinkers",
+      "normalization": "Hvec=-Xperp/2; normal MCF velocity Hvec; M_t=sqrt(-t)*Sigma, t<0",
+      "formula_status": "existence construction; no explicit parametrization",
+      "proof_status": "cited result; no new formal verification",
+      "id": "drugan-nguyen-torus",
+      "title": "Drugan--Nguyen variational shrinking tori",
+      "label": "ex:catalogue-drugan-nguyen-torus",
+      "section_label": "sec:catalogue-drugan-nguyen-torus",
+      "ambient_space": "Euclidean",
+      "ambient_dimension": "n+1",
+      "dimension": "n>=2",
+      "codimension": 1,
+      "parameter_range": "Every integer n>=2",
+      "genus": {
+        "value": 1,
+        "condition": "n=2 only",
+        "domain_or_image": "embedded surface"
+      },
+      "compactness": "compact",
+      "complete": true,
+      "proper": true,
+      "properness_basis": "Smooth compact embedded rotational construction.",
+      "embedded": true,
+      "orientable": true,
+      "topology": "S1 x S^(n-1)",
+      "ends": {
+        "count": 0,
+        "count_qualifier": "all n>=2"
+      },
+      "symmetry": "O(n) rotational symmetry",
+      "entropy": {
+        "status": "proven strict upper bound",
+        "exact": null,
+        "numeric": null,
+        "bound": "lambda(T_n)=F0,1(T_n)<2",
+        "upper": 2,
+        "upper_inclusive": false,
+        "bound_qualifier": "all n>=2; follows from Theorem 1 weighted profile length bound and rotational Gaussian integral"
+      },
+      "weighted_geometry": {
+        "metric": "r^(2(n-1))*exp(-(r^2+x^2)/2)*(dr^2+dx^2)",
+        "profile_length_bound": "L_g(gamma)<2*integral_0^infinity s^(n-1)*exp(-s^2/4) ds",
+        "gaussian_area_formula": "F0,1(T_n)=(4*pi)^(-n/2)*|S^(n-1)(1)|*L_g(gamma)"
+      },
+      "sources": [
+        {
+          "source_id": "drugan-nguyen-2017-v1",
+          "bibkey": "CatDruganNguyen2018",
+          "pdf_pages": [
+            1
+          ],
+          "locator": "Theorem 1; rotational construction; explicit uncertainty about identification with Angenent",
+          "url": "https://arxiv.org/pdf/1708.08808v1"
+        },
+        {
+          "source_id": "chu-sun-2025-v3",
+          "bibkey": "CatChuSun2025",
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ],
+          "locator": "choice of T; Theorem 1.3, Corollary 1.7",
+          "url": "https://arxiv.org/pdf/2308.05923v3"
+        }
+      ],
+      "illustration": {
+        "type": "original schematic",
+        "brief": "Weighted half-plane closed-geodesic schematic and torus topology; label existence construction. Do not reuse numerical Angenent profile as a verified DN profile."
+      },
+      "identity_caution": "Separate construction, not known to coincide with nor proved distinct from Angenent torus."
+    },
+    {
+      "label": "ex:catalogue-spherical-doubling-shrinkers",
+      "category": "shrinkers",
+      "source": "CatKapouleasMcGrath2023",
+      "locators": [
+        "Theorem 10.5, arXiv v4 PDF p.66",
+        "Theorem 9.40, PDF p.65",
+        "Theorem 5.7 and (5.9), PDF p.30"
+      ],
+      "specialization": "k_circle=2, m_vector=(m), sufficiently large integer m; closed embedded genus 2m−1 surface in R3",
+      "entropy": "lambda=F01<8/e from the Gaussian-metric area inequality",
+      "illustration": "Original schematic of two sphere sheets and symbolic bridge sites; not a computed shrinker."
+    }
+  ],
+  "audit_notes": [
+    "Do not list general Sun–Wang construction, its torus case, and its fattening pair as three distinct catalogue examples; the latter are one entry here.",
+    "The high-genus spherical-doubling translator is an explicit application of SW to the independently constructed KM input, not a separately named theorem in SW.",
+    "One time-slice end is inferred from compact core and connected product end; the two-sided R factor in backward cylinder does not mean two translator ends.",
+    "Neither total translator has surface genus. Torus cross-section genus1 and spherical-doubling cross-section genus2m−1 belong in separate metadata fields.",
+    "I_A and I_m are Gaussian indices of input shrinkers, not weighted indices of the minimizing translators, and include translation parameters.",
+    "All I-uniqueness/stability claims are restricted to the weighted minimizing class; no entropy stability, unrestricted uniqueness, or global core classification is inferred.",
+    "The closed-set fattening theorem does not by itself prove level-set fattening from smooth compact initial data.",
+    "No source assets or papers are to be copied into public site exports.",
+    "Moller preprint was inspected for audit only. Existing catalogue unchanged; no independently verified journal version found.",
+    "SW PDF5/HTML scalar-sign definitions contain an apparent inconsistency. Use its invariant vector equation (2.5), which matches the catalogue upward convention.",
+    "KM publisher access returned403; all page and theorem locators clearly identify arXiv v4, never guessed published pages.",
+    "SS19 defines its displayed vector with the opposite sign to the project; its actual evolution is d_t X=Delta X, so formulas need no sign alteration.",
+    "The radius exponents are k_j squared, not k_j. The time relation uses 2*k_j squared, not (2*k_j) squared.",
+    "For compact torus curves the chosen k1=1 subfamily is embedded. It is one-dimensional, so surface genus does not apply.",
+    "No claim that source conjecture2.4 codimension lower bounds are theorems.",
+    "No use of the broadly worded ambient-dimension Theorem2.8 beyond actual displayed constructions.",
+    "AAAW13 Section3 was checked for priority, but no time-integral coefficients from its preprint are copied; formulas are checked from SS19 and by direct differentiation.",
+    "Helix sup-in-time entropy is infinite; do not assign infinite entropy to every slice.",
+    "Fixed-center F01 formulas were independently integrated from exact parametrizations at the root agent request, and are not identified with lambda.",
+    "CS26R3 contains occasional prose calling the flow eternal, but the proved constructed time domain is [0,infinity); catalogue says immortal only.",
+    "CS26R3 initial datum is locally Lipschitz; smooth for positive time. Positive-time shift gives a smooth starting surface.",
+    "Genus and ends of Chen–Sun families are marked direct consequences of parametrizations, not falsely attributed to named topology theorems.",
+    "CS25Man has real ambient dimension n+1, even though the product is isometrically embedded in R^(n+2). The Euclidean drawing does not satisfy unforced Euclidean MCF.",
+    "CS25Man manifold is the standard round product, not an unspecified warped product and not the round sphere S^(n+1).",
+    "No exact entropy, finite-time Gaussian area, stability classification, or quantitative neck-collapse rates are fabricated for either Chen–Sun construction.",
+    "No PDFs, extracted texts, or source-page PNGs may be copied into public exports.",
+    "KKM v3 has a homothety factor sqrt(2(1-t)) alongside the equation H=<X,nu>/2. The equation and radius2 cap are decisive; use M_t=sqrt(-t)*Sigma, not that factor.",
+    "Ketover v2 equation (1.7) has the same displayed scalar sign as shrinker equation (1.1) while describing an expander. Do not copy it for an expander catalogue; this review adds no expander from that display.",
+    "Ketover page4 notes Ilmanen-White construct presumably the same family with two ends for all genera; without reading and identifying the original family do not transfer that all-genus end count to Ketover.",
+    "BNS Conjecture1.4 is the DIFFERENT sphere-cylinder limiting family with odd genus and two ends; Ketover doubled-plane family does not automatically prove that specific conjecture.",
+    "BNS Table1 labels expected numerical geometries. No certified identification of a numerical surface with a unique min-max output.",
+    "Original papers were downloaded and hashed privately. Only newly written paraphrases/formulas and bibliographic links may enter site exports."
+  ],
+  "direct_calculations": [
+    {
+      "label": "ex:catalogue-eternal-helices",
+      "result": "At fixed time lambda(Gamma_t)=sqrt(1+D(t)); each Gaussian integral is bounded by dropping the squared radial distance, and the centered integral approaches this bound as scale tends to infinity.",
+      "attribution": "Direct calculation included in the catalogue, additional to Stryker–Sun’s unbounded time-supremum result."
+    }
+  ]
+}

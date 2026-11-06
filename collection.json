@@ -22,7 +22,12 @@
         "the-clifford-shrinking-torus-in-four-space",
         "products-of-closed-shrinking-curves",
         "higher-codimension-spherical-shrinkers",
-        "moller-closed-shrinkers-of-large-even-genus"
+        "moller-closed-shrinkers-of-large-even-genus",
+        "kapouleas-kleene-moller-shrinkers-with-one-end",
+        "drugan-nguyen-variational-shrinking-tori",
+        "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
+        "ketover-self-shrinking-doubled-planes",
+        "closed-shrinkers-from-spherical-doubling"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },
@@ -40,7 +45,9 @@
         "scherkenoid-translators",
         "the-pitchfork-translator",
         "nguyen-translating-tridents",
-        "finite-genus-translators-with-three-ends"
+        "finite-genus-translators-with-three-ends",
+        "translators-with-an-angenent-torus-end",
+        "translators-with-high-genus-spherical-doubling-ends"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
     },
@@ -64,7 +71,11 @@
         "the-catenoid-as-an-eternal-stationary-flow",
         "mean-curvature-evolution-of-the-whitney-sphere",
         "rotational-degenerate-neckpinch-solutions",
-        "the-angenent-oval-as-an-explicit-ancient-flow"
+        "the-angenent-oval-as-an-explicit-ancient-flow",
+        "ancient-torus-curves-in-higher-codimension",
+        "eternal-shrinking-helices",
+        "immortal-annuli-converging-to-a-double-plane",
+        "immortal-compact-flows-converging-to-a-double-sphere"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
     }

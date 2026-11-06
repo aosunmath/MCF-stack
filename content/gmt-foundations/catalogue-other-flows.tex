@@ -88,3 +88,134 @@ Every time slice is a smooth compact embedded strictly convex curve, hence compl
 \]
 The rescaling $(-t)^{-1/2}\Gamma_t$ converges smoothly to the radius-$\sqrt2$ circle at extinction. As $t\to-\infty$, translating its upper and lower branches to keep their tips fixed gives the two oppositely directed grim-reaper profiles, locally in $|x|<\pi/2$. These limits can be read from the implicit equation: near extinction its quadratic expansion gives $x^2+y^2\sim-2t$, and subtracting the upper tip height gives the limiting graph $\log\cos x$ as $t\to-\infty$. The time slider plots the exact implicit curve for $-5\leq t\leq-0.1$ on a fixed spatial scale.
 \end{example}
+
+\chapter{Ancient torus curves in higher codimension}\label{sec:catalogue-ancient-torus-curves}
+\begin{example}[Compact ancient torus curves]\label{ex:catalogue-ancient-torus-curves}
+Fix $m\geq2$ and integers $1=k_1<k_2<\cdots<k_m$. For $t<0$, let $r(t)>0$ be the unique solution of
+\[
+ \sum_{j=1}^m r(t)^{2k_j^2}=-2t.
+\]
+Then the exact parametrization
+\[
+ \gamma_t(\theta)=
+ \bigl(r(t)^{k_1^2}\cos(k_1\theta),r(t)^{k_1^2}\sin(k_1\theta),
+ \ldots,r(t)^{k_m^2}\cos(k_m\theta),r(t)^{k_m^2}\sin(k_m\theta)\bigr),
+ \qquad \theta\in\mathbb R/2\pi\mathbb Z,
+\]
+is an ancient curve-shortening flow in $\mathbb R^{2m}$. Its scale is specified by an exact implicit equation; no elementary inverse in time is required. Equivalently,
+\[
+ r'=-\frac{r}{\sum_j k_j^2r^{2k_j^2}}.
+\]
+Each time slice is a compact smooth embedded circle, hence complete and proper, with no ends and codimension $2m-1$. Embeddedness follows directly from $k_1=1$, because the first two coordinates already determine $\theta$. The name refers to a curve lying on a product of circles, not to a two-dimensional torus. It spans $\mathbb R^{2m}$, has a one-parameter simultaneous rotational symmetry, and is non-self-similar when $m\geq2$ because the ratios of its different coordinate radii change with time.
+
+The rescaled curves $(-t)^{-1/2}\gamma_t$ tend to the radius-$\sqrt2$ circle with multiplicity $k_m$ as $t\to-\infty$, and with multiplicity one as $t\uparrow0$. Stryker--Sun prove
+\[
+ \sup_{t<0}\lambda(\gamma_t)=k_m\lambda(S^1)
+ =k_m\sqrt{\frac{2\pi}{e}},
+\]
+which also bounds the entropy of every time slice. This is a supremum over time, not a formula for the entropy at each finite time. For the fixed center and Gaussian scale, direct integration gives
+\[
+ F_{0,1}(\gamma_t)=\sqrt\pi\left(\sum_j k_j^2r^{2k_j^2}\right)^{1/2}e^{t/2}.
+\]
+Indeed, $|\gamma_t|^2=-2t$ and $|\partial_\theta\gamma_t|^2=\sum_jk_j^2r^{2k_j^2}$. The centered Gaussian area is distinct from the supremum defining $\lambda$.
+
+Source: \cite{CatSS19}, equation (2.1), Propositions 2.1--2.2, Corollary 2.3, and Theorem A.1, PDF pp.~3--5 and 8--9. The general source formula allows $k_1>1$; if the frequencies have common divisor $d>1$, that parametrization is a $d$-fold cover and its mass counts multiplicity. The embedded subfamily above avoids this ambiguity. The construction was already present in \cite{CatAAAW13}, Section 3, equations (11)--(14), PDF pp.~8--9, as acknowledged in \cite{CatSS19}, Remark 1.3. The interactive figure uses $(k_1,k_2)=(1,2)$ in $\mathbb R^4$. Its three-coordinate display is a projection, with time and fourth-coordinate rotation controls.
+\end{example}
+
+\chapter{Eternal shrinking helices}\label{sec:catalogue-eternal-helices}
+\begin{example}[Helical curve-shortening flows]\label{ex:catalogue-eternal-helices}
+Fix $m\geq1$ and integers $1\leq k_1<\cdots<k_m$. Let $r(t)>0$, $t\in\mathbb R$, solve the exact implicit equation
+\[
+ \log r(t)+\frac12\sum_{j=1}^m r(t)^{2k_j^2}=\frac m2-t.
+\]
+The choice of constant makes $r(0)=1$. Then
+\[
+ \Gamma_t(s)=
+ \bigl(r^{k_1^2}\cos(k_1s),r^{k_1^2}\sin(k_1s),\ldots,
+ r^{k_m^2}\cos(k_ms),r^{k_m^2}\sin(k_ms),s\bigr),
+ \qquad s\in\mathbb R,
+\]
+is an eternal curve-shortening flow in $\mathbb R^{2m+1}$. In the simplest case $m=1$, $k_1=1$, it is the three-dimensional helix
+\[
+ \Gamma_t(s)=(r(t)\cos s,r(t)\sin s,s),\qquad
+ \log r(t)+r(t)^2/2=1/2-t.
+\]
+These are exact parametrizations with an implicitly determined time scale, not numerical ODE profiles. The ordinary differential equation is
+\[
+ r'=-\frac{r}{1+\sum_j k_j^2r^{2k_j^2}}.
+\]
+The last coordinate makes every time slice a proper embedding of $\mathbb R$, and the induced metric is $(1+\sum_jk_j^2r^{2k_j^2})ds^2$, so it is complete. It is noncompact with two ends and codimension $2m$, and it spans the stated ambient space. Simultaneous rotations together with translation along the last coordinate give its screw symmetry. Its radius decreases to zero as $t\to+\infty$, giving local smooth convergence to the axis, while $r(t)\to\infty$ as $t\to-\infty$. At any fixed finite time the ends continue winding; they are not asymptotic to the axis as $|s|\to\infty$.
+
+Proposition 2.7 of \cite{CatSS19} proves
+\[
+ \sup_{t\in\mathbb R}\lambda(\Gamma_t)=+\infty.
+\]
+This concerns the entire time family and does not say that every individual slice has infinite entropy. In fact, a direct calculation gives the exact fixed-time entropy below. Set $B=\sum_jr^{2k_j^2}$ and $D=\sum_jk_j^2r^{2k_j^2}$. Direct Gaussian integration, using $|\Gamma_t(s)|^2=B+s^2$, gives the exact centered value
+\[
+ F_{0,1}(\Gamma_t)=\sqrt{1+D}\,e^{-B/4};
+ \qquad F_{0,1}(\Gamma_t)=\sqrt{1+r^2}\,e^{-r^2/4}
+ \quad\hbox{when }m=k_1=1.
+\]
+For completeness, the same calculation at arbitrary Gaussian scale gives
+\[
+ \lambda(\Gamma_t)=\sqrt{1+D(t)}.
+\]
+Indeed, for a center $(a,z_0)\in\mathbb R^{2m}\times\mathbb R$, dropping the nonnegative squared distance in the first $2m$ coordinates bounds $F_{(a,z_0),\tau}$ by
+$(4\pi\tau)^{-1/2}\sqrt{1+D}\int_{\mathbb R}e^{-(s-z_0)^2/(4\tau)}\,ds=\sqrt{1+D}$.
+At the origin, $F_{0,\tau}=\sqrt{1+D}e^{-B/(4\tau)}$ tends to this upper bound as $\tau\to\infty$. Thus every finite-time helix has finite entropy, while the time supremum is infinite. This is a direct integration, additional to the cited time-supremum result.
+
+Source: \cite{CatSS19}, equation (2.6), Propositions 2.6--2.7, and Theorem A.2, PDF pp.~6--7 and 9; see also \cite{CatAAAW13}, Section 3, PDF pp.~8--10. The interactive three-dimensional figure uses the simplest exact helix, with a time slider and the displayed range $-5\pi/2\leq s\leq5\pi/2$. The family is eternal even though a display uses only finitely many turns.
+\end{example}
+
+\chapter{Immortal annuli converging to a double plane}\label{sec:catalogue-double-plane-flow}
+\begin{example}[Chen--Sun's noncompact multiplicity-two limit]\label{ex:catalogue-double-plane-flow}
+Chen and Sun construct a nonstatic immortal mean curvature flow $M_t\subset\mathbb R^3$, $t\in[0,\infty)$, smooth for $t>0$, of connected embedded rotational surfaces. It is also symmetric across the limiting plane. Each positive-time slice consists of two increasing radial graphs joined smoothly at a neck of radius $a(t)>0$:
+\[
+ M_t=\{(\rho\cos\theta,\rho\sin\theta,\pm f(\rho,t)):
+ \rho\geq a(t),\ \theta\in\mathbb R/2\pi\mathbb Z\}.
+\]
+This is a description of the constructed PDE solution, not an explicit formula for $f$. Away from the neck its upper graph satisfies
+\[
+ f_t=\frac{f_{\rho\rho}}{1+f_\rho^2}+\frac{f_\rho}{\rho}.
+\]
+Near the neck, the inverse graph $\rho=u(z,t)$ instead satisfies
+\[
+ u_t=\frac{u_{zz}}{1+u_z^2}-\frac1u,\qquad u_z(0,t)=0.
+\]
+The proof selects a critical initial surface by interpolation among rotational surfaces in finite cylinders and then takes a limit as the cylinder radius tends to infinity. Its initial trace is locally Lipschitz; choosing any positive time as the initial time gives an entirely smooth immortal flow. No closed formula, canonical parameter value, or uniqueness of the constructed critical flow is supplied.
+
+The two graphical ends and the smooth connecting neck give topology $S^1\times\mathbb R$: genus zero and two ends. Properness follows from the graphs escaping to infinite radius; the smooth connected surface is complete. It remains in a fixed slab, and the two ends stay asymptotic to their original parallel planes. The neck radius tends to zero only as $t\to\infty$. On compact regions the flow converges to the middle plane with multiplicity two; the two sheets converge smoothly away from the origin. The convergence is not uniform over the entire noncompact surface. This is an infinite-time limit of the unrescaled flow, not a multiplicity-two finite-time tangent flow of a closed embedded surface.
+
+Source: \cite{CatCS26R3}, Theorems 1.1 and 4.13, Section 1.1, equation (2.5), Proposition 4.6 and Remark 4.7, and Appendix A, arXiv v3 PDF pp.~1, 3, 6, 23--24, and 27--28. The topology and properness statements above are direct consequences of the source's two-graph parametrization. The paper gives no exact entropy or fixed-center Gaussian-area value for this constructed family. The picture is a schematic of two sheets with a narrowing neck; it does not compute the critical PDE solution and is not a time-dependent catenoid.
+\end{example}
+
+\chapter{Immortal compact flows converging to a double sphere}\label{sec:catalogue-double-sphere-flow}
+\begin{example}[Chen--Sun's product-manifold construction]\label{ex:catalogue-double-sphere-flow}
+For each $n\geq2$, there is a smooth connected embedded immortal mean curvature flow of compact hypersurfaces in the product manifold
+\[
+ (S^n\times[-1,1],\ g_{S^n}+dy^2),
+\]
+where $S^n$ has unit round radius. The flow is defined for all $t\geq0$ and is nonstatic. Its hypersurface dimension is $n$ and its codimension in this ambient manifold is one. The construction stays in the smaller band $|y|\leq1/(2n)$, so the same flow is contained in $S^n\times\mathbb R$; it can also be placed in the closed product $S^n\times(\mathbb R/4\mathbb Z)$ without changing the metric near the flow. There is no free boundary on $y=\pm1$.
+
+The solution is invariant under rotations of the sphere about its polar axis, reflection $y\mapsto-y$, and reflection across the sphere's equator. A closed profile $\sigma\mapsto(x(\sigma,t),y(\sigma,t))$ in $(0,\pi)\times\mathbb R$ generates it by
+\[
+ (\sigma,\omega)\longmapsto
+ (\cos x(\sigma,t),\sin x(\sigma,t)\,\omega,y(\sigma,t)),
+ \qquad \sigma\in S^1,\quad\omega\in S^{n-1}.
+\]
+The profile avoids both axes at every finite time, so this parametrization directly gives topology $S^1\times S^{n-1}$. Thus for $n=2$ the surfaces are genus-one tori with no ends. All slices are complete and proper by compactness. This is a topological deduction from the construction, not an assertion that the source states a separate topology theorem.
+
+No closed time-dependent profile is supplied. Its upper half can be described using the solution of
+\[
+ v_t=\frac{v_{xx}}{1+v_x^2}+(n-1)\cot x\,v_x,
+ \qquad v_x(\pi/2,t)=0,
+\]
+with an inverse graph near each neck, governed by
+\[
+ u_t=\frac{u_{yy}}{1+u_y^2}-(n-1)\cot u,
+ \qquad u_y(0,t)=0.
+\]
+An interpolation argument selects an immortal solution. As $t\to\infty$, it converges to the stable minimal slice $S^n\times\{0\}$ with multiplicity two. Away from the north and south poles, the two sheets converge smoothly; the two necks collapse only at infinite time.
+
+Source: \cite{CatCS25Man}, Theorems 1.1, 3.12, and 3.17, Section 2.1, Definition 3.10 and Lemma 3.11, and Section 3.3, arXiv v2 PDF pp.~1--4 and 11--15. Euclidean Gaussian area and Colding--Minicozzi entropy are not assigned to this intrinsic manifold flow; the cited paper gives no such invariant for these examples. In particular, its isometric embedding into $\mathbb R^{n+2}$ is not an unforced Euclidean mean curvature flow. The picture shows the orbit-space profile and the limiting minimal slice schematically; it does not represent an isometric embedding of $S^2\times\mathbb R$ into three-dimensional Euclidean space.
+\end{example}

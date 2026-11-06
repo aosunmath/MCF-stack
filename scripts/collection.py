@@ -23,6 +23,7 @@ from numbering import assign_numbers
 from history import curate_history
 from reader_references import page_references, bibliography, source_catalogue
 from search_index import write_search_index
+import catalogue_properties
 from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
 from source_snapshot import revision_id, revision_markup
 from soliton_visualizations import visualization, validate_visualizations
@@ -323,7 +324,7 @@ def prepare_fragment(variant, source_tags, references, root, component_anchors=N
 @cache
 def asset_revision():
     folder = Path(__file__).resolve().parents[1] / "site" / "assets"
-    names = ("book.css", "collection.css", "formalization.css", "math-config.js", "formalization.mjs", "collection.mjs", "comments.mjs", "search.mjs", "soliton-viewer.css", "soliton-viewer.mjs")
+    names = ("book.css", "collection.css", "formalization.css", "math-config.js", "formalization.mjs", "collection.mjs", "comments.mjs", "search.mjs", "soliton-viewer.css", "soliton-viewer.mjs", "catalogue-properties.css", "catalogue-properties.mjs")
     return sha256(b"".join((folder / name).read_bytes() for name in names)).hexdigest()[:12]
 
 
@@ -407,7 +408,7 @@ def continuous_section(relevant, entries, roots, sources, source_tags, reference
         badge = f'<span data-gerby-tag="{variant["tag"]}">{tag_code(entry["tag"]) if entry.get("section_intro") else ""}</span>'
         # A source chapter can absorb its example into this reading chunk.
         # Include illustrations for all represented entries, not just the root.
-        illustration = ''.join(visualization(entries[tag]['variants'][0]['label'], root) for tag in sorted(represented))
+        illustration = ''.join(visualization(entries[tag]['variants'][0]['label'], root) + catalogue_properties.panel(entries[tag]['variants'][0]['label'], root) for tag in sorted(represented))
         chunks.append(f'<section class="reading-chunk" id="entry-{entry["tag"]}" data-section-entries="{" ".join(sorted(represented))}"><div class="source-variant" data-gerby-book="{source}">{heading}{badge}{body}</div>{illustration}</section>')
     expected = {entry["tag"] for entry in relevant}
     if covered != expected:
@@ -465,6 +466,9 @@ def build_collection(books, destination, configuration):
             references.setdefault(identifier, {**record, "sources": []})["sources"].append({"source": source, "key": record["key"]})
             reference_map[(source, record["key"])] = identifier
 
+    from soliton_visualizations import registry as visualization_registry
+    property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
+    (destination / "catalogue-properties.json").write_text(json.dumps({"version": 1, "examples": property_records}, ensure_ascii=False, indent=2) + "\n")
     reference_uses = {}
 
     def write(route, content, title, root):
@@ -482,6 +486,8 @@ def build_collection(books, destination, configuration):
         introduction += '<nav class="catalogue-links" aria-label="Special solution categories">' + ''.join(
             f'<a href="chapters/{key}/">{escape(chapters[key]["title"])}<small>{len(chapters[key]["topics"])} examples and families</small></a>' for key in categories
         ) + '</nav><p>Each catalogue entry records formulas or construction references, source-supported properties, and a picture. Drawings distinguish exact geometry, numerical ODE approximations, projections, and schematics.</p>'
+    if property_records:
+        introduction += '<a class="browse-callout" href="browse/"><strong>Browse by properties →</strong><span>Ambient space · Topology, genus and ends · Gaussian area and entropy</span></a>'
     if sources:
         introduction += (Path(__file__).resolve().parents[1] / "site" / "home.html").read_text()
     featured = [(slug, title) for slug, title in FEATURED_TOPICS if slug in topics]
@@ -492,6 +498,7 @@ def build_collection(books, destination, configuration):
     if not entries:
         introduction += '<p>Special solutions of mean curvature flow will be collected here.</p>'
     write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
+    write("browse", catalogue_properties.page(property_records), "Browse by properties", "../")
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():
         content = f'<p class="eyebrow">Chapter {chapter["number"]}</p><h1>{escape(chapter["title"])}{tag_code(chapter["tag"])}</h1><p>{escape(chapter.get("description", ""))}</p>'
@@ -557,7 +564,7 @@ def build_collection(books, destination, configuration):
             badge = '' if parsed_body.find(attrs={"data-gerby-tag": local}) else f'<span data-gerby-tag="{local}"></span>'
             if number:
                 body = '<details class="source-alternative"><summary>Read the alternative statement and proof</summary>' + body + '</details>'
-            content += f'<section class="source-variant" data-gerby-book="{source}">{badge}{body}</section>' + visualization(variant['label'], root)
+            content += f'<section class="source-variant" data-gerby-book="{source}">{badge}{body}</section>' + visualization(variant['label'], root) + catalogue_properties.panel(variant['label'], root)
             texts.append(parsed_body.get_text(" ", strip=True))
             variants.append({"book": source, "tag": local, "label": variant["label"], "revision": revision_id(editions[source])})
         if entry.get("section_intro"):

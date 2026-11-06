@@ -2,7 +2,7 @@
 
 **[Read the stack → aosunmath.github.io/MCF-stack](https://aosunmath.github.io/MCF-stack/)**
 
-[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/)
+[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Browse by properties](https://aosunmath.github.io/MCF-stack/browse/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/)
 
 MCF-stack is a growing mathematical reference collecting **special solutions of mean curvature flow**, including self-shrinkers, translators, self-expanders, ancient solutions, and other geometrically meaningful examples. Following the idea of the [Stacks Project](https://stacks.math.columbia.edu/), it aims to connect definitions, constructions, properties, and classification results through permanent tags, cross-references, and precise source attribution.
 
@@ -39,18 +39,24 @@ The following equations use the mean curvature vector convention above. The norm
 
 The collection also includes **ancient solutions**, defined for all $`t<T`$ for a finite $`T`$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
-The first catalogue contains **31 entries in four categories**:
+The catalogue contains **42 illustrated example families in four categories**:
 
 | Category | Entries | Examples |
 | --- | ---: | --- |
-| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 10 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus constructions |
-| [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 11 | Grim reapers, bowl, translating catenoids, delta-wings, Scherkenoids, pitchforks, gluing constructions |
+| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 15 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions |
+| [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 13 | Grim reapers, bowl, translating catenoids, delta-wings, Scherkenoids, pitchforks, gluing constructions, prescribed-shrinker-end translators in four-space |
 | [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 6 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks |
-| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 4 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval |
+| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 8 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits |
 
-Every entry has a figure: 18 support rotation and zoom, including a fourth-coordinate rotation for the Clifford torus and a time slider for the ancient oval. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
+Every entry has a figure: 20 support rotation and zoom, with fourth-coordinate rotation for the Clifford torus and the ancient torus curve, and time sliders for the ancient oval, torus curve, and eternal helix. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
 
-The catalogue records source-supported properties and precise theorem or page locators. It is a first selection from the supplied paper collection, not an exhaustive classification. See the [source and illustration notes](documentation/catalogue-expansion.md) for editions, normalization choices, and reproducible geometry.
+The catalogue records source-supported properties and precise theorem or page locators. It combines the supplied paper collection with [Ao Sun’s research papers](https://sites.google.com/view/aosun/research) and their references; it is not an exhaustive classification. Different constructions are not automatically asserted to give noncongruent surfaces. See the [source and illustration notes](documentation/catalogue-expansion.md) for editions, normalization choices, and reproducible geometry.
+
+## Browse by geometric properties
+
+The [property browser](https://aosunmath.github.io/MCF-stack/browse/) combines filters for ambient space, intrinsic dimension, compactness, surface genus, topological ends, and Gaussian area or entropy. Group results by ambient space, genus, ends, or the type of entropy information, and share the resulting URL.
+
+Exact formulas, proved bounds, numerical estimates, and unrecorded values remain distinct. The entropy bound filter uses only recorded scalar values or proved upper bounds. Surface genus applies only to two-dimensional objects; cross-sectional genus of a translator in four-space is recorded separately. Curved ambient flows are distinguished from Euclidean MCF, and Gaussian area is not identified with entropy for a general flow. See the [metadata guide](documentation/catalogue-properties.md) and [research expansion notes](documentation/research-expansion.md).
 
 ## Reading and contributing
 

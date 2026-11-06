@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="title">Immortal compact product-manifold flow and its double-sphere limit</title>
+  <desc id="description">Generating-profile schematics in polar coordinate x and product coordinate y for a flow in the round product S^n times R. At finite time a closed loop avoids both polar axes, giving topology S^1 times S^(n-1). At infinite time its two necks reach the poles and two sheets approach the same minimal sphere. This is intrinsic manifold MCF, not Euclidean MCF.</desc>
+  <rect width="640" height="410" fill="#f7fafb" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" stroke="#21667f" stroke-width="0" fill="#21667f" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <text x="24" y="33" fill="#183f52" font-size="23" font-weight="650" text-anchor="start">A compact immortal flow in Sⁿ × ℝ</text>
+  <text x="24" y="59" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">n ≥ 2 · Generating profiles, shown schematically</text>
+  <rect x="20" y="79" width="290" height="251" rx="12" fill="#ffffff" stroke="#d3e2e8" stroke-width="1" />
+  <rect x="330" y="79" width="290" height="251" rx="12" fill="#ffffff" stroke="#d3e2e8" stroke-width="1" />
+  <text x="36" y="108" fill="#183f52" font-size="18" font-weight="650" text-anchor="start">Finite positive time</text>
+  <text x="36" y="134" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">Closed loop away from the poles</text>
+  <text x="346" y="108" fill="#183f52" font-size="20" font-weight="650" text-anchor="start">t → ∞</text>
+  <text x="346" y="134" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">Two necks collapse at the poles</text>
+  <path d="M52,158 L52,267" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <path d="M280,158 L280,267" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <path d="M52,212 L280,212" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <text x="52" y="290" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">x = 0</text>
+  <text x="280" y="290" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">x = π</text>
+  <text x="60" y="315" fill="#526b77" font-size="15" font-weight="400" text-anchor="middle">north pole</text>
+  <text x="272" y="315" fill="#526b77" font-size="15" font-weight="400" text-anchor="middle">south pole</text>
+  <path d="M362,158 L362,267" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <path d="M590,158 L590,267" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <path d="M362,212 L590,212" stroke="#d3e2e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <text x="362" y="290" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">x = 0</text>
+  <text x="590" y="290" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">x = π</text>
+  <text x="370" y="315" fill="#526b77" font-size="15" font-weight="400" text-anchor="middle">north pole</text>
+  <text x="582" y="315" fill="#526b77" font-size="15" font-weight="400" text-anchor="middle">south pole</text>
+  <ellipse cx="166" cy="212" rx="86" ry="48" fill="#e5f1f5" stroke="#21667f" stroke-width="3" />
+  <circle cx="80" cy="212" r="4" fill="#183f52" />
+  <circle cx="252" cy="212" r="4" fill="#183f52" />
+  <text x="166" y="218" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">profile loop</text>
+  <path d="M362,212 L590,212" stroke="#21667f" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="362" cy="212" r="5" fill="#183f52" />
+  <circle cx="590" cy="212" r="5" fill="#183f52" />
+  <path d="M407,185 L365,205" stroke="#21667f" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M545,185 L587,205" stroke="#21667f" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <text x="476" y="182" fill="#183f52" font-size="15" font-weight="400" text-anchor="middle">neck limits</text>
+  <text x="476" y="244" fill="#183f52" font-size="18" font-weight="650" text-anchor="middle">2 · (Sⁿ × {0})</text>
+  <text x="476" y="268" fill="#526b77" font-size="15" font-weight="400" text-anchor="middle">one slice, multiplicity two</text>
+  <text x="24" y="359" fill="#183f52" font-size="15" font-weight="400" text-anchor="start">Finite-time topology: S¹ × Sⁿ⁻¹; genus 1 when n = 2, with no ends.</text>
+  <text x="24" y="388" fill="#526b77" font-size="15" font-weight="400" text-anchor="start">Intrinsic product-manifold flow. This drawing is not Euclidean MCF.</text>
+</svg>

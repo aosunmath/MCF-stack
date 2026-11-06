@@ -1,0 +1,2359 @@
+{
+  "version": 1,
+  "examples": [
+    {
+      "label": "ex:catalogue-round-sphere",
+      "notes": "",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "cases": [
+        {
+          "name": "Shrinking circle",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = √(2π/e) ≈ 1.52035.",
+            "value": 1.520346901066281
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = √(2π/e) ≈ 1.52035.",
+            "value": 1.520346901066281
+          }
+        },
+        {
+          "name": "Round two-sphere",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Sphere S²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 4/e ≈ 1.47152.",
+            "value": 1.4715177646857693
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = 4/e ≈ 1.47152.",
+            "value": 1.4715177646857693
+          }
+        },
+        {
+          "name": "Higher-dimensional spheres",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sphere Sⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = (4π)^(−n/2) (2n)^(n/2) e^(−n/2) |Sⁿ(1)|; depends on n."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = (4π)^(−n/2) (2n)^(n/2) e^(−n/2) |Sⁿ(1)|; depends on n."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-round-cylinder",
+      "notes": "",
+      "citations": [
+        "CM12"
+      ],
+      "cases": [
+        {
+          "name": "Surface cylinder",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Cylinder S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = √(2π/e) ≈ 1.52035.",
+            "value": 1.520346901066281
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = √(2π/e) ≈ 1.52035.",
+            "value": 1.520346901066281
+          }
+        },
+        {
+          "name": "Higher-dimensional cylinders with one axial direction",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × ℝ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ equals the entropy of the shrinking Sᵏ factor."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ equals the entropy of the shrinking Sᵏ factor."
+          }
+        },
+        {
+          "name": "Cylinders with at least two Euclidean directions",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sᵏ × ℝⁿ⁻ᵏ, n ≥ 3, 1 ≤ k ≤ n−2",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ equals the entropy of the shrinking Sᵏ factor."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ equals the entropy of the shrinking Sᵏ factor."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-plane-shrinker",
+      "notes": "",
+      "citations": [
+        "CM12",
+        "CatDLN2018"
+      ],
+      "cases": [
+        {
+          "name": "Lines in ℝᴺ, N ≥ 2",
+          "ambient": [
+            "r2",
+            "r3",
+            "r4",
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 1.",
+            "value": 1
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
+            "value": 1
+          }
+        },
+        {
+          "name": "Planes in ℝᴺ, N ≥ 3",
+          "ambient": [
+            "r3",
+            "r4",
+            "higher"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 1.",
+            "value": 1
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
+            "value": 1
+          }
+        },
+        {
+          "name": "Higher-dimensional planes",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Linear subspace ℝⁿ, 3 ≤ n < N",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 1.",
+            "value": 1
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = 1.",
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-abresch-langer",
+      "notes": "",
+      "citations": [
+        "CatAL1986",
+        "CatCMComplexity2020",
+        "CatDLN2018"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Immersed circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "λ > 2 for the noncircular closed curves."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ > 2 for the noncircular closed curves."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-angenent-torus",
+      "notes": "",
+      "citations": [
+        "CM12",
+        "CatAngenent1992",
+        "CatDLN2018",
+        "CatBerchenkoKogan2021"
+      ],
+      "cases": [
+        {
+          "name": "Angenent surface torus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Torus S¹ × S¹",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "numerical",
+            "text": "λ ≈ 1.85122. Berchenko–Kogan estimate; no certified error enclosure.",
+            "value": 1.8512186
+          },
+          "gaussian": {
+            "status": "numerical",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ ≈ 1.85122. Berchenko–Kogan estimate; no certified error enclosure.",
+            "value": 1.8512186
+          }
+        },
+        {
+          "name": "Higher-dimensional rotational tori",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sⁿ⁻¹, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-drugan-sphere",
+      "notes": "Topology refers to the parameter domain, not the self-intersecting image.",
+      "citations": [
+        "CatDLN2018",
+        "CatDrugan2015"
+      ],
+      "cases": [
+        {
+          "name": "Immersed two-sphere",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Immersed sphere S²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          }
+        },
+        {
+          "name": "Higher-dimensional immersed spheres",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Immersed sphere Sⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-clifford-torus",
+      "notes": "",
+      "citations": [
+        "CatELS2020"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Torus S¹ × S¹",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = 2π/e ≈ 2.31145.",
+            "value": 2.3114546995818435
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for the normalized shrinker. λ = 2π/e ≈ 2.31145.",
+            "value": 2.3114546995818435
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-curve-products",
+      "notes": "The all-circle m=2 case is also listed as the Clifford torus. Topology refers to the immersion domain.",
+      "citations": [
+        "CatSmoczyk2005"
+      ],
+      "cases": [
+        {
+          "name": "Two curve factors",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Immersed torus (S¹)²",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          }
+        },
+        {
+          "name": "Three or more curve factors",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Immersed m-torus, m ≥ 3, in ℝ²ᵐ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ = ∏ⱼ λ(γⱼ), with immersion multiplicity counted; depends on the chosen factors."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-spherical-minimal",
+      "notes": "Topology depends on the chosen spherical minimal immersion; the explicit product subfamily has topology Sᵖ × Sᑫ.",
+      "citations": [
+        "CatSmoczyk2005",
+        "CatSunZhu2025"
+      ],
+      "cases": [
+        {
+          "name": "Surface inputs",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "surface",
+          "topology": "Compact minimal surface in a sphere",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on parameters"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          }
+        },
+        {
+          "name": "Higher-dimensional inputs",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Compact minimal n-manifold in a sphere; n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ = (4π)^(−n/2) e^(−n/2) Area(M). Spherical products have λ = λ(Sᵖ) λ(Sᑫ)."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-moller-genus",
+      "notes": "",
+      "citations": [
+        "CM12",
+        "CatDLN2018",
+        "CatMoller2014"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable surface",
+          "genus": {
+            "key": "higher",
+            "text": "Sufficiently large even genus"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for the normalized shrinker. Finite; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-grim-reaper",
+      "notes": "The two vertical asymptotes of the generating curve are not two topological ends of the surface cylinder.",
+      "citations": [
+        "CatHIMWGraphical18",
+        "CatHIMWNotes19"
+      ],
+      "cases": [
+        {
+          "name": "Grim-reaper curve",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Grim-reaper cylinder",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional products",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Euclidean space ℝⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-tilted-grim-reaper",
+      "notes": "",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Products in higher dimensions",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Euclidean products, topology ℝⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-bowl-translator",
+      "notes": "",
+      "citations": [
+        "CSS07",
+        "CatBrendleChoi19",
+        "CatHIMWNotes19",
+        "CatSunWang2025"
+      ],
+      "cases": [
+        {
+          "name": "Surface bowl",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ = √(2π/e) ≈ 1.52035.",
+            "value": 1.520346901066281
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional bowls",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Euclidean space ℝⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ equals the entropy of Sⁿ⁻¹(√(2(n−1))); depends on n."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-translating-catenoid",
+      "notes": "",
+      "citations": [
+        "CSS07",
+        "CatHIMWNotes19"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional winglike translators",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × ℝ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-delta-wing",
+      "notes": "The two limiting grim cylinders describe directional asymptotics, not separate topological ends.",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ² (graph over a strip)",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-wang-entire-translators",
+      "notes": "",
+      "citations": [
+        "CatXJWang11"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Euclidean space ℝⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-prescribed-apex-translators",
+      "notes": "",
+      "citations": [
+        "CatHIMWGraphical18"
+      ],
+      "cases": [
+        {
+          "name": "Surface cases",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ² (entire or strip graph)",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional graphs",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Entire or slab graph, topology ℝⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-scherkenoids",
+      "notes": "Asymptotic planes in a height direction are not automatically topological ends.",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Periodic surface; global topology not recorded",
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-pitchfork",
+      "notes": "The one-plane/three-plane asymptotics do not give four topological ends.",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatHMW20"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ² (simply connected noncompact surface)",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-nguyen-tridents",
+      "notes": "",
+      "citations": [
+        "CatHIMWNotes19",
+        "CatNguyen09"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Periodic surface of infinite genus",
+          "genus": {
+            "key": "infinite",
+            "text": "Infinite genus"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-finite-genus-translators",
+      "notes": "",
+      "citations": [
+        "CatDPN17",
+        "CatHIMWNotes19"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Orientable surface with three ends",
+          "genus": {
+            "key": "higher",
+            "text": "Sufficiently large genus"
+          },
+          "ends": {
+            "key": "3",
+            "text": "3"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-expanding-corners",
+      "notes": "",
+      "citations": [
+        "CatDing20"
+      ],
+      "cases": [
+        {
+          "name": "Expanding corner curve",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Product with a line",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotational-expanders",
+      "notes": "",
+      "citations": [
+        "CatDing20"
+      ],
+      "cases": [
+        {
+          "name": "Radial graph surface",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional radial graphs",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Euclidean space ℝⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-two-sheet-expanders",
+      "notes": "Disconnected: two components. Genus is recorded componentwise.",
+      "citations": [
+        "CatAIC95"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Two disjoint planes ℝ² ⊔ ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0 on each component"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 total; 1 on each component"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional double-cone smoothings",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Two disjoint copies of ℝⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 total; 1 on each component"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-one-sheet-expanders",
+      "notes": "",
+      "citations": [
+        "CatAIC95"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional necks",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × ℝ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-mean-convex-expanders",
+      "notes": "",
+      "citations": [
+        "CatDing20"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Depends on the chosen cone and side",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on parameters"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on parameters"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional cone smoothings",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Depends on the chosen cone and side",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on parameters"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-expanding-networks",
+      "notes": "Networks are not smooth immersed curves at their junctions; genus is not a surface invariant here.",
+      "citations": [
+        "CatINS19"
+      ],
+      "cases": [
+        {
+          "name": "Three prescribed rays",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "Planar tree with triple junctions",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "3",
+            "text": "3"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Four or more prescribed rays",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "Planar tree with triple junctions",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "many",
+            "text": "Number of prescribed rays (at least 4)"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-stationary-catenoid",
+      "notes": "",
+      "citations": [
+        "CatMan11"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-whitney-sphere",
+      "notes": "Topology refers to the compact domain; the initial immersion has a transverse double point.",
+      "citations": [
+        "CatViana18"
+      ],
+      "cases": [
+        {
+          "name": "Whitney two-sphere",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Immersed sphere S²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional Whitney spheres",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Immersed sphere Sⁿ in ℝ²ⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-degenerate-neckpinches",
+      "notes": "Topology is for regular time slices before the singular time.",
+      "citations": [
+        "CatAV97"
+      ],
+      "cases": [
+        {
+          "name": "Surface neckpinches",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Sphere S²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        },
+        {
+          "name": "Higher-dimensional neckpinches",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sphere Sⁿ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-angenent-oval",
+      "notes": "The entry does not currently give a slice-by-slice entropy value.",
+      "citations": [
+        "BV11"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite; no value recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-kkm-one-end",
+      "notes": "",
+      "citations": [
+        "CatKKM2018",
+        "CatSunWang2020"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed genus-g surface minus one point",
+          "genus": {
+            "key": "higher",
+            "text": "Every sufficiently large genus g"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 conical end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or area growth; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for this normalized shrinker. Finite by the stated compactness or area growth; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-drugan-nguyen-torus",
+      "notes": "This construction is not proved distinct from, or identical with, Angenent’s shooting torus.",
+      "citations": [
+        "CatChuSun2025",
+        "CatDruganNguyen2018"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Torus S¹ × S¹",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Higher-dimensional variational tori",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sⁿ⁻¹, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-bns-genus",
+      "notes": "The one-end theorem is restricted to sufficiently large genus. Coincidence with the KKM construction is not proved.",
+      "citations": [
+        "CatBNS2025",
+        "CatChuSun2025"
+      ],
+      "cases": [
+        {
+          "name": "Genus one",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact genus-one surface with finitely many annular ends",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "At least one conical end; total number not established here"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          }
+        },
+        {
+          "name": "Arbitrary positive genus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact genus-g surface with finitely many annular ends",
+          "genus": {
+            "key": "higher",
+            "text": "Every g ≥ 2"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "At least one conical end; total number not established for every g"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          }
+        },
+        {
+          "name": "Sufficiently large genus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed genus-g surface minus one point",
+          "genus": {
+            "key": "higher",
+            "text": "Sufficiently large genus g"
+          },
+          "ends": {
+            "key": "1",
+            "text": "Exactly 1 conical end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. 1 < λ ≤ 1.02 + 4/e < 3. The genus-one simulation 1.7143 is not a certified value for the constructed family.",
+            "upper": 2.4915177646857694
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-ketover-doubled-plane",
+      "notes": "Compactness and end count are not inferred for the small-genus members. Entropy tends to 2 as g tends to infinity.",
+      "citations": [
+        "CatKetover2024"
+      ],
+      "cases": [
+        {
+          "name": "Genus one",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Embedded genus-one surface",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established for this member"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Arbitrary positive genus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Embedded genus-g surface",
+          "genus": {
+            "key": "higher",
+            "text": "Every g ≥ 2"
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not established for every g"
+          },
+          "compact": null,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          }
+        },
+        {
+          "name": "Sufficiently large genus",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed genus-g surface minus two points",
+          "genus": {
+            "key": "higher",
+            "text": "Sufficiently large genus g"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Exactly 2 conical ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 2 (proved; no individual exact value).",
+            "upper": 2,
+            "upper_strict": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-spherical-doubling-shrinkers",
+      "notes": "The chosen two-latitude subfamily has 2m bridges. The theorem does not provide every small odd genus.",
+      "citations": [
+        "CatKapouleasMcGrath2023"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed orientable surface from doubling S²",
+          "genus": {
+            "key": "higher",
+            "text": "2m−1, m sufficiently large"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "λ < 8/e ≈ 2.94304 (proved; no individual value).",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁ = λ for this normalized shrinker. λ < 8/e ≈ 2.94304 (proved; no individual value).",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-sun-wang-torus-translators",
+      "notes": "Genus one belongs to a horizontal surface cross-section, not the three-dimensional translator. The full core topology is not classified.",
+      "citations": [
+        "CatAngenent1992",
+        "CatSunWang2025"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "Compact core with one T² × [z₀,∞) end",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface: translator dimension 3"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 topological end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ(Σ) = λ(S_A) = F₀,₁(S_A). Exact relation to the input Angenent torus; no exact numerical value."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded for the stated center and scale."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
+      "notes": "The horizontal cross-section has genus 2m−1 for sufficiently large m; this is not a surface genus of the translator.",
+      "citations": [
+        "CatKapouleasMcGrath2023",
+        "CatSunWang2025"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "Compact core with one S_m × [z₀,∞) end",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface: translator dimension 3"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 topological end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "bound",
+            "text": "λ(Σ_m) = λ(S_m) < 8/e ≈ 2.94304.",
+            "upper": 2.9430355293715387,
+            "upper_strict": true
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded for the stated center and scale."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-ancient-torus-curves",
+      "notes": "The chosen subfamily has k₁=1 and is embedded. A time supremum is not the exact entropy of every slice.",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "cases": [
+        {
+          "name": "R4 frequencies (1,2)",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Embedded circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface (a curve on a torus)"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "For frequencies (1,2), λ(γₜ) ≤ 2√(2π/e) ≈ 3.04069; equality is the supremum over ancient time.",
+            "upper": 3.040693802132562
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          }
+        },
+        {
+          "name": "R4 frequencies (1,k), k ≥ 2",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Embedded circle S¹",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "sup over t < 0 of λ(γₜ) = k_max √(2π/e); each slice is bounded by this. The value at a finite time is not recorded."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          }
+        },
+        {
+          "name": "Higher-codimension torus curves",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Embedded circle S¹ in ℝ²ᵐ, m ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "bound",
+            "text": "sup over t < 0 of λ(γₜ) = k_max √(2π/e); each slice is bounded by this. The value at a finite time is not recorded."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(γₜ) = √π √D(t) e^(t/2), D = Σⱼ kⱼ² r^(2kⱼ²). Depends on the slice t < 0."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-eternal-helices",
+      "notes": "Entropy depends on time; infinity is its supremum over the eternal time interval, not a value at any finite time.",
+      "citations": [
+        "CatAAAW13",
+        "CatSS19"
+      ],
+      "cases": [
+        {
+          "name": "R3 helix",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 winding ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ(Γₜ) = √(1+D(t)), D = Σⱼ kⱼ² r^(2kⱼ²). Finite at each time; supₜ λ = ∞. Direct Gaussian integration."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(Γₜ) = √(1+D(t)) e^(−B(t)/4), B = Σⱼ r^(2kⱼ²)."
+          }
+        },
+        {
+          "name": "Higher-codimension helices",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line ℝ in ℝ²ᵐ⁺¹, m ≥ 2",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 winding ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "text": "λ(Γₜ) = √(1+D(t)), D = Σⱼ kⱼ² r^(2kⱼ²). Finite at each time; supₜ λ = ∞. Direct Gaussian integration."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(Γₜ) = √(1+D(t)) e^(−B(t)/4), B = Σⱼ r^(2kⱼ²)."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-double-plane-flow",
+      "notes": "Smooth for positive time; the initial trace in the construction is locally Lipschitz. The double-plane limit occurs locally as t→∞.",
+      "citations": [
+        "CatCS26R3"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × ℝ",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 graphical ends"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "Not recorded in this entry."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "Not recorded for the stated center and scale."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-double-sphere-flow",
+      "notes": "The flow stays in a narrow product band and also fits in a closed Sⁿ × S¹ product. Its Euclidean embedding is not an unforced Euclidean MCF.",
+      "citations": [
+        "CatCS25Man"
+      ],
+      "cases": [
+        {
+          "name": "Surface flow in S² × ℝ",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Torus S¹ × S¹ in S² × ℝ",
+          "genus": {
+            "key": "1",
+            "text": "1"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          }
+        },
+        {
+          "name": "Higher-dimensional product-manifold flows",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sⁿ⁻¹ in Sⁿ × ℝ, n ≥ 3",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "compact": true,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Intrinsic MCF in a curved product manifold; Euclidean entropy / Gaussian area is not assigned."
+          }
+        }
+      ]
+    }
+  ]
+}

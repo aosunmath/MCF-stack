@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Buzano--Nguyen--Schulz shrinkers: symmetry and quantified end statements</title>
+<desc id="description">The diagram shows only the three horizontal half-turn axes for the dihedral symmetry of the genus-two case, together with the vertical axis. It does not plot a self-shrinker. The family exists for all positive genera, is noncompact with at least one conical end, and is proved to have exactly one end only for sufficiently large genus. The displayed Gaussian-area bound is rigorous, not a simulation value.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="23" font-weight="600" fill="#183f52" text-anchor="start">BNS arbitrary-genus shrinkers</text>
+<text x="28" y="64" font-size="16" font-weight="400" fill="#6a8793" text-anchor="start">Equivariant min–max • existence for every genus g ≥ 1</text>
+<text x="174" y="108" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">Shown: symmetry axes at g = 2</text>
+<polyline points="285.000,202.000 284.848,205.423 284.392,208.836 283.633,212.230 282.574,215.596 281.218,218.925 279.567,222.208 277.627,225.435 275.404,228.599 272.902,231.689 270.129,234.698 267.092,237.617 263.801,240.438 260.263,243.154 256.489,245.758 252.489,248.241 248.273,250.598 243.855,252.822 239.244,254.906 234.455,256.845 229.500,258.634 224.393,260.267 219.148,261.741 213.779,263.052 208.301,264.194 202.729,265.167 197.078,265.966 191.364,266.590 185.603,267.037 179.809,267.305 174.000,267.395 168.191,267.305 162.397,267.037 156.636,266.590 150.922,265.966 145.271,265.167 139.699,264.194 134.221,263.052 128.852,261.741 123.607,260.267 118.500,258.634 113.545,256.845 108.756,254.906 104.145,252.822 99.727,250.598 95.511,248.241 91.511,245.758 87.737,243.154 84.199,240.438 80.908,237.617 77.871,234.698 75.098,231.689 72.596,228.599 70.373,225.435 68.433,222.208 66.782,218.925 65.426,215.596 64.367,212.230 63.608,208.836 63.152,205.423 63.000,202.000 63.152,198.577 63.608,195.164 64.367,191.770 65.426,188.404 66.782,185.075 68.433,181.792 70.373,178.565 72.596,175.401 75.098,172.311 77.871,169.302 80.908,166.383 84.199,163.562 87.737,160.846 91.511,158.242 95.511,155.759 99.727,153.402 104.145,151.178 108.756,149.094 113.545,147.155 118.500,145.366 123.607,143.733 128.852,142.259 134.221,140.948 139.699,139.806 145.271,138.833 150.922,138.034 156.636,137.410 162.397,136.963 168.191,136.695 174.000,136.605 179.809,136.695 185.603,136.963 191.364,137.410 197.078,138.034 202.729,138.833 208.301,139.806 213.779,140.948 219.148,142.259 224.393,143.733 229.500,145.366 234.455,147.155 239.244,149.094 243.855,151.178 248.273,153.402 252.489,155.759 256.489,158.242 260.263,160.846 263.801,163.562 267.092,166.383 270.129,169.302 272.902,172.311 275.404,175.401 277.627,178.565 279.567,181.792 281.218,185.075 282.574,188.404 283.633,191.770 284.392,195.164 284.848,198.577 285.000,202.000" fill="#e5eff3" stroke="#6a8793" stroke-width="1" opacity="1" stroke-dasharray="4 5"/>
+<polyline points="63.000,202.000 285.000,202.000" fill="none" stroke="#21667f" stroke-width="2.5" opacity="1"/>
+<polyline points="118.500,145.366 229.500,258.634" fill="none" stroke="#21667f" stroke-width="2.5" opacity="1"/>
+<polyline points="229.500,145.366 118.500,258.634" fill="none" stroke="#21667f" stroke-width="2.5" opacity="1"/>
+<polyline points="174.000,278.237 174.000,125.763" fill="none" stroke="#6a8793" stroke-width="1.5" opacity="1" stroke-dasharray="4 5"/>
+<ellipse cx="174" cy="202" rx="4" ry="4" fill="#a9572f" stroke="#a9572f" stroke-width="1"/>
+<text x="189" y="130" font-size="15" font-weight="400" fill="#6a8793" text-anchor="start">vertical axis</text>
+<text x="174" y="295" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">Axes only • no surface is plotted</text>
+<rect x="336" y="107" width="277" height="194" rx="10" fill="#e5eff3"/>
+<text x="474" y="137" font-size="20" font-weight="600" fill="#183f52" text-anchor="middle">All positive genera</text>
+<text x="474" y="166" font-size="16" font-weight="400" fill="#183f52" text-anchor="middle">Complete and noncompact</text>
+<text x="474" y="193" font-size="16" font-weight="400" fill="#183f52" text-anchor="middle">At least one conical end</text>
+<polyline points="355.000,213.000 594.000,213.000" fill="none" stroke="#6a8793" stroke-width="1" opacity="0.45"/>
+<text x="474" y="240" font-size="18" font-weight="600" fill="#183f52" text-anchor="middle">Exactly one end</text>
+<text x="474" y="267" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">proved for sufficiently large g</text>
+<rect x="28" y="324" width="584" height="63" rx="10" fill="#e5eff3"/>
+<text x="320" y="350" font-size="21" font-weight="600" fill="#183f52" text-anchor="middle">Gaussian area ≤ 1.02 + 4/e &lt; 3</text>
+<text x="320" y="376" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">Numerical low-genus shapes and values are separate evidence.</text>
+</g></svg>

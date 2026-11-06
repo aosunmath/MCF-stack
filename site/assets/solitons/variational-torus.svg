@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" role="img" aria-labelledby="title description">
+<title id="title">Drugan--Nguyen variational shrinking tori: existence schematic</title>
+<desc id="description">A generic closed curve in the weighted half-plane illustrates the orbit space. No numerical geodesic is shown. The torus on the right is a topology diagram for dimension two, not a computed shrinker. The construction proves entropy below two in every dimension n at least two, and is not identified with Angenent&#x27;s shooting profile.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#21667f"/></marker></defs>
+<rect width="640" height="410" fill="#f7fafb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#183f52" stroke-linejoin="round" stroke-linecap="round">
+<text x="28" y="36" font-size="23" font-weight="600" fill="#183f52" text-anchor="start">Drugan–Nguyen variational tori</text>
+<text x="28" y="64" font-size="16" font-weight="400" fill="#6a8793" text-anchor="start">Closed-geodesic existence in a weighted half-plane</text>
+<text x="171" y="104" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">Weighted half-plane r &gt; 0</text>
+<text x="470" y="104" font-size="17" font-weight="400" fill="#183f52" text-anchor="middle">Rotational construction</text>
+<rect x="50" y="125" width="244" height="159" rx="10" fill="#edf4f6"/>
+<path d="M56 284L294 284" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M171 284L171 125" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="279" y="308" font-size="17" font-weight="400" fill="#183f52" text-anchor="start">x</text>
+<text x="181" y="137" font-size="17" font-weight="400" fill="#183f52" text-anchor="start">r</text>
+<polyline points="224.000,208.000 224.450,205.403 224.749,202.747 224.893,200.041 224.876,197.294 224.694,194.514 224.345,191.712 223.825,188.899 223.134,186.085 222.268,183.281 221.229,180.500 220.017,177.753 218.633,175.053 217.079,172.411 215.359,169.840 213.477,167.352 211.437,164.959 209.245,162.672 206.908,160.504 204.434,158.465 201.830,156.565 199.107,154.814 196.273,153.221 193.339,151.796 190.317,150.544 187.217,149.473 184.053,148.589 180.836,147.897 177.580,147.400 174.296,147.100 171.000,147.000 167.704,147.100 164.420,147.400 161.164,147.897 157.947,148.589 154.783,149.473 151.683,150.544 148.661,151.796 145.727,153.221 142.893,154.814 140.170,156.565 137.566,158.465 135.092,160.504 132.755,162.672 130.563,164.959 128.523,167.352 126.641,169.840 124.921,172.411 123.367,175.053 121.983,177.753 120.771,180.500 119.732,183.281 118.866,186.085 118.175,188.899 117.655,191.712 117.306,194.514 117.124,197.294 117.107,200.041 117.251,202.747 117.550,205.403 118.000,208.000 118.595,210.532 119.330,212.991 120.198,215.372 121.192,217.669 122.306,219.878 123.533,221.996 124.866,224.019 126.298,225.945 127.822,227.772 129.431,229.500 131.118,231.128 132.877,232.656 134.702,234.084 136.586,235.415 138.523,236.648 140.509,237.787 142.537,238.833 144.603,239.788 146.702,240.654 148.830,241.435 150.984,242.133 153.159,242.749 155.352,243.287 157.561,243.748 159.783,244.134 162.014,244.448 164.254,244.690 166.500,244.863 168.749,244.966 171.000,245.000 173.251,244.966 175.500,244.863 177.746,244.690 179.986,244.448 182.217,244.134 184.439,243.748 186.648,243.287 188.841,242.749 191.016,242.133 193.170,241.435 195.298,240.654 197.397,239.788 199.463,238.833 201.491,237.787 203.477,236.648 205.414,235.415 207.298,234.084 209.123,232.656 210.882,231.128 212.569,229.500 214.178,227.772 215.702,225.945 217.134,224.019 218.467,221.996 219.694,219.878 220.808,217.669 221.802,215.372 222.670,212.991 223.405,210.532 224.000,208.000" fill="none" stroke="#21667f" stroke-width="2.6" opacity="1"/>
+<text x="171" y="308" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">No computed geodesic</text>
+<path d="M311 207L349 207" fill="none" stroke="#21667f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="330" y="184" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">revolve</text>
+<ellipse cx="470" cy="207" rx="91" ry="59" fill="#e5eff3" stroke="#21667f" stroke-width="2.3"/>
+<ellipse cx="470" cy="207" rx="37" ry="23" fill="#f7fafb" stroke="#21667f" stroke-width="2.3"/>
+<path d="M379 207C407 173 433 163 470 163C507 163 533 173 561 207" fill="none" stroke="#6a8793" stroke-width="1.2" stroke-dasharray="4 5"/>
+<text x="470" y="308" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">Topology only (n = 2)</text>
+<rect x="28" y="326" width="584" height="62" rx="10" fill="#e5eff3"/>
+<text x="320" y="351" font-size="20" font-weight="600" fill="#183f52" text-anchor="middle">Proved: Gaussian area = entropy &lt; 2</text>
+<text x="320" y="376" font-size="15" font-weight="400" fill="#183f52" text-anchor="middle">All n ≥ 2 • identity with Angenent’s torus not proved</text>
+</g></svg>

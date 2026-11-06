@@ -1,6 +1,6 @@
 # Special-solution catalogue
 
-The first addition has 31 entries: 10 shrinkers, 11 translators, 6 expanders, and 4 other special flows. Each has its own stable source label and a picture. The four `catalogue-*.tex` manuscripts in `content/gmt-foundations/` are the mathematical source; `collection.json` groups their sections. The introduction and these four categories are the complete reading collection. Catalogue tags are retained; the inherited GMT background chapters have been removed.
+The current catalogue has 42 example families: 15 shrinkers, 13 translators, 6 expanders, and 8 other special flows. The initial 31-entry addition is recorded in the original evidence map; [the research expansion](research-expansion.md) adds 11 families from Ao Sun’s papers and their references. Each has its own stable source label and a picture. The four `catalogue-*.tex` manuscripts in `content/gmt-foundations/` are the mathematical source; `collection.json` groups their sections. The introduction and these four categories are the complete reading collection. Catalogue tags are retained; the inherited GMT background chapters have been removed.
 
 ## Sources and scope
 
@@ -12,7 +12,7 @@ The normal convention is H = div(nu), mean curvature vector = −H nu. Shrinkers
 
 ## Pictures
 
-`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Eighteen have an interactive canvas with keyboard rotation and zoom; the remaining thirteen use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. “Open drawing” shows the larger SVG. The ancient oval has a time slider at a fixed spatial scale; the Clifford torus has a fourth-coordinate rotation before projection.
+`catalogue-visualizations.json` binds each mathematical entry to an original illustration. Twenty have an interactive canvas with keyboard rotation and zoom; the remaining twenty-two use static diagrams of topology, domains, asymptotics, or gluing inputs. Every entry also has an SVG for printing and use without JavaScript. “Open drawing” shows the larger SVG. The ancient oval, ancient torus curve, and eternal helix have time sliders at fixed spatial scales; the Clifford torus and torus curve have a fourth-coordinate rotation before projection.
 
 The Angenent torus, Drugan sphere, Abresch–Langer curve, bowl, translating catenoid, and graphical/neck expanders use numerical ODE integration. They are not substituted by generic tori, paraboloids, or arbitrary connecting surfaces. Closure residuals in `site/assets/solitons/geometry-audit.json` describe integration before rounding the exported coordinates; they are numerical diagnostics, not error bounds or existence proofs. Displayed finite pieces of noncompact solutions have artificial truncation boundaries. The Whitney figure is the exact initial generating profile, not a formula for its later evolution.
 
@@ -24,6 +24,10 @@ python3 scripts/generate_drugan_geometry.py
 python3 scripts/generate_shrinker_schematics.py
 python3 scripts/generate_translator_schematics.py
 python3 scripts/generate_expander_schematics.py
+python3 scripts/generate_ancient_curve_geometry.py
+python3 scripts/generate_immortal_flow_schematics.py
+python3 scripts/generate_new_shrinker_schematics.py
+python3 scripts/generate_prescribed_end_schematics.py
 ```
 
 The schematic generators use only the standard library; the shrinker script also reads the generated numerical profiles. Regenerate geometry first. All illustrations are original mathematical drawings, not copied paper figures.

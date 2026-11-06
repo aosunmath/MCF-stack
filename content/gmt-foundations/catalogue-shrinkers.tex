@@ -180,7 +180,7 @@ classification in \cite{CM12}, Theorem~0.17, would force a sphere.
 It shrinks to the origin with a Type~I singularity.
 \item It is entropy unstable by \cite{CM12}, Theorem~0.12,
 which applies to this compact embedded non-spherical hypersurface.
-No explicit entropy value or global uniqueness assertion is supplied here.
+No exact entropy value or global uniqueness assertion is supplied here. Berchenko--Kogan's numerical calculation estimates its entropy as approximately $1.85122$ (\cite{CatBerchenkoKogan2021}, Section 5, PDF pp.~10--12). This estimate has no certified error enclosure; Section 6, Question 6.3, leaves rigorous error bounds open. The proved bound for the separately constructed variational torus is recorded in Example \ref{ex:catalogue-drugan-nguyen-torus}.
 \end{itemize}
 The interactive figure revolves a numerically closed solution of this
 ODE; its caption records the shooting residual. The profile is not circular.
@@ -344,7 +344,9 @@ immersion. Multiple covers must not be treated as embeddings.
 \item Unless all factor images are circles, the image is not contained
 in a sphere. The all-circle product in $\mathbb R^4$ is the Clifford
 torus described separately above.
-\item These compact products have no ends, finite entropy and a Type~I
+\item These compact products have no ends and finite entropy. The centered Gaussian integral factors, so
+$\lambda(\gamma_1\times\cdots\times\gamma_m)=\prod_j\lambda(\gamma_j)$,
+with the immersion multiplicity counted. They have a Type~I
 homothetic extinction at the origin. No general stability or uniqueness
 claim for this family is taken from the cited product construction.
 \end{itemize}
@@ -359,7 +361,7 @@ This correspondence, and a converse with hypotheses, appear in
 $\vec H=-X^\perp/2$ scaling.
 
 \begin{example}[Higher-codimension spherical shrinkers]\label{ex:catalogue-spherical-minimal}
-Let $n\geq2$ and let $F:M^n\to S^{N-1}(\sqrt{2n})$ be a smooth
+Let $n\geq2$, $N\geq n+2$, and let $F:M^n\to S^{N-1}(\sqrt{2n})$ be a smooth
 compact minimal immersion. Viewed in $\mathbb R^N$, it satisfies
 \[
  \vec H=-\frac12F,
@@ -388,6 +390,11 @@ codimension two, with topology $S^p\times S^q$ and
 $O(p+1)\times O(q+1)$ symmetry. It has $|A|^2=1$ and is minimal
 inside $S^{n+1}(\sqrt{2n})$; these identities follow directly from its
 two round factors.
+\item For these explicit products, Gaussian factorization gives
+$\lambda(S^p(\sqrt{2p})\times S^q(\sqrt{2q}))=\lambda(S^p(\sqrt{2p}))\lambda(S^q(\sqrt{2q}))$.
+For a general compact minimal immersion $M^n\subset S^{N-1}(\sqrt{2n})$,
+$F_{0,1}(M)=(4\pi)^{-n/2}e^{-n/2}\operatorname{Area}(M)$ by the constant radius.
+\item The explicit spherical products are locally rigid: for fixed $p,q\geq1$ and $0<\alpha<1$, a normalized shrinker in $\mathbb R^N$, $N\geq p+q+2$, sufficiently close in $C^{2,\alpha}$ to the product is an ambient rotation of it. This is \cite{CatSunZhu2025}, Theorems 1.1--1.2, PDF p.~1. It is a local statement with center and scale fixed, not global uniqueness.
 \end{itemize}
 The formula determines the product geometry exactly. The figure is a
 factor diagram with the full ambient dimension stated.
@@ -424,4 +431,219 @@ entropy value and makes no uniqueness assertion for a specified genus.
 The figure shows the limiting sphere--torus configuration and its
 intersection circles. It illustrates the input to the desingularization,
 not the constructed surface $\Sigma_g$.
+\end{example}
+
+\chapter{Kapouleas--Kleene--Moller shrinkers with one end}\label{sec:catalogue-kkm-one-end}
+The original construction is \cite{CatKKM2018}, Theorem~1.1, arXiv
+version~3, PDF p.~2. It is among the examples cited in the introduction
+of \cite{CatSunWang2020}.
+
+\begin{example}[Kapouleas--Kleene--Moller shrinkers with one end]\label{ex:catalogue-kkm-one-end}
+There is an integer $g_0$ such that for every integer $g\geq g_0$ there
+exists a smooth complete embedded orientable self-shrinker
+$\Sigma_g\subset\mathbb R^3$ of genus $g$, with
+\[
+ \vec H=-\frac12X^\perp,\qquad
+ M_t=\sqrt{-t}\,\Sigma_g,\quad -\infty<t<0.
+\]
+The construction desingularizes the intersection circle of a plane
+through the origin and $S^2(2)$. It is a gluing existence theorem;
+no explicit parametrization of $\Sigma_g$ is provided.
+\begin{itemize}
+\item The surface has dimension two and codimension one, is noncompact,
+has exactly one end, and separates $\mathbb R^3$ into two connected
+components. Its topology is an orientable closed genus-$g$ surface with
+one point removed. The compact core and graphical end give properness.
+\item It is invariant under the dihedral symmetry group of order $4g+4$
+specified in the construction.
+\item Outside a ball the end is a graph over a plane, asymptotic to a
+nonplanar regular cone whose link is a nonzero smooth vertical graph over
+a great circle of $S^2$. The end has asymptotic height
+$u(\rho,\theta)=\rho\sigma(\theta)+O(\rho^{-1})$;
+the function $\sigma$ is determined by the construction, not an explicit
+formula. See equation~(1.2), PDF p.~4.
+\item As $g\to\infty$, the surfaces converge locally in Hausdorff distance
+to $S^2(2)\cup P$. The source gives an $O(R/g)$ Hausdorff bound inside
+$B_R(0)$; convergence is locally smooth away from the intersection circle.
+The limiting union is singular, and is not one of the smooth shrinkers.
+\item The conical geometry gives quadratic area growth and finite entropy.
+The source supplies no exact entropy value or numerical entropy bound
+for individual $g$. It records entropy instability on PDF p.~4.
+No uniqueness or identification with another construction is asserted.
+\end{itemize}
+The illustration shows a labelled sphere--plane gluing
+configuration and a nonplanar conical end schematic. A handle diagram
+or a generic wavy cone is not a numerically solved $\Sigma_g$.
+\end{example}
+
+\chapter{Drugan--Nguyen variational shrinking tori}\label{sec:catalogue-drugan-nguyen-torus}
+This is the variational construction in \cite{CatDruganNguyen2018},
+Theorem~1, arXiv version~1, PDF p.~1. Its identification with the torus
+obtained by Angenent's shooting construction is not established in this
+source. The separate entry records the proved Gaussian-area bound,
+without claiming that the two constructions give distinct surfaces.
+
+\begin{example}[Drugan--Nguyen variational shrinking tori]\label{ex:catalogue-drugan-nguyen-torus}
+For every integer $n\geq2$, the weighted half-plane $\{(r,x):r>0\}$
+with metric
+\[
+ g_n=r^{2(n-1)}e^{-(r^2+x^2)/2}(dr^2+dx^2)
+\]
+contains a simple closed geodesic $\gamma_n=(r,x)$ whose weighted
+length satisfies
+\[
+ L_{g_n}(\gamma_n)<2\int_0^\infty s^{n-1}e^{-s^2/4}\,ds.
+\]
+Revolving this curve gives a normalized self-shrinker
+\[
+ X(u,\omega)=(r(u)\omega,x(u)),\qquad
+ (u,\omega)\in S^1\times S^{n-1}(1),
+ \qquad \vec H=-X^\perp/2.
+\]
+The profile is obtained by a variational and modified curve-flow
+argument, not by a closed formula. The smooth MCF is
+$\sqrt{-t}\,X$, $t<0$.
+\begin{itemize}
+\item This is a compact embedded hypersurface of dimension $n$ in
+$\mathbb R^{n+1}$, with topology $S^1\times S^{n-1}$ and rotational
+$O(n)$ symmetry. It is complete, proper, boundaryless and has no ends.
+For $n=2$ it is an embedded genus-one torus in $\mathbb R^3$.
+\item The rotational Gaussian integral and the length bound give
+\[
+ \lambda(\mathcal T_n)=F_{0,1}(\mathcal T_n)
+ =(4\pi)^{-n/2}|S^{n-1}(1)|L_{g_n}(\gamma_n)<2.
+\]
+Thus this family has a proved entropy upper bound in every stated
+dimension. The theorem does not provide an exact entropy value.
+\item In dimension two, this is the shrinking doughnut $\mathcal T$
+used by \cite{CatChuSun2025}, Theorem~1.3 and Corollary~1.7,
+to produce genus-one singularities and an embedded genus-one shrinker
+of strictly lower entropy. That conclusion does not identify the
+lower-entropy model with a particular previously constructed family.
+\item The asserted bound is attached to this variationally constructed
+torus. A numerical value for the Angenent shooting profile is a
+different type of evidence and does not establish that the profiles
+coincide.
+\end{itemize}
+The illustration shows the weighted half-plane construction and a
+clearly labelled torus topology schematic. Reusing a numerical
+Angenent mesh as an exact model of this construction would assume the
+unproved identification.
+\end{example}
+
+\chapter{Buzano--Nguyen--Schulz shrinkers of every positive genus}\label{sec:catalogue-bns-genus}
+\cite{CatBNS2025}, Theorems~1.2--1.3, arXiv version~2, PDF p.~2,
+establish this family by equivariant min-max methods. The family is
+discussed in \cite{CatChuSun2025}, Remark~1.5.
+
+\begin{example}[Buzano--Nguyen--Schulz shrinkers of every positive genus]\label{ex:catalogue-bns-genus}
+For every integer $g\geq1$ there exists a complete embedded noncompact
+self-shrinker $\Theta_g\subset\mathbb R^3$ of genus $g$.
+The smooth flow is $\sqrt{-t}\,\Theta_g$ for $t<0$, using
+$\vec H=-X^\perp/2$. There is no explicit parametrization.
+\begin{itemize}
+\item These surfaces have dimension two and codimension one, are proper
+and boundaryless, and have a finite number of annular ends. Properness
+and the end topology are recorded in Corollary~2.8, PDF p.~8.
+They have at least one asymptotically conical end. Any additional ends
+are asymptotically conical or cylindrical.
+\item The proved symmetry is invariance under the dihedral group
+$D_{g+1}$ of order $2(g+1)$, generated by half-turns about $g+1$
+horizontal axes. The surface contains these axes and meets the vertical
+axis orthogonally. Additional reflection symmetry is proposed, rather
+than proved, in Section~2, PDF pp.~3--4.
+\item For all sufficiently large $g$, there is exactly one asymptotically
+conical end. As $g\to\infty$, $\Theta_g$ converges as a varifold to
+the union of the horizontal plane and $S^2(2)$, smoothly locally away
+from their intersection circle. Theorem~1.3 does not establish exactly
+one end for every small genus.
+\item The normalized Gaussian area satisfies the proved bound
+\[
+ 1<F_{0,1}(\Theta_g)\leq 1.02+\frac4e<3.
+\]
+This is Lemmas~2.5--2.6, PDF p.~7: the multiplicity is one and
+$F_{0,1}(\Theta_g)$ equals the min-max width. For these normalized
+complete shrinkers, Gaussian area equals entropy.
+\item The numerical simulation for $g=1$ gives Gaussian area approximately
+$1.7143$ (Section~4, Table~1, PDF p.~15). It is not a certified value
+for a uniquely identified min-max surface. The source conjectures that
+$\Theta_1$ has lower entropy than the Angenent torus and Gaussian Morse
+index five; neither statement is its existence theorem.
+\end{itemize}
+The relation between the large-genus members and the
+Kapouleas--Kleene--M{\o}ller construction is not proved to be equality.
+The illustration shows the symmetry and topology schematically; it is not a numerical approximation of a min-max surface.
+\end{example}
+
+\chapter{Ketover self-shrinking doubled planes}\label{sec:catalogue-ketover-doubled-plane}
+The following is \cite{CatKetover2024}, Theorem~1.1, arXiv version~2,
+PDF pp.~2--3. The construction is variational, with genus determined
+in Section~6 and the ends analyzed in Section~8.
+
+\begin{example}[Ketover self-shrinking doubled planes]\label{ex:catalogue-ketover-doubled-plane}
+For every integer $g\geq1$ there exists an embedded self-shrinker
+$\Sigma_g\subset\mathbb R^3$ of genus $g$ such that
+\[
+ \lambda(\Sigma_g)=F_{0,1}(\Sigma_g)<2,
+ \qquad \lim_{g\to\infty}\lambda(\Sigma_g)=2.
+\]
+The normalized smooth flow is $M_t=\sqrt{-t}\,\Sigma_g$, $t<0$.
+There is no explicit formula for $\Sigma_g$.
+\begin{itemize}
+\item The construction gives a smooth complete properly embedded
+boundaryless surface of dimension two and codimension one. It is
+invariant under the prismatic group $D_{g+1}\times\mathbb Z_2$,
+including reflection across the horizontal plane $P=\{z=0\}$.
+The group has order $4(g+1)$.
+\item For all sufficiently large $g$, the surface is noncompact with
+exactly two asymptotically conical ends: one in $z>0$ and one in
+$z<0$, each graphical over the exterior of a disk in $P$. Their cone
+links converge in $C^0$ to the equator as $g\to\infty$.
+For these $g$, the topology is a closed orientable genus-$g$ surface
+with two points removed.
+\item For the small-genus members, this theorem does not establish
+noncompactness or an exact number of ends. Numerical evidence for
+two ends already at $g=1$ is stated separately in Remark~1.2.
+\item As $g\to\infty$, $\Sigma_g\to2P$ as varifolds. From every
+subsequence one can extract a further subsequence and find a radius
+$r>0$ such that the surfaces are two normal graphs converging smoothly
+on each compact subset of $P\setminus C_r$, where
+$C_r=\{(x,y,0):x^2+y^2=r^2\}$. The radius is part of the subsequential
+conclusion, not a prescribed geometric parameter.
+\item For sufficiently large $g$, the level set flow starting from the
+smooth surface $\Sigma_g$ fattens (Theorem~1.3, PDF p.~4). The
+homothetic flow reaches its asymptotic cone at time zero; this statement
+concerns weak continuation beyond that singular time.
+\item Entropy minimization among genus-$g$ shrinkers is conjectural
+(Remark~1.2). Neither uniqueness nor a particular value below two is
+claimed.
+\end{itemize}
+The picture is a labelled doubled-plane and neck-circle
+schematic, with two conical ends only in the sufficiently large genus
+regime. A diagram of two sheets is not an exact solved shrinker, and
+the multiplicity-two plane is a varifold limit rather than a smooth member.
+\end{example}
+
+\chapter{Closed shrinkers from spherical doubling}\label{sec:catalogue-spherical-doubling-shrinkers}
+\begin{example}[Closed shrinkers from spherical doubling]\label{ex:catalogue-spherical-doubling-shrinkers}
+For every sufficiently large integer $m$, Kapouleas--McGrath construct a smooth closed embedded surface $S_m\subset\mathbb R^3$ by doubling the round self-shrinking sphere $S^2(2)$. In the two-latitude subfamily, two nearby sphere sheets are joined by $2m$ small catenoidal bridges, with $m$ bridge sites on each of two latitude circles. The resulting surface satisfies
+\[
+ \vec H_{S_m}=-\frac{X^\perp}{2},\qquad
+ M_t=\sqrt{-t}\,S_m,\quad -\infty<t<0.
+\]
+The formula specifies the evolution after the existence construction; it is not an explicit formula for $S_m$.
+\begin{itemize}
+\item The surface has dimension two and codimension one. It is connected, orientable, compact without boundary, smoothly embedded, complete and proper. Its genus is $g=2m-1$, and it has no topological ends.
+\item This statement is the specialization $k_\circ=2$ and $\mathbf m=(m)$ of the construction. The threshold for sufficiently large $m$ is not made effective here. It does not supply all small genera.
+\item The selected surfaces are invariant under $\mathcal G_m=D_{2m}\times\mathbb Z_2$, of order $4m$, where $D_{2m}$ denotes a dihedral group of order $2m$. This is an asserted symmetry subgroup, not a classification of the entire isometry group.
+\item As $m\to\infty$, the surfaces converge as varifolds to the radius-two sphere with multiplicity two. Each member before the limit is a smooth embedded connected surface; the doubled sphere is the limiting configuration.
+\item Since $S_m$ is a centered shrinker, its entropy equals its normalized Gaussian area. The area inequality in the Gaussian metric $g=e^{-|x|^2/4}g_{\rm Euc}$ gives
+\[
+ \lambda(S_m)=F(S_m)=\frac1{4\pi}\int_{S_m}e^{-|x|^2/4}\,d\mathcal H^2
+ <2F(S^2(2))=\frac8e.
+\]
+This is a rigorous bound obtained from the gluing theorem, not a numerical entropy computation. An individual numerical entropy, the exact Gaussian Morse index, and a uniqueness classification are not recorded by this entry.
+\item The spherical input has the required trivial Jacobi kernel, verified directly in Section 10 of the source. This specialization does not rely on the separate theorem on doubling the Angenent torus.
+\end{itemize}
+See \cite{CatKapouleasMcGrath2023}, arXiv version 4: Theorem 10.5 (PDF page 66), Theorem 9.40 (page 65), Definitions 7.10--7.11 and Remark 7.12 (page 40), and Theorem 5.7 with equation (5.9) (page 30; also Theorem A on page 3). The genus formula is $2g_{S^2}-1+|L|=-1+2m$. The bridge diagram is schematic and does not compute a solution or assert that its displayed number of dots is in the existence range.
 \end{example}
