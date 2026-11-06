@@ -971,7 +971,7 @@
           "url": "https://arxiv.org/abs/1111.7318v2",
           "pdf_pages_or_locator": "Theorem 1 pp. 1–2; Figure 1 and reflection construction p. 3; Figure 2, Proposition 2.1 and Remark 2.2 p. 5; Lemma 2.6 p. 7",
           "reviewed_online": true,
-          "illustration_review": "2026-11-06: checked the singular pre-gluing picture, meridian geometry, normalization, intersection bounds, and absence of a torus uniqueness claim. Original figures and paper are not redistributed."
+          "illustration_review": "2026-11-06: checked the singular pre-gluing picture, meridian geometry, normalization, intersection bounds, and absence of a torus uniqueness claim. Original figures and paper are not redistributed. Added separate genus 8/16/24 level-set handle schematics; these are original visual models, not source-provided solutions or shrinker computations."
         }
       ],
       "properties": [

@@ -62,3 +62,14 @@ test('Møller sheet and cutaway controls preserve the full limiting geometry',as
   assert.equal(configurationFaces(d,{degrees:270}).length,all.length*3/4);
   assert.deepEqual(all.map(({face})=>face),d.faces);
 });
+
+
+test('genus-model WebGL rotations agree with the shared geometric projection',async()=>{
+  const {modelRotation}=await import('../site/assets/moller-genus-viewer.mjs');
+  for(const [yaw,pitch] of [[.35,.36],[1.8,-.5],[0,0]]){
+    const p=[2,-1,3],m=modelRotation(yaw,pitch);
+    const actual=[0,1,2].map(i=>m[i]*p[0]+m[i+3]*p[1]+m[i+6]*p[2]);
+    const expected=rotatePoint(p,{yaw,pitch});
+    actual.forEach((x,i)=>assert.ok(Math.abs(x-expected[i])<1e-12));
+  }
+});

@@ -23,10 +23,16 @@ def visualization(label, root):
     item = registry().get(label)
     if not item:
         return ''
+    return '\n'.join(render_figure(figure, root) for figure in [item, *item.get('supplementary', [])])
+
+
+def render_figure(item, root):
     assets = root + 'assets/solitons/'
     alt, caption = escape(item['alt'], quote=True), escape(item['caption'])
     status = escape(item['status'])
     drawing_link = f' <a href="{assets}{item["model"]}.svg">Open drawing</a>'
+    for drawing in item.get('additional_drawings', []):
+        drawing_link += f' · <a href="{assets}{escape(drawing["model"], quote=True)}.svg">{escape(drawing["title"])}</a>'
     image = f'<img src="{assets}{item["model"]}.svg" alt="{alt}" loading="lazy" width="640" height="410">'
     if item.get('interactive'):
         return f'''<figure class="soliton-figure" data-soliton="{assets}{item['model']}.json">
@@ -46,14 +52,22 @@ def validate_visualizations(entries, destination):
             raise ValueError('Visualization has no mathematical entry: ' + label)
         if item['category'] not in {'shrinkers', 'translators', 'expanders', 'other-special-flows'}:
             raise ValueError('Invalid solution category: ' + label)
-        for suffix in (['.svg', '.json'] if item.get('interactive') else ['.svg']):
-            path = destination / 'assets' / 'solitons' / (item['model'] + suffix)
-            if not path.is_file():
-                raise ValueError('Missing catalogue illustration: ' + str(path))
-        if item.get('interactive'):
-            data = json.loads((destination / 'assets' / 'solitons' / (item['model'] + '.json')).read_text())
-            n = len(data['vertices'])
-            if not n or any(i < 0 or i >= n for face in data['faces'] + data['paths'] for i in face):
-                raise ValueError('Invalid geometry indices: ' + label)
-            if data['status'] == 'numerical-ode' and 'Numerical' not in item['status']:
-                raise ValueError('Numerical geometry must be labeled: ' + label)
+        for figure in [item, *item.get('supplementary', [])]:
+            validate_figure(figure, label, destination)
+
+
+def validate_figure(item, label, destination):
+    for suffix in (['.svg', '.json'] if item.get('interactive') else ['.svg']):
+        path = destination / 'assets' / 'solitons' / (item['model'] + suffix)
+        if not path.is_file():
+            raise ValueError('Missing catalogue illustration: ' + str(path))
+    if item.get('interactive'):
+        data = json.loads((destination / 'assets' / 'solitons' / (item['model'] + '.json')).read_text())
+        n = len(data['vertices'])
+        if not n or any(i < 0 or i >= n for face in data['faces'] + data['paths'] for i in face):
+            raise ValueError('Invalid geometry indices: ' + label)
+        if data['status'] == 'numerical-ode' and 'Numerical' not in item['status']:
+            raise ValueError('Numerical geometry must be labeled: ' + label)
+
+    for variant in item.get('additional_drawings', []):
+        validate_figure({**item, 'model': variant['model'], 'additional_drawings': []}, label, destination)

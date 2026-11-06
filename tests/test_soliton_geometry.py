@@ -11,6 +11,41 @@ ASSETS=ROOT/'site/assets/solitons'
 def model(name):return json.loads((ASSETS/(name+'.json')).read_text())
 
 class SolitonGeometryTests(unittest.TestCase):
+    def test_moller_handle_meshes_have_the_labelled_closed_orientable_topology(self):
+        for genus in (8,16,24):
+            with self.subTest(genus=genus):
+                data=model('moller-genus' if genus==8 else f'moller-genus-{genus}')
+                self.assertEqual(data['status'],'schematic')
+                vertices,faces=data['vertices'],data['faces']
+                edges=Counter();directions=Counter();adj=[set() for _ in vertices]
+                links=[{} for _ in vertices]
+                for a,b,c in faces:
+                    self.assertEqual(len({a,b,c}),3)
+                    for u,v,w in [(a,b,c),(b,c,a),(c,a,b)]:
+                        edge=tuple(sorted((u,v)));edges[edge]+=1
+                        directions[edge]+=1 if u<v else -1
+                        adj[u].add(v);adj[v].add(u)
+                        links[u].setdefault(v,set()).add(w)
+                        links[u].setdefault(w,set()).add(v)
+                self.assertEqual(set(edges.values()),{2})
+                self.assertTrue(all(n==0 for n in directions.values()))
+                def connected(graph):
+                    seen=set();todo=[next(iter(graph))]
+                    while todo:
+                        v=todo.pop()
+                        if v not in seen:
+                            seen.add(v);todo.extend(graph[v]-seen)
+                    return len(seen)==len(graph)
+                self.assertTrue(connected(dict(enumerate(adj))))
+                # Each vertex link must be one cycle, excluding pinched vertices.
+                for link in links:
+                    self.assertTrue(all(len(neighbors)==2 for neighbors in link.values()))
+                    self.assertTrue(connected(link))
+                self.assertEqual(len(vertices)-len(edges)+len(faces),2-2*genus)
+                self.assertEqual(data['genus'],genus)
+                self.assertEqual(len(data['normals']),len(vertices))
+                self.assertTrue(all(abs(math.hypot(*n)-1)<2e-6 for n in data['normals']))
+
     def test_moller_limit_uses_the_numerical_torus_and_source_intersection_bounds(self):
         data=model('moller-gluing')
         self.assertEqual(data['kind'],'moller-configuration')

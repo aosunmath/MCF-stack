@@ -148,7 +148,26 @@
       "status": "Numerical limiting configuration",
       "caption": "Sphere of radius 2 (gold) and non-circular shrinking torus (blue, numerical ODE), following Møller’s Figures 1–2. Dashed red circles mark the intersections and are drawn through the surfaces. Rotate, zoom, toggle the sheets or cutaway, and inspect the meridian. This is the singular input before handle insertion, not a computed finite-genus shrinker.",
       "alt": "Møller sphere–torus gluing input: a shaded limiting configuration and meridian show the radius-two sphere, numerical shrinking torus, and two intersection circles. No desingularized surface is computed.",
-      "interactive": true
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "moller-genus",
+          "status": "Finite-genus gluing schematics",
+          "interactive": true,
+          "caption": "Select genus 8, 16, or 24 to see handles replacing both intersection circles. Each displayed mesh is connected, closed, orientable, and has the indicated genus. These are illustrative smoothings of the sphere–torus configuration, not numerical solutions of the self-shrinker equation. The theorem gives no explicit threshold that certifies these particular genera.",
+          "alt": "A genus-eight sphere–torus gluing schematic with two rings of handles; the interactive selector also offers genus sixteen and twenty-four. These are not computed self-shrinkers.",
+          "additional_drawings": [
+            {
+              "model": "moller-genus-16",
+              "title": "Genus 16 drawing"
+            },
+            {
+              "model": "moller-genus-24",
+              "title": "Genus 24 drawing"
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "ex:catalogue-grim-reaper",

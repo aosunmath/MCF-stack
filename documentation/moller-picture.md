@@ -8,4 +8,23 @@ The two computed intersection circles have `(z, r) ≈ (±0.9062891101, 1.782874
 
 Run `python3 scripts/generate_moller_geometry.py` to reproduce the JSON and SVG using only the Python standard library. The previous `generate_shrinker_schematics.py` entry point delegates to it. Both meshes include the intersection latitude. The SVG shows the shaded limiting configuration and the generating curves; the interactive figure adds rotation, zoom, sheet visibility, complete/cutaway views, and a meridian view. Dashed red circles are intentionally overlaid through the sheets. Removed sectors and mesh edges are display devices.
 
-No handle insertion, finite-genus shrinker, genus-dependent family, entropy integral, or shrinker-PDE solve is supplied by this illustration. Catalogue properties continue to describe the smooth surfaces in the cited theorem. The original PDF and extracted text are kept outside the repository and are not exported.
+The limiting-configuration illustration supplies no handle insertion, finite-genus shrinker, entropy integral, or shrinker-PDE solve. Catalogue properties continue to describe the smooth surfaces in the cited theorem. The original PDF and extracted text are kept outside the repository and are not exported.
+
+
+## Finite-genus handle models
+
+The supplementary viewer offers genus 8, 16, and 24. These are original illustrative level-set smoothings of the two intersecting sheets, not numerical solutions of the shrinker equation or certified approximations to Møller’s surfaces. Theorem 1 does not specify a numerical genus threshold; these particular values are labels for the models, not existence claims for members of its family. No new catalogue example is added.
+
+In cylindrical coordinates let `S(r,z)=sqrt(r²+z²)−2`. Write the sampled non-circular torus meridian in polar coordinates about `(c,0)`, where `c` is the mean of its inner and outer equatorial radii. A periodic cubic spline `rho(phi)` gives `T(r,z)=sqrt((r−c)²+z²)−rho(atan2(z,r−c))`. Let `(r₀,z₀)` be the upper numerical intersection. The model is the zero set
+
+```text
+S T − epsilon² cos(m theta) B = 0,
+m = g/2, epsilon = 1.25/m,
+B = max(1 − ((r−r₀)² + (|z|−z₀)²)/0.7², 0)³.
+```
+
+The compactly supported perturbation alternates the pairing of the four local sheets around each intersection circle, producing handles. Away from the two belts the level set coincides with the sphere–torus input. This polynomial saddle smoothing is a visual model, not the Scherk gluing construction or its nonlinear correction in the cited theorem. The support avoids the axis and equatorial plane; the angular coordinate and absolute value cause no singularities on the support boundary. The cutoff is C². The exported mesh is a piecewise-linear approximation to that illustrative level set.
+
+`scripts/generate_moller_genus_models.py` uses NumPy, SciPy, scikit-image, trimesh, and fast-simplification. It extracts meshes on two grids (144 and 192 samples across the horizontal bounding box), checks closedness, connectedness, consistent orientation, and Euler characteristic, then simplifies the fine mesh to 26,000 triangles and repeats the checks after coordinate rounding. The audit in `site/assets/solitons/moller-genus-audit.json` records `chi = 2−2g`: −14, −30, and −46. These checks establish the combinatorial topology of the exported meshes; they do not verify the shrinker PDE, geometric error, or a theorem about the continuum model.
+
+The WebGL viewer provides a genus selector, rotation, zoom, and mesh display. SVGs for all three genera remain accessible without JavaScript. The existing limiting-configuration figure is retained separately.

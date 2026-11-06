@@ -596,7 +596,7 @@
     },
     {
       "label": "ex:catalogue-moller-genus",
-      "notes": "Properties refer to the smooth constructed surfaces. The illustration shows their singular sphere–torus limit, not a finite-genus member; no entropy is computed from that picture.",
+      "notes": "Properties refer to the smooth surfaces in the existence theorem. The figures show the singular sphere–torus limit and illustrative handle models of genera 8, 16, and 24. The latter are topology-checked meshes, not computed shrinkers; the theorem gives no explicit genus threshold, and no entropy is inferred from either picture.",
       "citations": [
         "CM12",
         "CatDLN2018",
