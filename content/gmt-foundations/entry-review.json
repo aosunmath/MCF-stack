@@ -327,7 +327,7 @@
     },
     {
       "label": "ex:catalogue-moller-genus",
-      "title": "Moller closed shrinkers of large even genus",
+      "title": "Møller closed shrinkers of large even genus",
       "kind": "example",
       "file": "catalogue-shrinkers.tex",
       "status": "cited-example",
@@ -341,7 +341,7 @@
     },
     {
       "label": "ex:catalogue-kkm-one-end",
-      "title": "Kapouleas--Kleene--Moller shrinkers with one end",
+      "title": "Kapouleas--Kleene--Møller shrinkers with one end",
       "kind": "example",
       "file": "catalogue-shrinkers.tex",
       "status": "cited-example",

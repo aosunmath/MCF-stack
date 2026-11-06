@@ -89,7 +89,7 @@ def ring(radius, z, count=120):
 
 def kkm():
     f = Figure(
-        "Kapouleas--Kleene--Moller shrinkers: gluing and end schematics",
+        "Kapouleas--Kleene--Møller shrinkers: gluing and end schematics",
         "The left panel shows the exact sphere-plane input configuration, not "
         "a desingularized surface. The right panel is a generic nonplanar cone "
         "schematic, not the computed cone of a KKM shrinker. The theorem gives "

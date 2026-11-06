@@ -596,7 +596,7 @@
     },
     {
       "label": "ex:catalogue-moller-genus",
-      "notes": "",
+      "notes": "Properties refer to the smooth constructed surfaces. The illustration shows their singular sphere–torus limit, not a finite-genus member; no entropy is computed from that picture.",
       "citations": [
         "CM12",
         "CatDLN2018",

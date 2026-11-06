@@ -46,3 +46,19 @@ test('explicit ancient torus curves and helices satisfy the vector flow equation
   }
   assert.throws(()=>explicitCurve('torus-curve',0));
 });
+
+
+test('Møller sheet and cutaway controls preserve the full limiting geometry',async()=>{
+  const {configurationFaces}=await import('../site/assets/moller-viewer.mjs');
+  const d=JSON.parse(readFileSync(new URL('../site/assets/solitons/moller-gluing.json',import.meta.url)));
+  const all=configurationFaces(d,{degrees:360});
+  const sphere=configurationFaces(d,{degrees:360,torus:false});
+  const torus=configurationFaces(d,{degrees:360,sphere:false});
+  assert.equal(all.length,d.faces.length);
+  assert.equal(sphere.length+torus.length,all.length);
+  assert.ok(sphere.every(({index})=>d.faceGroups[index]===0));
+  assert.ok(torus.every(({index})=>d.faceGroups[index]===1));
+  assert.equal(configurationFaces(d,{sphere:false,torus:false}).length,0);
+  assert.equal(configurationFaces(d,{degrees:270}).length,all.length*3/4);
+  assert.deepEqual(all.map(({face})=>face),d.faces);
+});

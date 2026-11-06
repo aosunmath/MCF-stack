@@ -164,55 +164,11 @@ def sphere_profile_intersections(profile, radius=2):
 
 
 def moller_gluing():
-    data = json.loads((OUT / "angenent-torus.json").read_text())
-    profile = recover_rotational_profile(data)
-    intersections = sphere_profile_intersections(profile)
-    svg = SVG("Moller gluing construction: sphere and numerical shrinking torus",
-              "Original wireframe schematic of the limiting configuration. "
-              "The round sphere has radius two. The torus uses the existing "
-              "numerical Angenent profile. The two highlighted circles come "
-              "from the intersections of its sampled meridian with that sphere. "
-              "No desingularized genus-g solution is drawn.")
-    svg.text(28, 36, "Møller’s large-genus gluing construction", 23, weight=600)
-    svg.text(28, 64, "Limiting configuration • two intersection circles", 16, MUTED)
-    pitch, scale = .50, 54
-
-    def project(point):
-        x, y, z = point
-        return 218 + scale*x, 201 - scale*(z*math.cos(pitch)-y*math.sin(pitch))
-
-    angles = [2*math.pi*i/120 for i in range(121)]
-    # Exact sphere wireframe, shown through the torus to expose both interfaces.
-    for phi in [math.pi*i/10 for i in range(1, 10)]:
-        r, z = 2*math.sin(phi), 2*math.cos(phi)
-        svg.path([project((r*math.cos(a), r*math.sin(a), z)) for a in angles],
-                 color=MUTED, width=.85, opacity=.65)
-    for a in [math.pi*i/10 for i in range(10)]:
-        svg.path([project((2*math.sin(p)*math.cos(a), 2*math.sin(p)*math.sin(a),
-                           2*math.cos(p))) for p in angles],
-                 color=MUTED, width=.85, opacity=.65)
-    # Torus wireframe sampled from the generated shrinker, not a circular torus.
-    for z, r in profile[::12]:
-        svg.path([project((r*math.cos(a), r*math.sin(a), z)) for a in angles],
-                 width=1, opacity=.55)
-    for a in [2*math.pi*i/18 for i in range(18)]:
-        svg.path([project((r*math.cos(a), r*math.sin(a), z)) for z, r in profile],
-                 width=1.1, opacity=.70)
-    for z, r in intersections:
-        svg.path([project((r*math.cos(a), r*math.sin(a), z)) for a in angles],
-                 color=CROSS, width=2.7)
-    for y, color, label in [(139, MUTED, "Round sphere"),
-                            (187, ACCENT, "Numerical torus"),
-                            (235, CROSS, "Intersection")]:
-        svg.path([(434, y-5), (456, y-5)], color=color, width=3)
-        svg.text(468, y, label, 15)
-    svg.text(468, 257, "circles", 15)
-    svg.text(28, 337, "The interfaces are replaced in the gluing construction.", 16)
-    svg.text(28, 364, "The smooth genus-g shrinker is not drawn.", 16)
-    svg.text(28, 393, "SCHEMATIC • numerical torus and exact round sphere", 15,
-             ACCENT, weight=600)
-    svg.save("moller-gluing.svg")
-    return intersections
+    """Keep the historical entry point; the shaded figure has its own generator."""
+    from generate_moller_geometry import main as generate_moller
+    generate_moller()
+    profile = recover_rotational_profile(json.loads((OUT / "angenent-torus.json").read_text()))
+    return sphere_profile_intersections(profile)
 
 
 def main():
@@ -220,7 +176,7 @@ def main():
     curve_products()
     spherical_products()
     intersections = moller_gluing()
-    print("Generated four original shrinker SVG diagrams (640 x 410).")
+    print("Generated three original shrinker SVG diagrams (640 x 410).")
     print("Numerical meridian/sphere intersections (axis, radius):", intersections)
 
 

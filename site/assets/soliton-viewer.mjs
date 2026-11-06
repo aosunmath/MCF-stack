@@ -218,7 +218,11 @@ function init(figure, data) {
 
 if(typeof document!=='undefined') {
   const start=async figure=>{
-    try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');init(figure,await response.json());}
+    try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
+      if(data.kind==='moller-configuration'){
+        const {initMollerFigure}=await import('./moller-viewer.mjs');
+        initMollerFigure(figure,data,rotatePoint);
+      } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };
   const figures=[...document.querySelectorAll('[data-soliton]')];

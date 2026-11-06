@@ -11,6 +11,31 @@ ASSETS=ROOT/'site/assets/solitons'
 def model(name):return json.loads((ASSETS/(name+'.json')).read_text())
 
 class SolitonGeometryTests(unittest.TestCase):
+    def test_moller_limit_uses_the_numerical_torus_and_source_intersection_bounds(self):
+        data=model('moller-gluing')
+        self.assertEqual(data['kind'],'moller-configuration')
+        self.assertEqual(data['status'],'numerical-limiting-configuration')
+        # Read the original export independently of the new generator.
+        source=model('angenent-torus')
+        row=source['faces'][0][1]
+        expected=[[math.hypot(*p[:2]),p[2]] for p in source['vertices'][::row]]
+        self.assertEqual(data['meridians'][1],expected)
+        for p in data['intersections']:
+            self.assertAlmostEqual(p['r']**2+p['z']**2,4,places=12)
+            self.assertLess(math.hypot(abs(p['z'])-29/32,p['r']-41/23),.005)
+        lower,upper=data['intersections']
+        self.assertAlmostEqual(lower['z'],-upper['z'],places=12)
+        self.assertAlmostEqual(lower['r'],upper['r'],places=12)
+        for ring,point in zip(data['paths'],data['intersections']):
+            self.assertEqual(ring[0],ring[-1])
+            for index in ring:
+                x,y,z=data['vertices'][index]
+                self.assertAlmostEqual(z,point['z'],places=7)
+                self.assertAlmostEqual(math.hypot(x,y),point['r'],places=7)
+        sphere_indices={j for face,group in zip(data['faces'],data['faceGroups']) if group==0 for j in face}
+        for j in sphere_indices:
+            self.assertAlmostEqual(sum(x*x for x in data['vertices'][j]),4,places=7)
+
     def test_drugan_mesh_has_spherical_domain_and_reflection_symmetry(self):
         data=model('drugan-sphere')
         self.assertEqual(data['status'],'numerical-ode')

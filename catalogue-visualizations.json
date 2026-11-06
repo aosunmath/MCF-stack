@@ -137,7 +137,7 @@
     {
       "label": "ex:catalogue-moller-genus",
       "section": "moller-closed-shrinkers-of-large-even-genus",
-      "title": "Moller closed shrinkers of large even genus",
+      "title": "Møller closed shrinkers of large even genus",
       "category": "shrinkers",
       "citations": [
         "CM12",
@@ -145,10 +145,10 @@
         "CatMoller2014"
       ],
       "model": "moller-gluing",
-      "status": "Gluing schematic",
-      "caption": "The sphere and numerical shrinking-torus model indicate a limiting configuration and two gluing circles. This is not the constructed smooth surface of large genus.",
-      "alt": "Moller closed shrinkers of large even genus. The sphere and numerical shrinking-torus model indicate a limiting configuration and two gluing circles. This is not the constructed smooth surface of large genus.",
-      "interactive": false
+      "status": "Numerical limiting configuration",
+      "caption": "Sphere of radius 2 (gold) and non-circular shrinking torus (blue, numerical ODE), following Møller’s Figures 1–2. Dashed red circles mark the intersections and are drawn through the surfaces. Rotate, zoom, toggle the sheets or cutaway, and inspect the meridian. This is the singular input before handle insertion, not a computed finite-genus shrinker.",
+      "alt": "Møller sphere–torus gluing input: a shaded limiting configuration and meridian show the radius-two sphere, numerical shrinking torus, and two intersection circles. No desingularized surface is computed.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-grim-reaper",
@@ -455,7 +455,7 @@
     {
       "label": "ex:catalogue-kkm-one-end",
       "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
-      "title": "Kapouleas–Kleene–Moller shrinkers with one end",
+      "title": "Kapouleas–Kleene–Møller shrinkers with one end",
       "category": "shrinkers",
       "citations": [
         "CatKKM2018",

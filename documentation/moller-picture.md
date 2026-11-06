@@ -1,0 +1,11 @@
+# Møller’s sphere–torus picture
+
+Reviewed source: Niels Martin Møller, *Closed self-shrinking surfaces in R³ via the torus*, [arXiv:1111.7318v2](https://arxiv.org/abs/1111.7318v2), 18 November 2014. Theorem 1 (pp. 1–2) states the large even genus construction and convergence. Figure 1 (p. 3) depicts the singular configuration before handles are inserted. Figure 2 and Proposition 2.1 (p. 5) identify its meridians and intersection locations. Lemma 2.6 (p. 7) gives the rotational shrinker ODE. The paper uses an axial coordinate x₁; this illustration calls it z.
+
+The displayed sphere has radius 2, in the normalization **H** = −X⊥/2. The blue torus is generated from the existing numerical Angenent meridian in `site/assets/solitons/angenent-torus.json`, whose shooting diagnostics are in `geometry-audit.json`. It is not a circular torus. The diagram illustrates the configuration in the paper; it does not certify identification of a numerical solution with the particular torus in its existence proof. Remark 2.2 explicitly leaves torus uniqueness open.
+
+The two computed intersection circles have `(z, r) ≈ (±0.9062891101, 1.7828740979)`. These are roots of the piecewise-linear sampled profile against `z²+r²=4`, not certified coordinates for the exact ODE. They lie within the radius 0.005 neighborhoods of `(±29/32, 41/23)` in Proposition 2.1. Their numerical agreement is a consistency check, not an independent proof of that proposition.
+
+Run `python3 scripts/generate_moller_geometry.py` to reproduce the JSON and SVG using only the Python standard library. The previous `generate_shrinker_schematics.py` entry point delegates to it. Both meshes include the intersection latitude. The SVG shows the shaded limiting configuration and the generating curves; the interactive figure adds rotation, zoom, sheet visibility, complete/cutaway views, and a meridian view. Dashed red circles are intentionally overlaid through the sheets. Removed sectors and mesh edges are display devices.
+
+No handle insertion, finite-genus shrinker, genus-dependent family, entropy integral, or shrinker-PDE solve is supplied by this illustration. Catalogue properties continue to describe the smooth surfaces in the cited theorem. The original PDF and extracted text are kept outside the repository and are not exported.
