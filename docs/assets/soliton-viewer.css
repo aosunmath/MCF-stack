@@ -59,3 +59,8 @@
 
 .torus-end-label,.torus-end-axes{position:absolute;left:14px;right:14px;margin:0;font-size:12px;line-height:1.45;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;max-width:calc(100% - 28px);padding:4px 7px;box-sizing:border-box;border-radius:4px}.torus-end-label{top:10px}.torus-end-axes{bottom:8px}
 @media print{.torus-end-label,.torus-end-axes{display:none}}
+.wang-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;pointer-events:none}
+.soliton-figure canvas.wang-axes{position:absolute;inset:0;pointer-events:none;touch-action:auto}
+.wang-model-note{font-size:13px;line-height:1.6;padding:0 16px 12px}.wang-model-note summary{cursor:pointer;font-weight:600}.wang-model-note p{margin:10px 0}
+.soliton-figure:has(img[src$="anisotropic-quadratic.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:640/680}
+@media print{.wang-view-label,.wang-model-note{display:none}.soliton-figure:has(img[src$="anisotropic-quadratic.svg"]) .soliton-stage{height:auto;aspect-ratio:640/680}}

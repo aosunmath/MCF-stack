@@ -1147,7 +1147,7 @@
     },
     {
       "label": "ex:catalogue-wang-entire-translators",
-      "notes": "",
+      "notes": "The picture shows a schematic level surface in the base ℝ³ of an n = 3 graph in ℝ⁴; its surface topology is not the topology of the translator. Section 5 retains rotation symmetry in x′ and reflection in xₙ. Wang’s k-rotational symmetry also requires independence of the remaining coordinates.",
       "citations": [
         "CatXJWang11"
       ],
@@ -1188,7 +1188,7 @@
       "category": "translators",
       "tag": "0F00F9295CD9",
       "model": "anisotropic-quadratic",
-      "illustration_status": "Schematic"
+      "illustration_status": "Level-surface schematic and exact limit model"
     },
     {
       "label": "ex:catalogue-prescribed-apex-translators",
