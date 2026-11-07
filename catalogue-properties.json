@@ -1164,7 +1164,7 @@
     },
     {
       "label": "ex:catalogue-scherkenoids",
-      "notes": "Asymptotic planes in a height direction are not automatically topological ends.",
+      "notes": "The source family has 0 < α < π and w ≥ π at unit translation speed. The illustration fixes α = π/2 and varies w. Asymptotic planes in a height direction are not automatically topological ends; the displayed joining shape is schematic.",
       "citations": [
         "CatHIMWNotes19",
         "CatHMW20"

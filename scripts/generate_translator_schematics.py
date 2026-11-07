@@ -162,7 +162,7 @@ def main():
     delta_wing()
     anisotropy()
     apex()
-    end_planes("scherkenoid-ends", "Scherkenoid: limiting planes", True)
+    # Scherkenoid assets: node scripts/generate_scherkenoid_geometry.mjs
     end_planes("pitchfork-ends", "Pitchfork: limiting planes", False)
     trident()
     finite_genus()

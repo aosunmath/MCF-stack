@@ -1129,7 +1129,7 @@
     },
     {
       "label": "ex:catalogue-scherkenoids",
-      "formula_status": "surveyed external construction",
+      "formula_status": "boundary-value construction; explicit tilted grim-reaper limit; connected schematic",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1141,7 +1141,15 @@
         },
         {
           "key": "CatHMW20",
-          "locator": "later external construction; abstract and bibliographic metadata verified"
+          "locator": "arXiv:1903.04617v4, Theorems 2.3, 8.4, 9.2 and Figures 5, 11; source and figures read for revised picture",
+          "pdf_pages": [
+            7,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
         }
       ]
     },

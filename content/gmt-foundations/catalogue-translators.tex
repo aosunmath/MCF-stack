@@ -143,13 +143,20 @@ For $n=2$, the figure compares three surface cases in $\mathbb R^3$: $(k_1,k_2)=
 
 \chapter{Scherkenoid translators}\label{sec:catalogue-scherkenoids}
 \begin{example}[Scherkenoid translators]\label{ex:catalogue-scherkenoids}
-The supplied notes describe Scherkenoids as complete, properly embedded, nongraphical translators in $\mathbb R^3$, obtained as limits of Scherk-type translators. Their height is not given by an explicit formula.
-\begin{itemize}
-\item They are singly periodic. The notes describe a one-parameter family using the angle between two asymptotic plane directions; no exhaustive parameterization of all Scherkenoids is asserted here.
-\item In the source's downward convention there is one asymptotic plane as $z\to+\infty$ and an infinite family of parallel asymptotic planes as $z\to-\infty$. For the upward convention used in this catalogue these two height directions are reversed.
-\item These are noncompact eternal flows. A picture of their asymptotic planes records only end arrangement and periodicity, not an exact or numerically solved Scherkenoid.
-\end{itemize}
-See \cite{CatHIMWNotes19}, Section 5 and Figure 6, PDF pages 11--12. That supplied edition surveys constructions proved elsewhere; the present entry retains that external-proof status. A later detailed source is \cite{CatHMW20}. No uniqueness, genus, entropy, or stability claim is inferred from the schematic.
+Hoffman--Mart\'in--White construct Scherkenoids for $0<\alpha<\pi$ and $w\geq\pi$ as complete, properly embedded, singly periodic translator surfaces in $\mathbb R^3$; see \cite{CatHMW20}, Theorems 2.3 and 9.2. In the catalogue's upward convention, the fundamental piece is the graph of $U$ over
+\[
+\Omega(\alpha,w)=\{(x,y):0<y<w,\ x>y\cot\alpha\},
+\]
+with $U\to+\infty$ on the two horizontal rays and $U\to-\infty$ on the finite slanted edge. The graph closes along the two vertical lines above the corners. Repeated half-turns about those lines produce the complete surface, with period $2(w\cot\alpha,w,0)$. This is a boundary-value construction, not a closed formula for $U$.
+
+The connected illustration fixes $\alpha=\pi/2$ and allows $w$ to vary. It shows how a single central sheet opens into alternating wings. Far along a wing, after recentering height, the limiting graph has the explicit profile
+\[
+G_w(x,y)=-\left(\frac{w}{\pi}\right)^2\log\sin\left(\frac{\pi y}{w}\right)
++x\sqrt{\left(\frac{w}{\pi}\right)^2-1},\qquad x\in\mathbb R,\quad 0<y<w.
+\]
+This formula describes the tilted grim-reaper limit, not the whole Scherkenoid. For $w=\pi$ the tilt vanishes. In the upward convention, the height limits are the plane $x=y\cot\alpha$ as $z\to-\infty$ and the planes $y=nw$, $n\in\mathbb Z$, as $z\to+\infty$.
+
+The drawing follows Figures 5 and 11 and Section 9 of \cite{CatHMW20}, arXiv version 4, pages 7 and 26--30. Its joining profile is schematic, not a numerical solution of the translator equation. The paper uses downward velocity; reflecting height gives the upward flow $M_t=M+t e_3$ for all $t\in\mathbb R$. See also the earlier survey \cite{CatHIMWNotes19}, Section 5. No stability or entropy conclusion is inferred from the drawing.
 \end{example}
 
 

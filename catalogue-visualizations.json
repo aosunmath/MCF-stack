@@ -281,10 +281,19 @@
         "CatHMW20"
       ],
       "model": "scherkenoid-ends",
-      "status": "Schematic",
-      "caption": "Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
-      "alt": "Scherkenoid translators. Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
-      "interactive": false
+      "status": "Connected construction schematic",
+      "caption": "A central sheet opens into alternating grim-reaper-shaped wings. Rotate the model, isolate its fundamental half-strip piece, or change the width w ≥ π to see the wings tilt. The angle is fixed at α = π/2. Based on Hoffman–Martín–White, Figures 5 and 11; upward translation convention. The joining shape is schematic, not an exact or numerically solved Scherkenoid. Outer edges are display cuts.",
+      "alt": "One connected Scherkenoid schematic with a central sheet and alternating wings joined along vertical reflection lines. Upward convention, alpha pi over two, adjustable strip width at least pi. Not a solved translator.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "scherkenoid-domain",
+          "status": "Exact construction domain",
+          "caption": "The half-strip for α = π/2, with the boundary heights reflected to the upward convention. The two corners lift to vertical lines on the surface; half-turns about these lines continue the fundamental graph. This diagram shows the domain and boundary data, not an explicit formula for the graph.",
+          "alt": "Half-strip x greater than zero, y between zero and w, with positive infinite height on the horizontal rays and negative infinite height on the finite vertical edge. The corner points mark vertical reflection lines.",
+          "interactive": false
+        }
+      ]
     },
     {
       "label": "ex:catalogue-pitchfork",
