@@ -1,0 +1,36 @@
+{
+  "seed_length": 8,
+  "seed_transverse_semiaxis": 0.5,
+  "intervals": 512,
+  "tolerance": 2e-09,
+  "minimum_rescaled_principal_radius": 0.4543957318018941,
+  "terminal_aspect": 1.00000002,
+  "initial_normalized_time": -6.29903823868714e+27,
+  "normalized_sphere_rhs_error": 0.0,
+  "grid_refinement_max_support_difference": 0.002273807681389961,
+  "seed_length_max_support_difference": 1.543931515968211e-07,
+  "time_tolerance_max_support_difference": 3.1904680231065186e-08,
+  "comparisons": [
+    {
+      "seed_length": 8,
+      "seed_transverse_semiaxis": 0.5,
+      "intervals": 256,
+      "tolerance": 2e-09,
+      "minimum_rescaled_principal_radius": 0.45466541703759766,
+      "terminal_aspect": 1.00000002,
+      "initial_normalized_time": -8.32805913446679e+28,
+      "normalized_sphere_rhs_error": 0.0
+    },
+    {
+      "seed_length": 6,
+      "seed_transverse_semiaxis": 0.5,
+      "intervals": 512,
+      "tolerance": 2e-09,
+      "minimum_rescaled_principal_radius": 0.4543957621635948,
+      "terminal_aspect": 1.00000002,
+      "initial_normalized_time": -1492018063731.4763,
+      "normalized_sphere_rhs_error": 0.0
+    }
+  ],
+  "interpretation": "Observed discretization and finite-seed comparisons, not rigorous error bounds to the ancient solution."
+}
