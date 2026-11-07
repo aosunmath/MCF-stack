@@ -8,6 +8,20 @@ export function rotatePoint(p, state) {
   return [horizontal,z*Math.cos(state.pitch)-depth*Math.sin(state.pitch),z*Math.sin(state.pitch)+depth*Math.cos(state.pitch)];
 }
 
+// Clip a drawing polygon in model coordinates. This only changes the display.
+export function clipPolygonAtY(points, limit=0) {
+  const result=[];
+  for(let i=0;i<points.length;i++){
+    const a=points[i],b=points[(i+1)%points.length];
+    if(a[1]<=limit)result.push(a);
+    if((a[1]<limit&&b[1]>limit)||(a[1]>limit&&b[1]<limit)){
+      const t=(limit-a[1])/(b[1]-a[1]);
+      result.push(a.map((v,j)=>v+t*(b[j]-v)));
+    }
+  }
+  return result;
+}
+
 export function ancientOval(t, count=240) {
   if (!(t<0)) throw new Error('The smooth oval requires t < 0.');
   const ymax=Math.acosh(Math.exp(-t)), a=[], b=[];
@@ -53,7 +67,7 @@ function init(figure, data) {
   }
   const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:(data.view?.pitch??.43),zoom:1,fourD:.55});
   let state=resetState(), vertices=data.vertices, dragging=null, wire=false, scheduled=false;
-  let degrees=data.revolution?.degrees??360, meridian=false;
+  let degrees=data.revolution?.degrees??360, meridian=false, cutaway=false, cutButton;
   let visibleFaces=revolutionFaces(data,degrees), resetRevolution=()=>{};
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
@@ -97,15 +111,20 @@ function init(figure, data) {
     const screen=q.map(p=>[width/2+scale*p[0],height/2-scale*p[1]]);
     const faces=visibleFaces.map(({face,index})=>({face,index,z:face.reduce((v,i)=>v+q[i][2],0)/3})).sort((a,b)=>a.z-b.z);
     for(const {face,index} of faces) {
+      const polygon=cutaway?clipPolygonAtY(face.map(i=>points[i])).map(p=>{
+        const q=rotatePoint(p,state);return [width/2+scale*q[0],height/2-scale*q[1]];
+      }):face.map(i=>screen[i]);
+      if(polygon.length<3)continue;
       const [a,b,c]=face.map(i=>q[i]);
       const u=b.map((v,i)=>v-a[i]),v=c.map((val,i)=>val-a[i]);
       const normal=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
       const light=.42+.52*Math.abs((.3*normal[0]+.5*normal[1]+.8*normal[2])/(Math.hypot(...normal)||1));
-      const rgb=(data.palette?.[data.faceGroups?.[index]]??[67,139,169]).map(base=>Math.round(base*light+255*(1-light)*.25));
-      ctx.beginPath();face.forEach((i,j)=>j?ctx.lineTo(...screen[i]):ctx.moveTo(...screen[i]));ctx.closePath();
+      const palette=data.cutaway&&normal[2]<0?[215,164,92]:[67,139,169];
+      const rgb=(data.palette?.[data.faceGroups?.[index]]??palette).map(base=>Math.round(base*light+255*(1-light)*.25));
+      ctx.beginPath();polygon.forEach((p,j)=>j?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();
       ctx.fillStyle=`rgb(${rgb.join(',')})`;ctx.fill();
       // Cover antialias seams between adjacent triangles in the cutaway mesh.
-      if(data.revolution&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=data.view?.seamWidth??.4;ctx.stroke();}
+      if((data.revolution||data.cutaway)&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=data.view?.seamWidth??.4;ctx.stroke();}
       if(wire){ctx.strokeStyle='rgba(24,63,82,.32)';ctx.lineWidth=.5;ctx.stroke();}
     }
     ctx.strokeStyle='#21667f';ctx.lineWidth=2.5;
@@ -115,6 +134,7 @@ function init(figure, data) {
     canvas.dataset.rotation=`${state.yaw.toFixed(3)},${state.pitch.toFixed(3)}`;
     canvas.dataset.zoom=state.zoom.toFixed(3);
     canvas.dataset.view='surface';canvas.dataset.revolution=String(degrees);
+    if(data.cutaway)canvas.dataset.cutaway=String(cutaway);
   }
   function requestDraw(){if(!scheduled){scheduled=true;requestAnimationFrame(draw);}}
   function zoom(f){state.zoom=Math.max(.35,Math.min(4,state.zoom*f));requestDraw();}
@@ -133,9 +153,17 @@ function init(figure, data) {
     const action=button.dataset.viewAction;
     if(action==='in')zoom(1.2);
     if(action==='out')zoom(1/1.2);
-    if(action==='reset'){state={...resetState(),fourD:state.fourD};resetRevolution();requestDraw();}
+    if(action==='reset'){state={...resetState(),fourD:state.fourD};cutaway=false;cutButton?.setAttribute('aria-pressed','false');resetRevolution();requestDraw();}
     if(action==='wire'){wire=!wire;button.setAttribute('aria-pressed',String(wire));requestDraw();}
   });
+  if(data.cutaway){
+    cutButton=document.createElement('button');cutButton.type='button';
+    cutButton.textContent='Cutaway';cutButton.dataset.viewAction='cutaway';
+    cutButton.setAttribute('aria-pressed','false');
+    cutButton.addEventListener('click',()=>{cutaway=!cutaway;cutButton.setAttribute('aria-pressed',String(cutaway));requestDraw();});
+    figure.querySelector('.soliton-controls').append(cutButton);
+    figure.querySelector('.soliton-help').textContent='Drag to rotate; + / − zoom. Cutaway removes half of the drawing to expose the interior. Gold and blue show the two sides; cut edges and outer rims are display boundaries.';
+  }
   if(data.name==='abresch-langer'){
     const controls=figure.querySelector('.soliton-controls');
     const form=document.createElement('form');form.className='al-controls';form.noValidate=true;

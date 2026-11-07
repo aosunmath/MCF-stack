@@ -64,11 +64,12 @@
       "edition": "Supplied PDF; see cited edition where reviewed",
       "sha256": "39fac17afcfc8efb3de3d31ed6f47f78132e0234c921ba49f319b50d0021f370",
       "pdf_pages": 23,
-      "role": "Selected passages used for the special-solution catalogue; property lists are limited to the cited sources.",
+      "role": "Proved expander results and numerical shrinker assertions are distinguished in their catalogue entries.",
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Section 2 Lemmas 2,3 and Theorem 4 read; PDF14 visually inspected. Qualitative double-cone results proved. Computed genus-three shrinker and angle decimals excluded from proof claims."
+        "Section 2 Lemmas 2,3 and Theorem 4 read; PDF14 visually inspected. Qualitative double-cone results proved. Computed genus-three shrinker and angle decimals excluded from proof claims.",
+        "All article text read for this review; Figure 2, printed p. 1943 (PDF p. 8), visually checked. Section 1 and Assertion 1, pp. 1940–1944: numerical genus-three shrinker and intended symmetries/asymptotics. Section 3, pp. 1953–1955: numerical aperture. Section 4, p. 1956: conditional Main Result, separate from the qualitative theorems of Section 2."
       ],
       "catalogue_bibliography_keys": [
         "CatAIC95"
@@ -2083,6 +2084,72 @@
       ],
       "catalogue_bibliography_keys": [
         "CatChoiSeoSuZhao2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatChopp1994",
+      "filename": "Sumerical Computation of Self-Similar Solutions for Mean Curvature Flow_Chopp.pdf",
+      "title": "Computation of Self-Similar Solutions for Mean Curvature Flow",
+      "edition": "Experimental Mathematics 3(1), 1–15 (1994); supplied journal scan",
+      "sha256": "4be5a74ccef9be3dfc05c4fecf0403a63a8cecfea30ad0686d80342844c13d7e",
+      "pdf_pages": 15,
+      "url": "https://doi.org/10.1080/10586458.1994.10504572",
+      "role": "Reviewed for the Chopp catalogue addition; scope and exclusions in documentation/chopp-review.md.",
+      "redistributed": false,
+      "review_status": "full-paper-checked",
+      "checked_passages": [
+        "All 15 journal pages read visually, including all figures. Sections 2–3: algorithm, normalization and self-similarity test. Sections 4.1–4.4 and 4.6: five numerical candidates. Section 4.5: failed dumbbell; Section 5: proposed extensions."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatChopp1994"
+      ]
+    },
+    {
+      "bibliography_key": "CatChoppMinimal1993",
+      "filename": "chopp-minimal-1993.pdf",
+      "title": "Computing Minimal Surfaces via Level Set Curvature Flow",
+      "edition": "Journal of Computational Physics 106(1), 77–91 (1993); journal scan",
+      "sha256": "ba57a7f04bc48a3326bac8595b813c9f1050c7a88f076859553dce60b4698a50",
+      "pdf_pages": 15,
+      "url": "https://www.ljll.fr/~frey/papers/levelsets/Chopp%20D.L.%2C%20Computing%20minimal%20surfaces.pdf",
+      "role": "Reviewed for the Chopp catalogue addition; scope and exclusions in documentation/chopp-review.md.",
+      "redistributed": false,
+      "review_status": "full-paper-checked",
+      "checked_passages": [
+        "All 15 journal pages read visually. Sections 2–3: curvature convention and numerical steady solver; Section 4: fixed-boundary examples, including the catenoid benchmark in Section 4.1, pp. 86–87."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatChoppMinimal1993"
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "chopp-sethian-1993.pdf",
+      "title": "Flow under Curvature: Singularity Formation, Minimal Surfaces, and Geodesics",
+      "edition": "Chopp–Sethian, Experimental Mathematics 2(4), 235–255 (1993); author recompiled PDF dated August 10, 2006, with 48 PDF pages",
+      "sha256": "a789fca7f4b839985c5b3222ace2faf14c5c018d62a5dd468ae4a11cd4ef7403",
+      "pdf_pages": 48,
+      "url": "https://math.berkeley.edu/~sethian/2006/Papers/sethian.chopp.1993.pdf",
+      "role": "Reviewed for the Chopp catalogue addition; scope and exclusions in documentation/chopp-review.md.",
+      "redistributed": false,
+      "review_status": "text-checked-figures-incomplete",
+      "checked_passages": [
+        "All substantive text, PDF pp. 1–28, read. Section 3: initial-value curvature experiments; Section 4: fixed-boundary minimal surfaces; Section 5: forced curvature; Section 6: geodesic curvature on prescribed ambient surfaces. Most figure pages 29–48 contain missing EPS placeholders in this author edition. No source-figure-dependent construction is added from this edition."
+      ]
+    },
+    {
+      "bibliography_key": null,
+      "filename": "chopp-sethian-trento.pdf",
+      "title": "Physics and Geometry of Flow under Curvature: Singularity Formation, Minimal Surfaces, Geodesics, and Surface Tension",
+      "edition": "Sethian–Chopp, in Motion by Mean Curvature (1994), pp. 168–185; author scan",
+      "sha256": "f74e21120cd3eb7eb53b3f07829011ef86e4f823756d0709be5ea2e6b1d67d69",
+      "pdf_pages": 18,
+      "url": "https://people.esam.northwestern.edu/~chopp/papers/trento.pdf",
+      "role": "Reviewed for the Chopp catalogue addition; scope and exclusions in documentation/chopp-review.md.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Title and introduction, printed p. 168; geometric example survey, pp. 173–176 (PDF pp. 6–9). Condensed discussion of the earlier initial-value and fixed-boundary computations; no separate catalogue family extracted."
       ]
     }
   ],

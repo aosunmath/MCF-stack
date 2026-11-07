@@ -115,7 +115,8 @@
       "file": "catalogue-other-flows.tex",
       "status": "cited-example",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1029,6 +1030,67 @@
       "status": "cited-example",
       "citations": [
         "CatStolarskiSu2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "title": "Chopp cubical shrinker candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "title": "Chopp octahedral shrinker candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "title": "Chopp punctured-torus saddle candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "title": "Chopp two-handled cone candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "title": "Chopp four-handled cone candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
       ],
       "dependencies": [],
       "formal_verification": "none"

@@ -171,44 +171,74 @@
     "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
   },
   {
+    "route": "sections/chopp-cubical-shrinker-candidate",
+    "title": "2.22 Chopp cubical shrinker candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-cubical-shrinker-candidate"
+  },
+  {
+    "route": "sections/chopp-octahedral-shrinker-candidate",
+    "title": "2.23 Chopp octahedral shrinker candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-octahedral-shrinker-candidate"
+  },
+  {
+    "route": "sections/chopp-punctured-torus-saddle-candidate",
+    "title": "2.24 Chopp punctured-torus saddle candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-punctured-torus-saddle-candidate"
+  },
+  {
+    "route": "sections/chopp-two-handled-cone-candidate",
+    "title": "2.25 Chopp two-handled cone candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-two-handled-cone-candidate"
+  },
+  {
+    "route": "sections/chopp-four-handled-cone-candidate",
+    "title": "2.26 Chopp four-handled cone candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-four-handled-cone-candidate"
+  },
+  {
     "route": "sections/the-clifford-shrinking-torus-in-four-space",
-    "title": "2.22 The Clifford shrinking torus in four-space",
+    "title": "2.27 The Clifford shrinking torus in four-space",
     "chapter": "shrinkers",
     "section": "the-clifford-shrinking-torus-in-four-space"
   },
   {
     "route": "sections/products-of-closed-shrinking-curves",
-    "title": "2.23 Products of closed shrinking curves",
+    "title": "2.28 Products of closed shrinking curves",
     "chapter": "shrinkers",
     "section": "products-of-closed-shrinking-curves"
   },
   {
     "route": "sections/higher-codimension-spherical-shrinkers",
-    "title": "2.24 Higher-codimension spherical shrinkers",
+    "title": "2.29 Higher-codimension spherical shrinkers",
     "chapter": "shrinkers",
     "section": "higher-codimension-spherical-shrinkers"
   },
   {
     "route": "sections/angenent-torus-cylinders",
-    "title": "2.25 Angenent torus cylinders",
+    "title": "2.30 Angenent torus cylinders",
     "chapter": "shrinkers",
     "section": "angenent-torus-cylinders"
   },
   {
     "route": "sections/the-lee-wang-self-shrinking-mobius-bundle",
-    "title": "2.26 The Lee–Wang self-shrinking Mobius bundle",
+    "title": "2.31 The Lee–Wang self-shrinking Mobius bundle",
     "chapter": "shrinkers",
     "section": "the-lee-wang-self-shrinking-mobius-bundle"
   },
   {
     "route": "sections/compact-periodic-lagrangian-quadric-shrinkers",
-    "title": "2.27 Compact periodic Lagrangian quadric shrinkers",
+    "title": "2.32 Compact periodic Lagrangian quadric shrinkers",
     "chapter": "shrinkers",
     "section": "compact-periodic-lagrangian-quadric-shrinkers"
   },
   {
     "route": "sections/lee-wang-embedded-quadric-shrinkers",
-    "title": "2.28 Lee–Wang embedded quadric shrinkers",
+    "title": "2.33 Lee–Wang embedded quadric shrinkers",
     "chapter": "shrinkers",
     "section": "lee-wang-embedded-quadric-shrinkers"
   },

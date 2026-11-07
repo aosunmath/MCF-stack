@@ -1,0 +1,69 @@
+{
+  "status": "topology audit of schematics only",
+  "pde_solved": false,
+  "models": {
+    "cube": {
+      "vertices": 6496,
+      "faces": 13008,
+      "components": 1,
+      "boundary_loops": 0,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        2
+      ],
+      "euler_characteristic": -8,
+      "genus": 5
+    },
+    "octahedron": {
+      "vertices": 7834,
+      "faces": 15692,
+      "components": 1,
+      "boundary_loops": 0,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        2
+      ],
+      "euler_characteristic": -12,
+      "genus": 7
+    },
+    "saddle": {
+      "vertices": 7398,
+      "faces": 14300,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -1,
+      "genus": 1
+    },
+    "two-handle": {
+      "vertices": 8684,
+      "faces": 16655,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -2,
+      "genus": 1
+    },
+    "four-handle": {
+      "vertices": 9352,
+      "faces": 18137,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -6,
+      "genus": 3
+    }
+  }
+}

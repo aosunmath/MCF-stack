@@ -1,27 +1,27 @@
 {
-  "built_at": "2026-11-07T14:04:54.746328+00:00",
-  "publishing_commit": "141d0c1cb86ec49b3ce0fbcb9f81180c4205cd6d",
+  "built_at": "2026-11-07T22:13:00.260548+00:00",
+  "publishing_commit": "8bb4dc9e857bcd389a9ff0569059989ef5817c68",
   "sources": [
     {
       "repository": "https://github.com/aosunmath/MCF-stack",
       "ref": "local:content/gmt-foundations",
       "kind": "local-manuscript",
-      "source_sha256": "042ae93bc06d336d25ab403d9ef56a45991175ae3c126172249856b7ff497a76",
+      "source_sha256": "04850171d4083e1f2055a2a3b7a47aedc443541266633d4fdc76511923284ed0",
       "files": {
         "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
         "catalogue-expanders.tex": "f010bc0d138451a5b65df878a00e94c0f8241d580a65bb3a44a06a5a5d6f8793",
-        "catalogue-other-flows.tex": "3022d3c94664b4a3347f5c16d42e58b2b55b1a0718bdadbaab87684f24fb876c",
-        "catalogue-shrinkers.tex": "9636abfe6503bf93f6d39cdec93be7dd0cc5dfdec6d7f6e080630090e6b5c14f",
+        "catalogue-other-flows.tex": "12dc8b9893a3f3a9e171a7c17340e40e8cefe2321d636d9b80df81ce18799b35",
+        "catalogue-shrinkers.tex": "3825faa11ed4c22d2860b5a488f3933dd50e987c9d52dd3c3505ab662f86dadd",
         "catalogue-translators.tex": "7d36e9d547ab187e040b7d8d9d6583d25e215839c2fb6a66027d67fce851a3e2",
         "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
-        "entry-review.json": "f77d44431aca6ecfa84f3b1b768e7a9726988c626d2cf8fb078ccaa90a53c7cb",
+        "entry-review.json": "e428abca811286ed4e4e684dabf3926879a3c9afebc5c213ae7db38e553ea164",
         "orientation.tex": "64ac571b0fa16df9c1aa35fa00f693bcdc73258da46f922e9424e26607e207cf",
         "overviews/expanders.html": "3e897e44c698df6bc01175658ec93f6aa858f1d34802b0be2e137b8d41c5d6e4",
         "overviews/other-special-flows.html": "ca73c3c4cb5e05a71952d229cd0a2d1bfb902a951ad95b35de2b83cae17882de",
-        "overviews/shrinkers.html": "70862eefa0438483575ba7c06ea20299fa1e8e18c0ddf8d784ea54118f474f50",
+        "overviews/shrinkers.html": "34c290957260378da783b8fa5b7a65c331de0cf3b30d0a76a8dede01c3537c03",
         "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
-        "references.bib": "82e1e4467516808386345aa6d0aeacd89754f6c3447d7c42a2ba6772492dc36f",
-        "source-inventory.json": "167346a0c9991c7b421bbd8015705a19cd54fa35a25c92b7727d39bfdccf1974"
+        "references.bib": "9522e4cd7ffda3c7cd4f41e063466b167a3a7f6d51fcc42612ea8d2beff1bdbd",
+        "source-inventory.json": "3f771df03b4c7e3f011d3acfb31b95018234e3ca6e6e4bf33fe77516ea8206d6"
       }
     }
   ]

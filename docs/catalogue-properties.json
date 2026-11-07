@@ -1895,7 +1895,8 @@
       "label": "ex:catalogue-stationary-catenoid",
       "notes": "",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "cases": [
         {
@@ -5264,6 +5265,227 @@
       "tag": "41748F7ED1C1",
       "model": "stolarski-su",
       "illustration_status": "Neck-scale schematic"
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp cubical shrinker candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-5 surface without punctures (closed)",
+          "genus": {
+            "key": "higher",
+            "text": "5, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ],
+      "title": "Chopp cubical shrinker candidate",
+      "section": "chopp-cubical-shrinker-candidate",
+      "category": "shrinkers",
+      "tag": "04E9A0B8F725",
+      "model": "chopp-cube",
+      "illustration_status": "Schematic of a numerical candidate"
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp octahedral shrinker candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-7 surface without punctures (closed)",
+          "genus": {
+            "key": "higher",
+            "text": "7, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ],
+      "title": "Chopp octahedral shrinker candidate",
+      "section": "chopp-octahedral-shrinker-candidate",
+      "category": "shrinkers",
+      "tag": "5D3FB6DFEE3F",
+      "model": "chopp-octahedron",
+      "illustration_status": "Schematic of a numerical candidate"
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp punctured-torus saddle candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-1 surface minus 1 point",
+          "genus": {
+            "key": "1",
+            "text": "1, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ],
+      "title": "Chopp punctured-torus saddle candidate",
+      "section": "chopp-punctured-torus-saddle-candidate",
+      "category": "shrinkers",
+      "tag": "3AA6C1836470",
+      "model": "chopp-saddle",
+      "illustration_status": "Schematic of a numerical candidate"
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp two-handled cone candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-1 surface minus 2 points",
+          "genus": {
+            "key": "1",
+            "text": "1, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ],
+      "title": "Chopp two-handled cone candidate",
+      "section": "chopp-two-handled-cone-candidate",
+      "category": "shrinkers",
+      "tag": "48A9185FB30C",
+      "model": "chopp-two-handle",
+      "illustration_status": "Schematic of a numerical candidate"
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp four-handled cone candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-3 surface minus 2 points",
+          "genus": {
+            "key": "higher",
+            "text": "3, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ],
+      "title": "Chopp four-handled cone candidate",
+      "section": "chopp-four-handled-cone-candidate",
+      "category": "shrinkers",
+      "tag": "F576920EB05F",
+      "model": "chopp-four-handle",
+      "illustration_status": "Schematic of a numerical candidate"
     }
   ]
 }
