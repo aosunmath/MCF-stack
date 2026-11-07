@@ -93,24 +93,11 @@ def iw():
 
 
 def stacking():
-    f=Figure('Shao–Zou stacked-plane shrinkers: gluing schematic',
-             'Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed.')
-    heading(f,'Shao–Zou shrinkers with k ends','k ≥ 2; m sufficiently large for each fixed k')
-    for y in [257,195,133]:
-        plane(f,215,y,163,26)
-        if y>133:
-            for x in [105,178,251,324]:neck(f,x,y-55,y-7,7)
-    for x in [105,178,251,324]:f.ellipse(x,140,7,2.6,color=SEAM,width=1.4)
-    f.text(215,302,'k layers; bridges between adjacent pairs',15,anchor='middle')
-    f.box(420,120,192,167)
-    f.text(516,154,'k conical ends',20,weight=600,anchor='middle')
-    f.text(516,193,'genus',17,anchor='middle')
-    f.text(516,220,'(k − 1)(m − 1)',21,weight=600,anchor='middle')
-    f.text(516,261,'limit: kP as m → ∞',15,anchor='middle')
-    footer(f,['The drawn bridge count is illustrative, not an existence threshold.',
-              'Flat sheets represent the gluing input, not the final conical ends.',
-              'SCHEMATIC • plane stacking and topological counts'])
-    f.save('shao-zou-stacking.svg')
+    # The paper-informed connected mesh has its own reproducible generator.
+    # Keep bulk regeneration from restoring the former bridge-symbol picture.
+    import json
+    from generate_shao_zou_geometry import drawing, OUT
+    drawing(json.loads((OUT/'shao-zou-stacking.json').read_text()))
 
 
 def rays(f,cx,cy,kind):
