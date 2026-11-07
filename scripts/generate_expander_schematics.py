@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Generate original, source-conscious SVG diagrams for the MCF catalogue.
 
-All diagrams are explicitly schematic. The intermediate neckpinch curve is
+The cone and neckpinch diagrams are explicitly schematic; the network uses
+the dedicated numerical ODE generator. The intermediate neckpinch curve is
 sampled from the limiting formula for n=2, m=3, K=1; it is not a solution at
 finite time. No source-paper figure or private PDF asset is copied.
 
@@ -102,44 +103,9 @@ def mean_convex_cone():
 
 
 def expanding_network():
-    svg = canvas('Expanding planar tree: schematic and junction condition',
-        'An illustrative four-ended tree has two triple junctions. The branches are '
-        'not solutions of the expander equation. An inset shows the exact local '
-        '120-degree junction angle condition, rather than a nonstationary network.')
-    text(svg, 24, 33, 'Expanding planar tree networks', 23, weight=650)
-    text(svg, 24, 59, 'Schematic topology · the curved branches have not been solved', fill=MUTED)
-    card(svg, 20, 79, 380, 251)
-    card(svg, 415, 79, 205, 251)
-    text(svg, 36, 108, 'Four asymptotic ends', 18, weight=600)
-    # Curves are chosen to illustrate connectivity; no equation-solving claim.
-    for d in ['M160,207 C140,172 120,147 70,133',
-              'M160,207 C140,242 120,268 70,282',
-              'M280,207 C300,172 320,147 370,133',
-              'M280,207 C300,242 320,268 370,282']:
-        path(svg, d)
-    line(svg, 160, 207, 280, 207)
-    for x in [160, 280]:
-        el(svg, 'circle', cx=x, cy=207, r=4, fill=INK)
-    for a,b,c,d in [(70,133,44,126),(70,282,44,289),
-                    (370,133,386,129),(370,282,386,286)]:
-        line(svg,a,b,c,d,stroke=MUTED,width=2,stroke_dasharray='4 5')
-    text(svg, 36, 313, 'Tree structure, not numerical geometry', 15, fill=MUTED)
-    text(svg, 429, 108, 'Junction condition', 17, weight=600)
-    cx,cy,r = 516,201,60
-    for angle in [-90,30,150]:
-        a = math.radians(angle)
-        line(svg,cx,cy,cx+r*math.cos(a),cy+r*math.sin(a))
-    a1,a2 = math.radians(-90),math.radians(30)
-    x1,y1=cx+24*math.cos(a1),cy+24*math.sin(a1)
-    x2,y2=cx+24*math.cos(a2),cy+24*math.sin(a2)
-    path(svg,f'M{x1},{y1} A24,24 0 0 1 {x2},{y2}',width=1.5)
-    el(svg, 'circle', cx=cx, cy=cy, r=4, fill=INK)
-    text(svg, 546, 181, '120°', 16)
-    text(svg, 432, 283, 'Three tangent rays', 15)
-    text(svg, 432, 307, 'with equal angles', 15, fill=MUTED)
-    text(svg, 24, 361, 'The curvature equation holds along each open branch.', 16)
-    text(svg, 24, 389, 'A junction is not a smooth curve point.', 15, fill=MUTED)
-    save('expanding-network.svg', svg)
+    # Keep the old entry point from overwriting the solved network with a sketch.
+    from generate_expanding_network import main as generate_network
+    generate_network()
 
 
 def neckpinch_scales():

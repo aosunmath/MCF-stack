@@ -64,3 +64,9 @@
 .wang-model-note{font-size:13px;line-height:1.6;padding:0 16px 12px}.wang-model-note summary{cursor:pointer;font-weight:600}.wang-model-note p{margin:10px 0}
 .soliton-figure:has(img[src$="anisotropic-quadratic.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:640/680}
 @media print{.wang-view-label,.wang-model-note{display:none}.soliton-figure:has(img[src$="anisotropic-quadratic.svg"]) .soliton-stage{height:auto;aspect-ratio:640/680}}
+
+/* Planar network comparison: preserve equal scales, stack panels on phones. */
+.network-figure .soliton-stage{height:430px}
+.network-figure canvas,.network-figure canvas:active{cursor:default;touch-action:pan-y}
+@media(max-width:699px){.network-figure .soliton-stage{height:660px}}
+@media print{.network-figure .soliton-stage{height:390px}}

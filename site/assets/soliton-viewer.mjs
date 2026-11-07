@@ -245,6 +245,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='torus-translator-end'){
         const {initTorusEndFigure}=await import('./torus-end-viewer.mjs');
         initTorusEndFigure(figure,data);
+      } else if(data.kind==='expanding-network'){
+        const {initExpandingNetworkFigure}=await import('./expanding-network-viewer.mjs');
+        initExpandingNetworkFigure(figure,data);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);

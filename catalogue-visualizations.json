@@ -428,13 +428,14 @@
       "title": "Self-expanding planar tree networks",
       "category": "expanders",
       "citations": [
-        "CatINS19"
+        "CatINS19",
+        "CatMS07"
       ],
       "model": "expanding-network",
-      "status": "Network schematic",
-      "caption": "A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
-      "alt": "Self-expanding planar tree networks. A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
-      "interactive": false
+      "status": "Numerical ODE solution",
+      "caption": "Two numerical four-ended expanders approach the same diagonal rays. Each has two 120-degree triple junctions and a straight central edge. The time control applies Σₜ = √t Σ₁; t = 0 shows only the initial cone. The trees differ with the ends held fixed, but are related by a quarter-turn. Ends are truncated for display.",
+      "alt": "Two planar expanding trees with the same four diagonal asymptotic rays: a blue horizontal connection and an orange vertical connection, each with two 120-degree junctions.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-stationary-catenoid",

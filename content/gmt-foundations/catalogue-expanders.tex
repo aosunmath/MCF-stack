@@ -107,7 +107,14 @@ The source uses $\vec k=\psi^\perp$ and $\sqrt{2t}\,\psi$; our profile is $\Sigm
 \[
  \bigcup_{j=0}^2\{r(\cos(2\pi j/3),\sin(2\pi j/3)):r\geq0\}
 \]
-is the stationary $Y$ network. It illustrates the junction condition. The accompanying general tree diagram is schematic; its branches are not numerically solved.
+is the stationary $Y$ network. It illustrates the junction condition.
+
+The accompanying picture instead computes a nonstationary four-ended example, using the geodesic construction of \cite{CatMS07}, Sections 2--3. In Euclidean arclength $s$, write the tangent as $(\cos\theta,\sin\theta)$. Then
+\[
+ x'=\cos\theta,\qquad y'=\sin\theta,\qquad
+ \theta'=\frac{-x\sin\theta+y\cos\theta}{2}.
+\]
+Shoot the upper-right branch from $(x,y,\theta)=(a,0,\pi/3)$ toward the ray of angle $\pi/4$. Numerically, $a\approx0.385405$ in our normalization. Reflections in the coordinate axes and the straight segment $[-a,a]\times\{0\}$ give the displayed tree, with triple junctions at $(\pm a,0)$ and asymptotic rays at angles $\pi/4+j\pi/2$, $j=0,1,2,3$. A quarter-turn gives the second tree. The two pictures are congruent by rotation but have different connections when the four asymptotic ends are held fixed. Both have four ends and no cycles. These are numerical ODE approximations, not closed formulas or a classification of all network expanders. The time control shows $\sqrt t\,\Sigma$, $t>0$; the $t=0$ view shows the nonregular initial cone only.
 \end{example}
 
 \chapter{Mountain-pass self-expanders}\label{sec:catalogue-mountain-pass-expanders}
