@@ -251,6 +251,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='expanding-network'){
         const {initExpandingNetworkFigure}=await import('./expanding-network-viewer.mjs');
         initExpandingNetworkFigure(figure,data);
+      } else if(data.kind==='grim-reaper-flow'){
+        const {initReaperFlow}=await import('./reaper-flow-viewer.mjs');
+        initReaperFlow(figure,data);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
