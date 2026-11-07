@@ -252,10 +252,10 @@
         "CatXJWang11"
       ],
       "model": "anisotropic-quadratic",
-      "status": "Schematic",
-      "caption": "Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
-      "alt": "Nonrotational entire convex translators. Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
-      "interactive": false
+      "status": "Level-surface schematic and exact limit model",
+      "caption": "The n = 3 case is a hypersurface in ℝ⁴. Teal shows an illustrative compact level surface in the base ℝ³; switch to a graph slice or increase the rescaling to see the caps leave a fixed spatial window. Ochre shows the exact cylinder {Q = 1} for the k = 2 quadratic blow-down model. The finite shape is not a computed translator, and k = 2 is not asserted for every member. See “How to read this picture” for the drawing formula.",
+      "alt": "A closed elongated convex level surface with circle symmetry, a two-coordinate graph slice, and the round cylindrical level of a quadratic blow-down. Finite-scale shapes are schematic; the full translator lies in R4.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-prescribed-apex-translators",

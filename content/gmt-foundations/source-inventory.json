@@ -274,7 +274,8 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "equations (1.1)–(1.3); Theorems 1.2–1.3; PDF pages 2, 3, 4"
+        "equations (1.1)–(1.3); Theorems 1.2–1.3; PDF pages 2–4",
+        "Section 5 (PDF pages 41–50): Legendre transform, ellipsoidal Dirichlet construction, (5.8), bounded sublevels (5.13), and the entire-domain argument in Section 5.3"
       ],
       "catalogue_bibliography_keys": [
         "CatXJWang11"

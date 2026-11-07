@@ -83,22 +83,9 @@ def delta_wing():
 
 
 def anisotropy():
-    body = [text(158, 109, "Anisotropy (schematic)", 17, "middle"),
-            text(461, 109, "Quadratic blow-down", 17, "middle"),
-            line(60, 215, 255, 215, width=1, arrow=True),
-            line(158, 295, 158, 133, width=1, arrow=True),
-            line(366, 215, 558, 215, width=1, arrow=True),
-            line(461, 296, 461, 132, width=1, arrow=True)]
-    for r in [1, .72, .43]:
-        body += [ellipse(158, 215, 85*r, 47*r), ellipse(461, 215, 69*r, 69*r)]
-    body += [line(274, 215, 345, 215, arrow=True), text(310, 193, "h → ∞", 16, "middle"),
-             text(158, 319, "Nonrotational graph", 16, "middle"),
-             text(461, 319, "Active-coordinate slice", 16, "middle"),
-             text(320, 348, "Q(x) = |x′|² / [2(k − 1)],     2 ≤ k ≤ n", 17, "middle")]
-    write("anisotropic-quadratic", "Higher-dimensional convex translators",
-          "Contour diagrams only; no translator surface is plotted",
-          "Blow-down may require rotations depending on the scale.", body,
-          "Schematic anisotropic contours are rescaled toward circular contours of a quadratic blow-down on its active-coordinate subspace. The theorem allows scale-dependent rotations; this is not an exact translator or a fixed-axis convergence claim.")
+    # Preserve the reviewed level-surface picture, generated from shared geometry.
+    if not (OUT / "anisotropic-quadratic.svg").is_file():
+        raise FileNotFoundError("Run node scripts/generate_wang_picture.mjs first")
 
 
 def apex():
