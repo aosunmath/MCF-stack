@@ -233,6 +233,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='delta-wing-pde'){
         const {initDeltaWingFigure}=await import('./delta-wing-viewer.mjs');
         initDeltaWingFigure(figure,data);
+      } else if(data.kind==='dpn-construction'){
+        const {initDpnFigure}=await import('./dpn-viewer.mjs');
+        initDpnFigure(figure,data);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);

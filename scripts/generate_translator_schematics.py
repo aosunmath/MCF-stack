@@ -153,35 +153,8 @@ def trident():
 
 
 def finite_genus():
-    body = [text(169, 107, "Meridian input (schematic)", 16, "middle"),
-            text(467, 107, "Circle of intersection", 17, "middle"),
-            line(58, 326, 284, 326, width=1, arrow=True),
-            line(63, 333, 63, 130, width=1, arrow=True),
-            text(290, 332, "r", 16), text(50, 129, "z", 16)]
-    def p(r,z): return (72+57*r, 276-47*z)
-    bowl = [p(3.4*i/100, .13*(3.4*i/100)**2) for i in range(101)]
-    upper, lower = [], []
-    # Parametrizing r = 1+s² keeps both schematic wings smooth at the neck.
-    for i in range(101):
-        s = math.sqrt(2.4)*i/100
-        r = 1+s*s
-        upper.append(p(r, .13*r*r+s-.8))
-        lower.append(p(r, .13*r*r-s-.8))
-    body += [path(bowl, width=4), path(upper, width=3, dash="7 4"), path(lower, width=3, dash="7 4")]
-    cross = p(1.64, .13*1.64**2)
-    body += [dot(*cross, radius=6), line(cross[0]-7,cross[1]-8,127,185,width=1),
-             text(94, 173, "gluing", 15),
-             ellipse(467, 229, 73, 73, dash="6 5")]
-    for i in range(12):
-        a=2*math.pi*i/12
-        body.append(dot(467+73*math.cos(a),229+73*math.sin(a),5))
-    body += [text(467, 325, "Many small neck sites", 16, "middle"),
-             line(83, 348, 116, 348, width=4), text(125, 353, "bowl", 15),
-             line(186, 348, 219, 348, width=3, dash="7 4"), text(228, 353, "winglike", 15)]
-    write("bowl-catenoid-gluing", "Finite genus: singular gluing input",
-          "Bowl + winglike translator; a circle to desingularize",
-          "Schematic singular input; the glued surface is not drawn.", body,
-          "Schematic meridian profiles of a bowl and a winglike translator meet at a marked point. Rotation produces the intersection circle, shown separately with many neck locations. No displayed profile is an exact or numerically computed translator, and no particular genus is asserted by the number of dots.")
+    from generate_dpn_geometry import drawings
+    drawings()
 
 
 def main():

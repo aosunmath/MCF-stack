@@ -329,10 +329,19 @@
         "CatHIMWNotes19"
       ],
       "model": "bowl-catenoid-gluing",
-      "status": "Schematic",
-      "caption": "Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
-      "alt": "Finite-genus translators with three ends. Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
-      "interactive": false
+      "status": "Construction schematic",
+      "caption": "Three upward ends joined through a Scherk-like tunnel belt, following Dávila–del Pino–Nguyen, Theorem 1.1 and Section 2. Rotate, zoom, inspect the cutaway or tunnel detail, and compare the numerical bowl–catenoid input. The connected model is illustrative; it has not been corrected to solve the translator equation. The displayed period counts do not assert existence at those genera.",
+      "alt": "Connected three-ended construction schematic: a blue bowl sheet and two green catenoid sheets joined through a gold tunnel belt, with a cutaway and enlarged tunnel detail. Not a solved translator.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "dpn-bowl-catenoid-meridian",
+          "status": "Numerical ODE input",
+          "caption": "Meridians integrated from the unit-speed rotational translator equations (2.1) and (2.3). The bowl meets the lower wing of the translating catenoid at radius 1.4; revolving this point gives the circle to be desingularized. The height cutoff is artificial.",
+          "alt": "Equal-scale meridian diagram of a numerical bowl and two-wing translating catenoid with one crossing and three upward ends.",
+          "interactive": false
+        }
+      ]
     },
     {
       "label": "ex:catalogue-expanding-corners",

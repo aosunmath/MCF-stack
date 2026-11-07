@@ -1192,7 +1192,7 @@
     },
     {
       "label": "ex:catalogue-finite-genus-translators",
-      "formula_status": "surveyed gluing construction",
+      "formula_status": "gluing construction; ODE input and separate connected schematic",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1203,7 +1203,7 @@
         },
         {
           "key": "CatDPN17",
-          "locator": "original paper abstract; proof remains external"
+          "locator": "Theorem 1.1; Figure 2; Section 2, equations (2.1), (2.3), (2.6), Definition 2.6, Figures 5–6; original accepted manuscript read for illustration"
         }
       ]
     },
