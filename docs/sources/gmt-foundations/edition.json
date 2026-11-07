@@ -1,11 +1,11 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "b4c7aefcb218fafe7bd3798ff2a947a0c0385cf26002eda5dbb365307fb8b960",
+  "source_sha256": "d0128c1872dca7ded786789450d6f6a89298ac383b1fc3cde52cca115a10946c",
   "files": {
     "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
     "catalogue-expanders.tex": "1f918b5f73a36c0bb6f8db7d9e48ebe3bccdc8ca148ca2b5603bf0a15eb27977",
-    "catalogue-other-flows.tex": "dac3e705447f4e5de98b85e4bf3fb6def23d479ed8900bd4e3b2103b536ae759",
+    "catalogue-other-flows.tex": "2dbdcf27d071ba356803619c672e78ad026f9872082cc5a3b6b786118ee1203a",
     "catalogue-shrinkers.tex": "bec14bf1318a2ab2054eb89e5882f388acdf74465e315f87321027c89de7860d",
     "catalogue-translators.tex": "bbfb1044618f34e6777e7ffb42ca3881356bbe0aaa4725b303dedc163ef3d3ab",
     "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
