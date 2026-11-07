@@ -242,6 +242,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='ketover-schematic'){
         const {initKetoverFigure}=await import('./ketover-viewer.mjs');
         initKetoverFigure(figure,data);
+      } else if(data.kind==='iw-schematic'){
+        const {initIWFigure}=await import('./iw-viewer.mjs');
+        initIWFigure(figure,data);
       } else if(data.kind==='nguyen-scherk-schematic'){
         const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
         initNguyenFigure(figure,data);

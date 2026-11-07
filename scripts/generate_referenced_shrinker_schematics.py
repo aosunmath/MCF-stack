@@ -82,22 +82,14 @@ def nguyen():
 
 
 def iw():
-    f=Figure('Ilmanen–White two-ended shrinkers: topology schematic',
-             'Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.')
-    heading(f,'Ilmanen–White two-ended shrinkers','Every genus h ≥ 2; two asymptotically conical ends')
-    plane(f,204,235,150,33)
-    for x in [120,204,288]:neck(f,x,162,228,9)
-    plane(f,204,154,150,33,fill='#edf4f6')
-    for x in [120,204,288]:f.ellipse(x,162,9,3,color=SEAM,width=1.7)
-    f.text(204,290,'Topology symbols: h + 1 necks',16,anchor='middle')
-    f.arrow(382,195,439,195)
-    f.text(410,172,'h → ∞',15,anchor='middle')
-    plane(f,523,196,69,23)
-    f.text(523,242,'2P',23,weight=600,anchor='middle')
-    footer(f,['Three neck symbols illustrate h = 2; geometry is schematic.',
-              'The large-genus convergence is to a multiplicity-two plane.',
-              'SCHEMATIC • topology and limiting multiplicity'])
-    f.save('iw-two-ended.svg')
+    # Keep the source-informed interactive surface and its static rendering.
+    source = ROOT / 'site/assets/solitons/iw-two-ended.svg'
+    if not source.exists():
+        raise RuntimeError('Run scripts/generate_iw_geometry.py first')
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def stacking():

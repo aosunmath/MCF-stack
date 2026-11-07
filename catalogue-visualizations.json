@@ -673,10 +673,10 @@
         "CatIlmanenWhite2025"
       ],
       "model": "iw-two-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.",
-      "alt": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane."
+      "status": "Interactive topology schematic",
+      "interactive": true,
+      "caption": "An upper graph and its reflection join along h + 1 equatorial neck curves and flare into two conical ends. The default genus h = 3 follows the topology of Figure 1 in Ilmanen–White (the paper uses g = h + 1). Rotate, select a genus, or use Cutaway and Equator z = 0 to inspect the necks. This is an original schematic, not Chopp’s numerical surface or a solution of the shrinker equation. Neck shapes, scale and cone slopes are illustrative; both outer rims truncate infinite ends.",
+      "alt": "Genus-three Ilmanen–White schematic: two reflected curved sheets joined by four smooth necks, with two flaring ends. A second cutaway view exposes the neck walls. Not a computed self-shrinker."
     },
     {
       "label": "ex:catalogue-shao-zou-stacking",

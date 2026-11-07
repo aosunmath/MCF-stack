@@ -23,3 +23,6 @@
 .nguyen-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
 .nguyen-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.nguyen-legend span{display:inline-flex;align-items:center;gap:6px}.nguyen-legend i{width:10px;height:10px;border-radius:50%}
 @media print{.nguyen-view-label,.nguyen-legend{display:none}}
+
+.iw-view-label{right:14px;line-height:1.4}
+@media print{.iw-view-label{display:none}}
