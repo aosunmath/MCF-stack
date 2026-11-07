@@ -244,7 +244,19 @@ Let $M^n\subset\mathbb R^{n+1}$, $n\geq2$, be two-sided, properly embedded and m
 
 For a concrete three-dimensional example, use the classical Costa minimal surface. For sufficiently negative times the normal-graph construction retains its genus one and three ends. These slices are complete and proper; these conclusions follow from the bounded normal graph over the complete proper initial model. We record that early ancient interval $(-\infty,T)$, without asserting an eternal continuation for the Costa case. The theorem also applies to other Costa--Hoffman--Meeks surfaces and periodic minimal surfaces, but their differing topology is not collapsed into this case.
 
-Source: \cite{CatMP19}, Theorem 1.1 and its following examples, pp.~3--4, and the normal-graph construction in Section 3. There is no closed time-dependent formula, uniqueness, or quantitative entropy value supplied. The distinct rotational eternal continuation from a catenoid is recorded separately in \ref{ex:catalogue-reapernoid}. The figure represents opposite-side perturbations only.
+Source: \cite{CatMP19}, Theorem 1.1 and its following examples, pp.~3--4, and the normal-graph construction in Section 3. There is no closed time-dependent formula, uniqueness, or quantitative entropy value supplied. The distinct rotational eternal continuation from a catenoid is recorded separately in \ref{ex:catalogue-reapernoid}. The picture uses a numerical sampling of the classical Costa parametrization in \cite{CatMelko2010}, equation (17), with square lattice $\mathbb Z+i\mathbb Z$ and no additional spatial dilation. Its three ends are truncated for display.
+
+To illustrate different early times, the viewer uses the linearization of mean curvature flow over the minimal surface. With $H=\operatorname{div}\nu$ and mean curvature vector $-H\nu$, a normal height satisfies
+\[
+ \partial_t u=(\Delta_M+|A|^2)u
+\]
+to first order. On a truncated Costa domain, let $\phi_D>0$ be the numerically computed first Dirichlet mode, normalized by $\max\phi_D=1$, with $(\Delta_M+|A|^2)\phi_D=\lambda_D\phi_D$ and $\lambda_D>0$. The displayed model is
+\[
+ X_{\mathrm{model}}^{\pm}(p,\tau)
+ =X_M(p)\pm0.11e^\tau\phi_D(p)\nu_M(p),
+ \qquad \tau=\lambda_D t\in[-5,0].
+\]
+The numerical value $\lambda_D\approx1.511$ depends on this scale, truncation and discretization; it is not a claimed exact eigenvalue of the complete Costa surface. The height decays backward and increases forward on either normal side. These are linearized model times, not computed nonlinear ancient slices or an asymptotic expansion proved for the flows in Theorem 1.1. The default display magnifies the normal displacement by three; the model-scale option removes that magnification. The endpoint $\tau=0$ is only a chosen small model amplitude, not a singular time. The two signed models illustrate the two sides; no reflection identity between the nonlinear flows is asserted.
 \end{example}
 
 \chapter{The eternal reapernoid}\label{sec:catalogue-reapernoid}

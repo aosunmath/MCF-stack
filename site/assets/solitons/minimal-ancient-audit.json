@@ -1,0 +1,100 @@
+{
+  "grid": 72,
+  "parameter_cut_radii": [
+    0.11,
+    0.033,
+    0.033
+  ],
+  "vertices": 6061,
+  "faces": 11840,
+  "boundary_components": 3,
+  "euler_characteristic": -3,
+  "genus": 1,
+  "eigenvalue": 1.510976204017214,
+  "relative_eigen_residual": 5.403837013258811e-13,
+  "minimum_interior_mode": 0.004159633723479149,
+  "max_principal_curvature": 1.7436354103466953,
+  "interpretation": "Dirichlet finite-element eigenmode on the truncated Costa surface. No nonlinear PDE or global ancient limit is computed.",
+  "coordinate_checks": {
+    "normal_tangency": 6.268797592134945e-09,
+    "relative_metric_error": 2.069707849550184e-09,
+    "period_error": 8.881784197001252e-16,
+    "conformal_harmonicity_residual": 2.6645352591003754e-05
+  },
+  "refinement": [
+    {
+      "grid": 52,
+      "parameter_cut_radii": [
+        0.11,
+        0.033,
+        0.033
+      ],
+      "vertices": 4128,
+      "faces": 7974,
+      "boundary_components": 3,
+      "euler_characteristic": -3,
+      "genus": 1,
+      "eigenvalue": 1.511369485129153,
+      "relative_eigen_residual": 6.211448625879952e-13,
+      "minimum_interior_mode": 0.00415505093713329,
+      "max_principal_curvature": 1.7412807415051317,
+      "interpretation": "Dirichlet finite-element eigenmode on the truncated Costa surface. No nonlinear PDE or global ancient limit is computed."
+    },
+    {
+      "grid": 96,
+      "parameter_cut_radii": [
+        0.11,
+        0.033,
+        0.033
+      ],
+      "vertices": 9244,
+      "faces": 18206,
+      "boundary_components": 3,
+      "euler_characteristic": -3,
+      "genus": 1,
+      "eigenvalue": 1.5107201681845268,
+      "relative_eigen_residual": 4.267560028203154e-13,
+      "minimum_interior_mode": 0.004163027428327155,
+      "max_principal_curvature": 1.7447618780956629,
+      "interpretation": "Dirichlet finite-element eigenmode on the truncated Costa surface. No nonlinear PDE or global ancient limit is computed."
+    }
+  ],
+  "domain_comparison": [
+    {
+      "grid": 72,
+      "parameter_cut_radii": [
+        0.1265,
+        0.03795,
+        0.03795
+      ],
+      "vertices": 5977,
+      "faces": 11672,
+      "boundary_components": 3,
+      "euler_characteristic": -3,
+      "genus": 1,
+      "eigenvalue": 1.5076880867522826,
+      "relative_eigen_residual": 3.499001498413071e-13,
+      "minimum_interior_mode": 0.006977575029318529,
+      "max_principal_curvature": 1.7436354103466953,
+      "interpretation": "Dirichlet finite-element eigenmode on the truncated Costa surface. No nonlinear PDE or global ancient limit is computed."
+    },
+    {
+      "grid": 72,
+      "parameter_cut_radii": [
+        0.0935,
+        0.028050000000000002,
+        0.028050000000000002
+      ],
+      "vertices": 6081,
+      "faces": 11880,
+      "boundary_components": 3,
+      "euler_characteristic": -3,
+      "genus": 1,
+      "eigenvalue": 1.51214306653302,
+      "relative_eigen_residual": 1.194524141409784e-12,
+      "minimum_interior_mode": 0.0023966813467936436,
+      "max_principal_curvature": 1.7436354103466953,
+      "interpretation": "Dirichlet finite-element eigenmode on the truncated Costa surface. No nonlinear PDE or global ancient limit is computed."
+    }
+  ]
+}

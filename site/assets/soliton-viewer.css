@@ -119,3 +119,8 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .soliton-figure[data-soliton$="immortal-product.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:960/964}
 @media print{.immortal-product-legend,.immortal-product-figure .soliton-status{display:none}.immortal-product-figure .soliton-stage{height:auto!important;aspect-ratio:960/964}.immortal-product-figure .soliton-stage img{height:auto}}
 .immortal-product-figure .soliton-controls{border-top:0;border-bottom:1px solid var(--line)}.immortal-product-figure .soliton-help{margin-top:10px}
+/* Four Costa model times share one scale and camera. */
+.minimal-ancient-figure .soliton-stage{height:590px}.minimal-ancient-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.minimal-ancient-figure .minimal-time-control{flex-basis:100%}.minimal-time-control input[type=range]{flex:1;max-width:350px}.minimal-time-control output{min-width:85px}.minimal-ancient-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.minimal-ancient-figure .soliton-stage{height:540px}.minimal-ancient-figure .soliton-controls select{max-width:205px}}
+.soliton-figure[data-soliton$="minimal-ancient-flows.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/850}
+@media print{.minimal-ancient-figure .soliton-stage{height:auto}.minimal-ancient-figure .soliton-stage img{height:auto}.minimal-ancient-note,.minimal-ancient-figure .soliton-status{display:none}}

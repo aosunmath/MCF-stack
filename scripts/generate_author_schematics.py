@@ -65,12 +65,11 @@ def knot():
 
 
 def perturbation():
- s=heading('Ancient flows on either side of a minimal M')
- for shift,label,color in [(-37,'Mₜ⁺', '#b06a35'),(0,'M',MUTED),(37,'Mₜ⁻',ACCENT)]:
-  pts=[(x,205+shift+31*math.sin((x-120)/85)) for x in range(75,566,2)];curve(s,pts,stroke=color,width=3);text(s,569,pts[-1][1],label,18,fill=color)
- for x in [160,320,480]:line(s,x,163,x,205,stroke=MUTED,width=1,marker_end='url(#arrow)');line(s,x,249,x,211,stroke=MUTED,width=1,marker_end='url(#arrow)')
- text(s,320,120,'t → −∞: opposite-side convergence',18,anchor='middle')
- finish(s,'minimal-ancient-flows',['Local normal-graph diagram only: the Costa example has genus 1 and 3 ends.','No global minimal-surface profile or finite-time ancient slice is computed.'])
+ # The reviewed Costa mesh and time plate have dedicated generators.
+ for name in ['minimal-ancient-flows.svg','minimal-ancient-flows.json']:
+  if not (OUT/name).is_file():
+   raise FileNotFoundError('Run generate_minimal_ancient_geometry.py and generate_minimal_ancient_plate.mjs first')
+
 
 def pancakes():
  from generate_stacked_pancakes import main as draw_pancakes

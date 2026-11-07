@@ -3823,7 +3823,7 @@
     },
     {
       "label": "ex:catalogue-minimal-ancient-flows",
-      "notes": "",
+      "notes": "The interactive time sequence is a numerical linearized model on a truncated Costa domain. Its Dirichlet eigenvalue and magnified normal offsets are illustration data, not additional properties of the nonlinear ancient flows.",
       "citations": [
         "CatMP19"
       ],

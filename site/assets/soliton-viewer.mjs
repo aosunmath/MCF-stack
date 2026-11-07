@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='av-neckpinch'){
+      if(data.kind==='minimal-ancient-linearized'){
+        const {initMinimalAncientFigure}=await import('./minimal-ancient-viewer.mjs');
+        initMinimalAncientFigure(figure,data);
+      } else if(data.kind==='av-neckpinch'){
         const {initNeckpinchFigure}=await import('./neckpinch-viewer.mjs');
         initNeckpinchFigure(figure,data);
       } else if(data.kind==='immortal-product-schematic'){
