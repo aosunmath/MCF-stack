@@ -21,9 +21,9 @@ export function initPitchforkFigure(figure,data){
   const canvas=figure.querySelector('canvas'),stage=figure.querySelector('.soliton-stage');
   const gl=canvas.getContext('webgl',{antialias:true,alpha:false});
   if(!gl)throw new Error('WebGL unavailable');
-  const vertex=`attribute vec3 position,normal,color;uniform mat3 rotation;uniform vec2 scale;
+  const vertex=`attribute vec3 position,normal,color;uniform mat3 rotation;uniform vec2 scale;uniform float centerZ;
     varying vec3 point,norm,tint;void main(){point=position;norm=rotation*normal;tint=color;
-    vec3 p=rotation*position;gl_Position=vec4(p.x*scale.x,p.y*scale.y,-p.z/40.0,1.0);}`;
+    vec3 p=rotation*(position-vec3(0.0,0.0,centerZ));gl_Position=vec4(p.x*scale.x,p.y*scale.y,-p.z/40.0,1.0);}`;
   const fragment=`precision mediump float;varying vec3 point,norm,tint;uniform bool halfOnly,lines;
     void main(){if(halfOnly&&point.y<-.00001)discard;if(lines){gl_FragColor=vec4(tint,1.0);return;}
     vec3 n=normalize(norm);if(n.z<0.0)n=-n;
@@ -34,7 +34,7 @@ export function initPitchforkFigure(figure,data){
   function shader(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw new Error('Shader compilation failed: '+gl.getShaderInfoLog(s));return s;}
   const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vertex));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fragment));gl.linkProgram(program);
   if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Shader link failed');gl.useProgram(program);
-  const uniform=Object.fromEntries(['rotation','scale','halfOnly','lines'].map(k=>[k,gl.getUniformLocation(program,k)]));
+  const uniform=Object.fromEntries(['rotation','scale','halfOnly','lines','centerZ'].map(k=>[k,gl.getUniformLocation(program,k)]));
   const locations=Object.fromEntries(['position','normal','color'].map(k=>[k,gl.getAttribLocation(program,k)]));
   function buffer(values){const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(values.flat()),gl.STATIC_DRAW);return b;}
   const surface={position:buffer(data.vertices),normal:buffer(data.normals),color:buffer(data.vertexColors.map(c=>c.map(v=>v/255)))};
@@ -71,7 +71,8 @@ export function initPitchforkFigure(figure,data){
     const slice=state.mode==='slice',yaw=slice?0:state.yaw,pitch=slice?-Math.PI/2:state.pitch;
     const cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
     gl.uniformMatrix3fv(uniform.rotation,false,new Float32Array([cy,-sy*sp,sy*cp,-sy,-cy*sp,cy*cp,0,cp,sp]));
-    const scale=Math.min(w*.43/7,h*.38/(slice?Math.PI:4.7))*state.zoom;
+    const scale=Math.min(w*.43/7,h*(slice?.38:.40)/(slice?Math.PI:6.2))*state.zoom;
+    gl.uniform1f(uniform.centerZ,slice?0:.5);
     gl.uniform2f(uniform.scale,2*scale/w,2*scale/h);gl.uniform1i(uniform.halfOnly,state.mode==='half');
     gl.disable(gl.CULL_FACE);
     if(slice){gl.disable(gl.DEPTH_TEST);gl.uniform1i(uniform.lines,true);bind(sliceBuffers);gl.drawArrays(gl.LINES,0,sliceCount);}
@@ -89,7 +90,7 @@ export function initPitchforkFigure(figure,data){
     figure.querySelector('[data-view-action="wire"]').disabled=slice;figure.querySelector('[data-view-action="wire"]').setAttribute('aria-pressed',String(state.wire));
     badge.textContent=slice?`Horizontal section · z = ${state.z.toFixed(2)} · x horizontal, y vertical`:'w = π · upward translation · schematic';
     help.textContent=slice?'Move the height slider: negative heights approach y = 0; positive heights approach y = −π, 0, π. Gray lines mark those limiting positions.':'Drag to rotate; + / − zoom. The colors identify the two graphical halves joined along the vertical z-axis. All outer edges are display cuts.';
-    status.textContent=slice?'These are slices of the schematic, not computed slices of the translator. Three limiting sheets do not mean three topological ends.':'Original qualitative reconstruction after Hoffman–Martín–White, Figures 6 and 14 and Theorem 12.1. The drawing preserves the joining line and half-turn symmetry; it is not a numerical solution of the translator equation.';
+    status.textContent=slice?'Three limiting sheets do not mean three topological ends.':state.mode==='half'?'The other half is obtained by a 180° rotation about the dark vertical boundary line.':'The dark vertical line is the shared z-axis. Teal and ochre label graphical halves, not disconnected components.';
     canvas.setAttribute('aria-label',slice?`Schematic horizontal pitchfork section at height ${state.z.toFixed(2)}. Use the height slider to compare the limiting planes.`:`Pitchfork schematic, ${state.mode==='half'?'one graphical half':'complete connected surface'}. Drag or use arrow keys to rotate; plus and minus zoom.`);
     requestDraw();
   }
