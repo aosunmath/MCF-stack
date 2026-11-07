@@ -136,3 +136,10 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .hh-strip-title{font-size:12px;color:var(--muted);margin:12px 14px 4px}.hh-snapshots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px 12px 12px}.hh-snapshots button{padding:3px 5px 7px;min-width:0;border:1px solid #cbdce3;border-radius:4px;background:#f7fafb;color:#183f52;cursor:pointer}.hh-snapshots button[aria-pressed=true]{background:#e2eff4;border-color:#21667f}.hh-snapshots svg{width:100%;height:auto;display:block}.hh-snapshots span{font-size:12px;font-variant-numeric:tabular-nums}
 @media(max-width:699px){.hh-flow .soliton-stage{height:290px}.hh-snapshots{grid-template-columns:repeat(2,minmax(0,1fr))}.hh-time-controls{align-items:stretch}.hh-time-controls label{flex-basis:100%}.hh-time-controls button{min-height:44px}}
 @media print{.hh-flow .soliton-stage{height:auto;aspect-ratio:11/7}.hh-view-label,.hh-snapshots,.hh-strip-title,.hh-flow .soliton-status{display:none}}
+
+/* The reapernoid has distinct surface and higher-dimensional meridian views. */
+.reapernoid-figure .soliton-stage{height:590px}.reapernoid-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.reapernoid-figure .reapernoid-time{flex-basis:100%}.reapernoid-time input[type=range]{flex:1;max-width:350px}.reapernoid-time output{min-width:75px}.reapernoid-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.reapernoid-figure .soliton-stage{height:550px}.reapernoid-figure .soliton-controls select{max-width:205px}}
+.soliton-figure[data-soliton$="reapernoid.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/810}
+.soliton-figure .soliton-stage:has(img[src$="reapernoid-limits.svg"]){height:auto;aspect-ratio:1000/750}
+@media print{.reapernoid-figure .soliton-stage{height:auto}.reapernoid-figure .soliton-stage img{height:auto}.reapernoid-note,.reapernoid-figure .soliton-status{display:none}}
