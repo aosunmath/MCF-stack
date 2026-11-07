@@ -239,6 +239,9 @@ if(typeof document!=='undefined') {
       } else if(data.construction?.kind==='kkm'){
         const {initKKMFigure}=await import('./kkm-viewer.mjs');
         initKKMFigure(figure,data,rotatePoint);
+      } else if(data.kind==='hmw-three-ended-schematic'){
+        const {initHmwThreeFigure}=await import('./hmw-three-ended-viewer.mjs');
+        initHmwThreeFigure(figure,data);
       } else if(data.kind==='hmw-sphere-plane-schematic'){
         const {initHmwFigure}=await import('./hmw-sphere-plane-viewer.mjs');
         initHmwFigure(figure,data);
