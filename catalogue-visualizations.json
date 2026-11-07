@@ -958,10 +958,10 @@
         "CatZOKA23"
       ],
       "model": "ancient-spiral-curves",
-      "status": "Heuristic schematic",
-      "caption": "A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
-      "alt": "Compact nonconvex ancient spiral curves. A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
-      "interactive": false
+      "status": "Numerical ODE with asymptotic cap",
+      "caption": "Four ancient-regime times on one spatial scale, with animation and a cap close-up. The Yin–Yang arms are computed from the rotating-soliton ODE; the closing cap uses the corrected grim-reaper ansatz of Section 2. Blue arms rotate counterclockwise, while the orange cap moves clockwise and inward. This illustrates the asymptotic construction, not numerically evolved slices of the ancient PDE solution. The displayed interval does not extend to extinction.",
+      "alt": "Four closed Yin–Yang spiral models at t = −24, −18, −12 and −8, shrinking and losing turns, with the outer closing cap marked orange.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-grim-reaper-chains",

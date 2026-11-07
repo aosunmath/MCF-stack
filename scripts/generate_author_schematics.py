@@ -92,16 +92,10 @@ def pancakes():
  draw_pancakes()
 
 def spiral():
- s=heading('Compact ancient spiral: curve and cap')
- # A thin tubular ribbon around a finite spiral, closed by semicircular end caps.
- n=560;ts=[.4+4.6*math.pi*i/n for i in range(n+1)];centers=[(320+31*math.sqrt(t)*math.cos(t),207+31*math.sqrt(t)*math.sin(t)) for t in ts];width=4
- normals=[]
- for t in ts:
-  dx=31*(math.cos(t)/(2*math.sqrt(t))-math.sqrt(t)*math.sin(t));dy=31*(math.sin(t)/(2*math.sqrt(t))+math.sqrt(t)*math.cos(t));norm=math.hypot(dx,dy);normals.append((-dy/norm,dx/norm))
- upper=[(p[0]+width*v[0],p[1]+width*v[1]) for p,v in zip(centers,normals)];lower=[(p[0]-width*v[0],p[1]-width*v[1]) for p,v in zip(centers,normals)]
- curve(s,upper+lower[::-1]+[upper[0]],width=2)
- p=centers[-1];el(s,'circle',cx=p[0],cy=p[1],r=6,fill='#b06a35');text(s,482,125,'closing cap',15);line(s,480,130,p[0]+5,p[1],stroke='#b06a35',width=1)
- finish(s,'ancient-spiral-curves',['A closed embedded spiral cartoon; the true cap is grim-reaper-shaped.','The √θ spiral used to draw this diagram is not the exact rotating soliton.'])
+ # Keep the old batch entry point from overwriting the source-based time sequence.
+ import subprocess
+ subprocess.run(['node', str(Path(__file__).with_name('generate_ancient_spiral_geometry.mjs'))], check=True)
+
 
 def chains():
  s=heading('Three grim-reaper turns: an eternal curve')

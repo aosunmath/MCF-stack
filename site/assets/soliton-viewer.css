@@ -83,3 +83,8 @@
 .soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage:has(img:not([hidden])) { height:auto; aspect-ratio:1000/840; }
 @media print { .expander-view-label,.expander-legend { display:none !important; } }
 @media print { .soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage { height:auto; aspect-ratio:1000/840; } }
+.ancient-spiral-figure .soliton-stage{height:560px}.ancient-spiral-figure canvas{cursor:default;touch-action:pan-y}.spiral-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 16px;font-size:12px}.spiral-legend span{display:inline-flex;align-items:center;gap:6px}.spiral-legend i{width:18px;height:3px}.ancient-spiral-figure .soliton-controls label{flex:1 1 220px}.ancient-spiral-figure .soliton-controls input[type=range]{flex:1;max-width:260px;min-width:120px}.ancient-spiral-figure output{min-width:78px}.ancient-spiral-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.ancient-spiral-figure .soliton-stage{height:580px}.ancient-spiral-figure .soliton-controls label{flex-basis:100%;order:-1}}
+@media print{.ancient-spiral-figure .soliton-stage{height:auto}.ancient-spiral-figure .soliton-stage img{height:auto}.spiral-legend{display:none}.ancient-spiral-figure .soliton-status{display:none}}
+
+.soliton-figure[data-soliton$="ancient-spiral-curves.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:880/760}

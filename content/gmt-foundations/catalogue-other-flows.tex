@@ -264,13 +264,29 @@ Source: \cite{CatMY26}, Theorem 1.1, Figure 1, and Sections 2.2--3.1 of arXiv v3
 \begin{example}[Compact nonconvex ancient spiral curves]\label{ex:catalogue-ancient-spiral-curves}
 Zhang--Olson--Khan--Angenent construct compact embedded ancient curve-shortening flows $C_t\subset\mathbb R^2$, $t<0$, whose distant past follows a truncated rotating Yin--Yang spiral closed by a small grim-reaper-shaped cap. They are smooth simple closed curves, hence complete and proper, with no ends. They are nonconvex in the ancient regime and are neither shrinking circles nor ancient paperclips. No assertion of nonconvexity through a later maximal continuation is needed here.
 
-The limiting rotating model has angular speed one. Its radial expansion $R(\theta)=\sqrt{2\theta}+O(\theta^{-3/2})$ is asymptotic, not a formula for the constructed ancient curve. If $\Omega(t)$ is the paper's truncated spiral region and $\Lambda(t)$ is the enclosed ancient region, the Main Theorem proves
+The limiting rotating model has angular speed one. Its radial expansion $\mathcal R(\theta)=\sqrt{2\theta}+O(\theta^{-3/2})$ is asymptotic, not a formula for the constructed ancient curve. If $\Omega(t)$ is the paper's truncated spiral region and $\Lambda(t)$ is the enclosed ancient region, the Main Theorem proves
 \[
  |\Lambda(t)\mathbin{\triangle}\Omega(t)|\leq C_\delta |t|^{-1+\delta}\qquad(t\to-\infty)
 \]
 for each $\delta>0$. This is an area estimate, not an exact pointwise parametrization. Gaussian area and entropy are finite at each compact slice; no uniform ancient bound is assigned.
 
-Source: \cite{CatZOKA23}, Main Theorem and equations (1.1)--(1.3), pp.~1--3, and Appendix A. No uniqueness is claimed. The source also credits Charyyev's independent construction. Our spiral-and-cap picture is heuristic and does not numerically solve either the rotating ODE or the ancient PDE.
+Source: \cite{CatZOKA23}, Main Theorem and equations (1.1)--(1.3), pp.~1--3, and Appendix A. No uniqueness is claimed. The source also credits Charyyev's independent construction. The figure samples the asymptotic construction at $t=-24,-18,-12,-8$ on a common spatial scale. Its blue arms solve the rotating-soliton ODE numerically; the orange cap uses the corrected grim-reaper ansatz in Section 2. These are model snapshots, not a numerical solution of the ancient evolution equation or an illustration of extinction.
+
+To read the motion, write $E(\theta)=(\cos\theta,\sin\theta)$ and $J(x,y)=(-y,x)$. The two arms are
+\[
+ Y_\pm(\theta,t)=\mathcal R(\theta-t\pm\pi/2)E(\theta),
+ \qquad \theta-t\pm\pi/2>\pi/2,
+\]
+truncated near $\theta=-t$. Here $\mathcal R$ is the Appendix A solution of
+\[
+ \tfrac12\mathcal R^2-\theta+\arctan(\mathcal R'/\mathcal R)=0,
+ \qquad \theta>\pi/2,
+\]
+with $\mathcal R\downarrow0$ as $\theta\downarrow\pi/2$. At a fixed point of the unrotated model the arms rotate counterclockwise with speed one. The cap center instead follows $R(t)E(-t)$, where $R(t)=\mathcal R(-2t)\sim2\sqrt{-t}$, so it moves clockwise and inward. Its leading width is $\pi/R(t)$. The inset uses $X=e^{-tJ}[(R(t),0)+R(t)^{-1}(u,v)]$; its dashed reference is the leading grim reaper
+\[
+ G(p)=(-\arcsin(\tanh p),-\log\cosh p),\qquad p\in\mathbb R.
+\]
+The orange curve includes the paper's normal correction $(-4t)^{-1}F(p)JG'(p)$, equations (2.19)--(2.21), and a smooth interpolation to the arms. These asymptotic formulas apply in the distant past; the figure's finite time interval carries no certified approximation-error bound.
 \end{example}
 
 \chapter{Eternal curves from chains of grim reapers}\label{sec:catalogue-grim-reaper-chains}

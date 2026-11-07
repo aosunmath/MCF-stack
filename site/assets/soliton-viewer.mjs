@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='wang-level-schematic'){
+      if(data.kind==='ancient-spiral-asymptotic'){
+        const {initAncientSpiralFigure}=await import('./ancient-spiral-viewer.mjs');
+        initAncientSpiralFigure(figure,data);
+      } else if(data.kind==='wang-level-schematic'){
         const {initWangFigure}=await import('./wang-viewer.mjs');
         initWangFigure(figure,data);
       } else if(data.kind==='apex-translators'){

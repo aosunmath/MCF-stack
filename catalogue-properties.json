@@ -3968,7 +3968,7 @@
     },
     {
       "label": "ex:catalogue-ancient-spiral-curves",
-      "notes": "",
+      "notes": "The time-dependent figure shows numerical rotating-soliton arms with an asymptotic cap. Its displayed times and geometry are model values, not a numerical construction or certification of the ancient solution.",
       "citations": [
         "CatZOKA23"
       ],
