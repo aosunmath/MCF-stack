@@ -1,97 +1,100 @@
 {
   "status": "schematic",
   "source": "https://arxiv.org/pdf/1602.07271v1",
-  "source_locations": "Theorem 0.1 and introduction, pp. 2\u20133; Section 2, pp. 9\u201310; Remark 2.5, pp. 14\u201315",
+  "source_pages": [
+    2,
+    3,
+    9,
+    10,
+    12,
+    14,
+    15
+  ],
   "models": {
     "tetrahedron": {
-      "vertices": 13880,
-      "faces": 27768,
       "components": 1,
       "boundary_edges": 0,
-      "edge_incidence": [
-        2
-      ],
       "orientable": true,
       "euler_characteristic": -4,
+      "vertices": 5756,
+      "faces": 11520,
+      "minimum_triangle_area": 0.0014410678771629149,
       "genus": 3,
-      "minimum_triangle_area": 0.0008748364113862506,
       "necks": 4,
-      "minimum_site_angle": 1.910633236249477,
-      "patch_radius": 1.12,
-      "waist_parameter": 0.47040000000000004,
-      "half_gap": 0.46270865305338493
+      "edge_incidence": [
+        2
+      ],
+      "minimum_site_angle": 1.9106332362490186,
+      "opening_angle": 0.6878279650496466,
+      "half_gap": 0.28
     },
     "cube": {
-      "vertices": 15214,
-      "faces": 30444,
       "components": 1,
       "boundary_edges": 0,
-      "edge_incidence": [
-        2
-      ],
       "orientable": true,
       "euler_characteristic": -8,
+      "vertices": 11512,
+      "faces": 23040,
+      "minimum_triangle_area": 0.001312644347988557,
       "genus": 5,
-      "minimum_triangle_area": 0.0008748364113856812,
       "necks": 6,
+      "edge_incidence": [
+        2
+      ],
       "minimum_site_angle": 1.5707963267948966,
-      "patch_radius": 1.12,
-      "waist_parameter": 0.47040000000000004,
-      "half_gap": 0.46270865305338493
+      "opening_angle": 0.5654866776461628,
+      "half_gap": 0.28
     },
     "octahedron": {
-      "vertices": 17580,
-      "faces": 35184,
       "components": 1,
       "boundary_edges": 0,
-      "edge_incidence": [
-        2
-      ],
       "orientable": true,
       "euler_characteristic": -12,
+      "vertices": 11508,
+      "faces": 23040,
+      "minimum_triangle_area": 0.0009380633095349701,
       "genus": 7,
-      "minimum_triangle_area": 0.0007475338211450662,
       "necks": 8,
-      "minimum_site_angle": 1.2309594173403162,
-      "patch_radius": 1.0340059105658657,
-      "waist_parameter": 0.43428248243766354,
-      "half_gap": 0.4271816804706879
+      "edge_incidence": [
+        2
+      ],
+      "minimum_site_angle": 1.2309594173407747,
+      "opening_angle": 0.44314539024267896,
+      "half_gap": 0.28
     },
     "dodecahedron": {
-      "vertices": 22456,
-      "faces": 44952,
       "components": 1,
       "boundary_edges": 0,
-      "edge_incidence": [
-        2
-      ],
       "orientable": true,
       "euler_characteristic": -20,
+      "vertices": 28780,
+      "faces": 57600,
+      "minimum_triangle_area": 0.0008613728512796651,
       "genus": 11,
-      "minimum_triangle_area": 0.0006064745992840788,
       "necks": 12,
-      "minimum_site_angle": 1.1071487177940094,
-      "patch_radius": 0.9300049229469678,
-      "waist_parameter": 0.3906020676377265,
-      "half_gap": 0.38421546895518616
-    },
-    "icosahedron": {
-      "vertices": 36962,
-      "faces": 73996,
-      "components": 1,
-      "boundary_edges": 0,
       "edge_incidence": [
         2
       ],
+      "minimum_site_angle": 1.1071487177940904,
+      "opening_angle": 0.3985735384058725,
+      "half_gap": 0.28
+    },
+    "icosahedron": {
+      "components": 1,
+      "boundary_edges": 0,
       "orientable": true,
       "euler_characteristic": -36,
+      "vertices": 28764,
+      "faces": 57600,
+      "minimum_triangle_area": 0.0004806528050225968,
       "genus": 19,
-      "minimum_triangle_area": 0.0002655290095916698,
       "necks": 20,
-      "minimum_site_angle": 0.7297276562260733,
-      "patch_radius": 0.6129712312299015,
-      "waist_parameter": 0.2574479171165586,
-      "half_gap": 0.2532384756811274
+      "edge_incidence": [
+        2
+      ],
+      "minimum_site_angle": 0.7297276562269662,
+      "opening_angle": 0.2627019562417073,
+      "half_gap": 0.28
     }
   }
 }
