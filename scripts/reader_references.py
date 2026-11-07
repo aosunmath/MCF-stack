@@ -44,10 +44,13 @@ def page_references(content, references, root):
 
 
 def bibliography(references, uses):
-    content = '<h1>Bibliography</h1><p>Follow a reference to the reading pages that use it. Citations within a page open its local reference list, with return links to the text.</p>'
+    content = '<h1>Bibliography</h1><p>References are listed alphabetically by author surname, then by coauthors, year, and title. Follow a reference to the reading pages that use it. Citations within a page open its local reference list, with return links to the text.</p>'
     if not references:
         return content + '<p>No references have been added yet.</p>'
-    ordered = sorted(references.items(), key=lambda item: BeautifulSoup(item[1]["html"], "html.parser").get_text().casefold())
+    ordered = sorted(references.items(), key=lambda item: (
+        item[1].get("sort_key", [BeautifulSoup(item[1]["html"], "html.parser").get_text().casefold(), "", ""]),
+        item[0],
+    ))
     for identifier, record in ordered:
         keys = reference_label(record)
         content += f'<article class="bibliography-entry" id="{identifier}"><h2 class="reference-key">[{escape(keys)}]</h2><p>{record["html"]}</p>'

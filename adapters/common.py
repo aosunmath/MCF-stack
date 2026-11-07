@@ -61,6 +61,26 @@ def bibliography_entry_for_html(entry):
     return result
 
 
+def bibliography_sort_key(entry):
+    """Sort by surnames and coauthors, then year and title, independent of HTML."""
+    from pybtex.richtext import Text
+
+    def normalize(value):
+        return unidecode(Text.from_latex(value).render_as("text")).casefold()
+
+    people = entry.persons.get("author") or entry.persons.get("editor", [])
+    names = "   ".join(
+        "  ".join(normalize(" ".join(parts)) for parts in (
+            person.prelast_names + person.last_names,
+            person.first_names + person.middle_names,
+            person.lineage_names,
+        )) for person in people
+    )
+    fields = entry.fields
+    return [names or normalize(fields.get("organization") or fields.get("title", "")),
+            normalize(fields.get("year", "")), normalize(fields.get("title", ""))]
+
+
 def active_text(source, name="book.tex", stack=()):
     path = (source / name).resolve()
     if not path.is_relative_to(source.resolve()) or path in stack:
@@ -478,7 +498,8 @@ def export(source, output, prepare=None, transform=None, local=False, chapter_ov
             authors = database.entries[key].persons.get("author", [])
             author = " ".join(authors[0].last_names) if authors else ""
             identity = "title:" + re.sub(r"[^a-z0-9]", "", unidecode(fields.get("title", "")).lower()) + ":" + fields.get("year", "") + ":" + unidecode(author).casefold()
-        reference_records.append({"key": key, "identity": identity, "html": formatted_html})
+        reference_records.append({"key": key, "identity": identity, "html": formatted_html,
+                                  "sort_key": bibliography_sort_key(database.entries[key])})
     (output / "bibliography").mkdir(exist_ok=True)
     (output / "bibliography" / "index.html").write_text(shell(bibliography, "Bibliography", records, revision, "../"))
     (output / "tags.json").write_text(json.dumps(inventory, indent=2) + "\n")
