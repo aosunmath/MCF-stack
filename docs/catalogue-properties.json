@@ -2615,7 +2615,7 @@
       "category": "translators",
       "tag": "9B1B88A4317F",
       "model": "sun-wang-doubled-sphere-end",
-      "illustration_status": "R4 end schematic"
+      "illustration_status": "Interactive horizontal-slice schematic in ℝ⁴"
     },
     {
       "label": "ex:catalogue-ancient-torus-curves",

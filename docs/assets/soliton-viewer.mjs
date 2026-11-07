@@ -293,6 +293,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='platonic-doubling-schematic'){
         const {initPlatonicFigure}=await import('./platonic-viewer.mjs');
         initPlatonicFigure(figure,data);
+      } else if(data.kind==='sun-wang-spherical-end'){
+        const {initSunWangEndFigure}=await import('./sun-wang-end-viewer.mjs');
+        initSunWangEndFigure(figure,data);
       } else if(data.kind==='spherical-doubling-schematic'){
         const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
         initSphericalDoublingFigure(figure,data);

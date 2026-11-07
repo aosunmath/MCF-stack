@@ -17,6 +17,14 @@
 .bns-view-label{position:absolute;top:10px;left:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
 .spherical-view-label{position:absolute;top:10px;left:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
 .spherical-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.spherical-legend span{display:inline-flex;align-items:center;gap:6px}.spherical-legend i{width:10px;height:10px;border-radius:50%}
+.sw-end-figure .soliton-stage{height:460px}
+.sw-end-label,.sw-end-scale{position:absolute;left:14px;right:14px;margin:0;font-size:13px;line-height:1.5;color:#476170;pointer-events:none}
+.sw-end-label{top:12px}.sw-end-scale{bottom:12px;text-align:center}
+.sw-end-equation{margin:8px 16px 0;padding:12px 14px;border-left:3px solid #b5ccd6;background:#f7fafb;color:#183f52}
+.sw-end-equation p{margin:0;font-size:15px;line-height:1.6}.sw-end-equation p+p{margin-top:5px;font-size:12px;color:#476170}
+.soliton-controls .sw-height-control{flex-basis:100%}.sw-height-control output{font-variant-numeric:tabular-nums;min-width:2.5em}
+@media(max-width:699px){.sw-end-figure .soliton-stage{height:350px}.sw-end-label,.sw-end-scale{font-size:12px}.sw-end-equation p{font-size:13px}}
+@media print{.sw-end-label,.sw-end-scale,.sw-end-equation{display:none}}
 @media print{.spherical-view-label,.spherical-legend{display:none}}
 @media(max-width:699px){.soliton-controls select{min-height:44px}}
 
