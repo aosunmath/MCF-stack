@@ -306,11 +306,11 @@
         "CatMSTW26",
         "CatGMM25"
       ],
-      "model": "pitchfork-ends",
-      "status": "Schematic",
-      "caption": "One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
-      "alt": "The pitchfork translator. One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
-      "interactive": false
+      "model": "pitchfork-surface",
+      "status": "Source-informed schematic",
+      "caption": "The half-width w = π case, in the upward convention. Two graphical halves join along the vertical z-axis; the second is obtained by a half-turn. Rotate the surface, isolate one half, or move through horizontal sections. Based on Hoffman–Martín–White, Figures 6 and 14 and Theorem 12.1. This original drawing is not a numerical solution of the translator equation; all outer edges are display cuts.",
+      "alt": "A connected pitchfork surface: teal and ochre graphical halves joined along a vertical line, approaching one plane below and three parallel planes above. Original schematic, not a solved translator.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-nguyen-tridents",

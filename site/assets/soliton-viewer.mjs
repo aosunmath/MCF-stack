@@ -269,6 +269,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='scherkenoid-schematic'){
         const {initScherkenoidFigure}=await import('./scherkenoid-viewer.mjs');
         initScherkenoidFigure(figure,data);
+      } else if(data.kind==='pitchfork-schematic'){
+        const {initPitchforkFigure}=await import('./pitchfork-viewer.mjs');
+        initPitchforkFigure(figure,data);
       } else if(data.kind==='nguyen-scherk-schematic'){
         const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
         initNguyenFigure(figure,data);
