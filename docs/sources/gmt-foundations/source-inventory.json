@@ -1850,6 +1850,240 @@
       "catalogue_bibliography_keys": [
         "CatMSTW26"
       ]
+    },
+    {
+      "bibliography_key": "CatLeeWang2009",
+      "filename": "arxiv-0707.0239v1.pdf",
+      "title": "Hamiltonian stationary shrinkers and expanders for Lagrangian mean curvature flows",
+      "edition": "arXiv:0707.0239v1",
+      "url": "https://arxiv.org/abs/0707.0239v1",
+      "sha256": "c176b302ca31a9a857cc82226d86749b28d6f935e15306aeb933e2991050c0aa",
+      "pdf_pages": 19,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 2.2, equations for S and its metric; Proposition 2.2. Unit convention checked against the normalized Möbius map."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatLeeWang2009"
+      ]
+    },
+    {
+      "bibliography_key": "CatBraxtonLeeZhu2026",
+      "filename": "arxiv-2609.19648v1.pdf",
+      "title": "A stable self-shrinking Mobius bundle in R4",
+      "edition": "arXiv:2609.19648v1",
+      "url": "https://arxiv.org/abs/2609.19648v1",
+      "sha256": "50d5aaa894d94e2c9544b6d7c91229e9c20536bae3c6bc1f73ac04cb8ae2a28d",
+      "pdf_pages": 23,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.2; Section 2.1, quotient (2.2), metric and shrinker identity; Section 7.2 and Remarks 7.3–7.6, including exact entropy. No genericity theorem inferred."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatBraxtonLeeZhu2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatJoyceLeeTsui2010",
+      "filename": "arxiv-0801.3721v2.pdf",
+      "title": "Self-similar solutions and translating solitons for Lagrangian mean curvature flow",
+      "edition": "arXiv:0801.3721v2",
+      "url": "https://arxiv.org/abs/0801.3721v2",
+      "sha256": "487639192d046c62097535f22c2778cdd6e59ae5cc2d7e2215a1b5b8040aaa20",
+      "pdf_pages": 33,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems A–F, Corollaries H–I, Sections 3–6. Periodic compact case E(a)(ii); plane-neck cases C–D; translator formula (18), with direct integral rewrite; constant-radius rotating subcase of G/H."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatJoyceLeeTsui2010"
+      ]
+    },
+    {
+      "bibliography_key": "CatImagiJoyceOliveira2016",
+      "filename": "arxiv-1404.0271v2.pdf",
+      "title": "Uniqueness results for special Lagrangians and Lagrangian mean curvature flow expanders in Cm",
+      "edition": "arXiv:1404.0271v2",
+      "url": "https://arxiv.org/abs/1404.0271v2",
+      "sha256": "3f25118452ed70a976119438c3eed352708fd9e83815656ed58adad63917c912",
+      "pdf_pages": 73,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.2, Remark 1.3, Examples 3.9 and 3.15; n ≥ 3, exactness, embeddedness and asymptotic rates retained."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatImagiJoyceOliveira2016"
+      ]
+    },
+    {
+      "bibliography_key": "CatTsaiTsuiWang2025",
+      "filename": "arxiv-2309.09432v2.pdf",
+      "title": "Entire solutions of two-convex Lagrangian mean curvature flows",
+      "edition": "arXiv:2309.09432v2",
+      "url": "https://arxiv.org/abs/2309.09432v2",
+      "sha256": "86fa9e40cd0a583a99e79fb43ad8419160509ec531a26cb9adc3ed762d135322",
+      "pdf_pages": 21,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definition 2.1; Theorem 5.6; Theorem 6.2 and Propositions 6.3/6.5. Concrete nonquadratic seed is an independent substitution into Proposition 6.5."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatTsaiTsuiWang2025"
+      ]
+    },
+    {
+      "bibliography_key": "CatAryanLee2026",
+      "filename": "arxiv-2608.04855v1.pdf",
+      "title": "Non-uniqueness of geodesic limits and a question of Grayson and Gage",
+      "edition": "arXiv:2608.04855v1",
+      "url": "https://arxiv.org/abs/2608.04855v1",
+      "sha256": "31017e7f8b7882d6428471b8de7869d8e98f416af558dcc245041ffc6c57bfc0",
+      "pdf_pages": 32,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Theorem 5.1, Section 5 proof; exact omega-limit set, smooth reparametrized convergence and antipodally invariant nonround metrics."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatAryanLee2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatSuTsaiWood2026",
+      "filename": "arxiv-2401.02228v3.pdf",
+      "title": "Infinite-time singularities of the Lagrangian mean curvature flow",
+      "edition": "arXiv:2401.02228v3",
+      "url": "https://arxiv.org/abs/2401.02228v3",
+      "sha256": "1f702968539262924d5ab05e1821af1524e9697d48e661ff8ed2b39ea4dcf2a4",
+      "pdf_pages": 52,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main Theorem (p. 4), Theorem 9.1, Proposition 9.5 and Corollary 9.6. m ≥ 3, flat complex torus, one transverse type-one intersection, neck scale and curvature rate."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatSuTsaiWood2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatLeeTsai2026",
+      "filename": "arxiv-2606.28767v1.pdf",
+      "title": "Infinite-time singularities with vanishing mean curvature for Lagrangian mean curvature flow in Gibbons--Hawking spaces",
+      "edition": "arXiv:2606.28767v1",
+      "url": "https://arxiv.org/abs/2606.28767v1",
+      "sha256": "a328f6193011a650fda8d42b38f932aabfdc25d70018f63ec6e373a44a47e92b",
+      "pdf_pages": 31,
+      "role": "Public source reviewed for the Joyce/Tsai/Tsui/Lee/Zhu survey; original PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Sections 2–3 for ambient metric and quotient PDE; Theorem 6.2 and its proof for precise initial slope/concavity hypotheses, N ≥ 3, vanishing H and log curvature / sqrt(t) bounds."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatLeeTsai2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatLeeWang2010",
+      "filename": "arxiv-0802.0359v1.pdf",
+      "title": "Hamiltonian stationary cones and self-similar solutions in higher dimension",
+      "edition": "arXiv:0802.0359v1",
+      "url": "https://arxiv.org/abs/0802.0359v1",
+      "sha256": "d4725d45f75487046686098d3c89ff03870d83d4567a636abac937c579a0f6dd",
+      "pdf_pages": 18,
+      "role": "Public source reviewed for the requested author survey; PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Propositions 2.1–2.2 and Theorem 1.1; unit weights ±1, positive weight sum, explicit mapping-torus quotient retained. Topology and orientability audited directly, including the disconnected-fiber exception to Proposition 2.2 shorthand."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatLeeWang2010"
+      ]
+    },
+    {
+      "bibliography_key": "CatSu2022",
+      "filename": "arxiv-2011.07882v2.pdf",
+      "title": "On the gluing construction of translating solitons to Lagrangian mean curvature flow",
+      "edition": "arXiv:2011.07882v2",
+      "url": "https://arxiv.org/abs/2011.07882v2",
+      "sha256": "519524376f7500a669951d1766bcd43a5ca4810e484d55745f43edde12788353",
+      "pdf_pages": 29,
+      "role": "Public source reviewed for the requested author survey; PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main Theorem, Corollary 1.1, Sections 2–4 and final perturbation argument; m ≥ 3, admissible angles, T-finite grim-cylinder arrangement, gluing scale distinct from time."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatSu2022"
+      ]
+    },
+    {
+      "bibliography_key": "CatSuWood2026",
+      "filename": "arxiv-2507.01345v1.pdf",
+      "title": "Lagrangian translating solitons and special Lagrangians in Cm with symmetries",
+      "edition": "arXiv:2507.01345v1",
+      "url": "https://arxiv.org/abs/2507.01345v1",
+      "sha256": "8c237feaf58a2566e477e5caf5caba2781fad0d76a891e2ac84c8b017bfddfce",
+      "pdf_pages": 25,
+      "role": "Public source reviewed for the requested author survey; PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 5.6, equation (31), Proposition 5.9 and Remark 5.10 for the SO(m−1) stationary family; Sections 5.2–5.4 for overlap and singular-group cautions."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatSuWood2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatStolarskiSu2026",
+      "filename": "arxiv-2607.03152v1.pdf",
+      "title": "Finite-time singularities of Lagrangian mean curvature flow with precise dynamics",
+      "edition": "arXiv:2607.03152v1",
+      "url": "https://arxiv.org/abs/2607.03152v1",
+      "sha256": "3c6e2f7caa4fd97fc318ba030cf395ab956970ed64549118f39366d99eac707b",
+      "pdf_pages": 110,
+      "role": "Public source reviewed for the requested author survey; PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1, Remark 1 and Section 2.2; restricted SO(n) case, permitted n and K, topology from profile and spherical orbits, multiplicity-one tangent flow, finer Lawlor blow-up limit."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatStolarskiSu2026"
+      ]
+    },
+    {
+      "bibliography_key": "CatChoiSeoSuZhao2026",
+      "filename": "arxiv-2603.09112v1.pdf",
+      "title": "Classification of ancient finite-entropy curve shortening flows",
+      "edition": "arXiv:2603.09112v1",
+      "url": "https://arxiv.org/abs/2603.09112v1",
+      "sha256": "f88f61d79b5a9e26dffff2f56f631b92b01ec3369378f30821b35dc3714deeeb",
+      "pdf_pages": 27,
+      "role": "Public source reviewed for the requested author survey; PDF not exported.",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Corollary 1.5; entropy means supremum over all flow times. Classification cross-linked to the existing embedded graphical grim-chain family."
+      ],
+      "catalogue_bibliography_keys": [
+        "CatChoiSeoSuZhao2026"
+      ]
     }
   ],
   "pagination": "Citations specify printed source pages, PDF pages where relevant, and original theorem numbers. Reader numbering is generated independently.",
