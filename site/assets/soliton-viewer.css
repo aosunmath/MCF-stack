@@ -56,3 +56,6 @@
 .pitchfork-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
 .pitchfork-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.pitchfork-legend span{display:inline-flex;align-items:center;gap:6px}.pitchfork-legend i{width:10px;height:10px;border-radius:50%}.soliton-controls output{min-width:3em;font-variant-numeric:tabular-nums}
 @media print{.pitchfork-view-label,.pitchfork-legend{display:none}}
+
+.torus-end-label,.torus-end-axes{position:absolute;left:14px;right:14px;margin:0;font-size:12px;line-height:1.45;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;max-width:calc(100% - 28px);padding:4px 7px;box-sizing:border-box;border-radius:4px}.torus-end-label{top:10px}.torus-end-axes{bottom:8px}
+@media print{.torus-end-label,.torus-end-axes{display:none}}

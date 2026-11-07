@@ -348,13 +348,15 @@
       ],
       "picture": {
         "model": "sun-wang-torus-end",
-        "type": "asymptotic cross-section / nonuniqueness schematic",
-        "brief": "Use existing numerical Angenent torus only as the limiting cross-section S_A in R3_x; show its sqrt(z) scaling for several high z, with the fourth coordinate represented by a labelled height slider or separated panels. Label the result auxiliary end ES[0], not the actual translator. A separate small two-curve diagram can show the distinct minimizing completions enclosing a region and approaching the same end; do not imply known cap topology.",
-        "caption": "Asymptotic cross-sections in R3 of an R4 translator; unknown correction u is not computed.",
-        "alt": "Schematic of toroidal high-height cross-sections and two distinct minimizing completions approaching the same end; no exact translator surface is plotted.",
+        "type": "numerical Angenent profile in an auxiliary end model",
+        "brief": "Use the numerical Angenent meridian in a rotational quotient of ES[0], restore the SO(2) angle for horizontal torus slices, and show the rescaling by sqrt(z). The unknown correction and compact core are omitted. See documentation/torus-translator-picture.md.",
+        "caption": "Auxiliary end ES[0] in R4 using a numerical Angenent profile; this is not a solved translator.",
+        "alt": "A widening tube in the rotational quotient of the auxiliary end in four-space, and a numerical Angenent torus at the selected height. Copper marks the selected horizontal section. The quotient suppresses the rotation angle; its open rims are display truncations.",
         "interactive_controls": [
-          "height z controlling sqrt(z) scale of auxiliary cross-section",
-          "rotation and zoom of cross-section only"
+          "relative height h=z/z0 from 1 to 9",
+          "rotation and zoom",
+          "rotational quotient, horizontal torus slice, rescaled end",
+          "mesh overlay"
         ]
       }
     },

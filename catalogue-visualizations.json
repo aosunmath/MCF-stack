@@ -575,10 +575,10 @@
         "CatSunWang2025"
       ],
       "model": "sun-wang-torus-end",
-      "status": "R4 end schematic",
-      "caption": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
-      "alt": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
-      "interactive": false
+      "status": "Numerical Angenent profile; auxiliary end model",
+      "caption": "Sun–Wang, Theorem 1.2 and Appendix A: the leading model (√z x, z), x ∈ S_A, with the unknown normal correction set to u = 0. The rotational quotient shows one connected end; the horizontal slice restores the rotation angle to show a torus in ℝ³. Use the height slider to see √z growth, or divide x by √z to see the cylindrical rescaling. The Angenent profile is numerically integrated, not a circular torus. Here h = z/z₀ with an unspecified sufficiently large cutoff z₀; h = 1 is not a tip. The compact core, correction, and fattening pair are not computed. This is not a solved translator.",
+      "alt": "A widening tube in the rotational quotient of the auxiliary end in four-space, and a numerical Angenent torus at the selected height. Copper marks the selected horizontal section. The quotient suppresses the rotation angle; its open rims are display truncations.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
