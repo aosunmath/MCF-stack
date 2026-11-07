@@ -443,7 +443,8 @@
       "title": "The catenoid as an eternal stationary flow",
       "category": "other-special-flows",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "model": "catenoid",
       "status": "Exact formula",
@@ -1208,6 +1209,77 @@
       "caption": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
       "alt": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
       "interactive": false
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "section": "chopp-cubical-shrinker-candidate",
+      "title": "Chopp cubical shrinker candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-cube",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "alt": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "section": "chopp-octahedral-shrinker-candidate",
+      "title": "Chopp octahedral shrinker candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-octahedron",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "alt": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "section": "chopp-punctured-torus-saddle-candidate",
+      "title": "Chopp punctured-torus saddle candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-saddle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "section": "chopp-two-handled-cone-candidate",
+      "title": "Chopp two-handled cone candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-two-handle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "section": "chopp-four-handled-cone-candidate",
+      "title": "Chopp four-handled cone candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
+      ],
+      "model": "chopp-four-handle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true
     }
   ]
 }

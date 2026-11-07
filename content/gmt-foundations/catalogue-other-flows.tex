@@ -18,6 +18,16 @@ The metric follows by differentiation, and the conformal curvature formula gives
  Q(f,f)=2\pi\int_{\mathbb R}\bigl((f')^2-2\operatorname{sech}^2s\,f^2\bigr)\,ds.
 \]
 Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
+Chopp uses the bounded piece of this classical surface as a numerical
+benchmark in \cite{CatChoppMinimal1993}, Section~4.1, pp.~86--87.
+In axial coordinates its exact profile is
+$r(z)=a\cosh(z/a)$, $-b\leq z\leq b$, with the two fixed boundary
+circles of radius $R=a\cosh(b/a)$. The test uses $a=0.4$ and
+$b\approx0.277259$, giving $R\approx0.5$. This is a fixed-boundary
+minimal-surface computation, not a new complete catenoid or a closed
+formula for the transient numerical evolution. The solver's artificial
+time and curvature conventions should not be identified with the
+normalized MCF time used elsewhere in this collection.
 \end{example}
 
 \chapter{Mean curvature evolution of the Whitney sphere}\label{sec:catalogue-whitney-sphere}

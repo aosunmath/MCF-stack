@@ -1062,3 +1062,204 @@ The fiber $Q_+$ is $S^{k-1}\times\mathbb R^{n-k}$. The antipodal gluing is part 
 
 The $SO(k)\times SO(n-k)$ action and the indicated circle action preserve the image. The Lagrangian angle is $Ss+\pi/2$ locally; it is harmonic, so the example is Hamiltonian stationary, although it is not stationary under MCF. It is asymptotic to the corresponding quadric cone. Properness follows directly from $|X|=|x|$ on the mapping torus. Its polynomial volume growth gives finite entropy, equal to centered Gaussian area in this normalized shrinker setting; no numerical value or stability theorem is asserted here. The figure shows the exact real slice $s=0$ for $n=3,k=2$, not the whole three-dimensional submanifold of $\mathbb R^6$. The companion expander is Example~\ref{ex:catalogue-lw-quadric-expanders}.
 \end{example}
+
+\chapter{Chopp cubical shrinker candidate}\label{sec:catalogue-chopp-cube}
+Chopp's level-set computations produce five new shrinker candidates in
+\cite{CatChopp1994}. These entries describe numerical evidence, not existence
+theorems. The paper also recovers the Angenent torus of
+Example \ref{ex:catalogue-angenent-torus}.
+
+\begin{example}[Numerical genus-five cube]\label{ex:catalogue-chopp-cube}
+The cubical candidate is a two-dimensional hypersurface in $\mathbb R^3$,
+with the topology of a closed orientable surface of genus five and cubical
+symmetry. Chopp starts with the boundary of a ball bored along the three
+coordinate axes. The connected central cavity has six openings; this is
+not a genus-three solid with three disjoint tunnels.
+
+The algorithm evolves a family of level sets, selects a level using a
+geometric ratio, and dilates to maintain a chosen volume. It gives an
+approximation, with no closed parametrization or exact implicit equation
+for the shrinker. The target equation and associated flow, in our convention, are
+\[
+ H=\frac{\langle X,\nu\rangle}{2},\qquad
+ M_t=\sqrt{-t}\,\Sigma,\qquad -\infty<t<0.
+\]
+Chopp's equation (3.1) instead uses $H=\langle X,\nu\rangle/(2T)$ for an
+unrescaled surface $S$; the corresponding normalized surface would be
+$\Sigma=T^{-1/2}S$. His constant-volume display is not automatically the
+slice at $t=-1$.
+
+The intended surface is smooth, compact, embedded and without boundary;
+if such a surface exists it is complete and proper and has no ends.
+The computation does not establish this existence statement. The reported
+self-similarity diagnostic is $E=0.01869$, and subsequent ordinary MCF
+approximately preserves the computed shape. This is a finite-grid check,
+not a certified error bound. No uniqueness, stability spectrum, Gaussian
+area or entropy value is established for this particular candidate.
+The diagnostic $E$ is not Gaussian area or entropy.
+
+Source: \cite{CatChopp1994}, Sections 2--3 and 4.1, pp.~2--8,
+Figures~8--12. The later constructions in
+Examples \ref{ex:catalogue-hmw-platonic-polygon} and
+\ref{ex:catalogue-ketover-platonic} have related symmetries; no identification
+with this numerical surface is asserted. The rotatable illustration is a
+compact topology schematic with six passages into a cavity, not Chopp's
+computed mesh or a newly solved shrinker.
+\end{example}
+
+\chapter{Chopp octahedral shrinker candidate}\label{sec:catalogue-chopp-octahedron}
+\begin{example}[Numerical genus-seven octahedron]\label{ex:catalogue-chopp-octahedron}
+Chopp computes a closed genus-seven shrinker candidate in $\mathbb R^3$ by
+starting with a sphere bored in the eight directions $(\pm1,\pm1,\pm1)$.
+There are four drilling axes and eight openings into the central cavity.
+The candidate has octahedral symmetry, dimension two and codimension one;
+its intended topology is a closed orientable surface of genus seven.
+
+The construction is numerical level-set evolution with dilation and level
+selection. It supplies neither a closed formula nor a proof of an exact
+solution. In normalized coordinates the target is
+$\vec H=-X^\perp/2$, with the proposed flow
+$M_t=\sqrt{-t}\,\Sigma$ for $t<0$. The conversion from the paper's scale
+is described in Example \ref{ex:catalogue-chopp-cube}.
+The intended surface is compact, embedded and without boundary, hence
+would be complete and proper with no ends if realized as a smooth surface.
+These attributes describe the numerical candidate, not a proved shrinker.
+
+Section 4.2 reports $E=0.0197$ for the self-similarity diagnostic and
+approximate shape preservation under further MCF. Figure~13 uses an
+$80\times80\times80$ grid. No certified convergence theorem, uniqueness,
+curvature classification, stability spectrum, Gaussian area or entropy
+value is given for this computed surface.
+See \cite{CatChopp1994}, Section~4.2, pp.~7--9, Figures~13--15.
+The suggestion there that other regular polyhedra should yield shrinkers
+is a conjectural extension, not additional computed examples.
+The schematic shows the eight passages and genus seven. Later Platonic
+constructions are recorded separately in
+Examples \ref{ex:catalogue-hmw-platonic-polygon} and
+\ref{ex:catalogue-ketover-platonic}; sharing a symmetry does not identify
+those surfaces with Chopp's candidate.
+\end{example}
+
+\chapter{Chopp punctured-torus saddle candidate}\label{sec:catalogue-chopp-saddle}
+\begin{example}[Numerical one-ended saddle]\label{ex:catalogue-chopp-saddle}
+The saddle in \cite{CatChopp1994}, Section~4.3, is a noncompact numerical
+shrinker candidate in $\mathbb R^3$, of dimension two and codimension one.
+Its intended topology is a once-punctured torus: genus one and one
+topological end. The reported eight-element symmetry is generated by
+reflection in the $xz$-plane, reflection in the $yz$-plane, and
+$(x,y,z)\mapsto(y,x,-z)$.
+
+The initial surface is a plane modified by two crossing tubes at the
+origin, as in Figure~17. Symmetry fixes the zero level; the computation
+uses the cross-sectional area of one handle, raised to the power $3/2$,
+as a scale control. The intended normalized equation is
+$\vec H=-X^\perp/2$, giving $\sqrt{-t}\,\Sigma$ for $t<0$ if an exact
+complete shrinker is obtained. There is no closed formula for $\Sigma$.
+
+The computation is performed on a bounded window, with upwind boundary
+conditions. The intended surface is embedded and has no boundary, but
+completeness, properness and a smooth extension through the omitted end
+are not proved by this computation. The observed end tends toward a cone;
+no exact cone link or proved decay rate is supplied. The saddle geometry
+is not convex, and no curvature sign theorem or stability classification
+is established for an exact candidate.
+
+Chopp reports $E=0.005848$ after excluding boundary sample points.
+He expressly states that the algorithm cannot demonstrate the existence
+of a complete self-similar surface. See Section~4.3, pp.~9--11,
+Figures~16--19; Figure~19 uses a $100\times100\times100$ grid.
+No Gaussian area, entropy value, uniqueness or certified numerical error
+bound is recorded. The illustration is an original punctured-torus
+schematic; its end rim is a display truncation. It is not a numerical
+reconstruction or an identification with the later one-ended families
+in Examples \ref{ex:catalogue-bns-genus} and
+\ref{ex:catalogue-nguyen-shrinking-saddles}.
+\end{example}
+
+\chapter{Chopp two-handled cone candidate}\label{sec:catalogue-chopp-two-handle}
+\begin{example}[Numerical genus-one surface with two ends]\label{ex:catalogue-chopp-two-handle}
+Chopp's two-handled cone is a numerical shrinker candidate in
+$\mathbb R^3$, with dimension two, codimension one, and the intended
+topology of a twice-punctured torus. Thus its surface genus is one and
+it has two topological ends; the phrase ``two-handled'' is not a genus count.
+The initial surface consists of two horizontal planes joined by the
+three crossing tubes shown in Figure~21. A ratio of handle cross-sectional
+areas selects a level, and an area to the power $3/2$ controls dilation.
+
+The resulting geometry is a finite-window numerical approximation, not a
+closed formula or an existence theorem. The intended normalized flow is
+$M_t=\sqrt{-t}\,\Sigma$, $t<0$, with $\vec H=-X^\perp/2$.
+The target is an embedded noncompact surface without boundary; the
+computation does not prove a complete proper extension. Its two ends
+appear conical. Figure~23 records angular variation of the cone opening,
+so one should not substitute a rotational double cone for the observed
+asymptotic cone. The reported minimum opening is about $0.739$ radians;
+it is a numerical estimate, not an exact asymptotic invariant.
+The coordinate-reflection pattern is visible in Figures~20--21; no
+continuous rotational symmetry or general parameter family is asserted.
+
+The reported self-similarity diagnostic is $E=0.01983$, excluding boundary
+sample points, on a $100\times100\times100$ grid.
+See \cite{CatChopp1994}, Section~4.4, pp.~11--12, Figures~20--23.
+Neither a uniqueness or stability theorem nor a Gaussian area or entropy
+value is established. The paper proposes a possible relation to fattening;
+it does not prove that this candidate fattens. In particular, the later
+argument for the four-handled example in
+Example \ref{ex:catalogue-chopp-four-handle} does not establish that claim
+for this smaller opening. The original rotatable schematic shows genus
+one and two flaring ends; its slopes and neck shapes are illustrative.
+\end{example}
+
+\chapter{Chopp four-handled cone candidate}\label{sec:catalogue-chopp-four-handle}
+\begin{example}[The numerical Angenent--Ilmanen--Chopp surface]\label{ex:catalogue-chopp-four-handle}
+This is Chopp's numerical genus-three, two-ended shrinker candidate in
+$\mathbb R^3$. It is a surface of dimension two and codimension one,
+with intended topology a genus-three orientable surface minus two points.
+The four connecting necks do not give genus four. With its axis taken to
+be $x_1$, the symmetry group is $\mathbb Z_2\times D_4$, where $D_4$
+has eight elements and acts on the transverse plane.
+
+The starting geometry is a cylinder with two transverse holes bored
+through its axis. Level selection balances radial and longitudinal neck
+pinches. Dilation then exposes a candidate whose two ends appear smoothly
+asymptotic to a nonrotational double cone $C$. The intended surface is
+smooth, embedded, complete, proper and without boundary, but its
+existence and asymptotics are numerical assertions in the cited papers.
+There is no closed formula. The normalization is
+\[
+ \vec H=-\frac{X^\perp}{2},\qquad
+ M_t=\sqrt{-t}\,\Sigma\quad(t<0),\qquad M_0=C.
+\]
+Here the last equality describes the proposed singular trace, not a
+smooth slice. Chopp's displayed mesh requires a further dilation to obtain
+$\Sigma=M_{-1}$.
+
+The 1994 paper reports $E=0.0505$ and minimum cone opening about
+$1.2627$ radians. The 1995 paper reports approximately $1.263$ radians
+($72.3$ degrees). These are numerical estimates without certified error
+bounds. The reported opening exceeds the numerically estimated critical
+rotational-expander aperture $66.04$ degrees. The barrier argument in the
+1995 paper then predicts two distinct smooth self-expanding continuations
+for $t>0$ and fattening of the level-set flow. Its Main Result is explicitly
+conditional on Assertion~1 and verification of the numerics; it is not
+an unconditional existence proof for this particular genus-three surface.
+The level-set flow itself is unique as a set-valued flow; ``nonuniqueness''
+here concerns distinct thin continuations inside it.
+
+Sources: \cite{CatChopp1994}, Section~4.6, pp.~12--13, Figures~26--28;
+\cite{CatAIC95}, Section~1 and Assertion~1, pp.~1940--1944,
+Section~3, pp.~1953--1955, and the conditional Main Result in Section~4,
+p.~1956. No uniqueness, stability spectrum, Gaussian area or entropy value
+is established for the numerical shrinker. The double-cone expander
+results are recorded in Examples \ref{ex:catalogue-two-sheet-expanders}
+and \ref{ex:catalogue-one-sheet-expanders}. The rigorous Ilmanen--White
+family is separate (Example \ref{ex:catalogue-iw-two-ended}); its theorem
+does not identify a member with this computed mesh.
+
+The rotatable picture is a genus-three topology schematic with four
+necks and two ends. It neither solves the shrinker equation nor verifies
+fattening. Chopp's related compact four-handled dumbbell in Section~4.5,
+Figure~24, failed his self-similarity test ($E=0.584$) and is not a sixth
+shrinker candidate. Semiregular polyhedra and a trefoil are future-work
+proposals in Section~5, not constructions established there.
+\end{example}

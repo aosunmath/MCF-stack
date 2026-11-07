@@ -39,14 +39,16 @@ The following equations use the mean curvature vector convention above. The norm
 
 The collection also includes **ancient solutions**, defined for all $`t<T`$ for a finite $`T`$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
-The catalogue contains **79 illustrated example families in four categories**:
+The catalogue contains **84 illustrated example families in four categories**:
 
 | Category | Entries | Examples |
 | --- | ---: | --- |
-| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 28 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions, prescribed ends, Platonic symmetries, unbounded entropy |
+| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 33 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions, prescribed ends, Platonic symmetries, unbounded entropy, Chopp’s numerical candidates |
 | [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 19 | Grim reapers, bowl, translating catenoids, delta-wings, Scherk translators, helicoid-like translators, annuloids, Scherkenoids, pitchforks, gluing constructions, prescribed-shrinker-end translators in four-space |
 | [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 12 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks, mountain-pass, unbounded-genus and knotted expanders |
 | [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 20 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits, ancient ovals, reapernoids, stacked pancakes, spiral curves and reaper chains |
+
+The [Chopp source review](documentation/chopp-review.md) records five numerical shrinker candidates, their original topology schematics, the conditional fattening argument, and the scope of related curvature-flow papers.
 
 Every entry has a figure. Interactive models support rotation and zoom, with fourth-coordinate rotation for the Clifford torus and the ancient torus curve, and time sliders for the ancient oval, torus curve, ancient spiral model, and eternal helix. The [immortal annulus](documentation/immortal-annulus-picture.md) has an animated schematic stage sequence, a cutaway, and a separate infinite-time limit. Captions distinguish **exact formulas, numerical ODE and PDE approximations, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE. The [spherical-doubling translator picture](documentation/sun-wang-spherical-end-picture.md) shows connected horizontal slices in four-space, with a height slider, rescaling, and a cutaway exposing the necks.
 

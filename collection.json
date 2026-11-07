@@ -40,7 +40,12 @@
         "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
         "the-lee-wang-self-shrinking-mobius-bundle",
         "compact-periodic-lagrangian-quadric-shrinkers",
-        "lee-wang-embedded-quadric-shrinkers"
+        "lee-wang-embedded-quadric-shrinkers",
+        "chopp-cubical-shrinker-candidate",
+        "chopp-octahedral-shrinker-candidate",
+        "chopp-punctured-torus-saddle-candidate",
+        "chopp-two-handled-cone-candidate",
+        "chopp-four-handled-cone-candidate"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },
