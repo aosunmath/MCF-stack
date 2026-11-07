@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Original heuristic diagrams for the 2026-11-06 author survey.
 
-No mesh solves a soliton or evolution PDE. The four interactive meshes illustrate
+No mesh solves a soliton or evolution PDE. The remaining interactive meshes illustrate
 local geometry/topology only; the other drawings are labeled construction diagrams.
 Source figures and PDFs are not copied. Run with Python's standard library.
 """
@@ -92,7 +92,9 @@ def chains():
 
 def main():
  mountain();highgenus();knot();perturbation();pancakes();spiral();chains()
- mesh('hh-ancient-ovals',lambda u,v:(3*math.cos(u),math.sin(u)*math.cos(v),math.sin(u)*math.sin(v)),38,54,(0,math.pi),(0,TAU),'Ancient oval: a heuristic elongated slice')
+ # The numerical time sequence is maintained by generate_hh_ancient_ovals.py.
+ if not (OUT/'hh-ancient-ovals-audit.json').is_file():
+  raise FileNotFoundError('Run scripts/generate_hh_ancient_ovals.py first')
  mesh('reapernoid',lambda u,v:((1+.6*u*u)*math.cos(v),(1+.6*u*u)*math.sin(v),u+.2*math.tanh(u)),50,54,(-2,2),(0,TAU),'Reapernoid: heuristic annular slice in R3')
  mesh('translating-helicoids',lambda u,v:(.4*v+u*math.sin(math.pi*v/2),v,u*math.cos(math.pi*v/2)+.15*u*u),34,70,(-2,2),(-4,4),'Helicoid-like strip arrangement')
  def annulus(u,v):

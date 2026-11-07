@@ -266,6 +266,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='immortal-annulus-stages'){
         const {initImmortalAnnulus}=await import('./immortal-annulus-viewer.mjs');
         initImmortalAnnulus(figure,data,rotatePoint);
+      } else if(data.kind==='hh-numerical-flow'){
+        const {initHHAncientOvalFigure}=await import('./hh-ancient-oval-viewer.mjs');
+        initHHAncientOvalFigure(figure,data,rotatePoint);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);

@@ -3754,7 +3754,7 @@
     },
     {
       "label": "ex:catalogue-hh-ancient-ovals",
-      "notes": "",
+      "notes": "The time-dependent illustration computes finite-seed rotational MCF for n = 2, j = 1. It is not certified ancient-flow data and does not supply Gaussian-area or entropy values. The properties below refer to the mathematical ancient flows.",
       "citations": [
         "CatHH13",
         "CatHS14"

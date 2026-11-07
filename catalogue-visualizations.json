@@ -902,9 +902,9 @@
         "CatHS14"
       ],
       "model": "hh-ancient-ovals",
-      "status": "Heuristic schematic",
-      "caption": "A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
-      "alt": "Haslhofer--Hershkovits ancient ovals. A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
+      "status": "Numerical PDE approximation",
+      "caption": "Surface case n = 2, j = 1: numerical rotational mean curvature flow from a long convex seed, following the limiting-construction strategy. Compare times, play the evolution, rotate, or inspect the meridian and the tip. The default view divides lengths by √(−t); Original size keeps the physical spatial scale fixed. Extinction is normalized to t = 0 and length/width = 2 at t = −1. These finite-seed computations are not certified slices of the ancient solution.",
+      "alt": "Four time slices of a numerical convex surface flow in three-space, from an elongated oval to an almost round sphere. Each is divided by square root of minus time at a common scale. Interactive time, rotation, zoom, meridian and bowl-tip comparisons.",
       "interactive": true
     },
     {
