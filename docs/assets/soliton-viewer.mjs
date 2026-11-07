@@ -230,6 +230,9 @@ if(typeof document!=='undefined') {
       if(data.kind==='av-neckpinch'){
         const {initNeckpinchFigure}=await import('./neckpinch-viewer.mjs');
         initNeckpinchFigure(figure,data);
+      } else if(data.kind==='immortal-product-schematic'){
+        const {initImmortalProductFigure}=await import('./immortal-product-viewer.mjs');
+        initImmortalProductFigure(figure,data);
       } else if(data.kind==='ancient-spiral-asymptotic'){
         const {initAncientSpiralFigure}=await import('./ancient-spiral-viewer.mjs');
         initAncientSpiralFigure(figure,data);

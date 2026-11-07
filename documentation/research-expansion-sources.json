@@ -933,8 +933,8 @@
         }
       ],
       "illustration": {
-        "mode": "orbit-space schematic in (x,y) rectangle or labeled ambient-manifold schematic",
-        "brief": "Closed profile loop in 0<x<pi with upper/lower graphs, symmetry at equator, two narrowing necks near poles. Late-time double segment y=0 corresponds to doubled S^n slice.",
+        "mode": "interactive qualitative time sequence with paired orbit-space profiles and radial coordinate cutaways",
+        "brief": "Three ordered finite stages preserve both neck circles; a separate infinite-time panel draws one sphere counted twice. Profiles use fixed axes; the n=2 radial map (p,y) -> (1+2y)p displays two colored sheets and optional display-only cuts. See documentation/immortal-product-picture.md.",
         "critical_caution": "A spatial R3 image of two spheres and necks is only schematic for n=2; S2xR is not Euclidean R3. No exact PDE-time data are available."
       }
     },

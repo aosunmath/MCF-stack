@@ -78,45 +78,10 @@ def immortal_annulus():
 
 
 def immortal_product():
-    svg=canvas('Immortal compact product-manifold flow and its double-sphere limit',
-        'Generating-profile schematics in polar coordinate x and product coordinate y '
-        'for a flow in the round product S^n times R. At finite time a closed loop '
-        'avoids both polar axes, giving topology S^1 times S^(n-1). At infinite '
-        'time its two necks reach the poles and two sheets approach the same '
-        'minimal sphere. This is intrinsic manifold MCF, not Euclidean MCF.')
-    text(svg,24,33,'A compact immortal flow in Sⁿ × ℝ',23,650)
-    text(svg,24,59,'n ≥ 2 · Generating profiles, shown schematically',fill=MUTED)
-    card(svg,20,79,290,251)
-    card(svg,330,79,290,251)
-    text(svg,36,108,'Finite positive time',18,650)
-    text(svg,36,134,'Closed loop away from the poles',15,fill=MUTED)
-    text(svg,346,108,'t → ∞',20,650)
-    text(svg,346,134,'Two necks collapse at the poles',15,fill=MUTED)
-    for left,right in [(52,280),(362,590)]:
-        line(svg,left,158,left,267,stroke=BORDER,width=1.5,stroke_dasharray='4 4')
-        line(svg,right,158,right,267,stroke=BORDER,width=1.5,stroke_dasharray='4 4')
-        line(svg,left,212,right,212,stroke=BORDER,width=1.5,stroke_dasharray='4 4')
-        text(svg,left,290,'x = 0',15,anchor='middle')
-        text(svg,right,290,'x = π',15,anchor='middle')
-        text(svg,left+8,315,'north pole',15,anchor='middle',fill=MUTED)
-        text(svg,right-8,315,'south pole',15,anchor='middle',fill=MUTED)
-    el(svg,'ellipse',cx=166,cy=212,rx=86,ry=48,fill=PALE,
-       stroke=ACCENT,stroke_width=3)
-    for x in [80,252]:
-        el(svg,'circle',cx=x,cy=212,r=4,fill=INK)
-    text(svg,166,218,'profile loop',15,anchor='middle',fill=INK)
-    # A single limiting segment represents both coincident sheets.
-    line(svg,362,212,590,212,width=5)
-    for x in [362,590]:
-        el(svg,'circle',cx=x,cy=212,r=5,fill=INK)
-    line(svg,407,185,365,205,width=1.4,marker_end='url(#arrow)')
-    line(svg,545,185,587,205,width=1.4,marker_end='url(#arrow)')
-    text(svg,476,182,'neck limits',15,anchor='middle')
-    text(svg,476,244,'2 · (Sⁿ × {0})',18,650,anchor='middle')
-    text(svg,476,268,'one slice, multiplicity two',15,anchor='middle',fill=MUTED)
-    text(svg,24,359,'Finite-time topology: S¹ × Sⁿ⁻¹; genus 1 when n = 2, with no ends.',15)
-    text(svg,24,388,'Intrinsic product-manifold flow. This drawing is not Euclidean MCF.',15,fill=MUTED)
-    save('immortal-product.svg',svg)
+    # Keep the legacy regeneration entry point; the viewer and SVG now share a model.
+    import subprocess
+    subprocess.run(['node', str(Path(__file__).with_name('generate_immortal_product.mjs'))],
+                   check=True)
 
 
 if __name__=='__main__':

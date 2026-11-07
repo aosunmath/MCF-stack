@@ -649,10 +649,10 @@
         "CatCS25Man"
       ],
       "model": "immortal-product",
-      "status": "Product-manifold schematic",
-      "caption": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
-      "alt": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
-      "interactive": false
+      "status": "Qualitative time sequence",
+      "caption": "Three ordered finite-time stages and the infinite-time double-sphere limit. Blue and ochre sheets join through two polar necks; the profiles below show their approach to y = 0. For n = 2 the radial drawing (p, y) ↦ (1 + 2y)p displays the product coordinate as radial separation and distorts the metric. Cutaway edges are display cuts, not surface boundaries. These are schematic stages, not computed PDE slices; no physical times or decay rates are assigned.",
+      "alt": "Three finite-time cutaway tori with two progressively smaller polar necks and closer blue and ochre sheets, followed by one sphere marked multiplicity two. Matching closed orbit-space profiles flatten to a doubled segment. Schematic radial coordinate drawings of a flow in S² × R, not Euclidean MCF.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-nguyen-shrinking-saddles",
