@@ -139,21 +139,12 @@ def hmw_platonic():
 
 
 def hmw_one():
-    f=Figure('Hoffman–Martin–White genus-g shrinkers: limit and end theorem',
-             'The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.')
-    heading(f,'HMW genus-g shrinkers','One conical end is proved when g is sufficiently large')
-    sphere_plane(f,205,201,43,axes=True)
-    f.text(205,303,'Large-genus limit: P ∪ S²(2)',16,anchor='middle')
-    f.box(403,117,209,176)
-    f.text(508,153,'g ≥ 1',23,weight=600,anchor='middle')
-    f.text(508,188,'contains g + 1',17,anchor='middle')
-    f.text(508,211,'horizontal lines',17,anchor='middle')
-    f.text(508,254,'exactly one end:',16,anchor='middle')
-    f.text(508,277,'only for large g',16,weight=600,anchor='middle')
-    footer(f,['The limit sphere has radius 2 in the catalogue normalization.',
-              'The small-genus end count is left unspecified.',
-              'SCHEMATIC • limiting configuration and qualified end count'])
-    f.save('hmw-one-ended.svg')
+    # Preserve the plate owned by generate_hmw_sphere_plane_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-one-ended.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def hmw_three():

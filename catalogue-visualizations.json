@@ -715,10 +715,10 @@
         "CatHMW2026"
       ],
       "model": "hmw-one-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.",
-      "alt": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker."
+      "status": "Topology schematic and limiting configuration",
+      "interactive": true,
+      "caption": "An original connected genus-g model informed by Hoffman–Martín–White, Figures 1, 5–6 and Theorems 40–42. Rotate the surface, remove its front half, inspect the g+1 horizontal lines, or compare with the separate sphere–plane limit. The model has one exterior sheet; exactly one end is proved only for sufficiently large genus. Shape and cone slope are illustrative, not a computed self-shrinker. Gold and blue distinguish its two sides; outer and cut edges are display boundaries.",
+      "alt": "Hoffman–Martín–White sphere–plane topology schematic: alternating openings join rounded caps to a central sheet and exterior. Full surface and cutaway, with a separate radius-two sphere and plane limit. Not a computed shrinker."
     },
     {
       "label": "ex:catalogue-hmw-three-ended",
