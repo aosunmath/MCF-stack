@@ -113,3 +113,9 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 @media(min-width:1100px){.neckpinch-figure .soliton-stage[data-mode=limits]{height:420px}}
 @media(max-width:699px){.neckpinch-figure .soliton-stage{height:330px}.neckpinch-figure .soliton-stage[data-mode=sequence]{height:820px}.neckpinch-figure .soliton-stage[data-mode=profile]{height:570px}.neckpinch-figure .soliton-stage[data-mode=limits]{height:720px}}
 @media print{.neckpinch-figure .soliton-stage{height:auto!important;aspect-ratio:960/700}.neckpinch-legend{display:none}}
+
+/* Compact immortal flow: stacked time panels on narrow screens. */
+.immortal-product-legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 16px;font-size:12px;line-height:1.5}.immortal-product-figure .soliton-controls label{flex-basis:100%}.immortal-product-figure .soliton-status{line-height:1.6}.immortal-product-figure canvas{touch-action:pan-y}.immortal-product-figure .soliton-stage{height:auto}
+.soliton-figure[data-soliton$="immortal-product.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:960/964}
+@media print{.immortal-product-legend,.immortal-product-figure .soliton-status{display:none}.immortal-product-figure .soliton-stage{height:auto!important;aspect-ratio:960/964}.immortal-product-figure .soliton-stage img{height:auto}}
+.immortal-product-figure .soliton-controls{border-top:0;border-bottom:1px solid var(--line)}.immortal-product-figure .soliton-help{margin-top:10px}
