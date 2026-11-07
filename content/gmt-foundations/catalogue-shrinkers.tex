@@ -999,3 +999,66 @@ The diagram records the flow construction and strict entropy drop;
 the final genus-one shrinker is left abstract because its compactness
 and ends are not specified.
 \end{example}
+
+\chapter{The Lee--Wang self-shrinking Mobius bundle}\label{sec:catalogue-mobius-shrinker}
+This example is a surface in $\mathbb C^2=\mathbb R^4$, of codimension two.
+\begin{example}[An embedded nonorientable shrinker]\label{ex:catalogue-mobius-shrinker}
+Let $M=(\mathbb S^1\times\mathbb R)/((\theta,r)\sim(\theta+\pi,-r))$ and set
+\[
+ X([\theta,r])=(e^{2i\theta}\cosh r,\sqrt2 e^{-i\theta}\sinh r).
+\]
+This is an exact parametrization with $\vec H=-X^\perp/2$; its ancient flow is $\sqrt{-t}\,X(M)$, $t<0$.
+Lee--Wang constructed the surface, up to a unitary change of coordinates, in \cite{CatLeeWang2009}, Section~2.2. The quotient map is an embedding; the map on $\mathbb S^1\times\mathbb R$ is a double cover, not an embedding.
+
+The surface is Lagrangian, Hamiltonian stationary, noncompact, and asymptotic to a Schoen--Wolfson $(2,1)$ cone. Its topology is the open Mobius line bundle, with one end and one crosscap. Orientable surface genus does not apply. The identity $|X|^2=1+3\sinh^2r$ proves properness, and the induced metric
+\[
+ g=(\sinh^2r+2\cosh^2r)(2\,d\theta^2+dr^2)
+\]
+proves completeness. The diagonal circle action has weights $(2,-1)$.
+
+For this single-covered embedding, \cite{CatBraxtonLeeZhu2026}, Theorem~1.2 and Section~7, prove $F$-stability under arbitrary normal variations modulo translations and dilation. This does not establish nonlinear stability or realization as a generic singularity. Remark~7.4 gives
+\[
+ F_{0,1}(M)=\lambda(M)=\frac{\sqrt2 e^{1/8}}8
+ \left[K_0(3/8)+3K_1(3/8)\right],\qquad
+ K_j(z)=\int_0^\infty e^{-z\cosh v}\cosh(jv)\,dv.
+\]
+The illustration projects the exact four-dimensional parametrization; projected crossings are not self-intersections of $M$.
+\end{example}
+
+\chapter{Compact periodic Lagrangian quadric shrinkers}\label{sec:catalogue-jlt-compact-shrinkers}
+These are the compact periodic solutions in the Joyce--Lee--Tsui construction.
+\begin{example}[Periodic quadric shrinkers]\label{ex:catalogue-jlt-compact-shrinkers}
+Fix $n\geq2$, $a_j>0$, $\alpha=-1/2$, and put $Q(u)=\prod_{j=1}^n(a_j+u)$ and $\phi=\sum_j\phi_j$. Solve
+\[
+ u'=2\sqrt{Q(u)}\cos(\phi-\theta),\qquad
+ \phi_j'=-\frac{\sqrt{Q(u)}\sin(\phi-\theta)}{a_j+u},\qquad
+ \theta'=-\tfrac12\sqrt{Q(u)}\sin(\phi-\theta).
+\]
+Require $a_j+u>0$ and $A=\sqrt{Q(u)}e^{-u/4}\sin(\phi-\theta)>0$.
+Choose nonconstant periodic data for which all phase increments over a period of $u$ are rational multiples of $\pi$. A common period $T$ then closes all $w_j(s)=\sqrt{a_j+u(s)}e^{i\phi_j(s)}$. The immersion is
+\[
+ X(x,s)=(x_1w_1(s),\ldots,x_nw_n(s)),\qquad
+ (x,s)\in\mathbb S^{n-1}\times(\mathbb R/T\mathbb Z).
+\]
+Theorems~A, B, E(a)(ii), and F of \cite{CatJoyceLeeTsui2010} establish these ODE solutions and a dense set of closing initial data. They satisfy $\vec H=-X^\perp/2$, and $\sqrt{-t}\,X$, $t<0$, is their mean curvature flow.
+
+The parameter manifold is compact, hence the immersion is complete and proper. It has dimension and codimension $n$, no ends, and topology $\mathbb S^{n-1}\times\mathbb S^1$; for $n=2$ it is a torus. Coordinate reflections are symmetries. Embeddedness, uniqueness, and stability are not inferred from the immersion theorem. The drawing is a construction diagram, not a numerically closed solution. The constant-radius subcase, including familiar overlapping examples, is excluded here.
+\end{example}
+
+\chapter{Lee--Wang embedded quadric shrinkers}\label{sec:catalogue-lw-quadric-shrinkers}
+\begin{example}[An embedded mixed-sign quadric family]\label{ex:catalogue-lw-quadric-shrinkers}
+Let $n\geq3$, $n/2<k<n$, and $S=2k-n>0$. Put
+\[
+ Q_+=\left\{x\in\mathbb R^n:\sum_{j\leq k}x_j^2-\sum_{j>k}x_j^2=2S\right\},\qquad
+ X(x,s)=(e^{is}x_1,\ldots,e^{is}x_k,e^{-is}x_{k+1},\ldots,e^{-is}x_n).
+\]
+The domain is the mapping torus
+\[
+ (Q_+\times\mathbb R)/((x,s)\sim(-x,s+\pi)).
+\]
+This exact map gives a complete proper embedded Lagrangian of dimension and codimension $n$ in $\mathbb C^n$, with $\vec H=-X^\perp/2$. Its flow is $L_t=\sqrt{-t}\,X(Q_+\times\mathbb R)$ for $t<0$. These are the unit-weight cases of \cite{CatLeeWang2010}, Propositions~2.1--2.2: the weights are $k$ copies of $1$ and $n-k$ copies of $-1$.
+
+The fiber $Q_+$ is $S^{k-1}\times\mathbb R^{n-k}$. The antipodal gluing is part of the topology; a product with $S^1$ cannot in general replace this mapping torus. The full manifold is connected, noncompact, and has one end. When $n-k=1$ the gluing exchanges the two fiber ends; otherwise the fiber already has one end. It is orientable exactly when $n$ is even. The $n=3$, $k=2$ case is a nonorientable three-manifold, not a surface with a genus.
+
+The $SO(k)\times SO(n-k)$ action and the indicated circle action preserve the image. The Lagrangian angle is $Ss+\pi/2$ locally; it is harmonic, so the example is Hamiltonian stationary, although it is not stationary under MCF. It is asymptotic to the corresponding quadric cone. Properness follows directly from $|X|=|x|$ on the mapping torus. Its polynomial volume growth gives finite entropy, equal to centered Gaussian area in this normalized shrinker setting; no numerical value or stability theorem is asserted here. The figure shows the exact real slice $s=0$ for $n=3,k=2$, not the whole three-dimensional submanifold of $\mathbb R^6$. The companion expander is Example~\ref{ex:catalogue-lw-quadric-expanders}.
+\end{example}

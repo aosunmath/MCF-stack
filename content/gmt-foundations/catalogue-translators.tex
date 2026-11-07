@@ -322,3 +322,69 @@ After reflecting the source's downward translator, $M_t=M+te_3$ for all $t\in\ma
 
 The entropy is exactly $4$, by \cite{CatHMWAnnuli24}, Remark 7.9, using \cite{CatGMM25}, Corollary 8.5. This is not a fixed-center Gaussian-area identity. Existence and the parameters are in Theorem 1.1, Definition 1.2, and Sections 7 and 22 of \cite{CatHMWAnnuli24}. The displayed neck model is heuristic.
 \end{example}
+
+\chapter{Joyce--Lee--Tsui small-angle Lagrangian translators}\label{sec:catalogue-jlt-translators}
+The following unit-speed translators have dimension and codimension $n$ in $\mathbb C^n$.
+\begin{example}[Almost-calibrated translating Lagrangians]\label{ex:catalogue-jlt-translators}
+Fix $n\geq2$ and $a_1,\ldots,a_{n-1}>0$. Define the positive smooth function
+\[
+ P(y)=\frac{e^{y^2}\prod_{j=1}^{n-1}(1+a_jy^2)-1}{y^2},
+ \qquad P(0)=1+\sum_{j=1}^{n-1}a_j,
+\]
+and the quadratures
+\[
+ \phi_j(y)=\int_0^y\frac{dt}{(a_j^{-1}+t^2)\sqrt{P(t)}},\qquad
+ B(y)=\int_0^y\frac{dt}{\sqrt{P(t)}}.
+\]
+For $(x,y)\in\mathbb R^{n-1}\times\mathbb R$, set
+\[
+ X(x,y)=\left(x_j\sqrt{a_j^{-1}+y^2}\,e^{i\phi_j(y)}\right)_{j=1}^{n-1}
+ \mathbin{\times}\left(\tfrac12(y^2-|x|^2)+iB(y)\right).
+\]
+Here the displayed product concatenates complex coordinates. This is Corollary~I of \cite{CatJoyceLeeTsui2010} with $\alpha=1$, after a constant imaginary translation in the last coordinate. Differentiating the source's angle expression gives $\theta'=-1/\sqrt P$, so this integral form avoids a choice of argument branch.
+
+The image is a complete proper embedded Lagrangian $\mathbb R^n$ with one topological end. It satisfies $\vec H=V^\perp$ for $V=(0,\ldots,0,1)$ and evolves as $X+tV$ for all $t\in\mathbb R$. If $\bar\phi_j=\lim_{y\to\infty}\phi_j(y)$, then $0<\sum_j\bar\phi_j<\pi/2$ and the angle oscillation is $\pi-2\sum_j\bar\phi_j$; it can be arbitrarily small. The plane-pair description in the source is heuristic, not an asserted smooth asymptotic-cone theorem. The figure uses numerical quadrature of this exact integral parametrization in $\mathbb C^2$, followed by projection.
+\end{example}
+
+\chapter{Explicit rotating Lagrangian translators}\label{sec:catalogue-jlt-rotating-translators}
+An elementary subfamily of the same quadric ansatz has unbounded Lagrangian angle.
+\begin{example}[Rotating translating planes]\label{ex:catalogue-jlt-rotating-translators}
+For $n\geq2$, put $k=n-1$. The exact map
+\[
+ X(x,s)=\left(x_1e^{is},\ldots,x_ke^{is},\tfrac12|x|^2-is\right),
+ \qquad (x,s)\in\mathbb R^k\times\mathbb R,
+\]
+is a complete proper embedded Lagrangian in $\mathbb C^n$, of dimension and codimension $n$. Its translator velocity is $V=(0,\ldots,0,k)$, so $X+tV$, $t\in\mathbb R$, is eternal. Spatial dilation by $k$ gives unit translating speed if desired.
+
+This is the constant-radius case of Theorem~G and Corollary~H of \cite{CatJoyceLeeTsui2010}, with $\lambda_j=-1$, $a_j=A=1$, $u=0$, and $\alpha=k$. Directly, the metric and a lifted angle are
+\[
+ g=\sum_jdx_j^2+\left(\sum_jx_jdx_j\right)^2+(1+|x|^2)ds^2,
+ \qquad \theta=ks-\pi/2.
+\]
+Consequently
+\[
+ \vec H=J\nabla\theta
+ =\frac{k}{1+|x|^2}(-x_1e^{is},\ldots,-x_ke^{is},1)=V^\perp.
+\]
+The last imaginary coordinate recovers $s$, proving injectivity; $|X|^2=|x|^2+|x|^4/4+s^2$ proves properness. The metric dominates the Euclidean domain metric, proving completeness. Topologically it is $\mathbb R^n$, with one end. It has a combined rotation and imaginary-translation symmetry and is not almost calibrated. No stability or entropy value is claimed. The four-dimensional illustration samples the exact $n=2$ formula.
+\end{example}
+
+\chapter{Su translators obtained by gluing grim cylinders}\label{sec:catalogue-su-glued-translators}
+\begin{example}[Lawlor-neck desingularizations of grim cylinders]\label{ex:catalogue-su-glued-translators}
+Fix $m\geq3$. Let
+\[
+ \gamma_0(u)=-\log\cos u-i(u-\pi/2),\quad |u|<\pi/2,\qquad
+ L_0=\mathbb R^{m-1}\times\gamma_0((-\pi/2,\pi/2))\subset\mathbb C^m.
+\]
+Choose $\phi_j\in(0,\pi)$ with $\sum_{j=1}^m\phi_j=\pi$, and $\lambda\in\mathbb R$. Define
+\[
+ P_{\phi,\lambda}(z)=(e^{i\phi_1}z_1,\ldots,e^{i\phi_{m-1}}z_{m-1},z_m+\lambda+i\phi_m).
+\]
+The two grim cylinders meet at one transverse point and satisfy the tangent-plane angle criterion. Su proves that for all sufficiently small $\varepsilon>0$ their intersection can be replaced by a Lawlor neck and then perturbed to a smooth embedded Lagrangian translator $L_\varepsilon$, diffeomorphic to $S^{m-1}\times\mathbb R$. It is complete and proper, with two ends approaching the original cylinder ends in the weighted construction. Its dimension and codimension are $m$. With $e_m$ the real unit vector in the last complex coordinate,
+\[
+ \vec H=e_m^\perp,\qquad L_{\varepsilon,t}=L_\varepsilon+t e_m,\qquad -\infty<t<\infty.
+\]
+The parameter $\varepsilon$ is a gluing scale, not flow time. As $\varepsilon\downarrow0$ the translators converge as currents to $L_0\cup P_{\phi,\lambda}(L_0)$. The displayed formula is for the building blocks; the perturbed translator has no closed formula. Properness and completeness follow from the small decaying graph on the complete proper ends and the compact neck region.
+
+Source: \cite{CatSu2022}, Main Theorem, Sections~3--4 and the final perturbation argument. Its Corollary~1.1 also gives examples with arbitrarily many ends and noncontractible loops by finite admissible arrangements of grim cylinders. Those more general topologies are not assigned to this two-ended case. The construction requires the source's $T$-finite condition; it does not establish gluing arbitrary planes to grim cylinders. No uniqueness, entropy value, or dynamical stability is claimed. The picture is a diagram of the neck replacement in $\mathbb C^m$, not an exact surface in $\mathbb R^3$.
+\end{example}

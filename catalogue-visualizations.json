@@ -987,13 +987,227 @@
       "title": "Eternal curves from chains of grim reapers",
       "category": "other-special-flows",
       "citations": [
-        "CatAY18"
+        "CatAY18",
+        "CatChoiSeoSuZhao2026"
       ],
       "model": "grim-reaper-chains",
       "status": "Numerical curve-shortening flow",
       "caption": "Angenent–You, equation (3), §3.1–3.3 and Figure 9. Equal strips aₖ = kπ and shifts Cₖ = 0. Play the evolution or compare six times from t = −6 to 9 at a fixed scale. The model overlay shows exact separate grim reapers, with velocities −1, +1, −1. The blue curve is computed from smoothly joined data at t = −10, with distant truncated ends; it is not a closed formula or a certified approximation of the eternal limit. Zero is an ordinary time, not an extinction time.",
       "alt": "Six numerical time slices of one planar curve with three alternating grim-reaper turns, evolving from separated turns to a broader profile. Both outer ends continue to the left along y = 0 and y = 3π. Finite-start numerical approximation.",
       "interactive": true
+    },
+    {
+      "label": "ex:catalogue-mobius-shrinker",
+      "section": "the-lee-wang-self-shrinking-mobius-bundle",
+      "title": "The Lee–Wang self-shrinking Mobius bundle",
+      "category": "shrinkers",
+      "citations": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "model": "mobius-shrinker",
+      "status": "Exact four-dimensional projection",
+      "caption": "A finite patch of the exact embedded Möbius quotient in C². Rotation changes the projection; projected crossings do not imply self-intersection.",
+      "alt": "A finite patch of the exact embedded Möbius quotient in C². Rotation changes the projection; projected crossings do not imply self-intersection.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-compact-shrinkers",
+      "section": "compact-periodic-lagrangian-quadric-shrinkers",
+      "title": "Compact periodic Lagrangian quadric shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-compact-shrinkers",
+      "status": "Construction diagram",
+      "caption": "The ODE and rational phase-closing conditions produce a compact immersion with domain Sⁿ⁻¹ × S¹. No numerical closed orbit or embeddedness is claimed by this picture.",
+      "alt": "The ODE and rational phase-closing conditions produce a compact immersion with domain Sⁿ⁻¹ × S¹. No numerical closed orbit or embeddedness is claimed by this picture.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-jlt-translators",
+      "section": "joyce-lee-tsui-small-angle-lagrangian-translators",
+      "title": "Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "category": "translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-translators",
+      "status": "Numerical quadrature and projection",
+      "caption": "The n = 2, a₁ = α = 1 exact integral parametrization is evaluated numerically and projected from R⁴. The displayed patch is truncated; the full embedded surface has one end.",
+      "alt": "The n = 2, a₁ = α = 1 exact integral parametrization is evaluated numerically and projected from R⁴. The displayed patch is truncated; the full embedded surface has one end.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-rotating-translators",
+      "section": "explicit-rotating-lagrangian-translators",
+      "title": "Explicit rotating Lagrangian translators",
+      "category": "translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-rotating-translators",
+      "status": "Exact four-dimensional projection",
+      "caption": "The n = 2 map (x eⁱˢ, x²/2 − is) on a finite parameter window. Its last imaginary coordinate separates turns. Use 4D rotation to change the projection.",
+      "alt": "The n = 2 map (x eⁱˢ, x²/2 − is) on a finite parameter window. Its last imaginary coordinate separates turns. Use 4D rotation to change the projection.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-expanders",
+      "section": "joyce-lee-tsui-lagrangian-expander-necks",
+      "title": "Joyce–Lee–Tsui Lagrangian expander necks",
+      "category": "expanders",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "model": "jlt-expanders",
+      "status": "Numerical quadrature and projection",
+      "caption": "The exact integral parametrization in C² with a₁ = a₂ = 1 and α = 1/2, evaluated numerically. Both planar ends are truncated. This is a projection, not an R³ expander.",
+      "alt": "The exact integral parametrization in C² with a₁ = a₂ = 1 and α = 1/2, evaluated numerically. Both planar ends are truncated. This is a projection, not an R³ expander.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-ttw-expanders",
+      "section": "two-convex-lagrangian-graphical-expanders",
+      "title": "Two-convex Lagrangian graphical expanders",
+      "category": "expanders",
+      "citations": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "model": "ttw-expanders",
+      "status": "Exact initial-cone projection",
+      "caption": "The gradient cone of the nonquadratic potential specified in the text, projected from C². It is initial data at t = 0; the positive-time expander is constructed by PDE and is not rendered here.",
+      "alt": "The gradient cone of the nonquadratic potential specified in the text, projected from C². It is initial data at t = 0; the positive-time expander is constructed by PDE and is not rendered here.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-lawlor-necks",
+      "section": "lawlor-necks-as-stationary-lagrangian-flows",
+      "title": "Lawlor necks as stationary Lagrangian flows",
+      "category": "other-special-flows",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "model": "lawlor-necks",
+      "status": "Exact four-dimensional projection",
+      "caption": "A truncated exact Lawlor annulus in C² with a₁ = a₂ = 1. It is stationary under MCF. Projected crossings do not change its embeddedness in R⁴.",
+      "alt": "A truncated exact Lawlor annulus in C² with a₁ = a₂ = 1. It is stationary under MCF. Projected crossings do not change its embeddedness in R⁴.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-aryan-lee",
+      "section": "immortal-curve-shortening-with-nonunique-geodesic-limits",
+      "title": "Immortal curve shortening with nonunique geodesic limits",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAryanLee2026"
+      ],
+      "model": "aryan-lee",
+      "status": "Parameter-space schematic",
+      "caption": "The spiral represents a slow parameter approaching a circle of critical points, each indexing a different limiting geodesic. This is not a simulation on a round sphere.",
+      "alt": "The spiral represents a slow parameter approaching a circle of critical points, each indexing a different limiting geodesic. This is not a simulation on a round sphere.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-su-tsai-wood",
+      "section": "lagrangian-torus-necks-collapsing-at-infinite-time",
+      "title": "Lagrangian torus necks collapsing at infinite time",
+      "category": "other-special-flows",
+      "citations": [
+        "CatSuTsaiWood2026"
+      ],
+      "model": "su-tsai-wood",
+      "status": "Neck-collapse schematic",
+      "caption": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
+      "alt": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-lee-tsai",
+      "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+      "title": "Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLeeTsai2026"
+      ],
+      "model": "lee-tsai",
+      "status": "Circle-quotient schematic",
+      "caption": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
+      "alt": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-shrinkers",
+      "section": "lee-wang-embedded-quadric-shrinkers",
+      "title": "Lee–Wang embedded quadric shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "model": "lw-quadric-shrinkers",
+      "status": "Exact real slice",
+      "caption": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension.",
+      "alt": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-expanders",
+      "section": "lee-wang-embedded-quadric-expanders",
+      "title": "Lee–Wang embedded quadric expanders",
+      "category": "expanders",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "model": "lw-quadric-expanders",
+      "status": "Exact real slice",
+      "caption": "The s = 0 real slice x₁² + x₂² − x₃² = −2 in C³. Its two sheets join through the circle quotient in the connected three-dimensional expander.",
+      "alt": "The s = 0 real slice x₁² + x₂² − x₃² = −2 in C³. Its two sheets join through the circle quotient in the connected three-dimensional expander.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-su-glued-translators",
+      "section": "su-translators-obtained-by-gluing-grim-cylinders",
+      "title": "Su translators obtained by gluing grim cylinders",
+      "category": "translators",
+      "citations": [
+        "CatSu2022"
+      ],
+      "model": "su-glued-translators",
+      "status": "Gluing schematic",
+      "caption": "Two intersecting grim cylinders in Cᵐ, m ≥ 3, are replaced by a small Lawlor neck and perturbed to a translator. This is a schematic, not an exact surface or a numerical PDE solution.",
+      "alt": "Two intersecting grim cylinders in Cᵐ, m ≥ 3, are replaced by a small Lawlor neck and perturbed to a translator. This is a schematic, not an exact surface or a numerical PDE solution.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-su-wood-stationary",
+      "section": "su-wood-stationary-products-of-lawlor-profiles",
+      "title": "Su–Wood stationary products of Lawlor profiles",
+      "category": "other-special-flows",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "model": "su-wood-stationary",
+      "status": "Exact auxiliary profile",
+      "caption": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
+      "alt": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-stolarski-su",
+      "section": "stolarski-su-finite-time-lagrangian-neck-pinches",
+      "title": "Stolarski–Su finite-time Lagrangian neck pinches",
+      "category": "other-special-flows",
+      "citations": [
+        "CatStolarskiSu2026"
+      ],
+      "model": "stolarski-su",
+      "status": "Neck-scale schematic",
+      "caption": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
+      "alt": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
+      "interactive": false
     }
   ]
 }

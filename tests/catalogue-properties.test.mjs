@@ -85,3 +85,23 @@ test('embeddedness filters combine within a case and grouping counts each family
   assert.deepEqual(result.groups.get('embedded')[0].indices,[0]);
   assert.deepEqual(result.groups.get('nonembedded')[0].indices,[1]);
 });
+
+test('the Möbius quotient is a nonorientable embedded surface, not an orientable genus',()=>{
+  const r=get('mobius-shrinker');
+  assert.equal(matchingCases(r,{ambient:'r4',genus:'nonorientable',ends:'1',embeddedness:'embedded'}).length,1);
+  assert.equal(matchingCases(r,{genus:'0'}).length,0);
+  assert.equal(matchingCases(r,{genus:'1'}).length,0);
+  assert.equal(matchingCases(r,{genus:'na'}).length,0);
+  assert.equal(entropyBelow(r.cases[0].entropy,2),false); // an exact expression is not a certified rounded bound
+});
+
+test('new intrinsic flows and higher-dimensional Lagrangians keep their own ambient and genus cases',()=>{
+  for(const id of ['aryan-lee','su-tsai-wood','lee-tsai']){
+    const r=get(id);
+    assert.equal(matchingCases(r,{ambient:'manifold',embeddedness:'embedded'}).length,1);
+    assert.equal(matchingCases(r,{ambient:'r4'}).length,0);
+    assert.equal(r.cases[0].entropy.status,'not-applicable');
+  }
+  assert.equal(matchingCases(get('jlt-compact-shrinkers'),{ambient:'r4',genus:'1'}).length,1);
+  assert.equal(matchingCases(get('jlt-compact-shrinkers'),{ambient:'higher',genus:'1'}).length,0);
+});

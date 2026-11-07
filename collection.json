@@ -37,7 +37,10 @@
         "flow-generated-three-ended-shrinkers",
         "ketover-shrinkers-with-platonic-symmetry",
         "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
-        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
+        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+        "the-lee-wang-self-shrinking-mobius-bundle",
+        "compact-periodic-lagrangian-quadric-shrinkers",
+        "lee-wang-embedded-quadric-shrinkers"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },
@@ -60,7 +63,10 @@
         "translators-with-high-genus-spherical-doubling-ends",
         "doubly-periodic-scherk-translators",
         "helicoid-like-translators",
-        "annuloid-translators-in-slabs"
+        "annuloid-translators-in-slabs",
+        "joyce-lee-tsui-small-angle-lagrangian-translators",
+        "explicit-rotating-lagrangian-translators",
+        "su-translators-obtained-by-gluing-grim-cylinders"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
     },
@@ -76,7 +82,10 @@
         "self-expanding-planar-tree-networks",
         "mountain-pass-self-expanders",
         "expanders-of-unbounded-genus-at-a-fixed-cone",
-        "knotted-self-expanders"
+        "knotted-self-expanders",
+        "joyce-lee-tsui-lagrangian-expander-necks",
+        "two-convex-lagrangian-graphical-expanders",
+        "lee-wang-embedded-quadric-expanders"
       ],
       "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions."
     },
@@ -97,7 +106,13 @@
         "the-eternal-reapernoid",
         "ancient-stacked-pancakes",
         "compact-nonconvex-ancient-spiral-curves",
-        "eternal-curves-from-chains-of-grim-reapers"
+        "eternal-curves-from-chains-of-grim-reapers",
+        "lawlor-necks-as-stationary-lagrangian-flows",
+        "immortal-curve-shortening-with-nonunique-geodesic-limits",
+        "lagrangian-torus-necks-collapsing-at-infinite-time",
+        "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+        "su-wood-stationary-products-of-lawlor-profiles",
+        "stolarski-su-finite-time-lagrangian-neck-pinches"
       ],
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
     }

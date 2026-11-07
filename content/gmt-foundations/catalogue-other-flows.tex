@@ -350,7 +350,128 @@ Choose monotonically ordered heights $a_0<a_1<\cdots<a_m$ and horizontal shifts 
 \]
 This formula describes the model translators, not the glued eternal solution.
 
-The actual flow is a graph $x=u(y,t)$ on $a_0<y<a_3$, exists for every $t\in\mathbb R$, and is complete, properly embedded and noncompact, with topology $\mathbb R$ and two ends asymptotic to the outer horizontal lines. The two-end and properness statements follow from this graphical description and the outer asymptotes. Curvature changes sign in the nontrivial chain; total absolute curvature is uniformly bounded. There is no closed formula or uniqueness assertion for $u$, and no entropy value is recorded.
+The actual flow is a graph $x=u(y,t)$ on $a_0<y<a_3$, exists for every $t\in\mathbb R$, and is complete, properly embedded and noncompact, with topology $\mathbb R$ and two ends asymptotic to the outer horizontal lines. The two-end and properness statements follow from this graphical description and the outer asymptotes. Curvature changes sign in the nontrivial chain; total absolute curvature is uniformly bounded. There is no closed formula for $u$; the classification and flow entropy are qualified below.
 
 Source: \cite{CatAY18}, equation (3), Section 3.1 and Lemmas 3.8--3.10, pp.~2 and 8--13. The paper also constructs immersed ancient chains; those are not being labeled embedded by this selected case. The illustration uses $a_k=k\pi$ and $C_k=0$, so that the three model tips have horizontal velocities $-1,+1,-1$. It shows a numerical finite-start approximation: smoothly joined reapers at $t=-10$ are evolved by curve shortening, and slices from $t=-6$ to $t=9$ are displayed at the same spatial scale. The outer ends are truncated far outside the viewing window. The joins follow the construction in Section 3.2 and Figure 10, using the orientation of equation (3) and Figure 9. This computation is not a closed formula or a certified approximation of the eternal limit; the later shapes are numerical observations, not an additional asymptotic theorem. In particular, $t=0$ is not an extinction time.
+
+The classification in \cite{CatChoiSeoSuZhao2026}, Theorem~1.1, identifies graphical ancient trombones as the nonconvex embedded planar ancient flows with finite flow entropy, alongside the line, shrinking circle, paperclip and grim reaper. Here flow entropy means $\operatorname{Ent}[M]=\sup_t\lambda(M_t)<\infty$, not merely finite entropy of each slice. Corollary~1.5 records flow entropy $m+1$ for the $m$-reaper family; thus the selected $m=3$ case has flow entropy four. This does not identify the entropy or centered Gaussian area of an individual slice with four.
+\end{example}
+
+\chapter{Lawlor necks as stationary Lagrangian flows}\label{sec:catalogue-lawlor-necks}
+Lawlor necks are the stationary endpoint of the Lagrangian neck construction.
+\begin{example}[Stationary special Lagrangian necks]\label{ex:catalogue-lawlor-necks}
+For $n\geq2$, $a_j>0$, and phases $\psi_j\in\mathbb R$, define
+\[
+ P_0(y)=\frac{\prod_{j=1}^n(1+a_jy^2)-1}{y^2},\quad
+ P_0(0)=\sum_ja_j,\quad
+ \phi_j(y)=\psi_j+\int_0^y\frac{dt}{(a_j^{-1}+t^2)\sqrt{P_0(t)}}.
+\]
+The map
+\[
+ X(x,y)=\left(x_j\sqrt{a_j^{-1}+y^2}e^{i\phi_j(y)}\right)_{j=1}^n,
+ \qquad(x,y)\in\mathbb S^{n-1}\times\mathbb R,
+\]
+parametrizes a complete proper embedded special Lagrangian of dimension and codimension $n$. Its constant flow $L_t=X(\mathbb S^{n-1}\times\mathbb R)$ is eternal, $t\in\mathbb R$, since $\vec H=0$. This is the $\alpha=0$ case of \cite{CatJoyceLeeTsui2010}, Theorems~C--D, credited there to Lawlor.
+
+It has two planar ends and topology $\mathbb S^{n-1}\times\mathbb R$; in $\mathbb C^2$ it is an annulus. The positive characteristic angles sum to $\pi$. They determine a neck up to scale, and equal $a_j$ give the rotational subfamily after a unitary change of coordinates. Calibration makes the neck area-minimizing for compactly supported competitors with the same boundary, hence stable for compactly supported variations.
+
+For $n\geq3$, \cite{CatImagiJoyceOliveira2016}, Theorem~1.1, classifies closed-as-subsets, embedded, exact, asymptotically conical special Lagrangians with two transverse planar asymptotes and rate $\rho<0$, up to the specified special unitary rotation. The source's weaker rate $\rho<2$ additionally permits translation. These are conditional uniqueness statements. The drawing projects the exact $n=2$, $a_1=a_2=1$ map, whose common complex factor is $\sqrt{1+y^2/2}+iy/\sqrt2$.
+\end{example}
+
+\chapter{Immortal curve shortening with nonunique geodesic limits}\label{sec:catalogue-aryan-lee}
+The ambient space here is a Riemannian two-sphere, not Euclidean space.
+\begin{example}[A circle of limiting geodesics]\label{ex:catalogue-aryan-lee}
+For every $C^\infty$ neighborhood of the round metric on $\mathbb S^2$, \cite{CatAryanLee2026}, Theorem~5.1, constructs a smooth antipodally invariant metric $g$ in that neighborhood and a smooth simple closed curve whose curve-shortening flow
+\[
+ \partial_t\gamma=\kappa_gN_g,\qquad t\in[0,\infty),
+\]
+stays embedded for all time. There is an embedded circle $Z\subset\mathbb {RP}^2$ and a smooth injective family $\Gamma:Z\to\mathcal E^\infty(\mathbb S^2)$ of simple closed $g$-geodesics, all of the same length, such that
+\[
+ \omega_{C^\infty}(\gamma)=\{\Gamma(z):z\in Z\}.
+\]
+Convergence is convergence of unparametrized embedded curves, or smooth convergence after reparametrization. In particular there is no unique limiting geodesic.
+
+Each regular slice is a compact complete proper embedded circle, of dimension one and codimension one in $(\mathbb S^2,g)$, with no ends. The construction uses a prescribed length function and a spiraling slow mode, not a closed time-dependent formula. It does not assert rotational symmetry or stability of the evolving curve. The diagram is a schematic in parameter space; it is not a curve-shortening simulation on the round sphere. Euclidean Gaussian area and entropy are inapplicable to this intrinsic ambient flow.
+\end{example}
+
+\chapter{Lagrangian torus necks collapsing at infinite time}\label{sec:catalogue-su-tsai-wood}
+These compact flows live in a flat complex torus, which is kept in the Riemannian-ambient group.
+\begin{example}[Immortal Lagrangian connected sums]\label{ex:catalogue-su-tsai-wood}
+Let $m\geq3$ and let $X_1,X_2$ be special Lagrangian $m$-tori of the same phase in the flat Calabi--Yau torus $\mathbb C^m/\Gamma$. Assume they intersect transversely at exactly one point, with tangent planes satisfying the Lawlor angle criterion (a type-one intersection). By \cite{CatSuTsaiWood2026}, the Main Theorem, Theorem~9.1, Proposition~9.5, and Corollary~9.6, a sufficiently small Lawlor-neck desingularization can be chosen to start a smooth embedded immortal Lagrangian flow $N_t$.
+
+After translating the initial time, take $t\geq0$. Every finite-time slice is a compact complete proper embedded $m$-manifold of codimension $m$, with topology $\mathbb T^m\mathbin{\#}\mathbb T^m$ and no ends. As $t\to\infty$, the flow converges smoothly away from the intersection point to $X_1\cup X_2$. Its neck scale and curvature satisfy, for sufficiently large $t$,
+\[
+ c\,t^{-1/(m-2)}\leq\varepsilon(t)\leq C\,t^{-1/(m-2)},\qquad
+ \max_{N_t}|A|=O(t^{1/(m-2)}).
+\]
+Rescaling about the intersection point by $\varepsilon(t)^{-1}$ gives the Lawlor neck locally smoothly, and the curvature becomes unbounded. These are asymptotic estimates from a parabolic gluing construction, not an exact formula for $N_t$. The singular limiting union does not make the regular slices nonembedded. No symmetry, uniqueness, or uniform mean-curvature decay is asserted. Euclidean Gaussian quantities are not assigned in this torus ambient space. The illustration is a neck-collapse schematic.
+\end{example}
+
+\chapter{Lagrangian sphere chains in Gibbons--Hawking spaces}\label{sec:catalogue-lee-tsai}
+These are surface flows of codimension two in a hyperkahler four-manifold.
+\begin{example}[Infinite-time curvature blow-up with vanishing mean curvature]\label{ex:catalogue-lee-tsai}
+Use the Gibbons--Hawking setting of \cite{CatLeeTsai2026}, Section~2: the circle quotient contains the collinear centers $(a_j,0,0)$ with $-1=a_1<\cdots<a_N=1$, $N\geq3$, and
+\[
+ \varphi=\varphi_{\rm reg}+\frac12\sum_{j=1}^N
+ ((x-a_j)^2+y^2+z^2)^{-1/2},\qquad
+ g=\varphi^{-1}\eta^2+\varphi(dx^2+dy^2+dz^2),
+ \quad d\eta=*d\varphi.
+\]
+The regular part is smooth, nonnegative, and harmonic on the source's quotient neighborhood. Let the initial Lagrangian sphere be the smooth circle lift of a positive concave graph $(x,u_0(x),0)$ joining the outer centers, with $u_0(\pm1)=0$. For fixed $\Lambda>0$, require the small-slope and curvature conditions of Theorem~6.2:
+\[
+ |u_0'|\leq c^{-1},\qquad -u_0''\leq\Lambda u_0\varphi(x,u_0,0),
+\]
+where $c$ is sufficiently large as supplied by that theorem. The reduced equation is
+\[
+ u_t=\frac{u_{xx}}{\varphi(x,u,0)(1+u_x^2)},\qquad u(\pm1,t)=0.
+\]
+The lifted flow exists smoothly for $t\geq0$, remains a compact embedded sphere, and converges to the $A_{N-1}$ chain of $N-1$ special Lagrangian spheres. Theorem~6.2 proves
+\[
+ \sup|\vec H|\longrightarrow0,\qquad
+ 0<\liminf_{t\to\infty}\frac{\log\max|A|}{\sqrt t}
+ \leq\limsup_{t\to\infty}\frac{\log\max|A|}{\sqrt t}<\infty.
+\]
+Finite-time slices have genus zero, no ends, and are complete and proper. Junctions occur only in the infinite-time limit. The quotient drawing is schematic, not a numerical solution of this weighted equation. It is not ordinary planar curve shortening, and Euclidean entropy is inapplicable. The coauthor is Ping-Hung Lee, distinct from Tang-Kai Lee.
+\end{example}
+
+\chapter{Su--Wood stationary products of Lawlor profiles}\label{sec:catalogue-su-wood-stationary}
+\begin{example}[Cohomogeneity-two special Lagrangians]\label{ex:catalogue-su-wood-stationary}
+Let $m\geq3$, $d=m-1$, $I=(-\pi/(2d),\pi/(2d))$, $\mu_1,\mu_2>0$, and $\varphi\in\mathbb R$. Define
+\[
+ r(s)=(\cos(ds))^{-1/d},\quad \ell(s)=r(s)e^{is},\quad
+ B(s)=\int_0^s r(v)^2\,dv.
+\]
+For $u\in S^{m-2}\subset\mathbb R^{m-1}$ and $(x,y)\in I^2$, put
+\[
+ X(u,x,y)=\left(e^{i\varphi}\mu_1\mu_2\ell(x)\ell(y)u,
+ \frac{\mu_2^2r(y)^2-\mu_1^2r(x)^2}{2}
+ +i\bigl(\mu_2^2B(y)-\mu_1^2B(x)\bigr)\right)\in\mathbb C^m.
+\]
+This is an exact integral parametrization of an embedded, exact special Lagrangian of dimension and codimension $m$. Thus $\vec H=0$ and $L_t=X(S^{m-2}\times I^2)$ for every $t\in\mathbb R$. It is the $G=SO(m-1)$ case of \cite{CatSuWood2026}, equation~(31), Theorem~5.6, Proposition~5.9 and Remark~5.10. It has cohomogeneity two under this group; for $m=3$ the topology is $S^1\times\mathbb R^2$, not a surface annulus.
+
+The topology in general is $S^{m-2}\times\mathbb R^2$, with one end. The parametrization is proper: approaching either endpoint of $I$ makes $|\ell(x)\ell(y)|$ diverge, and the remaining factor $u$ is compact. The induced metric is therefore complete. The calibrated image is stable under compactly supported variations. No entropy value or global asymptotic classification is recorded here. The picture is the exact one-dimensional Lawlor profile used twice by the construction, not a projection of the full $m$-manifold.
+
+The same paper constructs translators from a line and an Anciaux shrinker profile, and from an expander/shrinker pair. The line/expander case recovers the symmetric Joyce--Lee--Tsui translator of Example~\ref{ex:catalogue-jlt-translators}; it is not a second catalogue entry. For other symmetry groups some constructions have a one-dimensional singular set, so their smooth embeddedness must not be inferred from this $SO(m-1)$ case.
+\end{example}
+
+\chapter{Stolarski--Su finite-time Lagrangian neck pinches}\label{sec:catalogue-stolarski-su}
+\begin{example}[Prescribed Type II blow-up rates]\label{ex:catalogue-stolarski-su}
+For $n\geq4$ and every integer $K\geq2$, and for $n=3$ with $K\in\{2,3,4\}$, \cite{CatStolarskiSu2026}, Theorem~1.1 and Remark~1, construct smooth noncompact properly embedded exact almost-calibrated Lagrangian mean curvature flows $L(t)\subset\mathbb C^n$, $0\leq t<T<\infty$. Here we record the $SO(n)$-invariant subfamily, of dimension and codimension $n$. Its topology is $S^{n-1}\times\mathbb R$, with two ends, and every regular slice is complete. The topology follows from the global profile graph and its spherical group orbits.
+
+The origin is a finite-time Type II singularity with
+\[
+ 0<\liminf_{t\uparrow T}(T-t)^{K/2}\sup_{L(t)}|A|
+ \leq\limsup_{t\uparrow T}(T-t)^{K/2}\sup_{L(t)}|A|<\infty.
+\]
+The unique tangent flow is a stationary multiplicity-one pair of transverse special Lagrangian planes. In contrast, the finer rescaling satisfies
+\[
+ (T-t)^{-K/2}L(t)\longrightarrow aL
+ \quad\hbox{smoothly on compact sets},\qquad a>0,
+\]
+where $L$ is the rotational Lawlor neck. Up to a fixed unitary rotation, that limiting neck has the exact parametrization
+\[
+ X(u,\theta)=(\sin(n\theta))^{-1/n}e^{i\theta}u,
+ \quad u\in S^{n-1},\quad0<\theta<\pi/n.
+\]
+This is a formula for the blow-up limit, not for $L(t)$. The actual flow is constructed by solving a nonlinear parabolic problem near a modulated neck of scale comparable to $(T-t)^{K/2}$, and has no closed formula. The initial Lagrangian angle oscillation can be arbitrarily small. These existence and convergence statements do not assert dynamical stability, uniqueness of the initial data, or a numerical entropy value. The illustration compares shrinking neck scales schematically; it is not a time integration of the PDE. The compact immersed variant mentioned in the source's Remark~3 is outside this entry.
 \end{example}

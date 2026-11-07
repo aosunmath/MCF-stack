@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-07",
+  "scope": "Publication-list search and selected mathematical source review, not a full proof audit or an exhaustive classification. Public PDFs and extracted text are not redistributed.",
+  "identity_notes": [
+    "The user confirmed Chung-Jun Tsai and Jonathan J. Zhu, and added Mao-Pei Tsui, Mu-Tao Wang and Wei-Bo Su.",
+    "Dominic Joyce and Tang-Kai Lee are the other requested authors. Yng-Ing Lee and Ping-Hung Lee are distinct coauthors; Jingze Zhu is distinct from Jonathan Zhu."
+  ],
+  "publication_lists": [
+    {
+      "author": "Dominic Joyce",
+      "url": "https://people.maths.ox.ac.uk/~joyce/publ.html"
+    },
+    {
+      "author": "Tang-Kai Lee",
+      "url": "https://www.math.columbia.edu/~leetk/research.html"
+    },
+    {
+      "author": "Jonathan J. Zhu",
+      "url": "https://sites.math.washington.edu/~jonozhu/research.html"
+    },
+    {
+      "author": "Chung-Jun Tsai",
+      "url": "https://homepage.ntu.edu.tw/~cjtsai/research.html"
+    },
+    {
+      "author": "Mao-Pei Tsui (older list, supplemented by joint current sources)",
+      "url": "https://www.math.utoledo.edu/~mtsui/pub.html"
+    },
+    {
+      "author": "Mu-Tao Wang",
+      "url": "https://www.math.columbia.edu/~mtwang/publication.pdf",
+      "edition": "List dated July 2025, supplemented by current joint sources"
+    },
+    {
+      "author": "Wei-Bo Su",
+      "url": "https://sites.google.com/view/weibosu"
+    }
+  ],
+  "sources": [
+    {
+      "key": "CatLeeWang2009",
+      "arxiv": "0707.0239v1",
+      "checked": "Section 2.2, equations for S and its metric; Proposition 2.2. Unit convention checked against the normalized Möbius map."
+    },
+    {
+      "key": "CatBraxtonLeeZhu2026",
+      "arxiv": "2609.19648v1",
+      "checked": "Theorem 1.2; Section 2.1, quotient (2.2), metric and shrinker identity; Section 7.2 and Remarks 7.3–7.6, including exact entropy. No genericity theorem inferred."
+    },
+    {
+      "key": "CatJoyceLeeTsui2010",
+      "arxiv": "0801.3721v2",
+      "checked": "Theorems A–F, Corollaries H–I, Sections 3–6. Periodic compact case E(a)(ii); plane-neck cases C–D; translator formula (18), with direct integral rewrite; constant-radius rotating subcase of G/H."
+    },
+    {
+      "key": "CatImagiJoyceOliveira2016",
+      "arxiv": "1404.0271v2",
+      "checked": "Theorems 1.1–1.2, Remark 1.3, Examples 3.9 and 3.15; n ≥ 3, exactness, embeddedness and asymptotic rates retained."
+    },
+    {
+      "key": "CatTsaiTsuiWang2025",
+      "arxiv": "2309.09432v2",
+      "checked": "Definition 2.1; Theorem 5.6; Theorem 6.2 and Propositions 6.3/6.5. Concrete nonquadratic seed is an independent substitution into Proposition 6.5."
+    },
+    {
+      "key": "CatAryanLee2026",
+      "arxiv": "2608.04855v1",
+      "checked": "Theorem 1.1 and Theorem 5.1, Section 5 proof; exact omega-limit set, smooth reparametrized convergence and antipodally invariant nonround metrics."
+    },
+    {
+      "key": "CatSuTsaiWood2026",
+      "arxiv": "2401.02228v3",
+      "checked": "Main Theorem (p. 4), Theorem 9.1, Proposition 9.5 and Corollary 9.6. m ≥ 3, flat complex torus, one transverse type-one intersection, neck scale and curvature rate."
+    },
+    {
+      "key": "CatLeeTsai2026",
+      "arxiv": "2606.28767v1",
+      "checked": "Sections 2–3 for ambient metric and quotient PDE; Theorem 6.2 and its proof for precise initial slope/concavity hypotheses, N ≥ 3, vanishing H and log curvature / sqrt(t) bounds."
+    },
+    {
+      "key": "CatLeeWang2010",
+      "arxiv": "0802.0359v1",
+      "checked": "Propositions 2.1–2.2 and Theorem 1.1; unit weights ±1, positive weight sum, explicit mapping-torus quotient retained. Topology and orientability audited directly, including the disconnected-fiber exception to Proposition 2.2 shorthand."
+    },
+    {
+      "key": "CatSu2022",
+      "arxiv": "2011.07882v2",
+      "checked": "Main Theorem, Corollary 1.1, Sections 2–4 and final perturbation argument; m ≥ 3, admissible angles, T-finite grim-cylinder arrangement, gluing scale distinct from time."
+    },
+    {
+      "key": "CatSuWood2026",
+      "arxiv": "2507.01345v1",
+      "checked": "Theorem 5.6, equation (31), Proposition 5.9 and Remark 5.10 for the SO(m−1) stationary family; Sections 5.2–5.4 for overlap and singular-group cautions."
+    },
+    {
+      "key": "CatStolarskiSu2026",
+      "arxiv": "2607.03152v1",
+      "checked": "Theorem 1.1, Remark 1 and Section 2.2; restricted SO(n) case, permitted n and K, topology from profile and spherical orbits, multiplicity-one tangent flow, finer Lawlor blow-up limit."
+    },
+    {
+      "key": "CatChoiSeoSuZhao2026",
+      "arxiv": "2603.09112v1",
+      "checked": "Theorem 1.1 and Corollary 1.5; entropy means supremum over all flow times. Classification cross-linked to the existing embedded graphical grim-chain family."
+    }
+  ],
+  "entries": [
+    {
+      "label": "ex:catalogue-mobius-shrinker",
+      "section": "the-lee-wang-self-shrinking-mobius-bundle",
+      "citations": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "formula_status": "Exact four-dimensional projection",
+      "illustration": "A finite patch of the exact embedded Möbius quotient in C². Rotation changes the projection; projected crossings do not imply self-intersection."
+    },
+    {
+      "label": "ex:catalogue-jlt-compact-shrinkers",
+      "section": "compact-periodic-lagrangian-quadric-shrinkers",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "formula_status": "Construction diagram",
+      "illustration": "The ODE and rational phase-closing conditions produce a compact immersion with domain Sⁿ⁻¹ × S¹. No numerical closed orbit or embeddedness is claimed by this picture."
+    },
+    {
+      "label": "ex:catalogue-jlt-translators",
+      "section": "joyce-lee-tsui-small-angle-lagrangian-translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "formula_status": "Numerical quadrature and projection",
+      "illustration": "The n = 2, a₁ = α = 1 exact integral parametrization is evaluated numerically and projected from R⁴. The displayed patch is truncated; the full embedded surface has one end."
+    },
+    {
+      "label": "ex:catalogue-jlt-rotating-translators",
+      "section": "explicit-rotating-lagrangian-translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "formula_status": "Exact four-dimensional projection",
+      "illustration": "The n = 2 map (x eⁱˢ, x²/2 − is) on a finite parameter window. Its last imaginary coordinate separates turns. Use 4D rotation to change the projection."
+    },
+    {
+      "label": "ex:catalogue-jlt-expanders",
+      "section": "joyce-lee-tsui-lagrangian-expander-necks",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "formula_status": "Numerical quadrature and projection",
+      "illustration": "The exact integral parametrization in C² with a₁ = a₂ = 1 and α = 1/2, evaluated numerically. Both planar ends are truncated. This is a projection, not an R³ expander."
+    },
+    {
+      "label": "ex:catalogue-ttw-expanders",
+      "section": "two-convex-lagrangian-graphical-expanders",
+      "citations": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "formula_status": "Exact initial-cone projection",
+      "illustration": "The gradient cone of the nonquadratic potential specified in the text, projected from C². It is initial data at t = 0; the positive-time expander is constructed by PDE and is not rendered here."
+    },
+    {
+      "label": "ex:catalogue-lawlor-necks",
+      "section": "lawlor-necks-as-stationary-lagrangian-flows",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "formula_status": "Exact four-dimensional projection",
+      "illustration": "A truncated exact Lawlor annulus in C² with a₁ = a₂ = 1. It is stationary under MCF. Projected crossings do not change its embeddedness in R⁴."
+    },
+    {
+      "label": "ex:catalogue-aryan-lee",
+      "section": "immortal-curve-shortening-with-nonunique-geodesic-limits",
+      "citations": [
+        "CatAryanLee2026"
+      ],
+      "formula_status": "Parameter-space schematic",
+      "illustration": "The spiral represents a slow parameter approaching a circle of critical points, each indexing a different limiting geodesic. This is not a simulation on a round sphere."
+    },
+    {
+      "label": "ex:catalogue-su-tsai-wood",
+      "section": "lagrangian-torus-necks-collapsing-at-infinite-time",
+      "citations": [
+        "CatSuTsaiWood2026"
+      ],
+      "formula_status": "Neck-collapse schematic",
+      "illustration": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit."
+    },
+    {
+      "label": "ex:catalogue-lee-tsai",
+      "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+      "citations": [
+        "CatLeeTsai2026"
+      ],
+      "formula_status": "Circle-quotient schematic",
+      "illustration": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions."
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-shrinkers",
+      "section": "lee-wang-embedded-quadric-shrinkers",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "formula_status": "Exact real slice",
+      "illustration": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension."
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-expanders",
+      "section": "lee-wang-embedded-quadric-expanders",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "formula_status": "Exact real slice",
+      "illustration": "The s = 0 real slice x₁² + x₂² − x₃² = −2 in C³. Its two sheets join through the circle quotient in the connected three-dimensional expander."
+    },
+    {
+      "label": "ex:catalogue-su-glued-translators",
+      "section": "su-translators-obtained-by-gluing-grim-cylinders",
+      "citations": [
+        "CatSu2022"
+      ],
+      "formula_status": "Gluing schematic",
+      "illustration": "Two intersecting grim cylinders in Cᵐ, m ≥ 3, are replaced by a small Lawlor neck and perturbed to a translator. This is a schematic, not an exact surface or a numerical PDE solution."
+    },
+    {
+      "label": "ex:catalogue-su-wood-stationary",
+      "section": "su-wood-stationary-products-of-lawlor-profiles",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "formula_status": "Exact auxiliary profile",
+      "illustration": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³."
+    },
+    {
+      "label": "ex:catalogue-stolarski-su",
+      "section": "stolarski-su-finite-time-lagrangian-neck-pinches",
+      "citations": [
+        "CatStolarskiSu2026"
+      ],
+      "formula_status": "Neck-scale schematic",
+      "illustration": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices."
+    }
+  ],
+  "exclusions": [
+    "JLT nonperiodic bounded/quasiperiodic immersions and mixed-sign periodic quadrics are not catalogued in this selected addition; no completeness/properness or entropy is guessed for them.",
+    "The JLT constant-radius compact shrinkers overlap familiar examples and are excluded from the new compact-periodic entry.",
+    "Joyce’s conjectural surgery program is recorded as context, not a proved example or a classification.",
+    "Lee–Zhao and Chen–Lee–Sun–Zhao compact realizations of prescribed hypersurface singularities are already discussed in the catalogue source audit; their shrinker models are not duplicated.",
+    "Jonathan Zhu’s rigidity, entropy, uniqueness and free-boundary regularity papers are reviewed as context; existing spheres, cylinders and Clifford products are not duplicated.",
+    "No weak Brakke continuation through the Möbius cone is claimed; quotient multiplicities require a separate audit.",
+    "Other Lee–Wang integer weights are not conflated with the reviewed embedded unit-weight n ≥ 3 cases; no weak-flow multiplicity is inferred for a different quotient.",
+    "Su–Wood line/expander translators duplicate the symmetric JLT subfamily. Nonconstant shrinker/line translators and general-group immersed or singular cases are described in the source review but are outside this selected addition.",
+    "Tsai–Wang special-holonomy stability supplies stationary zero sections and nearby immortal flows; these are recorded as contextual candidates, with exact ambient metrics and smallness hypotheses, rather than merged with Euclidean examples."
+  ]
+}
