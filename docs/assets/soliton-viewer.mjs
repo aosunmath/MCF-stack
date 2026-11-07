@@ -263,6 +263,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='trident-schematic'){
         const {initTridentFigure}=await import('./trident-viewer.mjs');
         initTridentFigure(figure,data);
+      } else if(data.kind==='scherkenoid-schematic'){
+        const {initScherkenoidFigure}=await import('./scherkenoid-viewer.mjs');
+        initScherkenoidFigure(figure,data);
       } else if(data.kind==='nguyen-scherk-schematic'){
         const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
         initNguyenFigure(figure,data);
