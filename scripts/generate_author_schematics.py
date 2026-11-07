@@ -83,12 +83,13 @@ def spiral():
 
 
 def chains():
- s=heading('Three grim-reaper turns: an eternal curve')
- for i,y in enumerate([98,169,240,311]):
-  line(s,45,y,595,y,stroke=MUTED,width=1,stroke_dasharray='6 5');text(s,55,y-7,'a'+str(3-i),14)
- path(s,'M575,307 C360,307 130,300 130,274 C130,247 355,242 452,221 C510,208 510,190 452,179 C355,158 130,161 130,134 C130,107 360,102 575,102',width=3)
- text(s,320,135,'G₃',18,anchor='middle');text(s,320,206,'G₂',18,anchor='middle');text(s,320,277,'G₁',18,anchor='middle')
- finish(s,'grim-reaper-chains',['Monotone asymptote heights give the embedded graphical subfamily.','The joins are heuristic; the full glued solution is not an explicit formula.'])
+ # The time-resolved numerical illustration is owned by its dedicated generator.
+ # This schematic-only command does not regenerate the numerical PDE data.
+ # Regeneration: python3 scripts/generate_reaper_flow.py --audit
+ # Leave its SVG intact rather than restoring the obsolete hand-drawn path.
+ if not (OUT/'grim-reaper-chains.svg').is_file():
+  raise FileNotFoundError('Run scripts/generate_reaper_flow.py first')
+
 
 def main():
  mountain();highgenus();knot();perturbation();pancakes();spiral();chains()
