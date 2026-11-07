@@ -3393,7 +3393,7 @@
       "category": "shrinkers",
       "tag": "45B364E949D5",
       "model": "hmw-one-ended",
-      "illustration_status": "Original schematic"
+      "illustration_status": "Topology schematic and limiting configuration"
     },
     {
       "label": "ex:catalogue-hmw-three-ended",

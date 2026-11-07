@@ -26,3 +26,5 @@
 
 .iw-view-label{right:14px;line-height:1.4}
 @media print{.iw-view-label{display:none}}
+.hmw-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
+@media print{.hmw-view-label{display:none}}
