@@ -1,16 +1,16 @@
 {
-  "built_at": "2026-11-07T02:19:59.745924+00:00",
-  "publishing_commit": "4095bee61449053ca581762986a17c2cea3dd1bc",
+  "built_at": "2026-11-07T02:20:52.390796+00:00",
+  "publishing_commit": "83d6848682d2baf62e5335517856a1321be636f0",
   "sources": [
     {
       "repository": "https://github.com/aosunmath/MCF-stack",
       "ref": "local:content/gmt-foundations",
       "kind": "local-manuscript",
-      "source_sha256": "cf317c9f5802769a07e0b222a74e7537a7130ef7d177fd0a232a1821df9424a0",
+      "source_sha256": "4cabd6fa5d706132f4e77212cc59ca73f27460a7146bbadfc3131de79384a1d3",
       "files": {
         "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
         "catalogue-expanders.tex": "1f918b5f73a36c0bb6f8db7d9e48ebe3bccdc8ca148ca2b5603bf0a15eb27977",
-        "catalogue-other-flows.tex": "68b57f9bdc82026358cb5b3b4f88e7e54bb5d13dbbf47dff185e0a40dd6b943a",
+        "catalogue-other-flows.tex": "7872517eac1ad55c4431ae4040bafe2925e4b0d23c28200c8ae3ffa47b0b9950",
         "catalogue-shrinkers.tex": "bec14bf1318a2ab2054eb89e5882f388acdf74465e315f87321027c89de7860d",
         "catalogue-translators.tex": "bbfb1044618f34e6777e7ffb42ca3881356bbe0aaa4725b303dedc163ef3d3ab",
         "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
