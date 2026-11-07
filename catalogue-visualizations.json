@@ -635,10 +635,10 @@
         "CatCS26R3"
       ],
       "model": "immortal-annulus",
-      "status": "Immortal-flow schematic",
-      "caption": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
-      "alt": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
-      "interactive": false
+      "status": "Schematic time sequence",
+      "caption": "Rotate the annulus, use the cutaway, and compare earlier, intermediate, and later finite stages with the separate limit t → ∞. The viewing scale is fixed. The compressed radial profile shows the fixed asymptotic heights ±h. Shapes and stage spacing are illustrative, not computed PDE time slices or a convergence rate.",
+      "alt": "Three schematic finite-time annuli with decreasing positive neck radii and locally flattening sheets, followed by one limiting plane counted twice. Far ends retain their asymptotic planes.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-double-sphere-flow",
