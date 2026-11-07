@@ -3181,7 +3181,7 @@
     },
     {
       "label": "ex:catalogue-hmw-platonic-polygon",
-      "notes": "MCF construction, separate from the min-max entries; no equality or noncongruence theorem is asserted. Compact numerical pictures do not determine compactness of the theorem’s selected surfaces.",
+      "notes": "MCF construction, separate from the min-max entries; no equality or noncongruence theorem is asserted. Compact numerical pictures do not determine compactness of the theorem’s selected surfaces. The interactive punctured-shell models illustrate the topology of the initial-surface construction in Theorem 24; their compactness and display parameters are not properties of the tangent shrinkers.",
       "citations": [
         "CatHMW2026"
       ],
@@ -3279,7 +3279,7 @@
       "category": "shrinkers",
       "tag": "A455BCCC51D0",
       "model": "hmw-platonic-polygon",
-      "illustration_status": "Original schematic"
+      "illustration_status": "Original construction schematic"
     },
     {
       "label": "ex:catalogue-hmw-one-ended",
