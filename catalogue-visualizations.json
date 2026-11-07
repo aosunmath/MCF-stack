@@ -591,10 +591,10 @@
         "CatSunWang2025"
       ],
       "model": "sun-wang-doubled-sphere-end",
-      "status": "R4 end schematic",
-      "caption": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
-      "alt": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
-      "interactive": false
+      "status": "Interactive horizontal-slice schematic in ℝ⁴",
+      "caption": "Sun–Wang, equations (3.1)–(3.2): horizontal slices grow like √z times the prescribed shrinker. Rotate the connected spherical-doubling model, expose its necks with Cutaway, or vary height and rescale by 1/√z. These are two-dimensional slices of one three-dimensional end in ℝ⁴. The input shrinker is schematic; the unknown normal correction and compact core are omitted. Displayed bridge counts are illustrative, not existence thresholds.",
+      "alt": "A cutaway horizontal slice exposes gold inner and blue outer spherical sheets joined by twenty copper necks on two aligned latitude circles. Its model genus is nineteen. Height controls square-root growth; rescaling removes this growth. Schematic slices of one end in four-space, not a computed translator.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-ancient-torus-curves",
