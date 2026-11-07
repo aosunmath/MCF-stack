@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Generate original, source-conscious SVG diagrams for the MCF catalogue.
 
-The cone and neckpinch diagrams are explicitly schematic; the network uses
-the dedicated numerical ODE generator. The intermediate neckpinch curve is
-sampled from the limiting formula for n=2, m=3, K=1; it is not a solution at
-finite time. No source-paper figure or private PDF asset is copied.
+The cone is schematic. The network uses its dedicated numerical ODE generator;
+the neckpinch delegates to its asymptotic time-sequence renderer, whose compact
+slices are schematic and whose bowl cap is numerical. No source-paper figure
+or private PDF asset is copied.
 
 Run: python3 scripts/generate_expander_schematics.py
 """
@@ -109,53 +109,9 @@ def expanding_network():
 
 
 def neckpinch_scales():
-    svg = canvas('Three limits of a degenerate neckpinch',
-        'Three panels distinguish the cylindrical parabolic limit, the bowl limit '
-        'after rescaling at the tip, and an intermediate anisotropic limiting profile. '
-        'The first two drawings are schematic; the third plots r=sqrt(2+x^3), '
-        'the limit for n=2, m=3 and K=1. No exact full evolving compact surface is drawn.')
-    text(svg, 24, 33, 'Three scales near a degenerate neckpinch', 23, weight=650)
-    text(svg, 24, 59, 'Limits of the same type-II singularity · not an exact full flow', fill=MUTED)
-    for x in [20,225,430]:
-        card(svg,x,79,190,249)
-    text(svg,34,108,'Parabolic scale',18,weight=600)
-    text(svg,34,132,'at the origin',15,fill=MUTED)
-    # Schematic cylinder viewed obliquely, with its exact limiting radius stated.
-    el(svg, 'ellipse', cx=62, cy=208, rx=15, ry=40, fill=PALE,
-       stroke=ACCENT, stroke_width=2)
-    el(svg, 'rect', x=62, y=168, width=105, height=80, fill=PALE)
-    line(svg,62,168,167,168,width=2)
-    line(svg,62,248,167,248,width=2)
-    el(svg, 'ellipse', cx=167, cy=208, rx=15, ry=40, fill='none',
-       stroke=ACCENT, stroke_width=2)
-    path(svg,'M62,168 A15,40 0 0 1 62,248',width=1.3,stroke_dasharray='4 4')
-    text(svg,34,281,'Cylinder limit',16,weight=600)
-    text(svg,34,307,'radius √[2(n − 1)]',15,fill=MUTED)
-    text(svg,239,108,'Tip scale',18,weight=600)
-    text(svg,239,132,'at maximum |A|',15,fill=MUTED)
-    # A generic convex profile illustrates the bowl type only. It is not an ODE solution.
-    path(svg, 'M388,155 C347,161 282,182 274,207 C282,232 347,253 388,259', width=3)
-    line(svg,258,207,398,207,stroke=BORDER,width=1.4,stroke_dasharray='4 4')
-    line(svg,292,207,341,207,width=2,marker_end='url(#arrow)')
-    el(svg,'circle',cx=274,cy=207,r=4,fill=INK)
-    text(svg,239,281,'Translating bowl',16,weight=600)
-    text(svg,239,307,'schematic profile',15,fill=MUTED)
-    text(svg,444,108,'Intermediate scale',17,weight=600)
-    text(svg,444,132,'different axial scaling',15,fill=MUTED)
-    xmin,xmax=-(2**(1/3)),1.22
-    pts=[]
-    for i in range(241):
-        x=xmin+(xmax-xmin)*i/240
-        r=math.sqrt(max(0,2+x**3))
-        pts.append((450+(x-xmin)/(xmax-xmin)*151,208-r*25))
-    curve(svg,pts)
-    curve(svg,[(x,416-y) for x,y in pts])
-    line(svg,446,208,607,208,stroke=BORDER,width=1.4,stroke_dasharray='4 4')
-    text(svg,444,281,'r = √(2 + x³)',16,weight=600)
-    text(svg,444,307,'n = 2, m = 3, K = 1',15,fill=MUTED)
-    text(svg,24,361,'The intermediate curve is an asymptotic limiting profile.',16)
-    text(svg,24,389,'No exact compact time-dependent solution is depicted.',15,fill=MUTED)
-    save('neckpinch-scales.svg',svg)
+    # Retain the public filename, using the source-based time-sequence renderer.
+    import subprocess
+    subprocess.run(['node', str(ROOT / 'scripts/render_neckpinch_picture.mjs')], check=True)
 
 
 def main():

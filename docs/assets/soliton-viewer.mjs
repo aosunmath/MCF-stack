@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='ancient-spiral-asymptotic'){
+      if(data.kind==='av-neckpinch'){
+        const {initNeckpinchFigure}=await import('./neckpinch-viewer.mjs');
+        initNeckpinchFigure(figure,data);
+      } else if(data.kind==='ancient-spiral-asymptotic'){
         const {initAncientSpiralFigure}=await import('./ancient-spiral-viewer.mjs');
         initAncientSpiralFigure(figure,data);
       } else if(data.kind==='wang-level-schematic'){
@@ -254,9 +257,6 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='grim-reaper-flow'){
         const {initReaperFlow}=await import('./reaper-flow-viewer.mjs');
         initReaperFlow(figure,data);
-      } else if(data.kind==='immortal-annulus-stages'){
-        const {initImmortalAnnulus}=await import('./immortal-annulus-viewer.mjs');
-        initImmortalAnnulus(figure,data,rotatePoint);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
