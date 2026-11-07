@@ -54,6 +54,8 @@ The catalogue records source-supported properties and precise theorem or page lo
 
 The [requested author survey](documentation/author-paper-search.md) adds twelve families from online papers and arXiv, records coverage of all fifteen requested authors, and updates pitchfork uniqueness and entropy. Its original figures are labeled heuristic; four also support interactive rotation and zoom.
 
+The [knotted-expander picture](documentation/knotted-expander-picture.md) shows a connected trefoil surface with three annular ends, with rotation, zoom, and views of the tube and punctures. Its topology is checked; its geometry is schematic.
+
 ## Browse by geometric properties
 
 The [property browser](https://aosunmath.github.io/MCF-stack/browse/) combines filters for ambient space, intrinsic dimension, compactness, embeddedness, surface genus, topological ends, and Gaussian area or entropy. Group results by ambient space, embeddedness, genus, ends, or the type of entropy information, and share the resulting URL. Embeddedness distinguishes embedded examples, nonembedded examples, families whose status depends on the construction, and cases where no conclusion is recorded.

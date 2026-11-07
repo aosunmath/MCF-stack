@@ -88,3 +88,7 @@
 @media print{.ancient-spiral-figure .soliton-stage{height:auto}.ancient-spiral-figure .soliton-stage img{height:auto}.spiral-legend{display:none}.ancient-spiral-figure .soliton-status{display:none}}
 
 .soliton-figure[data-soliton$="ancient-spiral-curves.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:880/760}
+/* Knotted expander: labels identify the three artificial end cuts. */
+.knotted-view-label{position:absolute;top:12px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.knotted-end-label{position:absolute;transform:translate(-50%,-50%);width:21px;height:21px;border-radius:50%;background:#f7fafbe8;border:1px solid #8b9fa8;color:#183f52;font:12px/21px Arial,sans-serif;text-align:center;pointer-events:none}
+@media print{.knotted-view-label,.knotted-end-label{display:none}}

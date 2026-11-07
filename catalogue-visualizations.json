@@ -878,10 +878,19 @@
         "CatMWKnotted26"
       ],
       "model": "knotted-expanders",
-      "status": "Heuristic schematic",
-      "caption": "An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
-      "alt": "Knotted self-expanders. An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
-      "interactive": false
+      "status": "Topology schematic",
+      "caption": "A trefoil tube with three attached annular ends, following Theorem 1.1 and Corollary 3.2. Rotate to inspect the crossings; switch views to see the closed tube and three punctures. The colored ends flare only to suggest conical asymptotics. This mesh is not a computed expander.",
+      "alt": "A connected two-dimensional trefoil tube with three open colored ends. The crossings pass above and below one another. Genus one; three display rims. Topology schematic, not a numerical self-expander.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "knotted-expander-construction",
+          "status": "Topology construction",
+          "interactive": false,
+          "caption": "Thicken the trefoil, remove three disks, and attach three annuli. The genus stays one. In the paper, expanding annular barriers protect the overpass bridges during minimization (Figure 2). The drawings illustrate the topology, not the geometric Plateau solutions.",
+          "alt": "Three stages: a closed trefoil tube, the tube with three punctures, and the tube continued into three annular ends."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-hh-ancient-ovals",

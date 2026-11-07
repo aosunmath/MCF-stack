@@ -284,6 +284,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='pitchfork-schematic'){
         const {initPitchforkFigure}=await import('./pitchfork-viewer.mjs');
         initPitchforkFigure(figure,data);
+      } else if(data.kind==='knotted-expander-schematic'){
+        const {initKnottedFigure}=await import('./knotted-expander-viewer.mjs');
+        initKnottedFigure(figure,data);
       } else if(data.kind==='nguyen-scherk-schematic'){
         const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
         initNguyenFigure(figure,data);

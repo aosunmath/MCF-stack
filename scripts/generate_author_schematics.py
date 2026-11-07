@@ -57,27 +57,12 @@ def highgenus():
 
 
 def knot():
- s=heading('A trefoil core with three end attachments')
- # Projection of an original standard trefoil; white under-strokes show overpasses.
- points=[]
- for i in range(421):
-  t=TAU*i/420;points.append((320+64*(math.sin(t)+2*math.sin(2*t)),210+40*(math.cos(t)-2*math.cos(2*t)),math.sin(3*t)))
- curve(s,[p[:2] for p in points],width=5)
- # Redraw only actual overcrossings, leaving the rest of the knot continuous.
- for i in range(420):
-  a,b=points[i:i+2];u=(b[0]-a[0],b[1]-a[1])
-  for j in range(i+30,420):
-   if min(j-i,420-(j-i))<30:continue
-   c,d=points[j:j+2];v=(d[0]-c[0],d[1]-c[1]);det=u[0]*v[1]-u[1]*v[0]
-   if abs(det)<1e-8:continue
-   delta=(c[0]-a[0],c[1]-a[1]);t=(delta[0]*v[1]-delta[1]*v[0])/det;h=(delta[0]*u[1]-delta[1]*u[0])/det
-   if 0<t<1 and 0<h<1:
-    k=i if a[2]+t*(b[2]-a[2])>c[2]+h*(d[2]-c[2]) else j
-    arc=[points[q%420][:2] for q in range(k-5,k+7)]
-    curve(s,arc,stroke='white',width=12);curve(s,arc,width=5)
- for x,y,tx,ty,label in [(320,150,320,86,'end 1'),(169,240,78,285,'end 2'),(471,240,567,285,'end 3')]:
-  line(s,x,y,tx,ty,stroke='#b06a35',width=2,stroke_dasharray='5 4');text(s,tx,ty-6,label,15,anchor='middle')
- finish(s,'knotted-expanders',['The curve is a knot spine, not the two-dimensional expander.','Thicken the core, puncture three disks, and attach annular ends.'])
+ # The reviewed surface model has its own generator and scientific dependencies.
+ # Never replace it with the superseded one-dimensional spine-only drawing.
+ for name in ['knotted-expanders.svg','knotted-expanders.json','knotted-expander-construction.svg']:
+  if not (OUT/name).is_file():
+   raise FileNotFoundError('Run scripts/generate_knotted_geometry.py to restore '+name)
+
 
 def perturbation():
  s=heading('Ancient flows on either side of a minimal M')
