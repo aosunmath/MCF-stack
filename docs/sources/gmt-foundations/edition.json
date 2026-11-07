@@ -1,11 +1,11 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "4e7a5ee187da1bcb4d7b535a87465d4570149be7a994bba99230019bea4c0b9f",
+  "source_sha256": "85c4c41ef44d7f722c9990b06b945208cbebf2cc798a4bdc1499ea3ac9b7cadd",
   "files": {
     "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
     "catalogue-expanders.tex": "686148ab53266c05740a01f39b513d837f6ba38fb8db77f9e0302a37ca770683",
-    "catalogue-other-flows.tex": "248db411589a4920563e18842e1219cb9d4f6e19b4eb2618d1a7bcbf735dac5b",
+    "catalogue-other-flows.tex": "3ed9f9ecf19dfd9b9a7d0135a99d933bf0301f857fcb31a80764f46422ffb45a",
     "catalogue-shrinkers.tex": "0777a482d9f5936b2c51bb632fc6a94d00caa498b1abdcf636400f95be74dcc6",
     "catalogue-translators.tex": "77c193f099efc9b59b0b7a69a8419e158436b21d2626e6259ae5a0faee15c9a4",
     "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
