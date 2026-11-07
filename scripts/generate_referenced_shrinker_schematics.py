@@ -100,29 +100,13 @@ def stacking():
     drawing(json.loads((OUT/'shao-zou-stacking.json').read_text()))
 
 
-def rays(f,cx,cy,kind):
-    p=project(cx,cy,56,yaw=.5,pitch=.4)
-    if kind=='cube':vectors=[(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
-    else:vectors=[(math.cos(a),math.sin(a),0) for a in base.angles(7)[:-1]]
-    for v in vectors:
-        a,b=p((0,0,0)),p(tuple(1.4*x for x in v));f.line([a,b],color=SEAM,width=1.8)
-        f.ellipse(*b,3,3,color=SEAM,fill=SEAM,width=1)
-    f.ellipse(cx,cy,4,4,fill=INK,width=1)
-
-
 def hmw_platonic():
-    f=Figure('Hoffman–Martin–White shrinkers avoiding prescribed rays',
-             'The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.')
-    heading(f,'HMW Platonic and polygonal shrinkers','Prescribed rays Q encode symmetry and genus')
-    rays(f,177,204,'cube');rays(f,475,204,'polygon')
-    f.text(177,109,'Cube face-center rays',17,anchor='middle')
-    f.text(475,109,'Regular polygon rays',17,anchor='middle')
-    f.text(177,302,'6 rays → genus 5',17,anchor='middle')
-    f.text(475,302,'n rays → genus n − 1',17,anchor='middle')
-    footer(f,['The constructed shrinker avoids Q; Q is not the surface.',
-              'Compactness and exact end counts are not fixed in general.',
-              'SCHEMATIC • symmetry data, not a computed shrinker'])
-    f.save('hmw-platonic-polygon.svg')
+    # Preserve the ray-avoiding models from generate_hmw_rays_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-platonic-polygon.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def hmw_one():

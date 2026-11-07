@@ -1,0 +1,170 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/abs/2502.20340v3",
+  "source_locations": "Section 4; Theorem 12 and Figure 2, pp. 8\u20139; Theorem 24, pp. 15\u201316",
+  "pde_solved": false,
+  "models": {
+    "tetrahedron": {
+      "vertices": 11226,
+      "faces": 22460,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -4,
+      "genus": 3,
+      "minimum_triangle_area": 0.0012522736132622506,
+      "ray_count": 4,
+      "minimum_vertex_ray_angle": 0.2437999999999986,
+      "cap_angle": 0.53,
+      "waist_angle": 0.24380000000000002,
+      "half_gap": 0.34
+    },
+    "cube": {
+      "vertices": 12624,
+      "faces": 25264,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -8,
+      "genus": 5,
+      "minimum_triangle_area": 0.0009870668727668765,
+      "ray_count": 6,
+      "minimum_vertex_ray_angle": 0.24379999999999952,
+      "cap_angle": 0.53,
+      "waist_angle": 0.24380000000000002,
+      "half_gap": 0.34
+    },
+    "octahedron": {
+      "vertices": 15256,
+      "faces": 30536,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -12,
+      "genus": 7,
+      "minimum_triangle_area": 0.0010780528648511429,
+      "ray_count": 8,
+      "minimum_vertex_ray_angle": 0.20950929283139824,
+      "cap_angle": 0.45545498441608656,
+      "waist_angle": 0.20950929283139982,
+      "half_gap": 0.34
+    },
+    "dodecahedron": {
+      "vertices": 19694,
+      "faces": 39428,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -20,
+      "genus": 11,
+      "minimum_triangle_area": 0.0009362026479932796,
+      "ray_count": 12,
+      "minimum_vertex_ray_angle": 0.18843671176855298,
+      "cap_angle": 0.40964502558381344,
+      "waist_angle": 0.1884367117685542,
+      "half_gap": 0.3277160204670508
+    },
+    "icosahedron": {
+      "vertices": 31346,
+      "faces": 62764,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -36,
+      "genus": 19,
+      "minimum_triangle_area": 0.0004103769319871419,
+      "ray_count": 20,
+      "minimum_vertex_ray_angle": 0.12419964708982738,
+      "cap_angle": 0.2699992328039775,
+      "waist_angle": 0.12419964708982964,
+      "half_gap": 0.215999386243182
+    },
+    "polygon-3": {
+      "vertices": 10512,
+      "faces": 21028,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -2,
+      "genus": 2,
+      "minimum_triangle_area": 0.0012068079579542247,
+      "ray_count": 3,
+      "minimum_vertex_ray_angle": 0.24379999999999952,
+      "cap_angle": 0.53,
+      "waist_angle": 0.24380000000000002,
+      "half_gap": 0.34
+    },
+    "polygon-5": {
+      "vertices": 12590,
+      "faces": 25192,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -6,
+      "genus": 4,
+      "minimum_triangle_area": 0.001100308522870489,
+      "ray_count": 5,
+      "minimum_vertex_ray_angle": 0.2138796278563915,
+      "cap_angle": 0.4649557127312893,
+      "waist_angle": 0.21387962785639308,
+      "half_gap": 0.34
+    },
+    "polygon-7": {
+      "vertices": 15862,
+      "faces": 31744,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -10,
+      "genus": 6,
+      "minimum_triangle_area": 0.0006185385843685134,
+      "ray_count": 7,
+      "minimum_vertex_ray_angle": 0.15277116275456457,
+      "cap_angle": 0.33211122337949234,
+      "waist_angle": 0.15277116275456648,
+      "half_gap": 0.26568897870359387
+    },
+    "polygon-12": {
+      "vertices": 23108,
+      "faces": 46256,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -20,
+      "genus": 11,
+      "minimum_triangle_area": 0.00021218960291209278,
+      "ray_count": 12,
+      "minimum_vertex_ray_angle": 0.08911651160682744,
+      "cap_angle": 0.1937315469713704,
+      "waist_angle": 0.08911651160683039,
+      "half_gap": 0.15498523757709634
+    }
+  }
+}

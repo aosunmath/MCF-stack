@@ -254,6 +254,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='shao-zou-schematic'){
         const {initShaoZouFigure}=await import('./shao-zou-viewer.mjs');
         initShaoZouFigure(figure,data);
+      } else if(data.kind==='hmw-ray-schematic'){
+        const {initHMWFigure}=await import('./hmw-rays-viewer.mjs');
+        initHMWFigure(figure,data);
       } else if(data.kind==='spherical-doubling-schematic'){
         const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
         initSphericalDoublingFigure(figure,data);

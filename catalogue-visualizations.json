@@ -701,10 +701,10 @@
         "CatHMW2026"
       ],
       "model": "hmw-platonic-polygon",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.",
-      "alt": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact."
+      "status": "Original construction schematic",
+      "interactive": true,
+      "caption": "A rounded cubical shell with six radial passages illustrates genus five and avoidance of the six face-center rays. Select any Platonic symmetry or a regular polygon, show the excluded rays Q, and use Cutaway to reveal the inner wall. Inspired by Section 4 and Theorem 24 of Hoffman–Martín–White; the cubical silhouette also recalls Chopp’s numerical picture in Figure 2. These original compact models illustrate the topology of the construction input. They are not computed self-shrinkers or simulated flow slices, and do not establish compactness of the tangent shrinkers. The sufficiently large polygonal shrinkers are noncompact.",
+      "alt": "A rounded cubical surface with six openings and genus five, a cutaway exposing its central cavity, and a sevenfold polygonal construction model. Schematics, not computed shrinkers."
     },
     {
       "label": "ex:catalogue-hmw-one-ended",
