@@ -1142,8 +1142,8 @@
       "section": "strictly-convex-delta-wing-translators",
       "category": "translators",
       "tag": "B72E7DC6B42E",
-      "model": "strip-grim-limits",
-      "illustration_status": "Schematic"
+      "model": "delta-wing",
+      "illustration_status": "Numerical PDE surface"
     },
     {
       "label": "ex:catalogue-wang-entire-translators",
