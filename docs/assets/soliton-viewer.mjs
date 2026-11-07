@@ -239,6 +239,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='scherk-numerical'){
         const {initScherkFigure}=await import('./scherk-viewer.mjs');
         initScherkFigure(figure,data);
+      } else if(data.kind==='torus-translator-end'){
+        const {initTorusEndFigure}=await import('./torus-end-viewer.mjs');
+        initTorusEndFigure(figure,data);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
