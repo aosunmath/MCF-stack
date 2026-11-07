@@ -474,10 +474,10 @@
         "CatAV97"
       ],
       "model": "neckpinch-scales",
-      "status": "Asymptotic scale diagram",
-      "caption": "The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
-      "alt": "Rotational degenerate neckpinch solutions. The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
-      "interactive": false
+      "status": "Asymptotic time sequence with numerical bowl cap",
+      "caption": "Three illustrative times approach the odd-cubic degenerate neckpinch; the fourth panel is a singular cusp target. All four use the same spatial scale. Rotate, play toward the singular time, compare meridians, or inspect the cylinder, intermediate profile, and bowl limits. Compact slices and joins are schematic, not a numerical MCF evolution; only the limiting bowl is integrated from its ODE. Shown in R3 with n=2, m=3, K=1.",
+      "alt": "Four views at a common spatial scale show the left tip advancing toward the origin and sharpening into a one-sided cusp. The outer cap persists. The compact surfaces are asymptotic schematics with numerical bowl caps.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-angenent-oval",
