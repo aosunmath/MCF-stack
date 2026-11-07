@@ -113,3 +113,9 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 @media(min-width:1100px){.neckpinch-figure .soliton-stage[data-mode=limits]{height:420px}}
 @media(max-width:699px){.neckpinch-figure .soliton-stage{height:330px}.neckpinch-figure .soliton-stage[data-mode=sequence]{height:820px}.neckpinch-figure .soliton-stage[data-mode=profile]{height:570px}.neckpinch-figure .soliton-stage[data-mode=limits]{height:720px}}
 @media print{.neckpinch-figure .soliton-stage{height:auto!important;aspect-ratio:960/700}.neckpinch-legend{display:none}}
+/* Whitney flow: one spatial scale across four computed times. */
+.soliton-figure.whitney-flow-figure .soliton-stage{height:570px}
+.whitney-legend{font-size:12px;line-height:1.6;padding:0 16px;margin:10px 0}
+.soliton-controls .whitney-time{flex-basis:100%}.whitney-time input[type=range]{flex:1;max-width:420px;min-width:140px}.whitney-time output{min-width:95px}
+@media(max-width:699px){.soliton-figure.whitney-flow-figure .soliton-stage{height:520px}}
+@media print{.whitney-legend{display:none}.soliton-figure.whitney-flow-figure .soliton-stage{height:440px}}

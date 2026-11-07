@@ -2005,8 +2005,8 @@
       "section": "mean-curvature-evolution-of-the-whitney-sphere",
       "category": "other-special-flows",
       "tag": "245DFF2BED27",
-      "model": "whitney-profile",
-      "illustration_status": "Exact initial generating profile"
+      "model": "whitney-flow",
+      "illustration_status": "Numerical PDE evolution from exact initial data"
     },
     {
       "label": "ex:catalogue-degenerate-neckpinches",
