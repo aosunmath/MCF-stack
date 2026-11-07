@@ -3816,7 +3816,7 @@
       "category": "translators",
       "tag": "D24DEEE97A5F",
       "model": "scherk-translators",
-      "illustration_status": "Heuristic schematic"
+      "illustration_status": "Numerical PDE approximation with illustrative corner fills"
     },
     {
       "label": "ex:catalogue-translating-helicoids",
