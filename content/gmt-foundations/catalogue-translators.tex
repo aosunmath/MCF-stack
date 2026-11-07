@@ -281,7 +281,16 @@ For every $0<\alpha<\pi$ and $0<w<\pi$, Hoffman--Mart\'in--White construct a com
 
 This is an elliptic boundary-value construction, not Scherk's explicit minimal-surface formula. The surface has infinite genus and strictly negative Gauss curvature. Its infinitely many asymptotic parallel planes force infinite entropy. The topological end count and centered Gaussian area are not evaluated here. Uniqueness up to ambient isometry holds for the specified angle and width. Stability of a graphical fundamental piece does not establish stability of the full reflected surface.
 
-Sources: \cite{CatHMW20}, Theorems 2.3, 3.1 and 6.1 and the discussion on pp.~9 and 17; \cite{CatMSTW26}, Theorem 1. The illustration records the alternating boundary data; it is not a computed translator.
+The illustration uses the rectangular case $\alpha=w=\pi/2$ in Figures 3 and 8 of the source. In the upward convention, the centred fundamental graph $z=v(x,y)$ satisfies
+\[
+ \left(\delta_{ij}-\frac{v_i v_j}{1+|Dv|^2}\right)v_{ij}=1,
+ \qquad (x,y)\in(-L/2,L/2)\times(-w/2,w/2),
+\]
+with $v\to+\infty$ on $y=\pm w/2$ and $v\to-\infty$ on $x=\pm L/2$. The base length is selected by the boundary-value problem, not an independent parameter; Theorem 5.1 gives $L>w$ in this rectangular case. The picture follows the finite-boundary construction in the proof of Theorem 3.1: replace the infinite data by $\pm2.5$, impose $v(0,0)=0$, and solve numerically for both $v$ and $L$. A $257\times257$ grid gives $L\approx2.4483$ for this truncated problem. This number is not a certified value of the infinite-boundary length.
+
+Only $|z|\le1.5$ is displayed. The small unresolved regions at the four vertical corner lines are filled by interpolation; the remaining surface comes from the numerical graph. The periodic view repeats the patch by vertical half-turns, preserving height, and shows finitely many copies of the resulting infinite arrangement. In centred coordinates these graph domains occupy alternating rectangles, with horizontal periods $(2L,0,0)$ and $(0,2w,0)$. The height slider changes only the displayed truncation. Neither mesh refinement nor the small discrete residual supplies a certified error bound for the complete translator.
+
+Sources: \cite{CatHMW20}, Theorems 2.3, 3.1, 5.1 and 6.1, Figures 3 and 8--10, and the discussion on pp.~9 and 17; \cite{CatMSTW26}, Theorem 1.
 \end{example}
 
 \chapter{Helicoid-like translators}\label{sec:catalogue-translating-helicoids}

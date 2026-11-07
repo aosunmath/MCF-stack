@@ -55,3 +55,5 @@ The [spherical-doubling picture](spherical-doubling-picture.md) shows connected 
 The [Nguyen construction picture](nguyen-picture.md) shows the connected Scherk saddle belt, a cutaway, and a separately rotatable unwrapped Scherk minimal ingredient. The global mesh and end profile are explicitly schematic. Regeneration uses NumPy, scikit-image, fast-simplification, and Pillow.
 
 The [Δ-wing picture](delta-wing-picture.md) now uses a numerical solution of the rectangular translator Dirichlet problem, with a height cut and two interactive profile views. Its exact tilted grim-reaper comparison is kept distinct from the computed surface.
+
+The [Scherk translator picture](scherk-picture.md) computes a finite-boundary rectangular translator graph and displays its vertical half-turn extensions. It distinguishes numerical PDE data from small interpolated corner fills, records refinement checks, and offers rotation, zoom, a fundamental-patch view and height clipping. Regeneration requires NumPy, SciPy, contourpy and Pillow.

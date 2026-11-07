@@ -40,13 +40,6 @@ def mesh(name,f,nu,nv,ur,vr,description):
   el(s,'polygon',points=' '.join(f'{xy[i][0]:.2f},{xy[i][1]:.2f}' for i in face),fill='rgb'+str(rgb),stroke='#24566b',stroke_width='.3',stroke_opacity='.2')
  finish(s,name,['Rotate and zoom in the reader to inspect this illustrative mesh.','Truncation edges are display boundaries; no time evolution is asserted.'])
 
-def scherk():
- s=heading('Scherk translators: a reflected graph')
- pts=[(145,270),(420,270),(505,115),(230,115)];el(s,'polygon',points=' '.join(f'{x},{y}' for x,y in pts),fill=PALE,stroke=ACCENT,stroke_width=3)
- for x,y in pts:line(s,x,y-26,x,y+26,stroke='#c48043',width=4)
- text(s,315,102,'−∞',22,anchor='middle');text(s,280,302,'−∞',22,anchor='middle');text(s,160,192,'+∞',22);text(s,495,205,'+∞',22)
- text(s,315,195,'translator graph u',19,anchor='middle');text(s,315,223,'0 < w < π,  0 < α < π',15,anchor='middle')
- finish(s,'scherk-translators',['Downward source convention; reflect height for upward translation.','Orange lines are reflection axes. Repeating pieces gives infinite genus.'])
 
 def mountain():
  s=heading('An expander between two stable barriers')
@@ -123,7 +116,7 @@ def chains():
  finish(s,'grim-reaper-chains',['Monotone asymptote heights give the embedded graphical subfamily.','The joins are heuristic; the full glued solution is not an explicit formula.'])
 
 def main():
- scherk();mountain();highgenus();knot();perturbation();pancakes();spiral();chains()
+ mountain();highgenus();knot();perturbation();pancakes();spiral();chains()
  mesh('hh-ancient-ovals',lambda u,v:(3*math.cos(u),math.sin(u)*math.cos(v),math.sin(u)*math.sin(v)),38,54,(0,math.pi),(0,TAU),'Ancient oval: a heuristic elongated slice')
  mesh('reapernoid',lambda u,v:((1+.6*u*u)*math.cos(v),(1+.6*u*u)*math.sin(v),u+.2*math.tanh(u)),50,54,(-2,2),(0,TAU),'Reapernoid: heuristic annular slice in R3')
  mesh('translating-helicoids',lambda u,v:(.4*v+u*math.sin(math.pi*v/2),v,u*math.cos(math.pi*v/2)+.15*u*u),34,70,(-2,2),(-4,4),'Helicoid-like strip arrangement')

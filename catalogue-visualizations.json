@@ -805,10 +805,10 @@
         "CatMSTW26"
       ],
       "model": "scherk-translators",
-      "status": "Heuristic schematic",
-      "caption": "A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
-      "alt": "Doubly periodic Scherk translators. A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
-      "interactive": false
+      "status": "Numerical PDE approximation with illustrative corner fills",
+      "caption": "The rectangular case α = w = π/2, computed with finite edge heights ±2.5 and reflected to the upward convention. The orange fundamental patch extends by half-turns about its vertical corner lines; blue copies show the periodic arrangement. Rotate, zoom, isolate the patch, or crop the height. Small unresolved corner regions are filled for display. This is an uncertified approximation, not a closed formula; all outer edges are truncations.",
+      "alt": "Numerical Scherk translator: an orange saddle patch connects to blue half-turn copies on a checkerboard lattice. Upward translation. Finite boundary data and small illustrative corner fills; no certified error bound.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-translating-helicoids",
