@@ -1,0 +1,49 @@
+{
+  "source": "https://arxiv.org/abs/1805.10860v2",
+  "source_locations": "Equations (1.2)\u2013(1.4), Figure 3, Sections 3\u20134, Theorem 7.1, Theorem 8.1 and Corollary 8.2",
+  "normalization": "Upward unit speed, u(0)=0, positive apex Hessian eigenvalues; M_t=graph(u)+t e3, t in R.",
+  "scope": "Three R3 representatives only; not a rendering of the higher-dimensional family or a continuous computed family.",
+  "delta_wing": {
+    "asset": "delta-wing.json",
+    "sha256": "9e402ce136d79a523d5a96713afd14ffdea8b652029402130433677b8c420692",
+    "audit": "delta-wing-audit.json",
+    "apex_hessian": [
+      0.24426663348225136,
+      0.7557334961577215
+    ],
+    "max_sampled_interpolant_pde_residual": 0.0006034220852311201,
+    "domain_comparison": {
+      "half_lengths": [
+        22,
+        24
+      ],
+      "y_intervals": 960,
+      "x_spacing": 0.1,
+      "max_display_height_change": 0.006222829044295608,
+      "max_recentered_profile_change": 0.008183041223078114
+    },
+    "grid_comparison": {
+      "half_length": 24,
+      "y_intervals": [
+        720,
+        960
+      ],
+      "x_spacing": 0.1,
+      "max_display_height_change": 0.008161178502962052
+    }
+  },
+  "bowl": {
+    "equation": "f'=p, p'=(1+p^2)(1-p/r)",
+    "tip_expansion": "f=r^2/4+r^4/128+O(r^6)",
+    "epsilon": 1e-05,
+    "rtol": 2e-11,
+    "atol": 2e-12,
+    "display_max_height": 6,
+    "comparison": {
+      "epsilon": 5e-06,
+      "rtol": 2e-12,
+      "max_height_change": 1.1894552010005555e-10
+    }
+  },
+  "limitations": "Floating-point diagnostics, not certified bounds. All surfaces are truncated. The dashed quadratic in section view is local Taylor data, not a global translator."
+}
