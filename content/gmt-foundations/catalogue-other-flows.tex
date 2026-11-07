@@ -272,11 +272,35 @@ The numerical value $\lambda_D\approx1.511$ depends on this scale, truncation an
 
 \chapter{The eternal reapernoid}\label{sec:catalogue-reapernoid}
 \begin{example}[The eternal reapernoid]\label{ex:catalogue-reapernoid}
-For every $n\geq2$, Mramor--Payne construct an eternal embedded hypersurface flow $M_t\subset\mathbb R^{n+1}$, $t\in\mathbb R$, on the outside of a rotational minimal catenoid. It is $O(n)\times O(1)$ invariant, mean convex with the chosen outward normal, nonconvex, and has uniformly bounded curvature. Backward in time it converges smoothly and uniformly to that catenoid; forward in time its distance from the rotation axis tends to infinity. It is not a translator or another soliton.
+For every $n\geq2$, Mramor--Payne construct an eternal embedded hypersurface flow $M_t\subset\mathbb R^{n+1}$, $t\in\mathbb R$, on the outside of a rotational minimal catenoid. It is $O(n)\times O(1)$ invariant, mean convex after a choice of orientation, nonconvex, and has uniformly bounded curvature. Backward in time it converges smoothly and uniformly to that catenoid; forward in time its distance from the rotation axis tends to infinity. It is not a translator or another soliton.
 
 The rotational graphical construction gives complete proper noncompact slices with topology $S^{n-1}\times\mathbb R$ and two ends. For $n=2$ these are annuli in $\mathbb R^3$. In that dimension the pointed forward profile limit is a line and curvature tends to zero. For $n\geq3$, recentered meridians converge instead to a grim reaper with the same width as the higher-dimensional catenoid. These are pointed profile limits, not a claim that the unshifted surfaces converge globally to a fixed grim cylinder.
 
-Source: \cite{CatMP19}, Theorem 1.3, pp.~4--5, and Section 4. The scale of the limiting catenoid is free; no explicit time-dependent profile, full uniqueness statement, or entropy value is recorded. The picture is a schematic rotational annulus, not a scaled catenoid evolving by mean curvature.
+Source: \cite{CatMP19}, Theorem 1.3, pp.~4--5, and Section 4. The scale of the limiting catenoid is free; no explicit time-dependent profile, full uniqueness statement, or entropy value is recorded. The figure uses numerical solutions of the rotational evolution equation (2.7), rather than dilating a fixed catenoid.
+
+Write the rotational hypersurface as
+\[
+ X(x,\omega,t)=(x,u(x,t)\omega),\qquad \omega\in S^{n-1},\qquad
+ \partial_tu=\frac{u_{xx}}{1+u_x^2}-\frac{n-1}{u}.
+\]
+The reference catenoid has neck radius one. For $n=2$ its profile is exactly $w(x)=\cosh x$ on $\mathbb R$. Its outward parallel perturbation can be written parametrically as
+\[
+ x=s-\delta\tanh s,\qquad r=\cosh s+\delta\operatorname{sech}s,
+ \qquad s\in\mathbb R,
+\]
+for sufficiently small $\delta>0$. These offsets are the initial surfaces for the approximating flows, not time slices of the limiting eternal flow. The numerical illustrations use $\delta=10^{-4}$, evolve forward, and shift time so that $u(0,0)=2$. Space is not rescaled from frame to frame. The surface views in $\mathbb R^3$ cover $t\in[-8,10]$ and the meridian views continue to $t=100$; the $n=3$ meridians in $\mathbb R^4$ cover $t\in[-2,40]$. These finite intervals and their time origin are plotting choices, not the maximal interval of the theorem.
+
+The neck moves outward: $u_t>0$. In the convention $H=\operatorname{div}_M\nu$, the normal pointing away from the rotation axis has $H<0$ on moving slices, so the mean curvature vector $-H\nu$ points outward. The convexity of the meridian does not make the hypersurface convex: its meridional and rotational principal curvatures have opposite signs.
+
+The late-time views subtract the neck radius, showing $u(x,t)-u(0,t)$ without dilation. For $n=2$ the limiting graph is zero. For the plotted $n=3$ case, set
+\[
+ a_3=\int_1^\infty\frac{dr}{\sqrt{r^4-1}},\qquad
+ c=\frac{\pi}{2a_3},\qquad
+ G(x)=-\frac{1}{c}\log\cos(cx),\quad |x|<a_3.
+\]
+Here $a_3$ is the coordinate half-width for the stationary equation with $w(0)=1$, and $G$ is the recentered grim-reaper limit. The dashed limit curves are distinct from the finite-time numerical profiles. Only $n=2$ and $n=3$ are computed; the existence and limiting-shape theorem applies to every $n\geq2$.
+
+The computations use finite starting times, symmetry at the neck, and fixed values at artificial outer boundaries. Mesh, starting-offset, time-tolerance and domain comparisons are recorded with the figure data. They provide numerical evidence for these approximations, not a certified error estimate to an eternal solution.
 \end{example}
 
 \chapter{Ancient stacked pancakes}\label{sec:catalogue-stacked-pancakes}

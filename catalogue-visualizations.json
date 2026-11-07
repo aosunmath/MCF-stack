@@ -930,10 +930,19 @@
         "CatMP19"
       ],
       "model": "reapernoid",
-      "status": "Heuristic schematic",
-      "caption": "Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
-      "alt": "The eternal reapernoid. Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
-      "interactive": true
+      "status": "Numerical rotational mean curvature flow",
+      "caption": "Four numerical slices in ℝ³ move outward from a unit-neck catenoid, at one spatial scale. Play or drag the time slider, rotate, zoom, or switch to meridians in ℝ³ and ℝ⁴. The three-space meridian flattens after recentering; the four-space meridian approaches a grim reaper. These are finite-start, truncated-domain PDE approximations of the construction, not exact formulas or a certified eternal limit. Open rims cut the displayed surface at x = ±2.",
+      "alt": "Four numerical reapernoid surfaces in three-space at times −8, −4, 0 and 10. The annular neck grows outward, with radii approximately 1.034, 1.251, 2 and 5.327. All surfaces use the same camera and spatial scale.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "reapernoid-limits",
+          "status": "Numerical profiles and proved forward limits",
+          "interactive": false,
+          "caption": "Profiles are translated by subtracting the current neck radius, without rescaling. Blue curves show computed finite times; gold dashed curves show the limits in Theorem 1.3. The ℝ³ limit is a line. The ℝ⁴ case represents the higher-dimensional grim-reaper behavior and is shown only as a meridian. Neither limit is asserted at a finite time.",
+          "alt": "Recentered numerical meridians at four times. The three-space profiles flatten toward a horizontal line, while the four-space profiles approach a grim reaper. The higher-dimensional picture is a profile, not a surface in three-space."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-stacked-pancakes",

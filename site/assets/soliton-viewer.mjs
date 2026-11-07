@@ -266,6 +266,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='immortal-annulus-stages'){
         const {initImmortalAnnulus}=await import('./immortal-annulus-viewer.mjs');
         initImmortalAnnulus(figure,data,rotatePoint);
+      } else if(data.kind==='reapernoid-pde'){
+        const {initReapernoidFigure}=await import('./reapernoid-viewer.mjs');
+        initReapernoidFigure(figure,data);
       } else if(data.kind==='whitney-flow'){
         const {initWhitneyFlowFigure}=await import('./whitney-flow-viewer.mjs');
         initWhitneyFlowFigure(figure,data,rotatePoint);

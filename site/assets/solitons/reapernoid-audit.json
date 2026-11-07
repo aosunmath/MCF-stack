@@ -1,0 +1,356 @@
+{
+  "cases": [
+    {
+      "n": 2,
+      "ambient_dimension": 3,
+      "delta": 0.0001,
+      "grid_intervals": 600,
+      "half_domain": 7.0,
+      "start_time": -16.994553651072746,
+      "time_origin": "First time the neck radius reaches 2; the limiting catenoid has neck radius 1.",
+      "boundary": "Even reflection at x=0; fixed initial radius at the artificial outer boundary.",
+      "checkpoints": [
+        {
+          "time": -8,
+          "neck_radius": 1.033650304527193,
+          "neck_speed": 0.018308885184635516,
+          "meridian_tip_curvature": 0.9857540604244522,
+          "minimum_outward_speed": 0.0024602897281025215,
+          "minimum_meridian_curvature": 0.04917231545479232,
+          "minimum_gap_above_catenoid": 0.004721890654277225,
+          "temporal_residual_in_display_window": 3.039856550507425e-09
+        },
+        {
+          "time": -4,
+          "neck_radius": 1.2510538544231973,
+          "neck_speed": 0.10999384200134116,
+          "meridian_tip_curvature": 0.9093199433233768,
+          "minimum_outward_speed": 0.020761466529124653,
+          "minimum_meridian_curvature": 0.05395726341138414,
+          "minimum_gap_above_catenoid": 0.039738972388278546,
+          "temporal_residual_in_display_window": 4.008219048334816e-09
+        },
+        {
+          "time": 0,
+          "neck_radius": 1.9999999999999996,
+          "neck_speed": 0.25782323814586366,
+          "meridian_tip_curvature": 0.7578232381458637,
+          "minimum_outward_speed": 0.1034258316401971,
+          "minimum_meridian_curvature": 0.07844468873164286,
+          "minimum_gap_above_catenoid": 0.2600468268165126,
+          "temporal_residual_in_display_window": 1.4593601511680987e-06
+        },
+        {
+          "time": 10,
+          "neck_radius": 5.327269123980495,
+          "neck_speed": 0.36597976862569737,
+          "meridian_tip_curvature": 0.5536932061726272,
+          "minimum_outward_speed": 0.31281315998889697,
+          "minimum_meridian_curvature": 0.184650524322353,
+          "minimum_gap_above_catenoid": 2.5696274428628056,
+          "temporal_residual_in_display_window": 7.352937650972891e-07
+        },
+        {
+          "time": 40,
+          "neck_radius": 16.321307670511807,
+          "neck_speed": 0.3573797176444556,
+          "meridian_tip_curvature": 0.41864931810709083,
+          "minimum_outward_speed": 0.34949149255838485,
+          "minimum_meridian_curvature": 0.24938552086676458,
+          "minimum_gap_above_catenoid": 12.966949331876162,
+          "temporal_residual_in_display_window": 8.389122729823839e-11
+        },
+        {
+          "time": 100,
+          "neck_radius": 36.70234599913778,
+          "neck_speed": 0.32541287282874276,
+          "meridian_tip_curvature": 0.3526590875536405,
+          "minimum_outward_speed": 0.3233241278010432,
+          "minimum_meridian_curvature": 0.2507843213943312,
+          "minimum_gap_above_catenoid": 33.111995706050756,
+          "temporal_residual_in_display_window": null
+        }
+      ],
+      "mesh_refinement": [
+        {
+          "time": -8,
+          "max_profile_difference": 1.63601731495433e-07
+        },
+        {
+          "time": -4,
+          "max_profile_difference": 1.5655179523843543e-06
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 6.887179574643909e-06
+        },
+        {
+          "time": 10,
+          "max_profile_difference": 2.434824685959569e-05
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 3.628604203598229e-05
+        },
+        {
+          "time": 100,
+          "max_profile_difference": 0.00017235784317648495
+        }
+      ],
+      "smaller_initial_offset": [
+        {
+          "time": -8,
+          "max_profile_difference": 0.00018968114508899347
+        },
+        {
+          "time": -4,
+          "max_profile_difference": 0.00016119088620314415
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 0.0001408414364956201
+        },
+        {
+          "time": 10,
+          "max_profile_difference": 0.0002637927784494565
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 0.0006086902693418494
+        },
+        {
+          "time": 100,
+          "max_profile_difference": 0.0010387828094096108
+        }
+      ],
+      "longer_domain": [
+        {
+          "time": -8,
+          "max_profile_difference": 2.577829874006454e-07
+        },
+        {
+          "time": -4,
+          "max_profile_difference": 1.7273876513623776e-06
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 5.480718854755651e-06
+        },
+        {
+          "time": 10,
+          "max_profile_difference": 2.8456754820993524e-05
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 3.4036181048691105e-05
+        },
+        {
+          "time": 100,
+          "max_profile_difference": 8.178780358036875e-05
+        }
+      ],
+      "tighter_time_tolerance": [
+        {
+          "time": -8,
+          "max_profile_difference": 6.5012624173022004e-09
+        },
+        {
+          "time": -4,
+          "max_profile_difference": 1.78784085314021e-08
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 1.1453864079413734e-08
+        },
+        {
+          "time": 10,
+          "max_profile_difference": 2.8175943356245625e-08
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 2.614766714259531e-08
+        },
+        {
+          "time": 100,
+          "max_profile_difference": 2.3745066357605538e-08
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ambient_dimension": 4,
+      "delta": 0.0001,
+      "grid_intervals": 700,
+      "half_domain": 1.30602877714606,
+      "start_time": -7.092558792457655,
+      "time_origin": "First time the neck radius reaches 2; the limiting catenoid has neck radius 1.",
+      "boundary": "Even reflection at x=0; fixed initial radius at the artificial outer boundary.",
+      "checkpoints": [
+        {
+          "time": -2,
+          "neck_radius": 1.1766630499436421,
+          "neck_speed": 0.19436306998115188,
+          "meridian_tip_curvature": 1.894085008301381,
+          "minimum_outward_speed": 0.016589005601667196,
+          "minimum_meridian_curvature": 0.01997382852728293,
+          "minimum_gap_above_catenoid": 0.014870547209315287,
+          "temporal_residual_in_display_window": 9.186794075466409e-09
+        },
+        {
+          "time": -1,
+          "neck_radius": 1.4749218844834568,
+          "neck_speed": 0.41178083281843375,
+          "meridian_tip_curvature": 1.7677848497365465,
+          "minimum_outward_speed": 0.05740171246961433,
+          "minimum_meridian_curvature": 0.02235065987340809,
+          "minimum_gap_above_catenoid": 0.04797289870072197,
+          "temporal_residual_in_display_window": 3.519325947332064e-08
+        },
+        {
+          "time": 0,
+          "neck_radius": 1.9999999999999998,
+          "neck_speed": 0.6303557063414494,
+          "meridian_tip_curvature": 1.6303557063414496,
+          "minimum_outward_speed": 0.17186342742364388,
+          "minimum_meridian_curvature": 0.029789904959247434,
+          "minimum_gap_above_catenoid": 0.15427529633899362,
+          "temporal_residual_in_display_window": 3.925886957134583e-06
+        },
+        {
+          "time": 5,
+          "neck_radius": 6.468811874607804,
+          "neck_speed": 1.0297343555937564,
+          "meridian_tip_curvature": 1.3389101422402427,
+          "minimum_outward_speed": 0.9445239845892733,
+          "minimum_meridian_curvature": 0.15485973776310255,
+          "minimum_gap_above_catenoid": 3.353118431082653,
+          "temporal_residual_in_display_window": 3.166966133782978e-09
+        },
+        {
+          "time": 15,
+          "neck_radius": 17.46240625879237,
+          "neck_speed": 1.1361845990036739,
+          "meridian_tip_curvature": 1.2507163519797562,
+          "minimum_outward_speed": 1.1260165943058975,
+          "minimum_meridian_curvature": 0.2454998065770046,
+          "minimum_gap_above_catenoid": 14.045082520003023,
+          "temporal_residual_in_display_window": 7.0896715165247315e-09
+        },
+        {
+          "time": 40,
+          "neck_radius": 46.50800246872489,
+          "neck_speed": 1.1752121641079183,
+          "meridian_tip_curvature": 1.2182155160868584,
+          "minimum_outward_speed": 1.1743500124520212,
+          "minimum_meridian_curvature": 0.28039376476985217,
+          "minimum_gap_above_catenoid": 42.99792612238714,
+          "temporal_residual_in_display_window": null
+        }
+      ],
+      "mesh_refinement": [
+        {
+          "time": -2,
+          "max_profile_difference": 5.199886419227084e-07
+        },
+        {
+          "time": -1,
+          "max_profile_difference": 1.2139347598250083e-06
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 2.1409689190399206e-06
+        },
+        {
+          "time": 5,
+          "max_profile_difference": 5.1384284102340416e-05
+        },
+        {
+          "time": 15,
+          "max_profile_difference": 0.0005597003498003517
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 0.005872460477085895
+        }
+      ],
+      "smaller_initial_offset": [
+        {
+          "time": -2,
+          "max_profile_difference": 0.000615693003211959
+        },
+        {
+          "time": -1,
+          "max_profile_difference": 0.0005460653851980801
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 0.00047898288213099605
+        },
+        {
+          "time": 5,
+          "max_profile_difference": 0.0007936451086969498
+        },
+        {
+          "time": 15,
+          "max_profile_difference": 0.0017637324708807967
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 0.003773946009786755
+        }
+      ],
+      "longer_domain": [
+        {
+          "time": -2,
+          "max_profile_difference": 4.3909822533549914e-07
+        },
+        {
+          "time": -1,
+          "max_profile_difference": 1.2343658908342547e-06
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 2.9833757535513428e-06
+        },
+        {
+          "time": 5,
+          "max_profile_difference": 3.349215814107964e-05
+        },
+        {
+          "time": 15,
+          "max_profile_difference": 0.00030056630874852885
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 0.0026111301966196265
+        }
+      ],
+      "tighter_time_tolerance": [
+        {
+          "time": -2,
+          "max_profile_difference": 8.22029644353961e-09
+        },
+        {
+          "time": -1,
+          "max_profile_difference": 1.2378870817286725e-08
+        },
+        {
+          "time": 0,
+          "max_profile_difference": 8.09361866416225e-09
+        },
+        {
+          "time": 5,
+          "max_profile_difference": 1.1157682777707123e-08
+        },
+        {
+          "time": 15,
+          "max_profile_difference": 1.171931529597714e-08
+        },
+        {
+          "time": 40,
+          "max_profile_difference": 1.2847557684381172e-08
+        }
+      ]
+    }
+  ]
+}

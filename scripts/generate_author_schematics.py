@@ -95,7 +95,9 @@ def main():
  # The numerical time sequence is maintained by generate_hh_ancient_ovals.py.
  if not (OUT/'hh-ancient-ovals-audit.json').is_file():
   raise FileNotFoundError('Run scripts/generate_hh_ancient_ovals.py first')
- mesh('reapernoid',lambda u,v:((1+.6*u*u)*math.cos(v),(1+.6*u*u)*math.sin(v),u+.2*math.tanh(u)),50,54,(-2,2),(0,TAU),'Reapernoid: heuristic annular slice in R3')
+ # Preserve the numerical PDE time sequence maintained by generate_reapernoid.py.
+ if not (OUT/'reapernoid.json').exists():
+  raise FileNotFoundError('Run generate_reapernoid.py and generate_reapernoid_plates.mjs first')
  mesh('translating-helicoids',lambda u,v:(.4*v+u*math.sin(math.pi*v/2),v,u*math.cos(math.pi*v/2)+.15*u*u),34,70,(-2,2),(-4,4),'Helicoid-like strip arrangement')
  def annulus(u,v):
   x=1.2*math.cosh(u)*math.cos(v);q=.8*math.cosh(u)*math.sin(v);y=1.6*math.tanh(q);z=.16*x*x+2*math.log(math.cosh(q))+.55*u;return (x,y,z)

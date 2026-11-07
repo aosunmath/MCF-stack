@@ -3861,7 +3861,7 @@
     },
     {
       "label": "ex:catalogue-reapernoid",
-      "notes": "",
+      "notes": "Numerical time views approximate the paper’s outward-offset construction on truncated domains in n=2 and n=3. Surface rotation is shown only for n=2 in ℝ³. The n=3 case in ℝ⁴ is a meridian. Forward limits are recentered pointed limits: a line for n=2, a grim reaper for n≥3.",
       "citations": [
         "CatMP19"
       ],
