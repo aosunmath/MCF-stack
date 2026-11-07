@@ -266,10 +266,10 @@
         "CatHIMWGraphical18"
       ],
       "model": "apex-ellipsoid",
-      "status": "Schematic",
-      "caption": "Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
-      "alt": "Translators with prescribed apex curvatures. Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
-      "interactive": false
+      "status": "Numerical solutions and exact formula",
+      "caption": "Three surface representatives in ℝ³: the grim-reaper cylinder (0, 1), a numerical Δ-wing with apex Hessian approximately (0.2443, 0.7557), and the rotational bowl (½, ½). Rotate, cut away, and compare principal sections. The Δ-wing uses a finite-domain PDE solve; the bowl uses its ODE. Dashed quadratics in the section view show local data only. Higher-dimensional members are not pictured; all surfaces are truncated and numerical errors are not certified.",
+      "alt": "Grim-reaper cylinder, anisotropic Delta-wing, and round bowl with their apex curvature pairs and two principal sections.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-scherkenoids",

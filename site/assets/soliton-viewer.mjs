@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='delta-wing-pde'){
+      if(data.kind==='apex-translators'){
+        const {initApexFigure}=await import('./apex-viewer.mjs');
+        initApexFigure(figure,data);
+      } else if(data.kind==='delta-wing-pde'){
         const {initDeltaWingFigure}=await import('./delta-wing-viewer.mjs');
         initDeltaWingFigure(figure,data);
       } else if(data.kind==='moller-configuration'){

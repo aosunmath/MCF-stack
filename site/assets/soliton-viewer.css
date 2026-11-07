@@ -23,6 +23,9 @@
 .nguyen-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
 .delta-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
 .delta-legend{font-size:12px;line-height:1.5;margin:6px 16px 12px;color:#476170}
+.apex-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;line-height:1.4;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;padding:4px 7px;border-radius:4px;max-width:calc(100% - 28px);box-sizing:border-box}
+.apex-legend{font-size:12px;line-height:1.5;margin:6px 16px 12px;color:#476170}
+@media print{.apex-view-label,.apex-legend{display:none}}
 @media print{.delta-view-label,.delta-legend{display:none}}
 .nguyen-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.nguyen-legend span{display:inline-flex;align-items:center;gap:6px}.nguyen-legend i{width:10px;height:10px;border-radius:50%}
 @media print{.nguyen-view-label,.nguyen-legend{display:none}}
