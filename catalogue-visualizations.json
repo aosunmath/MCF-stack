@@ -459,10 +459,10 @@
       "citations": [
         "CatViana18"
       ],
-      "model": "whitney-profile",
-      "status": "Exact initial generating profile",
-      "caption": "The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
-      "alt": "Mean curvature evolution of the Whitney sphere. The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
+      "model": "whitney-flow",
+      "status": "Exact initial data; numerical PDE evolution",
+      "caption": "Whitney two-sphere in C² (n = 2), with trace mean-curvature speed and the initial scale in the formula above. Four snapshots share a fixed spatial scale. Each pairs a linear R⁴-to-R³ projection with the planar generating profile. Play or select computed times 0 ≤ t ≤ 0.09; this window ends before the singularity and does not specify its time T. Only t = 0 is exact. Additional overlaps may be projection artifacts.",
+      "alt": "Whitney sphere flow at t = 0, 0.03, 0.06 and 0.09. Surface projections and figure-eight profiles contract and flatten on a common spatial scale; positive-time geometry is numerical.",
       "interactive": true
     },
     {

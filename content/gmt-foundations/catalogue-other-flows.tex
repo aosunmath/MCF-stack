@@ -41,7 +41,14 @@ For $n\geq2$ the profile evolution is the equivariant equation
 \]
 interpreted by the smooth equivariant immersion at the double point. It is not ordinary planar curve shortening.
 
-The maximal smooth mean curvature flow $F_t$, $t\in[0,T)$, remains Lagrangian and equivariant. It collapses to the origin in finite time, and its tangent flow there is a Lagrangian plane with multiplicity two. The Whitney sphere is not a self-similar solution. These statements are the special case stated in \cite{CatViana18}, pp.~1--3, especially the result on p.~2 and Theorem 1.3 on p.~3. The formulas above specify the initial geometry and its reduced equation, not a closed expression for $F_t$ at positive time. The figure shows the exact initial generating profile $\gamma_0$ of this higher-codimension immersion.
+The maximal smooth mean curvature flow $F_t$, $t\in[0,T)$, remains Lagrangian and equivariant. It collapses to the origin in finite time, and its tangent flow there is a Lagrangian plane with multiplicity two. The Whitney sphere is not a self-similar solution. These statements are the special case stated in \cite{CatViana18}, pp.~1--3, especially the result on p.~2 and Theorem 1.3 on p.~3. The formulas above specify the initial geometry and its reduced equation, not a closed expression for $F_t$ at positive time. The illustration specializes to $n=2$. Write $\gamma_t=a+ib$. A single right-hand lobe, from one preimage of the origin to the other, generates the immersed two-sphere by
+\[
+ F_t(u,v)=(\gamma_t(u)\cos v,\gamma_t(u)\sin v)\in\mathbb C^2,
+ \qquad v\in\mathbb R/2\pi\mathbb Z.
+\]
+The circles at the two endpoints collapse to the two distinct poles of the domain, which have the same image at the origin. Using both antipodal lobes would cover the same sphere twice.
+
+The time sequence pairs this surface, linearly projected from $\mathbb R^4$ to $\mathbb R^3$, with its planar profile. At $t=0$ the geometry is exact; the positive-time frames are numerical approximations of the equivariant PDE for $n=2$, with $\partial_tF=\vec H$ and the initial scale fixed above. They show $0\leq t\leq0.09$ on a common spatial scale, with no normalization by an estimated extinction time. The computation stops before the singularity: $0.09$ is not asserted to equal $T$. Spatial mesh refinement and tighter time-integration tolerances are compared, but these checks are not certified error bounds. The profile narrows and contracts rather than shrinking by a single scale factor. Its double point remains at the origin; further overlaps in the surface projection need not be intersections in $\mathbb R^4$. The multiplicity-two tangent plane is a parabolic blow-up limit, not an unscaled final surface displayed by the animation.
 \end{example}
 
 \chapter{Rotational degenerate neckpinch solutions}\label{sec:catalogue-degenerate-neckpinches}
