@@ -81,7 +81,7 @@ class PlatonicGeometryTests(unittest.TestCase):
                 gap = data['construction']['half_gap']
                 self.assertGreater(2-1.8*gap, 0)
                 audit = json.loads((ASSETS/'platonic-audit.json').read_text())['models'][solid]
-                self.assertLess(data['construction']['patch_radius'], audit['minimum_site_angle'])
+                self.assertLess(2*data['construction']['opening_angle'], audit['minimum_site_angle'])
 
 
 if __name__ == '__main__':

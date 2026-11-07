@@ -1,8 +1,10 @@
-"""Ketover's Platonic doubling sweepouts: original construction schematics.
+"""Original models of Ketover's Platonic doubling sweepouts, not shrinkers.
 
-These meshes do not solve the shrinker equation. NumPy, SciPy and Pillow are
-needed only to regenerate assets. See documentation/platonic-picture.md.
+Requires NumPy and Pillow. No source images or numerical shrinker meshes are
+used. See documentation/platonic-picture.md for the construction.
 """
+from collections import defaultdict, deque
+from itertools import combinations, product
 from pathlib import Path
 import base64
 import io
@@ -10,195 +12,229 @@ import json
 import math
 
 import numpy as np
-from scipy.spatial import ConvexHull
 from PIL import Image, ImageDraw
-
-from generate_spherical_doubling_geometry import orient_and_audit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'site/assets/solitons'
-SOLIDS = [('tetrahedron', 4, 'T₁₂'), ('cube', 6, 'O₂₄'),
-          ('octahedron', 8, 'O₂₄'), ('dodecahedron', 12, 'I₆₀'),
-          ('icosahedron', 20, 'I₆₀')]
+SOLIDS = [('tetrahedron', 4, 'T12'), ('cube', 6, 'O24'),
+          ('octahedron', 8, 'O24'), ('dodecahedron', 12, 'I60'),
+          ('icosahedron', 20, 'I60')]
 COLORS = np.array([[75, 139, 163], [211, 169, 99], [188, 116, 77]])
+RADIUS, HALF_GAP = 2., .28
 
 
-def face_centers(solid):
-    """Outward unit face normals of the actual solid (not its vertices)."""
-    phi = (1 + math.sqrt(5))/2
-    cube = [(x, y, z) for x in [-1, 1] for y in [-1, 1] for z in [-1, 1]]
-    if solid == 'tetrahedron':
-        vertices = [(1, 1, 1), (1, -1, -1), (-1, 1, -1), (-1, -1, 1)]
-    elif solid == 'cube':
-        vertices = cube
-    elif solid == 'octahedron':
-        vertices = [tuple(s if i == j else 0 for i in range(3))
-                    for j in range(3) for s in [-1, 1]]
-    elif solid == 'icosahedron':
-        vertices = [(0, a, b) for a in [-1, 1] for b in [-phi, phi]]
-        vertices += [(z, x, y) for x, y, z in vertices] + [(y, z, x) for x, y, z in vertices]
-    elif solid == 'dodecahedron':
-        extra = [(0, a, b) for a in [-1/phi, 1/phi] for b in [-phi, phi]]
-        vertices = cube + extra + [(z, x, y) for x, y, z in extra] + [(y, z, x) for x, y, z in extra]
+def unit(p):
+    return p / np.linalg.norm(p, axis=-1, keepdims=True)
+
+
+def polyhedron(name):
+    phi = (1 + math.sqrt(5)) / 2
+    if name == 'tetrahedron':
+        v = [p for p in product([-1, 1], repeat=3) if math.prod(p) == 1]
+    elif name == 'cube':
+        v = list(product([-1, 1], repeat=3))
+    elif name == 'octahedron':
+        v = np.vstack([np.eye(3), -np.eye(3)])
     else:
-        raise ValueError(solid)
-    normals = ConvexHull(vertices).equations[:, :3]
-    return np.unique(np.round(normals, 12), axis=0)
+        v = list(product([-1, 1], repeat=3)) if name == 'dodecahedron' else []
+        a, b = (1/phi, phi) if name == 'dodecahedron' else (1, phi)
+        for x, y in product([-a, a], [-b, b]):
+            v.extend([(0, x, y), (x, y, 0), (y, 0, x)])
+    v = unit(np.array(v, dtype=float))
+    faces = set()
+    # Supporting planes identify whole polygonal faces, including pentagons.
+    for a, b, c in combinations(v, 3):
+        n = np.cross(b-a, c-a)
+        if np.linalg.norm(n) < 1e-8:
+            continue
+        n = unit(n)
+        distances = (v-a) @ n
+        if np.min(distances) > -1e-8 or np.max(distances) < 1e-8:
+            faces.add(tuple(np.flatnonzero(np.abs(distances) < 1e-8)))
+    ordered = []
+    for face in sorted(faces):
+        n = unit(v[list(face)].mean(axis=0))
+        e = unit(v[face[0]] - n*np.dot(n, v[face[0]]))
+        f = np.cross(n, e)
+        ordered.append(sorted(face, key=lambda i: math.atan2(v[i] @ f, v[i] @ e)))
+    return v, ordered
 
 
-def make_mesh(solid, samples=5600, segments=48, rings=32):
-    sites = face_centers(solid)
-    count = len(sites)
-    separation = np.arccos(np.clip(sites @ sites.T, -1, 1)) + np.eye(count)*10
-    b = min(1.12, .84*separation.min())
-    tau = .42*b
-    umax = math.acosh(b/tau)
-    half_gap = .65*tau*umax
-    theta = np.linspace(0, 2*math.pi, segments, endpoint=False)
+def orient(vertices, faces):
+    edges = defaultdict(list)
+    for i, f in enumerate(faces):
+        for a, b in zip(f, f[1:]+f[:1]):
+            edges[tuple(sorted((a, b)))].append((i, 1 if a < b else -1))
+    assert all(len(v) == 2 for v in edges.values()), 'Nonmanifold seam'
+    adjacent = defaultdict(list)
+    for (i, a), (j, b) in edges.values():
+        adjacent[i].append((j, -a*b)); adjacent[j].append((i, -a*b))
+    signs = {0: 1}; queue = deque([0])
+    while queue:
+        i = queue.popleft()
+        for j, relation in adjacent[i]:
+            sign = signs[i]*relation
+            if j in signs:
+                assert signs[j] == sign, 'Nonorientable mesh'
+            else:
+                signs[j] = sign; queue.append(j)
+    assert len(signs) == len(faces), 'Disconnected mesh'
+    faces = np.array([f if signs[i] == 1 else f[::-1] for i, f in enumerate(faces)])
+    a, b, c = vertices[faces].transpose(1, 0, 2)
+    if np.sum(a*np.cross(b, c)) < 0:
+        faces = faces[:, ::-1]
+    a, b, c = vertices[faces].transpose(1, 0, 2)
+    cross = np.cross(b-a, c-a)
+    normals = np.zeros_like(vertices)
+    for i in range(3):
+        np.add.at(normals, faces[:, i], cross)
+    assert np.min(np.linalg.norm(normals, axis=1)) > 1e-10
+    return faces, unit(normals), dict(components=1, boundary_edges=0,
+        orientable=True, euler_characteristic=len(vertices)-len(edges)+len(faces),
+        vertices=len(vertices), faces=len(faces),
+        minimum_triangle_area=float(np.linalg.norm(cross, axis=1).min()/2))
 
-    def directions(n, t):
-        # A stable frame, including necks on the vertical coordinate axis.
-        axis = np.eye(3)[np.argmin(np.abs(n))]
-        e1 = np.cross(axis, n); e1 /= np.linalg.norm(e1)
-        e2 = np.cross(n, e1)
-        tangent = np.cos(theta)[:, None]*e1 + np.sin(theta)[:, None]*e2
-        return math.cos(t/2)*n + math.sin(t/2)*tangent
 
-    k = np.arange(samples); z = 1-2*(k+.5)/samples
-    angle = k*math.pi*(3-math.sqrt(5))
-    q = np.column_stack([np.sqrt(1-z*z)*np.cos(angle), np.sqrt(1-z*z)*np.sin(angle), z])
-    q = q[np.max(q @ sites.T, axis=1) < math.cos(b/2+.02)]
-    boundaries = []
-    for n in sites:
-        boundaries.append(np.arange(len(q), len(q)+segments))
-        q = np.vstack([q, directions(n, b)])
-    faces = ConvexHull(q).simplices
-    faces = faces[np.max(q[faces].mean(axis=1) @ sites.T, axis=1) < math.cos(b/2)-1e-10]
-    nq = len(q)
-    vertices = np.vstack([(2+half_gap)*q, (2-half_gap)*q]).tolist()
-    result = np.vstack([faces, faces+nq]).tolist()
-    face_groups = [0]*len(faces) + [1]*len(faces)
-    vertex_groups = [0]*nq + [1]*nq
-    for n, boundary in zip(sites, boundaries):
-        loops = [boundary+nq]
-        for u in np.linspace(-umax, umax, rings+1)[1:-1]:
-            t = tau*math.cosh(u)
-            w = np.clip((t-.65*b)/(.35*b), 0, 1)
-            blend = w**3*(10-15*w+6*w*w)
-            height = (1-blend)*.65*tau*abs(u) + blend*half_gap
-            p = (2+math.copysign(height, u))*directions(n, t)
-            loops.append(np.arange(len(vertices), len(vertices)+segments))
-            vertices.extend(p.tolist()); vertex_groups.extend([2]*segments)
-        loops.append(boundary)
-        for lower, upper in zip(loops, loops[1:]):
-            for i in range(segments):
-                j = (i+1) % segments
-                result.extend([[lower[i], lower[j], upper[j]], [lower[i], upper[j], upper[i]]])
-                face_groups.extend([2, 2])
+def make_mesh(name, count, group, edge_samples=12, sheet_rings=10, neck_rings=20):
+    solid, polygons = polyhedron(name)
+    assert len(polygons) == count
+    vertices, faces, groups, sites, waists = [], [], [], [], []
+    opening_angles = []
+    lookup = {}
+
+    def vertex(p, color):
+        key = tuple(np.round(p, 9))
+        if key not in lookup:
+            lookup[key] = len(vertices); vertices.append(p); groups.append(color)
+        return lookup[key]
+
+    def strip(a, b):
+        for j in range(len(a)):
+            k = (j+1) % len(a)
+            faces.extend([[a[j], a[k], b[k]], [a[j], b[k], b[j]]])
+
+    for polygon in polygons:
+        p = solid[polygon]; n = unit(p.mean(axis=0)); sites.append(n)
+        edge_midpoints = unit(p + np.roll(p, -1, axis=0))
+        inradius = float(np.arccos(np.max(edge_midpoints @ n)))
+        alpha = .72*inradius
+        opening_angles.append(alpha)
+        boundary = unit(np.array([(1-t)*a+t*b for a, b in zip(p, np.roll(p, -1, axis=0))
+                                  for t in np.arange(edge_samples)/edge_samples]))
+        beta = np.arccos(np.clip(boundary @ n, -1, 1))
+        tangent = unit(boundary - (boundary @ n)[:, None]*n)
+
+        def ring(r, angle, color):
+            angle = np.broadcast_to(angle, beta.shape)
+            points = r*(np.cos(angle)[:, None]*n + np.sin(angle)[:, None]*tangent)
+            return [vertex(q, color) for q in points]
+
+        openings = []
+        for color, sign in enumerate([1, -1]):
+            rings = [ring(RADIUS+sign*HALF_GAP, alpha+(beta-alpha)*t, color)
+                     for t in np.linspace(0, 1, sheet_rings+1)]
+            for a, b in zip(rings, rings[1:]): strip(a, b)
+            openings.append(rings[0])
+        # A rounded radial bridge: tangent to both spherical sheets at its rims.
+        rings = [openings[0]]
+        for j in range(1, neck_rings):
+            t = math.pi*j/neck_rings
+            rings.append(ring(RADIUS+HALF_GAP*math.cos(t), alpha*(1-.40*math.sin(t)), 2))
+        rings.append(openings[1])
+        waists.append(rings[neck_rings//2])
+        for a, b in zip(rings, rings[1:]): strip(a, b)
     vertices = np.array(vertices)
-    faces, normals, audit = orient_and_audit(vertices, np.array(result))
-    assert audit['genus'] == count-1
+    faces, normals, audit = orient(vertices, faces)
+    assert audit['euler_characteristic'] == 4-2*count, audit
     assert len(vertices) < 65536
-    assert b < separation.min()
-    audit.update(necks=count, minimum_site_angle=float(separation.min()),
-                 patch_radius=float(b), waist_parameter=float(tau), half_gap=float(half_gap))
-    data = dict(name='ketover-platonic', kind='platonic-doubling-schematic', status='schematic',
-                solid=solid, necks=count, genus=count-1,
-                vertices=np.round(vertices, 7).tolist(), normals=np.round(normals, 7).tolist(),
-                faces=faces.tolist(), paths=[], faceGroups=face_groups, vertexGroups=vertex_groups,
-                palette=COLORS.tolist(), sites=np.round(2*sites, 9).tolist(),
-                view=dict(yaw=.55, pitch=.33, radius=2.85),
-                construction=dict(base_radius=2, patch_radius=b, waist_parameter=tau,
-                                  half_gap=half_gap, radial_compression=.65,
-                                  segments=segments, rings=rings),
-                description='Two punctured spherical sheets joined through face-center necks. '
-                'Original compact sweepout schematic, not a computed self-shrinker. '
-                'Compactness and ends of the min-max limit are not determined by this drawing.')
+    data = dict(name='ketover-platonic', kind='platonic-doubling-schematic',
+        status='schematic', solid=name, necks=count, genus=count-1, symmetry=group,
+        vertices=np.round(vertices, 7).tolist(), faces=faces.tolist(),
+        normals=np.round(normals, 7).tolist(), paths=[], vertexGroups=groups,
+        palette=COLORS.tolist(), sites=np.round(RADIUS*np.array(sites), 9).tolist(),
+        faceGroups=np.max(np.array(groups)[faces], axis=1).tolist(),
+        construction=dict(base_radius=RADIUS, half_gap=HALF_GAP,
+            opening_angle=opening_angles[0], segments=len(waists[0]), rings=neck_rings,
+            edge_samples=edge_samples, sheet_rings=sheet_rings),
+        view=dict(yaw=.63, pitch=.38, radius=2.5),
+        description='Compact doubling-sweepout model, not a computed self-shrinker. '
+        'Compactness and ends of the min-max shrinker are not determined by the paper.')
+    audit.update(genus=count-1, necks=count, edge_incidence=[2],
+        minimum_site_angle=float(np.arccos(np.clip(np.array(sites) @ np.array(sites).T - np.eye(count)*3, -1, 1)).min()),
+        opening_angle=opening_angles[0], half_gap=HALF_GAP)
     return data, audit
 
 
-def render_mesh(data, width=560, cut=False):
-    """Depth-sorted triangles, supersampled for the static SVG fallback."""
-    vertices = np.array(data['vertices']); faces = np.array(data['faces'])
-    yaw, pitch = .55, .33
-    x, y, z = vertices.T
-    a = x*np.cos(yaw)-y*np.sin(yaw); b = x*np.sin(yaw)+y*np.cos(yaw)
-    q = np.column_stack([a, z*np.cos(pitch)-b*np.sin(pitch), z*np.sin(pitch)+b*np.cos(pitch)])
-    xy = np.column_stack([width/2+width*.18*q[:, 0], width/2-width*.18*q[:, 1]])
-    surface = Image.new('RGBA', (width*3, width*3))
-    painter = ImageDraw.Draw(surface)
-    for j in np.argsort(q[faces, 2].mean(axis=1)):
-        f = faces[j]; a, b, c = q[f]
-        n = np.cross(b-a, c-a); n /= np.linalg.norm(n)
-        if n[2] < 0: n = -n
-        light = .48+.50*max(0, n @ np.array([-.35, .55, .76]))
-        rgb = np.rint(COLORS[data['faceGroups'][j]]*light).astype(int)
-        polygon = list(xy[f])
+def render(data, size, cut=False):
+    """Original rasterization of our mesh, embedded in the accessible SVG."""
+    scale = 2
+    picture = Image.new('RGB', (size*scale, size*scale), '#f7fafb')
+    draw = ImageDraw.Draw(picture)
+    yaw, pitch = .63, .38
+    cy, sy, cp, sp = math.cos(yaw), math.sin(yaw), math.cos(pitch), math.sin(pitch)
+    rotation = np.array([[cy, -sy, 0], [-sy*sp, -cy*sp, cp], [sy*cp, cy*cp, sp]])
+    v, f, normal = np.array(data['vertices']), np.array(data['faces']), np.array(data['normals'])
+    q = v @ rotation.T; ns = normal @ rotation.T
+    xy = np.column_stack([size*scale/2 + q[:, 0]*size*scale/5.2,
+                          size*scale/2 - q[:, 1]*size*scale/5.2])
+    tint = COLORS[np.array(data['vertexGroups'])]
+    light = unit(np.array([-.35, .55, .8]))
+    for j in np.argsort(q[f, 2].mean(axis=1)):
+        face = f[j]; polygon = list(xy[face])
         if cut:
             polygon = []
-            for ia, ib in zip(f, np.roll(f, -1)):
-                ya, yb = vertices[ia, 1], vertices[ib, 1]
-                if ya <= 0: polygon.append(xy[ia])
-                if (ya <= 0) != (yb <= 0): polygon.append(xy[ia]+ya/(ya-yb)*(xy[ib]-xy[ia]))
+            for a, b in zip(face, np.roll(face, -1)):
+                ya, yb = v[a, 1], v[b, 1]
+                if ya <= 0: polygon.append(xy[a])
+                if (ya <= 0) != (yb <= 0):
+                    polygon.append(xy[a]+ya/(ya-yb)*(xy[b]-xy[a]))
             if len(polygon) < 3: continue
-        painter.polygon([(round(3*p[0]), round(3*p[1])) for p in polygon],
-                        fill=tuple(int(v) for v in rgb)+(255,))
-    return surface.resize((width*2, width*2), Image.Resampling.LANCZOS)
+        n = unit(ns[face].mean(axis=0))
+        if n[2] < 0: n = -n
+        shade = .48+.50*max(0, n @ light)
+        color = tuple(np.round(tint[face].mean(axis=0)*shade).astype(int))
+        draw.polygon([tuple(p) for p in polygon], fill=color)
+    return picture.resize((size, size), Image.Resampling.LANCZOS)
 
 
 def drawing(models):
-    parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" role="img" aria-labelledby="title desc">',
-             '<title id="title">Ketover Platonic doubling: connected sheets and face-center necks</title>',
-             '<desc id="desc">A full surface and cutaway show the cube sweepout model with six radial necks and genus five. '
-             'Five smaller models compare tetrahedral, cubical, octahedral, dodecahedral and icosahedral face-center arrangements. '
-             'Original construction schematic, not computed self-shrinkers. Compactness of the min-max limits is not proved.</desc>',
-             '<rect width="1200" height="960" fill="#f7fafb"/>',
-             '<g font-family="Arial, Helvetica, sans-serif" fill="#183f52">',
-             '<text x="40" y="49" font-size="30" font-weight="600">Ketover’s Platonic shrinkers</text>',
-             '<text x="40" y="82" font-size="20" fill="#58727e">Construction picture: two spherical sheets joined at face centers</text>']
-
+    parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">',
+        '<title id="title">Ketover Platonic doubling: two sheets and face-center necks</title>',
+        '<desc id="desc">Original sweepout models for all five Platonic solids. A full genus-five cubical model and a cutaway show two spherical sheets joined by six radial necks. The five models have 4, 6, 8, 12 and 20 necks and genera 3, 5, 7, 11 and 19. These compact comparison surfaces are not computed shrinkers; compactness of the limiting shrinkers is not proved.</desc>',
+        '<rect width="1000" height="760" fill="#f7fafb"/>',
+        '<g font-family="Arial,sans-serif" fill="#183f52">',
+        '<text x="30" y="40" font-size="28" font-weight="600">Two spherical sheets, joined at the face centers</text>',
+        '<text x="30" y="70" font-size="18">Ketover’s Platonic doubling construction · original sweepout models</text>']
     def picture(data, x, y, size, cut=False):
-        buffer = io.BytesIO(); render_mesh(data, size, cut).save(buffer, format='PNG', optimize=True)
-        encoded = base64.b64encode(buffer.getvalue()).decode('ascii')
+        buf = io.BytesIO(); render(data, size*2, cut).save(buf, format='PNG')
+        encoded = base64.b64encode(buf.getvalue()).decode()
         parts.append(f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="data:image/png;base64,{encoded}"/>')
-
-    picture(models['cube'], 70, 100, 460)
-    picture(models['cube'], 670, 100, 460, True)
-    for x, title, subtitle in [(300, 'Doubled cube · 6 necks · genus 5', 'One connected surface'),
-                                (900, 'Cutaway reveals the inner sheet', 'Cut edges are a viewing aid')]:
-        parts.extend([f'<text x="{x}" y="548" text-anchor="middle" font-size="22" font-weight="600">{title}</text>',
-                      f'<text x="{x}" y="577" text-anchor="middle" font-size="18" fill="#58727e">{subtitle}</text>'])
-    for x, name, color in [(270, 'Outer sheet', '#4b8ba3'), (500, 'Inner sheet', '#d3a963'), (730, 'Connecting necks', '#bc744d')]:
-        parts.append(f'<circle cx="{x}" cy="613" r="6" fill="{color}"/><text x="{x+16}" y="619" font-size="18">{name}</text>')
-    parts.append('<path d="M40 644H1160" stroke="#cedde3"/>')
-    for i, (solid, count, group) in enumerate(SOLIDS):
-        cx = 130+235*i
-        picture(models[solid], cx-76, 657, 152)
-        parts.append(f'<text x="{cx}" y="826" text-anchor="middle" font-size="18" font-weight="600">{solid.capitalize()}</text>')
-        parts.append(f'<text x="{cx}" y="853" text-anchor="middle" font-size="17">{count} necks · genus {count-1}</text>')
-    parts += ['<path d="M40 875H1160" stroke="#cedde3"/>',
-              '<text x="40" y="910" font-size="19" font-weight="600">SCHEMATIC · not a numerical solution of the shrinker equation</text>',
-              '<text x="40" y="939" font-size="18" fill="#58727e">The models are compact; compactness and ends of Ketover’s min-max limits remain undetermined.</text>',
-              '</g></svg>']
+    picture(models['cube'], 55, 82, 360)
+    picture(models['cube'], 560, 82, 360, True)
+    for x, title, sub in [(235, 'Cube · 6 necks · genus 5', 'One connected surface'),
+                          (740, 'Cutaway', 'Inner sheet and connecting neck walls')]:
+        parts.extend([f'<text x="{x}" y="446" text-anchor="middle" font-size="19" font-weight="600">{title}</text>',
+                      f'<text x="{x}" y="473" text-anchor="middle" font-size="16">{sub}</text>'])
+    for i, (name, count, _) in enumerate(SOLIDS):
+        x = 100+200*i; picture(models[name], x-68, 498, 136)
+        parts.extend([f'<text x="{x}" y="653" text-anchor="middle" font-size="17">{name.title()}</text>',
+                      f'<text x="{x}" y="679" text-anchor="middle" font-size="16">{count} necks · genus {count-1}</text>'])
+    parts += ['<text x="30" y="719" font-size="17" font-weight="600">SCHEMATIC · no numerical solution of the shrinker equation</text>',
+              '<text x="30" y="746" font-size="16">The compact sweepout does not settle compactness or the ends of the min-max shrinker.</text>', '</g></svg>']
     (OUT/'ketover-platonic.svg').write_text('\n'.join(parts)+'\n')
 
 
 def main():
     models, audits = {}, {}
-    for solid, count, group in SOLIDS:
-        data, audits[solid] = make_mesh(solid)
-        assert data['necks'] == count
-        data['rotation_group'] = group
-        models[solid] = data
-        name = 'ketover-platonic' + ('' if solid == 'cube' else '-'+solid)
-        (OUT/(name+'.json')).write_text(json.dumps(data, separators=(',', ':'))+'\n')
+    for name, count, group in SOLIDS:
+        models[name], audits[name] = make_mesh(name, count, group)
+        suffix = '' if name == 'cube' else '-'+name
+        (OUT/f'ketover-platonic{suffix}.json').write_text(json.dumps(models[name], separators=(',', ':'))+'\n')
     drawing(models)
-    audit = dict(status='schematic', source='https://arxiv.org/pdf/1602.07271v1',
-                 source_locations='Theorem 0.1 and introduction, pp. 2–3; Section 2, pp. 9–10; Remark 2.5, pp. 14–15',
-                 models=audits)
-    (OUT/'platonic-audit.json').write_text(json.dumps(audit, indent=2)+'\n')
-    print(json.dumps(audit, indent=2))
+    (OUT/'platonic-audit.json').write_text(json.dumps(dict(status='schematic',
+        source='https://arxiv.org/pdf/1602.07271v1', source_pages=[2, 3, 9, 10, 12, 14, 15],
+        models=audits), indent=2)+'\n')
+    print(json.dumps(audits, indent=2))
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()
