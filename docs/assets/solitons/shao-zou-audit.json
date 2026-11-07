@@ -1,0 +1,173 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/abs/2507.18825v1",
+  "balanced_radius": 1.5186001120654735,
+  "radius_balance_residual": 3.3306690738754696e-16,
+  "models": {
+    "2-6": {
+      "vertices": 7682,
+      "faces": 15096,
+      "components": 1,
+      "boundary_loops": 2,
+      "genus": 5,
+      "euler_characteristic": -10,
+      "orientable": true,
+      "bridges": 6,
+      "minimum_triangle_area": 0.00022211836374299586
+    },
+    "2-10": {
+      "vertices": 9722,
+      "faces": 19200,
+      "components": 1,
+      "boundary_loops": 2,
+      "genus": 9,
+      "euler_characteristic": -18,
+      "orientable": true,
+      "bridges": 10,
+      "minimum_triangle_area": 8.116775792199153e-05
+    },
+    "2-14": {
+      "vertices": 11650,
+      "faces": 23072,
+      "components": 1,
+      "boundary_loops": 2,
+      "genus": 13,
+      "euler_characteristic": -26,
+      "orientable": true,
+      "bridges": 14,
+      "minimum_triangle_area": 4.156733737117633e-05
+    },
+    "3-6": {
+      "vertices": 12591,
+      "faces": 24792,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 10,
+      "euler_characteristic": -21,
+      "orientable": true,
+      "bridges": 12,
+      "minimum_triangle_area": 0.00020409615887006502
+    },
+    "3-10": {
+      "vertices": 16523,
+      "faces": 32700,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 18,
+      "euler_characteristic": -37,
+      "orientable": true,
+      "bridges": 20,
+      "minimum_triangle_area": 7.456193988027259e-05
+    },
+    "3-14": {
+      "vertices": 20219,
+      "faces": 40124,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 26,
+      "euler_characteristic": -53,
+      "orientable": true,
+      "bridges": 28,
+      "minimum_triangle_area": 3.819938085364965e-05
+    },
+    "4-6": {
+      "vertices": 17500,
+      "faces": 34488,
+      "components": 1,
+      "boundary_loops": 4,
+      "genus": 15,
+      "euler_characteristic": -32,
+      "orientable": true,
+      "bridges": 18,
+      "minimum_triangle_area": 0.00016760053442883057
+    },
+    "4-10": {
+      "vertices": 23324,
+      "faces": 46200,
+      "components": 1,
+      "boundary_loops": 4,
+      "genus": 27,
+      "euler_characteristic": -56,
+      "orientable": true,
+      "bridges": 30,
+      "minimum_triangle_area": 6.189925288958258e-05
+    },
+    "4-14": {
+      "vertices": 28788,
+      "faces": 57176,
+      "components": 1,
+      "boundary_loops": 4,
+      "genus": 39,
+      "euler_characteristic": -80,
+      "orientable": true,
+      "bridges": 42,
+      "minimum_triangle_area": 3.1808029382845635e-05
+    },
+    "5-6": {
+      "vertices": 22409,
+      "faces": 44184,
+      "components": 1,
+      "boundary_loops": 5,
+      "genus": 20,
+      "euler_characteristic": -43,
+      "orientable": true,
+      "bridges": 24,
+      "minimum_triangle_area": 0.00012363777739499626
+    },
+    "5-10": {
+      "vertices": 30125,
+      "faces": 59700,
+      "components": 1,
+      "boundary_loops": 5,
+      "genus": 36,
+      "euler_characteristic": -75,
+      "orientable": true,
+      "bridges": 40,
+      "minimum_triangle_area": 5.136484431354713e-05
+    },
+    "5-14": {
+      "vertices": 37357,
+      "faces": 74228,
+      "components": 1,
+      "boundary_loops": 5,
+      "genus": 52,
+      "euler_characteristic": -107,
+      "orientable": true,
+      "bridges": 56,
+      "minimum_triangle_area": 2.6595136619805836e-05
+    },
+    "6-6": {
+      "vertices": 27318,
+      "faces": 53880,
+      "components": 1,
+      "boundary_loops": 6,
+      "genus": 25,
+      "euler_characteristic": -54,
+      "orientable": true,
+      "bridges": 30,
+      "minimum_triangle_area": 9.223294283278515e-05
+    },
+    "6-10": {
+      "vertices": 36926,
+      "faces": 73200,
+      "components": 1,
+      "boundary_loops": 6,
+      "genus": 45,
+      "euler_characteristic": -94,
+      "orientable": true,
+      "bridges": 50,
+      "minimum_triangle_area": 4.2595762575802846e-05
+    },
+    "6-14": {
+      "vertices": 45926,
+      "faces": 91280,
+      "components": 1,
+      "boundary_loops": 6,
+      "genus": 65,
+      "euler_characteristic": -134,
+      "orientable": true,
+      "bridges": 70,
+      "minimum_triangle_area": 2.2410472832559517e-05
+    }
+  }
+}
