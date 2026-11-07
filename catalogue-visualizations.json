@@ -310,13 +310,14 @@
       "category": "translators",
       "citations": [
         "CatHIMWNotes19",
-        "CatNguyen09"
+        "CatNguyen09",
+        "CatHMWTridents22"
       ],
-      "model": "grim-plane-gluing",
-      "status": "Schematic",
-      "caption": "Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
-      "alt": "Nguyen translating tridents. Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
-      "interactive": false
+      "model": "nguyen-tridents",
+      "status": "Construction schematic",
+      "caption": "One connected Scherk-based drawing with periodic saddle connections, grim-reaper wings, and a central sheet. Rotate, inspect a half surface, or inspect an end view. The displayed neck scales are illustrative; the drawing does not solve the translator equation. All outer edges are display cuts.",
+      "alt": "Connected trident construction schematic with a row of saddle connections. Two grim-reaper wings rise beside a central sheet; the strip repeats periodically.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-finite-genus-translators",

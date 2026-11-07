@@ -167,13 +167,15 @@ See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{C
 
 \chapter{Nguyen translating tridents}\label{sec:catalogue-nguyen-tridents}
 \begin{example}[Nguyen translating tridents]\label{ex:catalogue-nguyen-tridents}
-Nguyen's tridents are complete periodic embedded translators in $\mathbb R^3$ constructed by desingularizing the intersection of a grim-reaper cylinder and a plane. There is no explicit global parametrization in the supplied survey.
+Nguyen's tridents are complete periodic embedded translating surfaces in $\mathbb R^3$ obtained by desingularizing a grim-reaper cylinder and a plane. We use unit upward velocity $e_3$, so $M_t=M_0+t e_3$ for all $t\in\mathbb R$. There is no explicit global formula for the completed translator.
 \begin{itemize}
-\item They are noncompact and have infinite genus. The construction uses repeated small connecting regions; a smooth union of the input grim cylinder and plane is not itself the translator.
-\item The supplied notes compare their asymptotics with the pitchfork: in the upward convention there is a single asymptotic plane in the negative-height direction and three parallel asymptotic planes in the positive-height direction.
-\item They generate eternal flows by translation. Periodicity and infinite genus distinguish them from the simply connected pitchfork.
+\item They are noncompact and have infinite genus. A repeating row of Scherk saddle connections resolves the intersection; the intersecting input surfaces are not themselves a trident.
+\item In the upward convention there is one asymptotic plane as $z\to-\infty$ and three parallel asymptotic planes as $z\to+\infty$. These describe height-direction asymptotics, not a count of topological ends of the full periodic surface.
+\item Nguyen's construction applies at sufficiently small positive scales. The later semigraphical construction agrees with these examples in that range; its tridents are properly embedded and have entropy $3$ \cite{CatHMWTridents22}, Theorem 1 and pp. 2--3. This entropy is not identified with centered Gaussian area.
 \end{itemize}
-See \cite{CatHIMWNotes19}, Section 4, PDF page 11, and Section 5, PDF page 12, referring to \cite{CatNguyen09}. The construction is externally cited; the survey does not specify a full parameter range or a uniqueness, entropy, or stability result. A drawing of the intersecting plane and grim cylinder illustrates the gluing configuration only.
+The local minimal ingredient is $\sin v=\sinh u\sinh w$, with $(u,v,w)\in\mathbb R^3$ and period $2\pi$ in $v$. Its four wings are attached to two planar wings and two grim-reaper wings. In the unit upward convention the limiting inputs are $z=-\log\cos y$, $|y|<\pi/2$, $x\in\mathbb R$, and the plane $y=0$. See \cite{CatNguyen09}, Theorem 1, Sections 1.2--1.4 and Section 2 (Definitions 4--5), and \cite{CatHMWTridents22}, Figures 1--2. The latter figures use downward translation; here height is reflected.
+
+The interactive picture is an original smooth deformation of the Scherk ingredient, with three periods shown. Its half-surface view exposes the saddle connections. Its neck scale is a drawing parameter: the unbalancing, cutoff matching, and final nonlinear correction in Nguyen's proof have not been computed. In particular, its fixed illustrative half-width $\pi/2$ is the limiting input width, not the width of a finite-period trident. See \cite{CatHIMWNotes19}, Sections 4--5, for the survey comparison with the simply connected pitchfork.
 \end{example}
 
 

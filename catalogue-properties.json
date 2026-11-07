@@ -1245,10 +1245,11 @@
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
-      "notes": "",
+      "notes": "The picture is a construction schematic. Its neck scale and limiting half-width do not specify a computed translator. One lower and three upper limiting planes are height-direction asymptotics, not a topological end count.",
       "citations": [
         "CatHIMWNotes19",
-        "CatNguyen09"
+        "CatNguyen09",
+        "CatHMWTridents22"
       ],
       "cases": [
         {
@@ -1268,8 +1269,9 @@
           },
           "compact": false,
           "entropy": {
-            "status": "not-recorded",
-            "text": "Not recorded in this entry."
+            "status": "exact",
+            "text": "λ = 3; Hoffman–Martín–White, arXiv:1909.09241v2, p. 3. Not inferred from the drawing or equated with F₀,₁.",
+            "value": 3
           },
           "gaussian": {
             "status": "not-recorded",
@@ -1277,7 +1279,7 @@
           },
           "embeddedness": {
             "key": "embedded",
-            "text": "The periodic translators are embedded after desingularization; the intersecting plane and grim cylinder are construction inputs."
+            "text": "Complete and properly embedded periodic tridents; Nguyen’s small-scale examples coincide with the semigraphical family by Hoffman–Martín–White, Theorem 1 and p. 2. The intersecting plane and grim cylinder are limiting inputs."
           }
         }
       ]

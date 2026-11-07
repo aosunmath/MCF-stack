@@ -1165,7 +1165,7 @@
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
-      "formula_status": "surveyed gluing construction",
+      "formula_status": "gluing construction; exact Scherk and grim-reaper ingredients; illustrative deformation is not a solved translator",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1177,7 +1177,16 @@
         },
         {
           "key": "CatNguyen09",
-          "locator": "original externally cited gluing construction"
+          "locator": "Author-posted manuscript: Theorem 1, p. 2; Sections 1.2--1.4, pp. 3--4; Section 2, Definitions 4--5, pp. 5--7; Section 5, pp. 18--19."
+        },
+        {
+          "key": "CatHMWTridents22",
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ],
+          "locator": "Theorem 1, Figures 1--2; agreement with Nguyen at small period, proper embeddedness, infinite genus and entropy 3; arXiv:1909.09241v2."
         }
       ]
     },
