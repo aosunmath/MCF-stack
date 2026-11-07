@@ -99,12 +99,8 @@ def perturbation():
  finish(s,'minimal-ancient-flows',['Local normal-graph diagram only: the Costa example has genus 1 and 3 ends.','No global minimal-surface profile or finite-time ancient slice is computed.'])
 
 def pancakes():
- s=heading('Two stacked pancakes: a meridian')
- line(s,320,81,320,333,stroke=MUTED,width=1,stroke_dasharray='5 4')
- # A simple closed symmetric dumbbell meridian, with flattened lobes.
- d='M320,105 C410,105 565,98 568,137 C572,177 407,168 350,177 C333,180 333,223 350,226 C407,235 572,226 568,266 C565,305 410,298 320,298 C230,298 75,305 72,266 C68,226 233,235 290,226 C307,223 307,180 290,177 C233,168 68,177 72,137 C75,98 230,105 320,105 Z'
- path(s,d,fill=PALE,width=3);text(s,359,209,'neck',15);text(s,320,326,'rotation axis',14,anchor='middle')
- finish(s,'stacked-pancakes',['Hypersurface dimension n ≥ 3; ambient dimension n+1 ≥ 4.','A profile drawing does not assert an example in Euclidean three-space.'])
+ from generate_stacked_pancakes import main as draw_pancakes
+ draw_pancakes()
 
 def spiral():
  s=heading('Compact ancient spiral: curve and cap')

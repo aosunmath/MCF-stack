@@ -39,3 +39,27 @@ No extra stability, entropy, or uniqueness result is inferred from a picture. Fi
 ## Verification
 
 The source changes passed 122 Python tests and 44 JavaScript tests, a complete build with internal link validation, and all twelve new reader pages at 1440-pixel desktop and 390-pixel mobile widths. Browser checks covered loaded figures, interactive rotation and zoom, rendered mathematics, citation disclosure, and combined ambient/genus/ends/embeddedness filters. All old section routes and permanent tags remain present, and the generated edition has exactly the introduction and four solution categories. No source PDFs are exported.
+
+
+### Revised stacked-pancake illustration
+
+The stacked-pancake entry now has an original shaded, rotatable three-dimensional
+linear section and an annotated meridian. The source review used
+[Mramor–Yudowitz, arXiv:2509.26515v3](https://arxiv.org/abs/2509.26515v3),
+Theorem 1.1, Figure 1, the rotational equation (2.6), and the construction in
+Section 3.1 (including Figure 2). The construction selects a neck parameter in
+long-lived approximating flows and takes an ancient limit; it does not supply an
+explicit time slice. The introduction specifically leaves the precise backward
+pancake/catenoid decomposition unresolved.
+
+Run `python3 scripts/generate_stacked_pancakes.py` to reproduce both SVGs and the
+viewer mesh; the author-survey generator delegates to this script as well. The
+Bezier profile is a qualitative drawing with two radial maxima, one positive
+neck minimum, reflection symmetry, and two capped poles. Its axial coordinate is
+strictly monotone. Mesh checks verify a closed sphere section before any display
+cutaway is applied. Proportions, neck color, and angular cutaway are illustrative;
+there is no time slider, PDE solution, or asserted catenoid neck. Full orbits are
+S^(n−1), collapsing at the poles; only an S^1 section is rendered. Thus the 3D
+section is not an n=2 example: equation (2.6) retains the full hypersurface dimension
+n ≥ 3. The second drawing identifies the fixed containing slab separately from
+the moving poles. Both drawings remain available without JavaScript and in print.

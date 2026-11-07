@@ -46,6 +46,11 @@ function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
   const stage=figure.querySelector('.soliton-stage');
+  let viewLabel;
+  if(data.viewLabel){
+    viewLabel=document.createElement('p');viewLabel.className='soliton-view-label';
+    viewLabel.textContent=data.viewLabel;stage.append(viewLabel);
+  }
   const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:(data.view?.pitch??.43),zoom:1,fourD:.55});
   let state=resetState(), vertices=data.vertices, dragging=null, wire=false, scheduled=false;
   let degrees=data.revolution?.degrees??360, meridian=false;
@@ -67,7 +72,7 @@ function init(figure, data) {
       canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
     }
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
-    let scale=Math.min(width*.43,height*.42)/(radius||1)*state.zoom;
+    let scale=Math.min(width*.43/((data.view?.horizontalRadius??radius)||1),height*.42/(radius||1))*state.zoom;
     if(meridian){
       const curve=data.revolution.meridian;
       const rmax=Math.max(...curve.map(p=>p[0])),zmax=Math.max(...curve.map(p=>Math.abs(p[1])));
@@ -100,7 +105,7 @@ function init(figure, data) {
       ctx.beginPath();face.forEach((i,j)=>j?ctx.lineTo(...screen[i]):ctx.moveTo(...screen[i]));ctx.closePath();
       ctx.fillStyle=`rgb(${rgb.join(',')})`;ctx.fill();
       // Cover antialias seams between adjacent triangles in the cutaway mesh.
-      if(data.revolution&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.4;ctx.stroke();}
+      if(data.revolution&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=data.view?.seamWidth??.4;ctx.stroke();}
       if(wire){ctx.strokeStyle='rgba(24,63,82,.32)';ctx.lineWidth=.5;ctx.stroke();}
     }
     ctx.strokeStyle='#21667f';ctx.lineWidth=2.5;
@@ -184,7 +189,10 @@ function init(figure, data) {
       button.setAttribute('aria-pressed',String(meridian));input.disabled=meridian;
       input.value=String(degrees);output.textContent=`Revolve: ${degrees}°`;
       visibleFaces=revolutionFaces(data,degrees);
-      help.textContent=meridian?'Generating curve in the (r, z) half-plane. Blue: shot from the upper pole. Orange: reflected continuation. Zoom buttons remain active.':'Drag to rotate; + / − zoom. The angle control removes sectors to reveal the sheets; cut edges are display boundaries. Meridian shows the generating curve.';
+      help.textContent=meridian
+        ? (data.revolution.meridianHelp??'Generating curve in the (r, z) half-plane. Blue: shot from the upper pole. Orange: reflected continuation. Zoom buttons remain active.')
+        : (data.revolution.surfaceHelp??'Drag to rotate; + / − zoom. The angle control removes sectors to reveal the sheets; cut edges are display boundaries. Meridian shows the generating curve.');
+      if(viewLabel)viewLabel.textContent=meridian?(data.revolution.meridianLabel??data.viewLabel):data.viewLabel;
     };
     input.addEventListener('input',()=>{degrees=Number(input.value);sync();requestDraw();});
     button.addEventListener('click',()=>{meridian=!meridian;dragging=null;state.zoom=1;sync();requestDraw();});

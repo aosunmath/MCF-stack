@@ -915,10 +915,19 @@
         "CatMY26"
       ],
       "model": "stacked-pancakes",
-      "status": "Heuristic schematic",
-      "caption": "Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
-      "alt": "Ancient stacked pancakes. Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
-      "interactive": false
+      "status": "Schematic 3D section",
+      "caption": "Original illustration informed by Mramor–Yudowitz, Theorem 1.1, Figure 1 and Sections 2.2–3.1. A three-dimensional linear section shows two flattened lobes joined by one neck (copper). The actual hypersurface has dimension n ≥ 3 in ℝⁿ⁺¹; the displayed section is not itself a mean curvature flow in ℝ³. Rotate and zoom, close the cutaway with Revolve, or inspect the meridian. The drawn proportions are illustrative; no evolution equation is solved.",
+      "alt": "Schematic three-dimensional section of two flattened pancakes connected by one central neck, with a quarter removed to expose the connection. The actual ambient dimension is at least four.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "stacked-pancakes-profile",
+          "status": "Schematic meridian",
+          "interactive": false,
+          "caption": "The right profile r = u(x,t) has exactly two local maxima and one positive local minimum at the neck; the two poles lie on the rotation axis. Reflection across x = 0 exchanges the lobes. The dashed horizontal boundaries mark a fixed containing slab, not the moving caps. Away from the poles, each profile point represents an Sⁿ⁻¹ orbit in the full hypersurface. This qualitative drawing is not to scale and asserts no catenoid asymptotics.",
+          "alt": "Annotated symmetric meridian: two radius maxima, one central neck minimum, two poles on the vertical axis, the reflection plane, and two boundaries of a fixed containing slab."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-ancient-spiral-curves",
