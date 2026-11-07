@@ -78,3 +78,8 @@
 .network-figure canvas,.network-figure canvas:active{cursor:default;touch-action:pan-y}
 @media(max-width:699px){.network-figure .soliton-stage{height:660px}}
 @media print{.network-figure .soliton-stage{height:390px}}
+.expander-view-label { position:absolute; left:12px; top:8px; margin:0; max-width:calc(100% - 24px); padding:5px 9px; border-radius:6px; background:rgba(247,250,251,.92); color:#183f52; font:600 13px/1.4 system-ui,sans-serif; pointer-events:none; }
+.expander-legend { margin:.4rem 1rem; font-size:.85rem; line-height:1.5; color:#526b77; }
+.soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage:has(img:not([hidden])) { height:auto; aspect-ratio:1000/840; }
+@media print { .expander-view-label,.expander-legend { display:none !important; } }
+@media print { .soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage { height:auto; aspect-ratio:1000/840; } }

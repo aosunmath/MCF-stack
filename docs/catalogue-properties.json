@@ -4025,7 +4025,7 @@
       "category": "expanders",
       "tag": "3A8C3B21B572",
       "model": "high-genus-expanders",
-      "illustration_status": "Heuristic schematic"
+      "illustration_status": "Interactive topology schematic"
     },
     {
       "label": "ex:catalogue-knotted-expanders",
