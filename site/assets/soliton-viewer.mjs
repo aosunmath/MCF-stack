@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='moller-configuration'){
+      if(data.kind==='delta-wing-pde'){
+        const {initDeltaWingFigure}=await import('./delta-wing-viewer.mjs');
+        initDeltaWingFigure(figure,data);
+      } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
       } else if(data.kind==='moller-genus-model'){

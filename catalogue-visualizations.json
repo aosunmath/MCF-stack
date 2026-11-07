@@ -237,11 +237,11 @@
       "citations": [
         "CatHIMWGraphical18"
       ],
-      "model": "strip-grim-limits",
-      "status": "Schematic",
-      "caption": "Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
-      "alt": "Strictly convex delta-wing translators. Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
-      "interactive": false
+      "model": "delta-wing",
+      "status": "Numerical PDE surface",
+      "caption": "A computed compact patch of the Δ-wing of strip width √2 π, following the paper’s rectangular Dirichlet construction and reflected to translate upward. Rotate the surface, trim its height, or compare longitudinal and transverse profiles with the exact tilted grim-reaper limit. All rim edges are display cuts; this finite-domain approximation has no certified error bound.",
+      "alt": "A smooth, elongated convex Δ-wing with a rounded minimum and two rising arms. Numerical PDE approximation at strip width square root of two times pi; interactive surface and recentered profile views.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-wang-entire-translators",

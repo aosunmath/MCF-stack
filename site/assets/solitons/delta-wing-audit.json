@@ -1,0 +1,47 @@
+{
+  "status": "numerical-pde; no certified error bounds",
+  "source": "https://arxiv.org/abs/1805.10860v2",
+  "source_locations": "Equation (1.3), Figure 3, Theorem 2.4, Sections 3\u20134 and Theorem 5.7",
+  "normalization": "Hvec = e3 perpendicular; reflect the source vertical coordinate; u(0,0)=0",
+  "half_width": 2.221441469079183,
+  "width": 4.442882938158366,
+  "tilt_angle": 0.7853981633974483,
+  "equation": "((1+u_y^2)u_xx - 2u_x u_y u_xy + (1+u_x^2)u_yy)/(1+u_x^2+u_y^2) = 1",
+  "method": "Second-order finite differences on a quadrant; even reflection on axes; zero Dirichlet data on rectangle edges; damped Newton; subtract apex height; bicubic sampling",
+  "rectangle_half_length": 24,
+  "grid_intervals": [
+    480,
+    960
+  ],
+  "display_height": [
+    0,
+    6
+  ],
+  "residual_sample_count": 27915,
+  "max_sampled_interpolant_pde_residual": 0.0006034220852311201,
+  "min_sampled_hessian_eigenvalue": 0.004050906972739465,
+  "domain_comparison": {
+    "half_lengths": [
+      22,
+      24
+    ],
+    "y_intervals": 960,
+    "x_spacing": 0.1,
+    "max_display_height_change": 0.006222829044295608,
+    "max_recentered_profile_change": 0.008183041223078114
+  },
+  "grid_comparison": {
+    "half_length": 24,
+    "y_intervals": [
+      720,
+      960
+    ],
+    "x_spacing": 0.1,
+    "max_display_height_change": 0.008161178502962052
+  },
+  "apex_hessian": [
+    0.24426663348225136,
+    0.7557334961577215
+  ],
+  "limitations": "Residuals and mesh/domain comparisons are numerical diagnostics, not rigorous bounds. The finite rectangle is not the complete translator; only a compact centered portion is shown. No boundary of the complete surface is implied."
+}

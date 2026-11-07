@@ -53,3 +53,5 @@ The [KKM construction picture](kkm-picture.md) uses the paper’s Scherk ingredi
 The [spherical-doubling picture](spherical-doubling-picture.md) shows connected inner and outer sheets, radial necks, and a cutaway. A numerical balanced linearized latitude guide informs the site placement; the mesh is a construction schematic, not a solved shrinker. Its generator additionally uses Pillow to render compact static mesh views.
 
 The [Nguyen construction picture](nguyen-picture.md) shows the connected Scherk saddle belt, a cutaway, and a separately rotatable unwrapped Scherk minimal ingredient. The global mesh and end profile are explicitly schematic. Regeneration uses NumPy, scikit-image, fast-simplification, and Pillow.
+
+The [Δ-wing picture](delta-wing-picture.md) now uses a numerical solution of the rectangular translator Dirichlet problem, with a height cut and two interactive profile views. Its exact tilted grim-reaper comparison is kept distinct from the computed surface.

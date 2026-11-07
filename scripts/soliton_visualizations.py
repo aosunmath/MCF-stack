@@ -66,7 +66,7 @@ def validate_figure(item, label, destination):
         n = len(data['vertices'])
         if not n or any(i < 0 or i >= n for face in data['faces'] + data['paths'] for i in face):
             raise ValueError('Invalid geometry indices: ' + label)
-        if data['status'] == 'numerical-ode' and 'Numerical' not in item['status']:
+        if data['status'] in {'numerical-ode', 'numerical-pde'} and 'Numerical' not in item['status']:
             raise ValueError('Numerical geometry must be labeled: ' + label)
 
     for variant in item.get('additional_drawings', []):
