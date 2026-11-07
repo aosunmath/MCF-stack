@@ -1,0 +1,97 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/1602.07271v1",
+  "source_locations": "Theorem 0.1 and introduction, pp. 2\u20133; Section 2, pp. 9\u201310; Remark 2.5, pp. 14\u201315",
+  "models": {
+    "tetrahedron": {
+      "vertices": 13880,
+      "faces": 27768,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -4,
+      "genus": 3,
+      "minimum_triangle_area": 0.0008748364113862506,
+      "necks": 4,
+      "minimum_site_angle": 1.910633236249477,
+      "patch_radius": 1.12,
+      "waist_parameter": 0.47040000000000004,
+      "half_gap": 0.46270865305338493
+    },
+    "cube": {
+      "vertices": 15214,
+      "faces": 30444,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -8,
+      "genus": 5,
+      "minimum_triangle_area": 0.0008748364113856812,
+      "necks": 6,
+      "minimum_site_angle": 1.5707963267948966,
+      "patch_radius": 1.12,
+      "waist_parameter": 0.47040000000000004,
+      "half_gap": 0.46270865305338493
+    },
+    "octahedron": {
+      "vertices": 17580,
+      "faces": 35184,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -12,
+      "genus": 7,
+      "minimum_triangle_area": 0.0007475338211450662,
+      "necks": 8,
+      "minimum_site_angle": 1.2309594173403162,
+      "patch_radius": 1.0340059105658657,
+      "waist_parameter": 0.43428248243766354,
+      "half_gap": 0.4271816804706879
+    },
+    "dodecahedron": {
+      "vertices": 22456,
+      "faces": 44952,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -20,
+      "genus": 11,
+      "minimum_triangle_area": 0.0006064745992840788,
+      "necks": 12,
+      "minimum_site_angle": 1.1071487177940094,
+      "patch_radius": 0.9300049229469678,
+      "waist_parameter": 0.3906020676377265,
+      "half_gap": 0.38421546895518616
+    },
+    "icosahedron": {
+      "vertices": 36962,
+      "faces": 73996,
+      "components": 1,
+      "boundary_edges": 0,
+      "edge_incidence": [
+        2
+      ],
+      "orientable": true,
+      "euler_characteristic": -36,
+      "genus": 19,
+      "minimum_triangle_area": 0.0002655290095916698,
+      "necks": 20,
+      "minimum_site_angle": 0.7297276562260733,
+      "patch_radius": 0.6129712312299015,
+      "waist_parameter": 0.2574479171165586,
+      "half_gap": 0.2532384756811274
+    }
+  }
+}
