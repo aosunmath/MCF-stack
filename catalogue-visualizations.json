@@ -729,10 +729,10 @@
         "CatHMW2026"
       ],
       "model": "hmw-three-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.",
-      "alt": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows."
+      "status": "Original topology schematic",
+      "interactive": true,
+      "caption": "An original connected topology model informed by Hoffman–Martín–White, Figure 7 and Theorem 43. Three exterior sheets are joined by alternating open necks. Rotate, zoom, use the cutaway, inspect the neck layout, or compare with the separate multiplicity-three plane limit. The model has genus 2g; three-ended existence is proved only for sufficiently large g. The paper’s genus-two picture is conjectural. Neck sizes, end slopes and separation are illustrative; no shrinker equation has been solved. Outer rims and cut edges are display boundaries.",
+      "alt": "Connected three-ended HMW topology schematic with alternating upper and lower necks. Full view, cutaway and neck plan; model g = 3, genus six. Not a computed shrinker."
     },
     {
       "label": "ex:catalogue-ketover-platonic",

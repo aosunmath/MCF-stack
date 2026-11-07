@@ -119,19 +119,12 @@ def hmw_one():
 
 
 def hmw_three():
-    f=Figure('Hoffman–Martin–White three-ended shrinkers: limit schematic',
-             'Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.')
-    heading(f,'HMW three-ended shrinkers','For sufficiently large g: genus 2g and three conical ends')
-    for y in [245,194,143]:plane(f,190,y,141,28)
-    f.text(190,300,'Multiplicity displayed as separated sheets',14,anchor='middle')
-    f.arrow(352,194,414,194)
-    f.text(383,169,'g → ∞',15,anchor='middle')
-    plane(f,510,194,92,27)
-    f.text(510,248,'3P',25,weight=600,anchor='middle')
-    footer(f,['The finite-genus shrinker is connected; it is not drawn here.',
-              'The diagram records the limit, not the shape of its three ends.',
-              'SCHEMATIC • large-genus limit and multiplicity'])
-    f.save('hmw-three-ended.svg')
+    # Preserve the connected topology plate from generate_hmw_three_ended_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-three-ended.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def polyhedron(f,cx,cy,kind,size=32):
