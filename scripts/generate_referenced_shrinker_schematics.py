@@ -156,18 +156,12 @@ def polyhedron(f,cx,cy,kind,size=32):
 
 
 def ketover():
-    f=Figure('Ketover Platonic shrinkers: sweepout symmetry and genus',
-             'Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.')
-    heading(f,'Ketover Platonic shrinkers','Doubling-sweepout symmetry; five prescribed genera')
-    for x,kind,name,faces in zip([84,202,320,438,556],['tetra','cube','octa','dodeca','icosa'],['Tetrahedron','Cube','Octahedron','Dodecahedron','Icosahedron'],[4,6,8,12,20]):
-        polyhedron(f,x,180,kind,47)
-        f.text(x,113,name,13,anchor='middle')
-        f.text(x,251,f'{faces} faces',15,anchor='middle')
-        f.text(x,276,f'genus {faces-1}',17,weight=600,anchor='middle')
-    footer(f,['Proved entropy bounds: 4/e < λ < 8/e.',
-              'Compactness and exact end counts are not determined here.',
-              'SCHEMATIC • symmetry / sweepout data, not shrinker shapes'])
-    f.save('ketover-platonic.svg')
+    # Preserve the connected-mesh plate from generate_platonic_geometry.py.
+    source = ROOT / 'site/assets/solitons/ketover-platonic.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def swz():

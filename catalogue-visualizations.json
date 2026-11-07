@@ -743,10 +743,10 @@
         "CatKetover2016"
       ],
       "model": "ketover-platonic",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.",
-      "alt": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction."
+      "status": "Interactive construction schematic",
+      "interactive": true,
+      "caption": "Two spherical sheets are joined by one radial neck at each face center, following Ketover’s doubling sweepout (pp. 2 and 9–10). Choose a Platonic solid to see 4, 6, 8, 12, or 20 necks and genus 3, 5, 7, 11, or 19. Cutaway reveals the inner sheet; display separation enlarges the gap. Colors mark parts of one connected surface. These are compact comparison surfaces with illustrative neck sizes, not computed self-shrinkers. Compactness and ends of the min-max limits remain undetermined.",
+      "alt": "Full and cutaway views of two spherical sheets joined through six face-center necks in the cube arrangement, giving genus five. Five models show all Platonic face-center arrangements. Original construction schematic, not a solved self-shrinker."
     },
     {
       "label": "ex:catalogue-swz-large-entropy",
