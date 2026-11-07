@@ -50,15 +50,11 @@ def mountain():
  finish(s,'mountain-pass-expanders',['Symbolic ordering only; all three approach the same prescribed cone.','Smooth construction: 2 ≤ n ≤ 6. Instability requires the genericity hypothesis.'])
 
 def highgenus():
- s=heading('One cone, outgoing surfaces of large genus')
- for x in [160,320,480]:
-  path(s,f'M{x-24},92 L{x-14},160 L{x+14},160 L{x+24},92',fill=PALE,width=2)
-  text(s,x,85,'conical end',14,anchor='middle')
- path(s,'M110,160 Q100,305 320,320 Q540,305 530,160 Z',fill=PALE,width=2)
- for x,y in [(170,205),(235,240),(315,205),(395,240),(470,205)]:
-  el(s,'ellipse',cx=x,cy=y,rx=21,ry=11,fill='white',stroke=ACCENT,stroke_width=2)
- text(s,320,292,'handle symbols:  g = pᵃ k − 1',17,anchor='middle')
- finish(s,'high-genus-expanders',['The same cone has three link components; p is odd prime and a ≥ 0.','Handles are schematic symbols. The actual surfaces have no closed formula.'])
+ # Maintained by generate_high_genus_expander_geometry.py (mesh + slice plate).
+ # Do not overwrite the reviewed topology illustration with the old symbols.
+ if not (OUT/'high-genus-expanders.svg').exists():
+  raise RuntimeError('Run scripts/generate_high_genus_expander_geometry.py first')
+
 
 def knot():
  s=heading('A trefoil core with three end attachments')

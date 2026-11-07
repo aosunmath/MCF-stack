@@ -1754,7 +1754,8 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Theorems 1.1–1.2 and equation (1.5), pp. 2–3; Theorem 5.1 for the embedded expander class."
+        "Theorems 1.1–1.2 and equation (1.5), pp. 2–3; Theorem 5.1 for the embedded expander class.",
+        "Picture revision: Section 2, Definition 3.1 and Figure 1, Definition 4.1, Theorem 4.3, Theorem 5.1, Sections 6–10 and Theorems 12.6–12.7 (pp. 7–31, 39–40); topology and four existence classes, not independently verified proofs."
       ],
       "catalogue_bibliography_keys": [
         "CatHMWExpand26"

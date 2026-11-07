@@ -299,6 +299,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='spherical-doubling-schematic'){
         const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
         initSphericalDoublingFigure(figure,data);
+      } else if(data.kind==='high-genus-expander-schematic'){
+        const {initHighGenusExpanderFigure}=await import('./high-genus-expander-viewer.mjs');
+        initHighGenusExpanderFigure(figure,data);
       } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };

@@ -864,10 +864,10 @@
         "CatHMWExpand26"
       ],
       "model": "high-genus-expanders",
-      "status": "Heuristic schematic",
-      "caption": "Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
-      "alt": "Expanders of unbounded genus at a fixed cone. Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
-      "interactive": false
+      "status": "Interactive topology schematic",
+      "caption": "One connected model with three conical ends. Rotate, cut away the front, compare reflection-slice types, or change the model genus while keeping the same illustrative cone. The paper obtains four classes (small/big, type 1/type 2) by degree theory; the mesh does not distinguish small from big. No expander PDE is solved. The displayed k = 4 and cone opening are drawing choices, not verified existence parameters. Open the drawing for the slice-pairing diagrams.",
+      "alt": "Connected three-ended topology model and cutaway, with type 1 and type 2 reflection-slice diagrams. Not a computed self-expander.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-knotted-expanders",
