@@ -1354,8 +1354,8 @@
       "section": "the-pitchfork-translator",
       "category": "translators",
       "tag": "B5E7AB44607B",
-      "model": "pitchfork-ends",
-      "illustration_status": "Schematic"
+      "model": "pitchfork-surface",
+      "illustration_status": "Source-informed schematic"
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
