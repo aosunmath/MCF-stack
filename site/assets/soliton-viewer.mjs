@@ -227,7 +227,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='av-neckpinch'){
+      if(data.kind==='minimal-ancient-linearized'){
+        const {initMinimalAncientFigure}=await import('./minimal-ancient-viewer.mjs');
+        initMinimalAncientFigure(figure,data);
+      } else if(data.kind==='av-neckpinch'){
         const {initNeckpinchFigure}=await import('./neckpinch-viewer.mjs');
         initNeckpinchFigure(figure,data);
       } else if(data.kind==='immortal-product-schematic'){
@@ -266,6 +269,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='whitney-flow'){
         const {initWhitneyFlowFigure}=await import('./whitney-flow-viewer.mjs');
         initWhitneyFlowFigure(figure,data,rotatePoint);
+      } else if(data.kind==='hh-numerical-flow'){
+        const {initHHAncientOvalFigure}=await import('./hh-ancient-oval-viewer.mjs');
+        initHHAncientOvalFigure(figure,data,rotatePoint);
       } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);

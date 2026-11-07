@@ -902,9 +902,9 @@
         "CatHS14"
       ],
       "model": "hh-ancient-ovals",
-      "status": "Heuristic schematic",
-      "caption": "A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
-      "alt": "Haslhofer--Hershkovits ancient ovals. A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
+      "status": "Numerical PDE approximation",
+      "caption": "Surface case n = 2, j = 1: numerical rotational mean curvature flow from a long convex seed, following the limiting-construction strategy. Compare times, play the evolution, rotate, or inspect the meridian and the tip. The default view divides lengths by √(−t); Original size keeps the physical spatial scale fixed. Extinction is normalized to t = 0 and length/width = 2 at t = −1. These finite-seed computations are not certified slices of the ancient solution.",
+      "alt": "Four time slices of a numerical convex surface flow in three-space, from an elongated oval to an almost round sphere. Each is divided by square root of minus time at a common scale. Interactive time, rotation, zoom, meridian and bowl-tip comparisons.",
       "interactive": true
     },
     {
@@ -916,10 +916,10 @@
         "CatMP19"
       ],
       "model": "minimal-ancient-flows",
-      "status": "Heuristic schematic",
-      "caption": "A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
-      "alt": "Ancient flows from unstable minimal hypersurfaces. A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
-      "interactive": false
+      "status": "Numerical Costa surface and linearized time model",
+      "caption": "Four model times on the positive normal side of the Costa surface; switch sides, play, rotate, or inspect the stationary limit. The sampled surface has one handle and three truncated ends. Time follows a positive numerical Dirichlet Jacobi mode on the truncated surface, not the nonlinear ancient flow of Mramor–Payne. Normal displacements are magnified ×3 by default; ×1 restores model scale. The same camera and spatial scale are used for every panel.",
+      "alt": "Four views of a genus-one Costa surface with three open ends, moving away from the stationary minimal surface along a positive linearized mode. The opposite side is selectable. These are numerical linearized model views, not computed nonlinear ancient slices.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-reapernoid",

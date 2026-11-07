@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Original heuristic diagrams for the 2026-11-06 author survey.
 
-No mesh solves a soliton or evolution PDE. The four interactive meshes illustrate
+No mesh solves a soliton or evolution PDE. The remaining interactive meshes illustrate
 local geometry/topology only; the other drawings are labeled construction diagrams.
 Source figures and PDFs are not copied. Run with Python's standard library.
 """
@@ -65,12 +65,11 @@ def knot():
 
 
 def perturbation():
- s=heading('Ancient flows on either side of a minimal M')
- for shift,label,color in [(-37,'Mₜ⁺', '#b06a35'),(0,'M',MUTED),(37,'Mₜ⁻',ACCENT)]:
-  pts=[(x,205+shift+31*math.sin((x-120)/85)) for x in range(75,566,2)];curve(s,pts,stroke=color,width=3);text(s,569,pts[-1][1],label,18,fill=color)
- for x in [160,320,480]:line(s,x,163,x,205,stroke=MUTED,width=1,marker_end='url(#arrow)');line(s,x,249,x,211,stroke=MUTED,width=1,marker_end='url(#arrow)')
- text(s,320,120,'t → −∞: opposite-side convergence',18,anchor='middle')
- finish(s,'minimal-ancient-flows',['Local normal-graph diagram only: the Costa example has genus 1 and 3 ends.','No global minimal-surface profile or finite-time ancient slice is computed.'])
+ # The reviewed Costa mesh and time plate have dedicated generators.
+ for name in ['minimal-ancient-flows.svg','minimal-ancient-flows.json']:
+  if not (OUT/name).is_file():
+   raise FileNotFoundError('Run generate_minimal_ancient_geometry.py and generate_minimal_ancient_plate.mjs first')
+
 
 def pancakes():
  from generate_stacked_pancakes import main as draw_pancakes
@@ -93,7 +92,9 @@ def chains():
 
 def main():
  mountain();highgenus();knot();perturbation();pancakes();spiral();chains()
- mesh('hh-ancient-ovals',lambda u,v:(3*math.cos(u),math.sin(u)*math.cos(v),math.sin(u)*math.sin(v)),38,54,(0,math.pi),(0,TAU),'Ancient oval: a heuristic elongated slice')
+ # The numerical time sequence is maintained by generate_hh_ancient_ovals.py.
+ if not (OUT/'hh-ancient-ovals-audit.json').is_file():
+  raise FileNotFoundError('Run scripts/generate_hh_ancient_ovals.py first')
  mesh('reapernoid',lambda u,v:((1+.6*u*u)*math.cos(v),(1+.6*u*u)*math.sin(v),u+.2*math.tanh(u)),50,54,(-2,2),(0,TAU),'Reapernoid: heuristic annular slice in R3')
  mesh('translating-helicoids',lambda u,v:(.4*v+u*math.sin(math.pi*v/2),v,u*math.cos(math.pi*v/2)+.15*u*u),34,70,(-2,2),(-4,4),'Helicoid-like strip arrangement')
  def annulus(u,v):

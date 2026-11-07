@@ -2005,8 +2005,8 @@
       "section": "mean-curvature-evolution-of-the-whitney-sphere",
       "category": "other-special-flows",
       "tag": "245DFF2BED27",
-      "model": "whitney-flow",
-      "illustration_status": "Numerical PDE evolution from exact initial data"
+      "model": "whitney-profile",
+      "illustration_status": "Exact initial generating profile"
     },
     {
       "label": "ex:catalogue-degenerate-neckpinches",
@@ -4102,7 +4102,7 @@
     },
     {
       "label": "ex:catalogue-hh-ancient-ovals",
-      "notes": "",
+      "notes": "The time-dependent illustration computes finite-seed rotational MCF for n = 2, j = 1. It is not certified ancient-flow data and does not supply Gaussian-area or entropy values. The properties below refer to the mathematical ancient flows.",
       "citations": [
         "CatHH13",
         "CatHS14"
@@ -4173,11 +4173,11 @@
       "category": "other-special-flows",
       "tag": "56D296501918",
       "model": "hh-ancient-ovals",
-      "illustration_status": "Heuristic schematic"
+      "illustration_status": "Numerical PDE approximation"
     },
     {
       "label": "ex:catalogue-minimal-ancient-flows",
-      "notes": "",
+      "notes": "The interactive time sequence is a numerical linearized model on a truncated Costa domain. Its Dirichlet eigenvalue and magnified normal offsets are illustration data, not additional properties of the nonlinear ancient flows.",
       "citations": [
         "CatMP19"
       ],
@@ -4217,7 +4217,7 @@
       "category": "other-special-flows",
       "tag": "8A13A6308368",
       "model": "minimal-ancient-flows",
-      "illustration_status": "Heuristic schematic"
+      "illustration_status": "Numerical Costa surface and linearized time model"
     },
     {
       "label": "ex:catalogue-reapernoid",

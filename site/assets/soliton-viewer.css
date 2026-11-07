@@ -125,3 +125,14 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .soliton-figure[data-soliton$="immortal-product.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:960/964}
 @media print{.immortal-product-legend,.immortal-product-figure .soliton-status{display:none}.immortal-product-figure .soliton-stage{height:auto!important;aspect-ratio:960/964}.immortal-product-figure .soliton-stage img{height:auto}}
 .immortal-product-figure .soliton-controls{border-top:0;border-bottom:1px solid var(--line)}.immortal-product-figure .soliton-help{margin-top:10px}
+/* Four Costa model times share one scale and camera. */
+.minimal-ancient-figure .soliton-stage{height:590px}.minimal-ancient-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.minimal-ancient-figure .minimal-time-control{flex-basis:100%}.minimal-time-control input[type=range]{flex:1;max-width:350px}.minimal-time-control output{min-width:85px}.minimal-ancient-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.minimal-ancient-figure .soliton-stage{height:540px}.minimal-ancient-figure .soliton-controls select{max-width:205px}}
+.soliton-figure[data-soliton$="minimal-ancient-flows.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/850}
+@media print{.minimal-ancient-figure .soliton-stage{height:auto}.minimal-ancient-figure .soliton-stage img{height:auto}.minimal-ancient-note,.minimal-ancient-figure .soliton-status{display:none}}
+/* Ancient oval: offline numerical time slices and an equal-scale comparison. */
+.hh-flow .soliton-stage{height:380px}.hh-view-label{position:absolute;top:12px;left:16px;right:16px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.hh-time-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;flex-basis:100%}.hh-time-controls label{flex:1;min-width:180px;display:flex;flex-direction:column;align-items:stretch}.hh-time-controls input[type=range]{width:100%;max-width:none}.hh-time-controls output{font-variant-numeric:tabular-nums;font-size:13px}
+.hh-strip-title{font-size:12px;color:var(--muted);margin:12px 14px 4px}.hh-snapshots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px 12px 12px}.hh-snapshots button{padding:3px 5px 7px;min-width:0;border:1px solid #cbdce3;border-radius:4px;background:#f7fafb;color:#183f52;cursor:pointer}.hh-snapshots button[aria-pressed=true]{background:#e2eff4;border-color:#21667f}.hh-snapshots svg{width:100%;height:auto;display:block}.hh-snapshots span{font-size:12px;font-variant-numeric:tabular-nums}
+@media(max-width:699px){.hh-flow .soliton-stage{height:290px}.hh-snapshots{grid-template-columns:repeat(2,minmax(0,1fr))}.hh-time-controls{align-items:stretch}.hh-time-controls label{flex-basis:100%}.hh-time-controls button{min-height:44px}}
+@media print{.hh-flow .soliton-stage{height:auto;aspect-ratio:11/7}.hh-view-label,.hh-snapshots,.hh-strip-title,.hh-flow .soliton-status{display:none}}
