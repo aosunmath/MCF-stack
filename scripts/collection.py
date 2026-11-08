@@ -722,7 +722,7 @@ def check_links(destination):
                     raise ValueError(f"Stale source numbering on {page}: {marker['data-tag']}: expected {expected}")
         if len(identifiers[page]) != len(soup.select('[id]')):
             raise ValueError(f"Duplicate identifiers on {page}")
-        for element in soup.select("[href], script[src], img[src]"):
+        for element in soup.select("[href], script[src], img[src], iframe[src]"):
             value = element.get("href", element.get("src", ""))
             parsed = urlsplit(value)
             if parsed.scheme or parsed.netloc:

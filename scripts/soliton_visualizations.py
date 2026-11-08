@@ -2,7 +2,7 @@
 from functools import cache
 from html import escape
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,7 +23,19 @@ def visualization(label, root):
     item = registry().get(label)
     if not item:
         return ''
-    return '\n'.join(render_figure(figure, root) for figure in [item, *item.get('supplementary', [])])
+    figures = [render_figure(figure, root) for figure in [item, *item.get('supplementary', [])]]
+    if item.get('experiment'):
+        experiment = item['experiment']
+        url = escape(root + experiment['path'], quote=True)
+        title = escape(experiment['title'])
+        figures.append(f'''<section id="experiment-{escape(item['model'], quote=True)}" class="soliton-experiment" aria-label="{title}">
+<h3>{title}</h3>
+<p><strong>Numerical experiment.</strong> {escape(experiment['caption'])}</p>
+<p><a href="{url}" target="_blank" rel="noopener">Open full-page visualization ↗</a></p>
+<details open><summary>Explore the interactive flow</summary>
+<iframe src="{url}" title="{title}" loading="lazy" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+</details></section>''')
+    return '\n'.join(figures)
 
 
 def render_figure(item, root):
@@ -54,6 +66,12 @@ def validate_visualizations(entries, destination):
             raise ValueError('Invalid solution category: ' + label)
         for figure in [item, *item.get('supplementary', [])]:
             validate_figure(figure, label, destination)
+        if item.get('experiment'):
+            path = PurePosixPath(item['experiment']['path'])
+            if path.is_absolute() or '..' in path.parts or '\\' in str(path) or path.suffix != '.html':
+                raise ValueError('Invalid numerical experiment path: ' + label)
+            if not (destination / path).is_file():
+                raise ValueError('Missing numerical experiment: ' + label)
 
 
 def validate_figure(item, label, destination):

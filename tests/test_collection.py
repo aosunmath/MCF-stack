@@ -101,6 +101,18 @@ class CollectionTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Broken internal link"):
                 check_links(root)
 
+    def test_embedded_pages_and_their_scripts_must_exist(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "index.html").write_text('<iframe src="viewer.html" title="Numerical flow"></iframe>')
+            with self.assertRaisesRegex(ValueError, "Broken internal link"):
+                check_links(root)
+            (root / "viewer.html").write_text('<script src="viewer.js"></script>')
+            with self.assertRaisesRegex(ValueError, "Broken internal link"):
+                check_links(root)
+            (root / "viewer.js").touch()
+            check_links(root)
+
     def test_absorbed_heading_redirects_keep_clause_fragment_targets(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

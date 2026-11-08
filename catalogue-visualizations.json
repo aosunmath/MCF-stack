@@ -795,7 +795,12 @@
       "status": "Original schematic",
       "interactive": false,
       "caption": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
-      "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified."
+      "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
+      "experiment": {
+        "path": "visualizations/chu-sun-flow/index.html",
+        "title": "Chu–Sun construction: interactive numerical flow",
+        "caption": "Supplied by Ao Sun: 129 rescaled frames of a perturbed torus flow, with time playback, rotation and zoom, a stationary candidate overlay, and numerical diagnostics. This experiment illustrates the interpolation mechanism. It does not prove convergence, identify the shrinker in the existence theorem, or determine its compactness, ends, uniqueness, or stability. The displayed Gaussian density is computed on truncated surfaces, not a proved entropy value."
+      }
     },
     {
       "label": "ex:catalogue-scherk-translators",
