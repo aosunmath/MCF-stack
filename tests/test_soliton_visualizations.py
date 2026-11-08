@@ -23,6 +23,42 @@ class SupplementaryFiguresTests(unittest.TestCase):
         self.assertIn('title="Flow &amp; candidate"',html)
         self.assertIn('Numerical evidence only.',html)
 
+    def test_additional_experiment_preserves_original_anchor_and_both_viewers(self):
+        first={'path':'visualizations/first/index.html','title':'First flow','caption':'First experiment.'}
+        second={'id':'second-mode','path':'visualizations/second/index.html',
+                'title':'Second flow','caption':'No convergence claim.'}
+        item={'model':'limit','status':'Schematic','caption':'Input','alt':'Torus',
+              'experiment':first,'additional_experiments':[second]}
+        with patch('soliton_visualizations.registry',return_value={'ex:test':item}):
+            html=visualization('ex:test','../../')
+        self.assertEqual(html.count('<iframe '),2)
+        self.assertEqual(html.count('id="experiment-limit"'),1)
+        self.assertEqual(html.count('id="experiment-second-mode"'),1)
+        for path in (first['path'],second['path']):
+            self.assertIn('href="../../'+path+'"',html)
+            self.assertIn('src="../../'+path+'"',html)
+        self.assertIn('No convergence claim.',html)
+
+    def test_additional_experiment_requires_its_own_page_and_unique_anchor(self):
+        entries={'tag':{'variants':[{'source':'gmt-foundations','label':'ex:test'}]}}
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            (root/'assets/solitons').mkdir(parents=True)
+            (root/'assets/solitons/limit.svg').write_text('<svg/>')
+            (root/'first.html').write_text('<html></html>')
+            second={'id':'second','path':'second.html'}
+            item={'model':'limit','category':'shrinkers','experiment':{'path':'first.html'},
+                  'additional_experiments':[second]}
+            with patch('soliton_visualizations.registry',return_value={'ex:test':item}):
+                with self.assertRaisesRegex(ValueError,'Missing numerical experiment'):
+                    validate_visualizations(entries,root)
+                (root/'second.html').write_text('<html></html>')
+                validate_visualizations(entries,root)
+                for anchor in ('limit','bad anchor','../outside'):
+                    second['id']=anchor
+                    with self.assertRaisesRegex(ValueError,'Invalid or repeated numerical experiment anchor'):
+                        validate_visualizations(entries,root)
+
     def test_experiment_requires_an_existing_local_html_page(self):
         entries={'tag':{'variants':[{'source':'gmt-foundations','label':'ex:test'}]}}
         with tempfile.TemporaryDirectory() as folder:

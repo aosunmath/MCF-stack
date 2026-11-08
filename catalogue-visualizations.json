@@ -800,7 +800,15 @@
         "path": "visualizations/chu-sun-flow/index.html",
         "title": "Chu–Sun construction: interactive numerical flow",
         "caption": "Supplied by Ao Sun: 129 rescaled frames of a perturbed torus flow, with time playback, rotation and zoom, a stationary candidate overlay, and numerical diagnostics. This experiment illustrates the interpolation mechanism. It does not prove convergence, identify the shrinker in the existence theorem, or determine its compactness, ends, uniqueness, or stability. The displayed Gaussian density is computed on truncated surfaces, not a proved entropy value."
-      }
+      },
+      "additional_experiments": [
+        {
+          "id": "chu-sun-second-mode",
+          "path": "visualizations/chu-sun-second-mode/index.html",
+          "title": "Chu–Sun alternative construction: second angular mode",
+          "caption": "Supplied by Ao Sun: 98 rescaled frames of the second angular-mode perturbation (ε = 0.4), compared with a numerical genus-one candidate with two apparent conical ends. The viewer shows approach and later departure, with no convergence claim. Late frames are resolution-limited; residual and Gaussian-density readouts are unavailable once the parametrization degenerates. This experiment does not establish an exact shrinker, identify a tangent-flow limit, or prove an end count, uniqueness, or stability for the theorem’s shrinker."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-scherk-translators",

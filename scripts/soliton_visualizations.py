@@ -3,6 +3,7 @@ from functools import cache
 from html import escape
 import json
 from pathlib import Path, PurePosixPath
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -24,11 +25,11 @@ def visualization(label, root):
     if not item:
         return ''
     figures = [render_figure(figure, root) for figure in [item, *item.get('supplementary', [])]]
-    if item.get('experiment'):
-        experiment = item['experiment']
+    for experiment in experiments(item):
         url = escape(root + experiment['path'], quote=True)
         title = escape(experiment['title'])
-        figures.append(f'''<section id="experiment-{escape(item['model'], quote=True)}" class="soliton-experiment" aria-label="{title}">
+        anchor = escape(experiment.get('id', item['model']), quote=True)
+        figures.append(f'''<section id="experiment-{anchor}" class="soliton-experiment" aria-label="{title}">
 <h3>{title}</h3>
 <p><strong>Numerical experiment.</strong> {escape(experiment['caption'])}</p>
 <p><a href="{url}" target="_blank" rel="noopener">Open full-page visualization ↗</a></p>
@@ -36,6 +37,11 @@ def visualization(label, root):
 <iframe src="{url}" title="{title}" loading="lazy" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
 </details></section>''')
     return '\n'.join(figures)
+
+
+def experiments(item):
+    """Keep the original experiment and its permanent anchor when adding others."""
+    return ([item['experiment']] if item.get('experiment') else []) + item.get('additional_experiments', [])
 
 
 def render_figure(item, root):
@@ -66,8 +72,13 @@ def validate_visualizations(entries, destination):
             raise ValueError('Invalid solution category: ' + label)
         for figure in [item, *item.get('supplementary', [])]:
             validate_figure(figure, label, destination)
-        if item.get('experiment'):
-            path = PurePosixPath(item['experiment']['path'])
+        anchors = set()
+        for experiment in experiments(item):
+            anchor = experiment.get('id', item['model'])
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', anchor) or anchor in anchors:
+                raise ValueError('Invalid or repeated numerical experiment anchor: ' + label)
+            anchors.add(anchor)
+            path = PurePosixPath(experiment['path'])
             if path.is_absolute() or '..' in path.parts or '\\' in str(path) or path.suffix != '.html':
                 raise ValueError('Invalid numerical experiment path: ' + label)
             if not (destination / path).is_file():
