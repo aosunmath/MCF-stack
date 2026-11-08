@@ -1,4 +1,9 @@
 .soliton-figure{margin:28px 0;padding:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--background,#fff)}
+.soliton-experiment{margin:28px 0;padding:16px;border:1px solid var(--line);border-radius:5px}
+.soliton-experiment h3{margin-top:0}.soliton-experiment summary{cursor:pointer;font-weight:600;padding:10px 0}
+.soliton-experiment iframe{display:block;width:100%;height:850px;max-height:90vh;border:1px solid var(--line);box-sizing:border-box;background:#fff}
+@media(max-width:699px){.soliton-experiment{padding:10px}.soliton-experiment iframe{height:740px}}
+@media print{.soliton-experiment details{display:none}}
 .soliton-figure .soliton-stage{width:100%;height:390px;background:#f7fafb;position:relative;overflow:hidden}
 .soliton-figure img{width:100%;height:100%;object-fit:contain;display:block}.soliton-figure [hidden]{display:none!important}
 .soliton-figure canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}.soliton-figure canvas:active{cursor:grabbing}.soliton-figure canvas:focus-visible{outline:3px solid #21667f;outline-offset:-3px}
