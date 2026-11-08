@@ -576,6 +576,10 @@
     "title": "Bibliography"
   },
   {
+    "route": "numerical-references",
+    "title": "Numerical references"
+  },
+  {
     "route": "sources",
     "title": "Sources"
   },

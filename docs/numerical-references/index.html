@@ -1,0 +1,144 @@
+<!doctype html><html lang="en" data-reading-mode="page" data-asset-revision="90146979a882" data-search-index="../search.json" data-collection-root="../"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#d9d8d1"><meta name="giscus:backlink" content="https://aosunmath.github.io/MCF-stack/numerical-references/"><title>Numerical references · MCF-stack: Special Solutions of Mean Curvature Flow</title><link rel="canonical" href="https://aosunmath.github.io/MCF-stack/numerical-references/">
+<link rel="stylesheet" href="../assets/book.css?v=90146979a882"><link rel="stylesheet" href="../assets/collection.css?v=90146979a882"><link rel="stylesheet" href="../assets/formalization.css?v=90146979a882"><script src="../assets/math-config.js?v=90146979a882"></script><script defer src="../assets/mathjax/tex-chtml.js?v=90146979a882"></script><link rel="stylesheet" href="../assets/soliton-viewer.css?v=90146979a882"><script type="module" src="../assets/soliton-viewer.mjs?v=90146979a882"></script><link rel="stylesheet" href="../assets/catalogue-properties.css?v=90146979a882"><script type="module" src="../assets/formalization.mjs?v=90146979a882"></script><script type="module" src="../assets/collection.mjs?v=90146979a882"></script><script type="module" src="../assets/comments.mjs?v=90146979a882"></script></head>
+<body><a class="skip" href="#content">Skip to content</a><header class="book-header"><a class="brand" href="../" aria-label="MCF-stack: Special Solutions of Mean Curvature Flow home">MCF-stack: Special Solutions of Mean Curvature Flow</a><nav aria-label="Primary"><a href="../chapters/">Contents</a><a href="../browse/">Browse</a><a href="../references/">Bibliography</a><a href="../comments/">Comments</a></nav><form class="quick-search" action="../search/" role="search"><label class="visually-hidden" for="collection-search">Search MCF-stack: Special Solutions of Mean Curvature Flow</label><input id="collection-search" name="q" type="search" placeholder="Keywords or a tag" autocomplete="off" aria-controls="search-results"><div id="search-results" aria-live="polite"></div></form></header>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../chapters/">Table of contents</a></li><li><a href="../numerical-references/" aria-current="page">Numerical references</a></li></ol></nav><div class="reading-layout"><aside class="sidebar"><details class="chapter-navigation" open><summary>Browse and page tools</summary><div class="reader-tools"><div class="page-tools"><a href="#comments">Comments</a><a href="#cite">Cite this page</a><a href="https://aosunmath.github.io/MCF-stack/numerical-references/">Permalink</a><button type="button" data-copy-link="https://aosunmath.github.io/MCF-stack/numerical-references/">Copy link</button><label class="tag-switch"><input type="checkbox" data-show-tags> Show tags</label><span class="copy-status" role="status"></span></div><details class="all-chapters"><summary>All chapters</summary><nav aria-label="All chapters"><ol><li><a href="../chapters/orientation/">1. Introduction</a></li><li><a href="../chapters/shrinkers/">2. Shrinkers</a></li><li><a href="../chapters/translators/">3. Translators</a></li><li><a href="../chapters/expanders/">4. Expanders</a></li><li><a href="../chapters/other-special-flows/">5. Other special flows</a></li></ol></nav></details><p><a href="../sources/">Sources and revisions</a><br><a href="../entries/">All entries</a><br><a href="../numerical-references/">Numerical references</a><br><a href="https://github.com/aosunmath/MCF-stack">GitHub repository</a></p></div></details></aside>
+<main id="content" tabindex="-1"><nav class="page-navigation" aria-label="Page navigation"><a class="pager-prev" rel="prev" href="../references/"><span>← Previous</span><small>Bibliography</small></a><a class="pager-next" rel="next" href="../sources/"><span>Next →</span><small>Sources</small></a></nav><h1>Numerical references</h1>
+<p>This page credits the numerical methods, software, and visual sources used to make the figures in MCF-stack. The mathematical existence and classification references remain with each example and in the <a href="../references/">bibliography</a>. A newly generated mesh or rendering can still owe its visual conception to another author's picture.</p>
+<nav class="chapter-jump" aria-label="On this page"><a href="#visual-sources">Visual sources</a><a href="#methods">Drawing methods</a><a href="#numerical-bibliography">Methods and software references</a><a href="#reproducibility">Code and provenance</a></nav>
+
+<section id="visual-sources">
+<h2>Visual sources and individual credits</h2>
+<p>The credits below identify documented visual influences and parametrization sources. Where a paper credits an individual illustrator, that credit is retained separately from the paper's authorship. Newly generated schematic geometry is not the source author's numerical mesh.</p>
+
+<article id="chopp-visuals">
+<h3>David L. Chopp</h3>
+<p>Chopp's <a href="https://doi.org/10.1080/10586458.1994.10504572"><cite>Computation of Self-Similar Solutions for Mean Curvature Flow</cite>, Experimental Mathematics 3 (1994), 1–15</a> supplies the numerical candidates and visual references for the five Chopp entries: Figures 8–12 (cubical), 13–15 (octahedral), 16–19 (saddle), 20–23 (two-handled cone), and 26–28 (four-handled cone). The latter also appears in Angenent–Ilmanen–Chopp, <a href="https://doi.org/10.1080/03605309508821158"><cite>A Computed Example of Nonuniqueness of Mean Curvature Flow in R3</cite> (1995), p. 1943</a>.</p>
+<p>Chopp is also credited for Figure 1 in <a href="https://arxiv.org/abs/2406.18703v3">Ilmanen–White, <cite>Fattening in Mean Curvature Flow</cite></a>, which informs our two-ended topology drawing, and Figure 2 in <a href="https://arxiv.org/html/2502.20340v3#S4">Hoffman–Martín–White</a>, a visual reference for the cubical silhouette. Our corresponding models are schematics, not recomputations of Chopp's numerical surfaces. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/chopp-review.md">Source review and drawing provenance</a>.</p>
+</article>
+
+<article id="ilmanen-visuals">
+<h3>Tom Ilmanen</h3>
+<p>The conjectural genus-eight picture credited to Ilmanen in <a href="https://arxiv.org/abs/1106.5454v3">Kapouleas–Kleene–Møller, <cite>Mean curvature self-shrinkers of high genus: Non-compact examples</cite>, Figure 1</a>, is a visual reference for the sphere–plane configuration. Our KKM drawing uses the paper's Scherk equation and a project-specific drawing map; it is not a solved shrinker or the paper's matched initial surface. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/kkm-picture.md">Drawing provenance</a>.</p>
+</article>
+
+<article id="costa-visuals">
+<h3>O. Michael Melko</h3>
+<p>Melko's <a href="#Melko2010"><cite>Visualizing Minimal Surfaces</cite> (2010), equations (16)–(19)</a>, provides the stationary Costa parametrization used for the ancient-Costa illustration. The project evaluates this parametrization and adds a truncated linearized normal mode. Those perturbed frames are not a numerical construction of the nonlinear ancient flow. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/minimal-ancient-picture.md">Implementation and limitations</a>.</p>
+</article>
+
+<article id="schulz-visuals">
+<h3>Mario B. Schulz</h3>
+<p>The illustration for the work of Reto Buzano, Huy The Nguyen, and Mario B. Schulz follows the qualitative geometry of <a href="https://arxiv.org/html/2110.06027v2#S4">Section 4, Figures 3–4 of <cite>Noncompact self-shrinkers for mean curvature flow with arbitrary genus</cite>, version 2</a>. These are visual references as well as mathematical source material. The authors produced their simulations with <a href="#Brakke1992">Kenneth Brakke's Surface Evolver</a>. Our mesh instead samples an illustrative implicit field. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/bns-picture.md">BNS drawing provenance</a>.</p>
+<p>Schulz is individually credited for Figure 5, the genus-five numerical picture in <a href="https://arxiv.org/html/2502.20340v3#S7">Hoffman–Martín–White, <cite>Generating Shrinkers by Mean Curvature Flow</cite>, version 3</a>. It informs our sphere–plane drawing and its interior view, together with Torralbo's figures below.</p>
+<p>Schulz's <a href="https://mbschulz.github.io/">Geometric Analysis Gallery</a>, especially its <a href="https://mbschulz.github.io/shrinkers/index.html">self-shrinker collection</a>, is an additional resource for these visualizations. The documented sources used for our drawings are the paper figures identified above; the gallery link does not assert that the website itself was consulted during the original implementation, or that its images or meshes were reused.</p>
+</article>
+
+<article id="torralbo-visuals">
+<h3>Francisco Torralbo</h3>
+<p>Torralbo is credited for the numerical genus-one through genus-six illustrations in <a href="https://arxiv.org/html/2502.20340v3#S1">Hoffman–Martín–White, Figure 1</a>. They inform the qualitative appearance of our sphere–plane model, alongside Schulz's Figure 5. The displayed MCF-stack surface is a topology schematic. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/hmw-sphere-plane-picture.md">Sphere–plane drawing provenance</a>.</p>
+</article>
+
+<article id="weber-visuals">
+<h3>Matthias Weber</h3>
+<p>Weber is credited for <a href="https://arxiv.org/html/2502.20340v3#S8">Hoffman–Martín–White, Figure 7</a>, a visual reference for our three-ended model. The source describes a conjectural qualitative genus-two picture, not a numerical shrinker approximation. Our separately generated mesh retains that distinction. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/hmw-three-ended-picture.md">Three-ended drawing provenance</a>.</p>
+</article>
+
+<h3 id="other-visual-sources">Other source-specific drawing references</h3>
+<p>Other figures use the source paper's profiles or construction diagrams. Examples include Drugan's Figure 1, Møller's Figures 1–2, Nguyen's Figure 1, and the planar-network diagrams reviewed for the expander picture. Their exact roles are recorded in the <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/drugan-numerical-picture.md">Drugan</a>, <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/moller-picture.md">Møller</a>, <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/nguyen-picture.md">Nguyen</a>, and <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/expanding-network-picture.md">network</a> provenance notes. The <a href="https://github.com/aosunmath/MCF-stack/tree/main/documentation">figure documentation</a> supplies further source locators; this page does not replace the individual example references.</p>
+</section>
+
+<section id="methods">
+<h2>Drawing methods and their scope</h2>
+<ul>
+<li><strong>Formula sampling and projection.</strong> Parametrizations are sampled into curves or triangles. Revolving a profile, taking a slice, or projecting from a higher-dimensional ambient space is identified in the caption. The mesh is a finite representation of the formula.</li>
+<li><strong>Numerical ODE profiles.</strong> SciPy integration and, where required, Brent root finding produce profiles with closing or matching conditions. DOP853 is used in several generators. The interactive Abresch–Langer viewer also has a custom period quadrature and bisection implementation. Solver settings and residuals are recorded in the relevant code and audit.</li>
+<li><strong>Numerical PDE and flow models.</strong> Selected generators use finite differences, sparse linear solves, or truncated linearized evolution. Their specific discretizations and limitations accompany the figures. A finite-domain calculation or linearized perturbation is not automatically a computed complete soliton or nonlinear ancient flow.</li>
+<li><strong>Implicit schematic meshes.</strong> Marching cubes extracts a surface from a sampled drawing field; quadric simplification reduces its triangle count. Connectivity, boundary loops, and Euler characteristic are checked where recorded. These checks describe the displayed mesh and do not establish the shrinker equation.</li>
+<li><strong>Rendering.</strong> Custom Python and JavaScript code produces SVG plates and Canvas/WebGL viewers with projection, shading, rotation, zoom, and cutaways. Pillow supplies raster panels in selected plates; trimesh supplies selected mesh operations. Cutaway edges and finite display rims are explained in the captions.</li>
+</ul>
+<p>The references below credit implemented algorithms and software dependencies; they are not a claim that every listed publication was read during every figure's original creation. Surface Evolver is credited for the source simulations that informed our schematics, rather than as a tool used to generate those MCF-stack meshes.</p>
+</section>
+
+<section id="numerical-bibliography">
+<h2>Methods and software references</h2>
+<p>Entries are sorted automatically by structured author names, then year and title. Each entry explains its role. Software documentation links were checked on 8 November 2026; this date does not identify the versions used for earlier asset generation.</p>
+<article class="bibliography-entry" id="BarberDobkinHuhdanpaa1996"><h3 class="reference-key">[BarberDobkinHuhdanpaa1996]</h3><p>C.&nbsp;Bradford Barber, David&nbsp;P. Dobkin, and Hannu Huhdanpaa.
+The <span class="bibtex-protected">Quickhull</span> algorithm for convex hulls.
+<em>ACM Transactions on Mathematical Software</em>, 22(4):469–483, 1996.
+<a href="https://doi.org/10.1145/235815.235821">doi:10.1145/235815.235821</a>.</p><p>Method behind Qhull, used through SciPy&#x27;s Delaunay and ConvexHull routines in selected stacking, doubling, and other triangulated models.</p></article>
+<article class="bibliography-entry" id="Brakke1992"><h3 class="reference-key">[Brakke1992]</h3><p>Kenneth&nbsp;A. Brakke.
+The surface evolver.
+<em>Experimental Mathematics</em>, 1(2):141–165, 1992.
+URL: <a href="https://www.kenbrakke.com/evolver/">https://www.kenbrakke.com/evolver/</a>, <a href="https://doi.org/10.1080/10586458.1992.10504253">doi:10.1080/10586458.1992.10504253</a>.</p><p>Source-side software credit: Buzano, Nguyen, and Schulz used Surface Evolver for their numerical illustrations. MCF-stack&#x27;s corresponding schematic is generated from its own drawing field; it does not reproduce their Evolver calculation.</p></article>
+<article class="bibliography-entry" id="Brent1973"><h3 class="reference-key">[Brent1973]</h3><p>Richard&nbsp;P. Brent.
+<em>Algorithms for Minimization Without Derivatives</em>.
+Prentice-Hall, 1973.
+URL: <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html</a>.</p><p>Chapters 3--4 describe the root-finding method used through scipy.optimize.brentq to select closing and matching parameters in shooting constructions. The link documents the implementation and its reference.</p></article>
+<article class="bibliography-entry" id="FastSimplification"><h3 class="reference-key">[FastSimplification]</h3><p><span class="bibtex-protected">fast-simplification contributors</span>.
+<span class="bibtex-protected">fast-simplification</span>: python wrapper for <span class="bibtex-protected">Fast-Quadric-Mesh-Simplification</span>.
+Software documentation; accessed 8 November 2026.
+URL: <a href="https://pyvista.github.io/fast-simplification/">https://pyvista.github.io/fast-simplification/</a>.</p><p>Implementation used to reduce triangle counts for interactive figures. Credit also belongs to the wrapped Fast-Quadric-Mesh-Simplification project by sp4cerat and contributors; its repository is linked in the documentation. This is distinct from using PyVista as a renderer.</p></article>
+<article class="bibliography-entry" id="GarlandHeckbert1997"><h3 class="reference-key">[GarlandHeckbert1997]</h3><p>Michael Garland and Paul&nbsp;S. Heckbert.
+Surface simplification using quadric error metrics.
+In <em>Proceedings of SIGGRAPH 1997</em>, 209–216. 1997.
+URL: <a href="https://www.cs.cmu.edu/~garland/quadrics/">https://www.cs.cmu.edu/~garland/quadrics/</a>.</p><p>Underlying quadric-error idea for mesh simplification. The software actually called by the drawing generators is fast-simplification, sometimes through trimesh.</p></article>
+<article class="bibliography-entry" id="HairerNorsettWanner1993"><h3 class="reference-key">[HairerNorsettWanner1993]</h3><p>Ernst Hairer, Syvert&nbsp;P. N<span class="bibtex-protected">ø</span>rsett, and Gerhard Wanner.
+<em>Solving Ordinary Differential Equations I: Nonstiff Problems</em>.
+Springer, 2 edition, 1993.
+<a href="https://doi.org/10.1007/978-3-540-78862-1">doi:10.1007/978-3-540-78862-1</a>.</p><p>Reference for numerical ODE integration, including the DOP853 method cited by SciPy. Several rotational profiles use solve_ivp with DOP853; other generators explicitly choose different solvers.</p></article>
+<article class="bibliography-entry" id="HarrisEtAl2020"><h3 class="reference-key">[HarrisEtAl2020]</h3><p>Charles&nbsp;R. Harris, K.&nbsp;Jarrod Millman, St<span class="bibtex-protected">é</span>fan&nbsp;J. van&nbsp;der Walt, and others.
+Array programming with <span class="bibtex-protected">NumPy</span>.
+<em>Nature</em>, 585:357–362, 2020.
+<a href="https://doi.org/10.1038/s41586-020-2649-2">doi:10.1038/s41586-020-2649-2</a>.</p><p>NumPy supplies coordinate arrays, sampling grids, vector operations, normals, and transformations throughout the numerical geometry generators.</p></article>
+<article class="bibliography-entry" id="KhronosWebGL"><h3 class="reference-key">[KhronosWebGL]</h3><p><span class="bibtex-protected">Khronos WebGL Working Group</span>.
+<span class="bibtex-protected">WebGL</span> specification, version 1.0.
+Web standard; accessed 8 November 2026.
+URL: <a href="https://registry.khronos.org/webgl/specs/latest/1.0/">https://registry.khronos.org/webgl/specs/latest/1.0/</a>.</p><p>Browser graphics interface used by the project&#x27;s custom interactive surface viewers, including depth testing, lighting, and cutaway rendering. This credits the rendering platform rather than a surface construction.</p></article>
+<article class="bibliography-entry" id="LewinerEtAl2003"><h3 class="reference-key">[LewinerEtAl2003]</h3><p>Thomas Lewiner, H<span class="bibtex-protected">é</span>lio Lopes, Ant<span class="bibtex-protected">ô</span>nio&nbsp;Wilson Vieira, and Geovan Tavares.
+Efficient implementation of marching cubes' cases with topological guarantees.
+<em>Journal of Graphics Tools</em>, 8(2):1–15, 2003.
+URL: <a href="https://thomas.lewiner.org/pub/marching_cubes_jgt.html">https://thomas.lewiner.org/pub/marching_cubes_jgt.html</a>, <a href="https://doi.org/10.1080/10867651.2003.10487582">doi:10.1080/10867651.2003.10487582</a>.</p><p>Marching-cubes variant used by skimage.measure.marching_cubes to extract meshes from sampled scalar fields. Its topology guarantees concern the extraction algorithm; they do not certify that an illustrative field solves a geometric PDE.</p></article>
+<article class="bibliography-entry" id="Melko2010"><h3 class="reference-key">[Melko2010]</h3><p>O.&nbsp;Michael Melko.
+Visualizing minimal surfaces.
+<em>The Mathematica Journal</em>, 2010.
+URL: <a href="https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/">https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/</a>.</p><p>Equations (16)--(19), particularly (17), supply the stationary Costa parametrization used in the ancient-Costa illustration. MCF-stack implements its evaluation and mesh itself; the displayed normal perturbation is a separate truncated linearized model. No Mathematica package or source image is included.</p></article>
+<article class="bibliography-entry" id="Pillow"><h3 class="reference-key">[Pillow]</h3><p><span class="bibtex-protected">Pillow contributors</span>.
+<span class="bibtex-protected">Pillow</span>: python imaging library fork.
+Software project; accessed 8 November 2026.
+URL: <a href="https://python-pillow.org/">https://python-pillow.org/</a>.</p><p>Used by selected figure generators to draw and encode raster views, including raster panels embedded in otherwise vector SVG plates.</p></article>
+<article class="bibliography-entry" id="Trimesh"><h3 class="reference-key">[Trimesh]</h3><p><span class="bibtex-protected">trimesh contributors</span>.
+<span class="bibtex-protected">trimesh</span>.
+Software documentation; accessed 8 November 2026.
+URL: <a href="https://trimesh.org/">https://trimesh.org/</a>.</p><p>Used for mesh processing, normals, simplification, and combinatorial topology checks in the genus-labelled sphere--torus schematics. Such checks concern the exported triangulation, not the shrinker PDE.</p></article>
+<article class="bibliography-entry" id="VanDerWaltEtAl2014"><h3 class="reference-key">[VanDerWaltEtAl2014]</h3><p>St<span class="bibtex-protected">é</span>fan van&nbsp;der Walt, Johannes&nbsp;L. Sch<span class="bibtex-protected">ö</span>nberger, Juan Nunez-Iglesias, Fran<span class="bibtex-protected">ç</span>ois Boulogne, Joshua&nbsp;D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu, and <span class="bibtex-protected">the scikit-image contributors</span>.
+<span class="bibtex-protected">scikit-image</span>: image processing in <span class="bibtex-protected">Python</span>.
+<em>PeerJ</em>, 2:e453, 2014.
+<a href="https://doi.org/10.7717/peerj.453">doi:10.7717/peerj.453</a>.</p><p>Software credit for the library providing marching_cubes, in addition to the algorithm credit to Lewiner and coauthors.</p></article>
+<article class="bibliography-entry" id="VirtanenEtAl2020"><h3 class="reference-key">[VirtanenEtAl2020]</h3><p>Pauli Virtanen, Ralf Gommers, Travis&nbsp;E. Oliphant, and others.
+<span class="bibtex-protected">SciPy</span> 1.0: fundamental algorithms for scientific computing in <span class="bibtex-protected">Python</span>.
+<em>Nature Methods</em>, 17:261–272, 2020.
+<a href="https://doi.org/10.1038/s41592-019-0686-2">doi:10.1038/s41592-019-0686-2</a>.</p><p>SciPy supplies ODE integration, root finding, interpolation, sparse linear algebra, eigenvalue calculations, special functions, and triangulation for the generators that call those routines. A software citation does not certify a computed solution.</p></article>
+<article class="bibliography-entry" id="WHATWGCanvas"><h3 class="reference-key">[WHATWGCanvas]</h3><p><span class="bibtex-protected">WHATWG</span>.
+<span class="bibtex-protected">HTML</span> standard: the canvas element.
+Web standard; accessed 8 November 2026.
+URL: <a href="https://html.spec.whatwg.org/multipage/canvas.html">https://html.spec.whatwg.org/multipage/canvas.html</a>.</p><p>Canvas 2D is the browser drawing interface used by the custom curve and surface viewers that project, shade, and draw geometry in JavaScript.</p></article>
+<article class="bibliography-entry" id="W3CSVG"><h3 class="reference-key">[W3CSVG]</h3><p><span class="bibtex-protected">World Wide Web Consortium</span>.
+Scalable vector graphics (<span class="bibtex-protected">SVG</span>) 2.
+Web standard; accessed 8 November 2026.
+URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>.</p><p>SVG supplies the static, printable figure format, including labels, paths, triangles, and occasional embedded raster panels.</p></article>
+</section>
+
+<section id="reproducibility">
+<h2>Code, provenance, and attribution</h2>
+<p>The <a href="https://github.com/aosunmath/MCF-stack/tree/main/scripts">figure-generation scripts</a>, <a href="https://github.com/aosunmath/MCF-stack/tree/main/site/assets">viewer code and geometry assets</a>, and <a href="https://github.com/aosunmath/MCF-stack/tree/main/documentation">figure provenance notes</a> distinguish source formulas from drawing choices and record numerical settings where available. The <a href="https://github.com/aosunmath/MCF-stack/blob/main/catalogue-visualizations.json">figure registry</a> connects these assets to the catalogue. Public links point to original publications; supplied PDFs and private research files are not redistributed.</p>
+<p>For attribution, retain the named visual source and figure locator, the numerical method or schematic construction, and the implementation credit. “Original” in older captions refers to newly generated geometry or rendering and should not be read as an absence of visual influence. A shared shape or topology does not identify surfaces produced by different mathematical constructions.</p>
+<p>The reading site's infrastructure acknowledgments remain in the <a href="https://github.com/aosunmath/MCF-stack/blob/main/README.md#attribution">project README</a>, with the <a href="https://github.com/aosunmath/MCF-stack/blob/main/LICENSE">original infrastructure license</a> preserved.</p>
+</section>
+<nav class="page-navigation" aria-label="Page navigation bottom"><a class="pager-prev" rel="prev" href="../references/"><span>← Previous</span><small>Bibliography</small></a><a class="pager-next" rel="next" href="../sources/"><span>Next →</span><small>Sources</small></a></nav>
+<details class="citation" id="cite"><summary>Cite this page</summary><label for="citation-text">BibTeX citation</label><textarea id="citation-text" readonly rows="7">@misc{mcf-stack-numerical-references,
+  author = {{MCF-stack: Special Solutions of Mean Curvature Flow contributors}},
+  title = {Numerical references},
+  howpublished = {MCF-stack: Special Solutions of Mean Curvature Flow},
+  url = {https://aosunmath.github.io/MCF-stack/numerical-references/}
+}</textarea><button type="button" data-copy-citation>Copy citation</button><span class="copy-status" role="status"></span></details>
+<section class="comments-panel" id="comments" aria-labelledby="comments-heading"><h2 id="comments-heading">Comments</h2><p>Comments are not enabled yet.</p></section><footer class="book-footer">MCF-stack: Special Solutions of Mean Curvature Flow · <a href="../sources/">Sources and revisions</a> · <a href="../numerical-references/">Numerical references</a> · <a href="../comments/">Comments</a></footer></main></div></body></html>
