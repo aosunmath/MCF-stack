@@ -33,6 +33,11 @@
 <p>Schulz's <a href="https://mbschulz.github.io/">Geometric Analysis Gallery</a>, especially its <a href="https://mbschulz.github.io/shrinkers/index.html">self-shrinker collection</a>, is an additional resource for these visualizations. The documented sources used for our drawings are the paper figures identified above; the gallery link does not assert that the website itself was consulted during the original implementation, or that its images or meshes were reused.</p>
 </article>
 
+<article id="chu-sun-viewers">
+<h3>Ao Sun: supplied Chu–Sun numerical replay pages</h3>
+<p>The two supplementary Chu–Sun experiment viewers were supplied by Ao Sun with their numerical-note and archive provenance retained. Both use <a href="#ThreeJS">three.js 0.128.0</a>; the first also uses <a href="#Pako">pako 2.1.0</a> to decompress stored frames. These are replays of supplied computations, not numerical experiments independently reproduced by the website integration. See the <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/chu-sun-flow-viewer.md">integration and provenance record</a> and the retained <a href="https://github.com/aosunmath/MCF-stack/blob/main/site/visualizations/chu-sun-flow/vendor/three-LICENSE.txt">three.js</a> and <a href="https://github.com/aosunmath/MCF-stack/blob/main/site/visualizations/chu-sun-flow/vendor/pako-LICENSE.txt">pako</a> license notices. Private notes and solver archives are not exported.</p>
+</article>
+
 <article id="torralbo-visuals">
 <h3>Francisco Torralbo</h3>
 <p>Torralbo is credited for the numerical genus-one through genus-six illustrations in <a href="https://arxiv.org/html/2502.20340v3#S1">Hoffman–Martín–White, Figure 1</a>. They inform the qualitative appearance of our sphere–plane model, alongside Schulz's Figure 5. The displayed MCF-stack surface is a topology schematic. <a href="https://github.com/aosunmath/MCF-stack/blob/main/documentation/hmw-sphere-plane-picture.md">Sphere–plane drawing provenance</a>.</p>
@@ -54,7 +59,7 @@
 <li><strong>Numerical ODE profiles.</strong> SciPy integration and, where required, Brent root finding produce profiles with closing or matching conditions. DOP853 is used in several generators. The interactive Abresch–Langer viewer also has a custom period quadrature and bisection implementation. Solver settings and residuals are recorded in the relevant code and audit.</li>
 <li><strong>Numerical PDE and flow models.</strong> Selected generators use finite differences, sparse linear solves, or truncated linearized evolution. Their specific discretizations and limitations accompany the figures. A finite-domain calculation or linearized perturbation is not automatically a computed complete soliton or nonlinear ancient flow.</li>
 <li><strong>Implicit schematic meshes.</strong> Marching cubes extracts a surface from a sampled drawing field; quadric simplification reduces its triangle count. Connectivity, boundary loops, and Euler characteristic are checked where recorded. These checks describe the displayed mesh and do not establish the shrinker equation.</li>
-<li><strong>Rendering.</strong> Custom Python and JavaScript code produces SVG plates and Canvas/WebGL viewers with projection, shading, rotation, zoom, and cutaways. Pillow supplies raster panels in selected plates; trimesh supplies selected mesh operations. Cutaway edges and finite display rims are explained in the captions.</li>
+<li><strong>Rendering.</strong> Custom Python and JavaScript code produces SVG plates and Canvas/WebGL viewers with projection, shading, rotation, zoom, and cutaways. The supplied Chu–Sun replay pages additionally use three.js. Pillow supplies raster panels in selected plates; trimesh supplies selected mesh operations. Cutaway edges and finite display rims are explained in the captions.</li>
 </ul>
 <p>The references below credit implemented algorithms and software dependencies; they are not a claim that every listed publication was read during every figure's original creation. Surface Evolver is credited for the source simulations that informed our schematics, rather than as a tool used to generate those MCF-stack meshes.</p>
 </section>
@@ -102,10 +107,18 @@ URL: <a href="https://thomas.lewiner.org/pub/marching_cubes_jgt.html">https://th
 Visualizing minimal surfaces.
 <em>The Mathematica Journal</em>, 2010.
 URL: <a href="https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/">https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/</a>.</p><p>Equations (16)--(19), particularly (17), supply the stationary Costa parametrization used in the ancient-Costa illustration. MCF-stack implements its evaluation and mesh itself; the displayed normal perturbation is a separate truncated linearized model. No Mathematica package or source image is included.</p></article>
+<article class="bibliography-entry" id="Pako"><h3 class="reference-key">[Pako]</h3><p><span class="bibtex-protected">pako contributors</span>.
+<span class="bibtex-protected">pako</span>: javascript compression library.
+Version 2.1.0; software project.
+URL: <a href="https://github.com/nodeca/pako/tree/2.1.0">https://github.com/nodeca/pako/tree/2.1.0</a>.</p><p>Developed by Andrey Tupitsin and Vitaly Puzrin, porting zlib by Jean-loup Gailly and Mark Adler. Used to decompress stored frame data in the first supplied Chu--Sun numerical replay; it is not a geometry solver. The upstream project distinguishes its MIT license from the zlib license of the ported core.</p></article>
 <article class="bibliography-entry" id="Pillow"><h3 class="reference-key">[Pillow]</h3><p><span class="bibtex-protected">Pillow contributors</span>.
 <span class="bibtex-protected">Pillow</span>: python imaging library fork.
 Software project; accessed 8 November 2026.
 URL: <a href="https://python-pillow.org/">https://python-pillow.org/</a>.</p><p>Used by selected figure generators to draw and encode raster views, including raster panels embedded in otherwise vector SVG plates.</p></article>
+<article class="bibliography-entry" id="ThreeJS"><h3 class="reference-key">[ThreeJS]</h3><p><span class="bibtex-protected">three.js authors</span>.
+<span class="bibtex-protected">three.js</span>: javascript <span class="bibtex-protected">3D</span> library.
+Version 0.128.0 (r128); software project.
+URL: <a href="https://github.com/mrdoob/three.js/tree/r128">https://github.com/mrdoob/three.js/tree/r128</a>.</p><p>The two supplementary Chu--Sun numerical replay pages supplied by Ao Sun use this locally hosted library for their surface rendering. Its MIT license is retained beside the bundled library. This dependency is separate from the catalogue&#x27;s custom Canvas and WebGL viewers.</p></article>
 <article class="bibliography-entry" id="Trimesh"><h3 class="reference-key">[Trimesh]</h3><p><span class="bibtex-protected">trimesh contributors</span>.
 <span class="bibtex-protected">trimesh</span>.
 Software documentation; accessed 8 November 2026.
