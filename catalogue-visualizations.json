@@ -505,9 +505,10 @@
       ],
       "model": "kkm-shrinker",
       "status": "Scherk-based construction schematic",
-      "caption": "A connected model joins two sphere-like caps, an inner disk, and one outer sheet through a periodic Scherk belt. Rotate or use Cutaway to inspect the joining region. The period count and conical waviness are illustrative; this is not a numerically solved KKM shrinker. The theorem applies only to sufficiently large genus, with no explicit threshold. The outer edge is a display truncation.",
+      "caption": "A connected model joins two sphere-like caps, an inner disk, and one outer sheet through a periodic Scherk belt. Rotate or use Cutaway to inspect the joining region. The period count and conical waviness are illustrative; this is not a numerically solved KKM shrinker. The theorem applies only to sufficiently large genus, with no explicit threshold. The outer edge is a display truncation. The conjectural picture in the source’s Figure 1 is credited to Tom Ilmanen.",
       "alt": "Connected Scherk-based sphere–plane construction model with a ring of saddle-shaped openings, spherical caps, an inner disk and one wavy outer sheet. Not a computed self-shrinker.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "ilmanen-visuals"
     },
     {
       "label": "ex:catalogue-drugan-nguyen-torus",
@@ -537,7 +538,8 @@
       "status": "Interactive topology schematic",
       "caption": "Informed by Buzano–Nguyen–Schulz, Section 4, Figures 3–4; not a numerical solution of the shrinker equation. Choose a genus or use Cutaway to see the interior. Outer rims and cut edges are display boundaries.",
       "alt": "Genus-three schematic: a rounded cap with alternating openings joins a central sheet to one noncompact outer sheet; a vertical cutaway exposes the interior. Not a computed shrinker.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "schulz-visuals"
     },
     {
       "label": "ex:catalogue-ketover-doubled-plane",
@@ -696,8 +698,9 @@
       "model": "iw-two-ended",
       "status": "Interactive topology schematic",
       "interactive": true,
-      "caption": "An upper graph and its reflection join along h + 1 equatorial neck curves and flare into two conical ends. The default genus h = 3 follows the topology of Figure 1 in Ilmanen–White (the paper uses g = h + 1). Rotate, select a genus, or use Cutaway and Equator z = 0 to inspect the necks. This is an original schematic, not Chopp’s numerical surface or a solution of the shrinker equation. Neck shapes, scale and cone slopes are illustrative; both outer rims truncate infinite ends.",
-      "alt": "Genus-three Ilmanen–White schematic: two reflected curved sheets joined by four smooth necks, with two flaring ends. A second cutaway view exposes the neck walls. Not a computed self-shrinker."
+      "caption": "An upper graph and its reflection join along h + 1 equatorial neck curves and flare into two conical ends. The default genus h = 3 follows the topology of Figure 1 in Ilmanen–White, credited to David Chopp (the paper uses g = h + 1). Rotate, select a genus, or use Cutaway and Equator z = 0 to inspect the necks. This is an original schematic, not Chopp’s numerical surface or a solution of the shrinker equation. Neck shapes, scale and cone slopes are illustrative; both outer rims truncate infinite ends.",
+      "alt": "Genus-three Ilmanen–White schematic: two reflected curved sheets joined by four smooth necks, with two flaring ends. A second cutaway view exposes the neck walls. Not a computed self-shrinker.",
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-shao-zou-stacking",
@@ -725,7 +728,8 @@
       "status": "Original construction schematic",
       "interactive": true,
       "caption": "A rounded cubical shell with six radial passages illustrates genus five and avoidance of the six face-center rays. Select any Platonic symmetry or a regular polygon, show the excluded rays Q, and use Cutaway to reveal the inner wall. Inspired by Section 4 and Theorem 24 of Hoffman–Martín–White; the cubical silhouette also recalls Chopp’s numerical picture in Figure 2. These original compact models illustrate the topology of the construction input. They are not computed self-shrinkers or simulated flow slices, and do not establish compactness of the tangent shrinkers. The sufficiently large polygonal shrinkers are noncompact.",
-      "alt": "A rounded cubical surface with six openings and genus five, a cutaway exposing its central cavity, and a sevenfold polygonal construction model. Schematics, not computed shrinkers."
+      "alt": "A rounded cubical surface with six openings and genus five, a cutaway exposing its central cavity, and a sevenfold polygonal construction model. Schematics, not computed shrinkers.",
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-hmw-one-ended",
@@ -738,8 +742,9 @@
       "model": "hmw-one-ended",
       "status": "Topology schematic and limiting configuration",
       "interactive": true,
-      "caption": "An original connected genus-g model informed by Hoffman–Martín–White, Figures 1, 5–6 and Theorems 40–42. Rotate the surface, remove its front half, inspect the g+1 horizontal lines, or compare with the separate sphere–plane limit. The model has one exterior sheet; exactly one end is proved only for sufficiently large genus. Shape and cone slope are illustrative, not a computed self-shrinker. Gold and blue distinguish its two sides; outer and cut edges are display boundaries.",
-      "alt": "Hoffman–Martín–White sphere–plane topology schematic: alternating openings join rounded caps to a central sheet and exterior. Full surface and cutaway, with a separate radius-two sphere and plane limit. Not a computed shrinker."
+      "caption": "An original connected genus-g model informed by Hoffman–Martín–White, Figures 1, 5–6 and Theorems 40–42. Visual sources include Francisco Torralbo’s numerical illustrations (Figure 1) and Mario B. Schulz’s numerical illustration (Figure 5). Rotate the surface, remove its front half, inspect the g+1 horizontal lines, or compare with the separate sphere–plane limit. The model has one exterior sheet; exactly one end is proved only for sufficiently large genus. Shape and cone slope are illustrative, not a computed self-shrinker. Gold and blue distinguish its two sides; outer and cut edges are display boundaries.",
+      "alt": "Hoffman–Martín–White sphere–plane topology schematic: alternating openings join rounded caps to a central sheet and exterior. Full surface and cutaway, with a separate radius-two sphere and plane limit. Not a computed shrinker.",
+      "credit_anchor": "schulz-visuals"
     },
     {
       "label": "ex:catalogue-hmw-three-ended",
@@ -752,8 +757,9 @@
       "model": "hmw-three-ended",
       "status": "Original topology schematic",
       "interactive": true,
-      "caption": "An original connected topology model informed by Hoffman–Martín–White, Figure 7 and Theorem 43. Three exterior sheets are joined by alternating open necks. Rotate, zoom, use the cutaway, inspect the neck layout, or compare with the separate multiplicity-three plane limit. The model has genus 2g; three-ended existence is proved only for sufficiently large g. The paper’s genus-two picture is conjectural. Neck sizes, end slopes and separation are illustrative; no shrinker equation has been solved. Outer rims and cut edges are display boundaries.",
-      "alt": "Connected three-ended HMW topology schematic with alternating upper and lower necks. Full view, cutaway and neck plan; model g = 3, genus six. Not a computed shrinker."
+      "caption": "An original connected topology model informed by Hoffman–Martín–White, Figure 7 and Theorem 43. Three exterior sheets are joined by alternating open necks. Rotate, zoom, use the cutaway, inspect the neck layout, or compare with the separate multiplicity-three plane limit. The model has genus 2g; three-ended existence is proved only for sufficiently large g. The paper’s genus-two picture, credited to Matthias Weber, is conjectural and is not a numerical approximation. Neck sizes, end slopes and separation are illustrative; no shrinker equation has been solved. Outer rims and cut edges are display boundaries.",
+      "alt": "Connected three-ended HMW topology schematic with alternating upper and lower necks. Full view, cutaway and neck plan; model g = 3, genus six. Not a computed shrinker.",
+      "credit_anchor": "weber-visuals"
     },
     {
       "label": "ex:catalogue-ketover-platonic",
@@ -931,9 +937,10 @@
       ],
       "model": "minimal-ancient-flows",
       "status": "Numerical Costa surface and linearized time model",
-      "caption": "Four model times on the positive normal side of the Costa surface; switch sides, play, rotate, or inspect the stationary limit. The sampled surface has one handle and three truncated ends. Time follows a positive numerical Dirichlet Jacobi mode on the truncated surface, not the nonlinear ancient flow of Mramor–Payne. Normal displacements are magnified ×3 by default; ×1 restores model scale. The same camera and spatial scale are used for every panel.",
+      "caption": "Four model times on the positive normal side of the Costa surface; switch sides, play, rotate, or inspect the stationary limit. The sampled surface has one handle and three truncated ends. Time follows a positive numerical Dirichlet Jacobi mode on the truncated surface, not the nonlinear ancient flow of Mramor–Payne. Normal displacements are magnified ×3 by default; ×1 restores model scale. The same camera and spatial scale are used for every panel. The stationary parametrization is from O. Michael Melko, Visualizing Minimal Surfaces, equation (17).",
       "alt": "Four views of a genus-one Costa surface with three open ends, moving away from the stationary minimal surface along a positive linearized mode. The opposite side is selectable. These are numerical linearized model views, not computed nonlinear ancient slices.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "costa-visuals"
     },
     {
       "label": "ex:catalogue-reapernoid",
@@ -1235,7 +1242,8 @@
       "status": "Schematic of a numerical candidate",
       "caption": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
       "alt": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-chopp-octahedron",
@@ -1249,7 +1257,8 @@
       "status": "Schematic of a numerical candidate",
       "caption": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
       "alt": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-chopp-saddle",
@@ -1263,7 +1272,8 @@
       "status": "Schematic of a numerical candidate",
       "caption": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
       "alt": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-chopp-two-handle",
@@ -1277,7 +1287,8 @@
       "status": "Schematic of a numerical candidate",
       "caption": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
       "alt": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-chopp-four-handle",
@@ -1292,7 +1303,8 @@
       "status": "Schematic of a numerical candidate",
       "caption": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
       "alt": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     }
   ]
 }

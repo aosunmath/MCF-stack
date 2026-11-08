@@ -13,7 +13,7 @@ from urllib.parse import unquote, urlsplit
 
 from bs4 import BeautifulSoup
 from unidecode import unidecode
-from reader import Reader, display_title, tag_code
+from reader import Reader, display_title, tag_code, route_tag
 from numbering import renumber_markup
 from structure import arrange_sections
 from footnotes import collect_notes, number_notes, relocate_notes
@@ -24,6 +24,7 @@ from history import curate_history
 from reader_references import citation_label, page_references, bibliography, source_catalogue
 from search_index import write_search_index
 import catalogue_properties
+import numerical_references
 from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
 from source_snapshot import revision_id, revision_markup
 from soliton_visualizations import visualization, validate_visualizations
@@ -515,7 +516,7 @@ def build_collection(books, destination, configuration):
         ) + '</ul><p>The reading collection consists of an introduction and four categories: shrinkers, translators, expanders, and other special flows. Each example includes a figure and precise references.</p>'
     if not entries:
         introduction += '<p>Special solutions of mean curvature flow will be collected here.</p>'
-    write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
+    write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="numerical-references/">Numerical references</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
     write("browse", catalogue_properties.page(property_records), "Browse by properties", "../")
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():
@@ -686,7 +687,19 @@ def build_collection(books, destination, configuration):
                     redirect(old_folder / "tag" / configured["tag"] / "index.html", contents, destination)
         redirect(old_folder / "bibliography" / "index.html", destination / "references" / "index.html", destination, {key: identifier for (origin, key), identifier in reference_map.items() if origin == source})
     write("sources", source_list + ('</ul>' if sources else '</ul><p>No sources have been added yet.</p>') + '<p><a href="../deduplication.json">Reviewed duplicate groups and retained source tags</a></p>', "Sources", "../")
+    numerical_content = numerical_references.page() if sources else '<h1>Numerical references</h1><p>No figure references have been added yet.</p>'
+    write("numerical-references", numerical_content, "Numerical references", "../")
+    numerical_tag = route_tag("numerical-references")
+    redirect(destination / "tag" / numerical_tag / "index.html",
+             destination / "numerical-references" / "index.html", destination)
+    if entries:
+        search.append({"tag": numerical_tag, "title": "Numerical references",
+                       "search_title": "Figure methods, software, and visual credits",
+                       "kind": "reference", "topic": "Numerical references",
+                       "text": BeautifulSoup(numerical_content, "html.parser").get_text(" ", strip=True),
+                       "aliases": ["numerical-references", "figure credits"]})
     reference_content = bibliography(references, reference_uses)
+    reference_content = reference_content.replace('</h1>', '</h1><p>For figure methods, software, and visual-source credits, see <a href="../numerical-references/">Numerical references</a>.</p>', 1)
     write("references", reference_content, "References", "../")
     write("search", '<h1>Search</h1><form class="page-search" role="search"><label for="page-search">Keywords, a statement number, or a permanent tag</label><input id="page-search" type="search" name="q" autocomplete="off" aria-controls="page-search-results"><button type="submit">Search</button></form><div id="page-search-results" aria-live="polite"></div>', "Search", "../")
     comment_content = '<h1>Comments and corrections</h1>'

@@ -51,6 +51,8 @@ def render_figure(item, root):
     drawing_link = f' <a href="{assets}{item["model"]}.svg">Open drawing</a>'
     for drawing in item.get('additional_drawings', []):
         drawing_link += f' · <a href="{assets}{escape(drawing["model"], quote=True)}.svg">{escape(drawing["title"])}</a>'
+    credit_anchor = escape(item.get('credit_anchor', 'methods'), quote=True)
+    drawing_link += f' · <a href="{root}numerical-references/#{credit_anchor}">Numerical references and credits</a>'
     image = f'<img src="{assets}{item["model"]}.svg" alt="{alt}" loading="lazy" width="640" height="410">'
     if item.get('interactive'):
         return f'''<figure class="soliton-figure" data-soliton="{assets}{item['model']}.json">
@@ -86,6 +88,8 @@ def validate_visualizations(entries, destination):
 
 
 def validate_figure(item, label, destination):
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', item.get('credit_anchor', 'methods')):
+        raise ValueError('Invalid figure credit anchor: ' + label)
     for suffix in (['.svg', '.json'] if item.get('interactive') else ['.svg']):
         path = destination / 'assets' / 'solitons' / (item['model'] + suffix)
         if not path.is_file():

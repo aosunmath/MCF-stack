@@ -2,7 +2,7 @@
 
 **[Read the stack → aosunmath.github.io/MCF-stack](https://aosunmath.github.io/MCF-stack/)**
 
-[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Browse by properties](https://aosunmath.github.io/MCF-stack/browse/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/)
+[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Browse by properties](https://aosunmath.github.io/MCF-stack/browse/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/) · [Numerical references](https://aosunmath.github.io/MCF-stack/numerical-references/)
 
 MCF-stack is a growing mathematical reference collecting **special solutions of mean curvature flow**, including self-shrinkers, translators, self-expanders, ancient solutions, and other geometrically meaningful examples. Following the idea of the [Stacks Project](https://stacks.math.columbia.edu/), it aims to connect definitions, constructions, properties, and classification results through permanent tags, cross-references, and precise source attribution.
 
@@ -99,5 +99,7 @@ node --test tests/*.test.mjs
 GitHub Pages serves the prebuilt `docs/` directory from `main` at **[aosunmath.github.io/MCF-stack/](https://aosunmath.github.io/MCF-stack/)**. See the [deployment guide](documentation/deployment.md) for setup and publication checks.
 
 ## Attribution
+
+The [Numerical references](https://aosunmath.github.io/MCF-stack/numerical-references/) page credits figure methods, software, and documented visual sources, including Mario B. Schulz, Francisco Torralbo, Matthias Weber, David Chopp, Tom Ilmanen, and O. Michael Melko. Figure captions link to these credits. Newly generated meshes retain attribution to the pictures that informed them.
 
 MCF-stack is derived from [GMT-stack](https://github.com/aosunmath/GMT-stack), using [Mingchen Xia’s Pome framework](https://github.com/MingchenXia/Pome) and the Gerby renderer. The original infrastructure copyright and [MIT license](LICENSE) are preserved. Mathematical contributions must retain their source attribution and applicable licenses. MCF-stack is inspired by the Stacks Project and is an independent project.

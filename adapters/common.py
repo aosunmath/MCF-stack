@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import collections
 import collections.abc
-from copy import deepcopy
 from hashlib import sha256
 from html import escape
 import importlib
@@ -20,6 +19,7 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from source_snapshot import manuscript_snapshot, revision_markup
+from bibliography_metadata import bibliography_entry_for_html, bibliography_sort_key
 from project import CONTRIBUTORS, REPOSITORY as PROJECT_REPOSITORY
 
 SLUG = "gmt-source"
@@ -47,38 +47,6 @@ def stable_tag(label):
 
 def uncomment(text):
     return re.sub(r"(?<!\\)%[^\n]*", "", text)
-
-
-def bibliography_entry_for_html(entry):
-    """Keep a TeX-only publication link usable in the HTML bibliography."""
-    link = re.fullmatch(r"\s*\\href\{(https?://[^{}]+)\}\{([^{}]+)\}\s*",
-                        entry.fields.get("howpublished", ""))
-    if link is None:
-        return entry
-    result = deepcopy(entry)
-    result.fields["howpublished"] = link[2]
-    result.fields.setdefault("url", link[1])
-    return result
-
-
-def bibliography_sort_key(entry):
-    """Sort by surnames and coauthors, then year and title, independent of HTML."""
-    from pybtex.richtext import Text
-
-    def normalize(value):
-        return unidecode(Text.from_latex(value).render_as("text")).casefold()
-
-    people = entry.persons.get("author") or entry.persons.get("editor", [])
-    names = "   ".join(
-        "  ".join(normalize(" ".join(parts)) for parts in (
-            person.prelast_names + person.last_names,
-            person.first_names + person.middle_names,
-            person.lineage_names,
-        )) for person in people
-    )
-    fields = entry.fields
-    return [names or normalize(fields.get("organization") or fields.get("title", "")),
-            normalize(fields.get("year", "")), normalize(fields.get("title", ""))]
 
 
 def active_text(source, name="book.tex", stack=()):
