@@ -108,7 +108,7 @@ class Reader:
             spaces = list(configuration.get('ambient_families', {}).get(topic, {}))
             other = ''
             chronology = section.get('chronology')
-            dated = f'<small class="catalogue-date">Earliest recorded reference: {chronology["date"]}</small>' if chronology and subsections else ''
+            dated = f' <small class="catalogue-date">Earliest recorded reference: {chronology["date"]}</small>' if chronology and subsections else ''
             if subsections and len(spaces) > 1:
                 links = ' · '.join(f'<a href="#ambient-{key}">{escape(AMBIENT_SHORT[key])}</a>' for key in spaces[1:])
                 other = f'<small class="ambient-also">Also in {links}</small>'
