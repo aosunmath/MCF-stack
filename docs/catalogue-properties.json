@@ -5136,7 +5136,7 @@
     },
     {
       "label": "ex:catalogue-su-glued-translators",
-      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "notes": "Full Euclidean ambient dimension is 2m, at least six. The illustration uses m = 3, equal angles π/3, and λ = 0; it shows selected meridians and a projected two-dimensional slice of an illustrative gluing model. Projection crossings do not contradict embeddedness in C³. The time views keep the gluing scale fixed and translate by t e₃; no final PDE correction is computed. Auxiliary slices do not determine genus or ends of this higher-dimensional example.",
       "citations": [
         "CatSu2022"
       ],
@@ -5176,7 +5176,7 @@
       "category": "translators",
       "tag": "164F129D254D",
       "model": "su-glued-translators",
-      "illustration_status": "Gluing schematic"
+      "illustration_status": "Projected construction model"
     },
     {
       "label": "ex:catalogue-su-wood-stationary",
