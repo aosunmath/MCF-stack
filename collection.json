@@ -122,6 +122,35 @@
       "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
     }
   ],
-  "topics": [],
-  "entries": []
+  "topics": [
+    {
+      "slug": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "description": "Smooth minimal surfaces and submanifolds as eternal static flows; affine planes and the catenoid as exact examples."
+    }
+  ],
+  "entries": [
+    {
+      "tag": "C9F0102B7272",
+      "topic": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "members": [
+        {
+          "source": "gmt-foundations",
+          "label": "sec:catalogue-stationary-catenoid"
+        }
+      ]
+    },
+    {
+      "tag": "AC1C0D984A58",
+      "topic": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "members": [
+        {
+          "source": "gmt-foundations",
+          "label": "ex:catalogue-stationary-catenoid"
+        }
+      ]
+    }
+  ]
 }

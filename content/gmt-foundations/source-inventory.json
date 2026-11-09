@@ -479,7 +479,8 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Remark 4.4.7 PDF116 printed105 extracted; stationary and geometric assertions also directly verified by existing manuscript examples-minimal.tex; DOI metadata checked Springer."
+        "Remark 4.4.7 PDF116 printed105 extracted; stationary and geometric assertions also directly verified by existing manuscript examples-minimal.tex; DOI metadata checked Springer.",
+        "General stationary-minimal entry: Proposition1.2.1 and Sections1.3–1.4, printed6–11/PDF19–24, including tangential reparametrizations and Exercise1.3.8; text extracted and printed7/PDF20 visually inspected. The front-of-book offset differs from the later printed105/PDF116 locator. Direct vector identities extend the stationary observation to arbitrary codimension and fixed Riemannian ambient metrics."
       ],
       "catalogue_bibliography_keys": [
         "CatMan11"

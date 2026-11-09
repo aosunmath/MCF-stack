@@ -1,6 +1,51 @@
-\chapter{The catenoid as an eternal stationary flow}\label{sec:catalogue-stationary-catenoid}
-\begin{example}[Stationary catenoid flow]\label{ex:catalogue-stationary-catenoid}
-For $a>0$ the explicit immersion
+\chapter{Minimal surfaces as stationary mean curvature flows}\label{sec:catalogue-stationary-catenoid}
+\begin{example}[Minimal surfaces as stationary mean curvature flows]\label{ex:catalogue-stationary-catenoid}
+Every smooth minimal surface gives a static solution of mean curvature flow, and the same observation applies to minimal submanifolds in arbitrary codimension. Let $F_0:M^n\to (N^{n+k},\bar g)$ be a smooth immersion without boundary, with $n\geq2$, $k\geq1$, and a fixed ambient metric. Write $\vec H$ for the trace of its second fundamental form. The time-independent family
+\[
+ F(p,t)=F_0(p),\qquad p\in M,\quad t\in\mathbb R,
+\]
+satisfies the geometric mean curvature flow equation precisely when $F_0$ is minimal:
+\[
+ (\partial_tF)^\perp=\vec H
+ \quad\Longleftrightarrow\quad \vec H_{F_0}=0.
+\]
+Thus every such minimal immersion is an eternal stationary flow; restricting time to $(-\infty,T)$ also gives an ancient flow. No dilation, translation velocity, or preferred scale is required. Tangential reparametrizations can change the labels of points without changing the stationary geometry.
+
+\textbf{Minimality and the geometry of the time slices.}
+For a compactly supported normal variation $V$, supported away from any boundary, the first variation of area is
+\[
+ \delta\operatorname{Area}_{F_0}(V)=-\int_M\langle\vec H,V\rangle\,d\mu.
+\]
+For an infinite-area immersion this means the variation of area on a compact region containing the support. Minimality is therefore the critical-point equation for area. The first-variation argument and the stationary-flow observation are recorded for Euclidean hypersurfaces in \cite{CatMan11}, Proposition 1.2.1 and Sections 1.3--1.4, printed pp.~6--11 (supplied PDF pp.~19--24). The vector equation above gives the same conclusion in any fixed Riemannian ambient manifold.
+
+The flow retains the topology, embeddedness or self-intersections, completeness, properness, symmetries, and ends of the chosen minimal immersion. None of these properties follows merely from $\vec H=0$. In particular, both embedded and nonembedded immersed examples are allowed, and an immersion is not automatically nonembedded. For a surface in $\mathbb R^3$, minimality gives principal curvatures $\kappa_1+\kappa_2=0$ and hence $K=-\kappa_1^2\leq0$; it does not force the surface to be flat.
+
+There is no positive-dimensional compact minimal immersion without boundary in Euclidean space. Indeed, for $F_0:M^n\to\mathbb R^{n+k}$,
+\[
+ \Delta_M F_0=\vec H,\qquad
+ \Delta_M|F_0|^2=2n+2\langle F_0,\vec H\rangle.
+\]
+If $\vec H=0$ and $M$ were compact without boundary, integration would give $0=2n\operatorname{Vol}(M)$. This obstruction is specific to Euclidean space. Minimal surfaces in curved ambient manifolds are stationary for MCF in that ambient metric and are recorded separately below; their Euclidean mean curvature after an ambient embedding need not vanish. A minimal surface with boundary is also stationary in its interior, but a boundary-value flow must impose compatible boundary conditions, such as keeping its boundary fixed.
+
+\textbf{Minimal graphs and affine planes.}
+For a smooth hypersurface graph $F_0(x)=(x,u(x))$ over an open set $\Omega\subset\mathbb R^n$, the stationary equation is the minimal-surface equation
+\[
+ \operatorname{div}\left(\frac{Du}{\sqrt{1+|Du|^2}}\right)=0.
+\]
+It is exactly the time-independent case of the graphical MCF equation
+\[
+ u_t=\sqrt{1+|Du|^2}\,\operatorname{div}\left(\frac{Du}{\sqrt{1+|Du|^2}}\right);
+\]
+see \cite{CatMan11}, Exercise 1.3.8, printed pp.~10--11. This is an elliptic characterization, not a closed formula for all minimal surfaces.
+
+An elementary exact example is any affine plane in $\mathbb R^3$:
+\[
+ F(u,v,t)=p+u e_1+v e_2,\qquad (u,v)\in\mathbb R^2,\quad t\in\mathbb R,
+\]
+where $p\in\mathbb R^3$ and $e_1,e_2$ are orthonormal. It is complete, properly embedded, flat, noncompact, and topologically $\mathbb R^2$, with genus zero and one end. Unlike a plane solving the normalized shrinker equation, a stationary affine plane need not pass through the origin.
+
+\textbf{The catenoid as an illustrated member of the class.}
+For $a>0$ the exact parametrization
 \[
  X(\theta,s,t)=a(\cosh s\cos\theta,\cosh s\sin\theta,s),
  \quad \theta\in\mathbb R/2\pi\mathbb Z,\quad s\in\mathbb R,\quad t\in\mathbb R,
@@ -17,7 +62,7 @@ The metric follows by differentiation, and the conformal curvature formula gives
 \[
  Q(f,f)=2\pi\int_{\mathbb R}\bigl((f')^2-2\operatorname{sech}^2s\,f^2\bigr)\,ds.
 \]
-Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
+Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The interactive figure shows this particular minimal surface, with rotation and zoom on a fixed, truncated parameter window; it does not represent the full class of minimal surfaces.
 Chopp uses the bounded piece of this classical surface as a numerical
 benchmark in \cite{CatChoppMinimal1993}, Section~4.1, pp.~86--87.
 In axial coordinates its exact profile is
@@ -28,6 +73,22 @@ minimal-surface computation, not a new complete catenoid or a closed
 formula for the transient numerical evolution. The solver's artificial
 time and curvature conventions should not be identified with the
 normalized MCF time used elsewhere in this collection.
+
+\textbf{Stationarity, stability, and Gaussian quantities.}
+Being a critical point of area does not mean being an area minimizer or even stable. For a two-sided minimal hypersurface in Euclidean space, the second variation for a compactly supported scalar normal variation $f$ is
+\[
+ Q(f,f)=\int_M\bigl(|\nabla f|^2-|A|^2f^2\bigr)\,d\mu.
+\]
+An affine plane has $A=0$ and is stable for these variations, whereas the catenoid has the negative direction exhibited above. Both nevertheless remain exactly fixed under MCF when initialized at the minimal surface. Stability of perturbed flows requires its own hypotheses and is not asserted for this general class.
+
+For a stationary Euclidean immersion, each Gaussian integral and its entropy are constant in time whenever defined, because the immersion itself is fixed. This does not identify centered Gaussian area with entropy or imply their finiteness for every minimal immersion. For the multiplicity-one affine plane $P$ above, direct Gaussian integration gives
+\[
+ F_{x_0,\tau}(P)=\exp\left(-\frac{\operatorname{dist}(x_0,P)^2}{4\tau}\right),
+ \qquad \lambda(P)=1,\qquad \tau>0.
+\]
+Thus $F_{0,1}(P)=\exp(-\operatorname{dist}(0,P)^2/4)$ equals entropy only when $0\in P$. No value or uniform bound is recorded here for the general minimal-surface class. Euclidean Gaussian area and entropy are not assigned to intrinsic MCF in curved ambient manifolds. This entry concerns smooth minimal immersions; singular stationary varifolds require a weak-flow formulation and local mass hypotheses.
+
+Further stationary examples in this collection include the special Lagrangian Lawlor necks in \ref{ex:catalogue-lawlor-necks} and the Su--Wood products in \ref{ex:catalogue-su-wood-stationary}. Their entries give the dimensions, parametrizations, and additional geometry of those particular families.
 \end{example}
 
 \chapter{Mean curvature evolution of the Whitney sphere}\label{sec:catalogue-whitney-sphere}

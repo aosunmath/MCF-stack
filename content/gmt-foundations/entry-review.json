@@ -110,7 +110,7 @@
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
-      "title": "Stationary catenoid flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "kind": "example",
       "file": "catalogue-other-flows.tex",
       "status": "cited-example",

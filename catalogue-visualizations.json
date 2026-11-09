@@ -440,7 +440,7 @@
     {
       "label": "ex:catalogue-stationary-catenoid",
       "section": "the-catenoid-as-an-eternal-stationary-flow",
-      "title": "The catenoid as an eternal stationary flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "category": "other-special-flows",
       "citations": [
         "CatMan11",
@@ -448,8 +448,8 @@
       ],
       "model": "catenoid",
       "status": "Exact formula",
-      "caption": "The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
-      "alt": "The catenoid as an eternal stationary flow. The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
+      "caption": "An exact catenoid illustrates one member of the general class of stationary minimal surfaces. The waist radius is 1 and the displayed parameter window is |s| ≤ 1.65. Rotate or zoom this finite piece; the complete surface has two infinite ends and is independent of time.",
+      "alt": "A truncated catenoid with a circular waist and two flaring ends, illustrating a stationary minimal surface.",
       "interactive": true
     },
     {
