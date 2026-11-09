@@ -328,6 +328,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='immortal-annulus-stages'){
         const {initImmortalAnnulus}=await import('./immortal-annulus-viewer.mjs');
         initImmortalAnnulus(figure,data,rotatePoint);
+      } else if(data.kind==='lee-tsai-weighted-flow'){
+        const {initLeeTsaiFigure}=await import('./lee-tsai-viewer.mjs');
+        initLeeTsaiFigure(figure,data);
       } else if(data.kind==='reapernoid-pde'){
         const {initReapernoidFigure}=await import('./reapernoid-viewer.mjs');
         initReapernoidFigure(figure,data);
