@@ -5711,38 +5711,40 @@
     },
     {
       "label": "ex:catalogue-rotating-curves",
-      "notes": "All profiles are complete proper curves with two ends. A nonzero kernel projection gives an embedding; the general even-dimensional case is not assigned that conclusion.",
+      "notes": "All profiles are complete proper curves with two ends. A nonzero kernel projection gives an embedding; the general even-dimensional case is not assigned that conclusion. Planar properties are sharpened by Halldórsson (2012); the spatial and higher-dimensional cases retain their own hypotheses.",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012",
+        "CatHalldorsson2013"
       ],
       "cases": [
         {
-          "name": "Planar rotating spirals, including the Yin–Yang profile",
+          "name": "Complete planar rotators, including Yin–Yang",
           "ambient": [
             "r2"
           ],
           "dimension": "curve",
-          "topology": "Line R (immersed domain)",
+          "topology": "Noncompact line ℝ",
           "genus": {
             "key": "na",
             "text": "Not a surface"
           },
           "ends": {
             "key": "2",
-            "text": "Two ends of the parameter manifold R"
+            "text": "2 intrinsic ends of the parameter manifold"
           },
           "compact": false,
           "embeddedness": {
-            "key": "not-recorded",
-            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+            "key": "embedded",
+            "text": "Theorem 3.1 proves proper embeddedness for every minimum radius."
           },
           "gaussian": {
             "status": "not-recorded",
-            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
           },
           "entropy": {
             "status": "not-recorded",
-            "text": "No entropy value or finiteness theorem is recorded for this general case."
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
           }
         },
         {
@@ -5859,6 +5861,35 @@
           "entropy": {
             "status": "not-recorded",
             "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotating product surfaces",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ² (curve × ℝ)",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of the parameter plane"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The product of a properly embedded rotating planar curve with ℝ is properly embedded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
           }
         }
       ],
@@ -6060,38 +6091,39 @@
     },
     {
       "label": "ex:catalogue-rotating-expanding-curves",
-      "notes": "α > 0; complete proper immersed curves. Generalized logarithmic spirals are end asymptotes, not exact spatial formulas. No pure-expander Gaussian identity is imposed.",
+      "notes": "α > 0; complete proper immersed curves. Generalized logarithmic spirals are end asymptotes, not exact spatial formulas. No pure-expander Gaussian identity is imposed. Planar properties are sharpened by Halldórsson (2012); the spatial and higher-dimensional cases retain their own hypotheses.",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "cases": [
         {
-          "name": "Planar rotating expanders",
+          "name": "A ≠ 0, B > 0",
           "ambient": [
             "r2"
           ],
           "dimension": "curve",
-          "topology": "Line R (immersed domain)",
+          "topology": "Noncompact line ℝ",
           "genus": {
             "key": "na",
             "text": "Not a surface"
           },
           "ends": {
             "key": "2",
-            "text": "Two ends of the parameter manifold R"
+            "text": "2 intrinsic ends of the parameter manifold"
           },
           "compact": false,
           "embeddedness": {
-            "key": "not-recorded",
-            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+            "key": "embedded",
+            "text": "Properly embedded for every minimum radius by Theorem 3.1."
           },
           "gaussian": {
             "status": "not-recorded",
-            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
           },
           "entropy": {
             "status": "not-recorded",
-            "text": "No entropy value or finiteness theorem is recorded for this general case."
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
           }
         },
         {
@@ -6191,38 +6223,68 @@
     },
     {
       "label": "ex:catalogue-rotating-shrinking-curves",
-      "notes": "α < 0, P_T(AC) not identically zero. All recorded domains are complete, noncompact and nonproper; bounded image does not mean compact domain. The spherical subfamily is Euclidean flow, not a separate curved-ambient entry. End convergence to a single circle requires a two-dimensional frequency eigenspace. Unresolved kernel-limit scenarios are not existence claims.",
+      "notes": "α < 0, P_T(AC) not identically zero. All recorded domains are complete, noncompact and nonproper; bounded image does not mean compact domain. The spherical subfamily is Euclidean flow, not a separate curved-ambient entry. End convergence to a single circle requires a two-dimensional frequency eigenspace. Unresolved kernel-limit scenarios are not existence claims. Planar properties are sharpened by Halldórsson (2012); the spatial and higher-dimensional cases retain their own hypotheses.",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "cases": [
         {
-          "name": "Genuinely rotating shrinking curves in R2",
+          "name": "Bounded two-circular-end profiles",
           "ambient": [
             "r2"
           ],
           "dimension": "curve",
-          "topology": "Line R (immersed domain)",
+          "topology": "Noncompact line ℝ",
           "genus": {
             "key": "na",
             "text": "Not a surface"
           },
           "ends": {
             "key": "2",
-            "text": "Two intrinsic ends; at least one has a bounded infinite-length tail"
+            "text": "2 intrinsic ends of the parameter manifold"
           },
           "compact": false,
           "embeddedness": {
             "key": "not-recorded",
-            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+            "text": "The source records self-intersecting members but no complete embeddedness classification; tentative figure captions do not prove embeddedness."
           },
           "gaussian": {
             "status": "exact",
-            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
           },
           "entropy": {
             "status": "exact",
-            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
+          }
+        },
+        {
+          "name": "Comet spirals",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Noncompact line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 intrinsic ends of the parameter manifold"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "Existence is proved; uniqueness and a complete embeddedness criterion are not supplied. Some figures show crossings and others ask whether the curve is embedded."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
           }
         },
         {
@@ -6348,6 +6410,196 @@
       "tag": "EF429B51A962",
       "model": "aaaw-shrinking",
       "illustration_status": "Numerical ODE curve"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-dense-shrinkers",
+      "notes": "Bounded image, complete noncompact domain, nonproper immersion. Gaussian divergence is a direct calculation, not an extra cited entropy theorem.",
+      "citations": [
+        "CatHalldorsson2012"
+      ],
+      "cases": [
+        {
+          "name": "Irrational turning branch",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Noncompact line ℝ",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2 intrinsic ends of the parameter manifold"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "Repeated rotated excursions intersect; this is a recurrent, nonproper immersion. The annulus is the closure of its image, not its parameter manifold."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "∞ at every regular time, with arclength counted on the immersion: infinite length in a compact region makes every Gaussian integral diverge."
+          }
+        }
+      ],
+      "title": "Nonclosed shrinking curves dense in an annulus",
+      "section": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "category": "shrinkers",
+      "tag": "4973C84D3B2B",
+      "model": "halldorsson-dense",
+      "illustration_status": "Numerical ODE approximation"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-helicoidal-translators",
+      "notes": "Finite pitch h > 0; rotation at unit speed equals translation with velocity −h e₃ as unparametrized images. Two profile arms do not give two surface ends.",
+      "citations": [
+        "CatHalldorsson2013"
+      ],
+      "cases": [
+        {
+          "name": "Symmetric profile through the axis (d = 0, h > 0)",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of the parameter plane"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Central symmetry and strict radial monotonicity of the two arms give an embedded generating curve, hence an embedded surface; see Figure 1 and Section 4."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          }
+        },
+        {
+          "name": "Profiles with positive minimum radius (d > 0, h > 0)",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Parameter plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of the parameter plane"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The surface is embedded exactly when the two individually embedded profile arms are disjoint. Crossings occur in this family; the source gives no complete threshold in h and d."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Halldorsson helicoidal rotating translators",
+      "section": "halldorsson-helicoidal-rotating-translators",
+      "category": "translators",
+      "tag": "E5C494420E4C",
+      "model": "halldorsson-helicoidal",
+      "illustration_status": "Numerical ODE approximation"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-minimal-helicoids",
+      "notes": "Full parameter plane, not its quotient by vertical periodicity. The nonzero-CMC comparison family is not asserted to be an MCF soliton.",
+      "citations": [
+        "CatHalldorsson2013"
+      ],
+      "cases": [
+        {
+          "name": "Classical helicoid (a = 0, h > 0)",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of the parameter plane"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The exact helicoid parametrization is a proper embedding."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          }
+        },
+        {
+          "name": "Nonzero-offset helicoidal minimal immersions (a ≠ 0, h > 0)",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Parameter plane ℝ²",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of the parameter plane"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "The generating curve has infinitely many actual self-intersections; these produce intersections at the same height on the surface."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded in the reviewed source passages; centered Gaussian area is not identified with entropy."
+          }
+        }
+      ],
+      "title": "Helicoidal minimal surfaces as stationary flows",
+      "section": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "category": "other-special-flows",
+      "tag": "E9086532F53A",
+      "model": "halldorsson-minimal",
+      "illustration_status": "Exact formula"
     }
   ]
 }

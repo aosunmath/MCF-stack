@@ -17,6 +17,7 @@
         "round-shrinking-spheres",
         "planes-through-the-shrinker-center",
         "abresch-langer-closed-shrinking-curves",
+        "nonclosed-shrinking-curves-dense-in-an-annulus",
         "generalized-shrinking-cylinders",
         "angenent-s-shrinking-torus",
         "drugan-s-immersed-shrinking-spheres",
@@ -57,7 +58,8 @@
           "topics": [
             "round-shrinking-spheres",
             "planes-through-the-shrinker-center",
-            "abresch-langer-closed-shrinking-curves"
+            "abresch-langer-closed-shrinking-curves",
+            "nonclosed-shrinking-curves-dense-in-an-annulus"
           ],
           "related": []
         },
@@ -808,6 +810,14 @@
               "name": "Numerical candidate: Chopp four-handled cone candidate"
             }
           ]
+        },
+        "nonclosed-shrinking-curves-dense-in-an-annulus": {
+          "r2": [
+            {
+              "anchor": "case-ex-catalogue-halldorsson-dense-shrinkers-1",
+              "name": "Irrational turning branch"
+            }
+          ]
         }
       },
       "tag": "766061837311"
@@ -829,6 +839,7 @@
         "doubly-periodic-scherk-translators",
         "helicoid-like-translators",
         "annuloid-translators-in-slabs",
+        "halldorsson-helicoidal-rotating-translators",
         "nonrotational-entire-convex-translators",
         "translators-with-an-angenent-torus-end",
         "translators-with-high-genus-spherical-doubling-ends",
@@ -862,7 +873,8 @@
             "finite-genus-translators-with-three-ends",
             "doubly-periodic-scherk-translators",
             "helicoid-like-translators",
-            "annuloid-translators-in-slabs"
+            "annuloid-translators-in-slabs",
+            "halldorsson-helicoidal-rotating-translators"
           ],
           "related": [
             {
@@ -1250,6 +1262,18 @@
             {
               "anchor": "case-ex-catalogue-su-glued-translators-1",
               "name": "Two-cylinder desingularizations in Cᵐ, m ≥ 3"
+            }
+          ]
+        },
+        "halldorsson-helicoidal-rotating-translators": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-halldorsson-helicoidal-translators-1",
+              "name": "Symmetric profile through the axis (d = 0, h > 0)"
+            },
+            {
+              "anchor": "case-ex-catalogue-halldorsson-helicoidal-translators-2",
+              "name": "Profiles with positive minimum radius (d > 0, h > 0)"
             }
           ]
         }
@@ -1641,6 +1665,7 @@
         "ancient-flows-from-unstable-minimal-hypersurfaces",
         "the-eternal-reapernoid",
         "rotating-and-translating-curve-solitons",
+        "helicoidal-minimal-surfaces-as-stationary-flows",
         "mean-curvature-evolution-of-the-whitney-sphere",
         "ancient-torus-curves-in-higher-codimension",
         "ancient-stacked-pancakes",
@@ -1680,7 +1705,8 @@
             "haslhofer-hershkovits-ancient-ovals",
             "ancient-flows-from-unstable-minimal-hypersurfaces",
             "the-eternal-reapernoid",
-            "rotating-and-translating-curve-solitons"
+            "rotating-and-translating-curve-solitons",
+            "helicoidal-minimal-surfaces-as-stationary-flows"
           ],
           "related": [
             {
@@ -1689,6 +1715,10 @@
                 {
                   "anchor": "case-ex-catalogue-rotating-curves-2",
                   "name": "Nonplanar rotators in R3 with nonzero axial tangent"
+                },
+                {
+                  "anchor": "case-ex-catalogue-rotating-curves-6",
+                  "name": "Rotating product surfaces"
                 }
               ]
             },
@@ -1705,11 +1735,11 @@
               "section": "rotating-and-shrinking-curve-solitons",
               "cases": [
                 {
-                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-2",
+                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-3",
                   "name": "Genuinely rotating shrinking curves in R3"
                 },
                 {
-                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-3",
+                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-4",
                   "name": "Tangent-sphere rotating curves in R3"
                 }
               ]
@@ -1749,7 +1779,7 @@
               "section": "rotating-and-shrinking-curve-solitons",
               "cases": [
                 {
-                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-4",
+                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-5",
                   "name": "Genuinely rotating shrinking curves in R4"
                 }
               ]
@@ -1843,7 +1873,7 @@
               "section": "rotating-and-shrinking-curve-solitons",
               "cases": [
                 {
-                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-5",
+                  "anchor": "case-ex-catalogue-rotating-shrinking-curves-6",
                   "name": "Genuinely rotating shrinking curves in R^n, n ≥ 5"
                 }
               ]
@@ -2274,13 +2304,17 @@
           "r2": [
             {
               "anchor": "case-ex-catalogue-rotating-curves-1",
-              "name": "Planar rotating spirals, including the Yin–Yang profile"
+              "name": "Complete planar rotators, including Yin–Yang"
             }
           ],
           "r3": [
             {
               "anchor": "case-ex-catalogue-rotating-curves-2",
               "name": "Nonplanar rotators in R3 with nonzero axial tangent"
+            },
+            {
+              "anchor": "case-ex-catalogue-rotating-curves-6",
+              "name": "Rotating product surfaces"
             }
           ],
           "r4": [
@@ -2336,7 +2370,7 @@
           "r2": [
             {
               "anchor": "case-ex-catalogue-rotating-expanding-curves-1",
-              "name": "Planar rotating expanders"
+              "name": "A ≠ 0, B > 0"
             }
           ],
           "r3": [
@@ -2362,29 +2396,45 @@
           "r2": [
             {
               "anchor": "case-ex-catalogue-rotating-shrinking-curves-1",
-              "name": "Genuinely rotating shrinking curves in R2"
+              "name": "Bounded two-circular-end profiles"
+            },
+            {
+              "anchor": "case-ex-catalogue-rotating-shrinking-curves-2",
+              "name": "Comet spirals"
             }
           ],
           "r3": [
             {
-              "anchor": "case-ex-catalogue-rotating-shrinking-curves-2",
+              "anchor": "case-ex-catalogue-rotating-shrinking-curves-3",
               "name": "Genuinely rotating shrinking curves in R3"
             },
             {
-              "anchor": "case-ex-catalogue-rotating-shrinking-curves-3",
+              "anchor": "case-ex-catalogue-rotating-shrinking-curves-4",
               "name": "Tangent-sphere rotating curves in R3"
             }
           ],
           "r4": [
             {
-              "anchor": "case-ex-catalogue-rotating-shrinking-curves-4",
+              "anchor": "case-ex-catalogue-rotating-shrinking-curves-5",
               "name": "Genuinely rotating shrinking curves in R4"
             }
           ],
           "higher": [
             {
-              "anchor": "case-ex-catalogue-rotating-shrinking-curves-5",
+              "anchor": "case-ex-catalogue-rotating-shrinking-curves-6",
               "name": "Genuinely rotating shrinking curves in R^n, n ≥ 5"
+            }
+          ]
+        },
+        "helicoidal-minimal-surfaces-as-stationary-flows": {
+          "r3": [
+            {
+              "anchor": "case-ex-catalogue-halldorsson-minimal-helicoids-1",
+              "name": "Classical helicoid (a = 0, h > 0)"
+            },
+            {
+              "anchor": "case-ex-catalogue-halldorsson-minimal-helicoids-2",
+              "name": "Nonzero-offset helicoidal minimal immersions (a ≠ 0, h > 0)"
             }
           ]
         }
@@ -2418,7 +2468,7 @@
       "slug": "generalized-shrinking-cylinders",
       "title": "Generalized shrinking cylinders",
       "description": "",
-      "number": "2.4",
+      "number": "2.5",
       "tag": "1A070FD35EB2"
     },
     {
@@ -2439,203 +2489,203 @@
       "slug": "angenent-s-shrinking-torus",
       "title": "Angenent's shrinking torus",
       "description": "",
-      "number": "2.5",
+      "number": "2.6",
       "tag": "EB7B6435F145"
     },
     {
       "slug": "drugan-s-immersed-shrinking-spheres",
       "title": "Drugan's immersed shrinking spheres",
       "description": "",
-      "number": "2.6",
+      "number": "2.7",
       "tag": "2101D51F1E32"
     },
     {
       "slug": "the-clifford-shrinking-torus-in-four-space",
       "title": "The Clifford shrinking torus in four-space",
       "description": "",
-      "number": "2.27",
+      "number": "2.28",
       "tag": "CDFAEA3DDEF8"
     },
     {
       "slug": "products-of-closed-shrinking-curves",
       "title": "Products of closed shrinking curves",
       "description": "",
-      "number": "2.28",
+      "number": "2.29",
       "tag": "44DD8966BC9A"
     },
     {
       "slug": "higher-codimension-spherical-shrinkers",
       "title": "Higher-codimension spherical shrinkers",
       "description": "",
-      "number": "2.29",
+      "number": "2.30",
       "tag": "6C99F82AA214"
     },
     {
       "slug": "moller-closed-shrinkers-of-large-even-genus",
       "title": "Møller closed shrinkers of large even genus",
       "description": "",
-      "number": "2.7",
+      "number": "2.8",
       "tag": "1AD8ABE5C210"
     },
     {
       "slug": "kapouleas-kleene-moller-shrinkers-with-one-end",
       "title": "Kapouleas–Kleene–Møller shrinkers with one end",
       "description": "",
-      "number": "2.8",
+      "number": "2.9",
       "tag": "2285B0C987A6"
     },
     {
       "slug": "drugan-nguyen-variational-shrinking-tori",
       "title": "Drugan–Nguyen variational shrinking tori",
       "description": "",
-      "number": "2.9",
+      "number": "2.10",
       "tag": "7E48D8C7D552"
     },
     {
       "slug": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
       "title": "Buzano–Nguyen–Schulz shrinkers of every positive genus",
       "description": "",
-      "number": "2.10",
+      "number": "2.11",
       "tag": "0E02104583BA"
     },
     {
       "slug": "ketover-self-shrinking-doubled-planes",
       "title": "Ketover self-shrinking doubled planes",
       "description": "",
-      "number": "2.11",
+      "number": "2.12",
       "tag": "8423ACEAF2E2"
     },
     {
       "slug": "closed-shrinkers-from-spherical-doubling",
       "title": "Closed shrinkers from spherical doubling",
       "description": "",
-      "number": "2.12",
+      "number": "2.13",
       "tag": "EB175520B015"
     },
     {
       "slug": "nguyen-s-one-ended-shrinking-saddles",
       "title": "Nguyen's one-ended shrinking saddles",
       "description": "",
-      "number": "2.13",
+      "number": "2.14",
       "tag": "EDE40E8E1379"
     },
     {
       "slug": "angenent-torus-cylinders",
       "title": "Angenent torus cylinders",
       "description": "",
-      "number": "2.30",
+      "number": "2.31",
       "tag": "99055D91C188"
     },
     {
       "slug": "ilmanen-white-two-ended-shrinkers",
       "title": "Ilmanen–White two-ended shrinkers",
       "description": "",
-      "number": "2.14",
+      "number": "2.15",
       "tag": "C7322187A6FC"
     },
     {
       "slug": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
       "title": "Shao–Zou shrinkers with any prescribed number of ends",
       "description": "",
-      "number": "2.15",
+      "number": "2.16",
       "tag": "EB2734BB2E46"
     },
     {
       "slug": "flow-generated-platonic-and-polygonal-shrinkers",
       "title": "Flow-generated Platonic and polygonal shrinkers",
       "description": "",
-      "number": "2.16",
+      "number": "2.17",
       "tag": "1AF8BDC11238"
     },
     {
       "slug": "flow-generated-sphere-plane-shrinkers",
       "title": "Flow-generated sphere–plane shrinkers",
       "description": "",
-      "number": "2.17",
+      "number": "2.18",
       "tag": "036F44595178"
     },
     {
       "slug": "flow-generated-three-ended-shrinkers",
       "title": "Flow-generated three-ended shrinkers",
       "description": "",
-      "number": "2.18",
+      "number": "2.19",
       "tag": "5245200FA4A7"
     },
     {
       "slug": "ketover-shrinkers-with-platonic-symmetry",
       "title": "Ketover shrinkers with Platonic symmetry",
       "description": "",
-      "number": "2.19",
+      "number": "2.20",
       "tag": "B675C6112328"
     },
     {
       "slug": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
       "title": "Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
       "description": "",
-      "number": "2.20",
+      "number": "2.21",
       "tag": "879F42A66D65"
     },
     {
       "slug": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
       "title": "Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "description": "",
-      "number": "2.21",
+      "number": "2.22",
       "tag": "B050FA22AB2D"
     },
     {
       "slug": "the-lee-wang-self-shrinking-mobius-bundle",
       "title": "The Lee–Wang self-shrinking Mobius bundle",
       "description": "",
-      "number": "2.31",
+      "number": "2.32",
       "tag": "5D9025FCD9CD"
     },
     {
       "slug": "compact-periodic-lagrangian-quadric-shrinkers",
       "title": "Compact periodic Lagrangian quadric shrinkers",
       "description": "",
-      "number": "2.32",
+      "number": "2.33",
       "tag": "6AFBAD1A608F"
     },
     {
       "slug": "lee-wang-embedded-quadric-shrinkers",
       "title": "Lee–Wang embedded quadric shrinkers",
       "description": "",
-      "number": "2.33",
+      "number": "2.34",
       "tag": "A400A6F0174B"
     },
     {
       "slug": "chopp-cubical-shrinker-candidate",
       "title": "Chopp cubical shrinker candidate",
       "description": "",
-      "number": "2.22",
+      "number": "2.23",
       "tag": "90FE05D9053E"
     },
     {
       "slug": "chopp-octahedral-shrinker-candidate",
       "title": "Chopp octahedral shrinker candidate",
       "description": "",
-      "number": "2.23",
+      "number": "2.24",
       "tag": "EAAEF7E5907F"
     },
     {
       "slug": "chopp-punctured-torus-saddle-candidate",
       "title": "Chopp punctured-torus saddle candidate",
       "description": "",
-      "number": "2.24",
+      "number": "2.25",
       "tag": "753FE61621D7"
     },
     {
       "slug": "chopp-two-handled-cone-candidate",
       "title": "Chopp two-handled cone candidate",
       "description": "",
-      "number": "2.25",
+      "number": "2.26",
       "tag": "50368E5C98D8"
     },
     {
       "slug": "chopp-four-handled-cone-candidate",
       "title": "Chopp four-handled cone candidate",
       "description": "",
-      "number": "2.26",
+      "number": "2.27",
       "tag": "5684D97D637F"
     },
     {
@@ -2677,7 +2727,7 @@
       "slug": "nonrotational-entire-convex-translators",
       "title": "Nonrotational entire convex translators",
       "description": "",
-      "number": "3.14",
+      "number": "3.15",
       "tag": "BD00A99565D1"
     },
     {
@@ -2719,14 +2769,14 @@
       "slug": "translators-with-an-angenent-torus-end",
       "title": "Translators with an Angenent-torus end",
       "description": "",
-      "number": "3.15",
+      "number": "3.16",
       "tag": "C8173134CEA6"
     },
     {
       "slug": "translators-with-high-genus-spherical-doubling-ends",
       "title": "Translators with high-genus spherical-doubling ends",
       "description": "",
-      "number": "3.16",
+      "number": "3.17",
       "tag": "A0A7AC0D200C"
     },
     {
@@ -2754,21 +2804,21 @@
       "slug": "joyce-lee-tsui-small-angle-lagrangian-translators",
       "title": "Joyce–Lee–Tsui small-angle Lagrangian translators",
       "description": "",
-      "number": "3.17",
+      "number": "3.18",
       "tag": "16AF28E8CCDB"
     },
     {
       "slug": "explicit-rotating-lagrangian-translators",
       "title": "Explicit rotating Lagrangian translators",
       "description": "",
-      "number": "3.18",
+      "number": "3.19",
       "tag": "5C21E6709CA8"
     },
     {
       "slug": "su-translators-obtained-by-gluing-grim-cylinders",
       "title": "Su translators obtained by gluing grim cylinders",
       "description": "",
-      "number": "3.19",
+      "number": "3.20",
       "tag": "96393C1B9F17"
     },
     {
@@ -2859,7 +2909,7 @@
       "slug": "mean-curvature-evolution-of-the-whitney-sphere",
       "title": "Mean curvature evolution of the Whitney sphere",
       "description": "",
-      "number": "5.15",
+      "number": "5.16",
       "tag": "2E15631C1593"
     },
     {
@@ -2880,7 +2930,7 @@
       "slug": "ancient-torus-curves-in-higher-codimension",
       "title": "Ancient torus curves in higher codimension",
       "description": "",
-      "number": "5.16",
+      "number": "5.17",
       "tag": "B6082DA55C46"
     },
     {
@@ -2901,7 +2951,7 @@
       "slug": "immortal-compact-flows-converging-to-a-double-sphere",
       "title": "Immortal compact flows converging to a double sphere",
       "description": "",
-      "number": "5.22",
+      "number": "5.23",
       "tag": "0806DD487DC4"
     },
     {
@@ -2929,7 +2979,7 @@
       "slug": "ancient-stacked-pancakes",
       "title": "Ancient stacked pancakes",
       "description": "",
-      "number": "5.17",
+      "number": "5.18",
       "tag": "9C9E3EBC47D4"
     },
     {
@@ -2950,49 +3000,49 @@
       "slug": "lawlor-necks-as-stationary-lagrangian-flows",
       "title": "Lawlor necks as stationary Lagrangian flows",
       "description": "",
-      "number": "5.18",
+      "number": "5.19",
       "tag": "380EC54D3A30"
     },
     {
       "slug": "immortal-curve-shortening-with-nonunique-geodesic-limits",
       "title": "Immortal curve shortening with nonunique geodesic limits",
       "description": "",
-      "number": "5.23",
+      "number": "5.24",
       "tag": "9C5BCCFA4320"
     },
     {
       "slug": "lagrangian-torus-necks-collapsing-at-infinite-time",
       "title": "Lagrangian torus necks collapsing at infinite time",
       "description": "",
-      "number": "5.24",
+      "number": "5.25",
       "tag": "0AE8973A4338"
     },
     {
       "slug": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
       "title": "Lagrangian sphere chains in Gibbons–Hawking spaces",
       "description": "",
-      "number": "5.25",
+      "number": "5.26",
       "tag": "2AB1CBD37191"
     },
     {
       "slug": "su-wood-stationary-products-of-lawlor-profiles",
       "title": "Su–Wood stationary products of Lawlor profiles",
       "description": "",
-      "number": "5.20",
+      "number": "5.21",
       "tag": "C99B5440B24D"
     },
     {
       "slug": "stolarski-su-finite-time-lagrangian-neck-pinches",
       "title": "Stolarski–Su finite-time Lagrangian neck pinches",
       "description": "",
-      "number": "5.21",
+      "number": "5.22",
       "tag": "71FD28B23406"
     },
     {
       "slug": "ancient-dense-torus-curves-with-irrational-frequencies",
       "title": "Ancient dense torus curves with irrational frequencies",
       "description": "",
-      "number": "5.19",
+      "number": "5.20",
       "tag": "E22AF7044670"
     },
     {
@@ -3022,6 +3072,27 @@
       "description": "",
       "number": "5.6",
       "tag": "3C52DD1F2A4E"
+    },
+    {
+      "slug": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "title": "Nonclosed shrinking curves dense in an annulus",
+      "description": "",
+      "number": "2.4",
+      "tag": "3A8C87C9FFF8"
+    },
+    {
+      "slug": "halldorsson-helicoidal-rotating-translators",
+      "title": "Halldorsson helicoidal rotating translators",
+      "description": "",
+      "number": "3.14",
+      "tag": "0FA3E75DD419"
+    },
+    {
+      "slug": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "title": "Helicoidal minimal surfaces as stationary flows",
+      "description": "",
+      "number": "5.15",
+      "tag": "5BE3123E82F8"
     }
   ],
   "entries": [
@@ -3039,7 +3110,7 @@
           "book": "gmt-foundations",
           "tag": "F8390A5C",
           "label": "sec:sources-conventions",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3058,7 +3129,7 @@
           "book": "gmt-foundations",
           "tag": "B6BB2EC0",
           "label": "rem:source-editions",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3077,7 +3148,7 @@
           "book": "gmt-foundations",
           "tag": "BA8E466F",
           "label": "rem:notation",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3096,7 +3167,7 @@
           "book": "gmt-foundations",
           "tag": "6592A3B9",
           "label": "rem:project-scope",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3115,7 +3186,7 @@
           "book": "gmt-foundations",
           "tag": "3DE9EB04",
           "label": "sec:catalogue-round-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3134,17 +3205,17 @@
           "book": "gmt-foundations",
           "tag": "D203437F",
           "label": "ex:catalogue-round-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "1A070FD35EB2",
-      "number": "2.4",
+      "number": "2.5",
       "section_intro": true,
       "section_example": false,
-      "title": "2.4 Generalized shrinking cylinders",
+      "title": "2.5 Generalized shrinking cylinders",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "generalized-shrinking-cylinders",
@@ -3153,17 +3224,17 @@
           "book": "gmt-foundations",
           "tag": "51178EC2",
           "label": "sec:catalogue-round-cylinder",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "D20709465D01",
-      "number": "2.4",
+      "number": "2.5",
       "section_intro": false,
       "section_example": true,
-      "title": "2.4 Generalized shrinking cylinders",
+      "title": "2.5 Generalized shrinking cylinders",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "generalized-shrinking-cylinders",
@@ -3172,7 +3243,7 @@
           "book": "gmt-foundations",
           "tag": "EEE3452C",
           "label": "ex:catalogue-round-cylinder",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3191,7 +3262,7 @@
           "book": "gmt-foundations",
           "tag": "E9C051B4",
           "label": "sec:catalogue-plane-shrinker",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3210,7 +3281,7 @@
           "book": "gmt-foundations",
           "tag": "17CD9463",
           "label": "ex:catalogue-plane-shrinker",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3229,7 +3300,7 @@
           "book": "gmt-foundations",
           "tag": "3A437BBD",
           "label": "sec:catalogue-abresch-langer",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -3248,17 +3319,17 @@
           "book": "gmt-foundations",
           "tag": "C5E7E766",
           "label": "ex:catalogue-abresch-langer",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "EB7B6435F145",
-      "number": "2.5",
+      "number": "2.6",
       "section_intro": true,
       "section_example": false,
-      "title": "2.5 Angenent's shrinking torus",
+      "title": "2.6 Angenent's shrinking torus",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "angenent-s-shrinking-torus",
@@ -3267,17 +3338,17 @@
           "book": "gmt-foundations",
           "tag": "E1B60631",
           "label": "sec:catalogue-angenent-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "10374A017921",
-      "number": "2.5",
+      "number": "2.6",
       "section_intro": false,
       "section_example": true,
-      "title": "2.5 Angenent's shrinking torus",
+      "title": "2.6 Angenent's shrinking torus",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "angenent-s-shrinking-torus",
@@ -3286,17 +3357,17 @@
           "book": "gmt-foundations",
           "tag": "8169E438",
           "label": "ex:catalogue-angenent-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "2101D51F1E32",
-      "number": "2.6",
+      "number": "2.7",
       "section_intro": true,
       "section_example": false,
-      "title": "2.6 Drugan's immersed shrinking spheres",
+      "title": "2.7 Drugan's immersed shrinking spheres",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "drugan-s-immersed-shrinking-spheres",
@@ -3305,17 +3376,17 @@
           "book": "gmt-foundations",
           "tag": "E6A84F3F",
           "label": "sec:catalogue-drugan-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "FE38A115C52C",
-      "number": "2.6",
+      "number": "2.7",
       "section_intro": false,
       "section_example": true,
-      "title": "2.6 Drugan's immersed shrinking spheres",
+      "title": "2.7 Drugan's immersed shrinking spheres",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "drugan-s-immersed-shrinking-spheres",
@@ -3324,17 +3395,17 @@
           "book": "gmt-foundations",
           "tag": "B9F1DC7E",
           "label": "ex:catalogue-drugan-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "CDFAEA3DDEF8",
-      "number": "2.27",
+      "number": "2.28",
       "section_intro": true,
       "section_example": false,
-      "title": "2.27 The Clifford shrinking torus in four-space",
+      "title": "2.28 The Clifford shrinking torus in four-space",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "the-clifford-shrinking-torus-in-four-space",
@@ -3343,17 +3414,17 @@
           "book": "gmt-foundations",
           "tag": "DE851C71",
           "label": "sec:catalogue-clifford-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "635FBEF68A7E",
-      "number": "2.27",
+      "number": "2.28",
       "section_intro": false,
       "section_example": true,
-      "title": "2.27 The Clifford shrinking torus in four-space",
+      "title": "2.28 The Clifford shrinking torus in four-space",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "the-clifford-shrinking-torus-in-four-space",
@@ -3362,17 +3433,17 @@
           "book": "gmt-foundations",
           "tag": "88A4481E",
           "label": "ex:catalogue-clifford-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "44DD8966BC9A",
-      "number": "2.28",
+      "number": "2.29",
       "section_intro": true,
       "section_example": false,
-      "title": "2.28 Products of closed shrinking curves",
+      "title": "2.29 Products of closed shrinking curves",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "products-of-closed-shrinking-curves",
@@ -3381,17 +3452,17 @@
           "book": "gmt-foundations",
           "tag": "E42E972F",
           "label": "sec:catalogue-curve-products",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "AD717A30B415",
-      "number": "2.28",
+      "number": "2.29",
       "section_intro": false,
       "section_example": true,
-      "title": "2.28 Products of closed shrinking curves",
+      "title": "2.29 Products of closed shrinking curves",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "products-of-closed-shrinking-curves",
@@ -3400,17 +3471,17 @@
           "book": "gmt-foundations",
           "tag": "E690F2D5",
           "label": "ex:catalogue-curve-products",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "6C99F82AA214",
-      "number": "2.29",
+      "number": "2.30",
       "section_intro": true,
       "section_example": false,
-      "title": "2.29 Higher-codimension spherical shrinkers",
+      "title": "2.30 Higher-codimension spherical shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "higher-codimension-spherical-shrinkers",
@@ -3419,17 +3490,17 @@
           "book": "gmt-foundations",
           "tag": "0D7837E2",
           "label": "sec:catalogue-spherical-minimal",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "45597E4891F4",
-      "number": "2.29",
+      "number": "2.30",
       "section_intro": false,
       "section_example": true,
-      "title": "2.29 Higher-codimension spherical shrinkers",
+      "title": "2.30 Higher-codimension spherical shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "higher-codimension-spherical-shrinkers",
@@ -3438,17 +3509,17 @@
           "book": "gmt-foundations",
           "tag": "852199B9",
           "label": "ex:catalogue-spherical-minimal",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "1AD8ABE5C210",
-      "number": "2.7",
+      "number": "2.8",
       "section_intro": true,
       "section_example": false,
-      "title": "2.7 Møller closed shrinkers of large even genus",
+      "title": "2.8 Møller closed shrinkers of large even genus",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "moller-closed-shrinkers-of-large-even-genus",
@@ -3457,17 +3528,17 @@
           "book": "gmt-foundations",
           "tag": "830EABD2",
           "label": "sec:catalogue-moller-genus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A105C87CB202",
-      "number": "2.7",
+      "number": "2.8",
       "section_intro": false,
       "section_example": true,
-      "title": "2.7 Møller closed shrinkers of large even genus",
+      "title": "2.8 Møller closed shrinkers of large even genus",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "moller-closed-shrinkers-of-large-even-genus",
@@ -3476,17 +3547,17 @@
           "book": "gmt-foundations",
           "tag": "CBE08D0B",
           "label": "ex:catalogue-moller-genus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "2285B0C987A6",
-      "number": "2.8",
+      "number": "2.9",
       "section_intro": true,
       "section_example": false,
-      "title": "2.8 Kapouleas–Kleene–Møller shrinkers with one end",
+      "title": "2.9 Kapouleas–Kleene–Møller shrinkers with one end",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
@@ -3495,17 +3566,17 @@
           "book": "gmt-foundations",
           "tag": "D6BAA215",
           "label": "sec:catalogue-kkm-one-end",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A515DF7C7C60",
-      "number": "2.8",
+      "number": "2.9",
       "section_intro": false,
       "section_example": true,
-      "title": "2.8 Kapouleas–Kleene–Møller shrinkers with one end",
+      "title": "2.9 Kapouleas–Kleene–Møller shrinkers with one end",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "kapouleas-kleene-moller-shrinkers-with-one-end",
@@ -3514,17 +3585,17 @@
           "book": "gmt-foundations",
           "tag": "57CB963E",
           "label": "ex:catalogue-kkm-one-end",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "7E48D8C7D552",
-      "number": "2.9",
+      "number": "2.10",
       "section_intro": true,
       "section_example": false,
-      "title": "2.9 Drugan–Nguyen variational shrinking tori",
+      "title": "2.10 Drugan–Nguyen variational shrinking tori",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "drugan-nguyen-variational-shrinking-tori",
@@ -3533,17 +3604,17 @@
           "book": "gmt-foundations",
           "tag": "74D81451",
           "label": "sec:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "9F3C76F8391F",
-      "number": "2.9",
+      "number": "2.10",
       "section_intro": false,
       "section_example": true,
-      "title": "2.9 Drugan–Nguyen variational shrinking tori",
+      "title": "2.10 Drugan–Nguyen variational shrinking tori",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "drugan-nguyen-variational-shrinking-tori",
@@ -3552,17 +3623,17 @@
           "book": "gmt-foundations",
           "tag": "8A25E9F3",
           "label": "ex:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0E02104583BA",
-      "number": "2.10",
+      "number": "2.11",
       "section_intro": true,
       "section_example": false,
-      "title": "2.10 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "title": "2.11 Buzano–Nguyen–Schulz shrinkers of every positive genus",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
@@ -3571,17 +3642,17 @@
           "book": "gmt-foundations",
           "tag": "A24E006E",
           "label": "sec:catalogue-bns-genus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "40F2B3444C2E",
-      "number": "2.10",
+      "number": "2.11",
       "section_intro": false,
       "section_example": true,
-      "title": "2.10 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+      "title": "2.11 Buzano–Nguyen–Schulz shrinkers of every positive genus",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
@@ -3590,17 +3661,17 @@
           "book": "gmt-foundations",
           "tag": "29FD1848",
           "label": "ex:catalogue-bns-genus",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "8423ACEAF2E2",
-      "number": "2.11",
+      "number": "2.12",
       "section_intro": true,
       "section_example": false,
-      "title": "2.11 Ketover self-shrinking doubled planes",
+      "title": "2.12 Ketover self-shrinking doubled planes",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ketover-self-shrinking-doubled-planes",
@@ -3609,17 +3680,17 @@
           "book": "gmt-foundations",
           "tag": "8B87958C",
           "label": "sec:catalogue-ketover-doubled-plane",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "9E9A8A1CC506",
-      "number": "2.11",
+      "number": "2.12",
       "section_intro": false,
       "section_example": true,
-      "title": "2.11 Ketover self-shrinking doubled planes",
+      "title": "2.12 Ketover self-shrinking doubled planes",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ketover-self-shrinking-doubled-planes",
@@ -3628,17 +3699,17 @@
           "book": "gmt-foundations",
           "tag": "B42E22F6",
           "label": "ex:catalogue-ketover-doubled-plane",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "EB175520B015",
-      "number": "2.12",
+      "number": "2.13",
       "section_intro": true,
       "section_example": false,
-      "title": "2.12 Closed shrinkers from spherical doubling",
+      "title": "2.13 Closed shrinkers from spherical doubling",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "closed-shrinkers-from-spherical-doubling",
@@ -3647,17 +3718,17 @@
           "book": "gmt-foundations",
           "tag": "981E6034",
           "label": "sec:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "826D61792601",
-      "number": "2.12",
+      "number": "2.13",
       "section_intro": false,
       "section_example": true,
-      "title": "2.12 Closed shrinkers from spherical doubling",
+      "title": "2.13 Closed shrinkers from spherical doubling",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "closed-shrinkers-from-spherical-doubling",
@@ -3666,17 +3737,17 @@
           "book": "gmt-foundations",
           "tag": "5EF43C21",
           "label": "ex:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "EDE40E8E1379",
-      "number": "2.13",
+      "number": "2.14",
       "section_intro": true,
       "section_example": false,
-      "title": "2.13 Nguyen's one-ended shrinking saddles",
+      "title": "2.14 Nguyen's one-ended shrinking saddles",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "nguyen-s-one-ended-shrinking-saddles",
@@ -3685,17 +3756,17 @@
           "book": "gmt-foundations",
           "tag": "BA9331C1",
           "label": "sec:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "B28BB2912147",
-      "number": "2.13",
+      "number": "2.14",
       "section_intro": false,
       "section_example": true,
-      "title": "2.13 Nguyen's one-ended shrinking saddles",
+      "title": "2.14 Nguyen's one-ended shrinking saddles",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "nguyen-s-one-ended-shrinking-saddles",
@@ -3704,17 +3775,17 @@
           "book": "gmt-foundations",
           "tag": "F6ED71FE",
           "label": "ex:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "99055D91C188",
-      "number": "2.30",
+      "number": "2.31",
       "section_intro": true,
       "section_example": false,
-      "title": "2.30 Angenent torus cylinders",
+      "title": "2.31 Angenent torus cylinders",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "angenent-torus-cylinders",
@@ -3723,17 +3794,17 @@
           "book": "gmt-foundations",
           "tag": "4F2641F6",
           "label": "sec:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "FA65887C28F1",
-      "number": "2.30",
+      "number": "2.31",
       "section_intro": false,
       "section_example": true,
-      "title": "2.30 Angenent torus cylinders",
+      "title": "2.31 Angenent torus cylinders",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "angenent-torus-cylinders",
@@ -3742,17 +3813,17 @@
           "book": "gmt-foundations",
           "tag": "185EA272",
           "label": "ex:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "C7322187A6FC",
-      "number": "2.14",
+      "number": "2.15",
       "section_intro": true,
       "section_example": false,
-      "title": "2.14 Ilmanen–White two-ended shrinkers",
+      "title": "2.15 Ilmanen–White two-ended shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ilmanen-white-two-ended-shrinkers",
@@ -3761,17 +3832,17 @@
           "book": "gmt-foundations",
           "tag": "98538DB9",
           "label": "sec:catalogue-iw-two-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "4522A41972E4",
-      "number": "2.14",
+      "number": "2.15",
       "section_intro": false,
       "section_example": true,
-      "title": "2.14 Ilmanen–White two-ended shrinkers",
+      "title": "2.15 Ilmanen–White two-ended shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ilmanen-white-two-ended-shrinkers",
@@ -3780,17 +3851,17 @@
           "book": "gmt-foundations",
           "tag": "F3DA0C49",
           "label": "ex:catalogue-iw-two-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "EB2734BB2E46",
-      "number": "2.15",
+      "number": "2.16",
       "section_intro": true,
       "section_example": false,
-      "title": "2.15 Shao–Zou shrinkers with any prescribed number of ends",
+      "title": "2.16 Shao–Zou shrinkers with any prescribed number of ends",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
@@ -3799,17 +3870,17 @@
           "book": "gmt-foundations",
           "tag": "AC93AF6C",
           "label": "sec:catalogue-shao-zou-stacking",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "4BFAC8529BEA",
-      "number": "2.15",
+      "number": "2.16",
       "section_intro": false,
       "section_example": true,
-      "title": "2.15 Shao–Zou shrinkers with any prescribed number of ends",
+      "title": "2.16 Shao–Zou shrinkers with any prescribed number of ends",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "shao-zou-shrinkers-with-any-prescribed-number-of-ends",
@@ -3818,17 +3889,17 @@
           "book": "gmt-foundations",
           "tag": "55D3E8EB",
           "label": "ex:catalogue-shao-zou-stacking",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "1AF8BDC11238",
-      "number": "2.16",
+      "number": "2.17",
       "section_intro": true,
       "section_example": false,
-      "title": "2.16 Flow-generated Platonic and polygonal shrinkers",
+      "title": "2.17 Flow-generated Platonic and polygonal shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-platonic-and-polygonal-shrinkers",
@@ -3837,17 +3908,17 @@
           "book": "gmt-foundations",
           "tag": "DDB39012",
           "label": "sec:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A455BCCC51D0",
-      "number": "2.16",
+      "number": "2.17",
       "section_intro": false,
       "section_example": true,
-      "title": "2.16 Flow-generated Platonic and polygonal shrinkers",
+      "title": "2.17 Flow-generated Platonic and polygonal shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-platonic-and-polygonal-shrinkers",
@@ -3856,17 +3927,17 @@
           "book": "gmt-foundations",
           "tag": "4B406BA4",
           "label": "ex:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "036F44595178",
-      "number": "2.17",
+      "number": "2.18",
       "section_intro": true,
       "section_example": false,
-      "title": "2.17 Flow-generated sphere–plane shrinkers",
+      "title": "2.18 Flow-generated sphere–plane shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-sphere-plane-shrinkers",
@@ -3875,17 +3946,17 @@
           "book": "gmt-foundations",
           "tag": "08077F3D",
           "label": "sec:catalogue-hmw-one-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "45B364E949D5",
-      "number": "2.17",
+      "number": "2.18",
       "section_intro": false,
       "section_example": true,
-      "title": "2.17 Flow-generated sphere–plane shrinkers",
+      "title": "2.18 Flow-generated sphere–plane shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-sphere-plane-shrinkers",
@@ -3894,17 +3965,17 @@
           "book": "gmt-foundations",
           "tag": "8D1FB423",
           "label": "ex:catalogue-hmw-one-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5245200FA4A7",
-      "number": "2.18",
+      "number": "2.19",
       "section_intro": true,
       "section_example": false,
-      "title": "2.18 Flow-generated three-ended shrinkers",
+      "title": "2.19 Flow-generated three-ended shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "flow-generated-three-ended-shrinkers",
@@ -3913,17 +3984,17 @@
           "book": "gmt-foundations",
           "tag": "099E25A3",
           "label": "sec:catalogue-hmw-three-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5CED6ED3B586",
-      "number": "2.18",
+      "number": "2.19",
       "section_intro": false,
       "section_example": true,
-      "title": "2.18 Flow-generated three-ended shrinkers",
+      "title": "2.19 Flow-generated three-ended shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "flow-generated-three-ended-shrinkers",
@@ -3932,17 +4003,17 @@
           "book": "gmt-foundations",
           "tag": "E526106D",
           "label": "ex:catalogue-hmw-three-ended",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "B675C6112328",
-      "number": "2.19",
+      "number": "2.20",
       "section_intro": true,
       "section_example": false,
-      "title": "2.19 Ketover shrinkers with Platonic symmetry",
+      "title": "2.20 Ketover shrinkers with Platonic symmetry",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "ketover-shrinkers-with-platonic-symmetry",
@@ -3951,17 +4022,17 @@
           "book": "gmt-foundations",
           "tag": "468F62D8",
           "label": "sec:catalogue-ketover-platonic",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "AE0CC89EB3E2",
-      "number": "2.19",
+      "number": "2.20",
       "section_intro": false,
       "section_example": true,
-      "title": "2.19 Ketover shrinkers with Platonic symmetry",
+      "title": "2.20 Ketover shrinkers with Platonic symmetry",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "ketover-shrinkers-with-platonic-symmetry",
@@ -3970,17 +4041,17 @@
           "book": "gmt-foundations",
           "tag": "D8E83785",
           "label": "ex:catalogue-ketover-platonic",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "879F42A66D65",
-      "number": "2.20",
+      "number": "2.21",
       "section_intro": true,
       "section_example": false,
-      "title": "2.20 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+      "title": "2.21 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
@@ -3989,17 +4060,17 @@
           "book": "gmt-foundations",
           "tag": "22D51C11",
           "label": "sec:catalogue-swz-large-entropy",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0177A2718D72",
-      "number": "2.20",
+      "number": "2.21",
       "section_intro": false,
       "section_example": true,
-      "title": "2.20 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+      "title": "2.21 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
@@ -4008,17 +4079,17 @@
           "book": "gmt-foundations",
           "tag": "2649B70D",
           "label": "ex:catalogue-swz-large-entropy",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "B050FA22AB2D",
-      "number": "2.21",
+      "number": "2.22",
       "section_intro": true,
       "section_example": false,
-      "title": "2.21 Chu–Sun genus-one shrinkers below the shrinking doughnut",
+      "title": "2.22 Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
@@ -4027,17 +4098,17 @@
           "book": "gmt-foundations",
           "tag": "DEB2F0AE",
           "label": "sec:catalogue-chu-sun-genus-one",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "AE7721D6799F",
-      "number": "2.21",
+      "number": "2.22",
       "section_intro": false,
       "section_example": true,
-      "title": "2.21 Chu–Sun genus-one shrinkers below the shrinking doughnut",
+      "title": "2.22 Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
@@ -4046,17 +4117,17 @@
           "book": "gmt-foundations",
           "tag": "2FE2FC92",
           "label": "ex:catalogue-chu-sun-genus-one",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5D9025FCD9CD",
-      "number": "2.31",
+      "number": "2.32",
       "section_intro": true,
       "section_example": false,
-      "title": "2.31 The Lee–Wang self-shrinking Mobius bundle",
+      "title": "2.32 The Lee–Wang self-shrinking Mobius bundle",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "the-lee-wang-self-shrinking-mobius-bundle",
@@ -4065,17 +4136,17 @@
           "book": "gmt-foundations",
           "tag": "CEE04939",
           "label": "sec:catalogue-mobius-shrinker",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "CC2E5DD6BD78",
-      "number": "2.31",
+      "number": "2.32",
       "section_intro": false,
       "section_example": true,
-      "title": "2.31 The Lee–Wang self-shrinking Mobius bundle",
+      "title": "2.32 The Lee–Wang self-shrinking Mobius bundle",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "the-lee-wang-self-shrinking-mobius-bundle",
@@ -4084,17 +4155,17 @@
           "book": "gmt-foundations",
           "tag": "6A5DC245",
           "label": "ex:catalogue-mobius-shrinker",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "6AFBAD1A608F",
-      "number": "2.32",
+      "number": "2.33",
       "section_intro": true,
       "section_example": false,
-      "title": "2.32 Compact periodic Lagrangian quadric shrinkers",
+      "title": "2.33 Compact periodic Lagrangian quadric shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "compact-periodic-lagrangian-quadric-shrinkers",
@@ -4103,17 +4174,17 @@
           "book": "gmt-foundations",
           "tag": "4A063D13",
           "label": "sec:catalogue-jlt-compact-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "98593B70A49E",
-      "number": "2.32",
+      "number": "2.33",
       "section_intro": false,
       "section_example": true,
-      "title": "2.32 Compact periodic Lagrangian quadric shrinkers",
+      "title": "2.33 Compact periodic Lagrangian quadric shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "compact-periodic-lagrangian-quadric-shrinkers",
@@ -4122,17 +4193,17 @@
           "book": "gmt-foundations",
           "tag": "47920AFD",
           "label": "ex:catalogue-jlt-compact-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A400A6F0174B",
-      "number": "2.33",
+      "number": "2.34",
       "section_intro": true,
       "section_example": false,
-      "title": "2.33 Lee–Wang embedded quadric shrinkers",
+      "title": "2.34 Lee–Wang embedded quadric shrinkers",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "lee-wang-embedded-quadric-shrinkers",
@@ -4141,17 +4212,17 @@
           "book": "gmt-foundations",
           "tag": "A9383DDD",
           "label": "sec:catalogue-lw-quadric-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0EB941FB0D2B",
-      "number": "2.33",
+      "number": "2.34",
       "section_intro": false,
       "section_example": true,
-      "title": "2.33 Lee–Wang embedded quadric shrinkers",
+      "title": "2.34 Lee–Wang embedded quadric shrinkers",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "lee-wang-embedded-quadric-shrinkers",
@@ -4160,17 +4231,17 @@
           "book": "gmt-foundations",
           "tag": "876C62CA",
           "label": "ex:catalogue-lw-quadric-shrinkers",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "90FE05D9053E",
-      "number": "2.22",
+      "number": "2.23",
       "section_intro": true,
       "section_example": false,
-      "title": "2.22 Chopp cubical shrinker candidate",
+      "title": "2.23 Chopp cubical shrinker candidate",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chopp-cubical-shrinker-candidate",
@@ -4179,17 +4250,17 @@
           "book": "gmt-foundations",
           "tag": "CA26CF72",
           "label": "sec:catalogue-chopp-cube",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "04E9A0B8F725",
-      "number": "2.22",
+      "number": "2.23",
       "section_intro": false,
       "section_example": true,
-      "title": "2.22 Chopp cubical shrinker candidate",
+      "title": "2.23 Chopp cubical shrinker candidate",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chopp-cubical-shrinker-candidate",
@@ -4198,17 +4269,17 @@
           "book": "gmt-foundations",
           "tag": "BBC34992",
           "label": "ex:catalogue-chopp-cube",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "EAAEF7E5907F",
-      "number": "2.23",
+      "number": "2.24",
       "section_intro": true,
       "section_example": false,
-      "title": "2.23 Chopp octahedral shrinker candidate",
+      "title": "2.24 Chopp octahedral shrinker candidate",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chopp-octahedral-shrinker-candidate",
@@ -4217,17 +4288,17 @@
           "book": "gmt-foundations",
           "tag": "37B7EE51",
           "label": "sec:catalogue-chopp-octahedron",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5D3FB6DFEE3F",
-      "number": "2.23",
+      "number": "2.24",
       "section_intro": false,
       "section_example": true,
-      "title": "2.23 Chopp octahedral shrinker candidate",
+      "title": "2.24 Chopp octahedral shrinker candidate",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chopp-octahedral-shrinker-candidate",
@@ -4236,17 +4307,17 @@
           "book": "gmt-foundations",
           "tag": "6C747D30",
           "label": "ex:catalogue-chopp-octahedron",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "753FE61621D7",
-      "number": "2.24",
+      "number": "2.25",
       "section_intro": true,
       "section_example": false,
-      "title": "2.24 Chopp punctured-torus saddle candidate",
+      "title": "2.25 Chopp punctured-torus saddle candidate",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chopp-punctured-torus-saddle-candidate",
@@ -4255,17 +4326,17 @@
           "book": "gmt-foundations",
           "tag": "5164E685",
           "label": "sec:catalogue-chopp-saddle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "3AA6C1836470",
-      "number": "2.24",
+      "number": "2.25",
       "section_intro": false,
       "section_example": true,
-      "title": "2.24 Chopp punctured-torus saddle candidate",
+      "title": "2.25 Chopp punctured-torus saddle candidate",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chopp-punctured-torus-saddle-candidate",
@@ -4274,17 +4345,17 @@
           "book": "gmt-foundations",
           "tag": "D14306D4",
           "label": "ex:catalogue-chopp-saddle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "50368E5C98D8",
-      "number": "2.25",
+      "number": "2.26",
       "section_intro": true,
       "section_example": false,
-      "title": "2.25 Chopp two-handled cone candidate",
+      "title": "2.26 Chopp two-handled cone candidate",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chopp-two-handled-cone-candidate",
@@ -4293,17 +4364,17 @@
           "book": "gmt-foundations",
           "tag": "8E537542",
           "label": "sec:catalogue-chopp-two-handle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "48A9185FB30C",
-      "number": "2.25",
+      "number": "2.26",
       "section_intro": false,
       "section_example": true,
-      "title": "2.25 Chopp two-handled cone candidate",
+      "title": "2.26 Chopp two-handled cone candidate",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chopp-two-handled-cone-candidate",
@@ -4312,17 +4383,17 @@
           "book": "gmt-foundations",
           "tag": "E5C98227",
           "label": "ex:catalogue-chopp-two-handle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5684D97D637F",
-      "number": "2.26",
+      "number": "2.27",
       "section_intro": true,
       "section_example": false,
-      "title": "2.26 Chopp four-handled cone candidate",
+      "title": "2.27 Chopp four-handled cone candidate",
       "kind": "chapter",
       "chapter": "shrinkers",
       "topic": "chopp-four-handled-cone-candidate",
@@ -4331,17 +4402,17 @@
           "book": "gmt-foundations",
           "tag": "1C782277",
           "label": "sec:catalogue-chopp-four-handle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "F576920EB05F",
-      "number": "2.26",
+      "number": "2.27",
       "section_intro": false,
       "section_example": true,
-      "title": "2.26 Chopp four-handled cone candidate",
+      "title": "2.27 Chopp four-handled cone candidate",
       "kind": "example",
       "chapter": "shrinkers",
       "topic": "chopp-four-handled-cone-candidate",
@@ -4350,7 +4421,7 @@
           "book": "gmt-foundations",
           "tag": "318B5D8B",
           "label": "ex:catalogue-chopp-four-handle",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4369,7 +4440,7 @@
           "book": "gmt-foundations",
           "tag": "7E5C7833",
           "label": "sec:catalogue-grim-reaper",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4388,7 +4459,7 @@
           "book": "gmt-foundations",
           "tag": "B992AB57",
           "label": "ex:catalogue-grim-reaper",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4407,7 +4478,7 @@
           "book": "gmt-foundations",
           "tag": "613D030C",
           "label": "sec:catalogue-tilted-grim-reaper",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4426,7 +4497,7 @@
           "book": "gmt-foundations",
           "tag": "B95BEB4E",
           "label": "ex:catalogue-tilted-grim-reaper",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4445,7 +4516,7 @@
           "book": "gmt-foundations",
           "tag": "C86A12BD",
           "label": "sec:catalogue-bowl-translator",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4464,7 +4535,7 @@
           "book": "gmt-foundations",
           "tag": "54CBC7FC",
           "label": "ex:catalogue-bowl-translator",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4483,7 +4554,7 @@
           "book": "gmt-foundations",
           "tag": "1B76070C",
           "label": "sec:catalogue-translating-catenoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4502,7 +4573,7 @@
           "book": "gmt-foundations",
           "tag": "20DD1EEB",
           "label": "ex:catalogue-translating-catenoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4521,7 +4592,7 @@
           "book": "gmt-foundations",
           "tag": "1B861E2A",
           "label": "sec:catalogue-delta-wing",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4540,17 +4611,17 @@
           "book": "gmt-foundations",
           "tag": "40F79154",
           "label": "ex:catalogue-delta-wing",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "BD00A99565D1",
-      "number": "3.14",
+      "number": "3.15",
       "section_intro": true,
       "section_example": false,
-      "title": "3.14 Nonrotational entire convex translators",
+      "title": "3.15 Nonrotational entire convex translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -4559,17 +4630,17 @@
           "book": "gmt-foundations",
           "tag": "2E5159FD",
           "label": "sec:catalogue-wang-entire-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0F00F9295CD9",
-      "number": "3.14",
+      "number": "3.15",
       "section_intro": false,
       "section_example": true,
-      "title": "3.14 Nonrotational entire convex translators",
+      "title": "3.15 Nonrotational entire convex translators",
       "kind": "example",
       "chapter": "translators",
       "topic": "nonrotational-entire-convex-translators",
@@ -4578,7 +4649,7 @@
           "book": "gmt-foundations",
           "tag": "BCD12F3A",
           "label": "ex:catalogue-wang-entire-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4597,7 +4668,7 @@
           "book": "gmt-foundations",
           "tag": "1907053D",
           "label": "sec:catalogue-prescribed-apex-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4616,7 +4687,7 @@
           "book": "gmt-foundations",
           "tag": "A3CDAF2B",
           "label": "ex:catalogue-prescribed-apex-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4635,7 +4706,7 @@
           "book": "gmt-foundations",
           "tag": "B0D651E7",
           "label": "sec:catalogue-scherkenoids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4654,7 +4725,7 @@
           "book": "gmt-foundations",
           "tag": "6B56E4AF",
           "label": "ex:catalogue-scherkenoids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4673,7 +4744,7 @@
           "book": "gmt-foundations",
           "tag": "AF906C13",
           "label": "sec:catalogue-pitchfork",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4692,7 +4763,7 @@
           "book": "gmt-foundations",
           "tag": "474E0E06",
           "label": "ex:catalogue-pitchfork",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4711,7 +4782,7 @@
           "book": "gmt-foundations",
           "tag": "A94B1E75",
           "label": "sec:catalogue-nguyen-tridents",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4730,7 +4801,7 @@
           "book": "gmt-foundations",
           "tag": "F7C75286",
           "label": "ex:catalogue-nguyen-tridents",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4749,7 +4820,7 @@
           "book": "gmt-foundations",
           "tag": "0A64E1E7",
           "label": "sec:catalogue-finite-genus-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4768,17 +4839,17 @@
           "book": "gmt-foundations",
           "tag": "DE343151",
           "label": "ex:catalogue-finite-genus-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "C8173134CEA6",
-      "number": "3.15",
+      "number": "3.16",
       "section_intro": true,
       "section_example": false,
-      "title": "3.15 Translators with an Angenent-torus end",
+      "title": "3.16 Translators with an Angenent-torus end",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "translators-with-an-angenent-torus-end",
@@ -4787,17 +4858,17 @@
           "book": "gmt-foundations",
           "tag": "BEE5F8F6",
           "label": "sec:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "BF18BDD64F8E",
-      "number": "3.15",
+      "number": "3.16",
       "section_intro": false,
       "section_example": true,
-      "title": "3.15 Translators with an Angenent-torus end",
+      "title": "3.16 Translators with an Angenent-torus end",
       "kind": "example",
       "chapter": "translators",
       "topic": "translators-with-an-angenent-torus-end",
@@ -4806,17 +4877,17 @@
           "book": "gmt-foundations",
           "tag": "210DBE2B",
           "label": "ex:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A0A7AC0D200C",
-      "number": "3.16",
+      "number": "3.17",
       "section_intro": true,
       "section_example": false,
-      "title": "3.16 Translators with high-genus spherical-doubling ends",
+      "title": "3.17 Translators with high-genus spherical-doubling ends",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "translators-with-high-genus-spherical-doubling-ends",
@@ -4825,17 +4896,17 @@
           "book": "gmt-foundations",
           "tag": "8A842DE0",
           "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "9B1B88A4317F",
-      "number": "3.16",
+      "number": "3.17",
       "section_intro": false,
       "section_example": true,
-      "title": "3.16 Translators with high-genus spherical-doubling ends",
+      "title": "3.17 Translators with high-genus spherical-doubling ends",
       "kind": "example",
       "chapter": "translators",
       "topic": "translators-with-high-genus-spherical-doubling-ends",
@@ -4844,7 +4915,7 @@
           "book": "gmt-foundations",
           "tag": "74BE3892",
           "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4863,7 +4934,7 @@
           "book": "gmt-foundations",
           "tag": "AC12C225",
           "label": "sec:catalogue-scherk-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4882,7 +4953,7 @@
           "book": "gmt-foundations",
           "tag": "24A25A90",
           "label": "ex:catalogue-scherk-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4901,7 +4972,7 @@
           "book": "gmt-foundations",
           "tag": "B8DE98DE",
           "label": "sec:catalogue-translating-helicoids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4920,7 +4991,7 @@
           "book": "gmt-foundations",
           "tag": "847E8E44",
           "label": "ex:catalogue-translating-helicoids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4939,7 +5010,7 @@
           "book": "gmt-foundations",
           "tag": "4C07D832",
           "label": "sec:catalogue-translating-annuloids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -4958,17 +5029,17 @@
           "book": "gmt-foundations",
           "tag": "FAD58353",
           "label": "ex:catalogue-translating-annuloids",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "16AF28E8CCDB",
-      "number": "3.17",
+      "number": "3.18",
       "section_intro": true,
       "section_example": false,
-      "title": "3.17 Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "title": "3.18 Joyce–Lee–Tsui small-angle Lagrangian translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "joyce-lee-tsui-small-angle-lagrangian-translators",
@@ -4977,17 +5048,17 @@
           "book": "gmt-foundations",
           "tag": "2EFA5544",
           "label": "sec:catalogue-jlt-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "BCD2A9973070",
-      "number": "3.17",
+      "number": "3.18",
       "section_intro": false,
       "section_example": true,
-      "title": "3.17 Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "title": "3.18 Joyce–Lee–Tsui small-angle Lagrangian translators",
       "kind": "example",
       "chapter": "translators",
       "topic": "joyce-lee-tsui-small-angle-lagrangian-translators",
@@ -4996,17 +5067,17 @@
           "book": "gmt-foundations",
           "tag": "F8CF938E",
           "label": "ex:catalogue-jlt-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "5C21E6709CA8",
-      "number": "3.18",
+      "number": "3.19",
       "section_intro": true,
       "section_example": false,
-      "title": "3.18 Explicit rotating Lagrangian translators",
+      "title": "3.19 Explicit rotating Lagrangian translators",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "explicit-rotating-lagrangian-translators",
@@ -5015,17 +5086,17 @@
           "book": "gmt-foundations",
           "tag": "2CF7EE32",
           "label": "sec:catalogue-jlt-rotating-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "A19CAED49B0D",
-      "number": "3.18",
+      "number": "3.19",
       "section_intro": false,
       "section_example": true,
-      "title": "3.18 Explicit rotating Lagrangian translators",
+      "title": "3.19 Explicit rotating Lagrangian translators",
       "kind": "example",
       "chapter": "translators",
       "topic": "explicit-rotating-lagrangian-translators",
@@ -5034,17 +5105,17 @@
           "book": "gmt-foundations",
           "tag": "9316A944",
           "label": "ex:catalogue-jlt-rotating-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "96393C1B9F17",
-      "number": "3.19",
+      "number": "3.20",
       "section_intro": true,
       "section_example": false,
-      "title": "3.19 Su translators obtained by gluing grim cylinders",
+      "title": "3.20 Su translators obtained by gluing grim cylinders",
       "kind": "chapter",
       "chapter": "translators",
       "topic": "su-translators-obtained-by-gluing-grim-cylinders",
@@ -5053,17 +5124,17 @@
           "book": "gmt-foundations",
           "tag": "DAC678B0",
           "label": "sec:catalogue-su-glued-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "164F129D254D",
-      "number": "3.19",
+      "number": "3.20",
       "section_intro": false,
       "section_example": true,
-      "title": "3.19 Su translators obtained by gluing grim cylinders",
+      "title": "3.20 Su translators obtained by gluing grim cylinders",
       "kind": "example",
       "chapter": "translators",
       "topic": "su-translators-obtained-by-gluing-grim-cylinders",
@@ -5072,7 +5143,7 @@
           "book": "gmt-foundations",
           "tag": "5DDAAA39",
           "label": "ex:catalogue-su-glued-translators",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5091,7 +5162,7 @@
           "book": "gmt-foundations",
           "tag": "DDDA013A",
           "label": "sec:catalogue-expanding-corners",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5110,7 +5181,7 @@
           "book": "gmt-foundations",
           "tag": "D6F08E15",
           "label": "ex:catalogue-expanding-corners",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5129,7 +5200,7 @@
           "book": "gmt-foundations",
           "tag": "03B823D0",
           "label": "sec:catalogue-rotational-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5148,7 +5219,7 @@
           "book": "gmt-foundations",
           "tag": "10CF4F59",
           "label": "ex:catalogue-rotational-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5167,7 +5238,7 @@
           "book": "gmt-foundations",
           "tag": "E0945D42",
           "label": "sec:catalogue-two-sheet-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5186,7 +5257,7 @@
           "book": "gmt-foundations",
           "tag": "1E167729",
           "label": "ex:catalogue-two-sheet-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5205,7 +5276,7 @@
           "book": "gmt-foundations",
           "tag": "9E9198D4",
           "label": "sec:catalogue-one-sheet-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5224,7 +5295,7 @@
           "book": "gmt-foundations",
           "tag": "4A120F3D",
           "label": "ex:catalogue-one-sheet-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5243,7 +5314,7 @@
           "book": "gmt-foundations",
           "tag": "BD0F3D26",
           "label": "sec:catalogue-mean-convex-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5262,7 +5333,7 @@
           "book": "gmt-foundations",
           "tag": "DC248467",
           "label": "ex:catalogue-mean-convex-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5281,7 +5352,7 @@
           "book": "gmt-foundations",
           "tag": "05CAD4B7",
           "label": "sec:catalogue-expanding-networks",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5300,7 +5371,7 @@
           "book": "gmt-foundations",
           "tag": "6FB28705",
           "label": "ex:catalogue-expanding-networks",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5319,7 +5390,7 @@
           "book": "gmt-foundations",
           "tag": "9C62F2A3",
           "label": "sec:catalogue-mountain-pass-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5338,7 +5409,7 @@
           "book": "gmt-foundations",
           "tag": "9EEF8261",
           "label": "ex:catalogue-mountain-pass-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5357,7 +5428,7 @@
           "book": "gmt-foundations",
           "tag": "1E1ABE80",
           "label": "sec:catalogue-high-genus-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5376,7 +5447,7 @@
           "book": "gmt-foundations",
           "tag": "3B34FF14",
           "label": "ex:catalogue-high-genus-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5395,7 +5466,7 @@
           "book": "gmt-foundations",
           "tag": "AB0D7EFB",
           "label": "sec:catalogue-knotted-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5414,7 +5485,7 @@
           "book": "gmt-foundations",
           "tag": "D7D485D6",
           "label": "ex:catalogue-knotted-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5433,7 +5504,7 @@
           "book": "gmt-foundations",
           "tag": "1297CDA5",
           "label": "sec:catalogue-jlt-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5452,7 +5523,7 @@
           "book": "gmt-foundations",
           "tag": "74FADCDD",
           "label": "ex:catalogue-jlt-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5471,7 +5542,7 @@
           "book": "gmt-foundations",
           "tag": "A0C59E29",
           "label": "sec:catalogue-ttw-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5490,7 +5561,7 @@
           "book": "gmt-foundations",
           "tag": "D0F24A56",
           "label": "ex:catalogue-ttw-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5509,7 +5580,7 @@
           "book": "gmt-foundations",
           "tag": "1696D417",
           "label": "sec:catalogue-lw-quadric-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5528,7 +5599,7 @@
           "book": "gmt-foundations",
           "tag": "1907F440",
           "label": "ex:catalogue-lw-quadric-expanders",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5547,7 +5618,7 @@
           "book": "gmt-foundations",
           "tag": "BA55C10D",
           "label": "sec:catalogue-stationary-catenoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5566,17 +5637,17 @@
           "book": "gmt-foundations",
           "tag": "7C37C625",
           "label": "ex:catalogue-stationary-catenoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "2E15631C1593",
-      "number": "5.15",
+      "number": "5.16",
       "section_intro": true,
       "section_example": false,
-      "title": "5.15 Mean curvature evolution of the Whitney sphere",
+      "title": "5.16 Mean curvature evolution of the Whitney sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -5585,17 +5656,17 @@
           "book": "gmt-foundations",
           "tag": "1E59C846",
           "label": "sec:catalogue-whitney-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "245DFF2BED27",
-      "number": "5.15",
+      "number": "5.16",
       "section_intro": false,
       "section_example": true,
-      "title": "5.15 Mean curvature evolution of the Whitney sphere",
+      "title": "5.16 Mean curvature evolution of the Whitney sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "mean-curvature-evolution-of-the-whitney-sphere",
@@ -5604,7 +5675,7 @@
           "book": "gmt-foundations",
           "tag": "64D1A038",
           "label": "ex:catalogue-whitney-sphere",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5623,7 +5694,7 @@
           "book": "gmt-foundations",
           "tag": "6548DC53",
           "label": "sec:catalogue-degenerate-neckpinches",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5642,7 +5713,7 @@
           "book": "gmt-foundations",
           "tag": "AF275232",
           "label": "ex:catalogue-degenerate-neckpinches",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5661,7 +5732,7 @@
           "book": "gmt-foundations",
           "tag": "22B7F4C2",
           "label": "sec:catalogue-angenent-oval",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5680,17 +5751,17 @@
           "book": "gmt-foundations",
           "tag": "F1C9E396",
           "label": "ex:catalogue-angenent-oval",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "B6082DA55C46",
-      "number": "5.16",
+      "number": "5.17",
       "section_intro": true,
       "section_example": false,
-      "title": "5.16 Ancient torus curves in higher codimension",
+      "title": "5.17 Ancient torus curves in higher codimension",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -5699,17 +5770,17 @@
           "book": "gmt-foundations",
           "tag": "11C905C4",
           "label": "sec:catalogue-ancient-torus-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "D28FAF32B556",
-      "number": "5.16",
+      "number": "5.17",
       "section_intro": false,
       "section_example": true,
-      "title": "5.16 Ancient torus curves in higher codimension",
+      "title": "5.17 Ancient torus curves in higher codimension",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-torus-curves-in-higher-codimension",
@@ -5718,7 +5789,7 @@
           "book": "gmt-foundations",
           "tag": "A3E2C500",
           "label": "ex:catalogue-ancient-torus-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5737,7 +5808,7 @@
           "book": "gmt-foundations",
           "tag": "9BF22915",
           "label": "sec:catalogue-eternal-helices",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5756,7 +5827,7 @@
           "book": "gmt-foundations",
           "tag": "114EAEF2",
           "label": "ex:catalogue-eternal-helices",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5775,7 +5846,7 @@
           "book": "gmt-foundations",
           "tag": "E88E6E76",
           "label": "sec:catalogue-double-plane-flow",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5794,17 +5865,17 @@
           "book": "gmt-foundations",
           "tag": "F7864FF4",
           "label": "ex:catalogue-double-plane-flow",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0806DD487DC4",
-      "number": "5.22",
+      "number": "5.23",
       "section_intro": true,
       "section_example": false,
-      "title": "5.22 Immortal compact flows converging to a double sphere",
+      "title": "5.23 Immortal compact flows converging to a double sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -5813,17 +5884,17 @@
           "book": "gmt-foundations",
           "tag": "BA7E1CBA",
           "label": "sec:catalogue-double-sphere-flow",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "225751B3C7E8",
-      "number": "5.22",
+      "number": "5.23",
       "section_intro": false,
       "section_example": true,
-      "title": "5.22 Immortal compact flows converging to a double sphere",
+      "title": "5.23 Immortal compact flows converging to a double sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -5832,7 +5903,7 @@
           "book": "gmt-foundations",
           "tag": "4D0BC7F8",
           "label": "ex:catalogue-double-sphere-flow",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5851,7 +5922,7 @@
           "book": "gmt-foundations",
           "tag": "A443286A",
           "label": "sec:catalogue-hh-ancient-ovals",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5870,7 +5941,7 @@
           "book": "gmt-foundations",
           "tag": "351EC7F0",
           "label": "ex:catalogue-hh-ancient-ovals",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5889,7 +5960,7 @@
           "book": "gmt-foundations",
           "tag": "BEE5B7F2",
           "label": "sec:catalogue-minimal-ancient-flows",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5908,7 +5979,7 @@
           "book": "gmt-foundations",
           "tag": "6F93E4BA",
           "label": "ex:catalogue-minimal-ancient-flows",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5927,7 +5998,7 @@
           "book": "gmt-foundations",
           "tag": "0307FA2C",
           "label": "sec:catalogue-reapernoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -5946,17 +6017,17 @@
           "book": "gmt-foundations",
           "tag": "731F87CD",
           "label": "ex:catalogue-reapernoid",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "9C9E3EBC47D4",
-      "number": "5.17",
+      "number": "5.18",
       "section_intro": true,
       "section_example": false,
-      "title": "5.17 Ancient stacked pancakes",
+      "title": "5.18 Ancient stacked pancakes",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-stacked-pancakes",
@@ -5965,17 +6036,17 @@
           "book": "gmt-foundations",
           "tag": "F4D3BF85",
           "label": "sec:catalogue-stacked-pancakes",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "1A2B6DF32B79",
-      "number": "5.17",
+      "number": "5.18",
       "section_intro": false,
       "section_example": true,
-      "title": "5.17 Ancient stacked pancakes",
+      "title": "5.18 Ancient stacked pancakes",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-stacked-pancakes",
@@ -5984,7 +6055,7 @@
           "book": "gmt-foundations",
           "tag": "48421D4E",
           "label": "ex:catalogue-stacked-pancakes",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6003,7 +6074,7 @@
           "book": "gmt-foundations",
           "tag": "BD702850",
           "label": "sec:catalogue-ancient-spiral-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6022,7 +6093,7 @@
           "book": "gmt-foundations",
           "tag": "B3F91612",
           "label": "ex:catalogue-ancient-spiral-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6041,7 +6112,7 @@
           "book": "gmt-foundations",
           "tag": "8A3434FC",
           "label": "sec:catalogue-grim-reaper-chains",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6060,17 +6131,17 @@
           "book": "gmt-foundations",
           "tag": "08ECC401",
           "label": "ex:catalogue-grim-reaper-chains",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "380EC54D3A30",
-      "number": "5.18",
+      "number": "5.19",
       "section_intro": true,
       "section_example": false,
-      "title": "5.18 Lawlor necks as stationary Lagrangian flows",
+      "title": "5.19 Lawlor necks as stationary Lagrangian flows",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lawlor-necks-as-stationary-lagrangian-flows",
@@ -6079,17 +6150,17 @@
           "book": "gmt-foundations",
           "tag": "8BDA20D6",
           "label": "sec:catalogue-lawlor-necks",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "263868E061E7",
-      "number": "5.18",
+      "number": "5.19",
       "section_intro": false,
       "section_example": true,
-      "title": "5.18 Lawlor necks as stationary Lagrangian flows",
+      "title": "5.19 Lawlor necks as stationary Lagrangian flows",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lawlor-necks-as-stationary-lagrangian-flows",
@@ -6098,17 +6169,17 @@
           "book": "gmt-foundations",
           "tag": "60699B15",
           "label": "ex:catalogue-lawlor-necks",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "9C5BCCFA4320",
-      "number": "5.23",
+      "number": "5.24",
       "section_intro": true,
       "section_example": false,
-      "title": "5.23 Immortal curve shortening with nonunique geodesic limits",
+      "title": "5.24 Immortal curve shortening with nonunique geodesic limits",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-curve-shortening-with-nonunique-geodesic-limits",
@@ -6117,17 +6188,17 @@
           "book": "gmt-foundations",
           "tag": "8562C509",
           "label": "sec:catalogue-aryan-lee",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "CC2635F97DC0",
-      "number": "5.23",
+      "number": "5.24",
       "section_intro": false,
       "section_example": true,
-      "title": "5.23 Immortal curve shortening with nonunique geodesic limits",
+      "title": "5.24 Immortal curve shortening with nonunique geodesic limits",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-curve-shortening-with-nonunique-geodesic-limits",
@@ -6136,17 +6207,17 @@
           "book": "gmt-foundations",
           "tag": "4B6E0148",
           "label": "ex:catalogue-aryan-lee",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "0AE8973A4338",
-      "number": "5.24",
+      "number": "5.25",
       "section_intro": true,
       "section_example": false,
-      "title": "5.24 Lagrangian torus necks collapsing at infinite time",
+      "title": "5.25 Lagrangian torus necks collapsing at infinite time",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lagrangian-torus-necks-collapsing-at-infinite-time",
@@ -6155,17 +6226,17 @@
           "book": "gmt-foundations",
           "tag": "0FA438BE",
           "label": "sec:catalogue-su-tsai-wood",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "2DFF070BC43F",
-      "number": "5.24",
+      "number": "5.25",
       "section_intro": false,
       "section_example": true,
-      "title": "5.24 Lagrangian torus necks collapsing at infinite time",
+      "title": "5.25 Lagrangian torus necks collapsing at infinite time",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lagrangian-torus-necks-collapsing-at-infinite-time",
@@ -6174,17 +6245,17 @@
           "book": "gmt-foundations",
           "tag": "F9E1FEFA",
           "label": "ex:catalogue-su-tsai-wood",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "2AB1CBD37191",
-      "number": "5.25",
+      "number": "5.26",
       "section_intro": true,
       "section_example": false,
-      "title": "5.25 Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "title": "5.26 Lagrangian sphere chains in Gibbons–Hawking spaces",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
@@ -6193,17 +6264,17 @@
           "book": "gmt-foundations",
           "tag": "84F801DC",
           "label": "sec:catalogue-lee-tsai",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "DE8829990703",
-      "number": "5.25",
+      "number": "5.26",
       "section_intro": false,
       "section_example": true,
-      "title": "5.25 Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "title": "5.26 Lagrangian sphere chains in Gibbons–Hawking spaces",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
@@ -6212,17 +6283,17 @@
           "book": "gmt-foundations",
           "tag": "932D0184",
           "label": "ex:catalogue-lee-tsai",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "C99B5440B24D",
-      "number": "5.20",
+      "number": "5.21",
       "section_intro": true,
       "section_example": false,
-      "title": "5.20 Su–Wood stationary products of Lawlor profiles",
+      "title": "5.21 Su–Wood stationary products of Lawlor profiles",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "su-wood-stationary-products-of-lawlor-profiles",
@@ -6231,17 +6302,17 @@
           "book": "gmt-foundations",
           "tag": "3B3C2F1D",
           "label": "sec:catalogue-su-wood-stationary",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "3CC118326D79",
-      "number": "5.20",
+      "number": "5.21",
       "section_intro": false,
       "section_example": true,
-      "title": "5.20 Su–Wood stationary products of Lawlor profiles",
+      "title": "5.21 Su–Wood stationary products of Lawlor profiles",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "su-wood-stationary-products-of-lawlor-profiles",
@@ -6250,17 +6321,17 @@
           "book": "gmt-foundations",
           "tag": "418E2D0E",
           "label": "ex:catalogue-su-wood-stationary",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "71FD28B23406",
-      "number": "5.21",
+      "number": "5.22",
       "section_intro": true,
       "section_example": false,
-      "title": "5.21 Stolarski–Su finite-time Lagrangian neck pinches",
+      "title": "5.22 Stolarski–Su finite-time Lagrangian neck pinches",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "stolarski-su-finite-time-lagrangian-neck-pinches",
@@ -6269,17 +6340,17 @@
           "book": "gmt-foundations",
           "tag": "EC13F9C2",
           "label": "sec:catalogue-stolarski-su",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "41748F7ED1C1",
-      "number": "5.21",
+      "number": "5.22",
       "section_intro": false,
       "section_example": true,
-      "title": "5.21 Stolarski–Su finite-time Lagrangian neck pinches",
+      "title": "5.22 Stolarski–Su finite-time Lagrangian neck pinches",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "stolarski-su-finite-time-lagrangian-neck-pinches",
@@ -6288,17 +6359,17 @@
           "book": "gmt-foundations",
           "tag": "E2816A03",
           "label": "ex:catalogue-stolarski-su",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "E22AF7044670",
-      "number": "5.19",
+      "number": "5.20",
       "section_intro": true,
       "section_example": false,
-      "title": "5.19 Ancient dense torus curves with irrational frequencies",
+      "title": "5.20 Ancient dense torus curves with irrational frequencies",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-dense-torus-curves-with-irrational-frequencies",
@@ -6307,17 +6378,17 @@
           "book": "gmt-foundations",
           "tag": "56780A06",
           "label": "sec:catalogue-irrational-torus-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
     },
     {
       "tag": "3E693532AA77",
-      "number": "5.19",
+      "number": "5.20",
       "section_intro": false,
       "section_example": true,
-      "title": "5.19 Ancient dense torus curves with irrational frequencies",
+      "title": "5.20 Ancient dense torus curves with irrational frequencies",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-dense-torus-curves-with-irrational-frequencies",
@@ -6326,7 +6397,7 @@
           "book": "gmt-foundations",
           "tag": "025F76CC",
           "label": "ex:catalogue-irrational-torus-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6345,7 +6416,7 @@
           "book": "gmt-foundations",
           "tag": "807908D8",
           "label": "sec:catalogue-rotating-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6364,7 +6435,7 @@
           "book": "gmt-foundations",
           "tag": "4B8FA872",
           "label": "ex:catalogue-rotating-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6383,7 +6454,7 @@
           "book": "gmt-foundations",
           "tag": "11FCB02E",
           "label": "sec:catalogue-rotating-translating-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6402,7 +6473,7 @@
           "book": "gmt-foundations",
           "tag": "CFD9A574",
           "label": "ex:catalogue-rotating-translating-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6421,7 +6492,7 @@
           "book": "gmt-foundations",
           "tag": "C2DAE0DD",
           "label": "sec:catalogue-rotating-expanding-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6440,7 +6511,7 @@
           "book": "gmt-foundations",
           "tag": "466D0146",
           "label": "ex:catalogue-rotating-expanding-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6459,7 +6530,7 @@
           "book": "gmt-foundations",
           "tag": "8C594FE7",
           "label": "sec:catalogue-rotating-shrinking-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []
@@ -6478,7 +6549,121 @@
           "book": "gmt-foundations",
           "tag": "CC007955",
           "label": "ex:catalogue-rotating-shrinking-curves",
-          "revision": "sha256:c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9"
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "3A8C87C9FFF8",
+      "number": "2.4",
+      "section_intro": true,
+      "section_example": false,
+      "title": "2.4 Nonclosed shrinking curves dense in an annulus",
+      "kind": "chapter",
+      "chapter": "shrinkers",
+      "topic": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "8BB2E50B",
+          "label": "sec:catalogue-halldorsson-dense-shrinkers",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "4973C84D3B2B",
+      "number": "2.4",
+      "section_intro": false,
+      "section_example": true,
+      "title": "2.4 Nonclosed shrinking curves dense in an annulus",
+      "kind": "example",
+      "chapter": "shrinkers",
+      "topic": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "6961D647",
+          "label": "ex:catalogue-halldorsson-dense-shrinkers",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0FA3E75DD419",
+      "number": "3.14",
+      "section_intro": true,
+      "section_example": false,
+      "title": "3.14 Halldorsson helicoidal rotating translators",
+      "kind": "chapter",
+      "chapter": "translators",
+      "topic": "halldorsson-helicoidal-rotating-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "E24AA084",
+          "label": "sec:catalogue-halldorsson-helicoidal-translators",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "E5C494420E4C",
+      "number": "3.14",
+      "section_intro": false,
+      "section_example": true,
+      "title": "3.14 Halldorsson helicoidal rotating translators",
+      "kind": "example",
+      "chapter": "translators",
+      "topic": "halldorsson-helicoidal-rotating-translators",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "3043D275",
+          "label": "ex:catalogue-halldorsson-helicoidal-translators",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "5BE3123E82F8",
+      "number": "5.15",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.15 Helicoidal minimal surfaces as stationary flows",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "56C89D44",
+          "label": "sec:catalogue-halldorsson-minimal-helicoids",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "E9086532F53A",
+      "number": "5.15",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.15 Helicoidal minimal surfaces as stationary flows",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "BA2CEC7D",
+          "label": "ex:catalogue-halldorsson-minimal-helicoids",
+          "revision": "sha256:2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282"
         }
       ],
       "components": []

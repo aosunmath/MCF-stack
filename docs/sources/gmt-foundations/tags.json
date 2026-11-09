@@ -1636,5 +1636,59 @@
     "page": "tag/CC007955/index.html",
     "canonical_tag": "EF429B51A962",
     "anchor": ""
+  },
+  {
+    "tag": "8BB2E50B",
+    "label": "sec:catalogue-halldorsson-dense-shrinkers",
+    "title": "91 Nonclosed shrinking curves dense in an annulus",
+    "kind": "chapter",
+    "page": "tag/8BB2E50B/index.html",
+    "canonical_tag": "3A8C87C9FFF8",
+    "anchor": ""
+  },
+  {
+    "tag": "6961D647",
+    "label": "ex:catalogue-halldorsson-dense-shrinkers",
+    "title": "Example 91.1 (Nonclosed shrinking curves dense in an annulus)",
+    "kind": "example",
+    "page": "tag/6961D647/index.html",
+    "canonical_tag": "4973C84D3B2B",
+    "anchor": ""
+  },
+  {
+    "tag": "E24AA084",
+    "label": "sec:catalogue-halldorsson-helicoidal-translators",
+    "title": "92 Halldorsson helicoidal rotating translators",
+    "kind": "chapter",
+    "page": "tag/E24AA084/index.html",
+    "canonical_tag": "0FA3E75DD419",
+    "anchor": ""
+  },
+  {
+    "tag": "3043D275",
+    "label": "ex:catalogue-halldorsson-helicoidal-translators",
+    "title": "Example 92.1 (Halldorsson helicoidal rotating translators)",
+    "kind": "example",
+    "page": "tag/3043D275/index.html",
+    "canonical_tag": "E5C494420E4C",
+    "anchor": ""
+  },
+  {
+    "tag": "56C89D44",
+    "label": "sec:catalogue-halldorsson-minimal-helicoids",
+    "title": "93 Helicoidal minimal surfaces as stationary flows",
+    "kind": "chapter",
+    "page": "tag/56C89D44/index.html",
+    "canonical_tag": "5BE3123E82F8",
+    "anchor": ""
+  },
+  {
+    "tag": "BA2CEC7D",
+    "label": "ex:catalogue-halldorsson-minimal-helicoids",
+    "title": "Example 93.1 (Helicoidal minimal surfaces as stationary flows)",
+    "kind": "example",
+    "page": "tag/BA2CEC7D/index.html",
+    "canonical_tag": "E9086532F53A",
+    "anchor": ""
   }
 ]

@@ -1114,7 +1114,9 @@
       "file": "catalogue-aaaw.tex",
       "status": "cited-example",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012",
+        "CatHalldorsson2013"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1138,7 +1140,8 @@
       "file": "catalogue-aaaw.tex",
       "status": "cited-example",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1150,7 +1153,44 @@
       "file": "catalogue-aaaw.tex",
       "status": "cited-example",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-dense-shrinkers",
+      "title": "Nonclosed shrinking curves dense in an annulus",
+      "kind": "example",
+      "file": "catalogue-halldorsson.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHalldorsson2012"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-helicoidal-translators",
+      "title": "Halldorsson helicoidal rotating translators",
+      "kind": "example",
+      "file": "catalogue-halldorsson.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHalldorsson2013"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-minimal-helicoids",
+      "title": "Helicoidal minimal surfaces as stationary flows",
+      "kind": "example",
+      "file": "catalogue-halldorsson.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatHalldorsson2013"
       ],
       "dependencies": [],
       "formal_verification": "none"
