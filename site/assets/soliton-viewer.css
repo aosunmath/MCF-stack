@@ -193,3 +193,12 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .soliton-figure:has(img[src$="stolarski-su-limits.svg"]) .soliton-stage{height:auto;aspect-ratio:1000/570}
 @media(max-width:699px){.soliton-figure.stolarski-figure .soliton-stage{height:390px}.soliton-figure.stolarski-figure .soliton-stage[data-view=compare]{height:690px}.stolarski-figure .soliton-controls select{min-height:44px;max-width:100%}}
 @media print{.soliton-figure.stolarski-figure .soliton-stage{height:auto!important;aspect-ratio:1000/760}.stolarski-note,.stolarski-scale-note,.stolarski-figure .soliton-status{display:none}}
+/* Weighted Gibbons--Hawking flow: separate finite times from the limiting chain. */
+.soliton-figure[data-soliton$="lee-tsai.json"] .soliton-stage{height:700px}
+.lee-tsai-modes,.lee-tsai-presets{display:flex;gap:8px;flex-wrap:wrap;flex-basis:100%}
+.lee-tsai-figure[data-lee-tsai-mode="single"] .soliton-stage{height:490px}
+.lee-tsai-figure[data-lee-tsai-mode="quotient"] .soliton-stage{height:350px}
+.lee-tsai-figure canvas{touch-action:pan-y}
+.lee-tsai-figure[data-lee-tsai-mode="single"] canvas{touch-action:none}
+@media(max-width:699px){.soliton-figure[data-soliton$="lee-tsai.json"] .soliton-stage{height:360px}.lee-tsai-figure[data-lee-tsai-mode="sequence"] .soliton-stage{height:1080px}.lee-tsai-figure[data-lee-tsai-mode="single"] .soliton-stage{height:460px}}
+@media print{.soliton-figure[data-soliton$="lee-tsai.json"] .soliton-stage{height:450px}.lee-tsai-figure .soliton-status{display:none}}

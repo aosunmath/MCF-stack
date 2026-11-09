@@ -1155,10 +1155,10 @@
         "CatLeeTsai2026"
       ],
       "model": "lee-tsai",
-      "status": "Circle-quotient schematic",
-      "caption": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
-      "alt": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
-      "interactive": false
+      "status": "Numerical quotient flow and circle-fiber diagram",
+      "caption": "Four centers at −1, −1/3, 1/3, 1, with φreg = 0 and u(x,0) = 0.06(1 − x²). Compare t = 0, 3, 12, play the finite-time flow, or view the separate limit. Quotient height is magnified ×6. The colored surface plots circle radius φ⁻¹ᐟ² along x; it is a fiber-size diagram, not an isometric embedding in R³. Finite times show one sphere; the limiting three spheres intersect transversely in the actual four-manifold. The computation does not certify the theorem’s existential smallness threshold.",
+      "alt": "Numerical quotient profiles and circle-fiber size diagrams at t = 0, 3 and 12, alongside a separate infinite-time chain. Two positive necks narrow while the finite-time surface stays a sphere.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-lw-quadric-shrinkers",

@@ -147,17 +147,8 @@ def diagrams():
     text(g,30,580,'Neck scale ε(t) is comparable to t⁻¹⁄⁽ᵐ⁻²⁾; no finite-time pinching.',17)
     save(svg,'su-tsai-wood')
 
-    svg,g=canvas('A Lagrangian sphere approaches a chain of spheres','Circle quotient schematic · weighted graph flow, not planar curve shortening')
-    for h,col in [(140,BLUE),(65,'#7199a8'),(20,'#b7783d')]:
-        path(g,[(85+790*i/200,385-h*math.sin(math.pi*i/200)) for i in range(201)],color=col)
-    path(g,[(85,385),(875,385)],color=INK,width=2)
-    for j in range(4):
-        x=85+790*j/3;node(g,'circle',cx=x,cy=385,r=7,fill=INK);text(g,x-12,420,f'a{j+1}',18)
-    text(g,80,166,'Positive quotient graphs at finite time',21)
-    text(g,80,470,'Each limiting interval lifts to one special Lagrangian sphere.',20)
-    text(g,30,550,'Four centers illustrate N = 4: one smooth sphere tends to a three-sphere chain.',17)
-    text(g,30,580,'|H| → 0, while log max |A| is comparable to √t. Curves are schematic.',17)
-    save(svg,'lee-tsai')
+    # Lee--Tsai now has a dedicated numerical generator: generate_lee_tsai_flow.py.
+
 
 
 def additional_figures():
@@ -216,7 +207,7 @@ def main():
            'mobius_fundamental_domain':'0 <= theta < pi, with the last mesh seam reversing r',
            'coordinate_order':'Re z1, Im z1, Re z2, Im z2',
            'ttw_picture':'Exact initial cone only; no PDE solution is computed',
-           'schematics':['jlt-compact-shrinkers','aryan-lee','su-tsai-wood','lee-tsai']}
+           'schematics':['jlt-compact-shrinkers','aryan-lee','su-tsai-wood']}
     (OUT/'lagrangian-audit.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(json.dumps(audit,indent=2))
 

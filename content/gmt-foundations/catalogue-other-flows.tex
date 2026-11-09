@@ -502,7 +502,15 @@ The lifted flow exists smoothly for $t\geq0$, remains a compact embedded sphere,
  0<\liminf_{t\to\infty}\frac{\log\max|A|}{\sqrt t}
  \leq\limsup_{t\to\infty}\frac{\log\max|A|}{\sqrt t}<\infty.
 \]
-Finite-time slices have genus zero, no ends, and are complete and proper. Junctions occur only in the infinite-time limit. The quotient drawing is schematic, not a numerical solution of this weighted equation. It is not ordinary planar curve shortening, and Euclidean entropy is inapplicable. The coauthor is Ping-Hung Lee, distinct from Tang-Kai Lee.
+Finite-time slices have genus zero, no ends, and are complete and proper. Junctions occur only in the infinite-time limit. The quotient evolves by the weighted equation above, not ordinary planar curve shortening; Euclidean entropy is inapplicable. The coauthor is Ping-Hung Lee, distinct from Tang-Kai Lee.
+
+The illustration integrates the quotient PDE numerically for $N=4$, $a_j=-1+2(j-1)/3$, $\varphi_{\rm reg}=0$, and $u_0(x)=0.06(1-x^2)$, on $0\leq t\leq12$. Its finite-time snapshots are separate from the theoretical limit $t\to\infty$. Mesh refinement checks numerical consistency; the chosen initial coefficient is not certified against the existential smallness constant in Theorem~6.2.
+
+To interpret the diagram, the circle over $(x,u(x,t),0)$ has radius factor
+\[
+ r_{\rm orb}(x,t)=\varphi(x,u(x,t),0)^{-1/2}.
+\]
+The rendered surface $(x,r_{\rm orb}\cos\theta,r_{\rm orb}\sin\theta)$, $0\leq\theta<2\pi$, records these fiber sizes; it is not an isometric embedding of $L_t$ in Euclidean three-space. The outer fibers collapse at every time, closing a sphere. The two interior fibers stay positive at finite times. In the limit, each interval $[a_j,a_{j+1}]$ lifts to a special Lagrangian sphere, with adjacent spheres meeting transversely in the four-manifold. The displayed contact angles have no geometric meaning. Remark~6.3 relates the neck size to $\|u(\cdot,t)\|_{C^0}^{1/2}$ and to $(\max|A|)^{-1}$, explaining why small quotient height accompanies large curvature.
 \end{example}
 
 \chapter{Su--Wood stationary products of Lawlor profiles}\label{sec:catalogue-su-wood-stationary}

@@ -1,0 +1,38 @@
+{
+  "status": "Numerical consistency checks; not certified error bounds or a proof of the theorem hypotheses.",
+  "source": "https://arxiv.org/html/2606.28767v1",
+  "equation": "u_t = u_xx / (phi(x,u,0) * (1+u_x^2)); u(-1,t)=u(1,t)=0",
+  "centers": [
+    -1.0,
+    -0.33333333333333337,
+    0.33333333333333326,
+    1.0
+  ],
+  "regular_potential": 0,
+  "initial": "u(x,0)=0.06*(1-x*x)",
+  "method": "Nonuniform three-point differences, method of lines, SciPy BDF; sinh mesh grading 5.",
+  "mesh_points": [
+    601,
+    1201,
+    2401
+  ],
+  "coarse_to_medium": {
+    "max_absolute_height_difference": 2.5860238409801395e-06,
+    "max_relative_to_frame_height": 0.00046581144436595875
+  },
+  "medium_to_fine": {
+    "max_absolute_height_difference": 6.46685720855078e-07,
+    "max_relative_to_frame_height": 0.00011650791588903707
+  },
+  "time_tolerance_refinement": {
+    "max_absolute_height_difference": 1.6090768995002946e-10,
+    "max_relative_to_frame_height": 4.507865279161197e-08
+  },
+  "minimum_interior_height": 1.5812766413304436e-07,
+  "maximum_temporal_height_increase": 0.0,
+  "maximum_discrete_second_derivative": -0.00031112847151347175,
+  "maximum_reflection_error": 8.162186204696553e-13,
+  "display": "Quotient vertical scale 6; orbit-radius surface uses (x, phi^(-1/2) cos(theta), phi^(-1/2) sin(theta)). Not an isometric embedding or a Euclidean MCF.",
+  "limit": "u=0 is rendered separately and never assigned a finite time; adjacent lifted spheres intersect transversely in 4D.",
+  "smallness": "The source gives an existential slope threshold. This chosen numerical initial datum is not certified against that threshold."
+}
