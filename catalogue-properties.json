@@ -4867,7 +4867,7 @@
     },
     {
       "label": "ex:catalogue-su-wood-stationary",
-      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "notes": "Full Euclidean ambient dimension is 2m, at least six. The interactive figure uses the exact m = 3 formula, a projected two-dimensional profile, and sampled SO(2) orbits in R6. Every flow time has identical geometry. Neither the profile nor its projection determines a surface genus for this higher-dimensional example.",
       "citations": [
         "CatSuWood2026"
       ],

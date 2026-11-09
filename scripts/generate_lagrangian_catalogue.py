@@ -169,16 +169,9 @@ def additional_figures():
     from generate_su_gluing import main as generate_su_gluing
     generate_su_gluing()
 
-    svg,g=canvas('Su–Wood stationary special Lagrangians','Exact auxiliary Lawlor profile for m = 3 · not the full submanifold in C³')
-    samples=[-.68+1.36*i/200 for i in range(201)]
-    path(g,[(150+150*math.cos(s)/math.sqrt(math.cos(2*s)),305-150*math.sin(s)/math.sqrt(math.cos(2*s))) for s in samples],width=4)
-    path(g,[(140,305),(610,305)],color='#b5c5cc',width=1)
-    text(g,610,205,'Use this profile twice:',20)
-    text(g,610,245,'γ = μ₁ ℓ(x)',21);text(g,610,282,'ξ = μ₂ ℓ(y)',21)
-    text(g,610,345,'Then add SO(2) orbits.',19)
-    text(g,30,555,'ℓ(s) = (cos(2s))⁻¹⁄² eⁱˢ,   −π/4 < s < π/4. The displayed interval is truncated.',17)
-    text(g,30,584,'Resulting topology: S¹ × R². The special Lagrangian is stationary for all time.',16)
-    save(svg,'su-wood-stationary')
+    # The exact surface/time figure has its own shared JS formula and generator.
+    import subprocess
+    subprocess.run(['node', str(OUT.parents[2] / 'scripts/generate_su_wood.mjs')], check=True)
 
     svg,g=canvas('Stolarski–Su finite-time neck collapse','Schematic profiles · the exact flow is constructed by a nonlinear parabolic PDE')
     for j,eps in enumerate((65,35,12)):

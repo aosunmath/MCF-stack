@@ -1222,10 +1222,10 @@
         "CatSuWood2026"
       ],
       "model": "su-wood-stationary",
-      "status": "Exact auxiliary profile",
-      "caption": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
-      "alt": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
-      "interactive": false
+      "status": "Exact formula; projected profile and circle orbits",
+      "caption": "The m = 3, SO(2) family from Su–Wood (31), evaluated in closed form. Three identical time panels show Lₜ = L₀, since H = 0. The profile view projects a two-dimensional surface in C²; the circle view reconstructs selected leaves and orbits of the three-manifold in C³. μ₁ = 1 and φ = 0; μ₂ changes the example, not time. Noncompact geometry is truncated. Color records arg Z; projection crossings do not imply self-intersections.",
+      "alt": "An exact projected Su–Wood profile surface with identical snapshots at times −2, 0 and 2. The full stationary special Lagrangian has dimension three in C³.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-stolarski-su",

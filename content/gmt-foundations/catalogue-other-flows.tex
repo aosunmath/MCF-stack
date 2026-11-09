@@ -520,7 +520,40 @@ For $u\in S^{m-2}\subset\mathbb R^{m-1}$ and $(x,y)\in I^2$, put
 \]
 This is an exact integral parametrization of an embedded, exact special Lagrangian of dimension and codimension $m$. Thus $\vec H=0$ and $L_t=X(S^{m-2}\times I^2)$ for every $t\in\mathbb R$. It is the $G=SO(m-1)$ case of \cite{CatSuWood2026}, equation~(31), Theorem~5.6, Proposition~5.9 and Remark~5.10. It has cohomogeneity two under this group; for $m=3$ the topology is $S^1\times\mathbb R^2$, not a surface annulus.
 
-The topology in general is $S^{m-2}\times\mathbb R^2$, with one end. The parametrization is proper: approaching either endpoint of $I$ makes $|\ell(x)\ell(y)|$ diverge, and the remaining factor $u$ is compact. The induced metric is therefore complete. The calibrated image is stable under compactly supported variations. No entropy value or global asymptotic classification is recorded here. The picture is the exact one-dimensional Lawlor profile used twice by the construction, not a projection of the full $m$-manifold.
+The topology in general is $S^{m-2}\times\mathbb R^2$, with one end. The parametrization is proper: approaching either endpoint of $I$ makes $|\ell(x)\ell(y)|$ diverge, and the remaining factor $u$ is compact. The induced metric is therefore complete. The calibrated image is stable under compactly supported variations. No entropy value or global asymptotic classification is recorded here.
+
+
+For the illustrated case $m=3$, write $s=\arctan(\tanh q)$. Then
+\[
+ \ell(s)=\cosh q+i\sinh q,\qquad B(s)=q.
+\]
+Thus equation~(31) has a closed elementary form in this dimension. Fix
+$\mu_1=1$, $\mu_2=\mu>0$, and $\varphi=0$. For $(p,b)\in\mathbb R^2$,
+set $a=\operatorname{arsinh}p$ and
+\[
+ Z=\mu(\cosh b+ip),\qquad
+ W=\frac{\mu^2\cosh(a+b)-\cosh(a-b)}2
+   +\frac{i}{2}\bigl((\mu^2-1)a+(\mu^2+1)b\bigr).
+\]
+The full stationary flow is
+\[
+ X_t(\theta,p,b)=(Z\cos\theta,Z\sin\theta,W)\in\mathbb C^3,
+ \qquad \theta\in\mathbb R/(2\pi\mathbb Z),\quad t\in\mathbb R.
+\]
+This is a reparametrization of the displayed construction, obtained by putting
+the two hyperbolic profile parameters equal to $(a-b)/2$ and $(a+b)/2$.
+For $\mu=1$, the profile projection is particularly simple:
+\[
+ (\operatorname{Im}Z,\operatorname{Re}W,\operatorname{Im}W)
+       =(p,p\sinh b,b),\qquad \operatorname{Re}Z=\cosh b.
+\]
+The figure samples these exact formulas on $|p|\leq2$, $|b|\leq1.2$.
+The snapshots at $t=-2,0,2$ coincide, including their spatial scale and
+marked parameter point: $\partial_tX_t=\vec H=0$. The circle view adds
+sampled spatial $SO(2)$ orbits. Changing $\mu$, the orbit angle, or the
+projection changes the example or its view, not its mean curvature flow.
+The colored sheet is a two-dimensional profile, not the entire
+three-manifold and not a surface mean curvature flow in $\mathbb R^3$.
 
 The same paper constructs translators from a line and an Anciaux shrinker profile, and from an expander/shrinker pair. The line/expander case recovers the symmetric Joyce--Lee--Tsui translator of Example~\ref{ex:catalogue-jlt-translators}; it is not a second catalogue entry. For other symmetry groups some constructions have a one-dimensional singular set, so their smooth embeddedness must not be inferred from this $SO(m-1)$ case.
 \end{example}

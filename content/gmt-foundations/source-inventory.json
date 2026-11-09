@@ -2045,7 +2045,8 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Theorem 5.6, equation (31), Proposition 5.9 and Remark 5.10 for the SO(m−1) stationary family; Sections 5.2–5.4 for overlap and singular-group cautions."
+        "Theorem 5.6, equation (31), Proposition 5.9 and Remark 5.10 for the SO(m−1) stationary family; Sections 5.2–5.4 for overlap and singular-group cautions.",
+        "Figure 3, Theorem 5.7 and Remark 5.8 rechecked with (31), Theorem 5.6 and Proposition 5.9 for the requested picture. For m = 3, derived the elementary hyperbolic reparametrization and exact stationary time slices; see documentation/su-wood-picture.md."
       ],
       "catalogue_bibliography_keys": [
         "CatSuWood2026"

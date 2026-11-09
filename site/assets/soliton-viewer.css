@@ -172,3 +172,14 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .su-legend span{display:inline-flex;align-items:center;gap:6px}.su-legend i{width:10px;height:10px;border-radius:50%}
 @media(max-width:699px){.su-gluing-figure .soliton-stage{height:370px}.su-gluing-figure .soliton-controls select{max-width:100%;min-height:44px}.su-time-controls label{flex-basis:100%}.su-time-controls input[type=range]{flex:1;min-width:0;max-width:200px}}
 @media print{.su-view-label,.su-legend{display:none}}
+
+/* Su–Wood exact stationary profile: vertically stacked equal-scale times on mobile. */
+.suwood-figure .soliton-stage{height:400px}
+.suwood-figure .soliton-stage[data-view=profile],.suwood-figure .soliton-stage[data-view=orbits]{height:500px}
+.suwood-figure .soliton-controls label{flex:1 1 225px;min-width:0}
+.suwood-figure .soliton-controls label[hidden]{display:none}
+.suwood-figure .soliton-controls input[type=range]{flex:1;min-width:85px;max-width:160px}
+.suwood-note{font-size:13px;line-height:1.6;margin:8px 16px 12px;color:#476170}
+.soliton-figure[data-soliton$="su-wood-stationary.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/1010}
+@media(max-width:699px){.suwood-figure .soliton-stage[data-view=times]{height:850px}.suwood-figure .soliton-stage[data-view=profile],.suwood-figure .soliton-stage[data-view=orbits]{height:390px}.suwood-figure .soliton-controls label{flex-basis:100%}}
+@media print{.suwood-note,.suwood-figure .soliton-status{display:none}.suwood-figure .soliton-stage{height:auto!important;aspect-ratio:1000/1010}}
