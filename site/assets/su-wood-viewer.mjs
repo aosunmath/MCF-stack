@@ -70,7 +70,7 @@ export function snapshotSVG(){
     for(const o of p.items)svg+=`<${o.fill?'polygon':'polyline'} points="${o.points.map(q=>q.map(a=>a.toFixed(2)).join(',')).join(' ')}" fill="${o.fill||'none'}" stroke="${o.stroke}" stroke-width="${o.width}"/>`;
     svg+=`<circle cx="${p.marker[0]}" cy="${p.marker[1]}" r="4" fill="#183f52" stroke="white" stroke-width="1.5"/><path d="M${x+w-100} ${y+h-20}h${p.scale}" stroke="#183f52" stroke-width="2"/><text x="${x+w-100}" y="${y+h-29}" font-size="13">1 unit</text>`;
   };
-  draw([20,90,960,495],'Projection (Im Z, Re W, Im W) = (p, p sinh b, b)',{zoom:1.35});
+  draw([20,90,960,495],'Projection (Im Z, Re W, Im W) = (p, p sinh b, b)',{zoom:.95});
   TIMES.forEach((t,i)=>draw([20+i*326,603,308,280],`t = ${t<0?'−2':t} · H = 0`,{t}));
   svg+='<text x="28" y="920" font-size="18">Same camera, scale, crop and marked point at t = −2, 0, 2.</text><text x="28" y="950" font-size="17">Color: arg Z, from blue (negative) to orange (positive). Re Z = cosh b is omitted.</text><text x="28" y="980" font-size="17">A profile of a 3-manifold in C³; not a surface MCF in R³. Su–Wood (31).</text></g></svg>\n';
   return svg;
