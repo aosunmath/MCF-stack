@@ -577,5 +577,12 @@ where $L$ is the rotational Lawlor neck. Up to a fixed unitary rotation, that li
  X(u,\theta)=(\sin(n\theta))^{-1/n}e^{i\theta}u,
  \quad u\in S^{n-1},\quad0<\theta<\pi/n.
 \]
-This is a formula for the blow-up limit, not for $L(t)$. The actual flow is constructed by solving a nonlinear parabolic problem near a modulated neck of scale comparable to $(T-t)^{K/2}$, and has no closed formula. The initial Lagrangian angle oscillation can be arbitrarily small. These existence and convergence statements do not assert dynamical stability, uniqueness of the initial data, or a numerical entropy value. The illustration compares shrinking neck scales schematically; it is not a time integration of the PDE. The compact immersed variant mentioned in the source's Remark~3 is outside this entry.
+This is a formula for the blow-up limit, not for $L(t)$. The actual flow is constructed by solving a nonlinear parabolic problem near a modulated neck of scale comparable to $(T-t)^{K/2}$, and has no closed formula. The initial Lagrangian angle oscillation can be arbitrarily small. These existence and convergence statements do not assert dynamical stability, uniqueness of the initial data, or a numerical entropy value. The illustration uses the exact Lawlor profile above with a prescribed scale to show the near-singularity dynamics. With a reference time $t_0<T$, write
+\[
+ \tau=\frac{t-t_0}{T-t_0},\qquad q=1-\tau,\qquad
+ a_{\mathrm{model}}(\tau)=a_0q^{K/2}.
+\]
+Here $a_0$ and the equality defining $a_{\mathrm{model}}$ are choices for the drawing, not an exact formula for the modulation parameter of the flow. The actual profile includes a correction obtained by solving the parabolic equation; see \cite{CatStolarskiSu2026}, Theorem~1.1(3) and Sections~2.2--2.3. A shrinking family of these minimal necks alone does not solve mean curvature flow.
+
+The time comparison keeps the same spatial scale. Under parabolic magnification by $q^{-1/2}$ the model neck has scale $a_0q^{(K-1)/2}\to0$; under the finer magnification by $q^{-K/2}$ its scale remains $a_0$. These illustrate the distinct tangent-plane and smooth-neck limits. The surface view restricts the spherical orbit to $u=(\cos\phi,\sin\phi,0,\ldots,0)$ and projects this two-dimensional slice from $\mathbb C^2$ into $\mathbb R^3$. Projection may create apparent intersections. The planar view shows the exact profiles and their limiting rays. None of these drawings is a numerical time integration or a continuation through $T$. The compact immersed variant mentioned in the source's Remark~3 is outside this entry.
 \end{example}

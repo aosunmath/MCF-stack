@@ -1236,10 +1236,19 @@
         "CatStolarskiSu2026"
       ],
       "model": "stolarski-su",
-      "status": "Neck-scale schematic",
-      "caption": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
-      "alt": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
-      "interactive": false
+      "status": "Asymptotic time illustration",
+      "caption": "Exact Lawlor-neck geometry with the illustrative scale a/a₀ = (1 − τ)^(K/2), where τ = (t − t₀)/(T − t₀). Compare three times, play the collapse, or switch between physical, parabolic, and neck zooms. The surface is a projected 2D slice of the n-manifold in Cⁿ; apparent crossings are projection artifacts. The PDE correction of the actual flow is not computed.",
+      "alt": "Three times of a shrinking Lawlor-neck model and their planar profiles, on identical spatial scales. The purple waist collapses; the finer neck zoom preserves its shape. Asymptotic illustration, not computed flow slices.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "stolarski-su-limits",
+          "status": "Two rescalings of the asymptotic model",
+          "caption": "At the parabolic scale the neck disappears into the tangent pair of planes. At the finer Type II scale a smooth Lawlor neck remains. The profiles describe the limiting geometry; the time-dependent family itself is not a mean curvature flow.",
+          "alt": "Three shrinking neck profiles approach four rays under parabolic rescaling; under neck rescaling the three profiles coincide.",
+          "interactive": false
+        }
+      ]
     },
     {
       "label": "ex:catalogue-chopp-cube",

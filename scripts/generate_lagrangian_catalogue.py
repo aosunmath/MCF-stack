@@ -173,15 +173,8 @@ def additional_figures():
     import subprocess
     subprocess.run(['node', str(OUT.parents[2] / 'scripts/generate_su_wood.mjs')], check=True)
 
-    svg,g=canvas('Stolarski–Su finite-time neck collapse','Schematic profiles · the exact flow is constructed by a nonlinear parabolic PDE')
-    for j,eps in enumerate((65,35,12)):
-        cx=160+320*j
-        for sign in (-1,1):
-            path(g,[(cx+sign*math.sqrt(eps*eps+(y-300)**2*.3),y) for y in range(145,456)],width=3)
-        text(g,cx-82,495,['Earlier neck','Later neck','Closer to T'][j],20)
-    text(g,30,555,'Neck scale is comparable to (T − t)ᴷ⁄²; curvature to (T − t)⁻ᴷ⁄².',18)
-    text(g,30,584,'n = 3: K = 2, 3, 4.   n ≥ 4: every integer K ≥ 2.   Ambient space: Cⁿ.',17)
-    save(svg,'stolarski-su')
+    # Exact Lawlor profiles and time/scale views share one geometry module.
+    subprocess.run(['node', str(Path(__file__).with_name('generate_stolarski_su.mjs'))], check=True)
 
 
 def main():
