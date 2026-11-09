@@ -165,18 +165,9 @@ def additional_figures():
     # node scripts/generate_lee_wang.mjs
     # node scripts/generate_lee_wang_expander.mjs
 
-    svg,g=canvas('Su translators from gluing grim cylinders','Construction schematic · dimension m ≥ 3 in Cᵐ · not a surface in R³')
-    for cx in (250,710):
-        path(g,[(cx-145,175),(cx+145,425)],width=10)
-        path(g,[(cx-145,425),(cx+145,175)],color='#b7783d',width=10)
-    node(g,'circle',cx=710,cy=300,r=61,fill='#f7fafb')
-    for sign in (-1,1):
-        path(g,[(710+sign*(24+32*(2*i/80-1)**2),245+110*i/80) for i in range(81)],width=5)
-    text(g,455,310,'→',35)
-    text(g,90,480,'One transverse intersection',20);text(g,565,480,'Small neck + PDE correction',20)
-    text(g,30,555,'The corrected translator has topology Sᵐ⁻¹ × R and two ends.',18)
-    text(g,30,584,'The gluing scale ε is a family parameter, distinct from eternal flow time.',16)
-    save(svg,'su-glued-translators')
+    # The source-reviewed slice and time sequence have their own generator.
+    from generate_su_gluing import main as generate_su_gluing
+    generate_su_gluing()
 
     svg,g=canvas('Su–Wood stationary special Lagrangians','Exact auxiliary Lawlor profile for m = 3 · not the full submanifold in C³')
     samples=[-.68+1.36*i/200 for i in range(201)]

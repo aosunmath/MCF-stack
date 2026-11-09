@@ -1199,10 +1199,19 @@
         "CatSu2022"
       ],
       "model": "su-glued-translators",
-      "status": "Gluing schematic",
-      "caption": "Two intersecting grim cylinders in Cᵐ, m ≥ 3, are replaced by a small Lawlor neck and perturbed to a translator. This is a schematic, not an exact surface or a numerical PDE solution.",
-      "alt": "Two intersecting grim cylinders in Cᵐ, m ≥ 3, are replaced by a small Lawlor neck and perturbed to a translator. This is a schematic, not an exact surface or a numerical PDE solution.",
-      "interactive": false
+      "status": "Projected construction model",
+      "caption": "Selected meridians and a rotatable projection of a two-dimensional z₂ = 0 model slice in C³. Blue and teal are the grim-cylinder regions; copper is the Lawlor neck and schematic matching. Play the rigid translation at fixed neck scale, inspect the neck, or switch to the projected slice and its cutaway. The final nonlinear correction is not computed. Projection crossings need not be intersections in C³, and all outer rims are display cuts.",
+      "alt": "Exact intersecting grim profiles, an illustrative Lawlor-neck replacement, and a magnified neck detail in the z₃-plane.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "su-glued-times",
+          "status": "Time sequence of the construction model",
+          "interactive": false,
+          "caption": "Selected meridians at t = −1, 0, 1 on identical fixed axes. Every point moves by t in Re z₃; the neck scale ε stays fixed. The dotted line follows the translated intersection reference p + t e₃, marked by a dot. The full translator has two ends and topology S² × ℝ; the number of curves in this profile does not count those ends. These are schematic spatial profiles with the exact translation law, not computed solutions of mean curvature flow.",
+          "alt": "Three panels with identical grids show the same joined grim profiles shifting upward at times minus one, zero, and one, without changing the neck size."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-su-wood-stationary",

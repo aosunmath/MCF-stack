@@ -164,3 +164,11 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 @media(max-width:699px){.lw-figure .soliton-stage{height:530px}.lw-figure .soliton-stage[data-view=single],.lw-figure .soliton-stage[data-view=orbits]{height:360px}}
 .soliton-figure:has(img[src$="lw-quadric-shrinkers.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:1000/900}
 @media print{.lw-figure .soliton-stage{height:auto!important;aspect-ratio:1000/900}.lw-note,.lw-figure .soliton-status{display:none}}
+.su-gluing-figure .soliton-stage{height:480px}
+.su-view-label{position:absolute;top:12px;left:14px;right:14px;margin:0;color:#476170;font-size:13px;line-height:1.5;pointer-events:none;background:#f7fafbe8}
+.su-time-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;flex-basis:100%}
+.su-time-controls output{min-width:3.2em;font-variant-numeric:tabular-nums}
+.su-legend{display:flex;flex-wrap:wrap;gap:8px 20px;padding:0 16px;margin:8px 0;font-size:12px}
+.su-legend span{display:inline-flex;align-items:center;gap:6px}.su-legend i{width:10px;height:10px;border-radius:50%}
+@media(max-width:699px){.su-gluing-figure .soliton-stage{height:370px}.su-gluing-figure .soliton-controls select{max-width:100%;min-height:44px}.su-time-controls label{flex-basis:100%}.su-time-controls input[type=range]{flex:1;min-width:0;max-width:200px}}
+@media print{.su-view-label,.su-legend{display:none}}

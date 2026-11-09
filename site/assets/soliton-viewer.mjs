@@ -333,6 +333,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='iw-schematic'){
         const {initIWFigure}=await import('./iw-viewer.mjs');
         initIWFigure(figure,data);
+      } else if(data.kind==='su-gluing-slice'){
+        const {initSuGluingFigure}=await import('./su-gluing-viewer.mjs');
+        initSuGluingFigure(figure,data,rotatePoint);
       } else if(data.kind==='trident-schematic'){
         const {initTridentFigure}=await import('./trident-viewer.mjs');
         initTridentFigure(figure,data);
