@@ -1184,10 +1184,11 @@
         "CatLeeWang2010"
       ],
       "model": "lw-quadric-expanders",
-      "status": "Exact real slice",
-      "caption": "The s = 0 real slice x₁² + x₂² − x₃² = −2 in C³. Its two sheets join through the circle quotient in the connected three-dimensional expander.",
-      "alt": "The s = 0 real slice x₁² + x₂² − x₃² = −2 in C³. Its two sheets join through the circle quotient in the connected three-dimensional expander.",
-      "interactive": false
+      "status": "Exact time slices and circle orbit",
+      "caption": "The n = 3, k = 2 expander in C³ = R⁶. Compare the exact real slices x₃ = ±√(x₁² + x₂² + 2t) at t = 0, 1/4, 1, 4 on the same spatial scale, or play the positive-time flow. The t = 0 panel is the singular cone limit. The circle-orbit view joins the two real sheets within one connected three-manifold at fixed time. These slices do not themselves solve mean curvature flow in R³; outer rims are display cutoffs.",
+      "alt": "Exact two-sheeted real quadric slices at four times with one common scale, and an exact circle orbit explaining their connection in the full expander in R6.",
+      "interactive": true,
+      "credit_anchor": "lee-wang"
     },
     {
       "label": "ex:catalogue-su-glued-translators",

@@ -202,5 +202,23 @@ On $(Q_-\times\mathbb R)/((x,s)\sim(-x,s+\pi))$ this is a complete proper embedd
 
 The fiber is $\mathbb R^k\times S^{n-k-1}$. The mapping-torus quotient is connected and has one end. If $n-k=1$, its two fiber components are exchanged by the gluing, and the total manifold is diffeomorphic to $\mathbb R^k\times S^1$, hence orientable. For $n-k\geq2$ the fiber is connected, the antipodal monodromy must be retained, and the total manifold is orientable exactly when $n$ is even. In particular, the $n=3,k=2$ case is orientable: one must pass around the base twice to return to the same component. These topology statements are obtained from the quotient directly; the product and parity shorthand in the source's Proposition~2.2 requires this disconnected-fiber qualification.
 
-The family is noncompact and Hamiltonian stationary, with $SO(k)\times SO(n-k)$ and circle symmetries, and is asymptotic to the same cone as Example~\ref{ex:catalogue-lw-quadric-shrinkers}. Its planar-coordinate quadric description gives polynomial volume growth and finite centered Gaussian area; this entry records no entropy value or stability result. The illustrated $s=0$ slice has two sheets, which belong to a single connected expander after circle gluing. No surface genus is assigned to these $n\geq3$ examples. The source's weak continuation at $t=0$ is a separate varifold statement; the smooth time interval here is $t>0$.
+The family is noncompact and Hamiltonian stationary, with $SO(k)\times SO(n-k)$ and circle symmetries, and is asymptotic to the same cone as Example~\ref{ex:catalogue-lw-quadric-shrinkers}. Its planar-coordinate quadric description gives polynomial volume growth and finite centered Gaussian area; this entry records no entropy value or stability result. No surface genus is assigned to these $n\geq3$ examples. The source's weak continuation at $t=0$ is a separate varifold statement; the smooth time interval here is $t>0$.
+
+For the illustrated case $n=3$, $k=2$, the full expander has the global parametrization
+\[
+ F_t(a,b,s)=\left(e^{is}a,e^{is}b,e^{-is}\sqrt{a^2+b^2+2t}\right),
+ \qquad (a,b)\in\mathbb R^2,\quad s\in\mathbb R/(2\pi\mathbb Z),\quad t>0.
+\]
+This parametrization is obtained directly from the unit-weight construction in \cite{CatLeeWang2010}, Theorem~1.1 and Section~2.2: one takes the positive component of the real quadric and a full circle of phases. The real slice, obtained at $s=0$ and $s=\pi$, consists of the two graphs
+\[
+ x_3=\pm\sqrt{r^2+2t},\qquad r=\sqrt{x_1^2+x_2^2}\geq0.
+\]
+Their tips are at $x_3=\pm\sqrt{2t}$. The figure compares $t=1/4,1,4$ with the singular cone limit $t=0$, using the same spatial scale and the fixed display cutoff $r\leq3.2$. The complete slices are unbounded. These are exact two-dimensional slices of a three-dimensional flow in $\mathbb R^6$; they are not themselves mean curvature flows in $\mathbb R^3$.
+
+The circle direction explains why two real sheets do not mean two components of the expander. For a point $x=(x_1,x_2,x_3)$ on the positive real sheet, the curve
+\[
+ \gamma_x(s)=\left(e^{is}x_1,e^{is}x_2,e^{-is}x_3\right)
+ =\cos(s)x+\sin(s)i(x_1,x_2,-x_3),\qquad 0\leq s\leq\pi,
+\]
+lies in $L_t$ and joins $x$ to $-x$ on the other real sheet. It is a semicircle in a real two-plane in $\mathbb R^6$, since the two spanning vectors are orthogonal and have equal length. The circle-phase control follows this path at fixed time; only the time control changes the flow.
 \end{example}

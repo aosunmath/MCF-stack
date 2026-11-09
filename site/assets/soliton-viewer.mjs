@@ -258,6 +258,9 @@ if(typeof document!=='undefined') {
       if(data.kind==='lee-wang-exact-flow'){
         const {initLeeWangFigure}=await import('./lee-wang-viewer.mjs');
         initLeeWangFigure(figure,data);
+      } else if(data.kind==='lee-wang-expander-exact'){
+        const {initLeeWangExpander}=await import('./lee-wang-expander-viewer.mjs');
+        initLeeWangExpander(figure,data);
       } else if(data.kind==='minimal-ancient-linearized'){
         const {initMinimalAncientFigure}=await import('./minimal-ancient-viewer.mjs');
         initMinimalAncientFigure(figure,data);
