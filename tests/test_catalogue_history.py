@@ -46,6 +46,7 @@ class CatalogueHistoryTests(unittest.TestCase):
                                 ('sun-wang-sphere-doubling-translators', '2023-01-19'),
                                 ('translating-annuloids', '2023-08-04'), ('angenent-torus-cylinders', '2026-07-26')]:
             self.assertEqual(history.history('ex:catalogue-' + label)['date'], expected)
+        self.assertEqual(history.history('ex:catalogue-minimal-ancient-flows')['date'], '2019-04-17')
         item = history.history('ex:catalogue-sun-wang-torus-translators')
         panel = BeautifulSoup(history.panel(item), 'html.parser')
         self.assertIn('Background only', panel.get_text())

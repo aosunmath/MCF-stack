@@ -584,6 +584,721 @@
       "kind": "arxiv",
       "url": "https://arxiv.org/abs/2204.05253",
       "evidence": "arXiv submission history, version 1: 2022-04-11. Checked 2026-11-09."
+    },
+    "CatAnciaux2006": {
+      "authors": [
+        "Anciaux"
+      ],
+      "date": "2006",
+      "kind": "publication",
+      "url": "https://doi.org/10.1007/s10711-006-9082-z",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatAryanLee2026": {
+      "authors": [
+        "Aryan",
+        "Lee"
+      ],
+      "date": "2026-08-05",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2608.04855",
+      "evidence": "arXiv submission history, version 1: 2026-08-05. Checked 2026-11-09."
+    },
+    "CatBaldiHausMantegazza2019": {
+      "authors": [
+        "Baldi",
+        "Haus",
+        "Mantegazza"
+      ],
+      "date": "2018-11-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1811.07822",
+      "evidence": "arXiv submission history, version 1: 2018-11-19. Checked 2026-11-09."
+    },
+    "CatBourniBurnsCatron2025": {
+      "authors": [
+        "Bourni",
+        "Burns",
+        "Catron"
+      ],
+      "date": "2024-04-12",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2404.08824",
+      "evidence": "arXiv submission history, version 1: 2024-04-12. Checked 2026-11-09."
+    },
+    "CatBourniFranz2026": {
+      "authors": [
+        "Bourni",
+        "Franz"
+      ],
+      "date": "2026-02-09",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2602.08850",
+      "evidence": "arXiv submission history, version 1: 2026-02-09. Checked 2026-11-09."
+    },
+    "CatBourniLangford2023": {
+      "authors": [
+        "Bourni",
+        "Langford"
+      ],
+      "date": "2021-11-11",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2111.06051",
+      "evidence": "arXiv submission history, version 1: 2021-11-11. Checked 2026-11-09."
+    },
+    "CatBourniLangford2025": {
+      "authors": [
+        "Bourni",
+        "Langford"
+      ],
+      "date": "2022-04-14",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2204.06710",
+      "evidence": "arXiv submission history, version 1: 2022-04-14. Checked 2026-11-09."
+    },
+    "CatBourniLangfordMramor2020": {
+      "authors": [
+        "Bourni",
+        "Langford",
+        "Mramor"
+      ],
+      "date": "2019-11-13",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1911.05641",
+      "evidence": "arXiv submission history, version 1: 2019-11-13. Checked 2026-11-09."
+    },
+    "CatBourniLangfordTinaglia2017": {
+      "authors": [
+        "Bourni",
+        "Langford",
+        "Tinaglia"
+      ],
+      "date": "2017-05-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1705.06981",
+      "evidence": "arXiv submission history, version 1: 2017-05-19. Checked 2026-11-09."
+    },
+    "CatBourniLangfordTinaglia2022": {
+      "authors": [
+        "Bourni",
+        "Langford",
+        "Tinaglia"
+      ],
+      "date": "2020-06-29",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2006.16338",
+      "evidence": "arXiv submission history, version 1: 2020-06-29. Checked 2026-11-09."
+    },
+    "CatBourniMramor2023": {
+      "authors": [
+        "Bourni",
+        "Mramor"
+      ],
+      "date": "2022-01-06",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2201.02134",
+      "evidence": "arXiv submission history, version 1: 2022-01-06. Checked 2026-11-09."
+    },
+    "CatBraxtonLeeZhu2026": {
+      "authors": [
+        "Braxton",
+        "Lee",
+        "Zhu"
+      ],
+      "date": "2026-09-17",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2609.19648",
+      "evidence": "arXiv submission history, version 1: 2026-09-17. Checked 2026-11-09."
+    },
+    "CatBueno2018": {
+      "authors": [
+        "Bueno"
+      ],
+      "date": "2018-03-07",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1803.02783",
+      "evidence": "arXiv submission history, version 1: 2018-03-07. Checked 2026-11-09."
+    },
+    "CatBuenoLopez2024": {
+      "authors": [
+        "Bueno",
+        "López"
+      ],
+      "date": "2024-02-08",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2402.05772",
+      "evidence": "arXiv submission history, version 1: 2024-02-08. Checked 2026-11-09."
+    },
+    "CatBuenoLopez2024a": {
+      "authors": [
+        "Bueno",
+        "López"
+      ],
+      "date": "2024-02-08",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2402.05533",
+      "evidence": "arXiv submission history, version 1: 2024-02-08. Checked 2026-11-09."
+    },
+    "CatCastroLerma2012": {
+      "authors": [
+        "Castro",
+        "Lerma"
+      ],
+      "date": "2010-07-12",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1007.1886",
+      "evidence": "arXiv submission history, version 1: 2010-07-12. Checked 2026-11-09."
+    },
+    "CatChang2026": {
+      "authors": [
+        "Chang"
+      ],
+      "date": "2021-07-09",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2107.04338",
+      "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09."
+    },
+    "CatChangLue2019": {
+      "authors": [
+        "Chang",
+        "Lue"
+      ],
+      "date": "2019-01-29",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1901.10315",
+      "evidence": "arXiv submission history, version 1: 2019-01-29. Checked 2026-11-09."
+    },
+    "CatChangSpruck2017": {
+      "authors": [
+        "Chang",
+        "Spruck"
+      ],
+      "date": "2015-10-24",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1510.07183",
+      "evidence": "arXiv submission history, version 1: 2015-10-24. Checked 2026-11-09."
+    },
+    "CatChen2026": {
+      "authors": [
+        "Chen"
+      ],
+      "date": "2022-12-21",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2212.10798",
+      "evidence": "arXiv submission history, version 1: 2022-12-21. Checked 2026-11-09."
+    },
+    "CatChenGuo2007": {
+      "authors": [
+        "Chen",
+        "Guo"
+      ],
+      "date": "2007",
+      "kind": "publication",
+      "url": "https://doi.org/10.1016/j.physd.2007.03.009",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatChoiHuangLee2025": {
+      "authors": [
+        "Choi",
+        "Huang",
+        "Lee"
+      ],
+      "date": "2024-05-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2405.01062",
+      "evidence": "arXiv submission history, version 1: 2024-05-02. Checked 2026-11-09."
+    },
+    "CatChoiSeoSuZhao2026": {
+      "authors": [
+        "Choi",
+        "Seo",
+        "Su",
+        "Zhao"
+      ],
+      "date": "2026-03-10",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2603.09112",
+      "evidence": "arXiv submission history, version 1: 2026-03-10. Checked 2026-11-09."
+    },
+    "CatChopp1994": {
+      "authors": [
+        "Chopp"
+      ],
+      "date": "1994",
+      "kind": "publication",
+      "url": "https://doi.org/10.1080/10586458.1994.10504572",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatChoppMinimal1993": {
+      "authors": [
+        "Chopp"
+      ],
+      "date": "1993",
+      "kind": "publication",
+      "url": "https://doi.org/10.1006/jcph.1993.1092",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatDavilaPinoWei2026": {
+      "authors": [
+        "Davila",
+        "del Pino",
+        "Wei"
+      ],
+      "date": "2026-09-04",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2609.04675",
+      "evidence": "arXiv submission history, version 1: 2026-09-04. Checked 2026-11-09."
+    },
+    "CatDruganKleene2017": {
+      "authors": [
+        "Drugan",
+        "Kleene"
+      ],
+      "date": "2013-06-10",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1306.2383",
+      "evidence": "arXiv submission history, version 1: 2013-06-10. Checked 2026-11-09."
+    },
+    "CatDuHaslhofer2021": {
+      "authors": [
+        "Du",
+        "Haslhofer"
+      ],
+      "date": "2021-05-28",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2105.13830",
+      "evidence": "arXiv submission history, version 1: 2021-05-28. Checked 2026-11-09."
+    },
+    "CatEckerHuisken1989": {
+      "authors": [
+        "Ecker",
+        "Huisken"
+      ],
+      "date": "1989",
+      "kind": "publication",
+      "url": "https://doi.org/10.2307/1971452",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatFujii2024": {
+      "authors": [
+        "Fujii"
+      ],
+      "date": "2021-09-30",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2109.14809",
+      "evidence": "arXiv submission history, version 1: 2021-09-30. Checked 2026-11-09."
+    },
+    "CatFujiiKoike2023": {
+      "authors": [
+        "Fujii",
+        "Koike"
+      ],
+      "date": "2023-08-30",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2308.15790",
+      "evidence": "arXiv submission history, version 1: 2023-08-30. Checked 2026-11-09."
+    },
+    "CatHMWTridents22": {
+      "authors": [
+        "Hoffman",
+        "Martín",
+        "White"
+      ],
+      "date": "2019-09-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1909.09241",
+      "evidence": "arXiv submission history, version 1: 2019-09-19. Checked 2026-11-09."
+    },
+    "CatHalldorsson2012": {
+      "authors": [
+        "Halldórsson"
+      ],
+      "date": "2010-07-09",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1007.1617",
+      "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09."
+    },
+    "CatHalldorsson2013": {
+      "authors": [
+        "Halldórsson"
+      ],
+      "date": "2011-06-22",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1106.4583",
+      "evidence": "arXiv submission history, version 1: 2011-06-22. Checked 2026-11-09."
+    },
+    "CatImagiJoyceOliveira2016": {
+      "authors": [
+        "Imagi",
+        "Joyce",
+        "Oliveira dos Santos"
+      ],
+      "date": "2014-04-01",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1404.0271",
+      "evidence": "arXiv submission history, version 1: 2014-04-01. Checked 2026-11-09."
+    },
+    "CatJoyceLeeTsui2010": {
+      "authors": [
+        "Joyce",
+        "Lee",
+        "Tsui"
+      ],
+      "date": "2008-01-24",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/0801.3721",
+      "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09."
+    },
+    "CatKleeneMoller2014": {
+      "authors": [
+        "Kleene",
+        "Moller"
+      ],
+      "date": "2010-08-10",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1008.1609",
+      "evidence": "arXiv submission history, version 1: 2010-08-10. Checked 2026-11-09."
+    },
+    "CatLangfordLiuMcNamara2025": {
+      "authors": [
+        "Langford",
+        "Liu",
+        "McNamara"
+      ],
+      "date": "2024-04-01",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2404.01525",
+      "evidence": "arXiv submission history, version 1: 2024-04-01. Checked 2026-11-09."
+    },
+    "CatLee2023": {
+      "authors": [
+        "Lee"
+      ],
+      "date": "2022-11-10",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2211.05625",
+      "evidence": "arXiv submission history, version 1: 2022-11-10. Checked 2026-11-09."
+    },
+    "CatLeeTsai2026": {
+      "authors": [
+        "Lee",
+        "Tsai"
+      ],
+      "date": "2026-06-27",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28767",
+      "evidence": "arXiv submission history, version 1: 2026-06-27. Checked 2026-11-09."
+    },
+    "CatLeeWang2009": {
+      "authors": [
+        "Lee",
+        "Mu-Tao Wang"
+      ],
+      "date": "2007-07-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/0707.0239",
+      "evidence": "arXiv submission history, version 1: 2007-07-02. Checked 2026-11-09."
+    },
+    "CatLeeWang2010": {
+      "authors": [
+        "Lee",
+        "Mu-Tao Wang"
+      ],
+      "date": "2008-02-04",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/0802.0359",
+      "evidence": "arXiv submission history, version 1: 2008-02-04. Checked 2026-11-09."
+    },
+    "CatLiao2025": {
+      "authors": [
+        "Liao"
+      ],
+      "date": "2025-12-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2512.02578",
+      "evidence": "arXiv submission history, version 1: 2025-12-02. Checked 2026-11-09."
+    },
+    "CatLimaRamos2026": {
+      "authors": [
+        "de Lima",
+        "Ramos"
+      ],
+      "date": "2026-02-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2602.02424",
+      "evidence": "arXiv submission history, version 1: 2026-02-02. Checked 2026-11-09."
+    },
+    "CatLimaRamosSantos2025": {
+      "authors": [
+        "de Lima",
+        "Ramos",
+        "dos Santos"
+      ],
+      "date": "2024-02-07",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2402.04757",
+      "evidence": "arXiv submission history, version 1: 2024-02-07. Checked 2026-11-09."
+    },
+    "CatLimaRamosSantos2026": {
+      "authors": [
+        "de Lima",
+        "Ramos",
+        "dos Santos"
+      ],
+      "date": "2023-07-26",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2307.14136",
+      "evidence": "arXiv submission history, version 1: 2023-07-26. Checked 2026-11-09."
+    },
+    "CatLiuTerng2020": {
+      "authors": [
+        "Liu",
+        "Terng"
+      ],
+      "date": "2019-11-28",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1911.12535",
+      "evidence": "arXiv submission history, version 1: 2019-11-28. Checked 2026-11-09."
+    },
+    "CatLopezMunteanu2024": {
+      "authors": [
+        "López",
+        "Munteanu"
+      ],
+      "date": "2024-05-24",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2405.15957",
+      "evidence": "arXiv submission history, version 1: 2024-05-24. Checked 2026-11-09."
+    },
+    "CatLotayOliveira2023": {
+      "authors": [
+        "Lotay",
+        "Oliveira"
+      ],
+      "date": "2023-05-09",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2305.05744",
+      "evidence": "arXiv submission history, version 1: 2023-05-09. Checked 2026-11-09."
+    },
+    "CatMS07": {
+      "authors": [
+        "Mazzeo",
+        "Saez"
+      ],
+      "date": "2007-04-24",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/0704.3113",
+      "evidence": "arXiv submission history, version 1: 2007-04-24. Checked 2026-11-09."
+    },
+    "CatMa2021": {
+      "authors": [
+        "Ma"
+      ],
+      "date": "2020-03-06",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2003.03018",
+      "evidence": "arXiv submission history, version 1: 2020-03-06. Checked 2026-11-09."
+    },
+    "CatMadnickWood2025": {
+      "authors": [
+        "Madnick",
+        "Wood"
+      ],
+      "date": "2022-08-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2208.01574",
+      "evidence": "arXiv submission history, version 1: 2022-08-02. Checked 2026-11-09."
+    },
+    "CatMaganoSmith2020": {
+      "authors": [
+        "Magaño",
+        "Smith"
+      ],
+      "date": "2020-03-31",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2004.00054",
+      "evidence": "arXiv submission history, version 1: 2020-03-31. Checked 2026-11-09."
+    },
+    "CatMelko2010": {
+      "authors": [
+        "Melko"
+      ],
+      "date": "2010",
+      "kind": "publication",
+      "url": "https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatNakayamaIizukaWadati1994": {
+      "authors": [
+        "Nakayama",
+        "Iizuka",
+        "Wadati"
+      ],
+      "date": "1994",
+      "kind": "publication",
+      "url": "https://doi.org/10.1143/JPSJ.63.1311",
+      "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified."
+    },
+    "CatNeto2026": {
+      "authors": [
+        "Neto"
+      ],
+      "date": "2026-10-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2610.25833",
+      "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09."
+    },
+    "CatNeto2026a": {
+      "authors": [
+        "Neto"
+      ],
+      "date": "2026-10-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2610.25831",
+      "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09."
+    },
+    "CatNguyen2013": {
+      "authors": [
+        "X. H. Nguyen"
+      ],
+      "date": "2010-04-15",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1004.2657",
+      "evidence": "arXiv submission history, version 1: 2010-04-15. Checked 2026-11-09."
+    },
+    "CatNguyen2015": {
+      "authors": [
+        "X. H. Nguyen"
+      ],
+      "date": "2012-04-22",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1204.4921",
+      "evidence": "arXiv submission history, version 1: 2012-04-22. Checked 2026-11-09."
+    },
+    "CatPark2026": {
+      "authors": [
+        "Park"
+      ],
+      "date": "2026-08-11",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2608.11046",
+      "evidence": "arXiv submission history, version 1: 2026-08-11. Checked 2026-11-09."
+    },
+    "CatPipoli2018": {
+      "authors": [
+        "Pipoli"
+      ],
+      "date": "2018-11-12",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1811.04619",
+      "evidence": "arXiv submission history, version 1: 2018-11-12. Checked 2026-11-09."
+    },
+    "CatPipoli2019": {
+      "authors": [
+        "Pipoli"
+      ],
+      "date": "2019-06-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1906.08077",
+      "evidence": "arXiv submission history, version 1: 2019-06-19. Checked 2026-11-09."
+    },
+    "CatRiedler2023": {
+      "authors": [
+        "Riedler"
+      ],
+      "date": "2022-07-11",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2207.04851",
+      "evidence": "arXiv submission history, version 1: 2022-07-11. Checked 2026-11-09."
+    },
+    "CatShaoZou2025a": {
+      "authors": [
+        "Shao",
+        "Zou"
+      ],
+      "date": "2025-07-25",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2507.19428",
+      "evidence": "arXiv submission history, version 1: 2025-07-25. Checked 2026-11-09."
+    },
+    "CatStolarski2023": {
+      "authors": [
+        "Stolarski"
+      ],
+      "date": "2020-03-13",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2003.06383",
+      "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09."
+    },
+    "CatStolarskiSu2026": {
+      "authors": [
+        "Stolarski",
+        "Su"
+      ],
+      "date": "2026-07-03",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2607.03152",
+      "evidence": "arXiv submission history, version 1: 2026-07-03. Checked 2026-11-09."
+    },
+    "CatSu2022": {
+      "authors": [
+        "Su"
+      ],
+      "date": "2020-11-16",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2011.07882",
+      "evidence": "arXiv submission history, version 1: 2020-11-16. Checked 2026-11-09."
+    },
+    "CatSuTsaiWood2026": {
+      "authors": [
+        "Su",
+        "Tsai",
+        "Wood"
+      ],
+      "date": "2024-01-04",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2401.02228",
+      "evidence": "arXiv submission history, version 1: 2024-01-04. Checked 2026-11-09."
+    },
+    "CatSuWood2026": {
+      "authors": [
+        "Su",
+        "Wood"
+      ],
+      "date": "2025-07-02",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2507.01345",
+      "evidence": "arXiv submission history, version 1: 2025-07-02. Checked 2026-11-09."
+    },
+    "CatTsaiTsuiWang2025": {
+      "authors": [
+        "Tsai",
+        "Tsui",
+        "Mu-Tao Wang"
+      ],
+      "date": "2023-09-18",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2309.09432",
+      "evidence": "arXiv submission history, version 1: 2023-09-18. Checked 2026-11-09."
+    },
+    "CatWoolgarXie2022": {
+      "authors": [
+        "Woolgar",
+        "Xie"
+      ],
+      "date": "2021-01-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2101.07469",
+      "evidence": "arXiv submission history, version 1: 2021-01-19. Checked 2026-11-09."
+    },
+    "CatYamamoto2012": {
+      "authors": [
+        "Yamamoto"
+      ],
+      "date": "2012-03-18",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1203.3934",
+      "evidence": "arXiv submission history, version 1: 2012-03-18. Checked 2026-11-09."
     }
   },
   "examples": {
@@ -597,7 +1312,9 @@
     "ex:catalogue-rotating-curves": {
       "name": "Purely rotating curve-shortening solitons",
       "references": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012",
+        "CatHalldorsson2013"
       ],
       "background_references": {}
     },
@@ -611,21 +1328,24 @@
     "ex:catalogue-rotating-expanding-curves": {
       "name": "Rotating and expanding curve solitons",
       "references": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "background_references": {}
     },
     "ex:catalogue-rotating-shrinking-curves": {
       "name": "Rotating and shrinking curve solitons",
       "references": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "background_references": {}
     },
     "ex:catalogue-stationary-catenoid": {
-      "name": "The catenoid as an eternal stationary flow",
+      "name": "Minimal surfaces as stationary mean curvature flows",
       "references": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "background_references": {}
     },
@@ -693,9 +1413,13 @@
     "ex:catalogue-minimal-ancient-flows": {
       "name": "Ancient flows from unstable minimal hypersurfaces",
       "references": [
-        "CatMP19"
+        "CatMP19",
+        "CatMelko2010",
+        "CatChoiHuangLee2025"
       ],
-      "background_references": {}
+      "background_references": {
+        "CatMelko2010": "Parametrization of the stationary Costa surface used for the illustration, not the ancient flow constructed from it."
+      }
     },
     "ex:catalogue-reapernoid": {
       "name": "The eternal reapernoid",
@@ -721,14 +1445,16 @@
     "ex:catalogue-grim-reaper-chains": {
       "name": "Eternal curves from chains of grim reapers",
       "references": [
-        "CatAY18"
+        "CatAY18",
+        "CatChoiSeoSuZhao2026"
       ],
       "background_references": {}
     },
     "ex:catalogue-expanding-corners": {
       "name": "Expanding smoothings of planar corners",
       "references": [
-        "CatDing20"
+        "CatDing20",
+        "CatHalldorsson2012"
       ],
       "background_references": {}
     },
@@ -763,7 +1489,8 @@
     "ex:catalogue-expanding-networks": {
       "name": "Self-expanding planar tree networks",
       "references": [
-        "CatINS19"
+        "CatINS19",
+        "CatMS07"
       ],
       "background_references": {}
     },
@@ -775,9 +1502,10 @@
       "background_references": {}
     },
     "ex:catalogue-high-genus-expanders": {
-      "name": "Expanders of unbounded genus at a fixed cone",
+      "name": "Three-ended expanders of positive genus",
       "references": [
-        "CatHMWExpand26"
+        "CatHMWExpand26",
+        "CatShaoZou2025a"
       ],
       "background_references": {}
     },
@@ -845,8 +1573,8 @@
     "ex:catalogue-scherkenoids": {
       "name": "Scherkenoid translators",
       "references": [
-        "CatHIMWNotes19",
-        "CatHMW20"
+        "CatHMW20",
+        "CatHIMWNotes19"
       ],
       "background_references": {}
     },
@@ -863,8 +1591,9 @@
     "ex:catalogue-nguyen-tridents": {
       "name": "Periodic translating tridents",
       "references": [
-        "CatHIMWNotes19",
-        "CatNguyen09"
+        "CatHMWTridents22",
+        "CatNguyen09",
+        "CatHIMWNotes19"
       ],
       "background_references": {}
     },
@@ -950,7 +1679,8 @@
       "references": [
         "CatAL1986",
         "CatDLN2018",
-        "CatCMComplexity2020"
+        "CatCMComplexity2020",
+        "CatHalldorsson2012"
       ],
       "background_references": {}
     },
@@ -1115,6 +1845,619 @@
       "name": "Chu–Sun genus-one shrinkers below the shrinking doughnut",
       "references": [
         "CatChuSun2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-halldorsson-dense-shrinkers": {
+      "name": "Nonclosed shrinking curves dense in an annulus",
+      "references": [
+        "CatHalldorsson2012"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-halldorsson-helicoidal-translators": {
+      "name": "Halldorsson helicoidal rotating translators",
+      "references": [
+        "CatHalldorsson2013"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-halldorsson-minimal-helicoids": {
+      "name": "Helicoidal minimal surfaces as stationary flows",
+      "references": [
+        "CatHalldorsson2013"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lawlor-necks": {
+      "name": "Stationary special Lagrangian necks",
+      "references": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-aryan-lee": {
+      "name": "Immortal curve shortening with nonunique geodesic limits",
+      "references": [
+        "CatAryanLee2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-su-tsai-wood": {
+      "name": "Lagrangian torus necks collapsing at infinite time",
+      "references": [
+        "CatSuTsaiWood2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lee-tsai": {
+      "name": "Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "references": [
+        "CatLeeTsai2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-su-wood-stationary": {
+      "name": "Su–Wood stationary products of Lawlor profiles",
+      "references": [
+        "CatSuWood2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-stolarski-su": {
+      "name": "Stolarski–Su finite-time Lagrangian neck pinches",
+      "references": [
+        "CatStolarskiSu2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-expanders": {
+      "name": "Lagrangian expander necks between transverse planes",
+      "references": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-ttw-expanders": {
+      "name": "Two-convex Lagrangian graphical expanders",
+      "references": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lw-quadric-expanders": {
+      "name": "Lee–Wang embedded quadric expanders",
+      "references": [
+        "CatLeeWang2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-translators": {
+      "name": "Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "references": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-rotating-translators": {
+      "name": "Explicit rotating Lagrangian translators",
+      "references": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-su-glued-translators": {
+      "name": "Su translators obtained by gluing grim cylinders",
+      "references": [
+        "CatSu2022"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-mobius-shrinker": {
+      "name": "An embedded self-shrinking Möbius bundle",
+      "references": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-compact-shrinkers": {
+      "name": "Compact periodic Lagrangian quadric shrinkers",
+      "references": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lw-quadric-shrinkers": {
+      "name": "Lee–Wang embedded quadric shrinkers",
+      "references": [
+        "CatLeeWang2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-chopp-cube": {
+      "name": "Chopp cubical shrinker candidate",
+      "references": [
+        "CatChopp1994"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-chopp-octahedron": {
+      "name": "Chopp octahedral shrinker candidate",
+      "references": [
+        "CatChopp1994"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-chopp-saddle": {
+      "name": "Chopp punctured-torus saddle candidate",
+      "references": [
+        "CatChopp1994"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-chopp-two-handle": {
+      "name": "Chopp two-handled cone candidate",
+      "references": [
+        "CatChopp1994"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-chopp-four-handle": {
+      "name": "Numerical four-handled cone shrinker candidate",
+      "references": [
+        "CatChopp1994",
+        "CatAIC95"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-drugan-kleene": {
+      "name": "Drugan–Kleene immersed shrinking families",
+      "references": [
+        "CatDruganKleene2017"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-riedler-isoparametric": {
+      "name": "Riedler shrinkers from isoparametric foliations",
+      "references": [
+        "CatRiedler2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-anciaux-legendrian-shrinkers": {
+      "name": "Lagrangian shrinkers with minimal Legendrian leaves",
+      "references": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-anciaux-legendrian-expanders": {
+      "name": "Lagrangian expanders with minimal Legendrian leaves",
+      "references": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-nguyen-grim-configurations": {
+      "name": "Translators from grim-reaper configurations",
+      "references": [
+        "CatNguyen2013",
+        "CatNguyen2015"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-polyhedral-slab-translators": {
+      "name": "Convex slab translators with polyhedral asymptotics",
+      "references": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-castro-lerma-pairs": {
+      "name": "Castro–Lerma Lagrangian translators from curve pairs",
+      "references": [
+        "CatCastroLerma2012"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-su-wood-translating-helicoids": {
+      "name": "Su–Wood Lagrangian translating helicoids",
+      "references": [
+        "CatSuWood2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-su-wood-paired-translators": {
+      "name": "Su–Wood paired-profile translators",
+      "references": [
+        "CatSuWood2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-nonconvex-entire-translators": {
+      "name": "Nonconvex entire graphical translators",
+      "references": [
+        "CatDavilaPinoWei2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-graphical-cone-expanders": {
+      "name": "Graphical expanders from general Lipschitz cones",
+      "references": [
+        "CatEckerHuisken1989"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lawson-osserman-expanders": {
+      "name": "Expanders based on generalized Lawson–Osserman maps",
+      "references": [
+        "CatLee2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-birotational-expanders": {
+      "name": "Bi-rotational expanding hypersurfaces",
+      "references": [
+        "CatNeto2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-birotational-shrinkers": {
+      "name": "Complete bi-rotational shrinking continuations",
+      "references": [
+        "CatNeto2026a"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-ancient-sine-wave": {
+      "name": "The ancient sine wave",
+      "references": [
+        "CatNakayamaIizukaWadati1994",
+        "CatAY18"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-ma-halfplane-ancient": {
+      "name": "Immersed ancient curves spanning a half-plane",
+      "references": [
+        "CatMa2021"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-nonplanar-eternal-reapers": {
+      "name": "Nonplanar eternal curves from grim reapers",
+      "references": [
+        "CatBourniMramor2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-collapsed-ancient-pancakes": {
+      "name": "Rotational collapsed ancient pancakes",
+      "references": [
+        "CatBourniLangfordTinaglia2017"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-polyhedral-ancient-pancakes": {
+      "name": "Ancient pancakes with polyhedral asymptotics",
+      "references": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-convex-eternal-nontranslators": {
+      "name": "Convex eternal flows that do not translate",
+      "references": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-reduced-symmetry-ancient-ovals": {
+      "name": "Ancient ovals with reduced symmetry",
+      "references": [
+        "CatDuHaslhofer2021"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-ancient-doughnuts": {
+      "name": "Non-self-similar ancient doughnuts",
+      "references": [
+        "CatBourniLangfordMramor2020"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-isoparametric-ancient-euclidean": {
+      "name": "Ancient isoparametric flows in Euclidean space",
+      "references": [
+        "CatLiuTerng2020"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-isoparametric-ancient-sphere": {
+      "name": "Ancient isoparametric flows in spheres",
+      "references": [
+        "CatLiuTerng2020"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-flows-emerging-from-cones": {
+      "name": "Non-self-similar flows emerging from cones",
+      "references": [
+        "CatChen2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-bounded-mean-curvature-singularities": {
+      "name": "Hypersurface singularities with bounded mean curvature",
+      "references": [
+        "CatStolarski2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-cohomogeneity-one-lagrangian-singularities": {
+      "name": "Lagrangian singularities with prescribed orbit models",
+      "references": [
+        "CatMadnickWood2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-spoon": {
+      "name": "Spoon-shaped shrinking network",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-lens": {
+      "name": "Shrinking lens network",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-fish": {
+      "name": "Shrinking fish network",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-three-ray": {
+      "name": "Three-ray shrinking star",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-four-ray": {
+      "name": "Four-ray shrinking star",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-five-ray": {
+      "name": "Five-ray shrinking star",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-rocket": {
+      "name": "Shrinking rocket network",
+      "references": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-network-cisgeminate-eye": {
+      "name": "Cisgeminate-eye shrinker",
+      "references": [
+        "CatChangLue2019"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-shrinking-lens-cluster": {
+      "name": "Lens-shaped shrinking surface clusters",
+      "references": [
+        "CatBaldiHausMantegazza2019"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-rotational-trumpet-ends": {
+      "name": "Rotational shrinking trumpet ends",
+      "references": [
+        "CatKleeneMoller2014"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-isoparametric-shrinking-ends": {
+      "name": "Shrinking ends asymptotic to isoparametric cones",
+      "references": [
+        "CatChangSpruck2017"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-park-birotational-ends": {
+      "name": "Park bi-rotational shrinking ends",
+      "references": [
+        "CatPark2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-expanding-cycle-networks": {
+      "name": "Expanding planar networks with a bounded cell",
+      "references": [
+        "CatChenGuo2007"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-multiphase-expander-report": {
+      "name": "Reported multiphase expanding surface constructions",
+      "references": [
+        "CatLiao2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-free-boundary-ancient-balls": {
+      "name": "Convex ancient free-boundary flows in balls",
+      "references": [
+        "CatBourniLangford2023",
+        "CatBourniLangford2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-free-boundary-convex-domains": {
+      "name": "Ancient free-boundary curves in convex domains",
+      "references": [
+        "CatBourniBurnsCatron2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-mixed-boundary-ancient-curves": {
+      "name": "Ancient curves with mixed boundary conditions",
+      "references": [
+        "CatLangfordLiuMcNamara2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-unstable-free-boundary-ancient": {
+      "name": "Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "references": [
+        "CatBourniFranz2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-yamamoto-cone-shrinkers": {
+      "name": "Yamamoto Lagrangian shrinkers in Calabi–Yau cones",
+      "references": [
+        "CatYamamoto2012"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-product-rotational-translators": {
+      "name": "Rotational translators in the hyperbolic-plane product",
+      "references": [
+        "CatBueno2018"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-product-grim-reapers": {
+      "name": "Grim reapers in the hyperbolic-plane product",
+      "references": [
+        "CatBuenoLopez2024"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-product-helicoidal": {
+      "name": "Helicoidal rotators-translators in the hyperbolic-plane product",
+      "references": [
+        "CatLimaRamosSantos2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-killing-catenoids": {
+      "name": "Hyperbolic Killing translators and catenoids",
+      "references": [
+        "CatLimaRamosSantos2026",
+        "CatLimaRamos2026"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-parabolic-grims": {
+      "name": "Parabolic Killing grim reapers in hyperbolic space",
+      "references": [
+        "CatBuenoLopez2024a"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-nil-invariant-translators": {
+      "name": "Invariant translators in the Heisenberg group",
+      "references": [
+        "CatPipoli2018"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-sol-invariant-translators": {
+      "name": "Invariant translators in Sol geometry",
+      "references": [
+        "CatPipoli2019"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-sl2-invariant-translators": {
+      "name": "Invariant translators in the special linear group",
+      "references": [
+        "CatLopezMunteanu2024"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-compact-symmetric-product-translators": {
+      "name": "Graphical translators over compact symmetric spaces",
+      "references": [
+        "CatFujii2024",
+        "CatFujiiKoike2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-hyperbolic-curve-solitons": {
+      "name": "Isometric curve-shortening solitons in the hyperbolic plane",
+      "references": [
+        "CatWoolgarXie2022"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-perturbed-sphere-eternal-tori": {
+      "name": "Eternal tori in perturbations of the round three-sphere",
+      "references": [
+        "CatMaganoSmith2020"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-lotay-oliveira-neck-pinches": {
+      "name": "Finite-time Lagrangian neck pinches with circle symmetry",
+      "references": [
+        "CatLotayOliveira2023"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-mixed-periodic-shrinkers": {
+      "name": "Noncompact periodic Lagrangian shrinkers",
+      "references": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-jlt-mixed-periodic-expanders": {
+      "name": "Noncompact periodic Lagrangian expanders",
+      "references": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-sun-wang-prescribed-ends": {
+      "name": "Translators with general closed-shrinker ends",
+      "references": [
+        "CatSunWang2025"
+      ],
+      "background_references": {}
+    },
+    "ex:catalogue-immersed-ancient-grim-chains": {
+      "name": "Immersed ancient curves from grim-reaper chains",
+      "references": [
+        "CatAY18"
       ],
       "background_references": {}
     }

@@ -45,8 +45,8 @@ class AmbientArrangementTests(unittest.TestCase):
                 expected = sorted([t for t in original[key]['topics'] if t in group['topics']],
                                   key=lambda t: date_key(history(by_section[t]['label'])['date']))
                 self.assertEqual(group['topics'], expected)
-        self.assertEqual(self.chapters['shrinkers']['topics'][:3], ['abresch-langer-closed-shrinking-curves', 'round-shrinking-spheres', 'planes-through-the-shrinker-center'])
-        self.assertEqual(self.chapters['other-special-flows']['topics'][0], 'the-angenent-oval-as-an-explicit-ancient-flow')
+        self.assertEqual(self.chapters['shrinkers']['topics'][0], 'abresch-langer-closed-shrinking-curves')
+        self.assertEqual(self.chapters['other-special-flows']['topics'][0], 'the-ancient-sine-wave')
 
     def test_dimension_restrictions_and_curved_spaces_are_not_inferred(self):
         self.assertEqual(list(ambient_memberships(registry()['ex:catalogue-eternal-helices'])), ['r3', 'higher'])
