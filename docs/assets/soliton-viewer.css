@@ -1,4 +1,5 @@
 .soliton-figure{margin:28px 0;padding:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--background,#fff)}
+.soliton-figure .soliton-stage:has(img[src$="halldorsson-dense.svg"]){height:auto;aspect-ratio:960/730}
 /* Lee–Wang: a fixed scale across all four exact time slices. */
 .soliton-figure.lw-expander-figure .soliton-stage{height:610px}
 .soliton-figure.lw-expander-figure[data-lw-view=slice] .soliton-stage{height:480px}

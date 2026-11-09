@@ -1,0 +1,40 @@
+{
+  "source": "Halldorsson, arXiv:1007.1617v2, §2 and §5, Theorem 5.1, pp. 11–13; Figures 4–7, pp. 17–18.",
+  "normalization": "A=0, B=-1/2; time -1 profile; X(s,t)=sqrt(-t)X(s), t<0.",
+  "method": "DOP853 shooting to an irrational target; one complete phase period, then rotated continuation. 801 samples per excursion.",
+  "limitations": "Floating-point diagnostics, not certified error bounds or a numerical proof of irrationality. Only finite parameter windows are drawn.",
+  "profiles": [
+    {
+      "name": "Narrow annulus",
+      "target_expression": "1/√2 − 1/100",
+      "alpha": 0.6971067811865473,
+      "r_min": 0.876433384135405,
+      "r_max": 2.033321559206418,
+      "period": 6.462891120301397,
+      "diagnostics": {
+        "turning_residual": -1.1102230246251565e-16,
+        "phase_return": 5.609168742385078e-16,
+        "invariant_drift": 4.996003610813204e-16,
+        "refinement_max": 8.455206652451151e-15,
+        "continuation_max": 1.2293833977623068e-13,
+        "radius_relation_residual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "Broad annulus",
+      "target_expression": "(√5 − 1)/2",
+      "alpha": 0.6180339887498977,
+      "r_min": 0.15144323076121258,
+      "r_max": 3.5564212147745713,
+      "period": 8.128309368374778,
+      "diagnostics": {
+        "turning_residual": 2.7755575615628914e-15,
+        "phase_return": 4.0579553904724823e-16,
+        "invariant_drift": 7.632783294297951e-16,
+        "refinement_max": 1.0053497077208614e-14,
+        "continuation_max": 8.25346742838212e-13,
+        "radius_relation_residual": 6.661338147750939e-16
+      }
+    }
+  ]
+}
