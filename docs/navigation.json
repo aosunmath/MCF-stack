@@ -69,184 +69,292 @@
     "section": "nonclosed-shrinking-curves-dense-in-an-annulus"
   },
   {
+    "route": "sections/brakke-spoon",
+    "title": "2.5 Brakke spoon",
+    "chapter": "shrinkers",
+    "section": "brakke-spoon"
+  },
+  {
+    "route": "sections/shrinking-lens-network",
+    "title": "2.6 Shrinking lens network",
+    "chapter": "shrinkers",
+    "section": "shrinking-lens-network"
+  },
+  {
+    "route": "sections/shrinking-fish-network",
+    "title": "2.7 Shrinking fish network",
+    "chapter": "shrinkers",
+    "section": "shrinking-fish-network"
+  },
+  {
+    "route": "sections/three-ray-shrinking-star",
+    "title": "2.8 Three-ray shrinking star",
+    "chapter": "shrinkers",
+    "section": "three-ray-shrinking-star"
+  },
+  {
+    "route": "sections/four-ray-shrinking-star",
+    "title": "2.9 Four-ray shrinking star",
+    "chapter": "shrinkers",
+    "section": "four-ray-shrinking-star"
+  },
+  {
+    "route": "sections/five-ray-shrinking-star",
+    "title": "2.10 Five-ray shrinking star",
+    "chapter": "shrinkers",
+    "section": "five-ray-shrinking-star"
+  },
+  {
+    "route": "sections/shrinking-rocket-network",
+    "title": "2.11 Shrinking rocket network",
+    "chapter": "shrinkers",
+    "section": "shrinking-rocket-network"
+  },
+  {
+    "route": "sections/cisgeminate-eye-shrinker",
+    "title": "2.12 Cisgeminate-eye shrinker",
+    "chapter": "shrinkers",
+    "section": "cisgeminate-eye-shrinker"
+  },
+  {
     "route": "sections/generalized-shrinking-cylinders",
-    "title": "2.5 Generalized shrinking cylinders",
+    "title": "2.13 Generalized shrinking cylinders",
     "chapter": "shrinkers",
     "section": "generalized-shrinking-cylinders"
   },
   {
     "route": "sections/angenent-s-shrinking-torus",
-    "title": "2.6 Angenent's shrinking torus",
+    "title": "2.14 Angenent's shrinking torus",
     "chapter": "shrinkers",
     "section": "angenent-s-shrinking-torus"
   },
   {
     "route": "sections/drugan-s-immersed-shrinking-spheres",
-    "title": "2.7 Drugan's immersed shrinking spheres",
+    "title": "2.15 Drugan's immersed shrinking spheres",
     "chapter": "shrinkers",
     "section": "drugan-s-immersed-shrinking-spheres"
   },
   {
     "route": "sections/moller-closed-shrinkers-of-large-even-genus",
-    "title": "2.8 Møller closed shrinkers of large even genus",
+    "title": "2.16 Møller closed shrinkers of large even genus",
     "chapter": "shrinkers",
     "section": "moller-closed-shrinkers-of-large-even-genus"
   },
   {
     "route": "sections/kapouleas-kleene-moller-shrinkers-with-one-end",
-    "title": "2.9 Kapouleas–Kleene–Møller shrinkers with one end",
+    "title": "2.17 Kapouleas–Kleene–Møller shrinkers with one end",
     "chapter": "shrinkers",
     "section": "kapouleas-kleene-moller-shrinkers-with-one-end"
   },
   {
     "route": "sections/drugan-nguyen-variational-shrinking-tori",
-    "title": "2.10 Drugan–Nguyen variational shrinking tori",
+    "title": "2.18 Drugan–Nguyen variational shrinking tori",
     "chapter": "shrinkers",
     "section": "drugan-nguyen-variational-shrinking-tori"
   },
   {
     "route": "sections/buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
-    "title": "2.11 Buzano–Nguyen–Schulz shrinkers of every positive genus",
+    "title": "2.19 Buzano–Nguyen–Schulz shrinkers of every positive genus",
     "chapter": "shrinkers",
     "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus"
   },
   {
     "route": "sections/ketover-self-shrinking-doubled-planes",
-    "title": "2.12 Ketover self-shrinking doubled planes",
+    "title": "2.20 Ketover self-shrinking doubled planes",
     "chapter": "shrinkers",
     "section": "ketover-self-shrinking-doubled-planes"
   },
   {
     "route": "sections/closed-shrinkers-from-spherical-doubling",
-    "title": "2.13 Closed shrinkers from spherical doubling",
+    "title": "2.21 Closed shrinkers from spherical doubling",
     "chapter": "shrinkers",
     "section": "closed-shrinkers-from-spherical-doubling"
   },
   {
     "route": "sections/nguyen-s-one-ended-shrinking-saddles",
-    "title": "2.14 Nguyen's one-ended shrinking saddles",
+    "title": "2.22 Nguyen's one-ended shrinking saddles",
     "chapter": "shrinkers",
     "section": "nguyen-s-one-ended-shrinking-saddles"
   },
   {
     "route": "sections/ilmanen-white-two-ended-shrinkers",
-    "title": "2.15 Ilmanen–White two-ended shrinkers",
+    "title": "2.23 Ilmanen–White two-ended shrinkers",
     "chapter": "shrinkers",
     "section": "ilmanen-white-two-ended-shrinkers"
   },
   {
     "route": "sections/shao-zou-shrinkers-with-any-prescribed-number-of-ends",
-    "title": "2.16 Shao–Zou shrinkers with any prescribed number of ends",
+    "title": "2.24 Shao–Zou shrinkers with any prescribed number of ends",
     "chapter": "shrinkers",
     "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends"
   },
   {
     "route": "sections/flow-generated-platonic-and-polygonal-shrinkers",
-    "title": "2.17 Flow-generated Platonic and polygonal shrinkers",
+    "title": "2.25 Flow-generated Platonic and polygonal shrinkers",
     "chapter": "shrinkers",
     "section": "flow-generated-platonic-and-polygonal-shrinkers"
   },
   {
     "route": "sections/flow-generated-sphere-plane-shrinkers",
-    "title": "2.18 Flow-generated sphere–plane shrinkers",
+    "title": "2.26 Flow-generated sphere–plane shrinkers",
     "chapter": "shrinkers",
     "section": "flow-generated-sphere-plane-shrinkers"
   },
   {
     "route": "sections/flow-generated-three-ended-shrinkers",
-    "title": "2.19 Flow-generated three-ended shrinkers",
+    "title": "2.27 Flow-generated three-ended shrinkers",
     "chapter": "shrinkers",
     "section": "flow-generated-three-ended-shrinkers"
   },
   {
     "route": "sections/ketover-shrinkers-with-platonic-symmetry",
-    "title": "2.20 Ketover shrinkers with Platonic symmetry",
+    "title": "2.28 Ketover shrinkers with Platonic symmetry",
     "chapter": "shrinkers",
     "section": "ketover-shrinkers-with-platonic-symmetry"
   },
   {
     "route": "sections/sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
-    "title": "2.21 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
+    "title": "2.29 Sun–Wang–Zhou shrinkers of arbitrarily large entropy",
     "chapter": "shrinkers",
     "section": "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy"
   },
   {
     "route": "sections/chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
-    "title": "2.22 Chu–Sun genus-one shrinkers below the shrinking doughnut",
+    "title": "2.30 Chu–Sun genus-one shrinkers below the shrinking doughnut",
     "chapter": "shrinkers",
     "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
   },
   {
     "route": "sections/chopp-cubical-shrinker-candidate",
-    "title": "2.23 Chopp cubical shrinker candidate",
+    "title": "2.31 Chopp cubical shrinker candidate",
     "chapter": "shrinkers",
     "section": "chopp-cubical-shrinker-candidate"
   },
   {
     "route": "sections/chopp-octahedral-shrinker-candidate",
-    "title": "2.24 Chopp octahedral shrinker candidate",
+    "title": "2.32 Chopp octahedral shrinker candidate",
     "chapter": "shrinkers",
     "section": "chopp-octahedral-shrinker-candidate"
   },
   {
     "route": "sections/chopp-punctured-torus-saddle-candidate",
-    "title": "2.25 Chopp punctured-torus saddle candidate",
+    "title": "2.33 Chopp punctured-torus saddle candidate",
     "chapter": "shrinkers",
     "section": "chopp-punctured-torus-saddle-candidate"
   },
   {
     "route": "sections/chopp-two-handled-cone-candidate",
-    "title": "2.26 Chopp two-handled cone candidate",
+    "title": "2.34 Chopp two-handled cone candidate",
     "chapter": "shrinkers",
     "section": "chopp-two-handled-cone-candidate"
   },
   {
     "route": "sections/chopp-four-handled-cone-candidate",
-    "title": "2.27 Chopp four-handled cone candidate",
+    "title": "2.35 Chopp four-handled cone candidate",
     "chapter": "shrinkers",
     "section": "chopp-four-handled-cone-candidate"
   },
   {
+    "route": "sections/drugan-kleene-immersed-shrinking-families",
+    "title": "2.36 Drugan–Kleene immersed shrinking families",
+    "chapter": "shrinkers",
+    "section": "drugan-kleene-immersed-shrinking-families"
+  },
+  {
+    "route": "sections/lens-shaped-shrinking-surface-clusters",
+    "title": "2.37 Lens-shaped shrinking surface clusters",
+    "chapter": "shrinkers",
+    "section": "lens-shaped-shrinking-surface-clusters"
+  },
+  {
+    "route": "sections/rotational-shrinking-trumpet-ends",
+    "title": "2.38 Rotational shrinking trumpet ends",
+    "chapter": "shrinkers",
+    "section": "rotational-shrinking-trumpet-ends"
+  },
+  {
+    "route": "sections/shrinking-ends-asymptotic-to-isoparametric-cones",
+    "title": "2.39 Shrinking ends asymptotic to isoparametric cones",
+    "chapter": "shrinkers",
+    "section": "shrinking-ends-asymptotic-to-isoparametric-cones"
+  },
+  {
     "route": "sections/the-clifford-shrinking-torus-in-four-space",
-    "title": "2.28 The Clifford shrinking torus in four-space",
+    "title": "2.40 The Clifford shrinking torus in four-space",
     "chapter": "shrinkers",
     "section": "the-clifford-shrinking-torus-in-four-space"
   },
   {
     "route": "sections/products-of-closed-shrinking-curves",
-    "title": "2.29 Products of closed shrinking curves",
+    "title": "2.41 Products of closed shrinking curves",
     "chapter": "shrinkers",
     "section": "products-of-closed-shrinking-curves"
   },
   {
     "route": "sections/higher-codimension-spherical-shrinkers",
-    "title": "2.30 Higher-codimension spherical shrinkers",
+    "title": "2.42 Higher-codimension spherical shrinkers",
     "chapter": "shrinkers",
     "section": "higher-codimension-spherical-shrinkers"
   },
   {
     "route": "sections/angenent-torus-cylinders",
-    "title": "2.31 Angenent torus cylinders",
+    "title": "2.43 Angenent torus cylinders",
     "chapter": "shrinkers",
     "section": "angenent-torus-cylinders"
   },
   {
     "route": "sections/the-lee-wang-self-shrinking-mobius-bundle",
-    "title": "2.32 The Lee–Wang self-shrinking Mobius bundle",
+    "title": "2.44 The Lee–Wang self-shrinking Mobius bundle",
     "chapter": "shrinkers",
     "section": "the-lee-wang-self-shrinking-mobius-bundle"
   },
   {
     "route": "sections/compact-periodic-lagrangian-quadric-shrinkers",
-    "title": "2.33 Compact periodic Lagrangian quadric shrinkers",
+    "title": "2.45 Compact periodic Lagrangian quadric shrinkers",
     "chapter": "shrinkers",
     "section": "compact-periodic-lagrangian-quadric-shrinkers"
   },
   {
+    "route": "sections/complete-bi-rotational-shrinking-continuations",
+    "title": "2.46 Complete bi-rotational shrinking continuations",
+    "chapter": "shrinkers",
+    "section": "complete-bi-rotational-shrinking-continuations"
+  },
+  {
+    "route": "sections/park-bi-rotational-shrinking-ends",
+    "title": "2.47 Park bi-rotational shrinking ends",
+    "chapter": "shrinkers",
+    "section": "park-bi-rotational-shrinking-ends"
+  },
+  {
+    "route": "sections/noncompact-periodic-lagrangian-shrinkers",
+    "title": "2.48 Noncompact periodic Lagrangian shrinkers",
+    "chapter": "shrinkers",
+    "section": "noncompact-periodic-lagrangian-shrinkers"
+  },
+  {
     "route": "sections/lee-wang-embedded-quadric-shrinkers",
-    "title": "2.34 Lee–Wang embedded quadric shrinkers",
+    "title": "2.49 Lee–Wang embedded quadric shrinkers",
     "chapter": "shrinkers",
     "section": "lee-wang-embedded-quadric-shrinkers"
+  },
+  {
+    "route": "sections/riedler-shrinkers-from-isoparametric-foliations",
+    "title": "2.50 Riedler shrinkers from isoparametric foliations",
+    "chapter": "shrinkers",
+    "section": "riedler-shrinkers-from-isoparametric-foliations"
+  },
+  {
+    "route": "sections/anciaux-shrinkers-with-minimal-legendrian-leaves",
+    "title": "2.51 Anciaux shrinkers with minimal Legendrian leaves",
+    "chapter": "shrinkers",
+    "section": "anciaux-shrinkers-with-minimal-legendrian-leaves"
+  },
+  {
+    "route": "sections/yamamoto-lagrangian-shrinkers-in-calabi-yau-cones",
+    "title": "2.52 Yamamoto Lagrangian shrinkers in Calabi–Yau cones",
+    "chapter": "shrinkers",
+    "section": "yamamoto-lagrangian-shrinkers-in-calabi-yau-cones"
   },
   {
     "route": "chapters/translators",
@@ -338,40 +446,136 @@
     "section": "halldorsson-helicoidal-rotating-translators"
   },
   {
+    "route": "sections/nguyen-translators-from-grim-reaper-configurations",
+    "title": "3.15 Nguyen translators from grim-reaper configurations",
+    "chapter": "translators",
+    "section": "nguyen-translators-from-grim-reaper-configurations"
+  },
+  {
     "route": "sections/nonrotational-entire-convex-translators",
-    "title": "3.15 Nonrotational entire convex translators",
+    "title": "3.16 Nonrotational entire convex translators",
     "chapter": "translators",
     "section": "nonrotational-entire-convex-translators"
   },
   {
     "route": "sections/translators-with-an-angenent-torus-end",
-    "title": "3.16 Translators with an Angenent-torus end",
+    "title": "3.17 Translators with an Angenent-torus end",
     "chapter": "translators",
     "section": "translators-with-an-angenent-torus-end"
   },
   {
     "route": "sections/translators-with-high-genus-spherical-doubling-ends",
-    "title": "3.17 Translators with high-genus spherical-doubling ends",
+    "title": "3.18 Translators with high-genus spherical-doubling ends",
     "chapter": "translators",
     "section": "translators-with-high-genus-spherical-doubling-ends"
   },
   {
     "route": "sections/joyce-lee-tsui-small-angle-lagrangian-translators",
-    "title": "3.18 Joyce–Lee–Tsui small-angle Lagrangian translators",
+    "title": "3.19 Joyce–Lee–Tsui small-angle Lagrangian translators",
     "chapter": "translators",
     "section": "joyce-lee-tsui-small-angle-lagrangian-translators"
   },
   {
     "route": "sections/explicit-rotating-lagrangian-translators",
-    "title": "3.19 Explicit rotating Lagrangian translators",
+    "title": "3.20 Explicit rotating Lagrangian translators",
     "chapter": "translators",
     "section": "explicit-rotating-lagrangian-translators"
   },
   {
+    "route": "sections/convex-slab-translators-with-polyhedral-asymptotics",
+    "title": "3.21 Convex slab translators with polyhedral asymptotics",
+    "chapter": "translators",
+    "section": "convex-slab-translators-with-polyhedral-asymptotics"
+  },
+  {
+    "route": "sections/castro-lerma-lagrangian-translators-from-curve-pairs",
+    "title": "3.22 Castro–Lerma Lagrangian translators from curve pairs",
+    "chapter": "translators",
+    "section": "castro-lerma-lagrangian-translators-from-curve-pairs"
+  },
+  {
+    "route": "sections/translators-with-general-closed-shrinker-ends",
+    "title": "3.23 Translators with general closed-shrinker ends",
+    "chapter": "translators",
+    "section": "translators-with-general-closed-shrinker-ends"
+  },
+  {
     "route": "sections/su-translators-obtained-by-gluing-grim-cylinders",
-    "title": "3.20 Su translators obtained by gluing grim cylinders",
+    "title": "3.24 Su translators obtained by gluing grim cylinders",
     "chapter": "translators",
     "section": "su-translators-obtained-by-gluing-grim-cylinders"
+  },
+  {
+    "route": "sections/su-wood-lagrangian-translating-helicoids",
+    "title": "3.25 Su–Wood Lagrangian translating helicoids",
+    "chapter": "translators",
+    "section": "su-wood-lagrangian-translating-helicoids"
+  },
+  {
+    "route": "sections/su-wood-paired-profile-translators",
+    "title": "3.26 Su–Wood paired-profile translators",
+    "chapter": "translators",
+    "section": "su-wood-paired-profile-translators"
+  },
+  {
+    "route": "sections/nonconvex-entire-graphical-translators",
+    "title": "3.27 Nonconvex entire graphical translators",
+    "chapter": "translators",
+    "section": "nonconvex-entire-graphical-translators"
+  },
+  {
+    "route": "sections/rotational-translators-in-the-hyperbolic-plane-product",
+    "title": "3.28 Rotational translators in the hyperbolic-plane product",
+    "chapter": "translators",
+    "section": "rotational-translators-in-the-hyperbolic-plane-product"
+  },
+  {
+    "route": "sections/grim-reapers-in-the-hyperbolic-plane-product",
+    "title": "3.29 Grim reapers in the hyperbolic-plane product",
+    "chapter": "translators",
+    "section": "grim-reapers-in-the-hyperbolic-plane-product"
+  },
+  {
+    "route": "sections/helicoidal-rotators-translators-in-the-hyperbolic-plane-product",
+    "title": "3.30 Helicoidal rotators-translators in the hyperbolic-plane product",
+    "chapter": "translators",
+    "section": "helicoidal-rotators-translators-in-the-hyperbolic-plane-product"
+  },
+  {
+    "route": "sections/hyperbolic-killing-translators-and-catenoids",
+    "title": "3.31 Hyperbolic Killing translators and catenoids",
+    "chapter": "translators",
+    "section": "hyperbolic-killing-translators-and-catenoids"
+  },
+  {
+    "route": "sections/parabolic-killing-grim-reapers-in-hyperbolic-space",
+    "title": "3.32 Parabolic Killing grim reapers in hyperbolic space",
+    "chapter": "translators",
+    "section": "parabolic-killing-grim-reapers-in-hyperbolic-space"
+  },
+  {
+    "route": "sections/invariant-translators-in-the-heisenberg-group",
+    "title": "3.33 Invariant translators in the Heisenberg group",
+    "chapter": "translators",
+    "section": "invariant-translators-in-the-heisenberg-group"
+  },
+  {
+    "route": "sections/invariant-translators-in-sol-geometry",
+    "title": "3.34 Invariant translators in Sol geometry",
+    "chapter": "translators",
+    "section": "invariant-translators-in-sol-geometry"
+  },
+  {
+    "route": "sections/invariant-translators-in-the-special-linear-group",
+    "title": "3.35 Invariant translators in the special linear group",
+    "chapter": "translators",
+    "section": "invariant-translators-in-the-special-linear-group"
+  },
+  {
+    "route": "sections/graphical-translators-over-compact-symmetric-spaces",
+    "title": "3.36 Graphical translators over compact symmetric spaces",
+    "chapter": "translators",
+    "section": "graphical-translators-over-compact-symmetric-spaces"
   },
   {
     "route": "chapters/expanders",
@@ -391,64 +595,106 @@
     "section": "self-expanding-planar-tree-networks"
   },
   {
+    "route": "sections/expanding-planar-networks-with-a-bounded-cell",
+    "title": "4.3 Expanding planar networks with a bounded cell",
+    "chapter": "expanders",
+    "section": "expanding-planar-networks-with-a-bounded-cell"
+  },
+  {
     "route": "sections/rotational-graphical-expanders-over-round-cones",
-    "title": "4.3 Rotational graphical expanders over round cones",
+    "title": "4.4 Rotational graphical expanders over round cones",
     "chapter": "expanders",
     "section": "rotational-graphical-expanders-over-round-cones"
   },
   {
     "route": "sections/two-sheeted-expanders-of-rotational-double-cones",
-    "title": "4.4 Two-sheeted expanders of rotational double cones",
+    "title": "4.5 Two-sheeted expanders of rotational double cones",
     "chapter": "expanders",
     "section": "two-sheeted-expanders-of-rotational-double-cones"
   },
   {
     "route": "sections/one-sheeted-expanders-of-rotational-double-cones",
-    "title": "4.5 One-sheeted expanders of rotational double cones",
+    "title": "4.6 One-sheeted expanders of rotational double cones",
     "chapter": "expanders",
     "section": "one-sheeted-expanders-of-rotational-double-cones"
   },
   {
     "route": "sections/one-sided-expanders-from-mean-convex-cones",
-    "title": "4.6 One-sided expanders from mean-convex cones",
+    "title": "4.7 One-sided expanders from mean-convex cones",
     "chapter": "expanders",
     "section": "one-sided-expanders-from-mean-convex-cones"
   },
   {
     "route": "sections/mountain-pass-self-expanders",
-    "title": "4.7 Mountain-pass self-expanders",
+    "title": "4.8 Mountain-pass self-expanders",
     "chapter": "expanders",
     "section": "mountain-pass-self-expanders"
   },
   {
     "route": "sections/expanders-of-unbounded-genus-at-a-fixed-cone",
-    "title": "4.8 Expanders of unbounded genus at a fixed cone",
+    "title": "4.9 Expanders of unbounded genus at a fixed cone",
     "chapter": "expanders",
     "section": "expanders-of-unbounded-genus-at-a-fixed-cone"
   },
   {
     "route": "sections/knotted-self-expanders",
-    "title": "4.9 Knotted self-expanders",
+    "title": "4.10 Knotted self-expanders",
     "chapter": "expanders",
     "section": "knotted-self-expanders"
   },
   {
+    "route": "sections/graphical-expanders-from-general-lipschitz-cones",
+    "title": "4.11 Graphical expanders from general Lipschitz cones",
+    "chapter": "expanders",
+    "section": "graphical-expanders-from-general-lipschitz-cones"
+  },
+  {
+    "route": "sections/reported-multiphase-expanding-surface-constructions",
+    "title": "4.12 Reported multiphase expanding surface constructions",
+    "chapter": "expanders",
+    "section": "reported-multiphase-expanding-surface-constructions"
+  },
+  {
     "route": "sections/joyce-lee-tsui-lagrangian-expander-necks",
-    "title": "4.10 Joyce–Lee–Tsui Lagrangian expander necks",
+    "title": "4.13 Joyce–Lee–Tsui Lagrangian expander necks",
     "chapter": "expanders",
     "section": "joyce-lee-tsui-lagrangian-expander-necks"
   },
   {
     "route": "sections/two-convex-lagrangian-graphical-expanders",
-    "title": "4.11 Two-convex Lagrangian graphical expanders",
+    "title": "4.14 Two-convex Lagrangian graphical expanders",
     "chapter": "expanders",
     "section": "two-convex-lagrangian-graphical-expanders"
   },
   {
+    "route": "sections/bi-rotational-expanding-hypersurfaces",
+    "title": "4.15 Bi-rotational expanding hypersurfaces",
+    "chapter": "expanders",
+    "section": "bi-rotational-expanding-hypersurfaces"
+  },
+  {
+    "route": "sections/noncompact-periodic-lagrangian-expanders",
+    "title": "4.16 Noncompact periodic Lagrangian expanders",
+    "chapter": "expanders",
+    "section": "noncompact-periodic-lagrangian-expanders"
+  },
+  {
     "route": "sections/lee-wang-embedded-quadric-expanders",
-    "title": "4.12 Lee–Wang embedded quadric expanders",
+    "title": "4.17 Lee–Wang embedded quadric expanders",
     "chapter": "expanders",
     "section": "lee-wang-embedded-quadric-expanders"
+  },
+  {
+    "route": "sections/anciaux-expanders-with-minimal-legendrian-leaves",
+    "title": "4.18 Anciaux expanders with minimal Legendrian leaves",
+    "chapter": "expanders",
+    "section": "anciaux-expanders-with-minimal-legendrian-leaves"
+  },
+  {
+    "route": "sections/expanders-based-on-generalized-lawson-osserman-maps",
+    "title": "4.19 Expanders based on generalized Lawson–Osserman maps",
+    "chapter": "expanders",
+    "section": "expanders-based-on-generalized-lawson-osserman-maps"
   },
   {
     "route": "chapters/other-special-flows",
@@ -492,124 +738,250 @@
     "section": "rotating-and-shrinking-curve-solitons"
   },
   {
+    "route": "sections/the-ancient-sine-wave",
+    "title": "5.7 The ancient sine wave",
+    "chapter": "other-special-flows",
+    "section": "the-ancient-sine-wave"
+  },
+  {
+    "route": "sections/immersed-ancient-curves-spanning-a-half-plane",
+    "title": "5.8 Immersed ancient curves spanning a half-plane",
+    "chapter": "other-special-flows",
+    "section": "immersed-ancient-curves-spanning-a-half-plane"
+  },
+  {
+    "route": "sections/convex-ancient-free-boundary-flows-in-balls",
+    "title": "5.9 Convex ancient free-boundary flows in balls",
+    "chapter": "other-special-flows",
+    "section": "convex-ancient-free-boundary-flows-in-balls"
+  },
+  {
+    "route": "sections/ancient-free-boundary-curves-in-convex-domains",
+    "title": "5.10 Ancient free-boundary curves in convex domains",
+    "chapter": "other-special-flows",
+    "section": "ancient-free-boundary-curves-in-convex-domains"
+  },
+  {
+    "route": "sections/ancient-curves-with-mixed-boundary-conditions",
+    "title": "5.11 Ancient curves with mixed boundary conditions",
+    "chapter": "other-special-flows",
+    "section": "ancient-curves-with-mixed-boundary-conditions"
+  },
+  {
+    "route": "sections/immersed-ancient-curves-from-grim-reaper-chains",
+    "title": "5.12 Immersed ancient curves from grim-reaper chains",
+    "chapter": "other-special-flows",
+    "section": "immersed-ancient-curves-from-grim-reaper-chains"
+  },
+  {
     "route": "sections/the-catenoid-as-an-eternal-stationary-flow",
-    "title": "5.7 Minimal surfaces as stationary mean curvature flows",
+    "title": "5.13 Minimal surfaces as stationary mean curvature flows",
     "chapter": "other-special-flows",
     "section": "the-catenoid-as-an-eternal-stationary-flow"
   },
   {
     "route": "sections/rotational-degenerate-neckpinch-solutions",
-    "title": "5.8 Rotational degenerate neckpinch solutions",
+    "title": "5.14 Rotational degenerate neckpinch solutions",
     "chapter": "other-special-flows",
     "section": "rotational-degenerate-neckpinch-solutions"
   },
   {
     "route": "sections/eternal-shrinking-helices",
-    "title": "5.9 Eternal shrinking helices",
+    "title": "5.15 Eternal shrinking helices",
     "chapter": "other-special-flows",
     "section": "eternal-shrinking-helices"
   },
   {
     "route": "sections/immortal-annuli-converging-to-a-double-plane",
-    "title": "5.10 Immortal annuli converging to a double plane",
+    "title": "5.16 Immortal annuli converging to a double plane",
     "chapter": "other-special-flows",
     "section": "immortal-annuli-converging-to-a-double-plane"
   },
   {
     "route": "sections/haslhofer-hershkovits-ancient-ovals",
-    "title": "5.11 Haslhofer–Hershkovits ancient ovals",
+    "title": "5.17 Haslhofer–Hershkovits ancient ovals",
     "chapter": "other-special-flows",
     "section": "haslhofer-hershkovits-ancient-ovals"
   },
   {
     "route": "sections/ancient-flows-from-unstable-minimal-hypersurfaces",
-    "title": "5.12 Ancient flows from unstable minimal hypersurfaces",
+    "title": "5.18 Ancient flows from unstable minimal hypersurfaces",
     "chapter": "other-special-flows",
     "section": "ancient-flows-from-unstable-minimal-hypersurfaces"
   },
   {
     "route": "sections/the-eternal-reapernoid",
-    "title": "5.13 The eternal reapernoid",
+    "title": "5.19 The eternal reapernoid",
     "chapter": "other-special-flows",
     "section": "the-eternal-reapernoid"
   },
   {
     "route": "sections/rotating-and-translating-curve-solitons",
-    "title": "5.14 Rotating and translating curve solitons",
+    "title": "5.20 Rotating and translating curve solitons",
     "chapter": "other-special-flows",
     "section": "rotating-and-translating-curve-solitons"
   },
   {
     "route": "sections/helicoidal-minimal-surfaces-as-stationary-flows",
-    "title": "5.15 Helicoidal minimal surfaces as stationary flows",
+    "title": "5.21 Helicoidal minimal surfaces as stationary flows",
     "chapter": "other-special-flows",
     "section": "helicoidal-minimal-surfaces-as-stationary-flows"
   },
   {
+    "route": "sections/nonplanar-eternal-curves-from-grim-reapers",
+    "title": "5.22 Nonplanar eternal curves from grim reapers",
+    "chapter": "other-special-flows",
+    "section": "nonplanar-eternal-curves-from-grim-reapers"
+  },
+  {
+    "route": "sections/rotational-collapsed-ancient-pancakes",
+    "title": "5.23 Rotational collapsed ancient pancakes",
+    "chapter": "other-special-flows",
+    "section": "rotational-collapsed-ancient-pancakes"
+  },
+  {
+    "route": "sections/ancient-pancakes-with-polyhedral-asymptotics",
+    "title": "5.24 Ancient pancakes with polyhedral asymptotics",
+    "chapter": "other-special-flows",
+    "section": "ancient-pancakes-with-polyhedral-asymptotics"
+  },
+  {
+    "route": "sections/convex-eternal-flows-that-do-not-translate",
+    "title": "5.25 Convex eternal flows that do not translate",
+    "chapter": "other-special-flows",
+    "section": "convex-eternal-flows-that-do-not-translate"
+  },
+  {
+    "route": "sections/non-self-similar-ancient-doughnuts",
+    "title": "5.26 Non-self-similar ancient doughnuts",
+    "chapter": "other-special-flows",
+    "section": "non-self-similar-ancient-doughnuts"
+  },
+  {
+    "route": "sections/non-self-similar-flows-emerging-from-cones",
+    "title": "5.27 Non-self-similar flows emerging from cones",
+    "chapter": "other-special-flows",
+    "section": "non-self-similar-flows-emerging-from-cones"
+  },
+  {
     "route": "sections/mean-curvature-evolution-of-the-whitney-sphere",
-    "title": "5.16 Mean curvature evolution of the Whitney sphere",
+    "title": "5.28 Mean curvature evolution of the Whitney sphere",
     "chapter": "other-special-flows",
     "section": "mean-curvature-evolution-of-the-whitney-sphere"
   },
   {
     "route": "sections/ancient-torus-curves-in-higher-codimension",
-    "title": "5.17 Ancient torus curves in higher codimension",
+    "title": "5.29 Ancient torus curves in higher codimension",
     "chapter": "other-special-flows",
     "section": "ancient-torus-curves-in-higher-codimension"
   },
   {
     "route": "sections/ancient-stacked-pancakes",
-    "title": "5.18 Ancient stacked pancakes",
+    "title": "5.30 Ancient stacked pancakes",
     "chapter": "other-special-flows",
     "section": "ancient-stacked-pancakes"
   },
   {
     "route": "sections/lawlor-necks-as-stationary-lagrangian-flows",
-    "title": "5.19 Lawlor necks as stationary Lagrangian flows",
+    "title": "5.31 Lawlor necks as stationary Lagrangian flows",
     "chapter": "other-special-flows",
     "section": "lawlor-necks-as-stationary-lagrangian-flows"
   },
   {
     "route": "sections/ancient-dense-torus-curves-with-irrational-frequencies",
-    "title": "5.20 Ancient dense torus curves with irrational frequencies",
+    "title": "5.32 Ancient dense torus curves with irrational frequencies",
     "chapter": "other-special-flows",
     "section": "ancient-dense-torus-curves-with-irrational-frequencies"
   },
   {
+    "route": "sections/ancient-ovals-with-reduced-symmetry",
+    "title": "5.33 Ancient ovals with reduced symmetry",
+    "chapter": "other-special-flows",
+    "section": "ancient-ovals-with-reduced-symmetry"
+  },
+  {
+    "route": "sections/ancient-isoparametric-flows-in-euclidean-space",
+    "title": "5.34 Ancient isoparametric flows in Euclidean space",
+    "chapter": "other-special-flows",
+    "section": "ancient-isoparametric-flows-in-euclidean-space"
+  },
+  {
     "route": "sections/su-wood-stationary-products-of-lawlor-profiles",
-    "title": "5.21 Su–Wood stationary products of Lawlor profiles",
+    "title": "5.35 Su–Wood stationary products of Lawlor profiles",
     "chapter": "other-special-flows",
     "section": "su-wood-stationary-products-of-lawlor-profiles"
   },
   {
     "route": "sections/stolarski-su-finite-time-lagrangian-neck-pinches",
-    "title": "5.22 Stolarski–Su finite-time Lagrangian neck pinches",
+    "title": "5.36 Stolarski–Su finite-time Lagrangian neck pinches",
     "chapter": "other-special-flows",
     "section": "stolarski-su-finite-time-lagrangian-neck-pinches"
   },
   {
+    "route": "sections/hypersurface-singularities-with-bounded-mean-curvature",
+    "title": "5.37 Hypersurface singularities with bounded mean curvature",
+    "chapter": "other-special-flows",
+    "section": "hypersurface-singularities-with-bounded-mean-curvature"
+  },
+  {
+    "route": "sections/lagrangian-singularities-with-prescribed-orbit-models",
+    "title": "5.38 Lagrangian singularities with prescribed orbit models",
+    "chapter": "other-special-flows",
+    "section": "lagrangian-singularities-with-prescribed-orbit-models"
+  },
+  {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.23 Immortal compact flows converging to a double sphere",
+    "title": "5.39 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
   },
   {
     "route": "sections/immortal-curve-shortening-with-nonunique-geodesic-limits",
-    "title": "5.24 Immortal curve shortening with nonunique geodesic limits",
+    "title": "5.40 Immortal curve shortening with nonunique geodesic limits",
     "chapter": "other-special-flows",
     "section": "immortal-curve-shortening-with-nonunique-geodesic-limits"
   },
   {
     "route": "sections/lagrangian-torus-necks-collapsing-at-infinite-time",
-    "title": "5.25 Lagrangian torus necks collapsing at infinite time",
+    "title": "5.41 Lagrangian torus necks collapsing at infinite time",
     "chapter": "other-special-flows",
     "section": "lagrangian-torus-necks-collapsing-at-infinite-time"
   },
   {
     "route": "sections/lagrangian-sphere-chains-in-gibbons-hawking-spaces",
-    "title": "5.26 Lagrangian sphere chains in Gibbons–Hawking spaces",
+    "title": "5.42 Lagrangian sphere chains in Gibbons–Hawking spaces",
     "chapter": "other-special-flows",
     "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces"
+  },
+  {
+    "route": "sections/ancient-isoparametric-flows-in-spheres",
+    "title": "5.43 Ancient isoparametric flows in spheres",
+    "chapter": "other-special-flows",
+    "section": "ancient-isoparametric-flows-in-spheres"
+  },
+  {
+    "route": "sections/ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
+    "title": "5.44 Ancient flows from unstable free-boundary minimal hypersurfaces",
+    "chapter": "other-special-flows",
+    "section": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces"
+  },
+  {
+    "route": "sections/isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
+    "title": "5.45 Isometric curve-shortening solitons in the hyperbolic plane",
+    "chapter": "other-special-flows",
+    "section": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane"
+  },
+  {
+    "route": "sections/eternal-tori-in-perturbations-of-the-round-three-sphere",
+    "title": "5.46 Eternal tori in perturbations of the round three-sphere",
+    "chapter": "other-special-flows",
+    "section": "eternal-tori-in-perturbations-of-the-round-three-sphere"
+  },
+  {
+    "route": "sections/finite-time-lagrangian-neck-pinches-with-circle-symmetry",
+    "title": "5.47 Finite-time Lagrangian neck pinches with circle symmetry",
+    "chapter": "other-special-flows",
+    "section": "finite-time-lagrangian-neck-pinches-with-circle-symmetry"
   },
   {
     "route": "browse",

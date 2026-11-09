@@ -1690,5 +1690,1121 @@
     "page": "tag/BA2CEC7D/index.html",
     "canonical_tag": "E9086532F53A",
     "anchor": ""
+  },
+  {
+    "tag": "E2FA1C90",
+    "label": "sec:catalogue-drugan-kleene",
+    "title": "94 Drugan\u2013Kleene immersed shrinking families",
+    "kind": "chapter",
+    "page": "tag/E2FA1C90/index.html",
+    "canonical_tag": "F2D20223E5E5",
+    "anchor": ""
+  },
+  {
+    "tag": "53478B68",
+    "label": "ex:catalogue-drugan-kleene",
+    "title": "Example 94.1 (Drugan\u2013Kleene immersed shrinking families)",
+    "kind": "example",
+    "page": "tag/53478B68/index.html",
+    "canonical_tag": "C28E16016422",
+    "anchor": ""
+  },
+  {
+    "tag": "25FD9872",
+    "label": "sec:catalogue-riedler-isoparametric",
+    "title": "95 Riedler shrinkers from isoparametric foliations",
+    "kind": "chapter",
+    "page": "tag/25FD9872/index.html",
+    "canonical_tag": "EDE4E49195FA",
+    "anchor": ""
+  },
+  {
+    "tag": "6BB85C1B",
+    "label": "ex:catalogue-riedler-isoparametric",
+    "title": "Example 95.1 (Riedler shrinkers from isoparametric foliations)",
+    "kind": "example",
+    "page": "tag/6BB85C1B/index.html",
+    "canonical_tag": "395E0B7648CA",
+    "anchor": ""
+  },
+  {
+    "tag": "74B9654F",
+    "label": "sec:catalogue-anciaux-legendrian-shrinkers",
+    "title": "96 Anciaux shrinkers with minimal Legendrian leaves",
+    "kind": "chapter",
+    "page": "tag/74B9654F/index.html",
+    "canonical_tag": "689C0F332420",
+    "anchor": ""
+  },
+  {
+    "tag": "1A5F2675",
+    "label": "ex:catalogue-anciaux-legendrian-shrinkers",
+    "title": "Example 96.1 (Anciaux shrinkers with minimal Legendrian leaves)",
+    "kind": "example",
+    "page": "tag/1A5F2675/index.html",
+    "canonical_tag": "7077447C0B66",
+    "anchor": ""
+  },
+  {
+    "tag": "B4A1C9F6",
+    "label": "sec:catalogue-anciaux-legendrian-expanders",
+    "title": "97 Anciaux expanders with minimal Legendrian leaves",
+    "kind": "chapter",
+    "page": "tag/B4A1C9F6/index.html",
+    "canonical_tag": "7681DAB7225B",
+    "anchor": ""
+  },
+  {
+    "tag": "695AE7B7",
+    "label": "ex:catalogue-anciaux-legendrian-expanders",
+    "title": "Example 97.1 (Anciaux expanders with minimal Legendrian leaves)",
+    "kind": "example",
+    "page": "tag/695AE7B7/index.html",
+    "canonical_tag": "108077B0C2DE",
+    "anchor": ""
+  },
+  {
+    "tag": "373CE59F",
+    "label": "sec:catalogue-nguyen-grim-configurations",
+    "title": "98 Nguyen translators from grim-reaper configurations",
+    "kind": "chapter",
+    "page": "tag/373CE59F/index.html",
+    "canonical_tag": "E83F92A45A1F",
+    "anchor": ""
+  },
+  {
+    "tag": "CF35AF2C",
+    "label": "ex:catalogue-nguyen-grim-configurations",
+    "title": "Example 98.1 (Nguyen translators from grim-reaper configurations)",
+    "kind": "example",
+    "page": "tag/CF35AF2C/index.html",
+    "canonical_tag": "44161C7DCC84",
+    "anchor": ""
+  },
+  {
+    "tag": "F893BFF9",
+    "label": "sec:catalogue-polyhedral-slab-translators",
+    "title": "99 Convex slab translators with polyhedral asymptotics",
+    "kind": "chapter",
+    "page": "tag/F893BFF9/index.html",
+    "canonical_tag": "2F596CC616F1",
+    "anchor": ""
+  },
+  {
+    "tag": "EFF48886",
+    "label": "ex:catalogue-polyhedral-slab-translators",
+    "title": "Example 99.1 (Convex slab translators with polyhedral asymptotics)",
+    "kind": "example",
+    "page": "tag/EFF48886/index.html",
+    "canonical_tag": "F05CE3FF1C12",
+    "anchor": ""
+  },
+  {
+    "tag": "BD6CC3F1",
+    "label": "sec:catalogue-castro-lerma-pairs",
+    "title": "100 Castro\u2013Lerma Lagrangian translators from curve pairs",
+    "kind": "chapter",
+    "page": "tag/BD6CC3F1/index.html",
+    "canonical_tag": "14F0E7012E88",
+    "anchor": ""
+  },
+  {
+    "tag": "CC2FD029",
+    "label": "ex:catalogue-castro-lerma-pairs",
+    "title": "Example 100.1 (Castro\u2013Lerma Lagrangian translators from curve pairs)",
+    "kind": "example",
+    "page": "tag/CC2FD029/index.html",
+    "canonical_tag": "B4DA2A79EC96",
+    "anchor": ""
+  },
+  {
+    "tag": "34F37702",
+    "label": "sec:catalogue-su-wood-translating-helicoids",
+    "title": "101 Su\u2013Wood Lagrangian translating helicoids",
+    "kind": "chapter",
+    "page": "tag/34F37702/index.html",
+    "canonical_tag": "405ACD56C839",
+    "anchor": ""
+  },
+  {
+    "tag": "CA4DE96A",
+    "label": "ex:catalogue-su-wood-translating-helicoids",
+    "title": "Example 101.1 (Su\u2013Wood Lagrangian translating helicoids)",
+    "kind": "example",
+    "page": "tag/CA4DE96A/index.html",
+    "canonical_tag": "6386C95CB0EA",
+    "anchor": ""
+  },
+  {
+    "tag": "4978FB2D",
+    "label": "sec:catalogue-su-wood-paired-translators",
+    "title": "102 Su\u2013Wood paired-profile translators",
+    "kind": "chapter",
+    "page": "tag/4978FB2D/index.html",
+    "canonical_tag": "31FE1060BFF7",
+    "anchor": ""
+  },
+  {
+    "tag": "00B4B2E1",
+    "label": "ex:catalogue-su-wood-paired-translators",
+    "title": "Example 102.1 (Su\u2013Wood paired-profile translators)",
+    "kind": "example",
+    "page": "tag/00B4B2E1/index.html",
+    "canonical_tag": "FDCF3D0F683E",
+    "anchor": ""
+  },
+  {
+    "tag": "E245615B",
+    "label": "sec:catalogue-nonconvex-entire-translators",
+    "title": "103 Nonconvex entire graphical translators",
+    "kind": "chapter",
+    "page": "tag/E245615B/index.html",
+    "canonical_tag": "2E699B408ADA",
+    "anchor": ""
+  },
+  {
+    "tag": "D870122E",
+    "label": "ex:catalogue-nonconvex-entire-translators",
+    "title": "Example 103.1 (Nonconvex entire graphical translators)",
+    "kind": "example",
+    "page": "tag/D870122E/index.html",
+    "canonical_tag": "879611BCBD19",
+    "anchor": ""
+  },
+  {
+    "tag": "272433C8",
+    "label": "sec:catalogue-graphical-cone-expanders",
+    "title": "104 Graphical expanders from general Lipschitz cones",
+    "kind": "chapter",
+    "page": "tag/272433C8/index.html",
+    "canonical_tag": "152F8E9CDCFA",
+    "anchor": ""
+  },
+  {
+    "tag": "8EE295EF",
+    "label": "ex:catalogue-graphical-cone-expanders",
+    "title": "Example 104.1 (Graphical expanders from general Lipschitz cones)",
+    "kind": "example",
+    "page": "tag/8EE295EF/index.html",
+    "canonical_tag": "9A84A12D805C",
+    "anchor": ""
+  },
+  {
+    "tag": "80FD9E1D",
+    "label": "sec:catalogue-lawson-osserman-expanders",
+    "title": "105 Expanders based on generalized Lawson\u2013Osserman maps",
+    "kind": "chapter",
+    "page": "tag/80FD9E1D/index.html",
+    "canonical_tag": "258FD7148F89",
+    "anchor": ""
+  },
+  {
+    "tag": "81139E93",
+    "label": "ex:catalogue-lawson-osserman-expanders",
+    "title": "Example 105.1 (Expanders based on generalized Lawson\u2013Osserman maps)",
+    "kind": "example",
+    "page": "tag/81139E93/index.html",
+    "canonical_tag": "42620E4B40CF",
+    "anchor": ""
+  },
+  {
+    "tag": "8D7C709B",
+    "label": "sec:catalogue-birotational-expanders",
+    "title": "106 Bi-rotational expanding hypersurfaces",
+    "kind": "chapter",
+    "page": "tag/8D7C709B/index.html",
+    "canonical_tag": "6BCE5569C7F9",
+    "anchor": ""
+  },
+  {
+    "tag": "9BD05594",
+    "label": "ex:catalogue-birotational-expanders",
+    "title": "Example 106.1 (Bi-rotational expanding hypersurfaces)",
+    "kind": "example",
+    "page": "tag/9BD05594/index.html",
+    "canonical_tag": "060795635061",
+    "anchor": ""
+  },
+  {
+    "tag": "A3E44CA5",
+    "label": "sec:catalogue-birotational-shrinkers",
+    "title": "107 Complete bi-rotational shrinking continuations",
+    "kind": "chapter",
+    "page": "tag/A3E44CA5/index.html",
+    "canonical_tag": "FDFAD175AF52",
+    "anchor": ""
+  },
+  {
+    "tag": "86AD3259",
+    "label": "ex:catalogue-birotational-shrinkers",
+    "title": "Example 107.1 (Complete bi-rotational shrinking continuations)",
+    "kind": "example",
+    "page": "tag/86AD3259/index.html",
+    "canonical_tag": "313552CFDCE7",
+    "anchor": ""
+  },
+  {
+    "tag": "8B9DE8D8",
+    "label": "sec:catalogue-ancient-sine-wave",
+    "title": "108 The ancient sine wave",
+    "kind": "chapter",
+    "page": "tag/8B9DE8D8/index.html",
+    "canonical_tag": "D8ADD5B24C33",
+    "anchor": ""
+  },
+  {
+    "tag": "05FE72B3",
+    "label": "ex:catalogue-ancient-sine-wave",
+    "title": "Example 108.1 (The ancient sine wave)",
+    "kind": "example",
+    "page": "tag/05FE72B3/index.html",
+    "canonical_tag": "3BF94583DFB1",
+    "anchor": ""
+  },
+  {
+    "tag": "6CAA0EF6",
+    "label": "sec:catalogue-ma-halfplane-ancient",
+    "title": "109 Immersed ancient curves spanning a half-plane",
+    "kind": "chapter",
+    "page": "tag/6CAA0EF6/index.html",
+    "canonical_tag": "DCA2FD176411",
+    "anchor": ""
+  },
+  {
+    "tag": "85A25A15",
+    "label": "ex:catalogue-ma-halfplane-ancient",
+    "title": "Example 109.1 (Immersed ancient curves spanning a half-plane)",
+    "kind": "example",
+    "page": "tag/85A25A15/index.html",
+    "canonical_tag": "4B3B50761BB9",
+    "anchor": ""
+  },
+  {
+    "tag": "948711F6",
+    "label": "sec:catalogue-nonplanar-eternal-reapers",
+    "title": "110 Nonplanar eternal curves from grim reapers",
+    "kind": "chapter",
+    "page": "tag/948711F6/index.html",
+    "canonical_tag": "AB3265DB1FB6",
+    "anchor": ""
+  },
+  {
+    "tag": "D8812E8E",
+    "label": "ex:catalogue-nonplanar-eternal-reapers",
+    "title": "Example 110.1 (Nonplanar eternal curves from grim reapers)",
+    "kind": "example",
+    "page": "tag/D8812E8E/index.html",
+    "canonical_tag": "1A07DD8D8A69",
+    "anchor": ""
+  },
+  {
+    "tag": "F2030B07",
+    "label": "sec:catalogue-collapsed-ancient-pancakes",
+    "title": "111 Rotational collapsed ancient pancakes",
+    "kind": "chapter",
+    "page": "tag/F2030B07/index.html",
+    "canonical_tag": "68F95608F072",
+    "anchor": ""
+  },
+  {
+    "tag": "875FAF91",
+    "label": "ex:catalogue-collapsed-ancient-pancakes",
+    "title": "Example 111.1 (Rotational collapsed ancient pancakes)",
+    "kind": "example",
+    "page": "tag/875FAF91/index.html",
+    "canonical_tag": "325F4A3220BC",
+    "anchor": ""
+  },
+  {
+    "tag": "2BEAEF1E",
+    "label": "sec:catalogue-polyhedral-ancient-pancakes",
+    "title": "112 Ancient pancakes with polyhedral asymptotics",
+    "kind": "chapter",
+    "page": "tag/2BEAEF1E/index.html",
+    "canonical_tag": "AD25A77F6BAA",
+    "anchor": ""
+  },
+  {
+    "tag": "F9B703F1",
+    "label": "ex:catalogue-polyhedral-ancient-pancakes",
+    "title": "Example 112.1 (Ancient pancakes with polyhedral asymptotics)",
+    "kind": "example",
+    "page": "tag/F9B703F1/index.html",
+    "canonical_tag": "8C2928E390C8",
+    "anchor": ""
+  },
+  {
+    "tag": "17BEC156",
+    "label": "sec:catalogue-convex-eternal-nontranslators",
+    "title": "113 Convex eternal flows that do not translate",
+    "kind": "chapter",
+    "page": "tag/17BEC156/index.html",
+    "canonical_tag": "E62279A82D37",
+    "anchor": ""
+  },
+  {
+    "tag": "56CE6CEB",
+    "label": "ex:catalogue-convex-eternal-nontranslators",
+    "title": "Example 113.1 (Convex eternal flows that do not translate)",
+    "kind": "example",
+    "page": "tag/56CE6CEB/index.html",
+    "canonical_tag": "FA0C7583A161",
+    "anchor": ""
+  },
+  {
+    "tag": "A5C07401",
+    "label": "sec:catalogue-reduced-symmetry-ancient-ovals",
+    "title": "114 Ancient ovals with reduced symmetry",
+    "kind": "chapter",
+    "page": "tag/A5C07401/index.html",
+    "canonical_tag": "37474A54C83A",
+    "anchor": ""
+  },
+  {
+    "tag": "4F979CEE",
+    "label": "ex:catalogue-reduced-symmetry-ancient-ovals",
+    "title": "Example 114.1 (Ancient ovals with reduced symmetry)",
+    "kind": "example",
+    "page": "tag/4F979CEE/index.html",
+    "canonical_tag": "F18DC5F92665",
+    "anchor": ""
+  },
+  {
+    "tag": "568F4ABB",
+    "label": "sec:catalogue-ancient-doughnuts",
+    "title": "115 Non-self-similar ancient doughnuts",
+    "kind": "chapter",
+    "page": "tag/568F4ABB/index.html",
+    "canonical_tag": "1E48CF8C9E56",
+    "anchor": ""
+  },
+  {
+    "tag": "B5B7113B",
+    "label": "ex:catalogue-ancient-doughnuts",
+    "title": "Example 115.1 (Non-self-similar ancient doughnuts)",
+    "kind": "example",
+    "page": "tag/B5B7113B/index.html",
+    "canonical_tag": "7A6AD2F58C6E",
+    "anchor": ""
+  },
+  {
+    "tag": "10A27E42",
+    "label": "sec:catalogue-isoparametric-ancient-euclidean",
+    "title": "116 Ancient isoparametric flows in Euclidean space",
+    "kind": "chapter",
+    "page": "tag/10A27E42/index.html",
+    "canonical_tag": "F1B0B077B481",
+    "anchor": ""
+  },
+  {
+    "tag": "046BE551",
+    "label": "ex:catalogue-isoparametric-ancient-euclidean",
+    "title": "Example 116.1 (Ancient isoparametric flows in Euclidean space)",
+    "kind": "example",
+    "page": "tag/046BE551/index.html",
+    "canonical_tag": "199B3435F93B",
+    "anchor": ""
+  },
+  {
+    "tag": "646C8E02",
+    "label": "sec:catalogue-isoparametric-ancient-sphere",
+    "title": "117 Ancient isoparametric flows in spheres",
+    "kind": "chapter",
+    "page": "tag/646C8E02/index.html",
+    "canonical_tag": "2DFF09123589",
+    "anchor": ""
+  },
+  {
+    "tag": "085401C2",
+    "label": "ex:catalogue-isoparametric-ancient-sphere",
+    "title": "Example 117.1 (Ancient isoparametric flows in spheres)",
+    "kind": "example",
+    "page": "tag/085401C2/index.html",
+    "canonical_tag": "51259B78DC80",
+    "anchor": ""
+  },
+  {
+    "tag": "F37CD322",
+    "label": "sec:catalogue-flows-emerging-from-cones",
+    "title": "118 Non-self-similar flows emerging from cones",
+    "kind": "chapter",
+    "page": "tag/F37CD322/index.html",
+    "canonical_tag": "EA5C07CB7D0F",
+    "anchor": ""
+  },
+  {
+    "tag": "A75139D4",
+    "label": "ex:catalogue-flows-emerging-from-cones",
+    "title": "Example 118.1 (Non-self-similar flows emerging from cones)",
+    "kind": "example",
+    "page": "tag/A75139D4/index.html",
+    "canonical_tag": "AD7B9EFD3360",
+    "anchor": ""
+  },
+  {
+    "tag": "349D3347",
+    "label": "sec:catalogue-bounded-mean-curvature-singularities",
+    "title": "119 Hypersurface singularities with bounded mean curvature",
+    "kind": "chapter",
+    "page": "tag/349D3347/index.html",
+    "canonical_tag": "88709443EE99",
+    "anchor": ""
+  },
+  {
+    "tag": "CD791B7F",
+    "label": "ex:catalogue-bounded-mean-curvature-singularities",
+    "title": "Example 119.1 (Hypersurface singularities with bounded mean curvature)",
+    "kind": "example",
+    "page": "tag/CD791B7F/index.html",
+    "canonical_tag": "D9D28F3C8E4F",
+    "anchor": ""
+  },
+  {
+    "tag": "78A071A1",
+    "label": "sec:catalogue-cohomogeneity-one-lagrangian-singularities",
+    "title": "120 Lagrangian singularities with prescribed orbit models",
+    "kind": "chapter",
+    "page": "tag/78A071A1/index.html",
+    "canonical_tag": "A3EE122FF71E",
+    "anchor": ""
+  },
+  {
+    "tag": "CD414B5C",
+    "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
+    "title": "Example 120.1 (Lagrangian singularities with prescribed orbit models)",
+    "kind": "example",
+    "page": "tag/CD414B5C/index.html",
+    "canonical_tag": "5DA3E72E4195",
+    "anchor": ""
+  },
+  {
+    "tag": "1E8750DA",
+    "label": "sec:catalogue-network-spoon",
+    "title": "121 Brakke spoon",
+    "kind": "chapter",
+    "page": "tag/1E8750DA/index.html",
+    "canonical_tag": "E8ED05753059",
+    "anchor": ""
+  },
+  {
+    "tag": "81004AEF",
+    "label": "ex:catalogue-network-spoon",
+    "title": "Example 121.1 (Brakke spoon)",
+    "kind": "example",
+    "page": "tag/81004AEF/index.html",
+    "canonical_tag": "DE792632B8AE",
+    "anchor": ""
+  },
+  {
+    "tag": "63E12737",
+    "label": "sec:catalogue-network-lens",
+    "title": "122 Shrinking lens network",
+    "kind": "chapter",
+    "page": "tag/63E12737/index.html",
+    "canonical_tag": "5B73D42E7202",
+    "anchor": ""
+  },
+  {
+    "tag": "C37ED85A",
+    "label": "ex:catalogue-network-lens",
+    "title": "Example 122.1 (Shrinking lens network)",
+    "kind": "example",
+    "page": "tag/C37ED85A/index.html",
+    "canonical_tag": "45920B126322",
+    "anchor": ""
+  },
+  {
+    "tag": "F786014E",
+    "label": "sec:catalogue-network-fish",
+    "title": "123 Shrinking fish network",
+    "kind": "chapter",
+    "page": "tag/F786014E/index.html",
+    "canonical_tag": "BAA362BD1D2D",
+    "anchor": ""
+  },
+  {
+    "tag": "711076BE",
+    "label": "ex:catalogue-network-fish",
+    "title": "Example 123.1 (Shrinking fish network)",
+    "kind": "example",
+    "page": "tag/711076BE/index.html",
+    "canonical_tag": "6E3C2D665CDD",
+    "anchor": ""
+  },
+  {
+    "tag": "3BC3B7AE",
+    "label": "sec:catalogue-network-three-ray",
+    "title": "124 Three-ray shrinking star",
+    "kind": "chapter",
+    "page": "tag/3BC3B7AE/index.html",
+    "canonical_tag": "66EFFE766DF2",
+    "anchor": ""
+  },
+  {
+    "tag": "FA64103B",
+    "label": "ex:catalogue-network-three-ray",
+    "title": "Example 124.1 (Three-ray shrinking star)",
+    "kind": "example",
+    "page": "tag/FA64103B/index.html",
+    "canonical_tag": "40F52B6CFB5C",
+    "anchor": ""
+  },
+  {
+    "tag": "B78F4666",
+    "label": "sec:catalogue-network-four-ray",
+    "title": "125 Four-ray shrinking star",
+    "kind": "chapter",
+    "page": "tag/B78F4666/index.html",
+    "canonical_tag": "D3FA350D95E8",
+    "anchor": ""
+  },
+  {
+    "tag": "968F0388",
+    "label": "ex:catalogue-network-four-ray",
+    "title": "Example 125.1 (Four-ray shrinking star)",
+    "kind": "example",
+    "page": "tag/968F0388/index.html",
+    "canonical_tag": "010FE5696B4C",
+    "anchor": ""
+  },
+  {
+    "tag": "EB3ADD97",
+    "label": "sec:catalogue-network-five-ray",
+    "title": "126 Five-ray shrinking star",
+    "kind": "chapter",
+    "page": "tag/EB3ADD97/index.html",
+    "canonical_tag": "429D29F97379",
+    "anchor": ""
+  },
+  {
+    "tag": "2A7F22D8",
+    "label": "ex:catalogue-network-five-ray",
+    "title": "Example 126.1 (Five-ray shrinking star)",
+    "kind": "example",
+    "page": "tag/2A7F22D8/index.html",
+    "canonical_tag": "4C198F76FD40",
+    "anchor": ""
+  },
+  {
+    "tag": "F2B95AF9",
+    "label": "sec:catalogue-network-rocket",
+    "title": "127 Shrinking rocket network",
+    "kind": "chapter",
+    "page": "tag/F2B95AF9/index.html",
+    "canonical_tag": "C8F779619BD0",
+    "anchor": ""
+  },
+  {
+    "tag": "D77CE6A7",
+    "label": "ex:catalogue-network-rocket",
+    "title": "Example 127.1 (Shrinking rocket network)",
+    "kind": "example",
+    "page": "tag/D77CE6A7/index.html",
+    "canonical_tag": "21D9CE8B056C",
+    "anchor": ""
+  },
+  {
+    "tag": "730768C6",
+    "label": "sec:catalogue-network-cisgeminate-eye",
+    "title": "128 Cisgeminate-eye shrinker",
+    "kind": "chapter",
+    "page": "tag/730768C6/index.html",
+    "canonical_tag": "AAF58D62FB97",
+    "anchor": ""
+  },
+  {
+    "tag": "E345EFFE",
+    "label": "ex:catalogue-network-cisgeminate-eye",
+    "title": "Example 128.1 (Cisgeminate-eye shrinker)",
+    "kind": "example",
+    "page": "tag/E345EFFE/index.html",
+    "canonical_tag": "8E8F9B32C891",
+    "anchor": ""
+  },
+  {
+    "tag": "22B4DF5F",
+    "label": "sec:catalogue-shrinking-lens-cluster",
+    "title": "129 Lens-shaped shrinking surface clusters",
+    "kind": "chapter",
+    "page": "tag/22B4DF5F/index.html",
+    "canonical_tag": "82C42A1C42B4",
+    "anchor": ""
+  },
+  {
+    "tag": "A45F589F",
+    "label": "ex:catalogue-shrinking-lens-cluster",
+    "title": "Example 129.1 (Lens-shaped shrinking surface clusters)",
+    "kind": "example",
+    "page": "tag/A45F589F/index.html",
+    "canonical_tag": "521D2D744A5F",
+    "anchor": ""
+  },
+  {
+    "tag": "4AC2883D",
+    "label": "sec:catalogue-rotational-trumpet-ends",
+    "title": "130 Rotational shrinking trumpet ends",
+    "kind": "chapter",
+    "page": "tag/4AC2883D/index.html",
+    "canonical_tag": "72885E0FF22A",
+    "anchor": ""
+  },
+  {
+    "tag": "A48E8FC7",
+    "label": "ex:catalogue-rotational-trumpet-ends",
+    "title": "Example 130.1 (Rotational shrinking trumpet ends)",
+    "kind": "example",
+    "page": "tag/A48E8FC7/index.html",
+    "canonical_tag": "41C51DD59791",
+    "anchor": ""
+  },
+  {
+    "tag": "5B4FC539",
+    "label": "sec:catalogue-isoparametric-shrinking-ends",
+    "title": "131 Shrinking ends asymptotic to isoparametric cones",
+    "kind": "chapter",
+    "page": "tag/5B4FC539/index.html",
+    "canonical_tag": "33FBBB16A0B1",
+    "anchor": ""
+  },
+  {
+    "tag": "6F64FF51",
+    "label": "ex:catalogue-isoparametric-shrinking-ends",
+    "title": "Example 131.1 (Shrinking ends asymptotic to isoparametric cones)",
+    "kind": "example",
+    "page": "tag/6F64FF51/index.html",
+    "canonical_tag": "EDCE90129831",
+    "anchor": ""
+  },
+  {
+    "tag": "237E5223",
+    "label": "sec:catalogue-park-birotational-ends",
+    "title": "132 Park bi-rotational shrinking ends",
+    "kind": "chapter",
+    "page": "tag/237E5223/index.html",
+    "canonical_tag": "51C4E786B6C8",
+    "anchor": ""
+  },
+  {
+    "tag": "AB1D0EDD",
+    "label": "ex:catalogue-park-birotational-ends",
+    "title": "Example 132.1 (Park bi-rotational shrinking ends)",
+    "kind": "example",
+    "page": "tag/AB1D0EDD/index.html",
+    "canonical_tag": "B9E60CF9DA60",
+    "anchor": ""
+  },
+  {
+    "tag": "AD8F02DC",
+    "label": "sec:catalogue-expanding-cycle-networks",
+    "title": "133 Expanding planar networks with a bounded cell",
+    "kind": "chapter",
+    "page": "tag/AD8F02DC/index.html",
+    "canonical_tag": "2DAB3F0AC1D6",
+    "anchor": ""
+  },
+  {
+    "tag": "9BC0EC01",
+    "label": "ex:catalogue-expanding-cycle-networks",
+    "title": "Example 133.1 (Expanding planar networks with a bounded cell)",
+    "kind": "example",
+    "page": "tag/9BC0EC01/index.html",
+    "canonical_tag": "4D33C840252C",
+    "anchor": ""
+  },
+  {
+    "tag": "4B678D8F",
+    "label": "sec:catalogue-multiphase-expander-report",
+    "title": "134 Reported multiphase expanding surface constructions",
+    "kind": "chapter",
+    "page": "tag/4B678D8F/index.html",
+    "canonical_tag": "BEE2570F7E0E",
+    "anchor": ""
+  },
+  {
+    "tag": "9701F635",
+    "label": "ex:catalogue-multiphase-expander-report",
+    "title": "Example 134.1 (Reported multiphase expanding surface constructions)",
+    "kind": "example",
+    "page": "tag/9701F635/index.html",
+    "canonical_tag": "55F8A309578D",
+    "anchor": ""
+  },
+  {
+    "tag": "B15C0917",
+    "label": "sec:catalogue-free-boundary-ancient-balls",
+    "title": "135 Convex ancient free-boundary flows in balls",
+    "kind": "chapter",
+    "page": "tag/B15C0917/index.html",
+    "canonical_tag": "5E38E2470718",
+    "anchor": ""
+  },
+  {
+    "tag": "B7346C72",
+    "label": "ex:catalogue-free-boundary-ancient-balls",
+    "title": "Example 135.1 (Convex ancient free-boundary flows in balls)",
+    "kind": "example",
+    "page": "tag/B7346C72/index.html",
+    "canonical_tag": "2CB973E94410",
+    "anchor": ""
+  },
+  {
+    "tag": "D81EAB36",
+    "label": "sec:catalogue-free-boundary-convex-domains",
+    "title": "136 Ancient free-boundary curves in convex domains",
+    "kind": "chapter",
+    "page": "tag/D81EAB36/index.html",
+    "canonical_tag": "1D94C677A1B5",
+    "anchor": ""
+  },
+  {
+    "tag": "240BC21F",
+    "label": "ex:catalogue-free-boundary-convex-domains",
+    "title": "Example 136.1 (Ancient free-boundary curves in convex domains)",
+    "kind": "example",
+    "page": "tag/240BC21F/index.html",
+    "canonical_tag": "9FAA74B5E7DA",
+    "anchor": ""
+  },
+  {
+    "tag": "C92A03AE",
+    "label": "sec:catalogue-mixed-boundary-ancient-curves",
+    "title": "137 Ancient curves with mixed boundary conditions",
+    "kind": "chapter",
+    "page": "tag/C92A03AE/index.html",
+    "canonical_tag": "4450DF902745",
+    "anchor": ""
+  },
+  {
+    "tag": "48474DCF",
+    "label": "ex:catalogue-mixed-boundary-ancient-curves",
+    "title": "Example 137.1 (Ancient curves with mixed boundary conditions)",
+    "kind": "example",
+    "page": "tag/48474DCF/index.html",
+    "canonical_tag": "FB8BC9B105B9",
+    "anchor": ""
+  },
+  {
+    "tag": "77A8C3D1",
+    "label": "sec:catalogue-unstable-free-boundary-ancient",
+    "title": "138 Ancient flows from unstable free-boundary minimal hypersurfaces",
+    "kind": "chapter",
+    "page": "tag/77A8C3D1/index.html",
+    "canonical_tag": "1897F09E9330",
+    "anchor": ""
+  },
+  {
+    "tag": "CBF91663",
+    "label": "ex:catalogue-unstable-free-boundary-ancient",
+    "title": "Example 138.1 (Ancient flows from unstable free-boundary minimal hypersurfaces)",
+    "kind": "example",
+    "page": "tag/CBF91663/index.html",
+    "canonical_tag": "3846578EAD16",
+    "anchor": ""
+  },
+  {
+    "tag": "22B08067",
+    "label": "sec:catalogue-yamamoto-cone-shrinkers",
+    "title": "139 Yamamoto Lagrangian shrinkers in Calabi\u2013Yau cones",
+    "kind": "chapter",
+    "page": "tag/22B08067/index.html",
+    "canonical_tag": "26AC43F0ACEF",
+    "anchor": ""
+  },
+  {
+    "tag": "2DC6743D",
+    "label": "ex:catalogue-yamamoto-cone-shrinkers",
+    "title": "Example 139.1 (Yamamoto Lagrangian shrinkers in Calabi\u2013Yau cones)",
+    "kind": "example",
+    "page": "tag/2DC6743D/index.html",
+    "canonical_tag": "E540F08E41B0",
+    "anchor": ""
+  },
+  {
+    "tag": "E532B433",
+    "label": "sec:catalogue-hyperbolic-product-rotational-translators",
+    "title": "140 Rotational translators in the hyperbolic-plane product",
+    "kind": "chapter",
+    "page": "tag/E532B433/index.html",
+    "canonical_tag": "E33234341F7D",
+    "anchor": ""
+  },
+  {
+    "tag": "AB0D9413",
+    "label": "ex:catalogue-hyperbolic-product-rotational-translators",
+    "title": "Example 140.1 (Rotational translators in the hyperbolic-plane product)",
+    "kind": "example",
+    "page": "tag/AB0D9413/index.html",
+    "canonical_tag": "86412C87CEBE",
+    "anchor": ""
+  },
+  {
+    "tag": "A517153F",
+    "label": "sec:catalogue-hyperbolic-product-grim-reapers",
+    "title": "141 Grim reapers in the hyperbolic-plane product",
+    "kind": "chapter",
+    "page": "tag/A517153F/index.html",
+    "canonical_tag": "FB29EFBDEAE7",
+    "anchor": ""
+  },
+  {
+    "tag": "0150CFF9",
+    "label": "ex:catalogue-hyperbolic-product-grim-reapers",
+    "title": "Example 141.1 (Grim reapers in the hyperbolic-plane product)",
+    "kind": "example",
+    "page": "tag/0150CFF9/index.html",
+    "canonical_tag": "38A33FD9E29C",
+    "anchor": ""
+  },
+  {
+    "tag": "72190F72",
+    "label": "sec:catalogue-hyperbolic-product-helicoidal",
+    "title": "142 Helicoidal rotators-translators in the hyperbolic-plane product",
+    "kind": "chapter",
+    "page": "tag/72190F72/index.html",
+    "canonical_tag": "65C371A89575",
+    "anchor": ""
+  },
+  {
+    "tag": "DE426D83",
+    "label": "ex:catalogue-hyperbolic-product-helicoidal",
+    "title": "Example 142.1 (Helicoidal rotators-translators in the hyperbolic-plane product)",
+    "kind": "example",
+    "page": "tag/DE426D83/index.html",
+    "canonical_tag": "32D1DDDBF12B",
+    "anchor": ""
+  },
+  {
+    "tag": "6661B0DB",
+    "label": "sec:catalogue-hyperbolic-killing-catenoids",
+    "title": "143 Hyperbolic Killing translators and catenoids",
+    "kind": "chapter",
+    "page": "tag/6661B0DB/index.html",
+    "canonical_tag": "EA9BCA366717",
+    "anchor": ""
+  },
+  {
+    "tag": "6036200C",
+    "label": "ex:catalogue-hyperbolic-killing-catenoids",
+    "title": "Example 143.1 (Hyperbolic Killing translators and catenoids)",
+    "kind": "example",
+    "page": "tag/6036200C/index.html",
+    "canonical_tag": "C13AFD802566",
+    "anchor": ""
+  },
+  {
+    "tag": "A2F4E728",
+    "label": "sec:catalogue-hyperbolic-parabolic-grims",
+    "title": "144 Parabolic Killing grim reapers in hyperbolic space",
+    "kind": "chapter",
+    "page": "tag/A2F4E728/index.html",
+    "canonical_tag": "2C2BD4493223",
+    "anchor": ""
+  },
+  {
+    "tag": "73CD2434",
+    "label": "ex:catalogue-hyperbolic-parabolic-grims",
+    "title": "Example 144.1 (Parabolic Killing grim reapers in hyperbolic space)",
+    "kind": "example",
+    "page": "tag/73CD2434/index.html",
+    "canonical_tag": "69BB4AD6B5E2",
+    "anchor": ""
+  },
+  {
+    "tag": "721F44FA",
+    "label": "sec:catalogue-nil-invariant-translators",
+    "title": "145 Invariant translators in the Heisenberg group",
+    "kind": "chapter",
+    "page": "tag/721F44FA/index.html",
+    "canonical_tag": "750539FAA8AF",
+    "anchor": ""
+  },
+  {
+    "tag": "9ADF2393",
+    "label": "ex:catalogue-nil-invariant-translators",
+    "title": "Example 145.1 (Invariant translators in the Heisenberg group)",
+    "kind": "example",
+    "page": "tag/9ADF2393/index.html",
+    "canonical_tag": "98084CBA4530",
+    "anchor": ""
+  },
+  {
+    "tag": "6B837840",
+    "label": "sec:catalogue-sol-invariant-translators",
+    "title": "146 Invariant translators in Sol geometry",
+    "kind": "chapter",
+    "page": "tag/6B837840/index.html",
+    "canonical_tag": "2BC769F3A4AD",
+    "anchor": ""
+  },
+  {
+    "tag": "553961D1",
+    "label": "ex:catalogue-sol-invariant-translators",
+    "title": "Example 146.1 (Invariant translators in Sol geometry)",
+    "kind": "example",
+    "page": "tag/553961D1/index.html",
+    "canonical_tag": "96A9DA4F04BF",
+    "anchor": ""
+  },
+  {
+    "tag": "FE743ED2",
+    "label": "sec:catalogue-sl2-invariant-translators",
+    "title": "147 Invariant translators in the special linear group",
+    "kind": "chapter",
+    "page": "tag/FE743ED2/index.html",
+    "canonical_tag": "9C3485CD7693",
+    "anchor": ""
+  },
+  {
+    "tag": "D4532213",
+    "label": "ex:catalogue-sl2-invariant-translators",
+    "title": "Example 147.1 (Invariant translators in the special linear group)",
+    "kind": "example",
+    "page": "tag/D4532213/index.html",
+    "canonical_tag": "3535C925421E",
+    "anchor": ""
+  },
+  {
+    "tag": "352B9C07",
+    "label": "sec:catalogue-compact-symmetric-product-translators",
+    "title": "148 Graphical translators over compact symmetric spaces",
+    "kind": "chapter",
+    "page": "tag/352B9C07/index.html",
+    "canonical_tag": "1102596C432B",
+    "anchor": ""
+  },
+  {
+    "tag": "102492C7",
+    "label": "ex:catalogue-compact-symmetric-product-translators",
+    "title": "Example 148.1 (Graphical translators over compact symmetric spaces)",
+    "kind": "example",
+    "page": "tag/102492C7/index.html",
+    "canonical_tag": "B6DC0DA73EFF",
+    "anchor": ""
+  },
+  {
+    "tag": "EB9C9CA2",
+    "label": "sec:catalogue-hyperbolic-curve-solitons",
+    "title": "149 Isometric curve-shortening solitons in the hyperbolic plane",
+    "kind": "chapter",
+    "page": "tag/EB9C9CA2/index.html",
+    "canonical_tag": "6E7783E99D53",
+    "anchor": ""
+  },
+  {
+    "tag": "CCD17321",
+    "label": "ex:catalogue-hyperbolic-curve-solitons",
+    "title": "Example 149.1 (Isometric curve-shortening solitons in the hyperbolic plane)",
+    "kind": "example",
+    "page": "tag/CCD17321/index.html",
+    "canonical_tag": "39A0C4D2B77A",
+    "anchor": ""
+  },
+  {
+    "tag": "6413D785",
+    "label": "sec:catalogue-perturbed-sphere-eternal-tori",
+    "title": "150 Eternal tori in perturbations of the round three-sphere",
+    "kind": "chapter",
+    "page": "tag/6413D785/index.html",
+    "canonical_tag": "EF033313C0BB",
+    "anchor": ""
+  },
+  {
+    "tag": "EBC2722E",
+    "label": "ex:catalogue-perturbed-sphere-eternal-tori",
+    "title": "Example 150.1 (Eternal tori in perturbations of the round three-sphere)",
+    "kind": "example",
+    "page": "tag/EBC2722E/index.html",
+    "canonical_tag": "4F2C4D7007ED",
+    "anchor": ""
+  },
+  {
+    "tag": "C02F0E3A",
+    "label": "sec:catalogue-lotay-oliveira-neck-pinches",
+    "title": "151 Finite-time Lagrangian neck pinches with circle symmetry",
+    "kind": "chapter",
+    "page": "tag/C02F0E3A/index.html",
+    "canonical_tag": "06177EF7798F",
+    "anchor": ""
+  },
+  {
+    "tag": "6A1B5DDC",
+    "label": "ex:catalogue-lotay-oliveira-neck-pinches",
+    "title": "Example 151.1 (Finite-time Lagrangian neck pinches with circle symmetry)",
+    "kind": "example",
+    "page": "tag/6A1B5DDC/index.html",
+    "canonical_tag": "A25A9D4CCA2B",
+    "anchor": ""
+  },
+  {
+    "tag": "B946AD73",
+    "label": "sec:catalogue-jlt-mixed-periodic-shrinkers",
+    "title": "152 Noncompact periodic Lagrangian shrinkers",
+    "kind": "chapter",
+    "page": "tag/B946AD73/index.html",
+    "canonical_tag": "9B86DFDA9217",
+    "anchor": ""
+  },
+  {
+    "tag": "832058AF",
+    "label": "ex:catalogue-jlt-mixed-periodic-shrinkers",
+    "title": "Example 152.1 (Noncompact periodic Lagrangian shrinkers)",
+    "kind": "example",
+    "page": "tag/832058AF/index.html",
+    "canonical_tag": "2DED712E1192",
+    "anchor": ""
+  },
+  {
+    "tag": "013F31DA",
+    "label": "sec:catalogue-jlt-mixed-periodic-expanders",
+    "title": "153 Noncompact periodic Lagrangian expanders",
+    "kind": "chapter",
+    "page": "tag/013F31DA/index.html",
+    "canonical_tag": "49998F6A2866",
+    "anchor": ""
+  },
+  {
+    "tag": "A194C4D8",
+    "label": "ex:catalogue-jlt-mixed-periodic-expanders",
+    "title": "Example 153.1 (Noncompact periodic Lagrangian expanders)",
+    "kind": "example",
+    "page": "tag/A194C4D8/index.html",
+    "canonical_tag": "3823D6B50DAF",
+    "anchor": ""
+  },
+  {
+    "tag": "3157C88B",
+    "label": "sec:catalogue-sun-wang-prescribed-ends",
+    "title": "154 Translators with general closed-shrinker ends",
+    "kind": "chapter",
+    "page": "tag/3157C88B/index.html",
+    "canonical_tag": "C44A1D57ECC3",
+    "anchor": ""
+  },
+  {
+    "tag": "55EF9321",
+    "label": "ex:catalogue-sun-wang-prescribed-ends",
+    "title": "Example 154.1 (Translators with general closed-shrinker ends)",
+    "kind": "example",
+    "page": "tag/55EF9321/index.html",
+    "canonical_tag": "191836516CC9",
+    "anchor": ""
+  },
+  {
+    "tag": "07019635",
+    "label": "sec:catalogue-immersed-ancient-grim-chains",
+    "title": "155 Immersed ancient curves from grim-reaper chains",
+    "kind": "chapter",
+    "page": "tag/07019635/index.html",
+    "canonical_tag": "F7D04537B40F",
+    "anchor": ""
+  },
+  {
+    "tag": "EAE3D314",
+    "label": "ex:catalogue-immersed-ancient-grim-chains",
+    "title": "Example 155.1 (Immersed ancient curves from grim-reaper chains)",
+    "kind": "example",
+    "page": "tag/EAE3D314/index.html",
+    "canonical_tag": "104CF0DAFD60",
+    "anchor": ""
   }
 ]

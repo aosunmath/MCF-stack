@@ -4137,7 +4137,8 @@
       "label": "ex:catalogue-high-genus-expanders",
       "notes": "",
       "citations": [
-        "CatHMWExpand26"
+        "CatHMWExpand26",
+        "CatShaoZou2025a"
       ],
       "cases": [
         {
@@ -4329,7 +4330,8 @@
       "label": "ex:catalogue-minimal-ancient-flows",
       "notes": "The interactive time sequence is a numerical linearized model on a truncated Costa domain. Its Dirichlet eigenvalue and magnified normal offsets are illustration data, not additional properties of the nonlinear ancient flows.",
       "citations": [
-        "CatMP19"
+        "CatMP19",
+        "CatChoiHuangLee2025"
       ],
       "cases": [
         {
@@ -6600,6 +6602,3635 @@
       "tag": "E9086532F53A",
       "model": "halldorsson-minimal",
       "illustration_status": "Exact formula"
+    },
+    {
+      "label": "ex:catalogue-drugan-kleene",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatDruganKleene2017"
+      ],
+      "cases": [
+        {
+          "name": "Surface cases, n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "S², ℝ², ℝ × S¹, or S¹ × S¹",
+          "compact": null,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The nontrivial sphere, plane and cylinder branches are nonembedded. Torus embeddedness is not asserted uniformly."
+          },
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the construction."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "Hypersurface cases, n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ, ℝⁿ, ℝ × Sⁿ⁻¹, or S¹ × Sⁿ⁻¹",
+          "compact": null,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Drugan–Kleene immersed shrinking families",
+      "section": "drugan-kleene-immersed-shrinking-families",
+      "category": "shrinkers",
+      "tag": "C28E16016422",
+      "model": "literature-drugan-kleene",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-riedler-isoparametric",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatRiedler2023"
+      ],
+      "cases": [
+        {
+          "name": "g = 3, 4 or 6, with equal admissible multiplicity",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × M; n−1 = gm; ambient ℝⁿ⁺¹, starting in ℝ⁵",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Riedler shrinkers from isoparametric foliations",
+      "section": "riedler-shrinkers-from-isoparametric-foliations",
+      "category": "shrinkers",
+      "tag": "395E0B7648CA",
+      "model": "literature-riedler-isoparametric",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-shrinkers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "cases": [
+        {
+          "name": "Non-spherical compact Legendrian leaves, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × M (parameter domain; possible image quotients)",
+          "compact": true,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Anciaux shrinkers with minimal Legendrian leaves",
+      "section": "anciaux-shrinkers-with-minimal-legendrian-leaves",
+      "category": "shrinkers",
+      "tag": "7077447C0B66",
+      "model": "literature-anciaux-legendrian-shrinkers",
+      "illustration_status": "Numerical ODE profile and projected immersion"
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "cases": [
+        {
+          "name": "Non-spherical compact Legendrian leaves, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ × M",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Anciaux expanders with minimal Legendrian leaves",
+      "section": "anciaux-expanders-with-minimal-legendrian-leaves",
+      "category": "expanders",
+      "tag": "108077B0C2DE",
+      "model": "literature-anciaux-legendrian-expanders",
+      "illustration_status": "Numerical ODE profile and projected immersion"
+    },
+    {
+      "label": "ex:catalogue-nguyen-grim-configurations",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatNguyen2013",
+        "CatNguyen2015"
+      ],
+      "cases": [
+        {
+          "name": "Finite configuration: singly periodic surface",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Configuration-dependent periodic surface",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "Periodic configuration: doubly periodic surface",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Configuration-dependent doubly periodic surface",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Nguyen translators from grim-reaper configurations",
+      "section": "nguyen-translators-from-grim-reaper-configurations",
+      "category": "translators",
+      "tag": "44161C7DCC84",
+      "model": "literature-nguyen-grim-configurations",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-polyhedral-slab-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "cases": [
+        {
+          "name": "Higher-dimensional polyhedral constructions, n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Complete convex graphical hypersurface; polyhedral asymptotic data",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Convex slab translators with polyhedral asymptotics",
+      "section": "convex-slab-translators-with-polyhedral-asymptotics",
+      "category": "translators",
+      "tag": "F05CE3FF1C12",
+      "model": "literature-polyhedral-slab-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-castro-lerma-pairs",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatCastroLerma2012"
+      ],
+      "cases": [
+        {
+          "name": "Complete nonvanishing profile pairs in ℂ²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Profile-product parameter surface, with any stated period identifications",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Castro–Lerma Lagrangian translators from curve pairs",
+      "section": "castro-lerma-lagrangian-translators-from-curve-pairs",
+      "category": "translators",
+      "tag": "B4DA2A79EC96",
+      "model": "literature-castro-lerma-pairs",
+      "illustration_status": "Numerical ODE and integral parametrization"
+    },
+    {
+      "label": "ex:catalogue-su-wood-translating-helicoids",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "cases": [
+        {
+          "name": "SO(m−1) case, m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "G-orbits of a two-dimensional profile; quotient identifications as in source",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Su–Wood Lagrangian translating helicoids",
+      "section": "su-wood-lagrangian-translating-helicoids",
+      "category": "translators",
+      "tag": "6386C95CB0EA",
+      "model": "literature-su-wood-translating-helicoids",
+      "illustration_status": "Numerical ODE profile projection"
+    },
+    {
+      "label": "ex:catalogue-su-wood-paired-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "cases": [
+        {
+          "name": "SO(m−1) case, m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "G-orbits of a two-dimensional profile; quotient identifications as in source",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "T^(m−2) case, m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Torus-orbit profile construction",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Su–Wood paired-profile translators",
+      "section": "su-wood-paired-profile-translators",
+      "category": "translators",
+      "tag": "FDCF3D0F683E",
+      "model": "literature-su-wood-paired-translators",
+      "illustration_status": "Numerical ODE profile projection"
+    },
+    {
+      "label": "ex:catalogue-nonconvex-entire-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatDavilaPinoWei2026"
+      ],
+      "cases": [
+        {
+          "name": "Entire graphs, N ≥ 8, ambient ℝ^(N+1)",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝᴺ, N ≥ 8",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Nonconvex entire graphical translators",
+      "section": "nonconvex-entire-graphical-translators",
+      "category": "translators",
+      "tag": "879611BCBD19",
+      "model": "literature-nonconvex-entire-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-graphical-cone-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatEckerHuisken1989"
+      ],
+      "cases": [
+        {
+          "name": "n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝⁿ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Graphical expanders from general Lipschitz cones",
+      "section": "graphical-expanders-from-general-lipschitz-cones",
+      "category": "expanders",
+      "tag": "9A84A12D805C",
+      "model": "literature-graphical-cone-expanders",
+      "illustration_status": "Numerical PDE approximation"
+    },
+    {
+      "label": "ex:catalogue-lawson-osserman-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLee2023"
+      ],
+      "cases": [
+        {
+          "name": "Hopf type (3,2,2) and other admitted LOMSE types",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ^(n+1); ambient ℝ^(n+m+2), first case ℝ⁷",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Expanders based on generalized Lawson–Osserman maps",
+      "section": "expanders-based-on-generalized-lawson-osserman-maps",
+      "category": "expanders",
+      "tag": "42620E4B40CF",
+      "model": "literature-lawson-osserman-expanders",
+      "illustration_status": "Numerical ODE radial profile"
+    },
+    {
+      "label": "ex:catalogue-birotational-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatNeto2026"
+      ],
+      "cases": [
+        {
+          "name": "Two-ended p,q ≥ 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ × Sᵖ × Sᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "Axis-starting p,q ≥ 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ^(p+1) × Sᑫ or ℝ^(q+1) × Sᵖ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Bi-rotational expanding hypersurfaces",
+      "section": "bi-rotational-expanding-hypersurfaces",
+      "category": "expanders",
+      "tag": "060795635061",
+      "model": "literature-birotational-expanders",
+      "illustration_status": "Numerical ODE profile projection"
+    },
+    {
+      "label": "ex:catalogue-birotational-shrinkers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatNeto2026a"
+      ],
+      "cases": [
+        {
+          "name": "Maximal continued profiles, p,q ≥ 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Depends on axis contacts, periodic closure and recurrent behavior",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Complete bi-rotational shrinking continuations",
+      "section": "complete-bi-rotational-shrinking-continuations",
+      "category": "shrinkers",
+      "tag": "313552CFDCE7",
+      "model": "literature-birotational-shrinkers",
+      "illustration_status": "Numerical ODE segment"
+    },
+    {
+      "label": "ex:catalogue-ancient-sine-wave",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatNakayamaIizukaWadati1994",
+        "CatAY18"
+      ],
+      "cases": [
+        {
+          "name": "Complete periodic graph in ℝ²",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "ℝ with spatially periodic height",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "The ancient sine wave",
+      "section": "the-ancient-sine-wave",
+      "category": "other-special-flows",
+      "tag": "3BF94583DFB1",
+      "model": "literature-ancient-sine-wave",
+      "illustration_status": "Exact formula"
+    },
+    {
+      "label": "ex:catalogue-ma-halfplane-ancient",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatMa2021"
+      ],
+      "cases": [
+        {
+          "name": "Compact immersed ancient curves",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "S¹ as parameter manifold",
+          "compact": true,
+          "embeddedness": {
+            "key": "depends",
+            "text": "Early slices may self-intersect; the constructed flow becomes embedded later."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Immersed ancient curves spanning a half-plane",
+      "section": "immersed-ancient-curves-spanning-a-half-plane",
+      "category": "other-special-flows",
+      "tag": "4B3B50761BB9",
+      "model": "literature-ma-halfplane-ancient",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-nonplanar-eternal-reapers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniMramor2023"
+      ],
+      "cases": [
+        {
+          "name": "Nonplanar curve in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "ℝ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Nonplanar eternal curves from grim reapers",
+      "section": "nonplanar-eternal-curves-from-grim-reapers",
+      "category": "other-special-flows",
+      "tag": "1A07DD8D8A69",
+      "model": "literature-nonplanar-eternal-reapers",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-collapsed-ancient-pancakes",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangfordTinaglia2017"
+      ],
+      "cases": [
+        {
+          "name": "Surface pancake, n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "S²",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Rotational collapsed ancient pancakes",
+      "section": "rotational-collapsed-ancient-pancakes",
+      "category": "other-special-flows",
+      "tag": "325F4A3220BC",
+      "model": "literature-collapsed-ancient-pancakes",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-polyhedral-ancient-pancakes",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "cases": [
+        {
+          "name": "n = 2, polygonal squash-down",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "S²",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Ancient pancakes with polyhedral asymptotics",
+      "section": "ancient-pancakes-with-polyhedral-asymptotics",
+      "category": "other-special-flows",
+      "tag": "8C2928E390C8",
+      "model": "literature-polyhedral-ancient-pancakes",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-convex-eternal-nontranslators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "cases": [
+        {
+          "name": "Hypersurface case n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Noncompact convex surface; global topology not recorded here",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Noncompact convex hypersurface",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Convex eternal flows that do not translate",
+      "section": "convex-eternal-flows-that-do-not-translate",
+      "category": "other-special-flows",
+      "tag": "FA0C7583A161",
+      "model": "literature-convex-eternal-nontranslators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-reduced-symmetry-ancient-ovals",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatDuHaslhofer2021"
+      ],
+      "cases": [
+        {
+          "name": "2 ≤ k ≤ n−1, n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Ancient ovals with reduced symmetry",
+      "section": "ancient-ovals-with-reduced-symmetry",
+      "category": "other-special-flows",
+      "tag": "F18DC5F92665",
+      "model": "literature-reduced-symmetry-ancient-ovals",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-ancient-doughnuts",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangfordMramor2020"
+      ],
+      "cases": [
+        {
+          "name": "Ancient torus surface in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × S¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "1",
+            "text": "Genus one."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁(M_t) ≤ λ(M_t) < 2 for the specified construction; not identified with entropy."
+          },
+          "entropy": {
+            "status": "bound",
+            "text": "λ(M_t) < 2 for the construction based on the Drugan–Nguyen shrinker; no exact value."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sⁿ⁻¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "bound",
+            "text": "F₀,₁(M_t) ≤ λ(M_t) < 2 for the specified construction; not identified with entropy."
+          },
+          "entropy": {
+            "status": "bound",
+            "text": "λ(M_t) < 2 for the construction based on the Drugan–Nguyen shrinker; no exact value."
+          }
+        }
+      ],
+      "title": "Non-self-similar ancient doughnuts",
+      "section": "non-self-similar-ancient-doughnuts",
+      "category": "other-special-flows",
+      "tag": "7A6AD2F58C6E",
+      "model": "literature-ancient-doughnuts",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-euclidean",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "cases": [
+        {
+          "name": "Exact product-torus case",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × S¹ in ℝ⁴",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "1",
+            "text": "Genus one."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "Other compact isoparametric leaves",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Regular isoparametric leaf; dimension and ambient codimension depend on input",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Ancient isoparametric flows in Euclidean space",
+      "section": "ancient-isoparametric-flows-in-euclidean-space",
+      "category": "other-special-flows",
+      "tag": "199B3435F93B",
+      "model": "literature-isoparametric-ancient-euclidean",
+      "illustration_status": "Exact formula in a labeled projection"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-sphere",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "cases": [
+        {
+          "name": "Exact Clifford-torus case",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × S¹ in S³",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "1",
+            "text": "Genus one."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Other compact isoparametric leaves",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Regular isoparametric leaf; dimension and ambient codimension depend on input",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Ancient isoparametric flows in spheres",
+      "section": "ancient-isoparametric-flows-in-spheres",
+      "category": "other-special-flows",
+      "tag": "51259B78DC80",
+      "model": "literature-isoparametric-ancient-sphere",
+      "illustration_status": "Exact formula in a labeled projection"
+    },
+    {
+      "label": "ex:catalogue-flows-emerging-from-cones",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChen2026"
+      ],
+      "cases": [
+        {
+          "name": "Smooth embedded AC surface input, n = 2",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Topology inherited from the chosen expander",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the construction."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "Higher-dimensional smooth inputs",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Topology inherited from the chosen expander",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Non-self-similar flows emerging from cones",
+      "section": "non-self-similar-flows-emerging-from-cones",
+      "category": "other-special-flows",
+      "tag": "AD7B9EFD3360",
+      "model": "literature-flows-emerging-from-cones",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-bounded-mean-curvature-singularities",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatStolarski2023"
+      ],
+      "cases": [
+        {
+          "name": "Ambient ℝᴺ, N ≥ 8",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Noncompact hypersurface; minimal-cone desingularization geometry",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Hypersurface singularities with bounded mean curvature",
+      "section": "hypersurface-singularities-with-bounded-mean-curvature",
+      "category": "other-special-flows",
+      "tag": "D9D28F3C8E4F",
+      "model": "literature-bounded-mean-curvature-singularities",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatMadnickWood2025"
+      ],
+      "cases": [
+        {
+          "name": "Admissible non-spherical orbits, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Cohomogeneity-one G-orbit flow, with constant isotropy type",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Lagrangian singularities with prescribed orbit models",
+      "section": "lagrangian-singularities-with-prescribed-orbit-models",
+      "category": "other-special-flows",
+      "tag": "5DA3E72E4195",
+      "model": "literature-cohomogeneity-one-lagrangian-singularities",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-network-spoon",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "One bounded loop attached to a straight ray at a single triple junction",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Brakke spoon",
+      "section": "brakke-spoon",
+      "category": "shrinkers",
+      "tag": "DE792632B8AE",
+      "model": "literature-network-spoon",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-network-lens",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "Two curved arcs bounding a lens and two exterior rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Shrinking lens network",
+      "section": "shrinking-lens-network",
+      "category": "shrinkers",
+      "tag": "45920B126322",
+      "model": "literature-network-lens",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-network-fish",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "The asymmetric two-ray, one-region configuration",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Shrinking fish network",
+      "section": "shrinking-fish-network",
+      "category": "shrinkers",
+      "tag": "6E3C2D665CDD",
+      "model": "literature-network-fish",
+      "illustration_status": "Source-informed network schematic"
+    },
+    {
+      "label": "ex:catalogue-network-three-ray",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "One bounded three-sided region and three exterior rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "3",
+            "text": "Three topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Three-ray shrinking star",
+      "section": "three-ray-shrinking-star",
+      "category": "shrinkers",
+      "tag": "40F52B6CFB5C",
+      "model": "literature-network-three-ray",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-network-four-ray",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "One bounded four-sided region and four exterior rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "many",
+            "text": "At least four ends, as specified in the statement."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Four-ray shrinking star",
+      "section": "four-ray-shrinking-star",
+      "category": "shrinkers",
+      "tag": "010FE5696B4C",
+      "model": "literature-network-four-ray",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-network-five-ray",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "One bounded five-sided region and five exterior rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "many",
+            "text": "At least four ends, as specified in the statement."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Five-ray shrinking star",
+      "section": "five-ray-shrinking-star",
+      "category": "shrinkers",
+      "tag": "4C198F76FD40",
+      "model": "literature-network-five-ray",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-network-rocket",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "The asymmetric three-ray, one-region configuration",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "3",
+            "text": "Three topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Shrinking rocket network",
+      "section": "shrinking-rocket-network",
+      "category": "shrinkers",
+      "tag": "21D9CE8B056C",
+      "model": "literature-network-rocket",
+      "illustration_status": "Source-informed network schematic"
+    },
+    {
+      "label": "ex:catalogue-network-cisgeminate-eye",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChangLue2019"
+      ],
+      "cases": [
+        {
+          "name": "Regular planar network",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "Two bounded four-sided cells sharing an edge, with four exterior rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded as a network with prescribed 120-degree triple junctions, not a smooth curve there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "many",
+            "text": "Four exterior rays."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Cisgeminate-eye shrinker",
+      "section": "cisgeminate-eye-shrinker",
+      "category": "shrinkers",
+      "tag": "8E8F9B32C891",
+      "model": "literature-network-cisgeminate-eye",
+      "illustration_status": "Source-informed network schematic"
+    },
+    {
+      "label": "ex:catalogue-shrinking-lens-cluster",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBaldiHausMantegazza2019"
+      ],
+      "cases": [
+        {
+          "name": "Two-dimensional cluster in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "network",
+          "topology": "Two disks and a planar exterior joined along a triple circle",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded sheets meeting at the prescribed triple circle; the union is not smooth there."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Lens-shaped shrinking surface clusters",
+      "section": "lens-shaped-shrinking-surface-clusters",
+      "category": "shrinkers",
+      "tag": "521D2D744A5F",
+      "model": "literature-shrinking-lens-cluster",
+      "illustration_status": "Numerical ODE cluster"
+    },
+    {
+      "label": "ex:catalogue-rotational-trumpet-ends",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatKleeneMoller2014"
+      ],
+      "cases": [
+        {
+          "name": "Surface end in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Exterior end or orbit-space disk as specified; boundary retained",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "Higher-dimensional ends",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Exterior end or orbit-space disk as specified; boundary retained",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a surface."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Rotational shrinking trumpet ends",
+      "section": "rotational-shrinking-trumpet-ends",
+      "category": "shrinkers",
+      "tag": "41C51DD59791",
+      "model": "literature-rotational-trumpet-ends",
+      "illustration_status": "Numerical ODE end"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-shrinking-ends",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChangSpruck2017"
+      ],
+      "cases": [
+        {
+          "name": "Surface end in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Exterior end or orbit-space disk as specified; boundary retained",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "Higher-dimensional ends",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Exterior end or orbit-space disk as specified; boundary retained",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a surface."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Shrinking ends asymptotic to isoparametric cones",
+      "section": "shrinking-ends-asymptotic-to-isoparametric-cones",
+      "category": "shrinkers",
+      "tag": "EDCE90129831",
+      "model": "literature-isoparametric-shrinking-ends",
+      "illustration_status": "Source-informed orbit-space schematic"
+    },
+    {
+      "label": "ex:catalogue-park-birotational-ends",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatPark2026"
+      ],
+      "cases": [
+        {
+          "name": "Boundary construction in the stated dimensions",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Exterior end or orbit-space disk as specified; boundary retained",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Park bi-rotational shrinking ends",
+      "section": "park-bi-rotational-shrinking-ends",
+      "category": "shrinkers",
+      "tag": "B9E60CF9DA60",
+      "model": "literature-park-birotational-ends",
+      "illustration_status": "Source-informed orbit-space schematic"
+    },
+    {
+      "label": "ex:catalogue-expanding-cycle-networks",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatChenGuo2007"
+      ],
+      "cases": [
+        {
+          "name": "k ≥ 7 equal-tension networks",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "network",
+          "topology": "One bounded k-sided cell and k rays",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded network with prescribed 120-degree triple junctions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "many",
+            "text": "At least four ends, as specified in the statement."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Expanding planar networks with a bounded cell",
+      "section": "expanding-planar-networks-with-a-bounded-cell",
+      "category": "expanders",
+      "tag": "4D33C840252C",
+      "model": "literature-expanding-cycle-networks",
+      "illustration_status": "Numerical ODE network"
+    },
+    {
+      "label": "ex:catalogue-multiphase-expander-report",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLiao2025"
+      ],
+      "cases": [
+        {
+          "name": "Reported multiphase construction in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "network",
+          "topology": "Not certified from the current review",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Reported multiphase expanding surface constructions",
+      "section": "reported-multiphase-expanding-surface-constructions",
+      "category": "expanders",
+      "tag": "55F8A309578D",
+      "model": "literature-multiphase-expander-report",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-free-boundary-ancient-balls",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniLangford2023",
+        "CatBourniLangford2025"
+      ],
+      "cases": [
+        {
+          "name": "Curve in B²",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Closed interval with endpoints on ∂B²",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "Disk in B³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "D² with boundary on ∂B³",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Dⁿ in Bⁿ⁺¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Convex ancient free-boundary flows in balls",
+      "section": "convex-ancient-free-boundary-flows-in-balls",
+      "category": "other-special-flows",
+      "tag": "2CB973E94410",
+      "model": "literature-free-boundary-ancient-balls",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-free-boundary-convex-domains",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniBurnsCatron2025"
+      ],
+      "cases": [
+        {
+          "name": "Planar strictly convex domain",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Compact interval with free endpoints on the fixed boundary",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Ancient free-boundary curves in convex domains",
+      "section": "ancient-free-boundary-curves-in-convex-domains",
+      "category": "other-special-flows",
+      "tag": "9FAA74B5E7DA",
+      "model": "literature-free-boundary-convex-domains",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-mixed-boundary-ancient-curves",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLangfordLiuMcNamara2025"
+      ],
+      "cases": [
+        {
+          "name": "0 < d < 1, eternal case",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Interval with one fixed and one free endpoint",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "d = 1, finite-time endpoint singularity",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Interval before the singular time",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Ancient curves with mixed boundary conditions",
+      "section": "ancient-curves-with-mixed-boundary-conditions",
+      "category": "other-special-flows",
+      "tag": "FB8BC9B105B9",
+      "model": "literature-mixed-boundary-ancient-curves",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-unstable-free-boundary-ancient",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBourniFranz2026"
+      ],
+      "cases": [
+        {
+          "name": "Surface case m = 2",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Topology of the chosen two-sided free-boundary minimal hypersurface",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "varies",
+            "text": "Genus of the chosen minimal surface."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Hypersurface dimension m ≥ 3",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Topology of the chosen two-sided free-boundary minimal hypersurface",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "section": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
+      "category": "other-special-flows",
+      "tag": "3846578EAD16",
+      "model": "literature-unstable-free-boundary-ancient",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-yamamoto-cone-shrinkers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatYamamoto2012"
+      ],
+      "cases": [
+        {
+          "name": "Threefold in the six-dimensional cone M_g",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Σ_g × S¹, g ≥ 1",
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Yamamoto Lagrangian shrinkers in Calabi–Yau cones",
+      "section": "yamamoto-lagrangian-shrinkers-in-calabi-yau-cones",
+      "category": "shrinkers",
+      "tag": "E540F08E41B0",
+      "model": "literature-yamamoto-cone-shrinkers",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-rotational-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBueno2018"
+      ],
+      "cases": [
+        {
+          "name": "Bowl in ℍ² × ℝ",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Catenoid in ℍ² × ℝ",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × ℝ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Rotational translators in the hyperbolic-plane product",
+      "section": "rotational-translators-in-the-hyperbolic-plane-product",
+      "category": "translators",
+      "tag": "86412C87CEBE",
+      "model": "literature-hyperbolic-product-rotational-translators",
+      "illustration_status": "Numerical ODE profile"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-grim-reapers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBuenoLopez2024"
+      ],
+      "cases": [
+        {
+          "name": "Vertical, parabolic and hyperbolic Killing cases",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Depends on the profile and invariant subgroup",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Grim reapers in the hyperbolic-plane product",
+      "section": "grim-reapers-in-the-hyperbolic-plane-product",
+      "category": "translators",
+      "tag": "38A33FD9E29C",
+      "model": "literature-hyperbolic-product-grim-reapers",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-helicoidal",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLimaRamosSantos2025"
+      ],
+      "cases": [
+        {
+          "name": "Complete helicoidal surface in ℍ² × ℝ",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Immersed parameter plane ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Helicoidal rotators-translators in the hyperbolic-plane product",
+      "section": "helicoidal-rotators-translators-in-the-hyperbolic-plane-product",
+      "category": "translators",
+      "tag": "32D1DDDBF12B",
+      "model": "literature-hyperbolic-product-helicoidal",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-killing-catenoids",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLimaRamosSantos2026",
+        "CatLimaRamos2026"
+      ],
+      "cases": [
+        {
+          "name": "Rotational annuli in ℍ³",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × ℝ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Rotational catenoids in ℍⁿ⁺¹, n ≥ 3",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × ℝ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Grim and helicoidal surface constructions",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Depends on the specified invariant profile",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Hyperbolic Killing translators and catenoids",
+      "section": "hyperbolic-killing-translators-and-catenoids",
+      "category": "translators",
+      "tag": "C13AFD802566",
+      "model": "literature-hyperbolic-killing-catenoids",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-parabolic-grims",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatBuenoLopez2024a"
+      ],
+      "cases": [
+        {
+          "name": "Parabolic invariant surfaces in ℍ³",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Invariant profile construction; case-dependent domain",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Parabolic Killing grim reapers in hyperbolic space",
+      "section": "parabolic-killing-grim-reapers-in-hyperbolic-space",
+      "category": "translators",
+      "tag": "69BB4AD6B5E2",
+      "model": "literature-hyperbolic-parabolic-grims",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-nil-invariant-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatPipoli2018"
+      ],
+      "cases": [
+        {
+          "name": "Slab graphs and rotational bowl",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Rotational catenoids",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × ℝ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Helicoidal examples",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Immersed parameter plane",
+          "compact": false,
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "The intersecting-arm examples in the helicoidal family are nonembedded."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Invariant translators in the Heisenberg group",
+      "section": "invariant-translators-in-the-heisenberg-group",
+      "category": "translators",
+      "tag": "98084CBA4530",
+      "model": "literature-nil-invariant-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-sol-invariant-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatPipoli2019"
+      ],
+      "cases": [
+        {
+          "name": "Complete graphical cases of Theorems 1.1–1.2",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Graph over the specified slab or half-plane",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Other invariant profile cases",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Determined by the profile and invariant orbit",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Invariant translators in Sol geometry",
+      "section": "invariant-translators-in-sol-geometry",
+      "category": "translators",
+      "tag": "96A9DA4F04BF",
+      "model": "literature-sol-invariant-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-sl2-invariant-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLopezMunteanu2024"
+      ],
+      "cases": [
+        {
+          "name": "Invariant surfaces in SL(2,ℝ)",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Profile × invariant orbit, with the stated circle identifications",
+          "compact": null,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Invariant translators in the special linear group",
+      "section": "invariant-translators-in-the-special-linear-group",
+      "category": "translators",
+      "tag": "3535C925421E",
+      "model": "literature-sl2-invariant-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-compact-symmetric-product-translators",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatFujii2024",
+        "CatFujiiKoike2023"
+      ],
+      "cases": [
+        {
+          "name": "Graphs over domains in S²",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Graph over the specified spherical domain",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Higher-dimensional compact symmetric bases",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Graph over a specified invariant open subset of N",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Graphical translators over compact symmetric spaces",
+      "section": "graphical-translators-over-compact-symmetric-spaces",
+      "category": "translators",
+      "tag": "B6DC0DA73EFF",
+      "model": "literature-compact-symmetric-product-translators",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-curve-solitons",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatWoolgarXie2022"
+      ],
+      "cases": [
+        {
+          "name": "Complete isometric solitons in ℍ²",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "curve",
+          "topology": "ℝ with two ends",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Isometric curve-shortening solitons in the hyperbolic plane",
+      "section": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
+      "category": "other-special-flows",
+      "tag": "39A0C4D2B77A",
+      "model": "literature-hyperbolic-curve-solitons",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-perturbed-sphere-eternal-tori",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatMaganoSmith2020"
+      ],
+      "cases": [
+        {
+          "name": "Embedded tori in (S³,e^{2δu}g_round)",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "S¹ × S¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "1",
+            "text": "Genus one."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Eternal tori in perturbations of the round three-sphere",
+      "section": "eternal-tori-in-perturbations-of-the-round-three-sphere",
+      "category": "other-special-flows",
+      "tag": "4F2C4D7007ED",
+      "model": "literature-perturbed-sphere-eternal-tori",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-lotay-oliveira-neck-pinches",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatLotayOliveira2023"
+      ],
+      "cases": [
+        {
+          "name": "Compact circle-invariant surfaces before a pinch",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Circle fibration over an arc; smooth connected compact case",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        },
+        {
+          "name": "Noncompact two-plane-asymptotic cases",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Circle-invariant surface with prescribed planar ends",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "not-recorded",
+            "text": "Not recorded."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area and entropy are not assigned to this intrinsic curved-ambient flow."
+          }
+        }
+      ],
+      "title": "Finite-time Lagrangian neck pinches with circle symmetry",
+      "section": "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
+      "category": "other-special-flows",
+      "tag": "A25A9D4CCA2B",
+      "model": "literature-lotay-oliveira-neck-pinches",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-shrinkers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "cases": [
+        {
+          "name": "n = 2, m = 1",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Periodic parameter domain S¹ × S⁰ × ℝ; image identifications may occur",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sᵐ⁻¹ × ℝⁿ⁻ᵐ, as parameter domain",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Noncompact periodic Lagrangian shrinkers",
+      "section": "noncompact-periodic-lagrangian-shrinkers",
+      "category": "shrinkers",
+      "tag": "2DED712E1192",
+      "model": "literature-jlt-mixed-periodic-shrinkers",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "cases": [
+        {
+          "name": "n = 2, m = 1",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Periodic parameter domain S¹ × S⁰ × ℝ; image identifications may occur",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "0",
+            "text": "Genus zero."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S¹ × Sᵐ⁻¹ × ℝⁿ⁻ᵐ, as parameter domain",
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the input; asymptotic wings are not automatically topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Noncompact periodic Lagrangian expanders",
+      "section": "noncompact-periodic-lagrangian-expanders",
+      "category": "expanders",
+      "tag": "3823D6B50DAF",
+      "model": "literature-jlt-mixed-periodic-expanders",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-sun-wang-prescribed-ends",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatSunWang2025"
+      ],
+      "cases": [
+        {
+          "name": "Smooth construction, n ≤ 6, new inputs starting at n = 3",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Complete translator with prescribed closed-shrinker tangent flow; full topology not specified",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "n ≥ 7, possible singular set of dimension ≤ n−7",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Possibly singular minimizing translator",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded geometric construction; smoothness may fail on a set of dimension at most n−7."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Translators with general closed-shrinker ends",
+      "section": "translators-with-general-closed-shrinker-ends",
+      "category": "translators",
+      "tag": "191836516CC9",
+      "model": "literature-sun-wang-prescribed-ends",
+      "illustration_status": "Source-informed schematic"
+    },
+    {
+      "label": "ex:catalogue-immersed-ancient-grim-chains",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatAY18"
+      ],
+      "cases": [
+        {
+          "name": "Compact immersed chain",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "S¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact parameter manifold)."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "Noncompact immersed chain",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "ℝ with two asymptotic lines",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ],
+      "title": "Immersed ancient curves from grim-reaper chains",
+      "section": "immersed-ancient-curves-from-grim-reaper-chains",
+      "category": "other-special-flows",
+      "tag": "104CF0DAFD60",
+      "model": "literature-immersed-ancient-grim-chains",
+      "illustration_status": "Source-informed schematic"
     }
   ]
 }

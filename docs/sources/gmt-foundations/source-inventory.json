@@ -1332,7 +1332,10 @@
       "role": "Selected construction, property, or entropy passages checked for the MCF catalogue expansion. Exact locators accompany the entries.",
       "redistributed": false,
       "review_status": "selected-passages-checked",
-      "url": "https://arxiv.org/abs/2301.08224v2"
+      "url": "https://arxiv.org/abs/2301.08224v2",
+      "checked_passages": [
+        "Theorem 1.1 and Corollary 2.4; source v2, PDF pp. 2–3"
+      ]
     },
     {
       "bibliography_key": "CatKapouleasMcGrath2023",
@@ -1720,7 +1723,9 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Equation (3), Section 3.1, Lemmas 3.8–3.10, pp. 2 and 8–13. Only monotone-height embedded three-turn case incorporated."
+        "Equation (3), Section 3.1, Lemmas 3.8–3.10, pp. 2 and 8–13. Only monotone-height embedded three-turn case incorporated.",
+        "Introduction, Figure 2 and Sections 2–4; compact and noncompact constructions",
+        "Introduction and Figure 1, PDF pp. 1–2"
       ],
       "catalogue_bibliography_keys": [
         "CatAY18"
@@ -1901,7 +1906,8 @@
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "checked_passages": [
-        "Theorems A–F, Corollaries H–I, Sections 3–6. Periodic compact case E(a)(ii); plane-neck cases C–D; translator formula (18), with direct integral rewrite; constant-radius rotating subcase of G/H."
+        "Theorems A–F, Corollaries H–I, Sections 3–6. Periodic compact case E(a)(ii); plane-neck cases C–D; translator formula (18), with direct integral rewrite; constant-radius rotating subcase of G/H.",
+        "Theorems A–B and E–F, especially mixed-sign case (b) and nonconstant-amplitude case (ii)"
       ],
       "catalogue_bibliography_keys": [
         "CatJoyceLeeTsui2010"
@@ -2046,7 +2052,8 @@
       "review_status": "selected-passages-checked",
       "checked_passages": [
         "Theorem 5.6, equation (31), Proposition 5.9 and Remark 5.10 for the SO(m−1) stationary family; Sections 5.2–5.4 for overlap and singular-group cautions.",
-        "Figure 3, Theorem 5.7 and Remark 5.8 rechecked with (31), Theorem 5.6 and Proposition 5.9 for the requested picture. For m = 3, derived the elementary hyperbolic reparametrization and exact stationary time slices; see documentation/su-wood-picture.md."
+        "Figure 3, Theorem 5.7 and Remark 5.8 rechecked with (31), Theorem 5.6 and Proposition 5.9 for the requested picture. For m = 3, derived the elementary hyperbolic reparametrization and exact stationary time slices; see documentation/su-wood-picture.md.",
+        "Ansatz 1, Theorem 1.1 and Examples 1–3, PDF pp. 1–5; equations (33)–(34) and Section 5.4"
       ],
       "catalogue_bibliography_keys": [
         "CatSuWood2026"
@@ -2184,6 +2191,738 @@
       "checked_passages": [
         "All substantive text, Sections 1–6, PDF pp. 1–17; bibliography pp. 20–21.",
         "Metric and mean curvature, equations (3.1)–(3.4); Theorem 4.1; Corollary 4.12; equations (5.1)–(5.4); CMC comparison Theorem 6.5. Formula pages and Figures 1–4 visually checked."
+      ]
+    },
+    {
+      "bibliography_key": "CatDruganKleene2017",
+      "filename": "1306.2383.pdf",
+      "title": "Immersed self-shrinkers",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "406abb4448bd54a4f205c09a2954332113a517c5ec3f74e7d07a34301b8fd935",
+      "pdf_pages": 26,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1, PDF pp. 1–3; Sections 3–4 and Appendix C"
+      ]
+    },
+    {
+      "bibliography_key": "CatRiedler2023",
+      "filename": "2207.04851.pdf",
+      "title": "Closed embedded self-shrinkers of mean curvature flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "8e78302bc7f0754f970061b219dc2c579795657324d6770602056e3693b394be",
+      "pdf_pages": 31,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem A and Proposition B, PDF pp. 1–5; Sections 2–4"
+      ]
+    },
+    {
+      "bibliography_key": "CatAnciaux2006",
+      "filename": "CatAnciaux2006.pdf",
+      "title": "Construction of Lagrangian Self-similar Solutions to the Mean Curvature Flow in $$\\mathbb{C}^n$$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": null,
+      "pdf_pages": null,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Lemma 1 and Theorems 1–4, printed pp. 38–39; Sections 2–5"
+      ]
+    },
+    {
+      "bibliography_key": "CatMadnickWood2025",
+      "filename": "2208.01574.pdf",
+      "title": "Cohomogeneity-One Lagrangian Mean Curvature Flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "2a5fbed7b9bfb6fdc4b68fbdf2e88b47393c2cf314817644877e31ce8895c1a1",
+      "pdf_pages": 53,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1; Section 7, admissible group actions",
+        "Theorem 1.3, PDF pp. 4–6; Theorem 6.12 and Section 7"
+      ]
+    },
+    {
+      "bibliography_key": "CatNguyen2013",
+      "filename": "1004.2657.pdf",
+      "title": "Complete Embedded Self-Translating Surfaces under Mean Curvature Flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "be0e3ee94fd2ef393f3064826b6dbd35c36dbf11429d5a4ecde436339c3489ce",
+      "pdf_pages": 42,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1 and general position definition, PDF pp. 2–3; Figure 1"
+      ]
+    },
+    {
+      "bibliography_key": "CatNguyen2015",
+      "filename": "1204.4921.pdf",
+      "title": "Doubly periodic self-translating surfaces for the mean curvature flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "540b49220947946377c6988e2b7fe2e5a463d1740662b7d4883ec3ab04cb1521",
+      "pdf_pages": 9,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1 and 3 and Definition 2, PDF pp. 1–3; Figure 1, p. 6"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniLangfordTinaglia2022",
+      "filename": "2006.16338.pdf",
+      "title": "The atomic structure of ancient grain boundaries",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "3964c8a4b353eb7669ce97bc4d0bd8c29b1d1d623143d3bb724af2fcc8f7c5b3",
+      "pdf_pages": 51,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definitions of circumscribed regular polytopes, Section 2; Theorems 4.2 and 4.4, PDF pp. 26–29",
+        "Theorems 4.1 and 4.3, Section 4; circumscribed polytope definitions in Section 2",
+        "Theorem 7.1 and Corollary 7.2, PDF pp. 42–44"
+      ]
+    },
+    {
+      "bibliography_key": "CatCastroLerma2012",
+      "filename": "1007.1886.pdf",
+      "title": "Translating solitons for Lagrangian mean curvature flow in complex Euclidean plane",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "2a85eb4679f4ab596f6b7dc9d57948582cd5d356d8c8e3e3c91bd8bafc999433",
+      "pdf_pages": 15,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Proposition 2 and Corollaries 1–2, Section 3; Section 2.3 product examples"
+      ]
+    },
+    {
+      "bibliography_key": "CatDavilaPinoWei2026",
+      "filename": "2609.04675.pdf",
+      "title": "A Bernstein problem for translating solutions to the mean curvature flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "d6a8a90035df9946317fbd69ea9e61db0366dec00a5efdb6830a0947f0b0c943",
+      "pdf_pages": 61,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and construction outline, PDF pp. 1–5; Sections 7–8"
+      ]
+    },
+    {
+      "bibliography_key": "CatEckerHuisken1989",
+      "filename": "CatEckerHuisken1989.pdf",
+      "title": "Mean Curvature Evolution of Entire Graphs",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": null,
+      "pdf_pages": null,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Entire graphical existence and Section 5, Theorem 5.1 and Remark 5.1(iii)"
+      ]
+    },
+    {
+      "bibliography_key": "CatLee2023",
+      "filename": "2211.05625.pdf",
+      "title": "Self-expanders to the mean curvature flow based on the generalized Lawson-Osserman cone",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "667eb9f7a899a87a5dd98ac09a8177a1f056ba3b6e604101043ca17aba134aea",
+      "pdf_pages": 20,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main Theorem, PDF pp. 1–2; Proposition 2.7; equation (3.3) and Sections 5–7"
+      ]
+    },
+    {
+      "bibliography_key": "CatNeto2026",
+      "filename": "2610.25833.pdf",
+      "title": "The global structure of bi-rotational self-expanders",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "9c0dc5d679ba8a42c5657ca1fc16947c5cd2b71957e8fb75b254a80618e65e04",
+      "pdf_pages": 27,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems A–B, PDF pp. 3–5; system (1.3), Sections 3–5"
+      ]
+    },
+    {
+      "bibliography_key": "CatNeto2026a",
+      "filename": "2610.25831.pdf",
+      "title": "The global structure of bi-rotational self-shrinkers",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "bc5b98d41baeea8a7117a73fac4fdf93e7a43ef270c6134ace4d5f8968435575",
+      "pdf_pages": 69,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems A–B and Remark 1.2, PDF pp. 4–6; Section 6"
+      ]
+    },
+    {
+      "bibliography_key": "CatNakayamaIizukaWadati1994",
+      "filename": "CatNakayamaIizukaWadati1994.pdf",
+      "title": "Curve Lengthening Equation and Its Solutions",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": null,
+      "pdf_pages": null,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Exact curve solutions; attribution also checked in Angenent–You introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatMa2021",
+      "filename": "2003.03018.pdf",
+      "title": "Ancient solutions to the Curve Shortening Flow spanning the halfplane",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "e355a04992b41ba2f64bb956414d9ecc5452b7984567bca03de94e04de50ab5f",
+      "pdf_pages": 21,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1, PDF pp. 1–3; Figure 1 and construction sections"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniMramor2023",
+      "filename": "2201.02134.pdf",
+      "title": "Nonplanar ancient curve shortening flows in $\\mathbb{R}^3$ from grim reapers",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "e006dd7b7eaa43fbaacbb3f737425ebf23fcaa82cb8cd22bf0f228fd355a4767",
+      "pdf_pages": 11,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Figure 1, PDF pp. 1–3; ramp estimates and ancient-limit construction"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniLangfordTinaglia2017",
+      "filename": "1705.06981.pdf",
+      "title": "A collapsing ancient solution of mean curvature flow in $\\mathbb{R}^3$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "4c0bc607575dc66ce27b78007197641b9f329ef6e3ad7ebd431e2cec1b2efc7a",
+      "pdf_pages": 35,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and construction, PDF pp. 1–8; asymptotic statements in the introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatDuHaslhofer2021",
+      "filename": "2105.13830.pdf",
+      "title": "On uniqueness and nonuniqueness of ancient ovals",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "e236f732cc896c6579a56aa7cd50bd4b6ece666b2751a9877901f6f0794bf6cd",
+      "pdf_pages": 36,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.6 and 1.9, PDF pp. 3–6"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniLangfordMramor2020",
+      "filename": "1911.05641.pdf",
+      "title": "On the construction of closed nonconvex nonsoliton ancient mean curvature flows",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "65a3f443386bd79b2b89966cd258bfe008c8827fdc9649a3f22751a48cf6ae20",
+      "pdf_pages": 11,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and construction, PDF pp. 1–4"
+      ]
+    },
+    {
+      "bibliography_key": "CatLiuTerng2020",
+      "filename": "1911.12535.pdf",
+      "title": "Ancient solutions to mean curvature flow for isoparametric submanifolds",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "dc6b01aab474d3349004f0ab48d3627984d51d9a1d432185f0c6d57866955284",
+      "pdf_pages": 25,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and equation (1.1), PDF pp. 2–3; Propositions 4.2–4.3 and Examples 4.4–4.5"
+      ]
+    },
+    {
+      "bibliography_key": "CatChen2026",
+      "filename": "2212.10798.pdf",
+      "title": "On the Existence and Uniqueness of Ancient Rescaled Mean Curvature Flows",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "e3296a0d098ee235cb1584523677242e6cc9bd6594108b4beff1bab353e25223",
+      "pdf_pages": 31,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1, PDF pp. 2–4; rescaled-flow definition and Section 3"
+      ]
+    },
+    {
+      "bibliography_key": "CatStolarski2023",
+      "filename": "2003.06383.pdf",
+      "title": "Existence of Mean Curvature Flow Singularities with Bounded Mean Curvature",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "d3524cb28193bfb05d8d7273e4e68555f9103ef9e13be0c6ad44a78dc8746f55",
+      "pdf_pages": 44,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and dimensional discussion, PDF pp. 1–4; Velázquez construction sections"
+      ]
+    },
+    {
+      "bibliography_key": "CatChang2026",
+      "filename": "2107.04338.pdf",
+      "title": "Stability of regular shrinkers in the network flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "4457f7c2e789f7acfa6081b8f026c004bd62fe714f8b236b8466d115d98834fb",
+      "pdf_pages": 25,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Introduction, Figures 1–2 and Sections 7–11, PDF pp. 1–4"
+      ]
+    },
+    {
+      "bibliography_key": "CatChenGuo2007",
+      "filename": "CatChenGuo2007.pdf",
+      "title": "Self-similar solutions of a 2-D multiple-phase curvature flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": null,
+      "pdf_pages": null,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Section 3, Theorem 2, author PDF pp. 10–11",
+        "Section 4 and Figure 9; isotropic single-region constructions"
+      ]
+    },
+    {
+      "bibliography_key": "CatChangLue2019",
+      "filename": "1901.10315.pdf",
+      "title": "Uniqueness of regular shrinkers with 2 closed regions",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "f5734632e2cbbed4ac249e3cbbc207c662a86cda09145d2ee52ec2cb1f44887d",
+      "pdf_pages": 26,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1, introduction and Figure 1; two-region network construction"
+      ]
+    },
+    {
+      "bibliography_key": "CatBaldiHausMantegazza2019",
+      "filename": "1811.07822.pdf",
+      "title": "Existence of a lens-shaped cluster of surfaces self-shrinking by mean curvature",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "9e6adbd49dcd5a9474816b0c1a04ebd911ed3fdc35d119ce89a49c1f7fb2c5b1",
+      "pdf_pages": 22,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Figures 1–2, PDF pp. 2–4; shooting construction"
+      ]
+    },
+    {
+      "bibliography_key": "CatKleeneMoller2014",
+      "filename": "1008.1609.pdf",
+      "title": "Self-shrinkers with a rotational symmetry",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "5ce1a5a5e342d406fae62a943852935f5889a439dbd0325f0e4c6884cfb0e830",
+      "pdf_pages": 23,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main existence theorems and profile equations; boundary and asymptotic conditions in the introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatChangSpruck2017",
+      "filename": "1510.07183.pdf",
+      "title": "Self-shrinkers to the mean curvature flow asymptotic to isoparametric cones",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "5c30ea5ceaf84c5bb16a166eed6e1eccb0dd8883b48f87b6cb0d5f06e9dcbfaf",
+      "pdf_pages": 21,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main existence theorems and profile equations; boundary and asymptotic conditions in the introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatPark2026",
+      "filename": "2608.11046.pdf",
+      "title": "Foliation by bi-rotational self shrinkers in Euclidean space",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "15cae8eb86057e65c394cf236c4b1e3398764498e5fc00df594483f95581f092",
+      "pdf_pages": 27,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main existence theorems and profile equations; boundary and asymptotic conditions in the introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatLiao2025",
+      "filename": "2512.02578.pdf",
+      "title": "Self-Expanding Solutions to the Mean Curvature Flow for Multiphase Surfaces with Regular Junctions",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "cc85f8b4f6eed6d8fb7d7c3c98b282712d1f21bbca15b56f595104316f664147",
+      "pdf_pages": 22,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definitions 1–2, Sections 3–5 and main existence statement; preprint v1"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniLangford2023",
+      "filename": "2111.06051.pdf",
+      "title": "Classification of convex ancient free boundary curve shortening flows in the disc",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "cd0bb1ad22e7a4a28e7a4ce2562bb10bdbad7b387079992c1435bfe5b932e85d",
+      "pdf_pages": 19,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and ancient construction in the unit disc"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniLangford2025",
+      "filename": "2204.06710.pdf",
+      "title": "Classification of convex ancient free boundary mean curvature flows in the ball",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "16dfaa7abf6a9646f6163442fb42454f91a462e6ca0a97c6c910ea02460cd297",
+      "pdf_pages": 22,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1; rotational ancient existence and classification"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniBurnsCatron2025",
+      "filename": "2404.08824.pdf",
+      "title": "Classification of Convex Ancient Solutions to Free Boundary Curve Shortening Flow in Convex Domains",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "55e81b9efe181c7abecae6ce191ccea737647c3fb6302f487b963cf0a3c08f70",
+      "pdf_pages": 26,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and orthogonal-diameter construction, PDF pp. 1–3"
+      ]
+    },
+    {
+      "bibliography_key": "CatLangfordLiuMcNamara2025",
+      "filename": "2404.01525.pdf",
+      "title": "Ancient curve shortening flow in the disc with mixed boundary condition",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "891d10159ad2ee1495b02b5f4c72049340d2ced3ab0b7888e42f94a420ae950f",
+      "pdf_pages": 16,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and introduction; distinction between 0 < d < 1 and d = 1"
+      ]
+    },
+    {
+      "bibliography_key": "CatBourniFranz2026",
+      "filename": "2602.08850.pdf",
+      "title": "Ancient solutions to free boundary mean curvature flow",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "98005291d80f058fb6edc4ddda1bacfb59065f94e1316b5e58311d9eb64f8e5e",
+      "pdf_pages": 27,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definitions in Section 2; Theorem 4.4, Theorem 5.4 and Theorem 6.7"
+      ]
+    },
+    {
+      "bibliography_key": "CatYamamoto2012",
+      "filename": "1203.3934.pdf",
+      "title": "Special Lagrangians and Lagrangian self-similar solutions in cones over toric Sasaki manifolds",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "e02dd2ea0043a14a34f919320baa5dc7496fd25a04ce890e20eeb6a5699e2de3",
+      "pdf_pages": 22,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definitions 1.1–1.3, Theorem 7.1 and Example 8.4"
+      ]
+    },
+    {
+      "bibliography_key": "CatBueno2018",
+      "filename": "1803.02783.pdf",
+      "title": "Translating solitons of the mean curvature flow in the space $\\mathbb{H}^2\\times\\mathbb{R}$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "8177ca8a16877a6e5dcf64669d3f1a6cafe34f4419dc6e6087a5295683476743",
+      "pdf_pages": 27,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Equation (3.3), Theorems 3.3–3.4; Sections 3–4"
+      ]
+    },
+    {
+      "bibliography_key": "CatBuenoLopez2024",
+      "filename": "2402.05772.pdf",
+      "title": "The class of grim reapers in $\\mathbb{H}^2\\times\\mathbb{R}$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "aaeac085958abe3f505bb2c3f657744e93c8dd346057bfa42034fa767d4fe91a",
+      "pdf_pages": 28,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Sections 2 and 4–6; classification by translating and invariant Killing fields"
+      ]
+    },
+    {
+      "bibliography_key": "CatLimaRamosSantos2025",
+      "filename": "2402.04757.pdf",
+      "title": "Rotators-Translators to Mean Curvature Flow in $\\mathbb H^2\\times\\mathbb R$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "b5698672ab187adeb59b6a45f120d302c73eaf8db187d8dab9d5aa3c41c445c1",
+      "pdf_pages": 10,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1–2, Definition 3 and Figure 1"
+      ]
+    },
+    {
+      "bibliography_key": "CatLimaRamosSantos2026",
+      "filename": "2307.14136.pdf",
+      "title": "Solitons to Mean Curvature Flow in the hyperbolic 3-space",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "c2ddc7cf6549271af16da1b6a08a14a9fdc1d7606c5d80881e8470950d4b3421",
+      "pdf_pages": 31,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 3.10, 3.17, 3.20, 3.23 and 4.4; Figures 1–2"
+      ]
+    },
+    {
+      "bibliography_key": "CatLimaRamos2026",
+      "filename": "2602.02424.pdf",
+      "title": "Dynamical Stability of Translating Solitons to Mean Curvature Flow in Hyperbolic Space",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "8384c16b2d745c335e7e10b9c1453dd9bf9f82eb6eb7f50e8187d048966f3865",
+      "pdf_pages": 13,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 3.3, higher-dimensional translating catenoids; Theorem 4.1 stability"
+      ]
+    },
+    {
+      "bibliography_key": "CatBuenoLopez2024a",
+      "filename": "2402.05533.pdf",
+      "title": "A new family of translating solitons in hyperbolic space",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "26ac361f731bd6e07ec4fcaaa093dd3e926512ed05811e00ae2d415fd119272d",
+      "pdf_pages": 11,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definition 1.1 and Sections 2–3, classification of invariant ξ-translators"
+      ]
+    },
+    {
+      "bibliography_key": "CatPipoli2018",
+      "filename": "1811.04619.pdf",
+      "title": "Invariant translators of the Heisenberg group",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "c6ec005e2c46c975eaf64f44e7f6e10703961bd78dbf00b569a98cebff276f0b",
+      "pdf_pages": 38,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.3 and 5.2; metric and Killing fields in Section 2"
+      ]
+    },
+    {
+      "bibliography_key": "CatPipoli2019",
+      "filename": "1906.08077.pdf",
+      "title": "Invariant translators of the Solvable group",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "2344f578df5528c63b68eb471dea78b592863deb6fb82ac65619ebfde3faa888",
+      "pdf_pages": 18,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.3; Sections 2–4 and Figures 1–7"
+      ]
+    },
+    {
+      "bibliography_key": "CatLopezMunteanu2024",
+      "filename": "2405.15957.pdf",
+      "title": "Translators of the mean curvature flow in the special linear group $SL(2,\\mathbb{R})$",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "743f8dfa29a44f5142b04b4aedbb717e41a97280f9bd180332cbe2ee8836f2ea",
+      "pdf_pages": 16,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Definition 1.1, metric (4)–(5), and classification in Sections 2–5"
+      ]
+    },
+    {
+      "bibliography_key": "CatFujii2024",
+      "filename": "2109.14809.pdf",
+      "title": "Graphical translating solitons for the mean curvature flow and isoparametric functions",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "dd5c1f77871c401cd27e9038feeeecab34e760dec497dc04fb208acddf371625",
+      "pdf_pages": 22,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1 and Section 4, domains for isoparametric spherical graphs"
+      ]
+    },
+    {
+      "bibliography_key": "CatFujiiKoike2023",
+      "filename": "2308.15790.pdf",
+      "title": "Translators invariant under hyperpolar actions",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "96967c50f39d55d1ede8dfbf5c35675333747fda2f54692323692ba585ef9e14",
+      "pdf_pages": 19,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.3; Sections 2–3"
+      ]
+    },
+    {
+      "bibliography_key": "CatWoolgarXie2022",
+      "filename": "2101.07469.pdf",
+      "title": "Self-similar curve shortening flow in hyperbolic 2-space",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "06fd86e715dfbe7fff89b5e6658909ccd936ce579aec7717e4bcb20528485542",
+      "pdf_pages": 15,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.2; Lemma 4.9; hyperboloid ODE in Sections 2–3"
+      ]
+    },
+    {
+      "bibliography_key": "CatMaganoSmith2020",
+      "filename": "2004.00054.pdf",
+      "title": "On eternal mean curvature flows of tori in perturbations of the unit sphere",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "79a40f21c9fea769101e88cf9a4a5d5de1cc95b88ed5b6cbab699a7dfca8f8df",
+      "pdf_pages": 31,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorem 1.1.3 and Theorems 3.2.1 and 4.3.4"
+      ]
+    },
+    {
+      "bibliography_key": "CatLotayOliveira2023",
+      "filename": "2305.05744.pdf",
+      "title": "Neck pinch singularities and Joyce conjectures in Lagrangian mean curvature flow with circle symmetry",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "8f7340383e3e68edbe9ad993af7d938d1493df2fdcd71119413cec96116a482b",
+      "pdf_pages": 27,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1 and 1.4; Theorems 4.10–4.13 and 5.9"
+      ]
+    },
+    {
+      "bibliography_key": "CatShaoZou2025a",
+      "filename": "2507.19428.pdf",
+      "title": "Self-expanders of positive genus",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "d81ab0ce6d660184c4e1ba5913b7fbde55b20d324f2f9efb9fc3ca2112ee4912",
+      "pdf_pages": 30,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Main theorem and small-cone-angle/dihedral hypotheses, introduction"
+      ]
+    },
+    {
+      "bibliography_key": "CatChoiHuangLee2025",
+      "filename": "2405.01062.pdf",
+      "title": "Ancient mean curvature flows with finite total curvature",
+      "edition": "Publicly cited edition; see review locators",
+      "sha256": "422689c790419053b1d27f8baf8c34e468fbeb57f72a61814bdadca098393472",
+      "pdf_pages": 20,
+      "role": "Source for requested special-solution additions",
+      "redistributed": false,
+      "review_status": "selected-passages-checked",
+      "checked_passages": [
+        "Theorems 1.1–1.2, Section 4 and quantitative estimates in Section 5"
       ]
     }
   ],
