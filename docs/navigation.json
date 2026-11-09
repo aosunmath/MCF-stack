@@ -462,104 +462,134 @@
     "section": "eternal-curves-from-chains-of-grim-reapers"
   },
   {
+    "route": "sections/purely-rotating-curve-shortening-solitons",
+    "title": "5.4 Purely rotating curve-shortening solitons",
+    "chapter": "other-special-flows",
+    "section": "purely-rotating-curve-shortening-solitons"
+  },
+  {
+    "route": "sections/rotating-and-expanding-curve-solitons",
+    "title": "5.5 Rotating and expanding curve solitons",
+    "chapter": "other-special-flows",
+    "section": "rotating-and-expanding-curve-solitons"
+  },
+  {
+    "route": "sections/rotating-and-shrinking-curve-solitons",
+    "title": "5.6 Rotating and shrinking curve solitons",
+    "chapter": "other-special-flows",
+    "section": "rotating-and-shrinking-curve-solitons"
+  },
+  {
     "route": "sections/the-catenoid-as-an-eternal-stationary-flow",
-    "title": "5.4 Minimal surfaces as stationary mean curvature flows",
+    "title": "5.7 Minimal surfaces as stationary mean curvature flows",
     "chapter": "other-special-flows",
     "section": "the-catenoid-as-an-eternal-stationary-flow"
   },
   {
     "route": "sections/rotational-degenerate-neckpinch-solutions",
-    "title": "5.5 Rotational degenerate neckpinch solutions",
+    "title": "5.8 Rotational degenerate neckpinch solutions",
     "chapter": "other-special-flows",
     "section": "rotational-degenerate-neckpinch-solutions"
   },
   {
     "route": "sections/eternal-shrinking-helices",
-    "title": "5.6 Eternal shrinking helices",
+    "title": "5.9 Eternal shrinking helices",
     "chapter": "other-special-flows",
     "section": "eternal-shrinking-helices"
   },
   {
     "route": "sections/immortal-annuli-converging-to-a-double-plane",
-    "title": "5.7 Immortal annuli converging to a double plane",
+    "title": "5.10 Immortal annuli converging to a double plane",
     "chapter": "other-special-flows",
     "section": "immortal-annuli-converging-to-a-double-plane"
   },
   {
     "route": "sections/haslhofer-hershkovits-ancient-ovals",
-    "title": "5.8 Haslhofer–Hershkovits ancient ovals",
+    "title": "5.11 Haslhofer–Hershkovits ancient ovals",
     "chapter": "other-special-flows",
     "section": "haslhofer-hershkovits-ancient-ovals"
   },
   {
     "route": "sections/ancient-flows-from-unstable-minimal-hypersurfaces",
-    "title": "5.9 Ancient flows from unstable minimal hypersurfaces",
+    "title": "5.12 Ancient flows from unstable minimal hypersurfaces",
     "chapter": "other-special-flows",
     "section": "ancient-flows-from-unstable-minimal-hypersurfaces"
   },
   {
     "route": "sections/the-eternal-reapernoid",
-    "title": "5.10 The eternal reapernoid",
+    "title": "5.13 The eternal reapernoid",
     "chapter": "other-special-flows",
     "section": "the-eternal-reapernoid"
   },
   {
+    "route": "sections/rotating-and-translating-curve-solitons",
+    "title": "5.14 Rotating and translating curve solitons",
+    "chapter": "other-special-flows",
+    "section": "rotating-and-translating-curve-solitons"
+  },
+  {
     "route": "sections/mean-curvature-evolution-of-the-whitney-sphere",
-    "title": "5.11 Mean curvature evolution of the Whitney sphere",
+    "title": "5.15 Mean curvature evolution of the Whitney sphere",
     "chapter": "other-special-flows",
     "section": "mean-curvature-evolution-of-the-whitney-sphere"
   },
   {
     "route": "sections/ancient-torus-curves-in-higher-codimension",
-    "title": "5.12 Ancient torus curves in higher codimension",
+    "title": "5.16 Ancient torus curves in higher codimension",
     "chapter": "other-special-flows",
     "section": "ancient-torus-curves-in-higher-codimension"
   },
   {
     "route": "sections/ancient-stacked-pancakes",
-    "title": "5.13 Ancient stacked pancakes",
+    "title": "5.17 Ancient stacked pancakes",
     "chapter": "other-special-flows",
     "section": "ancient-stacked-pancakes"
   },
   {
     "route": "sections/lawlor-necks-as-stationary-lagrangian-flows",
-    "title": "5.14 Lawlor necks as stationary Lagrangian flows",
+    "title": "5.18 Lawlor necks as stationary Lagrangian flows",
     "chapter": "other-special-flows",
     "section": "lawlor-necks-as-stationary-lagrangian-flows"
   },
   {
+    "route": "sections/ancient-dense-torus-curves-with-irrational-frequencies",
+    "title": "5.19 Ancient dense torus curves with irrational frequencies",
+    "chapter": "other-special-flows",
+    "section": "ancient-dense-torus-curves-with-irrational-frequencies"
+  },
+  {
     "route": "sections/su-wood-stationary-products-of-lawlor-profiles",
-    "title": "5.15 Su–Wood stationary products of Lawlor profiles",
+    "title": "5.20 Su–Wood stationary products of Lawlor profiles",
     "chapter": "other-special-flows",
     "section": "su-wood-stationary-products-of-lawlor-profiles"
   },
   {
     "route": "sections/stolarski-su-finite-time-lagrangian-neck-pinches",
-    "title": "5.16 Stolarski–Su finite-time Lagrangian neck pinches",
+    "title": "5.21 Stolarski–Su finite-time Lagrangian neck pinches",
     "chapter": "other-special-flows",
     "section": "stolarski-su-finite-time-lagrangian-neck-pinches"
   },
   {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.17 Immortal compact flows converging to a double sphere",
+    "title": "5.22 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
   },
   {
     "route": "sections/immortal-curve-shortening-with-nonunique-geodesic-limits",
-    "title": "5.18 Immortal curve shortening with nonunique geodesic limits",
+    "title": "5.23 Immortal curve shortening with nonunique geodesic limits",
     "chapter": "other-special-flows",
     "section": "immortal-curve-shortening-with-nonunique-geodesic-limits"
   },
   {
     "route": "sections/lagrangian-torus-necks-collapsing-at-infinite-time",
-    "title": "5.19 Lagrangian torus necks collapsing at infinite time",
+    "title": "5.24 Lagrangian torus necks collapsing at infinite time",
     "chapter": "other-special-flows",
     "section": "lagrangian-torus-necks-collapsing-at-infinite-time"
   },
   {
     "route": "sections/lagrangian-sphere-chains-in-gibbons-hawking-spaces",
-    "title": "5.20 Lagrangian sphere chains in Gibbons–Hawking spaces",
+    "title": "5.25 Lagrangian sphere chains in Gibbons–Hawking spaces",
     "chapter": "other-special-flows",
     "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces"
   },

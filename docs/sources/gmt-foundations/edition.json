@@ -1,23 +1,24 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "0e4d9e847572f7b8a753e62bb9cafd06b21d5864b9b1bc0ab344f4ece508ca7d",
+  "source_sha256": "c95d97c325d19ef9cbe9bf365bf5c2019f5ece00b1120213b505b8862f0f8ea9",
   "files": {
-    "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
+    "book.tex": "1afb22cd1db0b8741cc90e3b7ca888e8dc05274a70b71194b3b9759291ef3a25",
+    "catalogue-aaaw.tex": "4d8c55f542b6a8e1f317d0e08a071a6269a5ae6078b3e4b6f6d93c25064a5f5f",
     "catalogue-expanders.tex": "809f5ac14ae2a2702f8c23e4fc9b2141e89b503a32e3f9bb173129dd5fac2902",
     "catalogue-other-flows.tex": "0c1ddfc609d5bbe971d8619952cc8b38db34703767ae1a0bdea287b007db70fc",
     "catalogue-shrinkers.tex": "52924ffb5c6f54e26344ace1a3a489d96712c98f05351712c5265c129d1243df",
     "catalogue-translators.tex": "9e7b3eed44cfb420d7f8f51117c7680d15fa9f8cc6b6ed646d08e9626929024b",
     "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
-    "entry-review.json": "1db5773ecace884a38056ae76a023b958c63bccdf4f5f79ad7544dbd6dd36815",
+    "entry-review.json": "c4f2805f5840d15a24e341032c3a3b96b34b8db72a853bafe4d17ae74a72a5b2",
     "orientation.tex": "64ac571b0fa16df9c1aa35fa00f693bcdc73258da46f922e9424e26607e207cf",
     "overviews/expanders.html": "3e897e44c698df6bc01175658ec93f6aa858f1d34802b0be2e137b8d41c5d6e4",
-    "overviews/other-special-flows.html": "1ea4c679377b484de84a51fae39667facb57caa91a3b1f1958676ad550919049",
+    "overviews/other-special-flows.html": "adae3ffaaffd3dc5078dcd47d24092f29387f6370f6341685b80cfa22f284c4e",
     "overviews/shrinkers.html": "34c290957260378da783b8fa5b7a65c331de0cf3b30d0a76a8dede01c3537c03",
     "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
-    "references.bib": "9522e4cd7ffda3c7cd4f41e063466b167a3a7f6d51fcc42612ea8d2beff1bdbd",
-    "source-inventory.json": "0afa3cf250201c3c113619f32b2ffce819ddc5c3460a8833af12f0048571875a"
+    "references.bib": "74328b3a92a292d3f9b0d3dc3ee765cde15173a1fd9bf7218693eba8b204f0da",
+    "source-inventory.json": "7e607a51ac9967a35a117f8e4a26ce7cd04a91bfb520dc6b5707910029ba0378"
   },
   "renderer": "Gerby",
-  "tags": 172
+  "tags": 182
 }

@@ -1546,5 +1546,95 @@
     "page": "tag/E2816A03/index.html",
     "canonical_tag": "41748F7ED1C1",
     "anchor": ""
+  },
+  {
+    "tag": "56780A06",
+    "label": "sec:catalogue-irrational-torus-curves",
+    "title": "86 Ancient dense torus curves with irrational frequencies",
+    "kind": "chapter",
+    "page": "tag/56780A06/index.html",
+    "canonical_tag": "E22AF7044670",
+    "anchor": ""
+  },
+  {
+    "tag": "025F76CC",
+    "label": "ex:catalogue-irrational-torus-curves",
+    "title": "Example 86.1 (Ancient dense torus curves with irrational frequencies)",
+    "kind": "example",
+    "page": "tag/025F76CC/index.html",
+    "canonical_tag": "3E693532AA77",
+    "anchor": ""
+  },
+  {
+    "tag": "807908D8",
+    "label": "sec:catalogue-rotating-curves",
+    "title": "87 Purely rotating curve-shortening solitons",
+    "kind": "chapter",
+    "page": "tag/807908D8/index.html",
+    "canonical_tag": "3A1BA479B53D",
+    "anchor": ""
+  },
+  {
+    "tag": "4B8FA872",
+    "label": "ex:catalogue-rotating-curves",
+    "title": "Example 87.1 (Purely rotating curve-shortening solitons)",
+    "kind": "example",
+    "page": "tag/4B8FA872/index.html",
+    "canonical_tag": "999F58954ACB",
+    "anchor": ""
+  },
+  {
+    "tag": "11FCB02E",
+    "label": "sec:catalogue-rotating-translating-curves",
+    "title": "88 Rotating and translating curve solitons",
+    "kind": "chapter",
+    "page": "tag/11FCB02E/index.html",
+    "canonical_tag": "9E45840987F2",
+    "anchor": ""
+  },
+  {
+    "tag": "CFD9A574",
+    "label": "ex:catalogue-rotating-translating-curves",
+    "title": "Example 88.1 (Rotating and translating curve solitons)",
+    "kind": "example",
+    "page": "tag/CFD9A574/index.html",
+    "canonical_tag": "955BE4106D88",
+    "anchor": ""
+  },
+  {
+    "tag": "C2DAE0DD",
+    "label": "sec:catalogue-rotating-expanding-curves",
+    "title": "89 Rotating and expanding curve solitons",
+    "kind": "chapter",
+    "page": "tag/C2DAE0DD/index.html",
+    "canonical_tag": "E6DB29241FC5",
+    "anchor": ""
+  },
+  {
+    "tag": "466D0146",
+    "label": "ex:catalogue-rotating-expanding-curves",
+    "title": "Example 89.1 (Rotating and expanding curve solitons)",
+    "kind": "example",
+    "page": "tag/466D0146/index.html",
+    "canonical_tag": "23FC29A5131C",
+    "anchor": ""
+  },
+  {
+    "tag": "8C594FE7",
+    "label": "sec:catalogue-rotating-shrinking-curves",
+    "title": "90 Rotating and shrinking curve solitons",
+    "kind": "chapter",
+    "page": "tag/8C594FE7/index.html",
+    "canonical_tag": "3C52DD1F2A4E",
+    "anchor": ""
+  },
+  {
+    "tag": "CC007955",
+    "label": "ex:catalogue-rotating-shrinking-curves",
+    "title": "Example 90.1 (Rotating and shrinking curve solitons)",
+    "kind": "example",
+    "page": "tag/CC007955/index.html",
+    "canonical_tag": "EF429B51A962",
+    "anchor": ""
   }
 ]
