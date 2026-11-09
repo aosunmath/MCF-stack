@@ -34,6 +34,7 @@ class Reader:
     def __init__(self, chapters, topics, entries, sources, comments):
         self.chapters, self.topics, self.entries = chapters, topics, entries
         self.sources, self.comments = sources, comments
+        self.comments_enabled = comments.get("enabled", True)
         self.numbering = assign_numbers(chapters, entries)
         self.sections, self.pages, self.order = {}, {}, []
         self.add("", TITLE)
@@ -58,7 +59,8 @@ class Reader:
         for source, book in sources.items():
             self.add("sources/" + source, book["title"])
         self.add("search", "Search")
-        self.add("comments", "Comments")
+        if self.comments_enabled:
+            self.add("comments", "Comments")
         expected = {"tag/" + tag for tag, entry in entries.items() if not entry.get("section_intro") and not entry.get("section_example")}
         if {route for route in self.order if route.startswith("tag/")} != expected:
             raise ValueError("Reading order must contain every independent entry exactly once")
@@ -156,8 +158,8 @@ class Reader:
         return '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>' + "".join(f'<li><a href="{self.href(path, root)}"' + (' aria-current="page"' if path == route else '') + f'>{escape(title)}</a></li>' for title, path in crumbs) + '</ol></nav>'
 
     def comment_panel(self, route):
-        if not self.comments.get("enabled", True):
-            return '<section class="comments-panel" id="comments" aria-labelledby="comments-heading"><h2 id="comments-heading">Comments</h2><p>Comments are not enabled yet.</p></section>'
+        if not self.comments_enabled:
+            return ""
         page = self.pages[route]
         term = self.comments.get("term_prefix", TITLE) + " /" + (route + "/" if route else "")
         url = PUBLIC_ROOT + (route + "/" if route else "")
@@ -179,16 +181,19 @@ class Reader:
         local = '<h2>In this chapter</h2>' + self.section_list(page["chapter"], root, page.get("section")) if page.get("chapter") else ""
         citation = escape(bibtex(title, route))
         history_link = f'<a href="{root}chapters/history/">History</a>' if "history" in self.chapters else ""
-        tools = f'''<div class="page-tools"><a href="#comments">Comments</a><a href="#cite">Cite this page</a><a href="{permalink}">Permalink</a><button type="button" data-copy-link="{permalink}">Copy link</button><label class="tag-switch"><input type="checkbox" data-show-tags> Show tags</label><span class="copy-status" role="status"></span></div>'''
+        comments_link = f'<a href="{root}comments/">Comments</a>' if self.comments_enabled else ""
+        comments_tool = '<a href="#comments">Comments</a>' if self.comments_enabled else ""
+        comments_assets = f'<script type="module" src="{assets}comments.mjs?v={version}"></script>' if self.comments_enabled else ""
+        tools = f'''<div class="page-tools">{comments_tool}<a href="#cite">Cite this page</a><a href="{permalink}">Permalink</a><button type="button" data-copy-link="{permalink}">Copy link</button><label class="tag-switch"><input type="checkbox" data-show-tags> Show tags</label><span class="copy-status" role="status"></span></div>'''
         math_assets = (f'<script src="{assets}math-config.js?v={version}"></script><script defer src="{assets}mathjax/tex-chtml.js?v={version}"></script>' if self.sources else "")
         property_assets = f'<link rel="stylesheet" href="{assets}catalogue-properties.css?v={version}">'
         if route == 'browse':
             property_assets += f'<script type="module" src="{assets}catalogue-properties.mjs?v={version}"></script>'
         geometry_assets = f'<link rel="stylesheet" href="{assets}soliton-viewer.css?v={version}"><script type="module" src="{assets}soliton-viewer.mjs?v={version}"></script>'
         return f'''<!doctype html><html lang="en" data-reading-mode="{"continuous" if route.startswith("sections/") else "page"}" data-asset-revision="{version}" data-search-index="{root}search.json" data-collection-root="{root}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#d9d8d1"><meta name="giscus:backlink" content="{permalink}"><title>{escape(document_title)}</title><link rel="canonical" href="{permalink}">
-<link rel="stylesheet" href="{assets}book.css?v={version}"><link rel="stylesheet" href="{assets}collection.css?v={version}"><link rel="stylesheet" href="{assets}formalization.css?v={version}">{math_assets}{geometry_assets}{property_assets}<script type="module" src="{assets}formalization.mjs?v={version}"></script><script type="module" src="{assets}collection.mjs?v={version}"></script><script type="module" src="{assets}comments.mjs?v={version}"></script></head>
-<body><a class="skip" href="#content">Skip to content</a><header class="book-header"><a class="brand" href="{root}" aria-label="{escape(TITLE)} home">{escape(TITLE)}</a><nav aria-label="Primary"><a href="{root}chapters/">Contents</a><a href="{root}browse/">Browse</a><a href="{root}references/">Bibliography</a>{history_link}<a href="{root}comments/">Comments</a></nav><form class="quick-search" action="{root}search/" role="search"><label class="visually-hidden" for="collection-search">Search {escape(TITLE)}</label><input id="collection-search" name="q" type="search" placeholder="Keywords or a tag" autocomplete="off" aria-controls="search-results"><div id="search-results" aria-live="polite"></div></form></header>
+<link rel="stylesheet" href="{assets}book.css?v={version}"><link rel="stylesheet" href="{assets}collection.css?v={version}"><link rel="stylesheet" href="{assets}formalization.css?v={version}">{math_assets}{geometry_assets}{property_assets}<script type="module" src="{assets}formalization.mjs?v={version}"></script><script type="module" src="{assets}collection.mjs?v={version}"></script>{comments_assets}</head>
+<body><a class="skip" href="#content">Skip to content</a><header class="book-header"><a class="brand" href="{root}" aria-label="{escape(TITLE)} home">{escape(TITLE)}</a><nav aria-label="Primary"><a href="{root}chapters/">Contents</a><a href="{root}browse/">Browse</a><a href="{root}references/">Bibliography</a>{history_link}{comments_link}</nav><form class="quick-search" action="{root}search/" role="search"><label class="visually-hidden" for="collection-search">Search {escape(TITLE)}</label><input id="collection-search" name="q" type="search" placeholder="Keywords or a tag" autocomplete="off" aria-controls="search-results"><div id="search-results" aria-live="polite"></div></form></header>
 {self.breadcrumbs(route, root)}<div class="reading-layout"><aside class="sidebar"><details class="chapter-navigation" open><summary>Browse and page tools</summary><div class="reader-tools">{local}{tools}<details class="all-chapters"><summary>All chapters</summary><nav aria-label="All chapters"><ol>{chapter_menu}</ol></nav></details><p><a href="{root}sources/">Sources and revisions</a><br><a href="{root}entries/">All entries</a><br><a href="{root}numerical-references/">Numerical references</a><br><a href="{REPOSITORY}">GitHub repository</a></p></div></details></aside>
 <main id="content" tabindex="-1">{self.pager(route, root)}{content}{self.pager(route, root, True)}
 <details class="citation" id="cite"><summary>Cite this page</summary><label for="citation-text">BibTeX citation</label><textarea id="citation-text" readonly rows="7">{citation}</textarea><button type="button" data-copy-citation>Copy citation</button><span class="copy-status" role="status"></span></details>
-{self.comment_panel(route)}<footer class="book-footer">{escape(TITLE)} · <a href="{root}sources/">Sources and revisions</a> · <a href="{root}numerical-references/">Numerical references</a> · <a href="{root}comments/">Comments</a></footer></main></div></body></html>'''
+{self.comment_panel(route)}<footer class="book-footer">{escape(TITLE)} · <a href="{root}sources/">Sources and revisions</a> · <a href="{root}numerical-references/">Numerical references</a>{" · " + comments_link if comments_link else ""}</footer></main></div></body></html>'''

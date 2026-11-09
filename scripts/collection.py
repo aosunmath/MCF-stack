@@ -520,7 +520,8 @@ def build_collection(books, destination, configuration):
         ) + '</ul><p>The reading collection consists of an introduction and four categories: shrinkers, translators, expanders, and other special flows. Each example includes a figure and precise references.</p>'
     if not entries:
         introduction += '<p>Special solutions of mean curvature flow will be collected here.</p>'
-    write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="numerical-references/">Numerical references</a><a href="comments/">Comments</a><a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
+    comments_link = '<a href="comments/">Comments</a>' if reader.comments_enabled else ""
+    write("", introduction + f'<nav class="home-links" aria-label="Explore {escape(TITLE)}"><a href="chapters/">Table of contents</a><a href="search/">Search</a><a href="references/">Bibliography</a><a href="numerical-references/">Numerical references</a>{comments_link}<a href="sources/">Sources</a><a href="{REPOSITORY}">GitHub</a></nav><h2>Table of contents</h2>' + reader.contents(""), TITLE, "")
     write("browse", catalogue_properties.page(property_records), "Browse by properties", "../")
     write("chapters", '<h1>Table of contents</h1>' + reader.contents("../"), "Table of contents", "../")
     for key, chapter in chapters.items():
@@ -710,10 +711,10 @@ def build_collection(books, destination, configuration):
     reference_content = reference_content.replace('</h1>', '</h1><p>For figure methods, software, and visual-source credits, see <a href="../numerical-references/">Numerical references</a>.</p>', 1)
     write("references", reference_content, "References", "../")
     write("search", '<h1>Search</h1><form class="page-search" role="search"><label for="page-search">Keywords, a statement number, or a permanent tag</label><input id="page-search" type="search" name="q" autocomplete="off" aria-controls="page-search-results"><button type="submit">Search</button></form><div id="page-search-results" aria-live="polite"></div>', "Search", "../")
-    comment_content = '<h1>Comments and corrections</h1>'
-    if comments.get("enabled", True):
+    if reader.comments_enabled:
+        comment_content = '<h1>Comments and corrections</h1>'
         comment_content += f'<p>Use the Comments link on a reading page for a question or correction about that page.</p><p><a href="{REPOSITORY}/discussions">Browse all discussions on GitHub</a></p>'
-    write("comments", comment_content, "Comments", "../")
+        write("comments", comment_content, "Comments", "../")
     write_search_index(search, destination)
     public_topics = [{**topic, "number": reader.sections[key]["number"], "tag": reader.sections[key]["tag"]} for key, topic in topics.items()]
     (destination / "collection.json").write_text(json.dumps({"version": 1, "chapters": list(chapters.values()), "topics": public_topics, "entries": public_entries}, ensure_ascii=False, indent=2) + "\n")

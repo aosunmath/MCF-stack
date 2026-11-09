@@ -234,7 +234,7 @@ class ReaderTests(unittest.TestCase):
             self.assertEqual(beta.select_one('a[data-tag="00000001"]').get_text(), '1.1')
             check_links(root)
 
-    def test_a_section_named_comments_does_not_replace_the_comment_panel_anchor(self):
+    def test_a_section_named_comments_keeps_its_reserved_anchor(self):
         self.records[-1]['topic'] = 'Comments'
         self.config['topics'][-1] = {'slug': 'comments', 'title': 'Comments'}
         self.config['chapters'][-1]['topics'] = ['comments']
@@ -242,8 +242,7 @@ class ReaderTests(unittest.TestCase):
             root = Path(temporary)
             self.build(root)
             soup = BeautifulSoup((root / 'chapters/second/index.html').read_text(), 'html.parser')
-            self.assertEqual(len(soup.select('#comments')), 1)
-            self.assertEqual(soup.select_one('#comments')['class'], ['comments-panel'])
+            self.assertFalse(soup.select('#comments'))
             self.assertTrue(soup.select_one('#section-comments a'))
             check_links(root)
 
@@ -277,14 +276,17 @@ class ReaderTests(unittest.TestCase):
             self.assertEqual(first["title"], "Definition 1.1.1")
             self.assertIn("def:internal_label_1", first["aliases"])
 
-    def test_empty_fork_comments_are_disabled_and_identity_is_gmt(self):
+    def test_disabled_comments_are_absent_and_identity_is_mcf(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             pages = self.build(root)
+            self.assertNotIn('comments', [page['route'] for page in pages])
+            self.assertFalse((root / 'comments').exists())
             for page in pages:
                 soup = BeautifulSoup((root / page["route"] / "index.html").read_text(), "html.parser")
-                self.assertFalse(soup.select('[data-comment-term], [data-load-comments]'))
-                self.assertIn('Comments are not enabled yet.', soup.select_one('#comments').get_text())
+                self.assertFalse(soup.select('#comments, [data-comment-term], [data-load-comments]'))
+                self.assertFalse(soup.select('a[href="#comments"], a[href$="comments/"]'))
+                self.assertFalse(soup.select('script[src*="comments.mjs"]'))
                 self.assertTrue(soup.select_one('link[rel="canonical"]')['href'].startswith('https://aosunmath.github.io/MCF-stack/'))
                 self.assertEqual(soup.select_one('.brand').get_text(strip=True), TITLE)
                 self.assertIn(CONTRIBUTORS, soup.select_one('#citation-text').get_text())
@@ -298,6 +300,10 @@ class ReaderTests(unittest.TestCase):
             'category': 'General', 'category_id': 'TEST_CATEGORY',
             'category_slug': 'general', 'term_prefix': 'GMT Stack',
         })
+        self.assertIn('comments', reader.order)
+        shell = BeautifulSoup(reader.shell('<h1>Home</h1>', '', '', 'test'), 'html.parser')
+        self.assertTrue(shell.select('a[href="#comments"], a[href="comments/"]'))
+        self.assertTrue(shell.select('script[src*="comments.mjs"]'))
         terms = []
         for route in reader.order:
             panel = BeautifulSoup(reader.comment_panel(route), 'html.parser').section
