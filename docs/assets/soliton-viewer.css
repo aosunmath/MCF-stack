@@ -148,3 +148,11 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .soliton-figure[data-soliton$="reapernoid.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/810}
 .soliton-figure .soliton-stage:has(img[src$="reapernoid-limits.svg"]){height:auto;aspect-ratio:1000/750}
 @media print{.reapernoid-figure .soliton-stage{height:auto}.reapernoid-figure .soliton-stage img{height:auto}.reapernoid-note,.reapernoid-figure .soliton-status{display:none}}
+
+/* Exact Lee–Wang phase leaves; fixed scale for all four time panels. */
+.lw-figure .soliton-stage{height:660px}.lw-figure .soliton-stage[data-view=single],.lw-figure .soliton-stage[data-view=orbits]{height:460px}
+.lw-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.lw-figure .soliton-status{line-height:1.6}
+.lw-figure .lw-time,.lw-figure .lw-phase{flex-basis:100%}.lw-figure input[type=range]{flex:1;max-width:400px;min-width:100px}.lw-figure output{min-width:105px}
+@media(max-width:699px){.lw-figure .soliton-stage{height:530px}.lw-figure .soliton-stage[data-view=single],.lw-figure .soliton-stage[data-view=orbits]{height:360px}}
+.soliton-figure:has(img[src$="lw-quadric-shrinkers.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:1000/900}
+@media print{.lw-figure .soliton-stage{height:auto!important;aspect-ratio:1000/900}.lw-note,.lw-figure .soliton-status{display:none}}
