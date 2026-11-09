@@ -1,0 +1,13 @@
+{
+  "status": "Illustration diagnostics, not proof certification",
+  "expander_quadrature_refinement_max": 2.3314683517128287e-15,
+  "mobius_fundamental_domain": "0 <= theta < pi, with the last mesh seam reversing r",
+  "coordinate_order": "Re z1, Im z1, Re z2, Im z2",
+  "ttw_picture": "Exact initial cone only; no PDE solution is computed",
+  "schematics": [
+    "jlt-compact-shrinkers",
+    "aryan-lee",
+    "su-tsai-wood",
+    "lee-tsai"
+  ]
+}

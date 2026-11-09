@@ -1,0 +1,131 @@
+@article{BarberDobkinHuhdanpaa1996,
+  author = {Barber, C. Bradford and Dobkin, David P. and Huhdanpaa, Hannu},
+  title = {The {Quickhull} Algorithm for Convex Hulls},
+  journal = {ACM Transactions on Mathematical Software},
+  volume = {22}, number = {4}, pages = {469--483}, year = {1996},
+  doi = {10.1145/235815.235821},
+  annote = {Method behind Qhull, used through SciPy's Delaunay and ConvexHull routines in selected stacking, doubling, and other triangulated models.}
+}
+@article{Brakke1992,
+  author = {Brakke, Kenneth A.},
+  title = {The Surface Evolver},
+  journal = {Experimental Mathematics},
+  volume = {1}, number = {2}, pages = {141--165}, year = {1992},
+  doi = {10.1080/10586458.1992.10504253},
+  url = {https://www.kenbrakke.com/evolver/},
+  annote = {Source-side software credit: Buzano, Nguyen, and Schulz used Surface Evolver for their numerical illustrations. MCF-stack's corresponding schematic is generated from its own drawing field; it does not reproduce their Evolver calculation.}
+}
+@book{Brent1973,
+  author = {Brent, Richard P.},
+  title = {Algorithms for Minimization Without Derivatives},
+  publisher = {Prentice-Hall}, year = {1973},
+  url = {https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html},
+  annote = {Chapters 3--4 describe the root-finding method used through scipy.optimize.brentq to select closing and matching parameters in shooting constructions. The link documents the implementation and its reference.}
+}
+@misc{FastSimplification,
+  author = {{fast-simplification contributors}},
+  title = {{fast-simplification}: Python Wrapper for {Fast-Quadric-Mesh-Simplification}},
+  url = {https://pyvista.github.io/fast-simplification/},
+  note = {Software documentation; accessed 8 November 2026},
+  annote = {Implementation used to reduce triangle counts for interactive figures. Credit also belongs to the wrapped Fast-Quadric-Mesh-Simplification project by sp4cerat and contributors; its repository is linked in the documentation. This is distinct from using PyVista as a renderer.}
+}
+@inproceedings{GarlandHeckbert1997,
+  author = {Garland, Michael and Heckbert, Paul S.},
+  title = {Surface Simplification Using Quadric Error Metrics},
+  booktitle = {Proceedings of SIGGRAPH 1997},
+  pages = {209--216}, year = {1997},
+  url = {https://www.cs.cmu.edu/~garland/quadrics/},
+  annote = {Underlying quadric-error idea for mesh simplification. The software actually called by the drawing generators is fast-simplification, sometimes through trimesh.}
+}
+@book{HairerNorsettWanner1993,
+  author = {Hairer, Ernst and N{\o}rsett, Syvert P. and Wanner, Gerhard},
+  title = {Solving Ordinary Differential Equations I: Nonstiff Problems},
+  edition = {2}, publisher = {Springer}, year = {1993},
+  doi = {10.1007/978-3-540-78862-1},
+  annote = {Reference for numerical ODE integration, including the DOP853 method cited by SciPy. Several rotational profiles use solve_ivp with DOP853; other generators explicitly choose different solvers.}
+}
+@article{HarrisEtAl2020,
+  author = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, St{\'e}fan J. and others},
+  title = {Array Programming with {NumPy}},
+  journal = {Nature}, volume = {585}, pages = {357--362}, year = {2020},
+  doi = {10.1038/s41586-020-2649-2},
+  annote = {NumPy supplies coordinate arrays, sampling grids, vector operations, normals, and transformations throughout the numerical geometry generators.}
+}
+@misc{KhronosWebGL,
+  author = {{Khronos WebGL Working Group}},
+  title = {{WebGL} Specification, Version 1.0},
+  url = {https://registry.khronos.org/webgl/specs/latest/1.0/},
+  note = {Web standard; accessed 8 November 2026},
+  annote = {Browser graphics interface used by the project's custom interactive surface viewers, including depth testing, lighting, and cutaway rendering. This credits the rendering platform rather than a surface construction.}
+}
+@article{LewinerEtAl2003,
+  author = {Lewiner, Thomas and Lopes, H{\'e}lio and Vieira, Ant{\^o}nio Wilson and Tavares, Geovan},
+  title = {Efficient Implementation of Marching Cubes' Cases with Topological Guarantees},
+  journal = {Journal of Graphics Tools}, volume = {8}, number = {2}, pages = {1--15}, year = {2003},
+  doi = {10.1080/10867651.2003.10487582},
+  url = {https://thomas.lewiner.org/pub/marching_cubes_jgt.html},
+  annote = {Marching-cubes variant used by skimage.measure.marching_cubes to extract meshes from sampled scalar fields. Its topology guarantees concern the extraction algorithm; they do not certify that an illustrative field solves a geometric PDE.}
+}
+@article{Melko2010,
+  author = {Melko, O. Michael},
+  title = {Visualizing Minimal Surfaces},
+  journal = {The Mathematica Journal}, volume = {12}, year = {2010},
+  url = {https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/},
+  annote = {Equations (16)--(19), particularly (17), supply the stationary Costa parametrization used in the ancient-Costa illustration. MCF-stack implements its evaluation and mesh itself; the displayed normal perturbation is a separate truncated linearized model. No Mathematica package or source image is included.}
+}
+@misc{Pillow,
+  author = {{Pillow contributors}},
+  title = {{Pillow}: Python Imaging Library Fork},
+  url = {https://python-pillow.org/},
+  note = {Software project; accessed 8 November 2026},
+  annote = {Used by selected figure generators to draw and encode raster views, including raster panels embedded in otherwise vector SVG plates.}
+}
+@misc{Pako,
+  author = {{pako contributors}},
+  title = {{pako}: JavaScript Compression Library},
+  url = {https://github.com/nodeca/pako/tree/2.1.0},
+  note = {Version 2.1.0; software project},
+  annote = {Developed by Andrey Tupitsin and Vitaly Puzrin, porting zlib by Jean-loup Gailly and Mark Adler. Used to decompress stored frame data in the first supplied Chu--Sun numerical replay; it is not a geometry solver. The upstream project distinguishes its MIT license from the zlib license of the ported core.}
+}
+@misc{ThreeJS,
+  author = {{three.js authors}},
+  title = {{three.js}: JavaScript {3D} Library},
+  url = {https://github.com/mrdoob/three.js/tree/r128},
+  note = {Version 0.128.0 (r128); software project},
+  annote = {The two supplementary Chu--Sun numerical replay pages supplied by Ao Sun use this locally hosted library for their surface rendering. Its MIT license is retained beside the bundled library. This dependency is separate from the catalogue's custom Canvas and WebGL viewers.}
+}
+@misc{Trimesh,
+  author = {{trimesh contributors}},
+  title = {{trimesh}},
+  url = {https://trimesh.org/},
+  note = {Software documentation; accessed 8 November 2026},
+  annote = {Used for mesh processing, normals, simplification, and combinatorial topology checks in the genus-labelled sphere--torus schematics. Such checks concern the exported triangulation, not the shrinker PDE.}
+}
+@article{VanDerWaltEtAl2014,
+  author = {van der Walt, St{\'e}fan and Sch{\"o}nberger, Johannes L. and Nunez-Iglesias, Juan and Boulogne, Fran{\c c}ois and Warner, Joshua D. and Yager, Neil and Gouillart, Emmanuelle and Yu, Tony and {the scikit-image contributors}},
+  title = {{scikit-image}: Image Processing in {Python}},
+  journal = {PeerJ}, volume = {2}, pages = {e453}, year = {2014},
+  doi = {10.7717/peerj.453},
+  annote = {Software credit for the library providing marching_cubes, in addition to the algorithm credit to Lewiner and coauthors.}
+}
+@article{VirtanenEtAl2020,
+  author = {Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and others},
+  title = {{SciPy} 1.0: Fundamental Algorithms for Scientific Computing in {Python}},
+  journal = {Nature Methods}, volume = {17}, pages = {261--272}, year = {2020},
+  doi = {10.1038/s41592-019-0686-2},
+  annote = {SciPy supplies ODE integration, root finding, interpolation, sparse linear algebra, eigenvalue calculations, special functions, and triangulation for the generators that call those routines. A software citation does not certify a computed solution.}
+}
+@misc{WHATWGCanvas,
+  author = {{WHATWG}},
+  title = {{HTML} Standard: The Canvas Element},
+  url = {https://html.spec.whatwg.org/multipage/canvas.html},
+  note = {Web standard; accessed 8 November 2026},
+  annote = {Canvas 2D is the browser drawing interface used by the custom curve and surface viewers that project, shade, and draw geometry in JavaScript.}
+}
+@misc{W3CSVG,
+  author = {{World Wide Web Consortium}},
+  title = {Scalable Vector Graphics ({SVG}) 2},
+  url = {https://www.w3.org/TR/SVG2/},
+  note = {Web standard; accessed 8 November 2026},
+  annote = {SVG supplies the static, printable figure format, including labels, paths, triangles, and occasional embedded raster panels.}
+}

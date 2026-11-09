@@ -1,0 +1,27 @@
+{
+  "single_reaper_translation_error": 0.0025370642592691395,
+  "comparison": "max |x_A(y,t)-x_B(y,t)| for .05 <= y <= 3*pi-.05, at six displayed times; empirical, not a bound",
+  "space_and_time_refinement": 0.00658945430113872,
+  "earlier_start": 0.0031616009970836245,
+  "farther_endpoints": 0.0002409066813084948,
+  "minimum_y_increment": -3.552713678800501e-15,
+  "signed_area_balance_error": 0.033517889414682145,
+  "reflection_symmetry_error": 2.213340621892712e-12,
+  "parameters": {
+    "heights": [
+      0,
+      3.141592653589793,
+      6.283185307179586,
+      9.42477796076938
+    ],
+    "shifts": [
+      0,
+      0,
+      0
+    ],
+    "start": -10,
+    "endpointsX": -32,
+    "count": 2401,
+    "dt": 0.002
+  }
+}

@@ -1,6 +1,51 @@
-\chapter{The catenoid as an eternal stationary flow}\label{sec:catalogue-stationary-catenoid}
-\begin{example}[Stationary catenoid flow]\label{ex:catalogue-stationary-catenoid}
-For $a>0$ the explicit immersion
+\chapter{Minimal surfaces as stationary mean curvature flows}\label{sec:catalogue-stationary-catenoid}
+\begin{example}[Minimal surfaces as stationary mean curvature flows]\label{ex:catalogue-stationary-catenoid}
+Every smooth minimal surface gives a static solution of mean curvature flow, and the same observation applies to minimal submanifolds in arbitrary codimension. Let $F_0:M^n\to (N^{n+k},\bar g)$ be a smooth immersion without boundary, with $n\geq2$, $k\geq1$, and a fixed ambient metric. Write $\vec H$ for the trace of its second fundamental form. The time-independent family
+\[
+ F(p,t)=F_0(p),\qquad p\in M,\quad t\in\mathbb R,
+\]
+satisfies the geometric mean curvature flow equation precisely when $F_0$ is minimal:
+\[
+ (\partial_tF)^\perp=\vec H
+ \quad\Longleftrightarrow\quad \vec H_{F_0}=0.
+\]
+Thus every such minimal immersion is an eternal stationary flow; restricting time to $(-\infty,T)$ also gives an ancient flow. No dilation, translation velocity, or preferred scale is required. Tangential reparametrizations can change the labels of points without changing the stationary geometry.
+
+\textbf{Minimality and the geometry of the time slices.}
+For a compactly supported normal variation $V$, supported away from any boundary, the first variation of area is
+\[
+ \delta\operatorname{Area}_{F_0}(V)=-\int_M\langle\vec H,V\rangle\,d\mu.
+\]
+For an infinite-area immersion this means the variation of area on a compact region containing the support. Minimality is therefore the critical-point equation for area. The first-variation argument and the stationary-flow observation are recorded for Euclidean hypersurfaces in \cite{CatMan11}, Proposition 1.2.1 and Sections 1.3--1.4, printed pp.~6--11 (supplied PDF pp.~19--24). The vector equation above gives the same conclusion in any fixed Riemannian ambient manifold.
+
+The flow retains the topology, embeddedness or self-intersections, completeness, properness, symmetries, and ends of the chosen minimal immersion. None of these properties follows merely from $\vec H=0$. In particular, both embedded and nonembedded immersed examples are allowed, and an immersion is not automatically nonembedded. For a surface in $\mathbb R^3$, minimality gives principal curvatures $\kappa_1+\kappa_2=0$ and hence $K=-\kappa_1^2\leq0$; it does not force the surface to be flat.
+
+There is no positive-dimensional compact minimal immersion without boundary in Euclidean space. Indeed, for $F_0:M^n\to\mathbb R^{n+k}$,
+\[
+ \Delta_M F_0=\vec H,\qquad
+ \Delta_M|F_0|^2=2n+2\langle F_0,\vec H\rangle.
+\]
+If $\vec H=0$ and $M$ were compact without boundary, integration would give $0=2n\operatorname{Vol}(M)$. This obstruction is specific to Euclidean space. Minimal surfaces in curved ambient manifolds are stationary for MCF in that ambient metric and are recorded separately below; their Euclidean mean curvature after an ambient embedding need not vanish. A minimal surface with boundary is also stationary in its interior, but a boundary-value flow must impose compatible boundary conditions, such as keeping its boundary fixed.
+
+\textbf{Minimal graphs and affine planes.}
+For a smooth hypersurface graph $F_0(x)=(x,u(x))$ over an open set $\Omega\subset\mathbb R^n$, the stationary equation is the minimal-surface equation
+\[
+ \operatorname{div}\left(\frac{Du}{\sqrt{1+|Du|^2}}\right)=0.
+\]
+It is exactly the time-independent case of the graphical MCF equation
+\[
+ u_t=\sqrt{1+|Du|^2}\,\operatorname{div}\left(\frac{Du}{\sqrt{1+|Du|^2}}\right);
+\]
+see \cite{CatMan11}, Exercise 1.3.8, printed pp.~10--11. This is an elliptic characterization, not a closed formula for all minimal surfaces.
+
+An elementary exact example is any affine plane in $\mathbb R^3$:
+\[
+ F(u,v,t)=p+u e_1+v e_2,\qquad (u,v)\in\mathbb R^2,\quad t\in\mathbb R,
+\]
+where $p\in\mathbb R^3$ and $e_1,e_2$ are orthonormal. It is complete, properly embedded, flat, noncompact, and topologically $\mathbb R^2$, with genus zero and one end. Unlike a plane solving the normalized shrinker equation, a stationary affine plane need not pass through the origin.
+
+\textbf{The catenoid as an illustrated member of the class.}
+For $a>0$ the exact parametrization
 \[
  X(\theta,s,t)=a(\cosh s\cos\theta,\cosh s\sin\theta,s),
  \quad \theta\in\mathbb R/2\pi\mathbb Z,\quad s\in\mathbb R,\quad t\in\mathbb R,
@@ -17,7 +62,33 @@ The metric follows by differentiation, and the conformal curvature formula gives
 \[
  Q(f,f)=2\pi\int_{\mathbb R}\bigl((f')^2-2\operatorname{sech}^2s\,f^2\bigr)\,ds.
 \]
-Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The parametrization is exact and supports interactive rotation, scale selection, and a truncated height range with the omitted infinite ends stated.
+Taking $f$ equal to one on $[-R,R]$, zero outside $[-2R,2R]$, and $|f'|\leq C/R$ makes this negative for large $R$. Each open half is a minimal graph over $r>a$, with $z=\pm a\operatorname{arcosh}(r/a)$, so it is stable for compactly supported variations in that half. These are minimal-area stability assertions, not a classification of dynamical stability under MCF. The supplied source also records the catenoid in \cite{CatMan11}, Remark 4.4.7, printed p.~105, supplied PDF p.~116. The interactive figure shows this particular minimal surface, with rotation and zoom on a fixed, truncated parameter window; it does not represent the full class of minimal surfaces.
+Chopp uses the bounded piece of this classical surface as a numerical
+benchmark in \cite{CatChoppMinimal1993}, Section~4.1, pp.~86--87.
+In axial coordinates its exact profile is
+$r(z)=a\cosh(z/a)$, $-b\leq z\leq b$, with the two fixed boundary
+circles of radius $R=a\cosh(b/a)$. The test uses $a=0.4$ and
+$b\approx0.277259$, giving $R\approx0.5$. This is a fixed-boundary
+minimal-surface computation, not a new complete catenoid or a closed
+formula for the transient numerical evolution. The solver's artificial
+time and curvature conventions should not be identified with the
+normalized MCF time used elsewhere in this collection.
+
+\textbf{Stationarity, stability, and Gaussian quantities.}
+Being a critical point of area does not mean being an area minimizer or even stable. For a two-sided minimal hypersurface in Euclidean space, the second variation for a compactly supported scalar normal variation $f$ is
+\[
+ Q(f,f)=\int_M\bigl(|\nabla f|^2-|A|^2f^2\bigr)\,d\mu.
+\]
+An affine plane has $A=0$ and is stable for these variations, whereas the catenoid has the negative direction exhibited above. Both nevertheless remain exactly fixed under MCF when initialized at the minimal surface. Stability of perturbed flows requires its own hypotheses and is not asserted for this general class.
+
+For a stationary Euclidean immersion, each Gaussian integral and its entropy are constant in time whenever defined, because the immersion itself is fixed. This does not identify centered Gaussian area with entropy or imply their finiteness for every minimal immersion. For the multiplicity-one affine plane $P$ above, direct Gaussian integration gives
+\[
+ F_{x_0,\tau}(P)=\exp\left(-\frac{\operatorname{dist}(x_0,P)^2}{4\tau}\right),
+ \qquad \lambda(P)=1,\qquad \tau>0.
+\]
+Thus $F_{0,1}(P)=\exp(-\operatorname{dist}(0,P)^2/4)$ equals entropy only when $0\in P$. No value or uniform bound is recorded here for the general minimal-surface class. Euclidean Gaussian area and entropy are not assigned to intrinsic MCF in curved ambient manifolds. This entry concerns smooth minimal immersions; singular stationary varifolds require a weak-flow formulation and local mass hypotheses.
+
+Further stationary examples in this collection include the special Lagrangian Lawlor necks in \ref{ex:catalogue-lawlor-necks} and the Su--Wood products in \ref{ex:catalogue-su-wood-stationary}. Their entries give the dimensions, parametrizations, and additional geometry of those particular families.
 \end{example}
 
 \chapter{Mean curvature evolution of the Whitney sphere}\label{sec:catalogue-whitney-sphere}
@@ -41,7 +112,14 @@ For $n\geq2$ the profile evolution is the equivariant equation
 \]
 interpreted by the smooth equivariant immersion at the double point. It is not ordinary planar curve shortening.
 
-The maximal smooth mean curvature flow $F_t$, $t\in[0,T)$, remains Lagrangian and equivariant. It collapses to the origin in finite time, and its tangent flow there is a Lagrangian plane with multiplicity two. The Whitney sphere is not a self-similar solution. These statements are the special case stated in \cite{CatViana18}, pp.~1--3, especially the result on p.~2 and Theorem 1.3 on p.~3. The formulas above specify the initial geometry and its reduced equation, not a closed expression for $F_t$ at positive time. The figure shows the exact initial generating profile $\gamma_0$ of this higher-codimension immersion.
+The maximal smooth mean curvature flow $F_t$, $t\in[0,T)$, remains Lagrangian and equivariant. It collapses to the origin in finite time, and its tangent flow there is a Lagrangian plane with multiplicity two. The Whitney sphere is not a self-similar solution. These statements are the special case stated in \cite{CatViana18}, pp.~1--3, especially the result on p.~2 and Theorem 1.3 on p.~3. The formulas above specify the initial geometry and its reduced equation, not a closed expression for $F_t$ at positive time. The illustration specializes to $n=2$. Write $\gamma_t=a+ib$. A single right-hand lobe, from one preimage of the origin to the other, generates the immersed two-sphere by
+\[
+ F_t(u,v)=(\gamma_t(u)\cos v,\gamma_t(u)\sin v)\in\mathbb C^2,
+ \qquad v\in\mathbb R/2\pi\mathbb Z.
+\]
+The circles at the two endpoints collapse to the two distinct poles of the domain, which have the same image at the origin. Using both antipodal lobes would cover the same sphere twice.
+
+The time sequence pairs this surface, linearly projected from $\mathbb R^4$ to $\mathbb R^3$, with its planar profile. At $t=0$ the geometry is exact; the positive-time frames are numerical approximations of the equivariant PDE for $n=2$, with $\partial_tF=\vec H$ and the initial scale fixed above. They show $0\leq t\leq0.09$ on a common spatial scale, with no normalization by an estimated extinction time. The computation stops before the singularity: $0.09$ is not asserted to equal $T$. Spatial mesh refinement and tighter time-integration tolerances are compared, but these checks are not certified error bounds. The profile narrows and contracts rather than shrinking by a single scale factor. Its double point remains at the origin; further overlaps in the surface projection need not be intersections in $\mathbb R^4$. The multiplicity-two tangent plane is a parabolic blow-up limit, not an unscaled final surface displayed by the animation.
 \end{example}
 
 \chapter{Rotational degenerate neckpinch solutions}\label{sec:catalogue-degenerate-neckpinches}
@@ -64,7 +142,12 @@ Under the intermediate scaling $x\mapsto x/(T-t)^{1/m}$ and $r\mapsto r/(T-t)^{1
 \[
  r=\sqrt{2(n-1)+Kx^m},\qquad x\geq-\xi_*.
 \]
-This last expression is an asymptotic limiting profile, not an exact formula for the evolving compact hypersurface. Source: \cite{CatAV97}, Introduction, items 1--5, printed pp.~16--17, supplied PDF pp.~2--3; the construction is justified in Sections 3--7. The even-$m$ modifications and the formal $m=2$ discussion are not included in this entry. The figure compares the three scaling regimes: the full compact surface is schematic and the intermediate profile is a limit. The construction does not classify all type-II singularities or impose global convexity on every allowed target.
+This last expression is an asymptotic limiting profile, not an exact formula for the evolving compact hypersurface. Source: \cite{CatAV97}, Introduction, items 1--5, printed pp.~16--17, supplied PDF pp.~2--3; the construction is justified in Sections 3--7. The even-$m$ modifications and the formal $m=2$ discussion are not included in this entry. The illustration selects $n=2$, $m=3$, $K=1$, and writes $s=T-t$. Its time sequence uses one spatial scale to show the left tip approaching the origin while the outer cap persists; the final cusp target is not a smooth time slice. For the profile near the origin, item 5 of the Introduction gives
+\[
+ \frac{u(y\sqrt{s},T-s)}{\sqrt{s}}
+ =\sqrt{2}+\frac{\sqrt{s}}{2\sqrt{2}}(y^3-6y)+o(\sqrt{s})
+\]
+on bounded $y$ intervals. This leading Hermite correction explains the small bulge and neck in the cylindrical region. The rotatable compact slices blend the asymptotic profiles with a numerically integrated bowl cap and a chosen outer cap: they are illustrative schematics, not a computed solution of the compact MCF initial-value problem, and their displayed times carry no certified finite-time accuracy. Separate views compare the meridians and the three blow-up limits; the intermediate view uses unequal axial and radial scaling. The construction does not classify all type-II singularities or impose global convexity on every allowed target.
 \end{example}
 
 \chapter{The Angenent oval as an explicit ancient flow}\label{sec:catalogue-angenent-oval}
@@ -186,7 +269,7 @@ The proof selects a critical initial surface by interpolation among rotational s
 
 The two graphical ends and the smooth connecting neck give topology $S^1\times\mathbb R$: genus zero and two ends. Properness follows from the graphs escaping to infinite radius; the smooth connected surface is complete. It remains in a fixed slab, and the two ends stay asymptotic to their original parallel planes. The neck radius tends to zero only as $t\to\infty$. On compact regions the flow converges to the middle plane with multiplicity two; the two sheets converge smoothly away from the origin. The convergence is not uniform over the entire noncompact surface. This is an infinite-time limit of the unrescaled flow, not a multiplicity-two finite-time tangent flow of a closed embedded surface.
 
-Source: \cite{CatCS26R3}, Theorems 1.1 and 4.13, Section 1.1, equation (2.5), Proposition 4.6 and Remark 4.7, and Appendix A, arXiv v3 PDF pp.~1, 3, 6, 23--24, and 27--28. The topology and properness statements above are direct consequences of the source's two-graph parametrization. The paper gives no exact entropy or fixed-center Gaussian-area value for this constructed family. The picture is a schematic of two sheets with a narrowing neck; it does not compute the critical PDE solution and is not a time-dependent catenoid.
+Source: \cite{CatCS26R3}, Theorems 1.1 and 4.13, Section 1.1, equation (2.5), Proposition 4.6 and Remark 4.7, and Appendix A, arXiv v3 PDF pp.~1, 3, 6, 23--24, and 27--28. The topology and properness statements above are direct consequences of the source's two-graph parametrization. The paper gives no exact entropy or fixed-center Gaussian-area value for this constructed family. The interactive picture compares ordered finite-time stages and a separate infinite-time limit at a fixed viewing scale. A cutaway exposes the connecting neck; the compressed radial profile records the fixed far-end heights. The illustrated shapes and stage spacing are schematic, not computed critical PDE time slices or an asserted convergence rate.
 \end{example}
 
 \chapter{Immortal compact flows converging to a double sphere}\label{sec:catalogue-double-sphere-flow}
@@ -217,7 +300,7 @@ with an inverse graph near each neck, governed by
 \]
 An interpolation argument selects an immortal solution. As $t\to\infty$, it converges to the stable minimal slice $S^n\times\{0\}$ with multiplicity two. Away from the north and south poles, the two sheets converge smoothly; the two necks collapse only at infinite time.
 
-Source: \cite{CatCS25Man}, Theorems 1.1, 3.12, and 3.17, Section 2.1, Definition 3.10 and Lemma 3.11, and Section 3.3, arXiv v2 PDF pp.~1--4 and 11--15. Euclidean Gaussian area and Colding--Minicozzi entropy are not assigned to this intrinsic manifold flow; the cited paper gives no such invariant for these examples. In particular, its isometric embedding into $\mathbb R^{n+2}$ is not an unforced Euclidean mean curvature flow. The picture shows the orbit-space profile and the limiting minimal slice schematically; it does not represent an isometric embedding of $S^2\times\mathbb R$ into three-dimensional Euclidean space.
+Source: \cite{CatCS25Man}, Theorems 1.1, 3.12, and 3.17, Section 2.1, Definition 3.10 and Lemma 3.11, and Section 3.3, arXiv v2 PDF pp.~1--4 and 11--15. Euclidean Gaussian area and Colding--Minicozzi entropy are not assigned to this intrinsic manifold flow; the cited paper gives no such invariant for these examples. In particular, its isometric embedding into $\mathbb R^{n+2}$ is not an unforced Euclidean mean curvature flow. The picture pairs three ordered finite-time stages with the infinite-time limit and their orbit-space profiles. In the $n=2$ drawing, the coordinate map $(p,y)\mapsto(1+2y)p$, for $p\in S^2$, displays the two sheets as inner and outer shells joined through both polar necks. This map is not an isometry: the radial separation illustrates the product coordinate, not a Euclidean MCF. A display cutaway exposes the inner sheet; its cut edges are not boundaries of the compact surface. The illustrated profiles are smooth schematic loops, not computed solutions or an asserted asymptotic formula. The stage slider assigns no physical times or decay rates. At every finite stage both neck circles remain positive, whereas the separate limit view shows one sphere with multiplicity two.
 \end{example}
 
 \chapter{Haslhofer--Hershkovits ancient ovals}\label{sec:catalogue-hh-ancient-ovals}
@@ -228,9 +311,13 @@ Under backward parabolic blow-down,
 \[
  \lambda^{-1}M_{\lambda^2t}\longrightarrow S^j(\sqrt{2j|t|})\times\mathbb R^{n-j}\quad(\lambda\to\infty).
 \]
-Tip rescalings approach $\mathrm{Bowl}^{j+1}\times\mathbb R^{n-j-1}$, with the bowl normalized to unit tip curvature. Rescaled diameter is unbounded backward in time and curvature decay is type II. No closed formula or uniqueness follows from this construction. Gaussian area and entropy are finite for each compact slice; no fixed slice value is evaluated here.
+The tip rescalings selected in Claim 3.5 of \cite{CatHH13} approach $\mathrm{Bowl}^{j+1}\times\mathbb R^{n-j-1}$, with the bowl normalized to unit tip curvature. Rescaled diameter is unbounded backward in time and curvature decay is type II. No closed formula or uniqueness follows from this construction. Gaussian area and entropy are finite for each compact slice; no fixed slice value is evaluated here.
 
-Source: \cite{CatHH13}, Theorem 1.1 and Section 3. Huisken--Sinestrari's Theorem 3.2 in \cite{CatHS14} shows why the hypothesis $h_{ij}\geq\varepsilon H g_{ij}$ with one $\varepsilon>0$ for all ancient times cannot hold for these nonspherical ovals: a closed convex ancient flow with that uniform pinching is a shrinking sphere. The displayed elongated shape is heuristic, not an evolving ellipsoid solution.
+Source: \cite{CatHH13}, Theorem 1.1 and Section 3. Huisken--Sinestrari's Theorem 3.2 in \cite{CatHS14} shows why the hypothesis $h_{ij}\geq\varepsilon H g_{ij}$ with one $\varepsilon>0$ for all ancient times cannot hold for these nonspherical ovals: a closed convex ancient flow with that uniform pinching is a shrinking sphere.
+
+The illustration specializes to $n=2$, $j=1$. It numerically evolves the boundary of the Minkowski sum of a unit ball and an ellipsoid with semiaxes $(8,1/2,1/2)$, using rotational mean curvature flow. This is a finite smooth convex seed inspired by the long capped cylinders in Section 3, not a closed formula for the ancient oval. Extinction is shifted to $t=0$, and parabolic scaling makes the axial-to-equatorial radius ratio equal to $2$ at $t=-1$. The slider samples $-1000\leq t\leq-0.001$.
+
+Original size shows contraction at a fixed spatial scale. The default view shows $(-t)^{-1/2}M_t$: the backward central limit is the cylinder of radius $\sqrt2$, while the extinction limit is the sphere of radius $2$. The right-tip view instead translates the tip to the origin and multiplies lengths by its mean curvature; the dashed comparison is a numerically integrated unit-speed bowl. These are different rescalings. Mesh refinement, time-tolerance refinement, and a shorter seed give consistent sampled profiles, but they do not certify an error to the ancient solution.
 \end{example}
 
 \chapter{Ancient flows from unstable minimal hypersurfaces}\label{sec:catalogue-minimal-ancient-flows}
@@ -239,16 +326,52 @@ Let $M^n\subset\mathbb R^{n+1}$, $n\geq2$, be two-sided, properly embedded and m
 
 For a concrete three-dimensional example, use the classical Costa minimal surface. For sufficiently negative times the normal-graph construction retains its genus one and three ends. These slices are complete and proper; these conclusions follow from the bounded normal graph over the complete proper initial model. We record that early ancient interval $(-\infty,T)$, without asserting an eternal continuation for the Costa case. The theorem also applies to other Costa--Hoffman--Meeks surfaces and periodic minimal surfaces, but their differing topology is not collapsed into this case.
 
-Source: \cite{CatMP19}, Theorem 1.1 and its following examples, pp.~3--4, and the normal-graph construction in Section 3. There is no closed time-dependent formula, uniqueness, or quantitative entropy value supplied. The distinct rotational eternal continuation from a catenoid is recorded separately in \ref{ex:catalogue-reapernoid}. The figure represents opposite-side perturbations only.
+Source: \cite{CatMP19}, Theorem 1.1 and its following examples, pp.~3--4, and the normal-graph construction in Section 3. There is no closed time-dependent formula, uniqueness, or quantitative entropy value supplied. The distinct rotational eternal continuation from a catenoid is recorded separately in \ref{ex:catalogue-reapernoid}. The picture uses a numerical sampling of the classical Costa parametrization in \cite{CatMelko2010}, equation (17), with square lattice $\mathbb Z+i\mathbb Z$ and no additional spatial dilation. Its three ends are truncated for display.
+
+To illustrate different early times, the viewer uses the linearization of mean curvature flow over the minimal surface. With $H=\operatorname{div}\nu$ and mean curvature vector $-H\nu$, a normal height satisfies
+\[
+ \partial_t u=(\Delta_M+|A|^2)u
+\]
+to first order. On a truncated Costa domain, let $\phi_D>0$ be the numerically computed first Dirichlet mode, normalized by $\max\phi_D=1$, with $(\Delta_M+|A|^2)\phi_D=\lambda_D\phi_D$ and $\lambda_D>0$. The displayed model is
+\[
+ X_{\mathrm{model}}^{\pm}(p,\tau)
+ =X_M(p)\pm0.11e^\tau\phi_D(p)\nu_M(p),
+ \qquad \tau=\lambda_D t\in[-5,0].
+\]
+The numerical value $\lambda_D\approx1.511$ depends on this scale, truncation and discretization; it is not a claimed exact eigenvalue of the complete Costa surface. The height decays backward and increases forward on either normal side. These are linearized model times, not computed nonlinear ancient slices or an asymptotic expansion proved for the flows in Theorem 1.1. The default display magnifies the normal displacement by three; the model-scale option removes that magnification. The endpoint $\tau=0$ is only a chosen small model amplitude, not a singular time. The two signed models illustrate the two sides; no reflection identity between the nonlinear flows is asserted.
 \end{example}
 
 \chapter{The eternal reapernoid}\label{sec:catalogue-reapernoid}
 \begin{example}[The eternal reapernoid]\label{ex:catalogue-reapernoid}
-For every $n\geq2$, Mramor--Payne construct an eternal embedded hypersurface flow $M_t\subset\mathbb R^{n+1}$, $t\in\mathbb R$, on the outside of a rotational minimal catenoid. It is $O(n)\times O(1)$ invariant, mean convex with the chosen outward normal, nonconvex, and has uniformly bounded curvature. Backward in time it converges smoothly and uniformly to that catenoid; forward in time its distance from the rotation axis tends to infinity. It is not a translator or another soliton.
+For every $n\geq2$, Mramor--Payne construct an eternal embedded hypersurface flow $M_t\subset\mathbb R^{n+1}$, $t\in\mathbb R$, on the outside of a rotational minimal catenoid. It is $O(n)\times O(1)$ invariant, mean convex after a choice of orientation, nonconvex, and has uniformly bounded curvature. Backward in time it converges smoothly and uniformly to that catenoid; forward in time its distance from the rotation axis tends to infinity. It is not a translator or another soliton.
 
 The rotational graphical construction gives complete proper noncompact slices with topology $S^{n-1}\times\mathbb R$ and two ends. For $n=2$ these are annuli in $\mathbb R^3$. In that dimension the pointed forward profile limit is a line and curvature tends to zero. For $n\geq3$, recentered meridians converge instead to a grim reaper with the same width as the higher-dimensional catenoid. These are pointed profile limits, not a claim that the unshifted surfaces converge globally to a fixed grim cylinder.
 
-Source: \cite{CatMP19}, Theorem 1.3, pp.~4--5, and Section 4. The scale of the limiting catenoid is free; no explicit time-dependent profile, full uniqueness statement, or entropy value is recorded. The picture is a schematic rotational annulus, not a scaled catenoid evolving by mean curvature.
+Source: \cite{CatMP19}, Theorem 1.3, pp.~4--5, and Section 4. The scale of the limiting catenoid is free; no explicit time-dependent profile, full uniqueness statement, or entropy value is recorded. The figure uses numerical solutions of the rotational evolution equation (2.7), rather than dilating a fixed catenoid.
+
+Write the rotational hypersurface as
+\[
+ X(x,\omega,t)=(x,u(x,t)\omega),\qquad \omega\in S^{n-1},\qquad
+ \partial_tu=\frac{u_{xx}}{1+u_x^2}-\frac{n-1}{u}.
+\]
+The reference catenoid has neck radius one. For $n=2$ its profile is exactly $w(x)=\cosh x$ on $\mathbb R$. Its outward parallel perturbation can be written parametrically as
+\[
+ x=s-\delta\tanh s,\qquad r=\cosh s+\delta\operatorname{sech}s,
+ \qquad s\in\mathbb R,
+\]
+for sufficiently small $\delta>0$. These offsets are the initial surfaces for the approximating flows, not time slices of the limiting eternal flow. The numerical illustrations use $\delta=10^{-4}$, evolve forward, and shift time so that $u(0,0)=2$. Space is not rescaled from frame to frame. The surface views in $\mathbb R^3$ cover $t\in[-8,10]$ and the meridian views continue to $t=100$; the $n=3$ meridians in $\mathbb R^4$ cover $t\in[-2,40]$. These finite intervals and their time origin are plotting choices, not the maximal interval of the theorem.
+
+The neck moves outward: $u_t>0$. In the convention $H=\operatorname{div}_M\nu$, the normal pointing away from the rotation axis has $H<0$ on moving slices, so the mean curvature vector $-H\nu$ points outward. The convexity of the meridian does not make the hypersurface convex: its meridional and rotational principal curvatures have opposite signs.
+
+The late-time views subtract the neck radius, showing $u(x,t)-u(0,t)$ without dilation. For $n=2$ the limiting graph is zero. For the plotted $n=3$ case, set
+\[
+ a_3=\int_1^\infty\frac{dr}{\sqrt{r^4-1}},\qquad
+ c=\frac{\pi}{2a_3},\qquad
+ G(x)=-\frac{1}{c}\log\cos(cx),\quad |x|<a_3.
+\]
+Here $a_3$ is the coordinate half-width for the stationary equation with $w(0)=1$, and $G$ is the recentered grim-reaper limit. The dashed limit curves are distinct from the finite-time numerical profiles. Only $n=2$ and $n=3$ are computed; the existence and limiting-shape theorem applies to every $n\geq2$.
+
+The computations use finite starting times, symmetry at the neck, and fixed values at artificial outer boundaries. Mesh, starting-offset, time-tolerance and domain comparisons are recorded with the figure data. They provide numerical evidence for these approximations, not a certified error estimate to an eternal solution.
 \end{example}
 
 \chapter{Ancient stacked pancakes}\label{sec:catalogue-stacked-pancakes}
@@ -257,20 +380,36 @@ For each $n\geq3$, Mramor--Yudowitz construct a smooth ancient flow of closed em
 
 The endpoint $t=0$ is a regular chosen time, not an asserted extinction time. The theorem does not establish this construction for $n=2$, so the lowest ambient dimension is four. It also does not prove a precise backward decomposition into two separate ancient pancakes and a catenoid; the authors explicitly distinguish this motivation from their result. Existence uses a continuity and compactness argument. No closed formula, uniqueness, stability result, or uniform ancient entropy value is recorded. Each compact slice has finite entropy and Gaussian area.
 
-Source: \cite{CatMY26}, Theorem 1.1 and the discussion on pp.~1--3 of arXiv v3. The two-dimensional meridian is a labeled schematic of a higher-dimensional hypersurface, not an example in $\mathbb R^3$ or a numerical time slice.
+Source: \cite{CatMY26}, Theorem 1.1, Figure 1, and Sections 2.2--3.1 of arXiv v3. To read the pictures, write a rotational slice as $(u(x,t)\omega,x)$, where $\omega\in S^{n-1}$ and $a(t)<x<b(t)$ is the axial coordinate. The positive radius $u$ has two maxima and a central neck minimum; it vanishes at the two poles. The first picture shows a schematic three-dimensional linear section, with a removable display cutaway exposing the neck. The second shows the meridian and a fixed containing slab. These original drawings illustrate the geometry and symmetry, not a numerical time slice or a mean curvature flow in $\mathbb R^3$; their proportions are not asserted by the theorem.
 \end{example}
 
 \chapter{Compact nonconvex ancient spiral curves}\label{sec:catalogue-ancient-spiral-curves}
 \begin{example}[Compact nonconvex ancient spiral curves]\label{ex:catalogue-ancient-spiral-curves}
 Zhang--Olson--Khan--Angenent construct compact embedded ancient curve-shortening flows $C_t\subset\mathbb R^2$, $t<0$, whose distant past follows a truncated rotating Yin--Yang spiral closed by a small grim-reaper-shaped cap. They are smooth simple closed curves, hence complete and proper, with no ends. They are nonconvex in the ancient regime and are neither shrinking circles nor ancient paperclips. No assertion of nonconvexity through a later maximal continuation is needed here.
 
-The limiting rotating model has angular speed one. Its radial expansion $R(\theta)=\sqrt{2\theta}+O(\theta^{-3/2})$ is asymptotic, not a formula for the constructed ancient curve. If $\Omega(t)$ is the paper's truncated spiral region and $\Lambda(t)$ is the enclosed ancient region, the Main Theorem proves
+The limiting rotating model has angular speed one. Its radial expansion $\mathcal R(\theta)=\sqrt{2\theta}+O(\theta^{-3/2})$ is asymptotic, not a formula for the constructed ancient curve. If $\Omega(t)$ is the paper's truncated spiral region and $\Lambda(t)$ is the enclosed ancient region, the Main Theorem proves
 \[
  |\Lambda(t)\mathbin{\triangle}\Omega(t)|\leq C_\delta |t|^{-1+\delta}\qquad(t\to-\infty)
 \]
 for each $\delta>0$. This is an area estimate, not an exact pointwise parametrization. Gaussian area and entropy are finite at each compact slice; no uniform ancient bound is assigned.
 
-Source: \cite{CatZOKA23}, Main Theorem and equations (1.1)--(1.3), pp.~1--3, and Appendix A. No uniqueness is claimed. The source also credits Charyyev's independent construction. Our spiral-and-cap picture is heuristic and does not numerically solve either the rotating ODE or the ancient PDE.
+Source: \cite{CatZOKA23}, Main Theorem and equations (1.1)--(1.3), pp.~1--3, and Appendix A. No uniqueness is claimed. The source also credits Charyyev's independent construction. The figure samples the asymptotic construction at $t=-24,-18,-12,-8$ on a common spatial scale. Its blue arms solve the rotating-soliton ODE numerically; the orange cap uses the corrected grim-reaper ansatz in Section 2. These are model snapshots, not a numerical solution of the ancient evolution equation or an illustration of extinction.
+
+To read the motion, write $E(\theta)=(\cos\theta,\sin\theta)$ and $J(x,y)=(-y,x)$. The two arms are
+\[
+ Y_\pm(\theta,t)=\mathcal R(\theta-t\pm\pi/2)E(\theta),
+ \qquad \theta-t\pm\pi/2>\pi/2,
+\]
+truncated near $\theta=-t$. Here $\mathcal R$ is the Appendix A solution of
+\[
+ \tfrac12\mathcal R^2-\theta+\arctan(\mathcal R'/\mathcal R)=0,
+ \qquad \theta>\pi/2,
+\]
+with $\mathcal R\downarrow0$ as $\theta\downarrow\pi/2$. At a fixed point of the unrotated model the arms rotate counterclockwise with speed one. The cap center instead follows $R(t)E(-t)$, where $R(t)=\mathcal R(-2t)\sim2\sqrt{-t}$, so it moves clockwise and inward. Its leading width is $\pi/R(t)$. The inset uses $X=e^{-tJ}[(R(t),0)+R(t)^{-1}(u,v)]$; its dashed reference is the leading grim reaper
+\[
+ G(p)=(-\arcsin(\tanh p),-\log\cosh p),\qquad p\in\mathbb R.
+\]
+The orange curve includes the paper's normal correction $(-4t)^{-1}F(p)JG'(p)$, equations (2.19)--(2.21), and a smooth interpolation to the arms. These asymptotic formulas apply in the distant past; the figure's finite time interval carries no certified approximation-error bound.
 \end{example}
 
 \chapter{Eternal curves from chains of grim reapers}\label{sec:catalogue-grim-reaper-chains}
@@ -282,7 +421,128 @@ Choose monotonically ordered heights $a_0<a_1<\cdots<a_m$ and horizontal shifts 
 \]
 This formula describes the model translators, not the glued eternal solution.
 
-The actual flow is a graph $x=u(y,t)$ on $a_0<y<a_3$, exists for every $t\in\mathbb R$, and is complete, properly embedded and noncompact, with topology $\mathbb R$ and two ends asymptotic to the outer horizontal lines. The two-end and properness statements follow from this graphical description and the outer asymptotes. Curvature changes sign in the nontrivial chain; total absolute curvature is uniformly bounded. There is no closed formula or uniqueness assertion for $u$, and no entropy value is recorded.
+The actual flow is a graph $x=u(y,t)$ on $a_0<y<a_3$, exists for every $t\in\mathbb R$, and is complete, properly embedded and noncompact, with topology $\mathbb R$ and two ends asymptotic to the outer horizontal lines. The two-end and properness statements follow from this graphical description and the outer asymptotes. Curvature changes sign in the nontrivial chain; total absolute curvature is uniformly bounded. There is no closed formula for $u$; the classification and flow entropy are qualified below.
 
-Source: \cite{CatAY18}, equation (3), Section 3.1 and Lemmas 3.8--3.10, pp.~2 and 8--13. The paper also constructs immersed ancient chains; those are not being labeled embedded by this selected case. The drawing joins three turns schematically.
+Source: \cite{CatAY18}, equation (3), Section 3.1 and Lemmas 3.8--3.10, pp.~2 and 8--13. The paper also constructs immersed ancient chains; those are not being labeled embedded by this selected case. The illustration uses $a_k=k\pi$ and $C_k=0$, so that the three model tips have horizontal velocities $-1,+1,-1$. It shows a numerical finite-start approximation: smoothly joined reapers at $t=-10$ are evolved by curve shortening, and slices from $t=-6$ to $t=9$ are displayed at the same spatial scale. The outer ends are truncated far outside the viewing window. The joins follow the construction in Section 3.2 and Figure 10, using the orientation of equation (3) and Figure 9. This computation is not a closed formula or a certified approximation of the eternal limit; the later shapes are numerical observations, not an additional asymptotic theorem. In particular, $t=0$ is not an extinction time.
+
+The classification in \cite{CatChoiSeoSuZhao2026}, Theorem~1.1, identifies graphical ancient trombones as the nonconvex embedded planar ancient flows with finite flow entropy, alongside the line, shrinking circle, paperclip and grim reaper. Here flow entropy means $\operatorname{Ent}[M]=\sup_t\lambda(M_t)<\infty$, not merely finite entropy of each slice. Corollary~1.5 records flow entropy $m+1$ for the $m$-reaper family; thus the selected $m=3$ case has flow entropy four. This does not identify the entropy or centered Gaussian area of an individual slice with four.
+\end{example}
+
+\chapter{Lawlor necks as stationary Lagrangian flows}\label{sec:catalogue-lawlor-necks}
+Lawlor necks are the stationary endpoint of the Lagrangian neck construction.
+\begin{example}[Stationary special Lagrangian necks]\label{ex:catalogue-lawlor-necks}
+For $n\geq2$, $a_j>0$, and phases $\psi_j\in\mathbb R$, define
+\[
+ P_0(y)=\frac{\prod_{j=1}^n(1+a_jy^2)-1}{y^2},\quad
+ P_0(0)=\sum_ja_j,\quad
+ \phi_j(y)=\psi_j+\int_0^y\frac{dt}{(a_j^{-1}+t^2)\sqrt{P_0(t)}}.
+\]
+The map
+\[
+ X(x,y)=\left(x_j\sqrt{a_j^{-1}+y^2}e^{i\phi_j(y)}\right)_{j=1}^n,
+ \qquad(x,y)\in\mathbb S^{n-1}\times\mathbb R,
+\]
+parametrizes a complete proper embedded special Lagrangian of dimension and codimension $n$. Its constant flow $L_t=X(\mathbb S^{n-1}\times\mathbb R)$ is eternal, $t\in\mathbb R$, since $\vec H=0$. This is the $\alpha=0$ case of \cite{CatJoyceLeeTsui2010}, Theorems~C--D, credited there to Lawlor.
+
+It has two planar ends and topology $\mathbb S^{n-1}\times\mathbb R$; in $\mathbb C^2$ it is an annulus. The positive characteristic angles sum to $\pi$. They determine a neck up to scale, and equal $a_j$ give the rotational subfamily after a unitary change of coordinates. Calibration makes the neck area-minimizing for compactly supported competitors with the same boundary, hence stable for compactly supported variations.
+
+For $n\geq3$, \cite{CatImagiJoyceOliveira2016}, Theorem~1.1, classifies closed-as-subsets, embedded, exact, asymptotically conical special Lagrangians with two transverse planar asymptotes and rate $\rho<0$, up to the specified special unitary rotation. The source's weaker rate $\rho<2$ additionally permits translation. These are conditional uniqueness statements. The drawing projects the exact $n=2$, $a_1=a_2=1$ map, whose common complex factor is $\sqrt{1+y^2/2}+iy/\sqrt2$.
+\end{example}
+
+\chapter{Immortal curve shortening with nonunique geodesic limits}\label{sec:catalogue-aryan-lee}
+The ambient space here is a Riemannian two-sphere, not Euclidean space.
+\begin{example}[A circle of limiting geodesics]\label{ex:catalogue-aryan-lee}
+For every $C^\infty$ neighborhood of the round metric on $\mathbb S^2$, \cite{CatAryanLee2026}, Theorem~5.1, constructs a smooth antipodally invariant metric $g$ in that neighborhood and a smooth simple closed curve whose curve-shortening flow
+\[
+ \partial_t\gamma=\kappa_gN_g,\qquad t\in[0,\infty),
+\]
+stays embedded for all time. There is an embedded circle $Z\subset\mathbb {RP}^2$ and a smooth injective family $\Gamma:Z\to\mathcal E^\infty(\mathbb S^2)$ of simple closed $g$-geodesics, all of the same length, such that
+\[
+ \omega_{C^\infty}(\gamma)=\{\Gamma(z):z\in Z\}.
+\]
+Convergence is convergence of unparametrized embedded curves, or smooth convergence after reparametrization. In particular there is no unique limiting geodesic.
+
+Each regular slice is a compact complete proper embedded circle, of dimension one and codimension one in $(\mathbb S^2,g)$, with no ends. The construction uses a prescribed length function and a spiraling slow mode, not a closed time-dependent formula. It does not assert rotational symmetry or stability of the evolving curve. The diagram is a schematic in parameter space; it is not a curve-shortening simulation on the round sphere. Euclidean Gaussian area and entropy are inapplicable to this intrinsic ambient flow.
+\end{example}
+
+\chapter{Lagrangian torus necks collapsing at infinite time}\label{sec:catalogue-su-tsai-wood}
+These compact flows live in a flat complex torus, which is kept in the Riemannian-ambient group.
+\begin{example}[Immortal Lagrangian connected sums]\label{ex:catalogue-su-tsai-wood}
+Let $m\geq3$ and let $X_1,X_2$ be special Lagrangian $m$-tori of the same phase in the flat Calabi--Yau torus $\mathbb C^m/\Gamma$. Assume they intersect transversely at exactly one point, with tangent planes satisfying the Lawlor angle criterion (a type-one intersection). By \cite{CatSuTsaiWood2026}, the Main Theorem, Theorem~9.1, Proposition~9.5, and Corollary~9.6, a sufficiently small Lawlor-neck desingularization can be chosen to start a smooth embedded immortal Lagrangian flow $N_t$.
+
+After translating the initial time, take $t\geq0$. Every finite-time slice is a compact complete proper embedded $m$-manifold of codimension $m$, with topology $\mathbb T^m\mathbin{\#}\mathbb T^m$ and no ends. As $t\to\infty$, the flow converges smoothly away from the intersection point to $X_1\cup X_2$. Its neck scale and curvature satisfy, for sufficiently large $t$,
+\[
+ c\,t^{-1/(m-2)}\leq\varepsilon(t)\leq C\,t^{-1/(m-2)},\qquad
+ \max_{N_t}|A|=O(t^{1/(m-2)}).
+\]
+Rescaling about the intersection point by $\varepsilon(t)^{-1}$ gives the Lawlor neck locally smoothly, and the curvature becomes unbounded. These are asymptotic estimates from a parabolic gluing construction, not an exact formula for $N_t$. The singular limiting union does not make the regular slices nonembedded. No symmetry, uniqueness, or uniform mean-curvature decay is asserted. Euclidean Gaussian quantities are not assigned in this torus ambient space. The illustration is a neck-collapse schematic.
+\end{example}
+
+\chapter{Lagrangian sphere chains in Gibbons--Hawking spaces}\label{sec:catalogue-lee-tsai}
+These are surface flows of codimension two in a hyperkahler four-manifold.
+\begin{example}[Infinite-time curvature blow-up with vanishing mean curvature]\label{ex:catalogue-lee-tsai}
+Use the Gibbons--Hawking setting of \cite{CatLeeTsai2026}, Section~2: the circle quotient contains the collinear centers $(a_j,0,0)$ with $-1=a_1<\cdots<a_N=1$, $N\geq3$, and
+\[
+ \varphi=\varphi_{\rm reg}+\frac12\sum_{j=1}^N
+ ((x-a_j)^2+y^2+z^2)^{-1/2},\qquad
+ g=\varphi^{-1}\eta^2+\varphi(dx^2+dy^2+dz^2),
+ \quad d\eta=*d\varphi.
+\]
+The regular part is smooth, nonnegative, and harmonic on the source's quotient neighborhood. Let the initial Lagrangian sphere be the smooth circle lift of a positive concave graph $(x,u_0(x),0)$ joining the outer centers, with $u_0(\pm1)=0$. For fixed $\Lambda>0$, require the small-slope and curvature conditions of Theorem~6.2:
+\[
+ |u_0'|\leq c^{-1},\qquad -u_0''\leq\Lambda u_0\varphi(x,u_0,0),
+\]
+where $c$ is sufficiently large as supplied by that theorem. The reduced equation is
+\[
+ u_t=\frac{u_{xx}}{\varphi(x,u,0)(1+u_x^2)},\qquad u(\pm1,t)=0.
+\]
+The lifted flow exists smoothly for $t\geq0$, remains a compact embedded sphere, and converges to the $A_{N-1}$ chain of $N-1$ special Lagrangian spheres. Theorem~6.2 proves
+\[
+ \sup|\vec H|\longrightarrow0,\qquad
+ 0<\liminf_{t\to\infty}\frac{\log\max|A|}{\sqrt t}
+ \leq\limsup_{t\to\infty}\frac{\log\max|A|}{\sqrt t}<\infty.
+\]
+Finite-time slices have genus zero, no ends, and are complete and proper. Junctions occur only in the infinite-time limit. The quotient drawing is schematic, not a numerical solution of this weighted equation. It is not ordinary planar curve shortening, and Euclidean entropy is inapplicable. The coauthor is Ping-Hung Lee, distinct from Tang-Kai Lee.
+\end{example}
+
+\chapter{Su--Wood stationary products of Lawlor profiles}\label{sec:catalogue-su-wood-stationary}
+\begin{example}[Cohomogeneity-two special Lagrangians]\label{ex:catalogue-su-wood-stationary}
+Let $m\geq3$, $d=m-1$, $I=(-\pi/(2d),\pi/(2d))$, $\mu_1,\mu_2>0$, and $\varphi\in\mathbb R$. Define
+\[
+ r(s)=(\cos(ds))^{-1/d},\quad \ell(s)=r(s)e^{is},\quad
+ B(s)=\int_0^s r(v)^2\,dv.
+\]
+For $u\in S^{m-2}\subset\mathbb R^{m-1}$ and $(x,y)\in I^2$, put
+\[
+ X(u,x,y)=\left(e^{i\varphi}\mu_1\mu_2\ell(x)\ell(y)u,
+ \frac{\mu_2^2r(y)^2-\mu_1^2r(x)^2}{2}
+ +i\bigl(\mu_2^2B(y)-\mu_1^2B(x)\bigr)\right)\in\mathbb C^m.
+\]
+This is an exact integral parametrization of an embedded, exact special Lagrangian of dimension and codimension $m$. Thus $\vec H=0$ and $L_t=X(S^{m-2}\times I^2)$ for every $t\in\mathbb R$. It is the $G=SO(m-1)$ case of \cite{CatSuWood2026}, equation~(31), Theorem~5.6, Proposition~5.9 and Remark~5.10. It has cohomogeneity two under this group; for $m=3$ the topology is $S^1\times\mathbb R^2$, not a surface annulus.
+
+The topology in general is $S^{m-2}\times\mathbb R^2$, with one end. The parametrization is proper: approaching either endpoint of $I$ makes $|\ell(x)\ell(y)|$ diverge, and the remaining factor $u$ is compact. The induced metric is therefore complete. The calibrated image is stable under compactly supported variations. No entropy value or global asymptotic classification is recorded here. The picture is the exact one-dimensional Lawlor profile used twice by the construction, not a projection of the full $m$-manifold.
+
+The same paper constructs translators from a line and an Anciaux shrinker profile, and from an expander/shrinker pair. The line/expander case recovers the symmetric Joyce--Lee--Tsui translator of Example~\ref{ex:catalogue-jlt-translators}; it is not a second catalogue entry. For other symmetry groups some constructions have a one-dimensional singular set, so their smooth embeddedness must not be inferred from this $SO(m-1)$ case.
+\end{example}
+
+\chapter{Stolarski--Su finite-time Lagrangian neck pinches}\label{sec:catalogue-stolarski-su}
+\begin{example}[Prescribed Type II blow-up rates]\label{ex:catalogue-stolarski-su}
+For $n\geq4$ and every integer $K\geq2$, and for $n=3$ with $K\in\{2,3,4\}$, \cite{CatStolarskiSu2026}, Theorem~1.1 and Remark~1, construct smooth noncompact properly embedded exact almost-calibrated Lagrangian mean curvature flows $L(t)\subset\mathbb C^n$, $0\leq t<T<\infty$. Here we record the $SO(n)$-invariant subfamily, of dimension and codimension $n$. Its topology is $S^{n-1}\times\mathbb R$, with two ends, and every regular slice is complete. The topology follows from the global profile graph and its spherical group orbits.
+
+The origin is a finite-time Type II singularity with
+\[
+ 0<\liminf_{t\uparrow T}(T-t)^{K/2}\sup_{L(t)}|A|
+ \leq\limsup_{t\uparrow T}(T-t)^{K/2}\sup_{L(t)}|A|<\infty.
+\]
+The unique tangent flow is a stationary multiplicity-one pair of transverse special Lagrangian planes. In contrast, the finer rescaling satisfies
+\[
+ (T-t)^{-K/2}L(t)\longrightarrow aL
+ \quad\hbox{smoothly on compact sets},\qquad a>0,
+\]
+where $L$ is the rotational Lawlor neck. Up to a fixed unitary rotation, that limiting neck has the exact parametrization
+\[
+ X(u,\theta)=(\sin(n\theta))^{-1/n}e^{i\theta}u,
+ \quad u\in S^{n-1},\quad0<\theta<\pi/n.
+\]
+This is a formula for the blow-up limit, not for $L(t)$. The actual flow is constructed by solving a nonlinear parabolic problem near a modulated neck of scale comparable to $(T-t)^{K/2}$, and has no closed formula. The initial Lagrangian angle oscillation can be arbitrarily small. These existence and convergence statements do not assert dynamical stability, uniqueness of the initial data, or a numerical entropy value. The illustration compares shrinking neck scales schematically; it is not a time integration of the PDE. The compact immersed variant mentioned in the source's Remark~3 is outside this entry.
 \end{example}

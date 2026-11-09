@@ -1,0 +1,10 @@
+{
+  "vertices": 10665,
+  "faces": 20966,
+  "components": 1,
+  "boundary_loops": 3,
+  "euler_characteristic": -3,
+  "genus": 1,
+  "orientable": true,
+  "minimum_triangle_area": 1.2730366166218304e-07
+}

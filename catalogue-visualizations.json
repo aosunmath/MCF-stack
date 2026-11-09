@@ -237,11 +237,11 @@
       "citations": [
         "CatHIMWGraphical18"
       ],
-      "model": "strip-grim-limits",
-      "status": "Schematic",
-      "caption": "Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
-      "alt": "Strictly convex delta-wing translators. Graph domain and the two limiting tilted grim-reaper cylinders. The delta-wing itself is not numerically solved here.",
-      "interactive": false
+      "model": "delta-wing",
+      "status": "Numerical PDE surface",
+      "caption": "A computed compact patch of the Δ-wing of strip width √2 π, following the paper’s rectangular Dirichlet construction and reflected to translate upward. Rotate the surface, trim its height, or compare longitudinal and transverse profiles with the exact tilted grim-reaper limit. All rim edges are display cuts; this finite-domain approximation has no certified error bound.",
+      "alt": "A smooth, elongated convex Δ-wing with a rounded minimum and two rising arms. Numerical PDE approximation at strip width square root of two times pi; interactive surface and recentered profile views.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-wang-entire-translators",
@@ -252,10 +252,10 @@
         "CatXJWang11"
       ],
       "model": "anisotropic-quadratic",
-      "status": "Schematic",
-      "caption": "Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
-      "alt": "Nonrotational entire convex translators. Schematic of anisotropy and the quadratic blow-down in a lower-dimensional slice; not an exact translator.",
-      "interactive": false
+      "status": "Level-surface schematic and exact limit model",
+      "caption": "The n = 3 case is a hypersurface in ℝ⁴. Teal shows an illustrative compact level surface in the base ℝ³; switch to a graph slice or increase the rescaling to see the caps leave a fixed spatial window. Ochre shows the exact cylinder {Q = 1} for the k = 2 quadratic blow-down model. The finite shape is not a computed translator, and k = 2 is not asserted for every member. See “How to read this picture” for the drawing formula.",
+      "alt": "A closed elongated convex level surface with circle symmetry, a two-coordinate graph slice, and the round cylindrical level of a quadratic blow-down. Finite-scale shapes are schematic; the full translator lies in R4.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-prescribed-apex-translators",
@@ -266,10 +266,10 @@
         "CatHIMWGraphical18"
       ],
       "model": "apex-ellipsoid",
-      "status": "Schematic",
-      "caption": "Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
-      "alt": "Translators with prescribed apex curvatures. Quadratic tangent model determined by the apex Hessian. It is neither a global formula nor a solved translator.",
-      "interactive": false
+      "status": "Numerical solutions and exact formula",
+      "caption": "Three surface representatives in ℝ³: the grim-reaper cylinder (0, 1), a numerical Δ-wing with apex Hessian approximately (0.2443, 0.7557), and the rotational bowl (½, ½). Rotate, cut away, and compare principal sections. The Δ-wing uses a finite-domain PDE solve; the bowl uses its ODE. Dashed quadratics in the section view show local data only. Higher-dimensional members are not pictured; all surfaces are truncated and numerical errors are not certified.",
+      "alt": "Grim-reaper cylinder, anisotropic Delta-wing, and round bowl with their apex curvature pairs and two principal sections.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-scherkenoids",
@@ -281,10 +281,19 @@
         "CatHMW20"
       ],
       "model": "scherkenoid-ends",
-      "status": "Schematic",
-      "caption": "Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
-      "alt": "Scherkenoid translators. Upward convention: one plane at negative height and a periodic array at positive height. Schematic end arrangement only.",
-      "interactive": false
+      "status": "Connected construction schematic",
+      "caption": "A central sheet opens into alternating grim-reaper-shaped wings. Rotate the model, isolate its fundamental half-strip piece, or change the width w ≥ π to see the wings tilt. The angle is fixed at α = π/2. Based on Hoffman–Martín–White, Figures 5 and 11; upward translation convention. The joining shape is schematic, not an exact or numerically solved Scherkenoid. Outer edges are display cuts.",
+      "alt": "One connected Scherkenoid schematic with a central sheet and alternating wings joined along vertical reflection lines. Upward convention, alpha pi over two, adjustable strip width at least pi. Not a solved translator.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "scherkenoid-domain",
+          "status": "Exact construction domain",
+          "caption": "The half-strip for α = π/2, with the boundary heights reflected to the upward convention. The two corners lift to vertical lines on the surface; half-turns about these lines continue the fundamental graph. This diagram shows the domain and boundary data, not an explicit formula for the graph.",
+          "alt": "Half-strip x greater than zero, y between zero and w, with positive infinite height on the horizontal rays and negative infinite height on the finite vertical edge. The corner points mark vertical reflection lines.",
+          "interactive": false
+        }
+      ]
     },
     {
       "label": "ex:catalogue-pitchfork",
@@ -297,11 +306,11 @@
         "CatMSTW26",
         "CatGMM25"
       ],
-      "model": "pitchfork-ends",
-      "status": "Schematic",
-      "caption": "One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
-      "alt": "The pitchfork translator. One lower asymptotic plane and three upper parallel planes for upward translation; schematic, not a four-end topological model.",
-      "interactive": false
+      "model": "pitchfork-surface",
+      "status": "Source-informed schematic",
+      "caption": "The half-width w = π case, in the upward convention. Two graphical halves join along the vertical z-axis; the second is obtained by a half-turn. Rotate the surface, isolate one half, or move through horizontal sections. Based on Hoffman–Martín–White, Figures 6 and 14 and Theorem 12.1. This original drawing is not a numerical solution of the translator equation; all outer edges are display cuts.",
+      "alt": "A connected pitchfork surface: teal and ochre graphical halves joined along a vertical line, approaching one plane below and three parallel planes above. Original schematic, not a solved translator.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
@@ -310,13 +319,14 @@
       "category": "translators",
       "citations": [
         "CatHIMWNotes19",
-        "CatNguyen09"
+        "CatNguyen09",
+        "CatHMWTridents22"
       ],
-      "model": "grim-plane-gluing",
-      "status": "Schematic",
-      "caption": "Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
-      "alt": "Nguyen translating tridents. Input grim cylinder and plane, with periodic connector locations indicated. This intersecting configuration is not the exact smooth trident.",
-      "interactive": false
+      "model": "nguyen-tridents",
+      "status": "Construction schematic",
+      "caption": "One connected Scherk-based drawing with periodic saddle connections, grim-reaper wings, and a central sheet. Rotate, inspect a half surface, or inspect an end view. The displayed neck scales are illustrative; the drawing does not solve the translator equation. All outer edges are display cuts.",
+      "alt": "Connected trident construction schematic with a row of saddle connections. Two grim-reaper wings rise beside a central sheet; the strip repeats periodically.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-finite-genus-translators",
@@ -328,10 +338,19 @@
         "CatHIMWNotes19"
       ],
       "model": "bowl-catenoid-gluing",
-      "status": "Schematic",
-      "caption": "Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
-      "alt": "Finite-genus translators with three ends. Singular bowl–catenoid input and the circle to be desingularized; not an exact smooth finite-genus translator.",
-      "interactive": false
+      "status": "Construction schematic",
+      "caption": "Three upward ends joined through a Scherk-like tunnel belt, following Dávila–del Pino–Nguyen, Theorem 1.1 and Section 2. Rotate, zoom, inspect the cutaway or tunnel detail, and compare the numerical bowl–catenoid input. The connected model is illustrative; it has not been corrected to solve the translator equation. The displayed period counts do not assert existence at those genera.",
+      "alt": "Connected three-ended construction schematic: a blue bowl sheet and two green catenoid sheets joined through a gold tunnel belt, with a cutaway and enlarged tunnel detail. Not a solved translator.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "dpn-bowl-catenoid-meridian",
+          "status": "Numerical ODE input",
+          "caption": "Meridians integrated from the unit-speed rotational translator equations (2.1) and (2.3). The bowl meets the lower wing of the translating catenoid at radius 1.4; revolving this point gives the circle to be desingularized. The height cutoff is artificial.",
+          "alt": "Equal-scale meridian diagram of a numerical bowl and two-wing translating catenoid with one crossing and three upward ends.",
+          "interactive": false
+        }
+      ]
     },
     {
       "label": "ex:catalogue-expanding-corners",
@@ -409,26 +428,28 @@
       "title": "Self-expanding planar tree networks",
       "category": "expanders",
       "citations": [
-        "CatINS19"
+        "CatINS19",
+        "CatMS07"
       ],
       "model": "expanding-network",
-      "status": "Network schematic",
-      "caption": "A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
-      "alt": "Self-expanding planar tree networks. A tree and a 120-degree junction condition. Curved arms are not asserted to solve the expander equation. The balanced straight Y is stationary.",
-      "interactive": false
+      "status": "Numerical ODE solution",
+      "caption": "Two numerical four-ended expanders approach the same diagonal rays. Each has two 120-degree triple junctions and a straight central edge. The time control applies Σₜ = √t Σ₁; t = 0 shows only the initial cone. The trees differ with the ends held fixed, but are related by a quarter-turn. Ends are truncated for display.",
+      "alt": "Two planar expanding trees with the same four diagonal asymptotic rays: a blue horizontal connection and an orange vertical connection, each with two 120-degree junctions.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
       "section": "the-catenoid-as-an-eternal-stationary-flow",
-      "title": "The catenoid as an eternal stationary flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "category": "other-special-flows",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "model": "catenoid",
       "status": "Exact formula",
-      "caption": "The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
-      "alt": "The catenoid as an eternal stationary flow. The waist radius is 1 and the finite parameter window is |s| <= 1.65. The complete stationary catenoid has two infinite ends.",
+      "caption": "An exact catenoid illustrates one member of the general class of stationary minimal surfaces. The waist radius is 1 and the displayed parameter window is |s| ≤ 1.65. Rotate or zoom this finite piece; the complete surface has two infinite ends and is independent of time.",
+      "alt": "A truncated catenoid with a circular waist and two flaring ends, illustrating a stationary minimal surface.",
       "interactive": true
     },
     {
@@ -439,10 +460,10 @@
       "citations": [
         "CatViana18"
       ],
-      "model": "whitney-profile",
-      "status": "Exact initial generating profile",
-      "caption": "The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
-      "alt": "Mean curvature evolution of the Whitney sphere. The planar profile generates a Lagrangian immersed sphere in R^(2n). This is initial geometry, not its later evolution or an embedding of the sphere in R3.",
+      "model": "whitney-flow",
+      "status": "Numerical PDE evolution from exact initial data",
+      "caption": "Whitney two-sphere in C² (n = 2), with trace mean-curvature speed and the initial scale in the formula above. Four snapshots share a fixed spatial scale. Each pairs a linear R⁴-to-R³ projection with the planar generating profile. Play or select computed times 0 ≤ t ≤ 0.09; this window ends before the singularity and does not specify its time T. Only t = 0 is exact. Additional overlaps may be projection artifacts.",
+      "alt": "Whitney sphere flow at t = 0, 0.03, 0.06 and 0.09. Surface projections and figure-eight profiles contract and flatten on a common spatial scale; positive-time geometry is numerical.",
       "interactive": true
     },
     {
@@ -454,10 +475,10 @@
         "CatAV97"
       ],
       "model": "neckpinch-scales",
-      "status": "Asymptotic scale diagram",
-      "caption": "The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
-      "alt": "Rotational degenerate neckpinch solutions. The cylinder and bowl are limiting models at different scales. The intermediate formula is an asymptotic limit, not a closed formula for the compact flow.",
-      "interactive": false
+      "status": "Asymptotic time sequence with numerical bowl cap",
+      "caption": "Three illustrative times approach the odd-cubic degenerate neckpinch; the fourth panel is a singular cusp target. All four use the same spatial scale. Rotate, play toward the singular time, compare meridians, or inspect the cylinder, intermediate profile, and bowl limits. Compact slices and joins are schematic, not a numerical MCF evolution; only the limiting bowl is integrated from its ODE. Shown in R3 with n=2, m=3, K=1.",
+      "alt": "Four views at a common spatial scale show the left tip advancing toward the origin and sharpening into a one-sided cusp. The outer cap persists. The compact surfaces are asymptotic schematics with numerical bowl caps.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-angenent-oval",
@@ -484,9 +505,10 @@
       ],
       "model": "kkm-shrinker",
       "status": "Scherk-based construction schematic",
-      "caption": "A connected model joins two sphere-like caps, an inner disk, and one outer sheet through a periodic Scherk belt. Rotate or use Cutaway to inspect the joining region. The period count and conical waviness are illustrative; this is not a numerically solved KKM shrinker. The theorem applies only to sufficiently large genus, with no explicit threshold. The outer edge is a display truncation.",
+      "caption": "A connected model joins two sphere-like caps, an inner disk, and one outer sheet through a periodic Scherk belt. Rotate or use Cutaway to inspect the joining region. The period count and conical waviness are illustrative; this is not a numerically solved KKM shrinker. The theorem applies only to sufficiently large genus, with no explicit threshold. The outer edge is a display truncation. The conjectural picture in the source’s Figure 1 is credited to Tom Ilmanen.",
       "alt": "Connected Scherk-based sphere–plane construction model with a ring of saddle-shaped openings, spherical caps, an inner disk and one wavy outer sheet. Not a computed self-shrinker.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "ilmanen-visuals"
     },
     {
       "label": "ex:catalogue-drugan-nguyen-torus",
@@ -516,7 +538,8 @@
       "status": "Interactive topology schematic",
       "caption": "Informed by Buzano–Nguyen–Schulz, Section 4, Figures 3–4; not a numerical solution of the shrinker equation. Choose a genus or use Cutaway to see the interior. Outer rims and cut edges are display boundaries.",
       "alt": "Genus-three schematic: a rounded cap with alternating openings joins a central sheet to one noncompact outer sheet; a vertical cutaway exposes the interior. Not a computed shrinker.",
-      "interactive": true
+      "interactive": true,
+      "credit_anchor": "schulz-visuals"
     },
     {
       "label": "ex:catalogue-ketover-doubled-plane",
@@ -556,10 +579,10 @@
         "CatSunWang2025"
       ],
       "model": "sun-wang-torus-end",
-      "status": "R4 end schematic",
-      "caption": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
-      "alt": "Three-dimensional cross-sections of one translator end in four-space grow like √z times the input torus. The unknown correction and compact core are not computed.",
-      "interactive": false
+      "status": "Numerical Angenent profile; auxiliary end model",
+      "caption": "Sun–Wang, Theorem 1.2 and Appendix A: the leading model (√z x, z), x ∈ S_A, with the unknown normal correction set to u = 0. The rotational quotient shows one connected end; the horizontal slice restores the rotation angle to show a torus in ℝ³. Use the height slider to see √z growth, or divide x by √z to see the cylindrical rescaling. The Angenent profile is numerically integrated, not a circular torus. Here h = z/z₀ with an unspecified sufficiently large cutoff z₀; h = 1 is not a tip. The compact core, correction, and fattening pair are not computed. This is not a solved translator.",
+      "alt": "A widening tube in the rotational quotient of the auxiliary end in four-space, and a numerical Angenent torus at the selected height. Copper marks the selected horizontal section. The quotient suppresses the rotation angle; its open rims are display truncations.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
@@ -571,10 +594,10 @@
         "CatSunWang2025"
       ],
       "model": "sun-wang-doubled-sphere-end",
-      "status": "R4 end schematic",
-      "caption": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
-      "alt": "High-genus shrinker cross-sections of one three-dimensional translator end in R4. Bridge sites and the asymptotic model are schematic.",
-      "interactive": false
+      "status": "Interactive horizontal-slice schematic in ℝ⁴",
+      "caption": "Sun–Wang, equations (3.1)–(3.2): horizontal slices grow like √z times the prescribed shrinker. Rotate the connected spherical-doubling model, expose its necks with Cutaway, or vary height and rescale by 1/√z. These are two-dimensional slices of one three-dimensional end in ℝ⁴. The input shrinker is schematic; the unknown normal correction and compact core are omitted. Displayed bridge counts are illustrative, not existence thresholds.",
+      "alt": "A cutaway horizontal slice exposes gold inner and blue outer spherical sheets joined by twenty copper necks on two aligned latitude circles. Its model genus is nineteen. Height controls square-root growth; rescaling removes this growth. Schematic slices of one end in four-space, not a computed translator.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-ancient-torus-curves",
@@ -615,10 +638,10 @@
         "CatCS26R3"
       ],
       "model": "immortal-annulus",
-      "status": "Immortal-flow schematic",
-      "caption": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
-      "alt": "Two sheets joined by a rotational neck; this is an unsolved schematic. Multiplicity-two convergence is local and occurs only as t tends to infinity.",
-      "interactive": false
+      "status": "Schematic time sequence",
+      "caption": "Rotate the annulus, use the cutaway, and compare earlier, intermediate, and later finite stages with the separate limit t → ∞. The viewing scale is fixed. The compressed radial profile shows the fixed asymptotic heights ±h. Shapes and stage spacing are illustrative, not computed PDE time slices or a convergence rate.",
+      "alt": "Three schematic finite-time annuli with decreasing positive neck radii and locally flattening sheets, followed by one limiting plane counted twice. Far ends retain their asymptotic planes.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-double-sphere-flow",
@@ -629,10 +652,10 @@
         "CatCS25Man"
       ],
       "model": "immortal-product",
-      "status": "Product-manifold schematic",
-      "caption": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
-      "alt": "Orbit-space profile of a flow in Sⁿ×R, with two necks collapsing only at infinite time. This is not a Euclidean MCF surface in R3.",
-      "interactive": false
+      "status": "Qualitative time sequence",
+      "caption": "Three ordered finite-time stages and the infinite-time double-sphere limit. Blue and ochre sheets join through two polar necks; the profiles below show their approach to y = 0. For n = 2 the radial drawing (p, y) ↦ (1 + 2y)p displays the product coordinate as radial separation and distorts the metric. Cutaway edges are display cuts, not surface boundaries. These are schematic stages, not computed PDE slices; no physical times or decay rates are assigned.",
+      "alt": "Three finite-time cutaway tori with two progressively smaller polar necks and closer blue and ochre sheets, followed by one sphere marked multiplicity two. Matching closed orbit-space profiles flatten to a doubled segment. Schematic radial coordinate drawings of a flow in S² × R, not Euclidean MCF.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-nguyen-shrinking-saddles",
@@ -673,10 +696,11 @@
         "CatIlmanenWhite2025"
       ],
       "model": "iw-two-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.",
-      "alt": "Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane."
+      "status": "Interactive topology schematic",
+      "interactive": true,
+      "caption": "An upper graph and its reflection join along h + 1 equatorial neck curves and flare into two conical ends. The default genus h = 3 follows the topology of Figure 1 in Ilmanen–White, credited to David Chopp (the paper uses g = h + 1). Rotate, select a genus, or use Cutaway and Equator z = 0 to inspect the necks. This is an original schematic, not Chopp’s numerical surface or a solution of the shrinker equation. Neck shapes, scale and cone slopes are illustrative; both outer rims truncate infinite ends.",
+      "alt": "Genus-three Ilmanen–White schematic: two reflected curved sheets joined by four smooth necks, with two flaring ends. A second cutaway view exposes the neck walls. Not a computed self-shrinker.",
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-shao-zou-stacking",
@@ -687,10 +711,10 @@
         "CatShaoZou2025"
       ],
       "model": "shao-zou-stacking",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed.",
-      "alt": "Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed."
+      "status": "Interactive construction schematic",
+      "interactive": true,
+      "caption": "Connected sheets with open catenoidal necks: each consecutive pair is joined at m sites, and consecutive gaps are staggered by π/m. The default k = 4, m = 10 model has 30 bridges, four truncated ends and genus 27. Rotate, zoom, use the cutaway, or change k and m; Neck layout shows the alternating site sets. Radial profiles are guided by the paper’s linearized solutions, with enlarged separation and neck widths. Finite-m balancing, tilts, Gaussian-metric neck corrections and the nonlinear shrinker equation are not solved; end slopes are illustrative. Existence requires sufficiently large m for each fixed k. Open drawing shows the fixed four-sheet reference.",
+      "alt": "Shao–Zou construction schematic: four colored sheets joined through thirty staggered open necks, with four truncated ends; a cutaway exposes the connections and a plan diagram shows alternating neck sites."
     },
     {
       "label": "ex:catalogue-hmw-platonic-polygon",
@@ -701,10 +725,11 @@
         "CatHMW2026"
       ],
       "model": "hmw-platonic-polygon",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.",
-      "alt": "The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact."
+      "status": "Original construction schematic",
+      "interactive": true,
+      "caption": "A rounded cubical shell with six radial passages illustrates genus five and avoidance of the six face-center rays. Select any Platonic symmetry or a regular polygon, show the excluded rays Q, and use Cutaway to reveal the inner wall. Inspired by Section 4 and Theorem 24 of Hoffman–Martín–White; the cubical silhouette also recalls Chopp’s numerical picture in Figure 2. These original compact models illustrate the topology of the construction input. They are not computed self-shrinkers or simulated flow slices, and do not establish compactness of the tangent shrinkers. The sufficiently large polygonal shrinkers are noncompact.",
+      "alt": "A rounded cubical surface with six openings and genus five, a cutaway exposing its central cavity, and a sevenfold polygonal construction model. Schematics, not computed shrinkers.",
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-hmw-one-ended",
@@ -715,10 +740,11 @@
         "CatHMW2026"
       ],
       "model": "hmw-one-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.",
-      "alt": "The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker."
+      "status": "Topology schematic and limiting configuration",
+      "interactive": true,
+      "caption": "An original connected genus-g model informed by Hoffman–Martín–White, Figures 1, 5–6 and Theorems 40–42. Visual sources include Francisco Torralbo’s numerical illustrations (Figure 1) and Mario B. Schulz’s numerical illustration (Figure 5). Rotate the surface, remove its front half, inspect the g+1 horizontal lines, or compare with the separate sphere–plane limit. The model has one exterior sheet; exactly one end is proved only for sufficiently large genus. Shape and cone slope are illustrative, not a computed self-shrinker. Gold and blue distinguish its two sides; outer and cut edges are display boundaries.",
+      "alt": "Hoffman–Martín–White sphere–plane topology schematic: alternating openings join rounded caps to a central sheet and exterior. Full surface and cutaway, with a separate radius-two sphere and plane limit. Not a computed shrinker.",
+      "credit_anchor": "schulz-visuals"
     },
     {
       "label": "ex:catalogue-hmw-three-ended",
@@ -729,10 +755,11 @@
         "CatHMW2026"
       ],
       "model": "hmw-three-ended",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.",
-      "alt": "Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows."
+      "status": "Original topology schematic",
+      "interactive": true,
+      "caption": "An original connected topology model informed by Hoffman–Martín–White, Figure 7 and Theorem 43. Three exterior sheets are joined by alternating open necks. Rotate, zoom, use the cutaway, inspect the neck layout, or compare with the separate multiplicity-three plane limit. The model has genus 2g; three-ended existence is proved only for sufficiently large g. The paper’s genus-two picture, credited to Matthias Weber, is conjectural and is not a numerical approximation. Neck sizes, end slopes and separation are illustrative; no shrinker equation has been solved. Outer rims and cut edges are display boundaries.",
+      "alt": "Connected three-ended HMW topology schematic with alternating upper and lower necks. Full view, cutaway and neck plan; model g = 3, genus six. Not a computed shrinker.",
+      "credit_anchor": "weber-visuals"
     },
     {
       "label": "ex:catalogue-ketover-platonic",
@@ -743,10 +770,10 @@
         "CatKetover2016"
       ],
       "model": "ketover-platonic",
-      "status": "Original schematic",
-      "interactive": false,
-      "caption": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.",
-      "alt": "Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction."
+      "status": "Interactive construction schematic",
+      "interactive": true,
+      "caption": "Two spherical sheets are joined by one radial neck at each face center, following Ketover’s doubling sweepout (pp. 2 and 9–10). Choose a Platonic solid to see 4, 6, 8, 12, or 20 necks and genus 3, 5, 7, 11, or 19. Cutaway reveals the inner sheet; display separation enlarges the gap. Colors mark parts of one connected surface. These are compact comparison surfaces with illustrative neck sizes, not computed self-shrinkers. Compactness and ends of the min-max limits remain undetermined.",
+      "alt": "Full and cutaway views of two spherical sheets joined through six face-center necks in the cube arrangement, giving genus five. Five models show all Platonic face-center arrangements. Original construction schematic, not a solved self-shrinker."
     },
     {
       "label": "ex:catalogue-swz-large-entropy",
@@ -774,7 +801,20 @@
       "status": "Original schematic",
       "interactive": false,
       "caption": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
-      "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified."
+      "alt": "A generic torus icon represents the topology of the starting Drugan–Nguyen rotational shrinker T. An ancient mean curvature flow and a singular blow-up produce a genus-one shrinker Sigma of strictly lower entropy. The final box deliberately leaves compactness, ends, symmetry, and geometric shape unspecified.",
+      "experiment": {
+        "path": "visualizations/chu-sun-flow/index.html",
+        "title": "Chu–Sun construction: interactive numerical flow",
+        "caption": "Supplied by Ao Sun: 129 rescaled frames of a perturbed torus flow, with time playback, rotation and zoom, a stationary candidate overlay, and numerical diagnostics. This experiment illustrates the interpolation mechanism. It does not prove convergence, identify the shrinker in the existence theorem, or determine its compactness, ends, uniqueness, or stability. The displayed Gaussian density is computed on truncated surfaces, not a proved entropy value."
+      },
+      "additional_experiments": [
+        {
+          "id": "chu-sun-second-mode",
+          "path": "visualizations/chu-sun-second-mode/index.html",
+          "title": "Chu–Sun alternative construction: second angular mode",
+          "caption": "Supplied by Ao Sun: 98 rescaled frames of the second angular-mode perturbation (ε = 0.4), compared with a numerical genus-one candidate with two apparent conical ends. The viewer shows approach and later departure, with no convergence claim. Late frames are resolution-limited; residual and Gaussian-density readouts are unavailable once the parametrization degenerates. This experiment does not establish an exact shrinker, identify a tangent-flow limit, or prove an end count, uniqueness, or stability for the theorem’s shrinker."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-scherk-translators",
@@ -786,10 +826,10 @@
         "CatMSTW26"
       ],
       "model": "scherk-translators",
-      "status": "Heuristic schematic",
-      "caption": "A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
-      "alt": "Doubly periodic Scherk translators. A fundamental parallelogram and alternating infinite boundary data, followed by reflection. This is a construction diagram, not a minimal Scherk surface or a computed translator.",
-      "interactive": false
+      "status": "Numerical PDE approximation with illustrative corner fills",
+      "caption": "The rectangular case α = w = π/2, computed with finite edge heights ±2.5 and reflected to the upward convention. The orange fundamental patch extends by half-turns about its vertical corner lines; blue copies show the periodic arrangement. Rotate, zoom, isolate the patch, or crop the height. Small unresolved corner regions are filled for display. This is an uncertified approximation, not a closed formula; all outer edges are truncations.",
+      "alt": "Numerical Scherk translator: an orange saddle patch connects to blue half-turn copies on a checkerboard lattice. Upward translation. Finite boundary data and small illustrative corner fills; no certified error bound.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-translating-helicoids",
@@ -844,10 +884,10 @@
         "CatHMWExpand26"
       ],
       "model": "high-genus-expanders",
-      "status": "Heuristic schematic",
-      "caption": "Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
-      "alt": "Expanders of unbounded genus at a fixed cone. Schematic handle and end count: a fixed three-component cone can have outgoing expanders of unbounded genus. Drawn handles are symbols, not a mesh of a proved expander.",
-      "interactive": false
+      "status": "Interactive topology schematic",
+      "caption": "One connected model with three conical ends. Rotate, cut away the front, compare reflection-slice types, or change the model genus while keeping the same illustrative cone. The paper obtains four classes (small/big, type 1/type 2) by degree theory; the mesh does not distinguish small from big. No expander PDE is solved. The displayed k = 4 and cone opening are drawing choices, not verified existence parameters. Open the drawing for the slice-pairing diagrams.",
+      "alt": "Connected three-ended topology model and cutaway, with type 1 and type 2 reflection-slice diagrams. Not a computed self-expander.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-knotted-expanders",
@@ -858,10 +898,19 @@
         "CatMWKnotted26"
       ],
       "model": "knotted-expanders",
-      "status": "Heuristic schematic",
-      "caption": "An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
-      "alt": "Knotted self-expanders. An original trefoil spine diagram with three labeled end attachments. It encodes the genus-one, three-ended example topologically; the spine is not the two-dimensional expander.",
-      "interactive": false
+      "status": "Topology schematic",
+      "caption": "A trefoil tube with three attached annular ends, following Theorem 1.1 and Corollary 3.2. Rotate to inspect the crossings; switch views to see the closed tube and three punctures. The colored ends flare only to suggest conical asymptotics. This mesh is not a computed expander.",
+      "alt": "A connected two-dimensional trefoil tube with three open colored ends. The crossings pass above and below one another. Genus one; three display rims. Topology schematic, not a numerical self-expander.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "knotted-expander-construction",
+          "status": "Topology construction",
+          "interactive": false,
+          "caption": "Thicken the trefoil, remove three disks, and attach three annuli. The genus stays one. In the paper, expanding annular barriers protect the overpass bridges during minimization (Figure 2). The drawings illustrate the topology, not the geometric Plateau solutions.",
+          "alt": "Three stages: a closed trefoil tube, the tube with three punctures, and the tube continued into three annular ends."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-hh-ancient-ovals",
@@ -873,9 +922,9 @@
         "CatHS14"
       ],
       "model": "hh-ancient-ovals",
-      "status": "Heuristic schematic",
-      "caption": "A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
-      "alt": "Haslhofer--Hershkovits ancient ovals. A heuristic elongated closed surface for n=2, j=1. Cylindrical middle and rounded tips suggest the backward regimes; the ellipsoidal mesh is not the ancient flow and has no time parameter.",
+      "status": "Numerical PDE approximation",
+      "caption": "Surface case n = 2, j = 1: numerical rotational mean curvature flow from a long convex seed, following the limiting-construction strategy. Compare times, play the evolution, rotate, or inspect the meridian and the tip. The default view divides lengths by √(−t); Original size keeps the physical spatial scale fixed. Extinction is normalized to t = 0 and length/width = 2 at t = −1. These finite-seed computations are not certified slices of the ancient solution.",
+      "alt": "Four time slices of a numerical convex surface flow in three-space, from an elongated oval to an almost round sphere. Each is divided by square root of minus time at a common scale. Interactive time, rotation, zoom, meridian and bowl-tip comparisons.",
       "interactive": true
     },
     {
@@ -887,10 +936,11 @@
         "CatMP19"
       ],
       "model": "minimal-ancient-flows",
-      "status": "Heuristic schematic",
-      "caption": "A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
-      "alt": "Ancient flows from unstable minimal hypersurfaces. A symbolic normal displacement to either side of a minimal surface. The central curve is a local slice, not a Costa profile; the diagram does not depict the three global ends.",
-      "interactive": false
+      "status": "Numerical Costa surface and linearized time model",
+      "caption": "Four model times on the positive normal side of the Costa surface; switch sides, play, rotate, or inspect the stationary limit. The sampled surface has one handle and three truncated ends. Time follows a positive numerical Dirichlet Jacobi mode on the truncated surface, not the nonlinear ancient flow of Mramor–Payne. Normal displacements are magnified ×3 by default; ×1 restores model scale. The same camera and spatial scale are used for every panel. The stationary parametrization is from O. Michael Melko, Visualizing Minimal Surfaces, equation (17).",
+      "alt": "Four views of a genus-one Costa surface with three open ends, moving away from the stationary minimal surface along a positive linearized mode. The opposite side is selectable. These are numerical linearized model views, not computed nonlinear ancient slices.",
+      "interactive": true,
+      "credit_anchor": "costa-visuals"
     },
     {
       "label": "ex:catalogue-reapernoid",
@@ -901,10 +951,19 @@
         "CatMP19"
       ],
       "model": "reapernoid",
-      "status": "Heuristic schematic",
-      "caption": "Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
-      "alt": "The eternal reapernoid. Heuristic annular slice of the n=2 reapernoid. Its shape is not computed from the evolution equation. The higher-dimensional grim-reaper limit must not be inferred for this R3 case.",
-      "interactive": true
+      "status": "Numerical rotational mean curvature flow",
+      "caption": "Four numerical slices in ℝ³ move outward from a unit-neck catenoid, at one spatial scale. Play or drag the time slider, rotate, zoom, or switch to meridians in ℝ³ and ℝ⁴. The three-space meridian flattens after recentering; the four-space meridian approaches a grim reaper. These are finite-start, truncated-domain PDE approximations of the construction, not exact formulas or a certified eternal limit. Open rims cut the displayed surface at x = ±2.",
+      "alt": "Four numerical reapernoid surfaces in three-space at times −8, −4, 0 and 10. The annular neck grows outward, with radii approximately 1.034, 1.251, 2 and 5.327. All surfaces use the same camera and spatial scale.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "reapernoid-limits",
+          "status": "Numerical profiles and proved forward limits",
+          "interactive": false,
+          "caption": "Profiles are translated by subtracting the current neck radius, without rescaling. Blue curves show computed finite times; gold dashed curves show the limits in Theorem 1.3. The ℝ³ limit is a line. The ℝ⁴ case represents the higher-dimensional grim-reaper behavior and is shown only as a meridian. Neither limit is asserted at a finite time.",
+          "alt": "Recentered numerical meridians at four times. The three-space profiles flatten toward a horizontal line, while the four-space profiles approach a grim reaper. The higher-dimensional picture is a profile, not a surface in three-space."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-stacked-pancakes",
@@ -915,10 +974,19 @@
         "CatMY26"
       ],
       "model": "stacked-pancakes",
-      "status": "Heuristic schematic",
-      "caption": "Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
-      "alt": "Ancient stacked pancakes. Schematic meridian for hypersurface dimension n≥3. Rotating the right half with S^(n−1) orbits produces the topology; the drawing is not a proved R3 example or a numerical flow.",
-      "interactive": false
+      "status": "Schematic 3D section",
+      "caption": "Original illustration informed by Mramor–Yudowitz, Theorem 1.1, Figure 1 and Sections 2.2–3.1. A three-dimensional linear section shows two flattened lobes joined by one neck (copper). The actual hypersurface has dimension n ≥ 3 in ℝⁿ⁺¹; the displayed section is not itself a mean curvature flow in ℝ³. Rotate and zoom, close the cutaway with Revolve, or inspect the meridian. The drawn proportions are illustrative; no evolution equation is solved.",
+      "alt": "Schematic three-dimensional section of two flattened pancakes connected by one central neck, with a quarter removed to expose the connection. The actual ambient dimension is at least four.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "stacked-pancakes-profile",
+          "status": "Schematic meridian",
+          "interactive": false,
+          "caption": "The right profile r = u(x,t) has exactly two local maxima and one positive local minimum at the neck; the two poles lie on the rotation axis. Reflection across x = 0 exchanges the lobes. The dashed horizontal boundaries mark a fixed containing slab, not the moving caps. Away from the poles, each profile point represents an Sⁿ⁻¹ orbit in the full hypersurface. This qualitative drawing is not to scale and asserts no catenoid asymptotics.",
+          "alt": "Annotated symmetric meridian: two radius maxima, one central neck minimum, two poles on the vertical axis, the reflection plane, and two boundaries of a fixed containing slab."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-ancient-spiral-curves",
@@ -929,10 +997,10 @@
         "CatZOKA23"
       ],
       "model": "ancient-spiral-curves",
-      "status": "Heuristic schematic",
-      "caption": "A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
-      "alt": "Compact nonconvex ancient spiral curves. A thin closed spiral region with a rounded cap, illustrating the ancient construction. It is not the exact Yin–Yang soliton or a computed ancient solution.",
-      "interactive": false
+      "status": "Numerical ODE with asymptotic cap",
+      "caption": "Four ancient-regime times on one spatial scale, with animation and a cap close-up. The Yin–Yang arms are computed from the rotating-soliton ODE; the closing cap uses the corrected grim-reaper ansatz of Section 2. Blue arms rotate counterclockwise, while the orange cap moves clockwise and inward. This illustrates the asymptotic construction, not numerically evolved slices of the ancient PDE solution. The displayed interval does not extend to extinction.",
+      "alt": "Four closed Yin–Yang spiral models at t = −24, −18, −12 and −8, shrinking and losing turns, with the outer closing cap marked orange.",
+      "interactive": true
     },
     {
       "label": "ex:catalogue-grim-reaper-chains",
@@ -940,13 +1008,314 @@
       "title": "Eternal curves from chains of grim reapers",
       "category": "other-special-flows",
       "citations": [
-        "CatAY18"
+        "CatAY18",
+        "CatChoiSeoSuZhao2026"
       ],
       "model": "grim-reaper-chains",
-      "status": "Heuristic schematic",
-      "caption": "A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
-      "alt": "Eternal curves from chains of grim reapers. A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
+      "status": "Numerical curve-shortening flow",
+      "caption": "Angenent–You, equation (3), §3.1–3.3 and Figure 9. Equal strips aₖ = kπ and shifts Cₖ = 0. Play the evolution or compare six times from t = −6 to 9 at a fixed scale. The model overlay shows exact separate grim reapers, with velocities −1, +1, −1. The blue curve is computed from smoothly joined data at t = −10, with distant truncated ends; it is not a closed formula or a certified approximation of the eternal limit. Zero is an ordinary time, not an extinction time.",
+      "alt": "Six numerical time slices of one planar curve with three alternating grim-reaper turns, evolving from separated turns to a broader profile. Both outer ends continue to the left along y = 0 and y = 3π. Finite-start numerical approximation.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-mobius-shrinker",
+      "section": "the-lee-wang-self-shrinking-mobius-bundle",
+      "title": "The Lee–Wang self-shrinking Mobius bundle",
+      "category": "shrinkers",
+      "citations": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "model": "mobius-shrinker",
+      "status": "Exact four-dimensional projection",
+      "caption": "A finite patch of the exact embedded Möbius quotient in C². Rotation changes the projection; projected crossings do not imply self-intersection.",
+      "alt": "A finite patch of the exact embedded Möbius quotient in C². Rotation changes the projection; projected crossings do not imply self-intersection.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-compact-shrinkers",
+      "section": "compact-periodic-lagrangian-quadric-shrinkers",
+      "title": "Compact periodic Lagrangian quadric shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-compact-shrinkers",
+      "status": "Construction diagram",
+      "caption": "The ODE and rational phase-closing conditions produce a compact immersion with domain Sⁿ⁻¹ × S¹. No numerical closed orbit or embeddedness is claimed by this picture.",
+      "alt": "The ODE and rational phase-closing conditions produce a compact immersion with domain Sⁿ⁻¹ × S¹. No numerical closed orbit or embeddedness is claimed by this picture.",
       "interactive": false
+    },
+    {
+      "label": "ex:catalogue-jlt-translators",
+      "section": "joyce-lee-tsui-small-angle-lagrangian-translators",
+      "title": "Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "category": "translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-translators",
+      "status": "Numerical quadrature and projection",
+      "caption": "The n = 2, a₁ = α = 1 exact integral parametrization is evaluated numerically and projected from R⁴. The displayed patch is truncated; the full embedded surface has one end.",
+      "alt": "The n = 2, a₁ = α = 1 exact integral parametrization is evaluated numerically and projected from R⁴. The displayed patch is truncated; the full embedded surface has one end.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-rotating-translators",
+      "section": "explicit-rotating-lagrangian-translators",
+      "title": "Explicit rotating Lagrangian translators",
+      "category": "translators",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "jlt-rotating-translators",
+      "status": "Exact four-dimensional projection",
+      "caption": "The n = 2 map (x eⁱˢ, x²/2 − is) on a finite parameter window. Its last imaginary coordinate separates turns. Use 4D rotation to change the projection.",
+      "alt": "The n = 2 map (x eⁱˢ, x²/2 − is) on a finite parameter window. Its last imaginary coordinate separates turns. Use 4D rotation to change the projection.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-expanders",
+      "section": "joyce-lee-tsui-lagrangian-expander-necks",
+      "title": "Joyce–Lee–Tsui Lagrangian expander necks",
+      "category": "expanders",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "model": "jlt-expanders",
+      "status": "Numerical quadrature and projection",
+      "caption": "The exact integral parametrization in C² with a₁ = a₂ = 1 and α = 1/2, evaluated numerically. Both planar ends are truncated. This is a projection, not an R³ expander.",
+      "alt": "The exact integral parametrization in C² with a₁ = a₂ = 1 and α = 1/2, evaluated numerically. Both planar ends are truncated. This is a projection, not an R³ expander.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-ttw-expanders",
+      "section": "two-convex-lagrangian-graphical-expanders",
+      "title": "Two-convex Lagrangian graphical expanders",
+      "category": "expanders",
+      "citations": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "model": "ttw-expanders",
+      "status": "Exact initial-cone projection",
+      "caption": "The gradient cone of the nonquadratic potential specified in the text, projected from C². It is initial data at t = 0; the positive-time expander is constructed by PDE and is not rendered here.",
+      "alt": "The gradient cone of the nonquadratic potential specified in the text, projected from C². It is initial data at t = 0; the positive-time expander is constructed by PDE and is not rendered here.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-lawlor-necks",
+      "section": "lawlor-necks-as-stationary-lagrangian-flows",
+      "title": "Lawlor necks as stationary Lagrangian flows",
+      "category": "other-special-flows",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "model": "lawlor-necks",
+      "status": "Exact four-dimensional projection",
+      "caption": "A truncated exact Lawlor annulus in C² with a₁ = a₂ = 1. It is stationary under MCF. Projected crossings do not change its embeddedness in R⁴.",
+      "alt": "A truncated exact Lawlor annulus in C² with a₁ = a₂ = 1. It is stationary under MCF. Projected crossings do not change its embeddedness in R⁴.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-aryan-lee",
+      "section": "immortal-curve-shortening-with-nonunique-geodesic-limits",
+      "title": "Immortal curve shortening with nonunique geodesic limits",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAryanLee2026"
+      ],
+      "model": "aryan-lee",
+      "status": "Parameter-space schematic",
+      "caption": "The spiral represents a slow parameter approaching a circle of critical points, each indexing a different limiting geodesic. This is not a simulation on a round sphere.",
+      "alt": "The spiral represents a slow parameter approaching a circle of critical points, each indexing a different limiting geodesic. This is not a simulation on a round sphere.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-su-tsai-wood",
+      "section": "lagrangian-torus-necks-collapsing-at-infinite-time",
+      "title": "Lagrangian torus necks collapsing at infinite time",
+      "category": "other-special-flows",
+      "citations": [
+        "CatSuTsaiWood2026"
+      ],
+      "model": "su-tsai-wood",
+      "status": "Neck-collapse schematic",
+      "caption": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
+      "alt": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-lee-tsai",
+      "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+      "title": "Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLeeTsai2026"
+      ],
+      "model": "lee-tsai",
+      "status": "Circle-quotient schematic",
+      "caption": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
+      "alt": "Four collinear centers illustrate a sphere tending to a chain of three special Lagrangian spheres. The positive curves are schematic quotient graphs, not numerical weighted-flow solutions.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-shrinkers",
+      "section": "lee-wang-embedded-quadric-shrinkers",
+      "title": "Lee–Wang embedded quadric shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "model": "lw-quadric-shrinkers",
+      "status": "Exact time slices and projected circle action",
+      "caption": "The n = 3, k = 2 flow in C³, with weights (1, 1, −1). Four s = 0 slices share one spatial scale and the fixed crop |X| ≤ 3.6; the waist radius √(−2t) tends to zero. Circle action shows a projected phase leaf and sampled orbits in R⁶. Include expander shows the companion positive-time branch of the Brakke continuation; t = 0 is singular. These 2D slices do not evolve by their own mean curvature in R³.",
+      "alt": "Exact Lee–Wang real slices at t = −1, −0.25, −0.04 and 0: a hyperboloidal waist contracts to a double cone at a common spatial scale.",
+      "interactive": true,
+      "credit_anchor": "lee-wang"
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-expanders",
+      "section": "lee-wang-embedded-quadric-expanders",
+      "title": "Lee–Wang embedded quadric expanders",
+      "category": "expanders",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "model": "lw-quadric-expanders",
+      "status": "Exact time slices and circle orbit",
+      "caption": "The n = 3, k = 2 expander in C³ = R⁶. Compare the exact real slices x₃ = ±√(x₁² + x₂² + 2t) at t = 0, 1/4, 1, 4 on the same spatial scale, or play the positive-time flow. The t = 0 panel is the singular cone limit. The circle-orbit view joins the two real sheets within one connected three-manifold at fixed time. These slices do not themselves solve mean curvature flow in R³; outer rims are display cutoffs.",
+      "alt": "Exact two-sheeted real quadric slices at four times with one common scale, and an exact circle orbit explaining their connection in the full expander in R6.",
+      "interactive": true,
+      "credit_anchor": "lee-wang"
+    },
+    {
+      "label": "ex:catalogue-su-glued-translators",
+      "section": "su-translators-obtained-by-gluing-grim-cylinders",
+      "title": "Su translators obtained by gluing grim cylinders",
+      "category": "translators",
+      "citations": [
+        "CatSu2022"
+      ],
+      "model": "su-glued-translators",
+      "status": "Projected construction model",
+      "caption": "Selected meridians and a rotatable projection of a two-dimensional z₂ = 0 model slice in C³. Blue and teal are the grim-cylinder regions; copper is the Lawlor neck and schematic matching. Play the rigid translation at fixed neck scale, inspect the neck, or switch to the projected slice and its cutaway. The final nonlinear correction is not computed. Projection crossings need not be intersections in C³, and all outer rims are display cuts.",
+      "alt": "Exact intersecting grim profiles, an illustrative Lawlor-neck replacement, and a magnified neck detail in the z₃-plane.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "su-glued-times",
+          "status": "Time sequence of the construction model",
+          "interactive": false,
+          "caption": "Selected meridians at t = −1, 0, 1 on identical fixed axes. Every point moves by t in Re z₃; the neck scale ε stays fixed. The dotted line follows the translated intersection reference p + t e₃, marked by a dot. The full translator has two ends and topology S² × ℝ; the number of curves in this profile does not count those ends. These are schematic spatial profiles with the exact translation law, not computed solutions of mean curvature flow.",
+          "alt": "Three panels with identical grids show the same joined grim profiles shifting upward at times minus one, zero, and one, without changing the neck size."
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-su-wood-stationary",
+      "section": "su-wood-stationary-products-of-lawlor-profiles",
+      "title": "Su–Wood stationary products of Lawlor profiles",
+      "category": "other-special-flows",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "model": "su-wood-stationary",
+      "status": "Exact auxiliary profile",
+      "caption": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
+      "alt": "The exact planar Lawlor profile ℓ(s) = (cos(2s))^(−1/2)eⁱˢ used twice when m = 3. This is an auxiliary curve, not the full stationary three-manifold in C³.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-stolarski-su",
+      "section": "stolarski-su-finite-time-lagrangian-neck-pinches",
+      "title": "Stolarski–Su finite-time Lagrangian neck pinches",
+      "category": "other-special-flows",
+      "citations": [
+        "CatStolarskiSu2026"
+      ],
+      "model": "stolarski-su",
+      "status": "Neck-scale schematic",
+      "caption": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
+      "alt": "Schematic neck profiles at decreasing scales comparable to (T − t)^(K/2). The full flow lies in Cⁿ, n ≥ 3, and is constructed by PDE; these are not computed time slices.",
+      "interactive": false
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "section": "chopp-cubical-shrinker-candidate",
+      "title": "Chopp cubical shrinker candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-cube",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "alt": "Original topology schematic: genus 5, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "section": "chopp-octahedral-shrinker-candidate",
+      "title": "Chopp octahedral shrinker candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-octahedron",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "alt": "Original topology schematic: genus 7, closed. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Use the cutaway to see the central cavity.",
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "section": "chopp-punctured-torus-saddle-candidate",
+      "title": "Chopp punctured-torus saddle candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-saddle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 1, 1 end. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "section": "chopp-two-handled-cone-candidate",
+      "title": "Chopp two-handled cone candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "model": "chopp-two-handle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 1, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "section": "chopp-four-handled-cone-candidate",
+      "title": "Chopp four-handled cone candidate",
+      "category": "shrinkers",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
+      ],
+      "model": "chopp-four-handle",
+      "status": "Schematic of a numerical candidate",
+      "caption": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "alt": "Original topology schematic: genus 3, 2 ends. Chopp’s paper reports a numerical candidate; this drawing is not his mesh and does not solve the shrinker equation. Scale and neck shapes are illustrative. Outer rims and cutaway edges are display boundaries.",
+      "interactive": true,
+      "credit_anchor": "chopp-visuals"
     },
     {
       "label": "ex:catalogue-irrational-torus-curves",

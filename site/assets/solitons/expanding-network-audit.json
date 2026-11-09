@@ -1,0 +1,13 @@
+{
+  "junction_a": 0.3854048602093485,
+  "arclength_cutoff": 12,
+  "rk4_step": 0.005,
+  "export_arclength_step": 0.01,
+  "display_arclength_cutoff": 24,
+  "step_halving_junction_difference": 5.684341886080801e-13,
+  "cutoff_extension_junction_difference": 0.0,
+  "endpoint_tangent_angle_error": 2.3314683517128287e-15,
+  "endpoint_distance_to_prescribed_ray": 4.7730810743986756e-14,
+  "step_halving_max_position_difference": 5.906343083630327e-13,
+  "note": "Floating-point consistency checks, not rigorous error bounds or an existence proof."
+}

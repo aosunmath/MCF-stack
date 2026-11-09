@@ -110,12 +110,13 @@
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
-      "title": "Stationary catenoid flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "kind": "example",
       "file": "catalogue-other-flows.tex",
       "status": "cited-example",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -844,7 +845,252 @@
       "file": "catalogue-other-flows.tex",
       "status": "cited-example",
       "citations": [
-        "CatAY18"
+        "CatAY18",
+        "CatChoiSeoSuZhao2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-mobius-shrinker",
+      "title": "The Lee–Wang self-shrinking Mobius bundle",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-compact-shrinkers",
+      "title": "Compact periodic Lagrangian quadric shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-translators",
+      "title": "Joyce–Lee–Tsui small-angle Lagrangian translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-rotating-translators",
+      "title": "Explicit rotating Lagrangian translators",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-expanders",
+      "title": "Joyce–Lee–Tsui Lagrangian expander necks",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ttw-expanders",
+      "title": "Two-convex Lagrangian graphical expanders",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lawlor-necks",
+      "title": "Lawlor necks as stationary Lagrangian flows",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-aryan-lee",
+      "title": "Immortal curve shortening with nonunique geodesic limits",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAryanLee2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-su-tsai-wood",
+      "title": "Lagrangian torus necks collapsing at infinite time",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSuTsaiWood2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lee-tsai",
+      "title": "Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLeeTsai2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-shrinkers",
+      "title": "Lee–Wang embedded quadric shrinkers",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-expanders",
+      "title": "Lee–Wang embedded quadric expanders",
+      "kind": "example",
+      "file": "catalogue-expanders.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-su-glued-translators",
+      "title": "Su translators obtained by gluing grim cylinders",
+      "kind": "example",
+      "file": "catalogue-translators.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSu2022"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-su-wood-stationary",
+      "title": "Su–Wood stationary products of Lawlor profiles",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-stolarski-su",
+      "title": "Stolarski–Su finite-time Lagrangian neck pinches",
+      "kind": "example",
+      "file": "catalogue-other-flows.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatStolarskiSu2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "title": "Chopp cubical shrinker candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "title": "Chopp octahedral shrinker candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "title": "Chopp punctured-torus saddle candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "title": "Chopp two-handled cone candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "title": "Chopp four-handled cone candidate",
+      "kind": "example",
+      "file": "catalogue-shrinkers.tex",
+      "status": "numerical-candidate",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
       ],
       "dependencies": [],
       "formal_verification": "none"

@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 AMBIENTS = {'r2': 'Euclidean plane ℝ²', 'r3': 'Euclidean space ℝ³', 'r4': 'Euclidean space ℝ⁴', 'higher': 'Euclidean dimension ≥ 5', 'manifold': 'Riemannian ambient manifold'}
 AMBIENT_SHORT = {'r2': 'ℝ²', 'r3': 'ℝ³', 'r4': 'ℝ⁴', 'higher': 'Higher dimensions (N ≥ 5)', 'manifold': 'Curved ambient spaces'}
 STATUS = {'exact':'Exact formula', 'bound':'Proved bound or relation', 'numerical':'Numerical estimate', 'finite':'Finite; value not recorded', 'not-recorded':'Not recorded', 'not-applicable':'Not applicable'}
-GENUS = {'0':'Genus 0', '1':'Genus 1', 'higher':'Finite genus ≥ 2', 'infinite':'Infinite genus', 'varies':'Genus depends on parameters', 'not-recorded':'Genus not recorded', 'na':'Not a surface'}
+GENUS = {'0':'Genus 0', '1':'Genus 1', 'higher':'Finite genus ≥ 2', 'infinite':'Infinite genus', 'varies':'Genus depends on parameters', 'nonorientable':'Nonorientable surface','not-recorded':'Genus not recorded', 'na':'Not a surface'}
 ENDS = {'0':'No ends (compact)', '1':'One end', '2':'Two ends', '3':'Three ends', 'many':'At least four ends', 'varies':'Ends depend on parameters', 'not-recorded':'Ends not recorded'}
 EMBEDDEDNESS = {'embedded':'Embedded', 'nonembedded':'Not embedded', 'depends':'Depends on the construction', 'not-recorded':'Not recorded'}
 

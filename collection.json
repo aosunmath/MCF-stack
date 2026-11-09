@@ -37,7 +37,15 @@
         "flow-generated-three-ended-shrinkers",
         "ketover-shrinkers-with-platonic-symmetry",
         "sun-wang-zhou-shrinkers-of-arbitrarily-large-entropy",
-        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
+        "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut",
+        "the-lee-wang-self-shrinking-mobius-bundle",
+        "compact-periodic-lagrangian-quadric-shrinkers",
+        "lee-wang-embedded-quadric-shrinkers",
+        "chopp-cubical-shrinker-candidate",
+        "chopp-octahedral-shrinker-candidate",
+        "chopp-punctured-torus-saddle-candidate",
+        "chopp-two-handled-cone-candidate",
+        "chopp-four-handled-cone-candidate"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },
@@ -60,7 +68,10 @@
         "translators-with-high-genus-spherical-doubling-ends",
         "doubly-periodic-scherk-translators",
         "helicoid-like-translators",
-        "annuloid-translators-in-slabs"
+        "annuloid-translators-in-slabs",
+        "joyce-lee-tsui-small-angle-lagrangian-translators",
+        "explicit-rotating-lagrangian-translators",
+        "su-translators-obtained-by-gluing-grim-cylinders"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
     },
@@ -76,7 +87,10 @@
         "self-expanding-planar-tree-networks",
         "mountain-pass-self-expanders",
         "expanders-of-unbounded-genus-at-a-fixed-cone",
-        "knotted-self-expanders"
+        "knotted-self-expanders",
+        "joyce-lee-tsui-lagrangian-expander-necks",
+        "two-convex-lagrangian-graphical-expanders",
+        "lee-wang-embedded-quadric-expanders"
       ],
       "description": "Self-expanding smoothings of cones, graphical and rotational examples, and planar networks with junction conditions."
     },
@@ -98,6 +112,12 @@
         "ancient-stacked-pancakes",
         "compact-nonconvex-ancient-spiral-curves",
         "eternal-curves-from-chains-of-grim-reapers",
+        "lawlor-necks-as-stationary-lagrangian-flows",
+        "immortal-curve-shortening-with-nonunique-geodesic-limits",
+        "lagrangian-torus-necks-collapsing-at-infinite-time",
+        "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+        "su-wood-stationary-products-of-lawlor-profiles",
+        "stolarski-su-finite-time-lagrangian-neck-pinches",
         "ancient-dense-torus-curves-with-irrational-frequencies",
         "purely-rotating-curve-shortening-solitons",
         "rotating-and-translating-curve-solitons",
@@ -107,6 +127,35 @@
       "description": "Stationary, ancient, rotating, higher-codimension, and singularity-forming flows, including mixed curve solitons."
     }
   ],
-  "topics": [],
-  "entries": []
+  "topics": [
+    {
+      "slug": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "description": "Smooth minimal surfaces and submanifolds as eternal static flows; affine planes and the catenoid as exact examples."
+    }
+  ],
+  "entries": [
+    {
+      "tag": "C9F0102B7272",
+      "topic": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "members": [
+        {
+          "source": "gmt-foundations",
+          "label": "sec:catalogue-stationary-catenoid"
+        }
+      ]
+    },
+    {
+      "tag": "AC1C0D984A58",
+      "topic": "the-catenoid-as-an-eternal-stationary-flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
+      "members": [
+        {
+          "source": "gmt-foundations",
+          "label": "ex:catalogue-stationary-catenoid"
+        }
+      ]
+    }
+  ]
 }

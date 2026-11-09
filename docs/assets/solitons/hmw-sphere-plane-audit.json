@@ -1,0 +1,47 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/abs/2502.20340v3",
+  "source_locations": "Figures 1, 5\u20136; Section 5; Theorems 40\u201342; Lemma 64",
+  "display_radius": 3.8,
+  "models": {
+    "3": {
+      "vertices": 5770,
+      "faces": 11125,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -5,
+      "genus": 3
+    },
+    "5": {
+      "vertices": 7031,
+      "faces": 13603,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -9,
+      "genus": 5
+    },
+    "11": {
+      "vertices": 7111,
+      "faces": 13781,
+      "components": 1,
+      "boundary_loops": 1,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -21,
+      "genus": 11
+    }
+  }
+}

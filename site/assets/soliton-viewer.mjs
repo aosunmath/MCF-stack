@@ -8,6 +8,20 @@ export function rotatePoint(p, state) {
   return [horizontal,z*Math.cos(state.pitch)-depth*Math.sin(state.pitch),z*Math.sin(state.pitch)+depth*Math.cos(state.pitch)];
 }
 
+// Clip a drawing polygon in model coordinates. This only changes the display.
+export function clipPolygonAtY(points, limit=0) {
+  const result=[];
+  for(let i=0;i<points.length;i++){
+    const a=points[i],b=points[(i+1)%points.length];
+    if(a[1]<=limit)result.push(a);
+    if((a[1]<limit&&b[1]>limit)||(a[1]>limit&&b[1]<limit)){
+      const t=(limit-a[1])/(b[1]-a[1]);
+      result.push(a.map((v,j)=>v+t*(b[j]-v)));
+    }
+  }
+  return result;
+}
+
 export function ancientOval(t, count=240) {
   if (!(t<0)) throw new Error('The smooth oval requires t < 0.');
   const ymax=Math.acosh(Math.exp(-t)), a=[], b=[];
@@ -66,9 +80,14 @@ function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
   const stage=figure.querySelector('.soliton-stage');
+  let viewLabel;
+  if(data.viewLabel){
+    viewLabel=document.createElement('p');viewLabel.className='soliton-view-label';
+    viewLabel.textContent=data.viewLabel;stage.append(viewLabel);
+  }
   const resetState=()=>({yaw:data.flat?0:.64,pitch:data.flat?-Math.PI/2:(data.view?.pitch??.43),zoom:1,fourD:.55});
   let state=resetState(), vertices=data.vertices, dragging=null, wire=false, scheduled=false;
-  let degrees=data.revolution?.degrees??360, meridian=false;
+  let degrees=data.revolution?.degrees??360, meridian=false, cutaway=false, cutButton;
   let visibleFaces=revolutionFaces(data,degrees), resetRevolution=()=>{};
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
@@ -87,7 +106,7 @@ function init(figure, data) {
       canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
     }
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
-    let scale=Math.min(width*.43,height*.42)/(radius||1)*state.zoom;
+    let scale=Math.min(width*.43/((data.view?.horizontalRadius??radius)||1),height*.42/(radius||1))*state.zoom;
     if(meridian){
       const curve=data.revolution.meridian;
       const rmax=Math.max(...curve.map(p=>p[0])),zmax=Math.max(...curve.map(p=>Math.abs(p[1])));
@@ -112,15 +131,20 @@ function init(figure, data) {
     const screen=q.map(p=>[width/2+scale*p[0],height/2-scale*p[1]]);
     const faces=visibleFaces.map(({face,index})=>({face,index,z:face.reduce((v,i)=>v+q[i][2],0)/3})).sort((a,b)=>a.z-b.z);
     for(const {face,index} of faces) {
+      const polygon=cutaway?clipPolygonAtY(face.map(i=>points[i])).map(p=>{
+        const q=rotatePoint(p,state);return [width/2+scale*q[0],height/2-scale*q[1]];
+      }):face.map(i=>screen[i]);
+      if(polygon.length<3)continue;
       const [a,b,c]=face.map(i=>q[i]);
       const u=b.map((v,i)=>v-a[i]),v=c.map((val,i)=>val-a[i]);
       const normal=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
       const light=.42+.52*Math.abs((.3*normal[0]+.5*normal[1]+.8*normal[2])/(Math.hypot(...normal)||1));
-      const rgb=(data.palette?.[data.faceGroups?.[index]]??[67,139,169]).map(base=>Math.round(base*light+255*(1-light)*.25));
-      ctx.beginPath();face.forEach((i,j)=>j?ctx.lineTo(...screen[i]):ctx.moveTo(...screen[i]));ctx.closePath();
+      const palette=data.cutaway&&normal[2]<0?[215,164,92]:[67,139,169];
+      const rgb=(data.palette?.[data.faceGroups?.[index]]??palette).map(base=>Math.round(base*light+255*(1-light)*.25));
+      ctx.beginPath();polygon.forEach((p,j)=>j?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();
       ctx.fillStyle=`rgb(${rgb.join(',')})`;ctx.fill();
       // Cover antialias seams between adjacent triangles in the cutaway mesh.
-      if(data.revolution&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.4;ctx.stroke();}
+      if((data.revolution||data.cutaway)&&!wire){ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=data.view?.seamWidth??.4;ctx.stroke();}
       if(wire){ctx.strokeStyle='rgba(24,63,82,.32)';ctx.lineWidth=.5;ctx.stroke();}
     }
     ctx.strokeStyle='#21667f';ctx.lineWidth=2.5;
@@ -130,6 +154,7 @@ function init(figure, data) {
     canvas.dataset.rotation=`${state.yaw.toFixed(3)},${state.pitch.toFixed(3)}`;
     canvas.dataset.zoom=state.zoom.toFixed(3);
     canvas.dataset.view='surface';canvas.dataset.revolution=String(degrees);
+    if(data.cutaway)canvas.dataset.cutaway=String(cutaway);
   }
   function requestDraw(){if(!scheduled){scheduled=true;requestAnimationFrame(draw);}}
   function zoom(f){state.zoom=Math.max(.35,Math.min(4,state.zoom*f));requestDraw();}
@@ -148,9 +173,17 @@ function init(figure, data) {
     const action=button.dataset.viewAction;
     if(action==='in')zoom(1.2);
     if(action==='out')zoom(1/1.2);
-    if(action==='reset'){state={...resetState(),fourD:state.fourD};resetRevolution();requestDraw();}
+    if(action==='reset'){state={...resetState(),fourD:state.fourD};cutaway=false;cutButton?.setAttribute('aria-pressed','false');resetRevolution();requestDraw();}
     if(action==='wire'){wire=!wire;button.setAttribute('aria-pressed',String(wire));requestDraw();}
   });
+  if(data.cutaway){
+    cutButton=document.createElement('button');cutButton.type='button';
+    cutButton.textContent='Cutaway';cutButton.dataset.viewAction='cutaway';
+    cutButton.setAttribute('aria-pressed','false');
+    cutButton.addEventListener('click',()=>{cutaway=!cutaway;cutButton.setAttribute('aria-pressed',String(cutaway));requestDraw();});
+    figure.querySelector('.soliton-controls').append(cutButton);
+    figure.querySelector('.soliton-help').textContent='Drag to rotate; + / − zoom. Cutaway removes half of the drawing to expose the interior. Gold and blue show the two sides; cut edges and outer rims are display boundaries.';
+  }
   if(data.name==='abresch-langer'){
     const controls=figure.querySelector('.soliton-controls');
     const form=document.createElement('form');form.className='al-controls';form.noValidate=true;
@@ -204,7 +237,10 @@ function init(figure, data) {
       button.setAttribute('aria-pressed',String(meridian));input.disabled=meridian;
       input.value=String(degrees);output.textContent=`Revolve: ${degrees}°`;
       visibleFaces=revolutionFaces(data,degrees);
-      help.textContent=meridian?'Generating curve in the (r, z) half-plane. Blue: shot from the upper pole. Orange: reflected continuation. Zoom buttons remain active.':'Drag to rotate; + / − zoom. The angle control removes sectors to reveal the sheets; cut edges are display boundaries. Meridian shows the generating curve.';
+      help.textContent=meridian
+        ? (data.revolution.meridianHelp??'Generating curve in the (r, z) half-plane. Blue: shot from the upper pole. Orange: reflected continuation. Zoom buttons remain active.')
+        : (data.revolution.surfaceHelp??'Drag to rotate; + / − zoom. The angle control removes sectors to reveal the sheets; cut edges are display boundaries. Meridian shows the generating curve.');
+      if(viewLabel)viewLabel.textContent=meridian?(data.revolution.meridianLabel??data.viewLabel):data.viewLabel;
     };
     input.addEventListener('input',()=>{degrees=Number(input.value);sync();requestDraw();});
     button.addEventListener('click',()=>{meridian=!meridian;dragging=null;state.zoom=1;sync();requestDraw();});
@@ -244,7 +280,61 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='moller-configuration'){
+      if(data.kind==='lee-wang-exact-flow'){
+        const {initLeeWangFigure}=await import('./lee-wang-viewer.mjs');
+        initLeeWangFigure(figure,data);
+      } else if(data.kind==='lee-wang-expander-exact'){
+        const {initLeeWangExpander}=await import('./lee-wang-expander-viewer.mjs');
+        initLeeWangExpander(figure,data);
+      } else if(data.kind==='minimal-ancient-linearized'){
+        const {initMinimalAncientFigure}=await import('./minimal-ancient-viewer.mjs');
+        initMinimalAncientFigure(figure,data);
+      } else if(data.kind==='av-neckpinch'){
+        const {initNeckpinchFigure}=await import('./neckpinch-viewer.mjs');
+        initNeckpinchFigure(figure,data);
+      } else if(data.kind==='immortal-product-schematic'){
+        const {initImmortalProductFigure}=await import('./immortal-product-viewer.mjs');
+        initImmortalProductFigure(figure,data);
+      } else if(data.kind==='ancient-spiral-asymptotic'){
+        const {initAncientSpiralFigure}=await import('./ancient-spiral-viewer.mjs');
+        initAncientSpiralFigure(figure,data);
+      } else if(data.kind==='wang-level-schematic'){
+        const {initWangFigure}=await import('./wang-viewer.mjs');
+        initWangFigure(figure,data);
+      } else if(data.kind==='apex-translators'){
+        const {initApexFigure}=await import('./apex-viewer.mjs');
+        initApexFigure(figure,data);
+      } else if(data.kind==='delta-wing-pde'){
+        const {initDeltaWingFigure}=await import('./delta-wing-viewer.mjs');
+        initDeltaWingFigure(figure,data);
+      } else if(data.kind==='dpn-construction'){
+        const {initDpnFigure}=await import('./dpn-viewer.mjs');
+        initDpnFigure(figure,data);
+      } else if(data.kind==='scherk-numerical'){
+        const {initScherkFigure}=await import('./scherk-viewer.mjs');
+        initScherkFigure(figure,data);
+      } else if(data.kind==='torus-translator-end'){
+        const {initTorusEndFigure}=await import('./torus-end-viewer.mjs');
+        initTorusEndFigure(figure,data);
+      } else if(data.kind==='expanding-network'){
+        const {initExpandingNetworkFigure}=await import('./expanding-network-viewer.mjs');
+        initExpandingNetworkFigure(figure,data);
+      } else if(data.kind==='grim-reaper-flow'){
+        const {initReaperFlow}=await import('./reaper-flow-viewer.mjs');
+        initReaperFlow(figure,data);
+      } else if(data.kind==='immortal-annulus-stages'){
+        const {initImmortalAnnulus}=await import('./immortal-annulus-viewer.mjs');
+        initImmortalAnnulus(figure,data,rotatePoint);
+      } else if(data.kind==='reapernoid-pde'){
+        const {initReapernoidFigure}=await import('./reapernoid-viewer.mjs');
+        initReapernoidFigure(figure,data);
+      } else if(data.kind==='whitney-flow'){
+        const {initWhitneyFlowFigure}=await import('./whitney-flow-viewer.mjs');
+        initWhitneyFlowFigure(figure,data,rotatePoint);
+      } else if(data.kind==='hh-numerical-flow'){
+        const {initHHAncientOvalFigure}=await import('./hh-ancient-oval-viewer.mjs');
+        initHHAncientOvalFigure(figure,data,rotatePoint);
+      } else if(data.kind==='moller-configuration'){
         const {initMollerFigure}=await import('./moller-viewer.mjs');
         initMollerFigure(figure,data,rotatePoint);
       } else if(data.kind==='moller-genus-model'){
@@ -253,18 +343,57 @@ if(typeof document!=='undefined') {
       } else if(data.construction?.kind==='kkm'){
         const {initKKMFigure}=await import('./kkm-viewer.mjs');
         initKKMFigure(figure,data,rotatePoint);
+      } else if(data.kind==='hmw-three-ended-schematic'){
+        const {initHmwThreeFigure}=await import('./hmw-three-ended-viewer.mjs');
+        initHmwThreeFigure(figure,data);
+      } else if(data.kind==='hmw-sphere-plane-schematic'){
+        const {initHmwFigure}=await import('./hmw-sphere-plane-viewer.mjs');
+        initHmwFigure(figure,data);
       } else if(data.kind==='bns-schematic'){
         const {initBnsFigure}=await import('./bns-viewer.mjs');
         initBnsFigure(figure,data);
       } else if(data.kind==='ketover-schematic'){
         const {initKetoverFigure}=await import('./ketover-viewer.mjs');
         initKetoverFigure(figure,data);
+      } else if(data.kind==='iw-schematic'){
+        const {initIWFigure}=await import('./iw-viewer.mjs');
+        initIWFigure(figure,data);
+      } else if(data.kind==='su-gluing-slice'){
+        const {initSuGluingFigure}=await import('./su-gluing-viewer.mjs');
+        initSuGluingFigure(figure,data,rotatePoint);
+      } else if(data.kind==='trident-schematic'){
+        const {initTridentFigure}=await import('./trident-viewer.mjs');
+        initTridentFigure(figure,data);
+      } else if(data.kind==='scherkenoid-schematic'){
+        const {initScherkenoidFigure}=await import('./scherkenoid-viewer.mjs');
+        initScherkenoidFigure(figure,data);
+      } else if(data.kind==='pitchfork-schematic'){
+        const {initPitchforkFigure}=await import('./pitchfork-viewer.mjs');
+        initPitchforkFigure(figure,data);
+      } else if(data.kind==='knotted-expander-schematic'){
+        const {initKnottedFigure}=await import('./knotted-expander-viewer.mjs');
+        initKnottedFigure(figure,data);
       } else if(data.kind==='nguyen-scherk-schematic'){
         const {initNguyenFigure}=await import('./nguyen-viewer.mjs');
         initNguyenFigure(figure,data);
+      } else if(data.kind==='shao-zou-schematic'){
+        const {initShaoZouFigure}=await import('./shao-zou-viewer.mjs');
+        initShaoZouFigure(figure,data);
+      } else if(data.kind==='hmw-ray-schematic'){
+        const {initHMWFigure}=await import('./hmw-rays-viewer.mjs');
+        initHMWFigure(figure,data);
+      } else if(data.kind==='platonic-doubling-schematic'){
+        const {initPlatonicFigure}=await import('./platonic-viewer.mjs');
+        initPlatonicFigure(figure,data);
+      } else if(data.kind==='sun-wang-spherical-end'){
+        const {initSunWangEndFigure}=await import('./sun-wang-end-viewer.mjs');
+        initSunWangEndFigure(figure,data);
       } else if(data.kind==='spherical-doubling-schematic'){
         const {initSphericalDoublingFigure}=await import('./spherical-doubling-viewer.mjs');
         initSphericalDoublingFigure(figure,data);
+      } else if(data.kind==='high-genus-expander-schematic'){
+        const {initHighGenusExpanderFigure}=await import('./high-genus-expander-viewer.mjs');
+        initHighGenusExpanderFigure(figure,data);
       } else init(figure,data);}
     catch {figure.querySelector('.soliton-status').textContent='The static drawing is shown; interactive geometry is unavailable.';}
   };

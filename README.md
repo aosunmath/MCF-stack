@@ -2,7 +2,7 @@
 
 **[Read the stack → aosunmath.github.io/MCF-stack](https://aosunmath.github.io/MCF-stack/)**
 
-[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Browse by properties](https://aosunmath.github.io/MCF-stack/browse/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/)
+[Contents](https://aosunmath.github.io/MCF-stack/chapters/) · [Browse by properties](https://aosunmath.github.io/MCF-stack/browse/) · [Search](https://aosunmath.github.io/MCF-stack/search/) · [Bibliography](https://aosunmath.github.io/MCF-stack/references/) · [Numerical references](https://aosunmath.github.io/MCF-stack/numerical-references/)
 
 MCF-stack is a growing mathematical reference collecting **special solutions of mean curvature flow**, including self-shrinkers, translators, self-expanders, ancient solutions, and other geometrically meaningful examples. Following the idea of the [Stacks Project](https://stacks.math.columbia.edu/), it aims to connect definitions, constructions, properties, and classification results through permanent tags, cross-references, and precise source attribution.
 
@@ -39,22 +39,28 @@ The following equations use the mean curvature vector convention above. The norm
 
 The collection also includes **ancient solutions**, defined for all $`t<T`$ for a finite $`T`$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
-The catalogue contains **69 illustrated example families in four categories**:
+The catalogue contains **89 illustrated example families in four categories**:
 
 | Category | Entries | Examples |
 | --- | ---: | --- |
-| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 25 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions, prescribed ends, Platonic symmetries, unbounded entropy |
-| [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 16 | Grim reapers, bowl, translating catenoids, delta-wings, Scherk translators, helicoid-like translators, annuloids, Scherkenoids, pitchforks, gluing constructions, prescribed-shrinker-end translators in four-space |
-| [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 9 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks, mountain-pass, unbounded-genus and knotted expanders |
-| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 19 | Stationary catenoid, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits, ancient ovals, reapernoids, stacked pancakes, spiral curves, reaper chains, dense torus curves, and rotating curve solitons |
+| [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 33 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions, prescribed ends, Platonic symmetries, unbounded entropy, Chopp’s numerical candidates |
+| [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 19 | Grim reapers, bowl, translating catenoids, delta-wings, Scherk translators, helicoid-like translators, annuloids, Scherkenoids, pitchforks, gluing constructions, prescribed-shrinker-end translators in four-space |
+| [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 12 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks, mountain-pass, unbounded-genus and knotted expanders |
+| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 25 | Stationary minimal surfaces, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits, ancient ovals, reapernoids, stacked pancakes, spiral curves, reaper chains, dense torus curves, and rotating curve solitons |
 
-Every entry has a figure: 36 support rotation and zoom, with fourth-coordinate rotation for the Clifford torus and the ancient torus curve, and time sliders for the ancient oval, torus curve, and eternal helix. Captions distinguish **exact formulas, numerical ODE solutions, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE.
+The [Chopp source review](documentation/chopp-review.md) records five numerical shrinker candidates, their original topology schematics, the conditional fattening argument, and the scope of related curvature-flow papers.
+
+Every entry has a figure. Interactive models support rotation and zoom, with fourth-coordinate rotation for the Clifford torus and the ancient torus curve, and time sliders for the ancient oval, torus curve, ancient spiral model, and eternal helix. The [immortal annulus](documentation/immortal-annulus-picture.md) has an animated schematic stage sequence, a cutaway, and a separate infinite-time limit. Captions distinguish **exact formulas, numerical ODE and PDE approximations, projections, and schematics**. Noncompact surfaces are truncated for display; higher-dimensional examples use profiles or diagrams. A schematic does not claim to solve the geometric PDE. The [spherical-doubling translator picture](documentation/sun-wang-spherical-end-picture.md) shows connected horizontal slices in four-space, with a height slider, rescaling, and a cutaway exposing the necks.
 
 The catalogue records source-supported properties and precise theorem or page locators. It combines the supplied paper collection with [Ao Sun’s research papers](https://sites.google.com/view/aosun/research) and their references; it is not an exhaustive classification. Different constructions are not automatically asserted to give noncongruent surfaces. See the [source and illustration notes](documentation/catalogue-expansion.md) for editions, normalization choices, and reproducible geometry.
+
+The [Joyce, Tsai, Lee, Zhu, Tsui, Wang and Su review](documentation/joyce-tsai-lee-zhu-review.md) adds fifteen families, including the Möbius shrinker, Lagrangian solitons, and intrinsic immortal flows. Its source audit distinguishes construction results, conditional uniqueness, and conjectures.
 
 The [AAAW13 curve-soliton expansion](documentation/aaaw-curve-solitons.md) adds five families with seven interactive figures, preserving the existing compact torus curves and shrinking helices.
 
 The [requested author survey](documentation/author-paper-search.md) adds twelve families from online papers and arXiv, records coverage of all fifteen requested authors, and updates pitchfork uniqueness and entropy. Its original figures are labeled heuristic; four also support interactive rotation and zoom.
+
+The [knotted-expander picture](documentation/knotted-expander-picture.md) shows a connected trefoil surface with three annular ends, with rotation, zoom, and views of the tube and punctures. Its topology is checked; its geometry is schematic.
 
 ## Browse by geometric properties
 
@@ -95,5 +101,7 @@ node --test tests/*.test.mjs
 GitHub Pages serves the prebuilt `docs/` directory from `main` at **[aosunmath.github.io/MCF-stack/](https://aosunmath.github.io/MCF-stack/)**. See the [deployment guide](documentation/deployment.md) for setup and publication checks.
 
 ## Attribution
+
+The [Numerical references](https://aosunmath.github.io/MCF-stack/numerical-references/) page credits figure methods, software, and documented visual sources, including Mario B. Schulz, Francisco Torralbo, Matthias Weber, David Chopp, Tom Ilmanen, and O. Michael Melko. Figure captions link to these credits. Newly generated meshes retain attribution to the pictures that informed them.
 
 MCF-stack is derived from [GMT-stack](https://github.com/aosunmath/GMT-stack), using [Mingchen Xia’s Pome framework](https://github.com/MingchenXia/Pome) and the Gerby renderer. The original infrastructure copyright and [MIT license](LICENSE) are preserved. Mathematical contributions must retain their source attribution and applicable licenses. MCF-stack is inspired by the Stacks Project and is an independent project.

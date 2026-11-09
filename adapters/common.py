@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import collections
 import collections.abc
-from copy import deepcopy
 from hashlib import sha256
 from html import escape
 import importlib
@@ -20,6 +19,7 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from source_snapshot import manuscript_snapshot, revision_markup
+from bibliography_metadata import bibliography_entry_for_html, bibliography_sort_key
 from project import CONTRIBUTORS, REPOSITORY as PROJECT_REPOSITORY
 
 SLUG = "gmt-source"
@@ -47,18 +47,6 @@ def stable_tag(label):
 
 def uncomment(text):
     return re.sub(r"(?<!\\)%[^\n]*", "", text)
-
-
-def bibliography_entry_for_html(entry):
-    """Keep a TeX-only publication link usable in the HTML bibliography."""
-    link = re.fullmatch(r"\s*\\href\{(https?://[^{}]+)\}\{([^{}]+)\}\s*",
-                        entry.fields.get("howpublished", ""))
-    if link is None:
-        return entry
-    result = deepcopy(entry)
-    result.fields["howpublished"] = link[2]
-    result.fields.setdefault("url", link[1])
-    return result
 
 
 def active_text(source, name="book.tex", stack=()):
@@ -478,7 +466,8 @@ def export(source, output, prepare=None, transform=None, local=False, chapter_ov
             authors = database.entries[key].persons.get("author", [])
             author = " ".join(authors[0].last_names) if authors else ""
             identity = "title:" + re.sub(r"[^a-z0-9]", "", unidecode(fields.get("title", "")).lower()) + ":" + fields.get("year", "") + ":" + unidecode(author).casefold()
-        reference_records.append({"key": key, "identity": identity, "html": formatted_html})
+        reference_records.append({"key": key, "identity": identity, "html": formatted_html,
+                                  "sort_key": bibliography_sort_key(database.entries[key])})
     (output / "bibliography").mkdir(exist_ok=True)
     (output / "bibliography" / "index.html").write_text(shell(bibliography, "Bibliography", records, revision, "../"))
     (output / "tags.json").write_text(json.dumps(inventory, indent=2) + "\n")

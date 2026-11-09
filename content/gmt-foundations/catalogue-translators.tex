@@ -96,7 +96,7 @@ This is a nonlinear PDE characterization; no explicit height formula is supplied
 This relation follows from the explicit tilted-cylinder width; the supplied preprint has an inverted ratio in its printed statement of Theorem 2.4.
 \item Graphical weighted stability holds. This is a strictly convex surface, whereas the tilted grim-reaper cylinders on the same strip have zero Gauss curvature.
 \end{itemize}
-See \cite{CatHIMWGraphical18}, Theorems 1.1, 2.4, 4.1 and 5.7 and Corollary 5.5 (PDF pages 4, 6, 10--12). The construction, uniqueness, and asymptotic results are cited rather than reproduced here. An illustration of the strip and its two limiting grim cylinders is a schematic of its asymptotics, not a computed solution $u_b$.
+See \cite{CatHIMWGraphical18}, Theorems 1.1, 2.4, 4.1 and 5.7 and Corollary 5.5 (PDF pages 4, 6, 10--12). The construction, uniqueness, and asymptotic results are cited rather than reproduced here. The illustration numerically approximates the rectangular Dirichlet construction in Sections 3--4 at $b=\pi/\sqrt{2}$, then recenters at the minimum and displays a compact height-truncated patch. The paper uses downward translation; the picture reflects the vertical coordinate to match the upward convention here. Profile views compare the computed surface with the exact limiting profile $-2\log\cos(y/\sqrt{2})$ and longitudinal limiting slopes $\pm1$. The computation has finite-domain and discretization error; it is not an explicit formula or a certified numerical enclosure.
 \end{example}
 
 
@@ -117,7 +117,11 @@ whose level sets are not spheres or round cylinders in any orthogonal coordinate
 The theorem does not rule out slow rotation of the axes as $h\to\infty$. This is an asymptotic limit, not a formula for $u$.
 \item The same paper also constructs nonrotational complete convex graphical translators over slab regions. No uniqueness theorem for the general higher-dimensional families is claimed here.
 \end{itemize}
-See \cite{CatXJWang11}, Theorems 1.2--1.3, printed pages 1187--1188 (PDF pages 3--4), using the case $\sigma=1$ of equation (1.2); the $\sigma=0$ case describes a different, level-set formulation. Any three-dimensional drawing of these higher-dimensional examples is only a projected or sectional schematic.
+For the construction in Section 5, write $x'=(x_1,\ldots,x_{n-1})$. Wang solves a convex Dirichlet problem on ellipsoids in the Legendre-dual variables, fixes an unequal ratio of the dual level-set widths, and passes to a limit after transforming back. When $n\geq3$, the choice $\theta>1$ in (5.8) gives an entire solution. This construction retains rotations in $x'$ and reflection in $x_n$. Wang's term $k$-rotational also requires independence of the other coordinates: partial rotation symmetry alone does not make these examples bowls or bowl products.
+
+For $n=3$, the graph lies in $\mathbb R^4$, with $x_4=u(x_1,x_2,x_3)$. A horizontal level $\{u=h\}$ can be drawn in the base $\mathbb R^3$; the construction has bounded sublevel sets by (5.13). The figure uses a convex schematic for these levels and also offers the graph slice $x_2=0$. Its rescaling control illustrates how compact levels can approach a cylindrical level locally while their caps escape. The cylinder $\{x_1^2+x_2^2=2\}$ is the exact level $Q=1$ of the $k=2$ quadratic model. Neither this quadratic nor the finite drawing formula is a translator solution; the picture selects a permitted limit model without asserting $k=2$ for all examples or a rate of convergence.
+
+See \cite{CatXJWang11}, Theorems 1.2--1.3, printed pages 1187--1188 (PDF pages 3--4), and Section 5, printed pages 1225--1234 (PDF pages 41--50), especially (5.7)--(5.13) and Section 5.3. The translator construction uses $\sigma=1$ in (1.2); the $\sigma=0$ case concerns level-set flow.
 \end{example}
 
 
@@ -135,19 +139,28 @@ These equations specify apex data, not an explicit global formula.
 \item If the two largest prescribed curvatures are equal, the resulting graph is entire. The supplied edition obtains an $(n-2)$-parameter family of pairwise noncongruent entire examples this way.
 \item The construction gives existence and the listed symmetries, but does not assert general uniqueness or convexity of every higher-dimensional graph. In particular, apex positivity alone is not a global convexity theorem.
 \end{itemize}
-See \cite{CatHIMWGraphical18}, Theorem 8.1 and Corollary 8.2, PDF page 18. The source also has a prescribed-width slab construction in Section 11; its final discussion explicitly leaves general convexity open. A curvature-ellipse illustration displays only the local Hessian data, not the global surface.
+See \cite{CatHIMWGraphical18}, Theorem 8.1 and Corollary 8.2, PDF page 18. The source also has a prescribed-width slab construction in Section 11; its final discussion explicitly leaves general convexity open.
+
+For $n=2$, the figure compares three surface cases in $\mathbb R^3$: $(k_1,k_2)=(0,1)$ gives the grim-reaper cylinder $u(x,y)=-\log\cos y$ on $\mathbb R\times(-\pi/2,\pi/2)$, while $(1/2,1/2)$ gives the rotational bowl. The intermediate picture reuses a numerical $\Delta$-wing on the strip $\mathbb R\times(-\pi/\sqrt2,\pi/\sqrt2)$, obtained by the rectangular Dirichlet construction in Sections 3--4; its measured apex Hessian is approximately $(0.2443,0.7557)$, not an exact prescribed pair. The bowl profile is integrated numerically. All three translate by $t e_3$ for $t\in\mathbb R$. The principal-section view compares the graph with the local Taylor data $\frac12 k_i s^2$; those parabolas are not global translator formulas. The picture displays surface representatives only, not the higher-dimensional members of Theorem 8.1.
 \end{example}
 
 
 \chapter{Scherkenoid translators}\label{sec:catalogue-scherkenoids}
 \begin{example}[Scherkenoid translators]\label{ex:catalogue-scherkenoids}
-The supplied notes describe Scherkenoids as complete, properly embedded, nongraphical translators in $\mathbb R^3$, obtained as limits of Scherk-type translators. Their height is not given by an explicit formula.
-\begin{itemize}
-\item They are singly periodic. The notes describe a one-parameter family using the angle between two asymptotic plane directions; no exhaustive parameterization of all Scherkenoids is asserted here.
-\item In the source's downward convention there is one asymptotic plane as $z\to+\infty$ and an infinite family of parallel asymptotic planes as $z\to-\infty$. For the upward convention used in this catalogue these two height directions are reversed.
-\item These are noncompact eternal flows. A picture of their asymptotic planes records only end arrangement and periodicity, not an exact or numerically solved Scherkenoid.
-\end{itemize}
-See \cite{CatHIMWNotes19}, Section 5 and Figure 6, PDF pages 11--12. That supplied edition surveys constructions proved elsewhere; the present entry retains that external-proof status. A later detailed source is \cite{CatHMW20}. No uniqueness, genus, entropy, or stability claim is inferred from the schematic.
+Hoffman--Mart\'in--White construct Scherkenoids for $0<\alpha<\pi$ and $w\geq\pi$ as complete, properly embedded, singly periodic translator surfaces in $\mathbb R^3$; see \cite{CatHMW20}, Theorems 2.3 and 9.2. In the catalogue's upward convention, the fundamental piece is the graph of $U$ over
+\[
+\Omega(\alpha,w)=\{(x,y):0<y<w,\ x>y\cot\alpha\},
+\]
+with $U\to+\infty$ on the two horizontal rays and $U\to-\infty$ on the finite slanted edge. The graph closes along the two vertical lines above the corners. Repeated half-turns about those lines produce the complete surface, with period $2(w\cot\alpha,w,0)$. This is a boundary-value construction, not a closed formula for $U$.
+
+The connected illustration fixes $\alpha=\pi/2$ and allows $w$ to vary. It shows how a single central sheet opens into alternating wings. Far along a wing, after recentering height, the limiting graph has the explicit profile
+\[
+G_w(x,y)=-\left(\frac{w}{\pi}\right)^2\log\sin\left(\frac{\pi y}{w}\right)
++x\sqrt{\left(\frac{w}{\pi}\right)^2-1},\qquad x\in\mathbb R,\quad 0<y<w.
+\]
+This formula describes the tilted grim-reaper limit, not the whole Scherkenoid. For $w=\pi$ the tilt vanishes. In the upward convention, the height limits are the plane $x=y\cot\alpha$ as $z\to-\infty$ and the planes $y=nw$, $n\in\mathbb Z$, as $z\to+\infty$.
+
+The drawing follows Figures 5 and 11 and Section 9 of \cite{CatHMW20}, arXiv version 4, pages 7 and 26--30. Its joining profile is schematic, not a numerical solution of the translator equation. The paper uses downward velocity; reflecting height gives the upward flow $M_t=M+t e_3$ for all $t\in\mathbb R$. See also the earlier survey \cite{CatHIMWNotes19}, Section 5. No stability or entropy conclusion is inferred from the drawing.
 \end{example}
 
 
@@ -159,19 +172,29 @@ The pitchfork is a complete, properly embedded, simply connected, nongraphical t
 \item After reflection to upward translation, it is asymptotic to one plane as $z\to-\infty$ and to three parallel planes as $z\to+\infty$. These are height-direction asymptotics, not a claim that the surface has four topological ends.
 \item Its translation yields an eternal noncompact flow. The later construction paper records finite topology and quadratic area growth for its pitchfork subfamily.
 \end{itemize}
-See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{CatHMW20}. The existence proof is external. The full construction supplies a pitchfork for each half-width $w\geq\pi$, lying in $|y|<w$. Theorem 1 of \cite{CatMSTW26} proves uniqueness up to isometry for fixed width in this semigraphical family. Moreover, \cite{CatGMM25}, Theorem 1.5, characterizes pitchforks among complete embedded simply connected translators of finite width, entropy $3$, and containing a vertical line. These hypotheses are essential to the stated classification; the plane diagram remains schematic.
+See \cite{CatHIMWNotes19}, Section 5 and Figure 7, PDF pages 11--12, and \cite{CatHMW20}. The existence proof is external. The full construction supplies a pitchfork for each half-width $w\geq\pi$, lying in $|y|<w$. Theorem 1 of \cite{CatMSTW26} proves uniqueness up to isometry for fixed width in this semigraphical family. Moreover, \cite{CatGMM25}, Theorem 1.5, characterizes pitchforks among complete embedded simply connected translators of finite width, entropy $3$, and containing a vertical line. These hypotheses are essential to the stated classification.
+
+To read the picture, remove the vertical $z$-axis. One component is a graph $z=v(x,y)$ over $\mathbb R\times(0,w)$; the other is its image under $(x,y,z)\mapsto(-x,-y,z)$. In the upward convention the boundary values are
+\[
+v(x,0)=-\infty\quad(x<0),\qquad
+v(x,0)=+\infty\quad(x>0),\qquad
+v(x,w)=+\infty.
+\]
+Theorem 12.1 and Corollary 12.2 of \cite{CatHMW20} give the smooth extension along the axis, negative Gauss curvature, and the planar and tilted-grim-reaper asymptotics. For $w=\pi$, the grim-reaper profile, after vertical recentering at $y=\pi/2$, is $-\log\sin y$ for $0<y<\pi$. This is an asymptotic profile, not a formula for the pitchfork. The interactive drawing illustrates this width using two colored halves and horizontal sections, following Figures 6 and 14 of that paper. Its connecting geometry is schematic, not a computed solution of the translator equation.
 \end{example}
 
 
 \chapter{Nguyen translating tridents}\label{sec:catalogue-nguyen-tridents}
 \begin{example}[Nguyen translating tridents]\label{ex:catalogue-nguyen-tridents}
-Nguyen's tridents are complete periodic embedded translators in $\mathbb R^3$ constructed by desingularizing the intersection of a grim-reaper cylinder and a plane. There is no explicit global parametrization in the supplied survey.
+Nguyen's tridents are complete periodic embedded translating surfaces in $\mathbb R^3$ obtained by desingularizing a grim-reaper cylinder and a plane. We use unit upward velocity $e_3$, so $M_t=M_0+t e_3$ for all $t\in\mathbb R$. There is no explicit global formula for the completed translator.
 \begin{itemize}
-\item They are noncompact and have infinite genus. The construction uses repeated small connecting regions; a smooth union of the input grim cylinder and plane is not itself the translator.
-\item The supplied notes compare their asymptotics with the pitchfork: in the upward convention there is a single asymptotic plane in the negative-height direction and three parallel asymptotic planes in the positive-height direction.
-\item They generate eternal flows by translation. Periodicity and infinite genus distinguish them from the simply connected pitchfork.
+\item They are noncompact and have infinite genus. A repeating row of Scherk saddle connections resolves the intersection; the intersecting input surfaces are not themselves a trident.
+\item In the upward convention there is one asymptotic plane as $z\to-\infty$ and three parallel asymptotic planes as $z\to+\infty$. These describe height-direction asymptotics, not a count of topological ends of the full periodic surface.
+\item Nguyen's construction applies at sufficiently small positive scales. The later semigraphical construction agrees with these examples in that range; its tridents are properly embedded and have entropy $3$ \cite{CatHMWTridents22}, Theorem 1 and pp. 2--3. This entropy is not identified with centered Gaussian area.
 \end{itemize}
-See \cite{CatHIMWNotes19}, Section 4, PDF page 11, and Section 5, PDF page 12, referring to \cite{CatNguyen09}. The construction is externally cited; the survey does not specify a full parameter range or a uniqueness, entropy, or stability result. A drawing of the intersecting plane and grim cylinder illustrates the gluing configuration only.
+The local minimal ingredient is $\sin v=\sinh u\sinh w$, with $(u,v,w)\in\mathbb R^3$ and period $2\pi$ in $v$. Its four wings are attached to two planar wings and two grim-reaper wings. In the unit upward convention the limiting inputs are $z=-\log\cos y$, $|y|<\pi/2$, $x\in\mathbb R$, and the plane $y=0$. See \cite{CatNguyen09}, Theorem 1, Sections 1.2--1.4 and Section 2 (Definitions 4--5), and \cite{CatHMWTridents22}, Figures 1--2. The latter figures use downward translation; here height is reflected.
+
+The interactive picture is an original smooth deformation of the Scherk ingredient, with three periods shown. Its half-surface view exposes the saddle connections. Its neck scale is a drawing parameter: the unbalancing, cutoff matching, and final nonlinear correction in Nguyen's proof have not been computed. In particular, its fixed illustrative half-width $\pi/2$ is the limiting input width, not the width of a finite-period trident. See \cite{CatHIMWNotes19}, Sections 4--5, for the survey comparison with the simply connected pitchfork.
 \end{example}
 
 
@@ -183,7 +206,7 @@ D\'avila--del Pino--Nguyen construct complete embedded orientable translating su
 \item The high-genus connecting region replaces a circle of intersection of the model surfaces by a Scherk-like arrangement of small tunnels.
 \item The genus restriction is part of the construction: this statement does not supply examples of every prescribed small genus or a uniqueness theorem.
 \end{itemize}
-The supplied notes \cite{CatHIMWNotes19}, Section 4, PDF page 11, describe the gluing configuration and the large-genus restriction. The original reference is \cite{CatDPN17}; its abstract states completeness, embeddedness, orientability, finite topology, and the three paraboloidal ends. A diagram of the intersecting bowl and catenoid is the singular input configuration, not the constructed surface, and no unproved stability or entropy value is assigned.
+The supplied notes \cite{CatHIMWNotes19}, Section 4, PDF page 11, describe the gluing configuration and the large-genus restriction. The original paper \cite{CatDPN17}, Theorem 1.1, Figure 2, and Section 2, supplies the construction. The illustration separates the numerically integrated bowl--catenoid input from a connected schematic of the tunnel belt. The latter is not a numerical solution of the translator equation. Its period counts are illustrative, and no unproved stability or entropy value is assigned.
 \end{example}
 
 \chapter{Translators with an Angenent-torus end}\label{sec:catalogue-sun-wang-torus-translators}
@@ -270,7 +293,16 @@ For every $0<\alpha<\pi$ and $0<w<\pi$, Hoffman--Mart\'in--White construct a com
 
 This is an elliptic boundary-value construction, not Scherk's explicit minimal-surface formula. The surface has infinite genus and strictly negative Gauss curvature. Its infinitely many asymptotic parallel planes force infinite entropy. The topological end count and centered Gaussian area are not evaluated here. Uniqueness up to ambient isometry holds for the specified angle and width. Stability of a graphical fundamental piece does not establish stability of the full reflected surface.
 
-Sources: \cite{CatHMW20}, Theorems 2.3, 3.1 and 6.1 and the discussion on pp.~9 and 17; \cite{CatMSTW26}, Theorem 1. The illustration records the alternating boundary data; it is not a computed translator.
+The illustration uses the rectangular case $\alpha=w=\pi/2$ in Figures 3 and 8 of the source. In the upward convention, the centred fundamental graph $z=v(x,y)$ satisfies
+\[
+ \left(\delta_{ij}-\frac{v_i v_j}{1+|Dv|^2}\right)v_{ij}=1,
+ \qquad (x,y)\in(-L/2,L/2)\times(-w/2,w/2),
+\]
+with $v\to+\infty$ on $y=\pm w/2$ and $v\to-\infty$ on $x=\pm L/2$. The base length is selected by the boundary-value problem, not an independent parameter; Theorem 5.1 gives $L>w$ in this rectangular case. The picture follows the finite-boundary construction in the proof of Theorem 3.1: replace the infinite data by $\pm2.5$, impose $v(0,0)=0$, and solve numerically for both $v$ and $L$. A $257\times257$ grid gives $L\approx2.4483$ for this truncated problem. This number is not a certified value of the infinite-boundary length.
+
+Only $|z|\le1.5$ is displayed. The small unresolved regions at the four vertical corner lines are filled by interpolation; the remaining surface comes from the numerical graph. The periodic view repeats the patch by vertical half-turns, preserving height, and shows finitely many copies of the resulting infinite arrangement. In centred coordinates these graph domains occupy alternating rectangles, with horizontal periods $(2L,0,0)$ and $(0,2w,0)$. The height slider changes only the displayed truncation. Neither mesh refinement nor the small discrete residual supplies a certified error bound for the complete translator.
+
+Sources: \cite{CatHMW20}, Theorems 2.3, 3.1, 5.1 and 6.1, Figures 3 and 8--10, and the discussion on pp.~9 and 17; \cite{CatMSTW26}, Theorem 1.
 \end{example}
 
 \chapter{Helicoid-like translators}\label{sec:catalogue-translating-helicoids}
@@ -289,4 +321,82 @@ For every inner half-width $b\geq\pi/2$ and necksize $s>0$, Hoffman--Mart\'in--W
 After reflecting the source's downward translator, $M_t=M+te_3$ for all $t\in\mathbb R$. The positive-height asymptotics are four planes $y=\pm b,\pm B$, counted with multiplicity if $b=B$; the negative-height end of the ambient space sees no surface. Four asymptotic planes in one height direction do not mean four topological ends. The outer half-width $B$ is an output of the construction, not an independent prescribed parameter. Capped and uncapped behaviors occur. No closed formula or uniqueness for fixed $(b,s)$ is supplied.
 
 The entropy is exactly $4$, by \cite{CatHMWAnnuli24}, Remark 7.9, using \cite{CatGMM25}, Corollary 8.5. This is not a fixed-center Gaussian-area identity. Existence and the parameters are in Theorem 1.1, Definition 1.2, and Sections 7 and 22 of \cite{CatHMWAnnuli24}. The displayed neck model is heuristic.
+\end{example}
+
+\chapter{Joyce--Lee--Tsui small-angle Lagrangian translators}\label{sec:catalogue-jlt-translators}
+The following unit-speed translators have dimension and codimension $n$ in $\mathbb C^n$.
+\begin{example}[Almost-calibrated translating Lagrangians]\label{ex:catalogue-jlt-translators}
+Fix $n\geq2$ and $a_1,\ldots,a_{n-1}>0$. Define the positive smooth function
+\[
+ P(y)=\frac{e^{y^2}\prod_{j=1}^{n-1}(1+a_jy^2)-1}{y^2},
+ \qquad P(0)=1+\sum_{j=1}^{n-1}a_j,
+\]
+and the quadratures
+\[
+ \phi_j(y)=\int_0^y\frac{dt}{(a_j^{-1}+t^2)\sqrt{P(t)}},\qquad
+ B(y)=\int_0^y\frac{dt}{\sqrt{P(t)}}.
+\]
+For $(x,y)\in\mathbb R^{n-1}\times\mathbb R$, set
+\[
+ X(x,y)=\left(x_j\sqrt{a_j^{-1}+y^2}\,e^{i\phi_j(y)}\right)_{j=1}^{n-1}
+ \mathbin{\times}\left(\tfrac12(y^2-|x|^2)+iB(y)\right).
+\]
+Here the displayed product concatenates complex coordinates. This is Corollary~I of \cite{CatJoyceLeeTsui2010} with $\alpha=1$, after a constant imaginary translation in the last coordinate. Differentiating the source's angle expression gives $\theta'=-1/\sqrt P$, so this integral form avoids a choice of argument branch.
+
+The image is a complete proper embedded Lagrangian $\mathbb R^n$ with one topological end. It satisfies $\vec H=V^\perp$ for $V=(0,\ldots,0,1)$ and evolves as $X+tV$ for all $t\in\mathbb R$. If $\bar\phi_j=\lim_{y\to\infty}\phi_j(y)$, then $0<\sum_j\bar\phi_j<\pi/2$ and the angle oscillation is $\pi-2\sum_j\bar\phi_j$; it can be arbitrarily small. The plane-pair description in the source is heuristic, not an asserted smooth asymptotic-cone theorem. The figure uses numerical quadrature of this exact integral parametrization in $\mathbb C^2$, followed by projection.
+\end{example}
+
+\chapter{Explicit rotating Lagrangian translators}\label{sec:catalogue-jlt-rotating-translators}
+An elementary subfamily of the same quadric ansatz has unbounded Lagrangian angle.
+\begin{example}[Rotating translating planes]\label{ex:catalogue-jlt-rotating-translators}
+For $n\geq2$, put $k=n-1$. The exact map
+\[
+ X(x,s)=\left(x_1e^{is},\ldots,x_ke^{is},\tfrac12|x|^2-is\right),
+ \qquad (x,s)\in\mathbb R^k\times\mathbb R,
+\]
+is a complete proper embedded Lagrangian in $\mathbb C^n$, of dimension and codimension $n$. Its translator velocity is $V=(0,\ldots,0,k)$, so $X+tV$, $t\in\mathbb R$, is eternal. Spatial dilation by $k$ gives unit translating speed if desired.
+
+This is the constant-radius case of Theorem~G and Corollary~H of \cite{CatJoyceLeeTsui2010}, with $\lambda_j=-1$, $a_j=A=1$, $u=0$, and $\alpha=k$. Directly, the metric and a lifted angle are
+\[
+ g=\sum_jdx_j^2+\left(\sum_jx_jdx_j\right)^2+(1+|x|^2)ds^2,
+ \qquad \theta=ks-\pi/2.
+\]
+Consequently
+\[
+ \vec H=J\nabla\theta
+ =\frac{k}{1+|x|^2}(-x_1e^{is},\ldots,-x_ke^{is},1)=V^\perp.
+\]
+The last imaginary coordinate recovers $s$, proving injectivity; $|X|^2=|x|^2+|x|^4/4+s^2$ proves properness. The metric dominates the Euclidean domain metric, proving completeness. Topologically it is $\mathbb R^n$, with one end. It has a combined rotation and imaginary-translation symmetry and is not almost calibrated. No stability or entropy value is claimed. The four-dimensional illustration samples the exact $n=2$ formula.
+\end{example}
+
+\chapter{Su translators obtained by gluing grim cylinders}\label{sec:catalogue-su-glued-translators}
+\begin{example}[Lawlor-neck desingularizations of grim cylinders]\label{ex:catalogue-su-glued-translators}
+Fix $m\geq3$. Let
+\[
+ \gamma_0(u)=-\log\cos u-i(u-\pi/2),\quad |u|<\pi/2,\qquad
+ L_0=\mathbb R^{m-1}\times\gamma_0((-\pi/2,\pi/2))\subset\mathbb C^m.
+\]
+Choose $\phi_j\in(0,\pi)$ with $\sum_{j=1}^m\phi_j=\pi$, and $\lambda\in\mathbb R$. Define
+\[
+ P_{\phi,\lambda}(z)=(e^{i\phi_1}z_1,\ldots,e^{i\phi_{m-1}}z_{m-1},z_m+\lambda+i\phi_m).
+\]
+The two grim cylinders meet at one transverse point and satisfy the tangent-plane angle criterion. Su proves that for all sufficiently small $\varepsilon>0$ their intersection can be replaced by a Lawlor neck and then perturbed to a smooth embedded Lagrangian translator $L_\varepsilon$, diffeomorphic to $S^{m-1}\times\mathbb R$. It is complete and proper, with two ends approaching the original cylinder ends in the weighted construction. Its dimension and codimension are $m$. With $e_m$ the real unit vector in the last complex coordinate,
+\[
+ \vec H=e_m^\perp,\qquad L_{\varepsilon,t}=L_\varepsilon+t e_m,\qquad -\infty<t<\infty.
+\]
+The parameter $\varepsilon$ is a gluing scale, not flow time. As $\varepsilon\downarrow0$ the translators converge as currents to $L_0\cup P_{\phi,\lambda}(L_0)$. The displayed formula is for the building blocks; the perturbed translator has no closed formula. Properness and completeness follow from the small decaying graph on the complete proper ends and the compact neck region.
+
+Source: \cite{CatSu2022}, Main Theorem (p.~3), Sections~3.2--3.4 (pp.~8--10), Section~4.1 (pp.~11--12), and Theorem~6.10 (p.~28). Its Corollary~1.1 also gives examples with arbitrarily many ends and noncontractible loops by finite admissible arrangements of grim cylinders. Those more general topologies are not assigned to this two-ended case. The construction requires the source's $T$-finite condition; it does not establish gluing arbitrary planes to grim cylinders. No uniqueness, entropy value, or dynamical stability is claimed. The pictures specialize to $m=3$, $\phi_1=\phi_2=\phi_3=\pi/3$, and $\lambda=0$. The common point is
+\[
+ p=(0,0,q),\qquad q=-\log\cos(\pi/6)+2\pi i/3.
+\]
+An equal-angle Lawlor neck centered at $p$ can be written, up to its scale, as
+\[
+ p+\bigl(w_\varepsilon(s)\omega_1,w_\varepsilon(s)\omega_2,
+ e^{-2\pi i/3}w_\varepsilon(s)\omega_3\bigr),\qquad
+ w_\varepsilon(s)=\varepsilon(s+i)^{1/3},\quad s\in\mathbb R,\quad\omega\in S^2,
+\]
+where $0<\arg w_\varepsilon<\pi/3$. The identity $\operatorname{Im}(w_\varepsilon^3)=\varepsilon^3$ gives the symmetric special Lagrangian neck; it is a local minimal ingredient, not itself the translator. The drawing uses the slice $\omega_2=0$ and an illustrative interpolation to the exact grim cylinders. This coordinate interpolation does not implement Su's potential gluing or final correction. The projected slice retains $(\operatorname{Re}(e^{-i\beta}z_1),\operatorname{Im}z_3,\operatorname{Re}z_3)$; omitted coordinates can create apparent crossings. The profile view selects $\omega_1=\omega_2=0$, and does not determine the topology of the full translator.
+
+At every time the picture translates by $t$ in $\operatorname{Re}z_3$ with $\varepsilon$ fixed. The frames $t=-1,0,1$ therefore have identical shapes and neck sizes. The existence theorem only supplies a sufficiently small gluing range; the displayed $\varepsilon=0.22$ is illustrative, not a certified member of that range.
 \end{example}

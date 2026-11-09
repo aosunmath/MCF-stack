@@ -1,7 +1,22 @@
 .soliton-figure{margin:28px 0;padding:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--background,#fff)}
+/* Lee–Wang: a fixed scale across all four exact time slices. */
+.soliton-figure.lw-expander-figure .soliton-stage{height:610px}
+.soliton-figure.lw-expander-figure[data-lw-view=slice] .soliton-stage{height:480px}
+.lw-expander-note{padding:8px 16px;margin:0;font-size:13px;line-height:1.6;color:#476170;background:#f7fafb}
+.lw-time-presets{display:flex;flex-wrap:wrap;gap:8px;flex-basis:100%}
+.soliton-figure[data-soliton$="lw-quadric-expanders.json"]:has(img:not([hidden])) .soliton-stage{height:auto;aspect-ratio:800/860}
+@media(max-width:699px){.soliton-figure.lw-expander-figure .soliton-stage{height:530px}.soliton-figure.lw-expander-figure[data-lw-view=orbit] .soliton-stage{height:650px}.soliton-figure.lw-expander-figure[data-lw-view=slice] .soliton-stage{height:390px}}
+@media print{.lw-expander-note{display:none}.soliton-figure.lw-expander-figure .soliton-stage{height:auto!important;aspect-ratio:800/860}}
+.soliton-experiment{margin:28px 0;padding:16px;border:1px solid var(--line);border-radius:5px}
+.soliton-experiment h3{margin-top:0}.soliton-experiment summary{cursor:pointer;font-weight:600;padding:10px 0}
+.soliton-experiment iframe{display:block;width:100%;height:850px;max-height:90vh;border:1px solid var(--line);box-sizing:border-box;background:#fff}
+@media(max-width:699px){.soliton-experiment{padding:10px}.soliton-experiment iframe{height:740px}}
+@media print{.soliton-experiment details{display:none}}
 .soliton-figure .soliton-stage{width:100%;height:390px;background:#f7fafb;position:relative;overflow:hidden}
 .soliton-figure img{width:100%;height:100%;object-fit:contain;display:block}.soliton-figure [hidden]{display:none!important}
 .soliton-figure canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}.soliton-figure canvas:active{cursor:grabbing}.soliton-figure canvas:focus-visible{outline:3px solid #21667f;outline-offset:-3px}
+.soliton-view-label{position:absolute;top:8px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+@media print{.soliton-view-label{display:none}}
 .soliton-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}.soliton-controls button{font-size:13px;min-height:36px;padding:5px 10px}.soliton-controls label{display:flex;align-items:center;gap:8px;font-size:13px;flex-wrap:wrap}.soliton-controls input[type=range]{max-width:180px;min-height:36px}.soliton-controls button[aria-pressed=true]{background:#dbeaf0}
 .soliton-figure figcaption{font-size:14px;line-height:1.6;padding:12px 16px}.soliton-status:empty{display:none}.soliton-help{font-size:12px;color:var(--muted);padding:0 16px;margin:0 0 8px}.soliton-figure .soliton-status{font-size:13px;padding:0 16px}.catalogue-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.catalogue-links a{padding:12px 14px;border:1px solid var(--line);text-decoration:none;font-weight:600}.catalogue-links small{display:block;font-weight:400;color:var(--muted)}
 @media(max-width:699px){.soliton-figure .soliton-stage{height:300px}.soliton-controls button{min-height:44px}.catalogue-links{grid-template-columns:1fr}.soliton-figure figcaption{font-size:13px}}
@@ -15,9 +30,145 @@
 .bns-view-label{position:absolute;top:10px;left:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
 .spherical-view-label{position:absolute;top:10px;left:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
 .spherical-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.spherical-legend span{display:inline-flex;align-items:center;gap:6px}.spherical-legend i{width:10px;height:10px;border-radius:50%}
+.sw-end-figure .soliton-stage{height:460px}
+.sw-end-label,.sw-end-scale{position:absolute;left:14px;right:14px;margin:0;font-size:13px;line-height:1.5;color:#476170;pointer-events:none}
+.sw-end-label{top:12px}.sw-end-scale{bottom:12px;text-align:center}
+.sw-end-equation{margin:8px 16px 0;padding:12px 14px;border-left:3px solid #b5ccd6;background:#f7fafb;color:#183f52}
+.sw-end-equation p{margin:0;font-size:15px;line-height:1.6}.sw-end-equation p+p{margin-top:5px;font-size:12px;color:#476170}
+.soliton-controls .sw-height-control{flex-basis:100%}.sw-height-control output{font-variant-numeric:tabular-nums;min-width:2.5em}
+@media(max-width:699px){.sw-end-figure .soliton-stage{height:350px}.sw-end-label,.sw-end-scale{font-size:12px}.sw-end-equation p{font-size:13px}}
+@media print{.sw-end-label,.sw-end-scale,.sw-end-equation{display:none}}
 @media print{.spherical-view-label,.spherical-legend{display:none}}
 @media(max-width:699px){.soliton-controls select{min-height:44px}}
 
 .nguyen-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.delta-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.delta-legend{font-size:12px;line-height:1.5;margin:6px 16px 12px;color:#476170}
+.apex-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;line-height:1.4;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;padding:4px 7px;border-radius:4px;max-width:calc(100% - 28px);box-sizing:border-box}
+.apex-legend{font-size:12px;line-height:1.5;margin:6px 16px 12px;color:#476170}
+@media print{.apex-view-label,.apex-legend{display:none}}
+@media print{.delta-view-label,.delta-legend{display:none}}
 .nguyen-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.nguyen-legend span{display:inline-flex;align-items:center;gap:6px}.nguyen-legend i{width:10px;height:10px;border-radius:50%}
 @media print{.nguyen-view-label,.nguyen-legend{display:none}}
+
+.iw-view-label{right:14px;line-height:1.4}
+@media print{.iw-view-label{display:none}}
+.hmw-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
+@media print{.hmw-view-label{display:none}}
+.shao-zou-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;max-width:calc(100% - 28px);padding:4px 7px;box-sizing:border-box;border-radius:4px}
+.shao-zou-plan{padding:12px 16px;background:#f7fafb;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(100px,170px) 1fr;gap:0 12px;align-items:center;color:#183f52;font-size:13px;line-height:1.5}.shao-zou-plan svg{display:block;width:100%}.shao-zou-plan p{margin:6px 0}.shao-zou-plan .shao-zou-plan-note{grid-column:1/-1;color:#58727e;font-size:12px}
+@media print{.shao-zou-view-label,.shao-zou-plan{display:none}}
+.hmw-rays-view-label{position:absolute;top:10px;left:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;border-radius:4px;pointer-events:none}
+.hmw-rays-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.hmw-rays-legend span{display:inline-flex;align-items:center;gap:6px}.hmw-rays-legend i{width:10px;height:10px;border-radius:50%}
+@media print{.hmw-rays-view-label,.hmw-rays-legend{display:none}}
+.trident-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.trident-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.trident-legend span{display:inline-flex;align-items:center;gap:6px}.trident-legend i{width:10px;height:10px;border-radius:50%}
+@media print{.trident-view-label,.trident-legend{display:none}}
+.dpn-view-label{position:absolute;top:10px;left:14px;margin:0;padding:4px 7px;border-radius:4px;font-size:12px;color:#476170;background:#f7fafbe8;pointer-events:none}
+.dpn-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.dpn-legend span{display:inline-flex;align-items:center;gap:6px}.dpn-legend i{width:10px;height:10px;border-radius:50%}
+@media print{.dpn-view-label,.dpn-legend{display:none}}
+.scherkenoid-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.scherkenoid-legend{font-size:12px;line-height:1.6;margin:0;padding:0 16px 10px;color:var(--muted)}
+@media print{.scherkenoid-view-label,.scherkenoid-legend{display:none}}
+
+.scherk-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.scherk-legend{padding:0 16px;margin:8px 0 12px;font-size:12px;line-height:1.6}
+@media print{.scherk-view-label,.scherk-legend{display:none}}
+.pitchfork-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.pitchfork-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 16px;margin:8px 0 12px;font-size:12px}.pitchfork-legend span{display:inline-flex;align-items:center;gap:6px}.pitchfork-legend i{width:10px;height:10px;border-radius:50%}.soliton-controls output{min-width:3em;font-variant-numeric:tabular-nums}
+@media print{.pitchfork-view-label,.pitchfork-legend{display:none}}
+
+.torus-end-label,.torus-end-axes{position:absolute;left:14px;right:14px;margin:0;font-size:12px;line-height:1.45;color:#476170;pointer-events:none;background:#f7fafbe8;width:fit-content;max-width:calc(100% - 28px);padding:4px 7px;box-sizing:border-box;border-radius:4px}.torus-end-label{top:10px}.torus-end-axes{bottom:8px}
+@media print{.torus-end-label,.torus-end-axes{display:none}}
+.wang-view-label{position:absolute;top:10px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;background:#f7fafbe8;padding:4px 7px;pointer-events:none}
+.soliton-figure canvas.wang-axes{position:absolute;inset:0;pointer-events:none;touch-action:auto}
+.wang-model-note{font-size:13px;line-height:1.6;padding:0 16px 12px}.wang-model-note summary{cursor:pointer;font-weight:600}.wang-model-note p{margin:10px 0}
+.soliton-figure:has(img[src$="anisotropic-quadratic.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:640/680}
+@media print{.wang-view-label,.wang-model-note{display:none}.soliton-figure:has(img[src$="anisotropic-quadratic.svg"]) .soliton-stage{height:auto;aspect-ratio:640/680}}
+
+/* Planar network comparison: preserve equal scales, stack panels on phones. */
+.network-figure .soliton-stage{height:430px}
+.network-figure canvas,.network-figure canvas:active{cursor:default;touch-action:pan-y}
+@media(max-width:699px){.network-figure .soliton-stage{height:660px}}
+@media print{.network-figure .soliton-stage{height:390px}}
+.expander-view-label { position:absolute; left:12px; top:8px; margin:0; max-width:calc(100% - 24px); padding:5px 9px; border-radius:6px; background:rgba(247,250,251,.92); color:#183f52; font:600 13px/1.4 system-ui,sans-serif; pointer-events:none; }
+.expander-legend { margin:.4rem 1rem; font-size:.85rem; line-height:1.5; color:#526b77; }
+.soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage:has(img:not([hidden])) { height:auto; aspect-ratio:1000/840; }
+@media print { .expander-view-label,.expander-legend { display:none !important; } }
+@media print { .soliton-figure[data-soliton$="high-genus-expanders.json"] .soliton-stage { height:auto; aspect-ratio:1000/840; } }
+.ancient-spiral-figure .soliton-stage{height:560px}.ancient-spiral-figure canvas{cursor:default;touch-action:pan-y}.spiral-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 16px;font-size:12px}.spiral-legend span{display:inline-flex;align-items:center;gap:6px}.spiral-legend i{width:18px;height:3px}.ancient-spiral-figure .soliton-controls label{flex:1 1 220px}.ancient-spiral-figure .soliton-controls input[type=range]{flex:1;max-width:260px;min-width:120px}.ancient-spiral-figure output{min-width:78px}.ancient-spiral-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.ancient-spiral-figure .soliton-stage{height:580px}.ancient-spiral-figure .soliton-controls label{flex-basis:100%;order:-1}}
+@media print{.ancient-spiral-figure .soliton-stage{height:auto}.ancient-spiral-figure .soliton-stage img{height:auto}.spiral-legend{display:none}.ancient-spiral-figure .soliton-status{display:none}}
+
+.soliton-figure[data-soliton$="ancient-spiral-curves.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:880/760}
+/* Knotted expander: labels identify the three artificial end cuts. */
+.knotted-view-label{position:absolute;top:12px;left:14px;right:14px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.knotted-end-label{position:absolute;transform:translate(-50%,-50%);width:21px;height:21px;border-radius:50%;background:#f7fafbe8;border:1px solid #8b9fa8;color:#183f52;font:12px/21px Arial,sans-serif;text-align:center;pointer-events:none}
+@media print{.knotted-view-label,.knotted-end-label{display:none}}
+/* Planar numerical flow: fixed-scale snapshots and a time-controlled main view. */
+.reaper-flow .soliton-stage{height:370px}.reaper-view-label{position:absolute;top:12px;left:14px;margin:0;color:#355767;font-size:13px;pointer-events:none;background:#f7fafbe8;padding:3px 6px}
+.reaper-snapshots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:8px 14px 12px}.reaper-snapshots button{min-width:0;padding:7px;border:1px solid #c8d8df;border-radius:4px;background:#fff;color:#244b60;font:13px system-ui;text-align:left;cursor:pointer}.reaper-snapshots button[aria-pressed=true]{border-color:#176b85;box-shadow:inset 0 0 0 1px #176b85;background:#f0f8fa}.reaper-snapshots svg{display:block;width:100%;height:auto;overflow:hidden}.reaper-model-note{margin:0;padding:0 16px 12px;font-size:12px;line-height:1.5;color:var(--muted)}
+@media(max-width:699px){.reaper-flow .soliton-stage{height:280px}.reaper-snapshots{grid-template-columns:repeat(2,minmax(0,1fr))}.reaper-flow .soliton-controls label{flex-basis:100%}.reaper-flow .soliton-controls input[type=range]{flex:1;max-width:none;min-width:100px}}
+@media print{.reaper-flow .soliton-stage{height:auto;aspect-ratio:960/620}.reaper-snapshots,.reaper-model-note,.reaper-view-label{display:none}}
+/* Finite stages and a separate infinite-time limit for the immortal annulus. */
+.annulus-figure .soliton-stage{height:535px}
+.annulus-sequence{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex-basis:100%}
+.annulus-sequence label{flex-basis:100%}
+@media(max-width:699px){.annulus-figure .soliton-stage{height:490px}}
+@media print{.annulus-figure .soliton-stage{height:auto;aspect-ratio:4/3}}
+.neckpinch-figure .soliton-stage{height:520px}
+figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){height:auto;aspect-ratio:960/700}
+.neckpinch-figure .soliton-stage[data-mode=limits]{height:720px}
+.neckpinch-views{display:flex;gap:8px;flex-wrap:wrap;flex-basis:100%}
+.neckpinch-time{flex-basis:100%}
+.neckpinch-legend{display:flex;gap:8px 20px;flex-wrap:wrap;padding:0 16px;font-size:12px}
+.neckpinch-legend span{white-space:nowrap}
+@media(min-width:1100px){.neckpinch-figure .soliton-stage[data-mode=limits]{height:420px}}
+@media(max-width:699px){.neckpinch-figure .soliton-stage{height:330px}.neckpinch-figure .soliton-stage[data-mode=sequence]{height:820px}.neckpinch-figure .soliton-stage[data-mode=profile]{height:570px}.neckpinch-figure .soliton-stage[data-mode=limits]{height:720px}}
+@media print{.neckpinch-figure .soliton-stage{height:auto!important;aspect-ratio:960/700}.neckpinch-legend{display:none}}
+/* Whitney flow: one spatial scale across four computed times. */
+.soliton-figure.whitney-flow-figure .soliton-stage{height:570px}
+.whitney-legend{font-size:12px;line-height:1.6;padding:0 16px;margin:10px 0}
+.soliton-controls .whitney-time{flex-basis:100%}.whitney-time input[type=range]{flex:1;max-width:420px;min-width:140px}.whitney-time output{min-width:95px}
+@media(max-width:699px){.soliton-figure.whitney-flow-figure .soliton-stage{height:520px}}
+@media print{.whitney-legend{display:none}.soliton-figure.whitney-flow-figure .soliton-stage{height:440px}}
+
+/* Compact immortal flow: stacked time panels on narrow screens. */
+.immortal-product-legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 16px;font-size:12px;line-height:1.5}.immortal-product-figure .soliton-controls label{flex-basis:100%}.immortal-product-figure .soliton-status{line-height:1.6}.immortal-product-figure canvas{touch-action:pan-y}.immortal-product-figure .soliton-stage{height:auto}
+.soliton-figure[data-soliton$="immortal-product.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:960/964}
+@media print{.immortal-product-legend,.immortal-product-figure .soliton-status{display:none}.immortal-product-figure .soliton-stage{height:auto!important;aspect-ratio:960/964}.immortal-product-figure .soliton-stage img{height:auto}}
+.immortal-product-figure .soliton-controls{border-top:0;border-bottom:1px solid var(--line)}.immortal-product-figure .soliton-help{margin-top:10px}
+/* Four Costa model times share one scale and camera. */
+.minimal-ancient-figure .soliton-stage{height:590px}.minimal-ancient-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.minimal-ancient-figure .minimal-time-control{flex-basis:100%}.minimal-time-control input[type=range]{flex:1;max-width:350px}.minimal-time-control output{min-width:85px}.minimal-ancient-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.minimal-ancient-figure .soliton-stage{height:540px}.minimal-ancient-figure .soliton-controls select{max-width:205px}}
+.soliton-figure[data-soliton$="minimal-ancient-flows.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/850}
+@media print{.minimal-ancient-figure .soliton-stage{height:auto}.minimal-ancient-figure .soliton-stage img{height:auto}.minimal-ancient-note,.minimal-ancient-figure .soliton-status{display:none}}
+/* Ancient oval: offline numerical time slices and an equal-scale comparison. */
+.hh-flow .soliton-stage{height:380px}.hh-view-label{position:absolute;top:12px;left:16px;right:16px;margin:0;font-size:12px;color:#476170;pointer-events:none}
+.hh-time-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;flex-basis:100%}.hh-time-controls label{flex:1;min-width:180px;display:flex;flex-direction:column;align-items:stretch}.hh-time-controls input[type=range]{width:100%;max-width:none}.hh-time-controls output{font-variant-numeric:tabular-nums;font-size:13px}
+.hh-strip-title{font-size:12px;color:var(--muted);margin:12px 14px 4px}.hh-snapshots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px 12px 12px}.hh-snapshots button{padding:3px 5px 7px;min-width:0;border:1px solid #cbdce3;border-radius:4px;background:#f7fafb;color:#183f52;cursor:pointer}.hh-snapshots button[aria-pressed=true]{background:#e2eff4;border-color:#21667f}.hh-snapshots svg{width:100%;height:auto;display:block}.hh-snapshots span{font-size:12px;font-variant-numeric:tabular-nums}
+@media(max-width:699px){.hh-flow .soliton-stage{height:290px}.hh-snapshots{grid-template-columns:repeat(2,minmax(0,1fr))}.hh-time-controls{align-items:stretch}.hh-time-controls label{flex-basis:100%}.hh-time-controls button{min-height:44px}}
+@media print{.hh-flow .soliton-stage{height:auto;aspect-ratio:11/7}.hh-view-label,.hh-snapshots,.hh-strip-title,.hh-flow .soliton-status{display:none}}
+
+/* The reapernoid has distinct surface and higher-dimensional meridian views. */
+.reapernoid-figure .soliton-stage{height:590px}.reapernoid-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.reapernoid-figure .reapernoid-time{flex-basis:100%}.reapernoid-time input[type=range]{flex:1;max-width:350px}.reapernoid-time output{min-width:75px}.reapernoid-figure .soliton-status{line-height:1.6}
+@media(max-width:699px){.reapernoid-figure .soliton-stage{height:550px}.reapernoid-figure .soliton-controls select{max-width:205px}}
+.soliton-figure[data-soliton$="reapernoid.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/810}
+.soliton-figure .soliton-stage:has(img[src$="reapernoid-limits.svg"]){height:auto;aspect-ratio:1000/750}
+@media print{.reapernoid-figure .soliton-stage{height:auto}.reapernoid-figure .soliton-stage img{height:auto}.reapernoid-note,.reapernoid-figure .soliton-status{display:none}}
+
+/* Exact Lee–Wang phase leaves; fixed scale for all four time panels. */
+.lw-figure .soliton-stage{height:660px}.lw-figure .soliton-stage[data-view=single],.lw-figure .soliton-stage[data-view=orbits]{height:460px}
+.lw-note{font-size:13px;line-height:1.6;color:#526b77;margin:10px 16px}.lw-figure .soliton-status{line-height:1.6}
+.lw-figure .lw-time,.lw-figure .lw-phase{flex-basis:100%}.lw-figure input[type=range]{flex:1;max-width:400px;min-width:100px}.lw-figure output{min-width:105px}
+@media(max-width:699px){.lw-figure .soliton-stage{height:530px}.lw-figure .soliton-stage[data-view=single],.lw-figure .soliton-stage[data-view=orbits]{height:360px}}
+.soliton-figure:has(img[src$="lw-quadric-shrinkers.svg"]):not(:has(canvas:not([hidden]))) .soliton-stage{height:auto;aspect-ratio:1000/900}
+@media print{.lw-figure .soliton-stage{height:auto!important;aspect-ratio:1000/900}.lw-note,.lw-figure .soliton-status{display:none}}
+.su-gluing-figure .soliton-stage{height:480px}
+.su-view-label{position:absolute;top:12px;left:14px;right:14px;margin:0;color:#476170;font-size:13px;line-height:1.5;pointer-events:none;background:#f7fafbe8}
+.su-time-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;flex-basis:100%}
+.su-time-controls output{min-width:3.2em;font-variant-numeric:tabular-nums}
+.su-legend{display:flex;flex-wrap:wrap;gap:8px 20px;padding:0 16px;margin:8px 0;font-size:12px}
+.su-legend span{display:inline-flex;align-items:center;gap:6px}.su-legend i{width:10px;height:10px;border-radius:50%}
+@media(max-width:699px){.su-gluing-figure .soliton-stage{height:370px}.su-gluing-figure .soliton-controls select{max-width:100%;min-height:44px}.su-time-controls label{flex-basis:100%}.su-time-controls input[type=range]{flex:1;min-width:0;max-width:200px}}
+@media print{.su-view-label,.su-legend{display:none}}

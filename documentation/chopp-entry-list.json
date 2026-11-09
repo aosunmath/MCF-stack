@@ -1,0 +1,52 @@
+[
+  {
+    "key": "cube",
+    "label": "ex:catalogue-chopp-cube",
+    "title": "Chopp cubical shrinker candidate",
+    "section": "chopp-cubical-shrinker-candidate",
+    "genus": 5,
+    "ends": 0,
+    "source": "Section 4.1, pp. 7\u20138; Figures 8\u201312",
+    "reported_diagnostic": "0.01869"
+  },
+  {
+    "key": "octahedron",
+    "label": "ex:catalogue-chopp-octahedron",
+    "title": "Chopp octahedral shrinker candidate",
+    "section": "chopp-octahedral-shrinker-candidate",
+    "genus": 7,
+    "ends": 0,
+    "source": "Section 4.2, pp. 7\u20139; Figures 13\u201315",
+    "reported_diagnostic": "0.0197"
+  },
+  {
+    "key": "saddle",
+    "label": "ex:catalogue-chopp-saddle",
+    "title": "Chopp punctured-torus saddle candidate",
+    "section": "chopp-punctured-torus-saddle-candidate",
+    "genus": 1,
+    "ends": 1,
+    "source": "Section 4.3, pp. 9\u201311; Figures 16\u201319",
+    "reported_diagnostic": "0.005848"
+  },
+  {
+    "key": "two-handle",
+    "label": "ex:catalogue-chopp-two-handle",
+    "title": "Chopp two-handled cone candidate",
+    "section": "chopp-two-handled-cone-candidate",
+    "genus": 1,
+    "ends": 2,
+    "source": "Section 4.4, pp. 11\u201312; Figures 20\u201323",
+    "reported_diagnostic": "0.01983"
+  },
+  {
+    "key": "four-handle",
+    "label": "ex:catalogue-chopp-four-handle",
+    "title": "Chopp four-handled cone candidate",
+    "section": "chopp-four-handled-cone-candidate",
+    "genus": 3,
+    "ends": 2,
+    "source": "Section 4.6, pp. 12\u201313; Figures 26\u201328; AIC95 Section 1, pp. 1940\u20131944, Assertion 1",
+    "reported_diagnostic": "0.0505"
+  }
+]

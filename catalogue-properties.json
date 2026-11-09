@@ -1057,7 +1057,7 @@
     },
     {
       "label": "ex:catalogue-wang-entire-translators",
-      "notes": "",
+      "notes": "The picture shows a schematic level surface in the base ℝ³ of an n = 3 graph in ℝ⁴; its surface topology is not the topology of the translator. Section 5 retains rotation symmetry in x′ and reflection in xₙ. Wang’s k-rotational symmetry also requires independence of the remaining coordinates.",
       "citations": [
         "CatXJWang11"
       ],
@@ -1164,7 +1164,7 @@
     },
     {
       "label": "ex:catalogue-scherkenoids",
-      "notes": "Asymptotic planes in a height direction are not automatically topological ends.",
+      "notes": "The source family has 0 < α < π and w ≥ π at unit translation speed. The illustration fixes α = π/2 and varies w. Asymptotic planes in a height direction are not automatically topological ends; the displayed joining shape is schematic.",
       "citations": [
         "CatHIMWNotes19",
         "CatHMW20"
@@ -1245,10 +1245,11 @@
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
-      "notes": "",
+      "notes": "The picture is a construction schematic. Its neck scale and limiting half-width do not specify a computed translator. One lower and three upper limiting planes are height-direction asymptotics, not a topological end count.",
       "citations": [
         "CatHIMWNotes19",
-        "CatNguyen09"
+        "CatNguyen09",
+        "CatHMWTridents22"
       ],
       "cases": [
         {
@@ -1268,8 +1269,9 @@
           },
           "compact": false,
           "entropy": {
-            "status": "not-recorded",
-            "text": "Not recorded in this entry."
+            "status": "exact",
+            "text": "λ = 3; Hoffman–Martín–White, arXiv:1909.09241v2, p. 3. Not inferred from the drawing or equated with F₀,₁.",
+            "value": 3
           },
           "gaussian": {
             "status": "not-recorded",
@@ -1277,7 +1279,7 @@
           },
           "embeddedness": {
             "key": "embedded",
-            "text": "The periodic translators are embedded after desingularization; the intersecting plane and grim cylinder are construction inputs."
+            "text": "Complete and properly embedded periodic tridents; Nguyen’s small-scale examples coincide with the semigraphical family by Hoffman–Martín–White, Theorem 1 and p. 2. The intersecting plane and grim cylinder are limiting inputs."
           }
         }
       ]
@@ -1729,13 +1731,14 @@
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
-      "notes": "",
+      "notes": "Every smooth minimal immersion in a fixed ambient metric gives a stationary flow for all real times. The cases below concern immersions without boundary. Completeness, properness, symmetry and stability depend on the chosen immersion; none is assumed for the general class. The catenoid is the illustrated example. Genus describes the parameter surface when orientable; the fixed-boundary numerical catenoid benchmark is discussed in the text.",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "cases": [
         {
-          "name": "",
+          "name": "Catenoid in ℝ³ (illustrated example)",
           "ambient": [
             "r3"
           ],
@@ -1761,6 +1764,155 @@
           "embeddedness": {
             "key": "embedded",
             "text": "Every stationary time slice is a properly embedded annulus."
+          }
+        },
+        {
+          "name": "Affine planes in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "ℝ²; complete and properly embedded",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "value": 1,
+            "text": "λ(P) = 1 for every multiplicity-one affine plane."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(P) = exp(−dist(0,P)²/4); equals 1 exactly when the plane contains the origin."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The stated affine parametrization is an embedding; multiple covers are not included in this case."
+          }
+        },
+        {
+          "name": "General minimal surfaces in ℝᴺ, N ≥ 3 (codimension N − 2)",
+          "ambient": [
+            "r3",
+            "r4",
+            "higher"
+          ],
+          "dimension": "surface",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the chosen orientable parameter surface; no single genus is assigned to this class."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value, uniform bound or general finiteness assertion is recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or general finiteness assertion is recorded; not identified with entropy."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal submanifolds of dimension n ≥ 3 in ℝᴺ, N ≥ n + 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value, uniform bound or general finiteness assertion is recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or general finiteness assertion is recorded; not identified with entropy."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal surfaces in fixed Riemannian manifolds of dimension N ≥ 3",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the chosen orientable parameter surface; no single genus is assigned to this class."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": null,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean entropy is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal submanifolds of dimension n ≥ 3 in fixed Riemannian manifolds of dimension N ≥ n + 1",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": null,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean entropy is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
           }
         }
       ]
@@ -2905,7 +3057,7 @@
     },
     {
       "label": "ex:catalogue-hmw-platonic-polygon",
-      "notes": "MCF construction, separate from the min-max entries; no equality or noncongruence theorem is asserted. Compact numerical pictures do not determine compactness of the theorem’s selected surfaces.",
+      "notes": "MCF construction, separate from the min-max entries; no equality or noncongruence theorem is asserted. Compact numerical pictures do not determine compactness of the theorem’s selected surfaces. The interactive punctured-shell models illustrate the topology of the initial-surface construction in Theorem 24; their compactness and display parameters are not properties of the tangent shrinkers.",
       "citations": [
         "CatHMW2026"
       ],
@@ -3752,7 +3904,7 @@
     },
     {
       "label": "ex:catalogue-hh-ancient-ovals",
-      "notes": "",
+      "notes": "The time-dependent illustration computes finite-seed rotational MCF for n = 2, j = 1. It is not certified ancient-flow data and does not supply Gaussian-area or entropy values. The properties below refer to the mathematical ancient flows.",
       "citations": [
         "CatHH13",
         "CatHS14"
@@ -3821,7 +3973,7 @@
     },
     {
       "label": "ex:catalogue-minimal-ancient-flows",
-      "notes": "",
+      "notes": "The interactive time sequence is a numerical linearized model on a truncated Costa domain. Its Dirichlet eigenvalue and magnified normal offsets are illustration data, not additional properties of the nonlinear ancient flows.",
       "citations": [
         "CatMP19"
       ],
@@ -3859,7 +4011,7 @@
     },
     {
       "label": "ex:catalogue-reapernoid",
-      "notes": "",
+      "notes": "Numerical time views approximate the paper’s outward-offset construction on truncated domains in n=2 and n=3. Surface rotation is shown only for n=2 in ℝ³. The n=3 case in ℝ⁴ is a meridian. Forward limits are recentered pointed limits: a line for n=2, a grim reaper for n≥3.",
       "citations": [
         "CatMP19"
       ],
@@ -3966,7 +4118,7 @@
     },
     {
       "label": "ex:catalogue-ancient-spiral-curves",
-      "notes": "",
+      "notes": "The time-dependent figure shows numerical rotating-soliton arms with an asymptotic cap. Its displayed times and geometry are model values, not a numerical construction or certification of the ancient solution.",
       "citations": [
         "CatZOKA23"
       ],
@@ -4006,7 +4158,8 @@
       "label": "ex:catalogue-grim-reaper-chains",
       "notes": "",
       "citations": [
-        "CatAY18"
+        "CatAY18",
+        "CatChoiSeoSuZhao2026"
       ],
       "cases": [
         {
@@ -4030,12 +4183,951 @@
             "text": "Embedded regular slices in the stated ambient space; schematic projections do not determine embeddedness."
           },
           "entropy": {
-            "status": "not-recorded",
-            "text": "No entropy value recorded in the checked statement."
+            "status": "bound",
+            "text": "Each slice has entropy at most 4; the supremum over the whole selected m = 3 eternal flow is exactly 4 by Choi–Seo–Su–Zhao (2026), Corollary 1.5. Equality for every slice is not asserted.",
+            "upper": 4
           },
           "gaussian": {
             "status": "not-recorded",
             "text": "No fixed-center Gaussian-area value recorded; it is not identified with entropy."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-mobius-shrinker",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatLeeWang2009",
+        "CatBraxtonLeeZhu2026"
+      ],
+      "cases": [
+        {
+          "name": "Single-covered Möbius bundle in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Open Möbius line bundle; one crosscap",
+          "genus": {
+            "key": "nonorientable",
+            "text": "Nonorientable surface with one crosscap; orientable genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the two r-directions are identified by the quotient."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded after (θ + π, −r) ~ (θ, r). The cylindrical parametrization before quotient is a nonembedding double cover."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = (√2 e^(1/8)/8)[K₀(3/8) + 3K₁(3/8)], for the embedded quotient counted once. Kⱼ is the modified Bessel function of the second kind. The formula is exact; no rounded scalar is used in proved-bound filtering."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = λ for this normalized proper asymptotically conical shrinker. λ = (√2 e^(1/8)/8)[K₀(3/8) + 3K₁(3/8)], for the embedded quotient counted once. Kⱼ is the modified Bessel function of the second kind. The formula is exact; no rounded scalar is used in proved-bound filtering."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-jlt-compact-shrinkers",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "cases": [
+        {
+          "name": "Nonconstant periodic quadric shrinker in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Torus S¹ × S¹ (immersion domain)",
+          "genus": {
+            "key": "1",
+            "text": "1 for the torus parameter domain in C²."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact domain)."
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The theorem establishes an immersion of Sⁿ⁻¹ × S¹. It does not establish embeddedness for every closing datum; the constant-radius subcase is excluded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Compact smooth shrinker immersion, with multiplicity counted: F₀,₁ = λ is finite in the normalization H = −X⊥/2; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Compact smooth shrinker immersion, with multiplicity counted: F₀,₁ = λ is finite in the normalization H = −X⊥/2; no value recorded."
+          }
+        },
+        {
+          "name": "Nonconstant periodic quadric shrinker in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × S¹",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact domain)."
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The theorem establishes an immersion of Sⁿ⁻¹ × S¹. It does not establish embeddedness for every closing datum; the constant-radius subcase is excluded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Compact smooth shrinker immersion, with multiplicity counted: F₀,₁ = λ is finite in the normalization H = −X⊥/2; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Compact smooth shrinker immersion, with multiplicity counted: F₀,₁ = λ is finite in the normalization H = −X⊥/2; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-jlt-translators",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian translator in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "R²",
+          "genus": {
+            "key": "0",
+            "text": "0 (plane topology)."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          }
+        },
+        {
+          "name": "Lagrangian translator in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-jlt-rotating-translators",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian translator in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "R²",
+          "genus": {
+            "key": "0",
+            "text": "0 (plane topology)."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "The exact parametrization has area density 1+x² and |X|²=x²+x⁴/4+s², so the centered Gaussian integral is finite. This does not assert finite entropy."
+          }
+        },
+        {
+          "name": "Lagrangian translator in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-jlt-expanders",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian neck in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × R",
+          "genus": {
+            "key": "0",
+            "text": "0 (annulus)."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two planar ends."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          }
+        },
+        {
+          "name": "Lagrangian neck in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × R",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two planar ends."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-ttw-expanders",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatTsaiTsuiWang2025"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian expander graph in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "R²",
+          "genus": {
+            "key": "0",
+            "text": "0 (plane topology)."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          }
+        },
+        {
+          "name": "Lagrangian expander graph in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end of Rⁿ, n ≥ 2."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; centered Gaussian area and entropy are separate quantities."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-lawlor-necks",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatJoyceLeeTsui2010",
+        "CatImagiJoyceOliveira2016"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian neck in C²",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "surface",
+          "topology": "Annulus S¹ × R",
+          "genus": {
+            "key": "0",
+            "text": "0 (annulus)."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two planar ends."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          }
+        },
+        {
+          "name": "Lagrangian neck in Cⁿ, n ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × R",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension n ≥ 3; surface genus does not apply."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two planar ends."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The complete image is embedded in Cⁿ; crossings in a projection do not count as self-intersections."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or planar-end geometry; no value recorded. Centered Gaussian area is not identified with entropy unless the normalized-shrinker hypotheses apply."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-aryan-lee",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatAryanLee2026"
+      ],
+      "cases": [
+        {
+          "name": "Immortal closed curve in (S²,g)",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "curve",
+          "topology": "Circle S¹ at every finite time",
+          "genus": {
+            "key": "na",
+            "text": "Curve, not surface."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact)."
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The stated regular submanifold is embedded in its full ambient space."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-su-tsai-wood",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatSuTsaiWood2026"
+      ],
+      "cases": [
+        {
+          "name": "Lagrangian connected sum in Cᵐ/Γ, m ≥ 3",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "Tᵐ # Tᵐ for every finite-time slice",
+          "genus": {
+            "key": "na",
+            "text": "Dimension m ≥ 3; not a surface genus."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact)."
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Finite-time slices are embedded; the transverse double point belongs only to the infinite-time limiting union."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-lee-tsai",
+      "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
+      "citations": [
+        "CatLeeTsai2026"
+      ],
+      "cases": [
+        {
+          "name": "Circle-invariant Lagrangian sphere in a hyperkähler four-manifold",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "Sphere S² at every finite time; limiting A_(N−1) chain has N−1 spheres, N ≥ 3.",
+          "genus": {
+            "key": "0",
+            "text": "0 for each finite-time sphere."
+          },
+          "ends": {
+            "key": "0",
+            "text": "No ends (compact)."
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The positive quotient graph lifts to an embedded sphere; junctions of the limiting chain occur only at infinite time."
+          },
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Intrinsic mean curvature flow in a Riemannian ambient manifold; Euclidean Gaussian area and entropy are not assigned."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-shrinkers",
+      "notes": "Full Euclidean ambient dimension is 2n, at least six. The time viewer uses n = 3, k = 2: two-dimensional phase leaves and a projection of sampled circle orbits, not a surface flow in R³. Projection crossings do not change embeddedness. The optional t ≥ 0 cone and expander illustrate the source’s Brakke continuation; properties here concern smooth t < 0 shrinker slices.",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "cases": [
+        {
+          "name": "Embedded unit-weight shrinkers in Cⁿ, n ≥ 3, n/2 < k < n",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Mapping torus of Sᵏ⁻¹ × Rⁿ⁻ᵏ under the antipodal gluing; not in general a product.",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end, including when the gluing exchanges two fiber ends."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded for this explicitly restricted case; no claim about other weights, groups, or singular limits."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ < ∞ for the complete proper normalized shrinker with polynomial volume growth; no value recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "F₀,₁ = λ < ∞ for the complete proper normalized shrinker with polynomial volume growth; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-lw-quadric-expanders",
+      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "citations": [
+        "CatLeeWang2010"
+      ],
+      "cases": [
+        {
+          "name": "Embedded unit-weight expanders in Cⁿ, n ≥ 3, n/2 < k < n",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Mapping torus of Rᵏ × Sⁿ⁻ᵏ⁻¹ under antipodal gluing; Rᵏ × S¹ when n − k = 1.",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; two fiber components in the n − k = 1 case are joined by the gluing."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded for this explicitly restricted case; no claim about other weights, groups, or singular limits."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by the explicit quadric geometry and polynomial volume growth; no value recorded."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-su-glued-translators",
+      "notes": "Full Euclidean ambient dimension is 2m, at least six. The illustration uses m = 3, equal angles π/3, and λ = 0; it shows selected meridians and a projected two-dimensional slice of an illustrative gluing model. Projection crossings do not contradict embeddedness in C³. The time views keep the gluing scale fixed and translate by t e₃; no final PDE correction is computed. Auxiliary slices do not determine genus or ends of this higher-dimensional example.",
+      "citations": [
+        "CatSu2022"
+      ],
+      "cases": [
+        {
+          "name": "Two-cylinder desingularizations in Cᵐ, m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sᵐ⁻¹ × R",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends from the original grim cylinders; higher-end arrangements in Corollary 1.1 are not assigned to this case."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded for this explicitly restricted case; no claim about other weights, groups, or singular limits."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-su-wood-stationary",
+      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "cases": [
+        {
+          "name": "SO(m − 1)-invariant stationary examples in Cᵐ, m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sᵐ⁻² × R²",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; this is not a product of two complete Lawlor neck manifolds."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded for this explicitly restricted case; no claim about other weights, groups, or singular limits."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-stolarski-su",
+      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "citations": [
+        "CatStolarskiSu2026"
+      ],
+      "cases": [
+        {
+          "name": "SO(n)-invariant Type II flows: n = 3, K = 2,3,4; n ≥ 4, integer K ≥ 2",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sⁿ⁻¹ × R at every regular time",
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends; the singular pair of planes is only a limit."
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded for this explicitly restricted case; no claim about other weights, groups, or singular limits."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value or bound recorded from the checked source; entropy is not inferred from a single centered Gaussian integral."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-chopp-cube",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp cubical shrinker candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-5 surface without punctures (closed)",
+          "genus": {
+            "key": "higher",
+            "text": "5, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-chopp-octahedron",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp octahedral shrinker candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-7 surface without punctures (closed)",
+          "genus": {
+            "key": "higher",
+            "text": "7, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "0",
+            "text": "0, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": true,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-chopp-saddle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp punctured-torus saddle candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-1 surface minus 1 point",
+          "genus": {
+            "key": "1",
+            "text": "1, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-chopp-two-handle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp two-handled cone candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-1 surface minus 2 points",
+          "genus": {
+            "key": "1",
+            "text": "1, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-chopp-four-handle",
+      "notes": "Numerical shrinker candidate, not a proved existence result for this computed surface. Topology and compactness describe the intended surface; the drawing is schematic.",
+      "citations": [
+        "CatChopp1994",
+        "CatAIC95"
+      ],
+      "cases": [
+        {
+          "name": "Numerical candidate: Chopp four-handled cone candidate",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Intended orientable genus-3 surface minus 2 points",
+          "genus": {
+            "key": "higher",
+            "text": "3, the topology of the numerical candidate"
+          },
+          "ends": {
+            "key": "2",
+            "text": "2, for the intended complete surface; finite-window boundaries are not ends"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The target is embedded and the numerical construction uses embedded level sets, but existence of an exact embedded shrinker with these properties is not proved in the reviewed computation."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or bound established for this numerical candidate. The self-similarity diagnostic E is not entropy."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No normalized centered Gaussian area recorded; do not infer it from the drawing or identify it with entropy for an approximate surface."
           }
         }
       ]

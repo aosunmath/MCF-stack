@@ -83,33 +83,15 @@ def write(name, title, subtitle, footer, body, description):
 
 
 def toroidal_end():
-    body = [text(320,104,"slice(z) = √z [S + uν],    u → 0",18,"middle"),
-            text(166,146,"Toroidal cross-section",16,"middle"),
-            text(469,146,"Same end, higher slice",16,"middle")]
-    body += torus_icon(166,225,85)
-    body += torus_icon(469,225,113)
-    body += [line(274,225,340,225,arrow=True), text(307,202,"√z growth",15,"middle"),
-             text(166,307,"height z₁",17,"middle"),
-             text(469,307,"height z₂ > z₁",17,"middle"),
-             text(320,343,"One end: T² × [z₀, ∞); correction u is unknown",16,"middle")]
-    write("sun-wang-torus-end", "Torus sections along one translator end",
-          "Three-dimensional translator in R⁴; horizontal slices lie in R³",
-          "Schematic auxiliary cross-sections; no translator is computed.", body,
-          "Two schematic toroidal cross-sections at increasing height illustrate square-root growth along a single end of a three-dimensional translator in four-dimensional Euclidean space. The high-height slice is square root of z times a normal graph over an Angenent torus with an unknown correction tending to zero. The ring icons are topological schematics, not computed Angenent tori or exact translator geometry.")
+    # Keep the numerical-profile illustration reproducible from this entry point.
+    from generate_torus_translator_geometry import main as generate_torus_end
+    generate_torus_end()
 
 
 def doubled_sphere_end():
-    body = [text(320,104,"slice(z) = √z [S + uν],    u → 0",18,"middle")]
-    body += doubled_sphere_icon(165,215,70)
-    body += doubled_sphere_icon(469,209,90)
-    body += [line(269,215,350,215,arrow=True), text(308,191,"√z growth",15,"middle"),
-             text(165,319,"height z₁",17,"middle"),
-             text(469,319,"height z₂ > z₁",17,"middle"),
-             text(320,346,"One end; cross-sectional genus 2m − 1",16,"middle")]
-    write("sun-wang-doubled-sphere-end", "High-genus sections along one translator end",
-          "Three-dimensional translator in R⁴; horizontal slices lie in R³",
-          "Schematic sections; u is unknown and m must be large.", body,
-          "Two topological diagrams of a connected doubled-sphere cross-section at different heights illustrate the single end of a three-dimensional translator in Euclidean four-space. Cross-sectional genus is 2m minus 1 for sufficiently large m. The dots are symbolic repeated bridge sites and do not fix m. Growth is square root of height with an unknown normal correction. Neither the input shrinker nor the resulting translator is computed.")
+    # Preserve the reviewed slice plate; do not replace it with bridge-dot icons.
+    if not (OUT / "sun-wang-doubled-sphere-end.svg").exists():
+        raise RuntimeError("Run scripts/generate_sun_wang_end_picture.py first")
 
 
 def spherical_doubling():

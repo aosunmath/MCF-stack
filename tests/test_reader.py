@@ -54,6 +54,27 @@ class ReaderTests(unittest.TestCase):
             self.assertTrue(entry.select('[data-gerby-book="source"] [data-gerby-tag]'))
             check_links(root)
 
+    def test_numerical_references_are_a_searchable_unnumbered_reader_page(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            navigation = self.build(root)
+            route = 'numerical-references'
+            page = BeautifulSoup((root / route / 'index.html').read_text(), 'html.parser')
+            self.assertEqual(page.select_one('main h1').get_text(), 'Numerical references')
+            self.assertEqual(sum(item['route'] == route for item in navigation), 1)
+            self.assertEqual(len(json.loads((root / 'collection.json').read_text())['chapters']), 2)
+            results = [item for item in json.loads((root / 'search.json').read_text())
+                       if 'figure credits' in item['aliases']]
+            self.assertEqual(len(results), 1)
+            self.assertIn('Mario B. Schulz', results[0]['text'])
+            self.assertIn('Francisco Torralbo', results[0]['text'])
+            self.assertIn('Matthias Weber', results[0]['text'])
+            redirect_html = (root / 'tag' / results[0]['tag'] / 'index.html').read_text()
+            self.assertIn('../../numerical-references/', redirect_html)
+            for link in page.select('main a[href^="#"]'):
+                self.assertIsNotNone(page.find(id=link['href'][1:]), link['href'])
+            check_links(root)
+
     def test_promoted_subject_with_no_remaining_prose_keeps_an_overview(self):
         heading = {"tag": "00000010", "label": "sec:first-part", "title": "1 First part",
                    "caption": "First part", "number": "1", "kind": "section", "section": True,

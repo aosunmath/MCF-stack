@@ -82,102 +82,49 @@ def nguyen():
 
 
 def iw():
-    f=Figure('Ilmanen–White two-ended shrinkers: topology schematic',
-             'Two schematic sheets connected by three neck symbols illustrate the genus-two, two-ended topology. The complete ends are conical; these flat patches are not their actual geometry. The theorem constructs every genus h at least two, with h plus one equatorial neck circles, and the large-genus limit is a double plane.')
-    heading(f,'Ilmanen–White two-ended shrinkers','Every genus h ≥ 2; two asymptotically conical ends')
-    plane(f,204,235,150,33)
-    for x in [120,204,288]:neck(f,x,162,228,9)
-    plane(f,204,154,150,33,fill='#edf4f6')
-    for x in [120,204,288]:f.ellipse(x,162,9,3,color=SEAM,width=1.7)
-    f.text(204,290,'Topology symbols: h + 1 necks',16,anchor='middle')
-    f.arrow(382,195,439,195)
-    f.text(410,172,'h → ∞',15,anchor='middle')
-    plane(f,523,196,69,23)
-    f.text(523,242,'2P',23,weight=600,anchor='middle')
-    footer(f,['Three neck symbols illustrate h = 2; geometry is schematic.',
-              'The large-genus convergence is to a multiplicity-two plane.',
-              'SCHEMATIC • topology and limiting multiplicity'])
-    f.save('iw-two-ended.svg')
+    # Keep the source-informed interactive surface and its static rendering.
+    source = ROOT / 'site/assets/solitons/iw-two-ended.svg'
+    if not source.exists():
+        raise RuntimeError('Run scripts/generate_iw_geometry.py first')
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def stacking():
-    f=Figure('Shao–Zou stacked-plane shrinkers: gluing schematic',
-             'Three plane patches with symbolic bridges between consecutive layers. In the theorem the number of layers k is at least two and the number m of bridges per adjacent pair is sufficiently large depending on k. The resulting shrinker has k conical ends and genus (k minus one) times (m minus one). The actual surface and cone shapes are not computed.')
-    heading(f,'Shao–Zou shrinkers with k ends','k ≥ 2; m sufficiently large for each fixed k')
-    for y in [257,195,133]:
-        plane(f,215,y,163,26)
-        if y>133:
-            for x in [105,178,251,324]:neck(f,x,y-55,y-7,7)
-    for x in [105,178,251,324]:f.ellipse(x,140,7,2.6,color=SEAM,width=1.4)
-    f.text(215,302,'k layers; bridges between adjacent pairs',15,anchor='middle')
-    f.box(420,120,192,167)
-    f.text(516,154,'k conical ends',20,weight=600,anchor='middle')
-    f.text(516,193,'genus',17,anchor='middle')
-    f.text(516,220,'(k − 1)(m − 1)',21,weight=600,anchor='middle')
-    f.text(516,261,'limit: kP as m → ∞',15,anchor='middle')
-    footer(f,['The drawn bridge count is illustrative, not an existence threshold.',
-              'Flat sheets represent the gluing input, not the final conical ends.',
-              'SCHEMATIC • plane stacking and topological counts'])
-    f.save('shao-zou-stacking.svg')
-
-
-def rays(f,cx,cy,kind):
-    p=project(cx,cy,56,yaw=.5,pitch=.4)
-    if kind=='cube':vectors=[(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
-    else:vectors=[(math.cos(a),math.sin(a),0) for a in base.angles(7)[:-1]]
-    for v in vectors:
-        a,b=p((0,0,0)),p(tuple(1.4*x for x in v));f.line([a,b],color=SEAM,width=1.8)
-        f.ellipse(*b,3,3,color=SEAM,fill=SEAM,width=1)
-    f.ellipse(cx,cy,4,4,fill=INK,width=1)
+    # The paper-informed connected mesh has its own reproducible generator.
+    # Keep bulk regeneration from restoring the former bridge-symbol picture.
+    import json
+    from generate_shao_zou_geometry import drawing, OUT
+    drawing(json.loads((OUT/'shao-zou-stacking.json').read_text()))
 
 
 def hmw_platonic():
-    f=Figure('Hoffman–Martin–White shrinkers avoiding prescribed rays',
-             'The left diagram shows the six face-center rays of a cube; the right diagram shows seven equally spaced horizontal rays. These are the sets Q avoided by the constructed shrinkers, not shrinker surfaces. Genus equals the number of rays minus one. Compactness and exact end counts are not specified generally; large regular-polygon examples are noncompact.')
-    heading(f,'HMW Platonic and polygonal shrinkers','Prescribed rays Q encode symmetry and genus')
-    rays(f,177,204,'cube');rays(f,475,204,'polygon')
-    f.text(177,109,'Cube face-center rays',17,anchor='middle')
-    f.text(475,109,'Regular polygon rays',17,anchor='middle')
-    f.text(177,302,'6 rays → genus 5',17,anchor='middle')
-    f.text(475,302,'n rays → genus n − 1',17,anchor='middle')
-    footer(f,['The constructed shrinker avoids Q; Q is not the surface.',
-              'Compactness and exact end counts are not fixed in general.',
-              'SCHEMATIC • symmetry data, not a computed shrinker'])
-    f.save('hmw-platonic-polygon.svg')
+    # Preserve the ray-avoiding models from generate_hmw_rays_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-platonic-polygon.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def hmw_one():
-    f=Figure('Hoffman–Martin–White genus-g shrinkers: limit and end theorem',
-             'The geometric diagram is the sphere-plane limit S squared of radius two union a plane, with symbolic horizontal symmetry lines. For each positive genus g the construction gives a shrinker, and exactly one conical end is proved for all sufficiently large g. The drawn limit is not a computed finite-genus shrinker.')
-    heading(f,'HMW genus-g shrinkers','One conical end is proved when g is sufficiently large')
-    sphere_plane(f,205,201,43,axes=True)
-    f.text(205,303,'Large-genus limit: P ∪ S²(2)',16,anchor='middle')
-    f.box(403,117,209,176)
-    f.text(508,153,'g ≥ 1',23,weight=600,anchor='middle')
-    f.text(508,188,'contains g + 1',17,anchor='middle')
-    f.text(508,211,'horizontal lines',17,anchor='middle')
-    f.text(508,254,'exactly one end:',16,anchor='middle')
-    f.text(508,277,'only for large g',16,weight=600,anchor='middle')
-    footer(f,['The limit sphere has radius 2 in the catalogue normalization.',
-              'The small-genus end count is left unspecified.',
-              'SCHEMATIC • limiting configuration and qualified end count'])
-    f.save('hmw-one-ended.svg')
+    # Preserve the plate owned by generate_hmw_sphere_plane_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-one-ended.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def hmw_three():
-    f=Figure('Hoffman–Martin–White three-ended shrinkers: limit schematic',
-             'Three nearby parallel plane patches symbolize the multiplicity-three plane limit. They do not depict the actual connected shrinker or its conical ends. For sufficiently large g the construction has genus 2g and three conical ends, and converges to a multiplicity-three plane as g grows.')
-    heading(f,'HMW three-ended shrinkers','For sufficiently large g: genus 2g and three conical ends')
-    for y in [245,194,143]:plane(f,190,y,141,28)
-    f.text(190,300,'Multiplicity displayed as separated sheets',14,anchor='middle')
-    f.arrow(352,194,414,194)
-    f.text(383,169,'g → ∞',15,anchor='middle')
-    plane(f,510,194,92,27)
-    f.text(510,248,'3P',25,weight=600,anchor='middle')
-    footer(f,['The finite-genus shrinker is connected; it is not drawn here.',
-              'The diagram records the limit, not the shape of its three ends.',
-              'SCHEMATIC • large-genus limit and multiplicity'])
-    f.save('hmw-three-ended.svg')
+    # Preserve the connected topology plate from generate_hmw_three_ended_geometry.py.
+    source = ROOT / 'site/assets/solitons/hmw-three-ended.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def polyhedron(f,cx,cy,kind,size=32):
@@ -202,18 +149,12 @@ def polyhedron(f,cx,cy,kind,size=32):
 
 
 def ketover():
-    f=Figure('Ketover Platonic shrinkers: sweepout symmetry and genus',
-             'Wireframes indicate the five Platonic solids used to organize doubling sweepouts. A solid with f faces leads to a shrinker of genus f minus one. These wireframes are not shrinker meshes; compactness and the number of ends of the min-max limits remain unspecified in the construction.')
-    heading(f,'Ketover Platonic shrinkers','Doubling-sweepout symmetry; five prescribed genera')
-    for x,kind,name,faces in zip([84,202,320,438,556],['tetra','cube','octa','dodeca','icosa'],['Tetrahedron','Cube','Octahedron','Dodecahedron','Icosahedron'],[4,6,8,12,20]):
-        polyhedron(f,x,180,kind,47)
-        f.text(x,113,name,13,anchor='middle')
-        f.text(x,251,f'{faces} faces',15,anchor='middle')
-        f.text(x,276,f'genus {faces-1}',17,weight=600,anchor='middle')
-    footer(f,['Proved entropy bounds: 4/e < λ < 8/e.',
-              'Compactness and exact end counts are not determined here.',
-              'SCHEMATIC • symmetry / sweepout data, not shrinker shapes'])
-    f.save('ketover-platonic.svg')
+    # Preserve the connected-mesh plate from generate_platonic_geometry.py.
+    source = ROOT / 'site/assets/solitons/ketover-platonic.svg'
+    destination = OUT / source.name
+    if source.resolve() != destination.resolve():
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(source.read_bytes())
 
 
 def swz():

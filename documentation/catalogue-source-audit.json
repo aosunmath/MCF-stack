@@ -1129,7 +1129,7 @@
     },
     {
       "label": "ex:catalogue-scherkenoids",
-      "formula_status": "surveyed external construction",
+      "formula_status": "boundary-value construction; explicit tilted grim-reaper limit; connected schematic",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1141,7 +1141,15 @@
         },
         {
           "key": "CatHMW20",
-          "locator": "later external construction; abstract and bibliographic metadata verified"
+          "locator": "arXiv:1903.04617v4, Theorems 2.3, 8.4, 9.2 and Figures 5, 11; source and figures read for revised picture",
+          "pdf_pages": [
+            7,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
         }
       ]
     },
@@ -1165,7 +1173,7 @@
     },
     {
       "label": "ex:catalogue-nguyen-tridents",
-      "formula_status": "surveyed gluing construction",
+      "formula_status": "gluing construction; exact Scherk and grim-reaper ingredients; illustrative deformation is not a solved translator",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1177,13 +1185,22 @@
         },
         {
           "key": "CatNguyen09",
-          "locator": "original externally cited gluing construction"
+          "locator": "Author-posted manuscript: Theorem 1, p. 2; Sections 1.2--1.4, pp. 3--4; Section 2, Definitions 4--5, pp. 5--7; Section 5, pp. 18--19."
+        },
+        {
+          "key": "CatHMWTridents22",
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ],
+          "locator": "Theorem 1, Figures 1--2; agreement with Nguyen at small period, proper embeddedness, infinite genus and entropy 3; arXiv:1909.09241v2."
         }
       ]
     },
     {
       "label": "ex:catalogue-finite-genus-translators",
-      "formula_status": "surveyed gluing construction",
+      "formula_status": "gluing construction; ODE input and separate connected schematic",
       "references": [
         {
           "key": "CatHIMWNotes19",
@@ -1194,7 +1211,7 @@
         },
         {
           "key": "CatDPN17",
-          "locator": "original paper abstract; proof remains external"
+          "locator": "Theorem 1.1; Figure 2; Section 2, equations (2.1), (2.3), (2.6), Definition 2.6, Figures 5–6; original accepted manuscript read for illustration"
         }
       ]
     },
@@ -1267,14 +1284,17 @@
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
-      "formula_status": "Exact parametrization",
+      "formula_status": "Exact stationary family F(p,t)=F₀(p) for any smooth minimal immersion; exact affine-plane and catenoid parametrizations; minimal-graph PDE",
       "citations": [
-        "CatMan11"
+        "CatMan11",
+        "CatChoppMinimal1993"
       ],
       "source_locators": [
-        "Remark4.4.7 PDF116/105; existing ex:explicit-catenoid and curvature/stability propositions"
+        "Mantegazza, Proposition 1.2.1 and Sections 1.3–1.4, printed6–11/PDF19–24; Exercise1.3.8 printed10–11/PDF23–24; Remark4.4.7 printed105/PDF116",
+        "Direct identities: trace second fundamental form gives stationary equivalence in fixed ambient metric; Δ|F|²=2n+2〈F,H〉 excludes compact boundaryless Euclidean minimal immersions; affine-plane Gaussian integral; retained catenoid curvature and stability calculations.",
+        "Chopp, Computing Minimal Surfaces via Level Set Curvature Flow, Section4.1, printed86–87: retained fixed-boundary catenoid benchmark."
       ],
-      "source_audit": "Eternal stationary; complete proper embedded annulus; area-unstable whole surface, stable open halves; existing proof retained, no new proof badge."
+      "source_audit": "General smooth minimal immersions, not only catenoids, give eternal static MCF. Geometry is inherited from the chosen immersion, without assumed completeness, properness, embeddedness, finite entropy or stability. Euclidean and curved ambient cases are separate. Catenoid retained as exact illustration; original section route and both tags preserved through explicit single-source bindings. No new proof badge."
     },
     {
       "label": "ex:catalogue-whitney-sphere",

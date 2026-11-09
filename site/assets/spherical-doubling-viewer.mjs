@@ -20,7 +20,18 @@ export function sphericalNormals(vertices,faces){
   return normals.map(n=>{const r=Math.hypot(...n)||1;return n.map(v=>v/r);});
 }
 
-export function initSphericalDoublingFigure(figure,initial){
+// The same radial-sheet renderer also serves the Platonic sweepout schematic.
+const sphericalOptions={
+  key:data=>String(data.m),
+  choices:SPHERICAL_COUNTS.map(m=>[String(m),`m = ${m}`]),
+  selectLabel:'Sites per latitude',
+  modelUrl:(base,key)=>sphericalModelUrl(base,Number(key)),
+  badge:data=>`${2*data.m} bridges · model genus ${data.genus}`,
+  aria:data=>`Spherical doubling construction schematic: ${2*data.m} radial bridges, model genus ${data.genus}`,
+  status:data=>`Schematic: m = ${data.m} sites on each of two aligned latitude circles; genus 2m − 1 = ${data.genus}. The theorem requires sufficiently large m, with no effective threshold stated here. Neck sizes and sheet separation are illustrative.`,
+};
+
+export function initSphericalDoublingFigure(figure,initial,options=sphericalOptions){
   const canvas=figure.querySelector('canvas'),gl=canvas.getContext('webgl',{antialias:true,alpha:false});
   if(!gl)throw new Error('WebGL unavailable');
   const vertex=`attribute vec3 position, normal, color;
@@ -46,7 +57,7 @@ export function initSphericalDoublingFigure(figure,initial){
   const stage=figure.querySelector('.soliton-stage'),controls=figure.querySelector('.soliton-controls');
   const status=figure.querySelector('.soliton-status'),help=figure.querySelector('.soliton-help');
   let data=initial,indices,meshIndices,scheduled=false,dragging=null,loadId=0;
-  const cache=new Map([[initial.m,initial]]);
+  const cache=new Map([[options.key(initial),initial]]);
   const defaults=()=>({yaw:initial.view.yaw,pitch:initial.view.pitch,zoom:1,cutaway:false,wire:false,gap:1});
   let state=defaults();
   const badge=document.createElement('p');badge.className='spherical-view-label';stage.append(badge);
@@ -78,14 +89,16 @@ export function initSphericalDoublingFigure(figure,initial){
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,indexBuffer);gl.drawElements(gl.TRIANGLES,indices.length,gl.UNSIGNED_SHORT,0);
     gl.disable(gl.POLYGON_OFFSET_FILL);
     if(state.wire){gl.uniform1i(uniforms.lines,true);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,meshBuffer);gl.drawElements(gl.LINES,meshIndices.length,gl.UNSIGNED_SHORT,0);}
-    canvas.dataset.m=String(data.m);canvas.dataset.genus=String(data.genus);canvas.dataset.view=state.cutaway?'cutaway':'surface';
+    if(data.m!==undefined)canvas.dataset.m=String(data.m);
+    if(data.solid)canvas.dataset.solid=data.solid;
+    canvas.dataset.genus=String(data.genus);canvas.dataset.view=state.cutaway?'cutaway':'surface';
     canvas.dataset.rotation=`${state.yaw.toFixed(3)},${state.pitch.toFixed(3)}`;
     canvas.dataset.zoom=state.zoom.toFixed(3);canvas.dataset.gap=String(state.gap);canvas.dataset.mesh=String(state.wire);
   }
   function requestDraw(){if(!scheduled){scheduled=true;requestAnimationFrame(draw);}}
-  const label=document.createElement('label');label.textContent='Sites per latitude ';
-  const select=document.createElement('select');select.setAttribute('aria-label','Sites per latitude');
-  for(const m of SPHERICAL_COUNTS){const option=document.createElement('option');option.value=String(m);option.textContent=`m = ${m}`;select.append(option);}
+  const label=document.createElement('label');label.textContent=options.selectLabel+' ';
+  const select=document.createElement('select');select.setAttribute('aria-label',options.selectLabel);
+  for(const [value,name] of options.choices){const option=document.createElement('option');option.value=value;option.textContent=name;select.append(option);}
   label.append(select);controls.prepend(label);
   const cutButton=document.createElement('button');cutButton.type='button';cutButton.textContent='Cutaway';controls.append(cutButton);
   const gapLabel=document.createElement('label');gapLabel.textContent='Display separation ';
@@ -97,23 +110,23 @@ export function initSphericalDoublingFigure(figure,initial){
   }
   controls.after(legend);
   function sync(){
-    select.value=String(data.m);gap.value=String(state.gap);output.textContent=`${state.gap.toFixed(1)}×`;
+    select.value=options.key(data);gap.value=String(state.gap);output.textContent=`${state.gap.toFixed(1)}×`;
     cutButton.setAttribute('aria-pressed',String(state.cutaway));figure.querySelector('[data-view-action="wire"]').setAttribute('aria-pressed',String(state.wire));
-    badge.textContent=`${2*data.m} bridges · model genus ${data.genus} · ${state.cutaway?'cutaway':'full surface'}`;
-    canvas.setAttribute('aria-label',`Spherical doubling construction schematic: ${2*data.m} radial bridges, model genus ${data.genus}; ${state.cutaway?'front half removed':'full surface'}. Not a computed self-shrinker. Arrow keys rotate; plus and minus zoom.`);
+    badge.textContent=`${options.badge(data)} · ${state.cutaway?'cutaway':'full surface'}`;
+    canvas.setAttribute('aria-label',`${options.aria(data)}; ${state.cutaway?'front half removed':'full surface'}. Not a computed self-shrinker. Arrow keys rotate; plus and minus zoom.`);
     help.textContent='Drag to rotate; + / − zoom. Cutaway exposes the inner sheet. Display separation enlarges the gap; it is an illustration control. Cut edges are not boundaries of the closed surface.';
-    status.textContent=`Schematic: m = ${data.m} sites on each of two aligned latitude circles; genus 2m − 1 = ${data.genus}. The theorem requires sufficiently large m, with no effective threshold stated here. Neck sizes and sheet separation are illustrative.`;
+    status.textContent=options.status(data);
     requestDraw();
   }
   select.addEventListener('change',async()=>{
-    const m=Number(select.value),id=++loadId;status.textContent=`Loading m = ${m}…`;
+    const key=select.value,id=++loadId;status.textContent='Loading construction picture…';
     try{
-      if(!cache.has(m)){const response=await fetch(sphericalModelUrl(figure.dataset.soliton,m));if(!response.ok)throw new Error('mesh unavailable');cache.set(m,await response.json());}
+      if(!cache.has(key)){const response=await fetch(options.modelUrl(figure.dataset.soliton,key));if(!response.ok)throw new Error('mesh unavailable');cache.set(key,await response.json());}
       if(id!==loadId)return;
-      const previous=data;data=cache.get(m);
+      const previous=data;data=cache.get(key);
       try{upload();}catch(error){data=previous;upload();throw error;}
       sync();
-    }catch{if(id===loadId){select.value=String(data.m);status.textContent=`m = ${m} could not load; m = ${data.m} remains displayed.`;}}
+    }catch{if(id===loadId){select.value=options.key(data);status.textContent='The selected picture could not load; the previous model remains displayed.';}}
   });
   cutButton.addEventListener('click',()=>{state.cutaway=!state.cutaway;sync();});
   gap.addEventListener('input',()=>{state.gap=Number(gap.value);upload();sync();});

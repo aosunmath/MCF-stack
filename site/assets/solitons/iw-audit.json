@@ -1,0 +1,65 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/pdf/2406.18703v3",
+  "source_locations": "Figure 1, p. 2; Theorem 4.8 and Corollary 4.9, pp. 10\u201311; Theorem 7.6, pp. 20\u201321; Lemmas 9.1, 9.3 and Theorem 9.4, pp. 25\u201326",
+  "resolution": [
+    222,
+    222,
+    140
+  ],
+  "display_radius": 4.6,
+  "models": {
+    "2": {
+      "vertices": 9223,
+      "faces": 17859,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -4,
+      "genus": 2
+    },
+    "3": {
+      "vertices": 9352,
+      "faces": 18137,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -6,
+      "genus": 3
+    },
+    "5": {
+      "vertices": 9324,
+      "faces": 18036,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -10,
+      "genus": 5
+    },
+    "11": {
+      "vertices": 9432,
+      "faces": 18194,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -22,
+      "genus": 11
+    }
+  }
+}

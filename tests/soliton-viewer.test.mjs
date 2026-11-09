@@ -1,7 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ancientOval,rotatePoint,revolutionFaces} from '../site/assets/soliton-viewer.mjs';
+import {ancientOval,rotatePoint,revolutionFaces,clipPolygonAtY} from '../site/assets/soliton-viewer.mjs';
 import {readFileSync} from 'node:fs';
+
+test('planar cutaway preserves the retained polygon and interpolates cut edges',()=>{
+  const triangle=[[0,-1,0],[2,1,2],[-2,1,2]];
+  assert.deepEqual(clipPolygonAtY(triangle),[[0,-1,0],[1,0,1],[-1,0,1]]);
+  assert.deepEqual(clipPolygonAtY(triangle,2),triangle);
+  assert.deepEqual(clipPolygonAtY(triangle,-2),[]);
+  const boundary=[[0,0,0],[1,1,0],[2,-1,0]];
+  assert.deepEqual(clipPolygonAtY(boundary),[[0,0,0],[1.5,0,0],[2,-1,0]]);
+  assert.deepEqual(triangle,[[0,-1,0],[2,1,2],[-2,1,2]]);
+  assert.deepEqual(clipPolygonAtY([]),[]);
+});
 
 test('Drugan cutaway removes only selected angular sectors and restores the complete surface',()=>{
   const d=JSON.parse(readFileSync(new URL('../site/assets/solitons/drugan-sphere.json',import.meta.url)));

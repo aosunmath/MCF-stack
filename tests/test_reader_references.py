@@ -29,6 +29,16 @@ class ReaderReferenceTests(unittest.TestCase):
         self.assertEqual(soup.select_one('#R1 h2').get_text(), '[Author01]')
         self.assertEqual([a['href'] for a in soup.select('#R1 a')], ['../sections/example/#reference-R1', '../tag/ABC/#reference-R1'])
 
+    def test_bibliography_uses_author_sort_metadata_instead_of_display_names_or_keys(self):
+        refs = {
+            'RZ': {'html': 'Alice Zebra. <em>A paper</em>. 1990.', 'sort_key': ['zebra  alice', '1990', 'a paper'], 'sources': [{'source': 'book', 'key': 'A1990'}]},
+            'RA': {'html': 'Uwe Abresch. <em>Z paper</em>. 1986.', 'sort_key': ['abresch  uwe', '1986', 'z paper'], 'sources': [{'source': 'book', 'key': 'Z1986'}]},
+        }
+        soup = BeautifulSoup(bibliography(refs, {'RA': {'sections/example': 'Example'}}), 'html.parser')
+        self.assertEqual([entry['id'] for entry in soup.select('.bibliography-entry')], ['RA', 'RZ'])
+        self.assertEqual(soup.select_one('#RA h2').get_text(), '[Z1986]')
+        self.assertEqual(soup.select_one('#RA a')['href'], '../sections/example/#reference-RA')
+
     def test_proof_wrapping_preserves_equation_anchors_and_never_hides_statement(self):
         variant={'source':'book','label':'prop:test','tag':'ABCD1234','html':'<article class="env-proposition">Statement.</article><article class="env-proof"><p><strong>Proof.</strong> Argument <a href="#equation">below</a>.</p><div id="equation">x=y</div></article>'}
         soup=BeautifulSoup(prepare_fragment(variant,{}, {}, '../../'),'html.parser')

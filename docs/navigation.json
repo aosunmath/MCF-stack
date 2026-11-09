@@ -171,28 +171,76 @@
     "section": "chu-sun-genus-one-shrinkers-below-the-shrinking-doughnut"
   },
   {
+    "route": "sections/chopp-cubical-shrinker-candidate",
+    "title": "2.22 Chopp cubical shrinker candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-cubical-shrinker-candidate"
+  },
+  {
+    "route": "sections/chopp-octahedral-shrinker-candidate",
+    "title": "2.23 Chopp octahedral shrinker candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-octahedral-shrinker-candidate"
+  },
+  {
+    "route": "sections/chopp-punctured-torus-saddle-candidate",
+    "title": "2.24 Chopp punctured-torus saddle candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-punctured-torus-saddle-candidate"
+  },
+  {
+    "route": "sections/chopp-two-handled-cone-candidate",
+    "title": "2.25 Chopp two-handled cone candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-two-handled-cone-candidate"
+  },
+  {
+    "route": "sections/chopp-four-handled-cone-candidate",
+    "title": "2.26 Chopp four-handled cone candidate",
+    "chapter": "shrinkers",
+    "section": "chopp-four-handled-cone-candidate"
+  },
+  {
     "route": "sections/the-clifford-shrinking-torus-in-four-space",
-    "title": "2.22 The Clifford shrinking torus in four-space",
+    "title": "2.27 The Clifford shrinking torus in four-space",
     "chapter": "shrinkers",
     "section": "the-clifford-shrinking-torus-in-four-space"
   },
   {
     "route": "sections/products-of-closed-shrinking-curves",
-    "title": "2.23 Products of closed shrinking curves",
+    "title": "2.28 Products of closed shrinking curves",
     "chapter": "shrinkers",
     "section": "products-of-closed-shrinking-curves"
   },
   {
     "route": "sections/higher-codimension-spherical-shrinkers",
-    "title": "2.24 Higher-codimension spherical shrinkers",
+    "title": "2.29 Higher-codimension spherical shrinkers",
     "chapter": "shrinkers",
     "section": "higher-codimension-spherical-shrinkers"
   },
   {
     "route": "sections/angenent-torus-cylinders",
-    "title": "2.25 Angenent torus cylinders",
+    "title": "2.30 Angenent torus cylinders",
     "chapter": "shrinkers",
     "section": "angenent-torus-cylinders"
+  },
+  {
+    "route": "sections/the-lee-wang-self-shrinking-mobius-bundle",
+    "title": "2.31 The Lee–Wang self-shrinking Mobius bundle",
+    "chapter": "shrinkers",
+    "section": "the-lee-wang-self-shrinking-mobius-bundle"
+  },
+  {
+    "route": "sections/compact-periodic-lagrangian-quadric-shrinkers",
+    "title": "2.32 Compact periodic Lagrangian quadric shrinkers",
+    "chapter": "shrinkers",
+    "section": "compact-periodic-lagrangian-quadric-shrinkers"
+  },
+  {
+    "route": "sections/lee-wang-embedded-quadric-shrinkers",
+    "title": "2.33 Lee–Wang embedded quadric shrinkers",
+    "chapter": "shrinkers",
+    "section": "lee-wang-embedded-quadric-shrinkers"
   },
   {
     "route": "chapters/translators",
@@ -296,6 +344,24 @@
     "section": "translators-with-high-genus-spherical-doubling-ends"
   },
   {
+    "route": "sections/joyce-lee-tsui-small-angle-lagrangian-translators",
+    "title": "3.17 Joyce–Lee–Tsui small-angle Lagrangian translators",
+    "chapter": "translators",
+    "section": "joyce-lee-tsui-small-angle-lagrangian-translators"
+  },
+  {
+    "route": "sections/explicit-rotating-lagrangian-translators",
+    "title": "3.18 Explicit rotating Lagrangian translators",
+    "chapter": "translators",
+    "section": "explicit-rotating-lagrangian-translators"
+  },
+  {
+    "route": "sections/su-translators-obtained-by-gluing-grim-cylinders",
+    "title": "3.19 Su translators obtained by gluing grim cylinders",
+    "chapter": "translators",
+    "section": "su-translators-obtained-by-gluing-grim-cylinders"
+  },
+  {
     "route": "chapters/expanders",
     "title": "4 Expanders",
     "chapter": "expanders"
@@ -355,6 +421,24 @@
     "section": "knotted-self-expanders"
   },
   {
+    "route": "sections/joyce-lee-tsui-lagrangian-expander-necks",
+    "title": "4.10 Joyce–Lee–Tsui Lagrangian expander necks",
+    "chapter": "expanders",
+    "section": "joyce-lee-tsui-lagrangian-expander-necks"
+  },
+  {
+    "route": "sections/two-convex-lagrangian-graphical-expanders",
+    "title": "4.11 Two-convex Lagrangian graphical expanders",
+    "chapter": "expanders",
+    "section": "two-convex-lagrangian-graphical-expanders"
+  },
+  {
+    "route": "sections/lee-wang-embedded-quadric-expanders",
+    "title": "4.12 Lee–Wang embedded quadric expanders",
+    "chapter": "expanders",
+    "section": "lee-wang-embedded-quadric-expanders"
+  },
+  {
     "route": "chapters/other-special-flows",
     "title": "5 Other special flows",
     "chapter": "other-special-flows"
@@ -379,7 +463,7 @@
   },
   {
     "route": "sections/the-catenoid-as-an-eternal-stationary-flow",
-    "title": "5.4 The catenoid as an eternal stationary flow",
+    "title": "5.4 Minimal surfaces as stationary mean curvature flows",
     "chapter": "other-special-flows",
     "section": "the-catenoid-as-an-eternal-stationary-flow"
   },
@@ -438,10 +522,46 @@
     "section": "ancient-stacked-pancakes"
   },
   {
+    "route": "sections/lawlor-necks-as-stationary-lagrangian-flows",
+    "title": "5.14 Lawlor necks as stationary Lagrangian flows",
+    "chapter": "other-special-flows",
+    "section": "lawlor-necks-as-stationary-lagrangian-flows"
+  },
+  {
+    "route": "sections/su-wood-stationary-products-of-lawlor-profiles",
+    "title": "5.15 Su–Wood stationary products of Lawlor profiles",
+    "chapter": "other-special-flows",
+    "section": "su-wood-stationary-products-of-lawlor-profiles"
+  },
+  {
+    "route": "sections/stolarski-su-finite-time-lagrangian-neck-pinches",
+    "title": "5.16 Stolarski–Su finite-time Lagrangian neck pinches",
+    "chapter": "other-special-flows",
+    "section": "stolarski-su-finite-time-lagrangian-neck-pinches"
+  },
+  {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.14 Immortal compact flows converging to a double sphere",
+    "title": "5.17 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
+  },
+  {
+    "route": "sections/immortal-curve-shortening-with-nonunique-geodesic-limits",
+    "title": "5.18 Immortal curve shortening with nonunique geodesic limits",
+    "chapter": "other-special-flows",
+    "section": "immortal-curve-shortening-with-nonunique-geodesic-limits"
+  },
+  {
+    "route": "sections/lagrangian-torus-necks-collapsing-at-infinite-time",
+    "title": "5.19 Lagrangian torus necks collapsing at infinite time",
+    "chapter": "other-special-flows",
+    "section": "lagrangian-torus-necks-collapsing-at-infinite-time"
+  },
+  {
+    "route": "sections/lagrangian-sphere-chains-in-gibbons-hawking-spaces",
+    "title": "5.20 Lagrangian sphere chains in Gibbons–Hawking spaces",
+    "chapter": "other-special-flows",
+    "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces"
   },
   {
     "route": "browse",
@@ -454,6 +574,10 @@
   {
     "route": "references",
     "title": "Bibliography"
+  },
+  {
+    "route": "numerical-references",
+    "title": "Numerical references"
   },
   {
     "route": "sources",

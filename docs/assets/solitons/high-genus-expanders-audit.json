@@ -1,0 +1,41 @@
+{
+  "4": {
+    "vertices": 11745,
+    "faces": 22654,
+    "components": 1,
+    "boundary_loops": 3,
+    "boundary_is_manifold": true,
+    "edge_incidence": [
+      1,
+      2
+    ],
+    "euler_characteristic": -7,
+    "genus": 3
+  },
+  "12": {
+    "vertices": 12362,
+    "faces": 24134,
+    "components": 1,
+    "boundary_loops": 3,
+    "boundary_is_manifold": true,
+    "edge_incidence": [
+      1,
+      2
+    ],
+    "euler_characteristic": -23,
+    "genus": 11
+  },
+  "20": {
+    "vertices": 12540,
+    "faces": 24631,
+    "components": 1,
+    "boundary_loops": 3,
+    "boundary_is_manifold": true,
+    "edge_incidence": [
+      1,
+      2
+    ],
+    "euler_characteristic": -39,
+    "genus": 19
+  }
+}

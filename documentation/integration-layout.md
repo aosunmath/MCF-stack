@@ -1,6 +1,6 @@
 # Integration layout and numbering
 
-MCF-stack collects special solutions of mean curvature flow in five chapters: Introduction, Shrinkers, Translators, Expanders, and Other special flows. `collection.json` places 70 sections in those chapters: one introductory section and 69 illustrated catalogue entries. The active manuscript is `content/gmt-foundations/`; its source slug and retained labels remain stable for permanent tags. See [the catalogue expansion](catalogue-expansion.md) for sources, normalization, illustration conventions, and reproducible geometry. Project identity is centralized in `scripts/project.py`.
+MCF-stack collects special solutions of mean curvature flow in five chapters: Introduction, Shrinkers, Translators, Expanders, and Other special flows. `collection.json` places 90 sections in those chapters: one introductory section and 89 illustrated catalogue entries. The active manuscript is `content/gmt-foundations/`; its source slug and retained labels remain stable for permanent tags. See [the catalogue expansion](catalogue-expansion.md) for sources, normalization, illustration conventions, and reproducible geometry. Project identity is centralized in `scripts/project.py`.
 
 The inherited GMT chapters, formerly numbered 6 onward, have been removed from the manuscript, published routes, search, and source listings. Their former source files and development notes remain available through Git history. Older expansion documents describe that inherited edition and are not the current reading plan. Do not restore these chapters when extending the special-solution catalogue.
 
@@ -36,6 +36,27 @@ Proofs use native closed `details.proof` panels. Fragment links reopen a contain
 
 Reader citation labels omit the internal `Cat` prefix from catalogue bibliography keys (for example, `CatAngenent1992` displays as `Angenent1992`). Inline citations, page reference lists, the bibliography, and search excerpts use these display labels. Source keys, provenance records, canonical bibliography identifiers, and legacy bibliography redirects remain unchanged.
 
+The shared reference page is alphabetical by author surname, followed by the remaining author names, publication year, and title. The adapter exports a `sort_key` derived from structured BibTeX names; the renderer applies it to every build, including newly added references. Sorting ignores capitalization and folds accents, including TeX-encoded accents, while preserving the displayed names. Entries without authors use editors, then organization or title. Preserve citation keys, reference anchors, and citation backlinks when changing the order. Page-local reference lists retain citation order.
+
 ## Chapter discussions
 
 The local manuscript's `chapter-overviews.json` explicitly registers four HTML prose fragments in `content/gmt-foundations/overviews/`. They belong to the existing category chapter pages, not to new numbered sections or catalogue families. Their files are included in the manuscript SHA-256 snapshot. The common adapter exports their prose and cited bibliography entries; the shared renderer resolves their citations through the same page-local references and bibliography backlinks as section prose. Chapter text is searchable, and headings provide local navigation above the existing ambient-dimension groups. Existing section routes, tags, numbering, and property records remain unchanged. Other manuscripts opt into this export only when requested by their adapter.
+
+## Numerical references and visual credits
+
+`/numerical-references/` is an unnumbered reference page, outside the introduction
+and four mathematical categories. Its prose is in `content/numerical-references.html`;
+`content/numerical-references.bib` records methods, software, and each reference's
+role in an `annote` field. The build formats those entries with pybtex and the same
+structured author-surname sorting used by the mathematical bibliography. No example
+number, permanent mathematical tag, or source label is changed.
+
+The page is linked from the home page, bibliography, sidebar, footer, and figure
+captions. Optional `credit_anchor` values in `catalogue-visualizations.json` link
+figures to a specific visual-source credit; other figures link to the methods
+section. Search has one record and a stable route-tag redirect for the page.
+
+When adding a visual reference, distinguish the paper's authors from an individually
+credited illustrator, and a source's software from software used by this project.
+Retain the exact figure locator and the schematic/numerical qualification. A related
+gallery link alone is not evidence that its website, image, code, or mesh was used.

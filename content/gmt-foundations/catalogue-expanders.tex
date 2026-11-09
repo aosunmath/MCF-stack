@@ -107,7 +107,14 @@ The source uses $\vec k=\psi^\perp$ and $\sqrt{2t}\,\psi$; our profile is $\Sigm
 \[
  \bigcup_{j=0}^2\{r(\cos(2\pi j/3),\sin(2\pi j/3)):r\geq0\}
 \]
-is the stationary $Y$ network. It illustrates the junction condition. The accompanying general tree diagram is schematic; its branches are not numerically solved.
+is the stationary $Y$ network. It illustrates the junction condition.
+
+The accompanying picture instead computes a nonstationary four-ended example, using the geodesic construction of \cite{CatMS07}, Sections 2--3. In Euclidean arclength $s$, write the tangent as $(\cos\theta,\sin\theta)$. Then
+\[
+ x'=\cos\theta,\qquad y'=\sin\theta,\qquad
+ \theta'=\frac{-x\sin\theta+y\cos\theta}{2}.
+\]
+Shoot the upper-right branch from $(x,y,\theta)=(a,0,\pi/3)$ toward the ray of angle $\pi/4$. Numerically, $a\approx0.385405$ in our normalization. Reflections in the coordinate axes and the straight segment $[-a,a]\times\{0\}$ give the displayed tree, with triple junctions at $(\pm a,0)$ and asymptotic rays at angles $\pi/4+j\pi/2$, $j=0,1,2,3$. A quarter-turn gives the second tree. The two pictures are congruent by rotation but have different connections when the four asymptotic ends are held fixed. Both have four ends and no cycles. These are numerical ODE approximations, not closed formulas or a classification of all network expanders. The time control shows $\sqrt t\,\Sigma$, $t>0$; the $t=0$ view shows the nonregular initial cone only.
 \end{example}
 
 \chapter{Mountain-pass self-expanders}\label{sec:catalogue-mountain-pass-expanders}
@@ -125,7 +132,9 @@ Hoffman--Mart\'in--White construct connected embedded self-expanders in $\mathbb
 
 These are complete proper noncompact surfaces with three conical ends; the end count follows from the three components of the link. They solve $\mathbf H=X^\perp/2$ and yield $\sqrt t\,E$ for $t>0$. They are obtained by degree theory and limiting constructions, not an explicit formula. No common convexity, stability, or numerical entropy value is asserted. Smooth conical ends imply finite Gaussian area and entropy.
 
-The incoming shrinker $M_k$ has genus $2k-2$. Joining $\sqrt{-t}\,M_k$ for $t<0$, $C$ at $t=0$, and $\sqrt t\,E$ for $t>0$ gives the source's self-similar Brakke flow, smooth except at the spacetime origin. This is not a genus increase in a smooth flow across $t=0$. Source: \cite{CatHMWExpand26}, Theorems 1.1--1.2 and equation (1.5), pp.~2--3. The figure records topology schematically.
+The incoming shrinker $M_k$ has genus $2k-2$. Joining $\sqrt{-t}\,M_k$ for $t<0$, $C$ at $t=0$, and $\sqrt t\,E$ for $t>0$ gives the source's self-similar Brakke flow, smooth except at the spacetime origin. This is not a genus increase in a smooth flow across $t=0$. Source: \cite{CatHMWExpand26}, Theorems 1.1--1.2 and equation (1.5), pp.~2--3. The figure is an original topology model, not a numerical solution of the expander equation. The three ends wrap around the $z$-axis, rather than forming three separate tubes. Its displayed cone and small symmetry counts are illustrative; they are not asserted to be the cone $C_k$ of a constructed shrinker or to satisfy the theorem's quantitative hypotheses.
+
+The two slice pairings follow Definition 3.1 and Figure 1 (pp.~9--10): in the reflection plane $\{y=0\}$, the middle end on the positive-$x$ side is joined to the upper end for type~1, and to the lower end for type~2, with no closed slice curves. Each type has both a small and a big expander. These terms refer to the local integral $\int_E\phi\,d\mathcal H^2$, below or above the threshold $3/2$, where $\phi$ is a fixed nonnegative radial function supported in $B(0,1/2)$ and normalized by $\int_{\{z=0\}}\phi\,d\mathcal H^2=1$ (Definition 4.1 and Theorem 4.3). They do not refer to the magnification of the picture. Theorem 5.1 (p.~12) gives all four classes, and Theorems 12.6--12.7 (pp.~39--40) retain genus and class when the boundary radius tends to infinity.
 \end{example}
 
 \chapter{Knotted self-expanders}\label{sec:catalogue-knotted-expanders}
@@ -134,5 +143,82 @@ Mramor--Shengwen Wang construct complete properly embedded self-expanders in $\m
 
 A concrete case has genus one and three ends: inside large balls it is isotopic to the boundary of a tubular neighborhood of a trefoil knot with three disks removed and annular ends attached. The half-cylinders in this description specify topology; the constructed geometric ends are asymptotically conical. More generally, every genus $g\geq1$ occurs with sufficiently many ends, without a universal end count specified here.
 
-The normalization is $\mathbf H=X^\perp/2$, with flow $M_t=\sqrt t\,M$ for $t>0$. The examples are noncompact, complete and proper. No explicit formula, uniqueness, or exact Gaussian-area or entropy value is provided; conical area growth gives finiteness. Source: \cite{CatMWKnotted26}, Theorems 1.1 and 3.1 and Corollary 3.2, pp.~2 and 8--10, arXiv v1 (November 2, 2026). This is a preprint construction, not independently verified here. The drawing is a knot-and-ends topology diagram, not a solved expander.
+The normalization is $\mathbf H=X^\perp/2$, with flow $M_t=\sqrt t\,M$ for $t>0$. The examples are noncompact, complete and proper. No explicit formula, uniqueness, or exact Gaussian-area or entropy value is provided; conical area growth gives finiteness. Source: \cite{CatMWKnotted26}, Theorems 1.1 and 3.1 and Corollary 3.2, pp.~2 and 8--10, arXiv v1 (November 2, 2026). This is a preprint construction, not independently verified here. The interactive picture shows a trefoil tube with three annular ends, with auxiliary views of the closed tube and its three punctures. The accompanying plate explains these topological operations; Figure 2 of the paper motivates the bridge description. All displayed shapes are schematics, not computed expanders.
+\end{example}
+
+\chapter{Joyce--Lee--Tsui Lagrangian expander necks}\label{sec:catalogue-jlt-expanders}
+These expanders smooth two transverse Lagrangian planes in $\mathbb C^n$.
+\begin{example}[Expanding Lagrangian necks]\label{ex:catalogue-jlt-expanders}
+Fix $n\geq2$, $a_j>0$, and $\psi_j\in\mathbb R$. Set
+\[
+ P_\alpha(y)=\frac{e^{\alpha y^2}\prod_{j=1}^n(1+a_jy^2)-1}{y^2},
+ \quad P_\alpha(0)=\alpha+\sum_ja_j,\quad
+ \phi_j(y)=\psi_j+\int_0^y\frac{dt}{(a_j^{-1}+t^2)\sqrt{P_\alpha(t)}}.
+\]
+With $\alpha=1/2$, the exact integral parametrization
+\[
+ X(x,y)=\left(x_j\sqrt{a_j^{-1}+y^2}\,e^{i\phi_j(y)}\right)_{j=1}^n,
+ \qquad (x,y)\in\mathbb S^{n-1}\times\mathbb R,
+\]
+satisfies $\vec H=X^\perp/2$ and gives the flow $\sqrt t\,X$, $t>0$.
+By \cite{CatJoyceLeeTsui2010}, Theorems~C--D, its image is a proper embedded Lagrangian neck. It is complete, has dimension and codimension $n$, and has two ends. For $n=2$ its topology is an annulus; generally it is $\mathbb S^{n-1}\times\mathbb R$.
+
+Write $\bar\phi_j=\phi_j(+\infty)-\psi_j$. The limiting planes have coordinate phases $\psi_j\pm\bar\phi_j$, with $0<2\sum_j\bar\phi_j<\pi$. Every admissible angle tuple determines unique positive $a_j$ at fixed $\alpha$ within this family. The neck is zero-Maslov and almost calibrated. Equal $a_j$ and equal $\psi_j$ give rotational symmetry under $\mathrm{SO}(n)$.
+
+For $n\geq3$, the stronger uniqueness theorem in \cite{CatImagiJoyceOliveira2016}, Theorem~1.2, requires an embedded, exact, closed-as-a-subset Lagrangian expander asymptotic to two transverse planes at rate $\rho<2$. These hypotheses must not be dropped. No general stability claim is attached. The figure projects the $n=2$, $a_1=a_2=1$, $\psi_1=\psi_2=0$ member, evaluating its integrals numerically.
+\end{example}
+
+\chapter{Two-convex Lagrangian graphical expanders}\label{sec:catalogue-ttw-expanders}
+Two-convexity here is a condition on a potential's Hessian, not hypersurface mean convexity.
+\begin{example}[Expanders from homogeneous potentials]\label{ex:catalogue-ttw-expanders}
+Let $n\geq2$. Suppose $U_0:\mathbb R^n\to\mathbb R$ is homogeneous of degree two, is $C^2$ away from the origin, and its Hessian eigenvalues obey
+\[
+ \lambda_i+\lambda_j\geq0,\qquad 1+\lambda_i\lambda_j\geq0\quad(i\ne j),
+ \qquad \prod_{i=1}^n(1+\lambda_i^2)^{-1/2}\geq\varepsilon_1>0.
+\]
+Proposition~6.5 of \cite{CatTsaiTsuiWang2025} produces the unique solution in the stated continuous-initial-data, smooth-positive-time class of
+\[
+ u_t=\sum_{i=1}^n\arctan\lambda_i(D^2u),\qquad
+ u(x,0)=U_0(x),\qquad u(x,t)=t\,u(x/\sqrt t,1).
+\]
+Then $L_t=\{(x,Du(x,t)):x\in\mathbb R^n\}\subset\mathbb C^n$, $t>0$, is self-expanding; $L_1$ satisfies $\vec H=X^\perp/2$. These are complete proper embedded graphs of dimension and codimension $n$, homeomorphic to $\mathbb R^n$, with one end. Hessian bounds persist and higher derivatives obey the estimates in Theorem~5.6. The initial cone is prescribed through the potential; no stronger asymptotic rate is asserted here.
+
+For a concrete nonquadratic seed, take $U_0(0)=0$ and
+\[
+ U_0(x)=-\frac{x_1^2}{20}+\frac14\sum_{j=2}^nx_j^2
+          +10^{-4}\frac{x_1^4}{|x|^2}\quad(x\ne0).
+\]
+A direct differentiation bounds the operator norm of $D^2(x_1^4/|x|^2)$ by $38$. Thus one Hessian eigenvalue lies within $0.0038$ of $-0.1$, and the others within $0.0038$ of $0.5$. Both pair inequalities are strictly positive. This verifies the theorem's hypotheses while keeping the potential nonconvex. This formula describes initial data, not the positive-time expander. The illustration shows its exact initial gradient cone and marks the subsequent PDE smoothing as a construction step.
+\end{example}
+
+\chapter{Lee--Wang embedded quadric expanders}\label{sec:catalogue-lw-quadric-expanders}
+\begin{example}[The expanding mixed-sign quadric family]\label{ex:catalogue-lw-quadric-expanders}
+For $n\geq3$, $n/2<k<n$, and $S=2k-n$, set
+\[
+ Q_-=\left\{x\in\mathbb R^n:\sum_{j\leq k}x_j^2-\sum_{j>k}x_j^2=-2S\right\},\qquad
+ X(x,s)=(e^{is}x_1,\ldots,e^{is}x_k,e^{-is}x_{k+1},\ldots,e^{-is}x_n).
+\]
+On $(Q_-\times\mathbb R)/((x,s)\sim(-x,s+\pi))$ this is a complete proper embedded Lagrangian in $\mathbb C^n$, of dimension and codimension $n$. It satisfies $\vec H=X^\perp/2$, and $L_t=\sqrt t\,X(Q_-\times\mathbb R)$ for $t>0$. This is an exact parametrization subject to one quadric constraint, not an ODE approximation. See \cite{CatLeeWang2010}, Propositions~2.1--2.2, with weights $+1$ and $-1$.
+
+The fiber is $\mathbb R^k\times S^{n-k-1}$. The mapping-torus quotient is connected and has one end. If $n-k=1$, its two fiber components are exchanged by the gluing, and the total manifold is diffeomorphic to $\mathbb R^k\times S^1$, hence orientable. For $n-k\geq2$ the fiber is connected, the antipodal monodromy must be retained, and the total manifold is orientable exactly when $n$ is even. In particular, the $n=3,k=2$ case is orientable: one must pass around the base twice to return to the same component. These topology statements are obtained from the quotient directly; the product and parity shorthand in the source's Proposition~2.2 requires this disconnected-fiber qualification.
+
+The family is noncompact and Hamiltonian stationary, with $SO(k)\times SO(n-k)$ and circle symmetries, and is asymptotic to the same cone as Example~\ref{ex:catalogue-lw-quadric-shrinkers}. Its planar-coordinate quadric description gives polynomial volume growth and finite centered Gaussian area; this entry records no entropy value or stability result. No surface genus is assigned to these $n\geq3$ examples. The source's weak continuation at $t=0$ is a separate varifold statement; the smooth time interval here is $t>0$.
+
+For the illustrated case $n=3$, $k=2$, the full expander has the global parametrization
+\[
+ F_t(a,b,s)=\left(e^{is}a,e^{is}b,e^{-is}\sqrt{a^2+b^2+2t}\right),
+ \qquad (a,b)\in\mathbb R^2,\quad s\in\mathbb R/(2\pi\mathbb Z),\quad t>0.
+\]
+This parametrization is obtained directly from the unit-weight construction in \cite{CatLeeWang2010}, Theorem~1.1 and Section~2.2: one takes the positive component of the real quadric and a full circle of phases. The real slice, obtained at $s=0$ and $s=\pi$, consists of the two graphs
+\[
+ x_3=\pm\sqrt{r^2+2t},\qquad r=\sqrt{x_1^2+x_2^2}\geq0.
+\]
+Their tips are at $x_3=\pm\sqrt{2t}$. The figure compares $t=1/4,1,4$ with the singular cone limit $t=0$, using the same spatial scale and the fixed display cutoff $r\leq3.2$. The complete slices are unbounded. These are exact two-dimensional slices of a three-dimensional flow in $\mathbb R^6$; they are not themselves mean curvature flows in $\mathbb R^3$.
+
+The circle direction explains why two real sheets do not mean two components of the expander. For a point $x=(x_1,x_2,x_3)$ on the positive real sheet, the curve
+\[
+ \gamma_x(s)=\left(e^{is}x_1,e^{is}x_2,e^{-is}x_3\right)
+ =\cos(s)x+\sin(s)i(x_1,x_2,-x_3),\qquad 0\leq s\leq\pi,
+\]
+lies in $L_t$ and joins $x$ to $-x$ on the other real sheet. It is a semicircle in a real two-plane in $\mathbb R^6$, since the two spanning vectors are orthogonal and have equal length. The circle-phase control follows this path at fixed time; only the time control changes the flow.
 \end{example}

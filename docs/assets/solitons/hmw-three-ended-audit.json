@@ -1,0 +1,40 @@
+{
+  "status": "schematic",
+  "source": "https://arxiv.org/abs/2502.20340v3",
+  "source_locations": "Figure 7; Theorems 43, 55, 59; Proposition 62",
+  "models": {
+    "1": {
+      "vertices": 9631,
+      "faces": 18864,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 2,
+      "euler_characteristic": -5,
+      "orientable": true,
+      "bridges": 4,
+      "minimum_triangle_area": 0.0009152753211488439
+    },
+    "3": {
+      "vertices": 13579,
+      "faces": 26776,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 6,
+      "euler_characteristic": -13,
+      "orientable": true,
+      "bridges": 8,
+      "minimum_triangle_area": 0.0002721999061569408
+    },
+    "7": {
+      "vertices": 20803,
+      "faces": 41232,
+      "components": 1,
+      "boundary_loops": 3,
+      "genus": 14,
+      "euler_characteristic": -29,
+      "orientable": true,
+      "bridges": 16,
+      "minimum_triangle_area": 7.20835481487228e-05
+    }
+  }
+}

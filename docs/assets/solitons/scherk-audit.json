@@ -1,0 +1,41 @@
+{
+  "65": {
+    "grid": 65,
+    "boundary_height": 2.5000000000000013,
+    "length": 2.4840281057435987,
+    "stencil_residual_max": 1.1737277816337155e-12,
+    "core_fourth_order_operator_residual_max": 0.012294533279695319,
+    "core_gauss_curvature_max": -0.1883798815928164,
+    "core_definition": "|2x/L| <= 0.8, |2y/w| <= 0.8, |u| <= 1.5; original grid, not resampled corner fills",
+    "core_height_difference_at_normalized_coordinates": 0.01961419752143153
+  },
+  "129": {
+    "grid": 129,
+    "boundary_height": 2.5,
+    "length": 2.454292937955937,
+    "stencil_residual_max": 9.469314221632885e-12,
+    "core_fourth_order_operator_residual_max": 0.0042167480400164825,
+    "core_gauss_curvature_max": -0.15846338659116607,
+    "core_definition": "|2x/L| <= 0.8, |2y/w| <= 0.8, |u| <= 1.5; original grid, not resampled corner fills",
+    "core_height_difference_at_normalized_coordinates": 0.0059580899619060546
+  },
+  "257": {
+    "grid": 257,
+    "boundary_height": 2.5,
+    "length": 2.4482641431662886,
+    "stencil_residual_max": 4.305178435970447e-11,
+    "core_fourth_order_operator_residual_max": 0.0010130477392320536,
+    "core_gauss_curvature_max": -0.1587281060627079,
+    "core_definition": "|2x/L| <= 0.8, |2y/w| <= 0.8, |u| <= 1.5; original grid, not resampled corner fills"
+  },
+  "257h2": {
+    "grid": 257,
+    "boundary_height": 2.0,
+    "length": 2.4530089929957546,
+    "stencil_residual_max": 2.223443651416801e-11,
+    "core_fourth_order_operator_residual_max": 0.0008714742006986631,
+    "core_gauss_curvature_max": -0.15888301081645498,
+    "core_definition": "|2x/L| <= 0.8, |2y/w| <= 0.8, |u| <= 1.5; original grid, not resampled corner fills",
+    "core_height_difference_at_normalized_coordinates": 0.006147849888561319
+  }
+}

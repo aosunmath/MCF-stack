@@ -1,0 +1,29 @@
+{
+  "source": "Celso Viana, arXiv:1802.02108v2, (1.1), (2.2), Lemma 2.4, Theorem 1.3",
+  "source_sha256": "992f374dc9b387fdc371dad9291f068fb5c4cb8ceb5e7e48b8391e2b5c756fd3",
+  "equation": "gamma_t = gamma_uu / |gamma_u|^2 - gamma^perp / |gamma|^2; n=2; tangential diffusion gauge",
+  "method": "Second-order centered differences, symmetry ghost points, method of lines with SciPy BDF",
+  "quarter_intervals": [
+    320,
+    640,
+    1280
+  ],
+  "exported_quarter_intervals": 160,
+  "time_interval": [
+    0,
+    0.09
+  ],
+  "frame_spacing": 0.001,
+  "rtol": 2e-09,
+  "atol": 2e-11,
+  "max_step": 0.0005,
+  "max_pointwise_refinement_320_640": 5.079354098644351e-05,
+  "max_pointwise_refinement_640_1280": 1.2679978973223482e-05,
+  "refinement_ratio": 4.005806405018893,
+  "max_pointwise_tolerance_change": 6.417946210590664e-08,
+  "diagnostic_scope": "Mesh and tolerance comparisons, not certified error bounds or an extinction-time computation.",
+  "singularity_included": false,
+  "extinction_time": null,
+  "final_tip_x": 0.17085629515472983,
+  "final_max_y": 0.02822136054759739
+}

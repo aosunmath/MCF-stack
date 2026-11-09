@@ -1,0 +1,50 @@
+{
+  "status": "drawing mesh audit; not translator validation",
+  "models": [
+    {
+      "vertices": 14192,
+      "faces": 28000,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -4,
+      "genus": 2,
+      "epsilon": 0.22,
+      "maximum_bounded_field_residual": 9.427822848248214e-15
+    },
+    {
+      "vertices": 14178,
+      "faces": 28000,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -4,
+      "genus": 2,
+      "epsilon": 0.35,
+      "maximum_bounded_field_residual": 5.346158181616349e-15
+    },
+    {
+      "vertices": 14178,
+      "faces": 28000,
+      "components": 1,
+      "boundary_loops": 2,
+      "boundary_is_manifold": true,
+      "edge_incidence": [
+        1,
+        2
+      ],
+      "euler_characteristic": -4,
+      "genus": 2,
+      "epsilon": 0.5,
+      "maximum_bounded_field_residual": 3.975986206938842e-15
+    }
+  ]
+}
