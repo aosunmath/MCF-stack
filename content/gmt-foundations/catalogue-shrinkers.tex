@@ -1060,7 +1060,29 @@ This exact map gives a complete proper embedded Lagrangian of dimension and codi
 
 The fiber $Q_+$ is $S^{k-1}\times\mathbb R^{n-k}$. The antipodal gluing is part of the topology; a product with $S^1$ cannot in general replace this mapping torus. The full manifold is connected, noncompact, and has one end. When $n-k=1$ the gluing exchanges the two fiber ends; otherwise the fiber already has one end. It is orientable exactly when $n$ is even. The $n=3$, $k=2$ case is a nonorientable three-manifold, not a surface with a genus.
 
-The $SO(k)\times SO(n-k)$ action and the indicated circle action preserve the image. The Lagrangian angle is $Ss+\pi/2$ locally; it is harmonic, so the example is Hamiltonian stationary, although it is not stationary under MCF. It is asymptotic to the corresponding quadric cone. Properness follows directly from $|X|=|x|$ on the mapping torus. Its polynomial volume growth gives finite entropy, equal to centered Gaussian area in this normalized shrinker setting; no numerical value or stability theorem is asserted here. The figure shows the exact real slice $s=0$ for $n=3,k=2$, not the whole three-dimensional submanifold of $\mathbb R^6$. The companion expander is Example~\ref{ex:catalogue-lw-quadric-expanders}.
+The $SO(k)\times SO(n-k)$ action and the indicated circle action preserve the image. The Lagrangian angle is $Ss+\pi/2$ locally; it is harmonic, so the example is Hamiltonian stationary, although it is not stationary under MCF. It is asymptotic to the corresponding quadric cone. Properness follows directly from $|X|=|x|$ on the mapping torus. Its polynomial volume growth gives finite entropy, equal to centered Gaussian area in this normalized shrinker setting; no numerical value or stability theorem is asserted here. The figure uses the exact $n=3$, $k=2$ case, as explained below. The companion expander is Example~\ref{ex:catalogue-lw-quadric-expanders}.
+
+For the illustrated weights $(1,1,-1)$, put $r_t(u)=\sqrt{u^2-2t}$. At $t<0$ the complete flow has the explicit coordinates
+\[
+ F_t(\theta,u,s)=\bigl(r_t(u)\cos\theta\,e^{is},
+ r_t(u)\sin\theta\,e^{is},u e^{-is}\bigr),
+ \qquad \theta\in\mathbb R/(2\pi\mathbb Z),\quad u\in\mathbb R,\quad s\in\mathbb R.
+\]
+The circle coordinate obeys $(\theta,u,s+\pi)\sim(\theta+\pi,-u,s)$.
+Fixing $s=0$ gives $x_1^2+x_2^2-x_3^2=-2t$ and waist radius $\sqrt{-2t}$.
+The four views use one spatial scale and the fixed ambient crop $|F_t|\leq3.6$.
+Thus the shrinking waist approaches the cone while the noncompact ends remain visible.
+The cut edges are display boundaries. The phase leaves are two-dimensional slices of the full flow, and are not themselves surface mean curvature flows in $\mathbb R^3$.
+
+The circle-action view projects a selected phase leaf and sampled circle orbits by
+\[
+ P(z_1,z_2,z_3)=\left(\operatorname{Re}z_1,
+ \frac{\operatorname{Re}z_2+\operatorname{Im}z_1}{\sqrt2},
+ \frac{\operatorname{Re}z_3+\operatorname{Im}z_2}{\sqrt2}\right).
+\]
+Changing $s$ changes a spatial coordinate, not the time. Crossings in this projection need not be self-intersections in $\mathbb R^6$.
+The optional positive-time views use the same quadric equation, with
+$x_3=\pm\sqrt{x_1^2+x_2^2+2t}$. These two real sheets belong to the connected companion expander after circle gluing. The $t=0$ cone is singular; Theorem~1.1 and Section~3 of \cite{CatLeeWang2010} give the Brakke continuation through it without mass loss, rather than a smooth flow across zero.
 \end{example}
 
 \chapter{Chopp cubical shrinker candidate}\label{sec:catalogue-chopp-cube}

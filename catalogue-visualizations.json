@@ -1169,10 +1169,11 @@
         "CatLeeWang2010"
       ],
       "model": "lw-quadric-shrinkers",
-      "status": "Exact real slice",
-      "caption": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension.",
-      "alt": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension.",
-      "interactive": false
+      "status": "Exact time slices and projected circle action",
+      "caption": "The n = 3, k = 2 flow in C³, with weights (1, 1, −1). Four s = 0 slices share one spatial scale and the fixed crop |X| ≤ 3.6; the waist radius √(−2t) tends to zero. Circle action shows a projected phase leaf and sampled orbits in R⁶. Include expander shows the companion positive-time branch of the Brakke continuation; t = 0 is singular. These 2D slices do not evolve by their own mean curvature in R³.",
+      "alt": "Exact Lee–Wang real slices at t = −1, −0.25, −0.04 and 0: a hyperboloidal waist contracts to a double cone at a common spatial scale.",
+      "interactive": true,
+      "credit_anchor": "lee-wang"
     },
     {
       "label": "ex:catalogue-lw-quadric-expanders",

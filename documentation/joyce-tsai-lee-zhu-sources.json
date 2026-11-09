@@ -203,8 +203,8 @@
       "citations": [
         "CatLeeWang2010"
       ],
-      "formula_status": "Exact real slice",
-      "illustration": "The s = 0 real slice x₁² + x₂² − x₃² = 2 in C³. It is only a two-dimensional slice of a three-manifold in R⁶; the circle action supplies the missing dimension."
+      "formula_status": "Exact time slices and projected circle action",
+      "illustration": "The n = 3, k = 2 flow in C³, with weights (1, 1, −1). Four s = 0 slices share one spatial scale and the fixed crop |X| ≤ 3.6; the waist radius √(−2t) tends to zero. Circle action shows a projected phase leaf and sampled orbits in R⁶. Include expander shows the companion positive-time branch of the Brakke continuation; t = 0 is singular. These 2D slices do not evolve by their own mean curvature in R³."
     },
     {
       "label": "ex:catalogue-lw-quadric-expanders",

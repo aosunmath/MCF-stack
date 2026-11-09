@@ -4604,7 +4604,7 @@
     },
     {
       "label": "ex:catalogue-lw-quadric-shrinkers",
-      "notes": "Full Euclidean ambient dimension is 2n or 2m, at least six. Auxiliary slices and curves do not determine the genus of this higher-dimensional example.",
+      "notes": "Full Euclidean ambient dimension is 2n, at least six. The time viewer uses n = 3, k = 2: two-dimensional phase leaves and a projection of sampled circle orbits, not a surface flow in R³. Projection crossings do not change embeddedness. The optional t ≥ 0 cone and expander illustrate the source’s Brakke continuation; properties here concern smooth t < 0 shrinker slices.",
       "citations": [
         "CatLeeWang2010"
       ],
