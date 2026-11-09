@@ -5132,7 +5132,7 @@
       "category": "expanders",
       "tag": "A1A5802C8577",
       "model": "lw-quadric-expanders",
-      "illustration_status": "Exact real slice"
+      "illustration_status": "Exact time slices and circle orbit"
     },
     {
       "label": "ex:catalogue-su-glued-translators",
