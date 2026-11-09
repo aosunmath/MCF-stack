@@ -760,7 +760,8 @@
       "file": "catalogue-expanders.tex",
       "status": "cited-example",
       "citations": [
-        "CatHMWExpand26"
+        "CatHMWExpand26",
+        "CatShaoZou2025a"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -797,7 +798,8 @@
       "file": "catalogue-other-flows.tex",
       "status": "cited-example",
       "citations": [
-        "CatMP19"
+        "CatMP19",
+        "CatChoiHuangLee2025"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1191,6 +1193,764 @@
       "status": "cited-example",
       "citations": [
         "CatHalldorsson2013"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-drugan-kleene",
+      "title": "Drugan--Kleene immersed shrinking families",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatDruganKleene2017"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-riedler-isoparametric",
+      "title": "Riedler shrinkers from isoparametric foliations",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatRiedler2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-shrinkers",
+      "title": "Anciaux shrinkers with minimal Legendrian leaves",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-expanders",
+      "title": "Anciaux expanders with minimal Legendrian leaves",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-nguyen-grim-configurations",
+      "title": "Nguyen translators from grim-reaper configurations",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatNguyen2013",
+        "CatNguyen2015"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-polyhedral-slab-translators",
+      "title": "Convex slab translators with polyhedral asymptotics",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-castro-lerma-pairs",
+      "title": "Castro--Lerma Lagrangian translators from curve pairs",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatCastroLerma2012"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-su-wood-translating-helicoids",
+      "title": "Su--Wood Lagrangian translating helicoids",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-su-wood-paired-translators",
+      "title": "Su--Wood paired-profile translators",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-nonconvex-entire-translators",
+      "title": "Nonconvex entire graphical translators",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatDavilaPinoWei2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-graphical-cone-expanders",
+      "title": "Graphical expanders from general Lipschitz cones",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatEckerHuisken1989"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lawson-osserman-expanders",
+      "title": "Expanders based on generalized Lawson--Osserman maps",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLee2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-birotational-expanders",
+      "title": "Bi-rotational expanding hypersurfaces",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatNeto2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-birotational-shrinkers",
+      "title": "Complete bi-rotational shrinking continuations",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatNeto2026a"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ancient-sine-wave",
+      "title": "The ancient sine wave",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatNakayamaIizukaWadati1994",
+        "CatAY18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ma-halfplane-ancient",
+      "title": "Immersed ancient curves spanning a half-plane",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMa2021"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-nonplanar-eternal-reapers",
+      "title": "Nonplanar eternal curves from grim reapers",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniMramor2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-collapsed-ancient-pancakes",
+      "title": "Rotational collapsed ancient pancakes",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangfordTinaglia2017"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-polyhedral-ancient-pancakes",
+      "title": "Ancient pancakes with polyhedral asymptotics",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-convex-eternal-nontranslators",
+      "title": "Convex eternal flows that do not translate",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-reduced-symmetry-ancient-ovals",
+      "title": "Ancient ovals with reduced symmetry",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatDuHaslhofer2021"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-ancient-doughnuts",
+      "title": "Non-self-similar ancient doughnuts",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangfordMramor2020"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-euclidean",
+      "title": "Ancient isoparametric flows in Euclidean space",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-sphere",
+      "title": "Ancient isoparametric flows in spheres",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-flows-emerging-from-cones",
+      "title": "Non-self-similar flows emerging from cones",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChen2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-bounded-mean-curvature-singularities",
+      "title": "Hypersurface singularities with bounded mean curvature",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatStolarski2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
+      "title": "Lagrangian singularities with prescribed orbit models",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMadnickWood2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-spoon",
+      "title": "Brakke spoon",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-lens",
+      "title": "Shrinking lens network",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-fish",
+      "title": "Shrinking fish network",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-three-ray",
+      "title": "Three-ray shrinking star",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-four-ray",
+      "title": "Four-ray shrinking star",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-five-ray",
+      "title": "Five-ray shrinking star",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-rocket",
+      "title": "Shrinking rocket network",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-network-cisgeminate-eye",
+      "title": "Cisgeminate-eye shrinker",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChangLue2019"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-shrinking-lens-cluster",
+      "title": "Lens-shaped shrinking surface clusters",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBaldiHausMantegazza2019"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-rotational-trumpet-ends",
+      "title": "Rotational shrinking trumpet ends",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatKleeneMoller2014"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-isoparametric-shrinking-ends",
+      "title": "Shrinking ends asymptotic to isoparametric cones",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChangSpruck2017"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-park-birotational-ends",
+      "title": "Park bi-rotational shrinking ends",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatPark2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-expanding-cycle-networks",
+      "title": "Expanding planar networks with a bounded cell",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatChenGuo2007"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-multiphase-expander-report",
+      "title": "Reported multiphase expanding surface constructions",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLiao2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-free-boundary-ancient-balls",
+      "title": "Convex ancient free-boundary flows in balls",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniLangford2023",
+        "CatBourniLangford2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-free-boundary-convex-domains",
+      "title": "Ancient free-boundary curves in convex domains",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniBurnsCatron2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-mixed-boundary-ancient-curves",
+      "title": "Ancient curves with mixed boundary conditions",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLangfordLiuMcNamara2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-unstable-free-boundary-ancient",
+      "title": "Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBourniFranz2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-yamamoto-cone-shrinkers",
+      "title": "Yamamoto Lagrangian shrinkers in Calabi--Yau cones",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatYamamoto2012"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-rotational-translators",
+      "title": "Rotational translators in the hyperbolic-plane product",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBueno2018"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-grim-reapers",
+      "title": "Grim reapers in the hyperbolic-plane product",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBuenoLopez2024"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-helicoidal",
+      "title": "Helicoidal rotators-translators in the hyperbolic-plane product",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLimaRamosSantos2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-killing-catenoids",
+      "title": "Hyperbolic Killing translators and catenoids",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLimaRamosSantos2026",
+        "CatLimaRamos2026"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-parabolic-grims",
+      "title": "Parabolic Killing grim reapers in hyperbolic space",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatBuenoLopez2024a"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-nil-invariant-translators",
+      "title": "Invariant translators in the Heisenberg group",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatPipoli2018"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-sol-invariant-translators",
+      "title": "Invariant translators in Sol geometry",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatPipoli2019"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-sl2-invariant-translators",
+      "title": "Invariant translators in the special linear group",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLopezMunteanu2024"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-compact-symmetric-product-translators",
+      "title": "Graphical translators over compact symmetric spaces",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatFujii2024",
+        "CatFujiiKoike2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-curve-solitons",
+      "title": "Isometric curve-shortening solitons in the hyperbolic plane",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatWoolgarXie2022"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-perturbed-sphere-eternal-tori",
+      "title": "Eternal tori in perturbations of the round three-sphere",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatMaganoSmith2020"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-lotay-oliveira-neck-pinches",
+      "title": "Finite-time Lagrangian neck pinches with circle symmetry",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLotayOliveira2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-shrinkers",
+      "title": "Noncompact periodic Lagrangian shrinkers",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-expanders",
+      "title": "Noncompact periodic Lagrangian expanders",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-sun-wang-prescribed-ends",
+      "title": "Translators with general closed-shrinker ends",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatSunWang2025"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-immersed-ancient-grim-chains",
+      "title": "Immersed ancient curves from grim-reaper chains",
+      "kind": "example",
+      "file": "catalogue-literature.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAY18"
       ],
       "dependencies": [],
       "formal_verification": "none"

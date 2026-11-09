@@ -1,0 +1,72 @@
+{
+  "anciaux-3-0.5": {
+    "phase_closure_error": 7.647216193618078e-13,
+    "radius": 1.185790467034432,
+    "period": 7.756138345005937
+  },
+  "anciaux-2-1": {
+    "phase_closure_error": 4.702904732312163e-13,
+    "radius": 0.20777212732277198,
+    "period": 6.9708714246801105
+  },
+  "graph-expander": {
+    "grids": [
+      81,
+      161
+    ],
+    "domain": [
+      -8,
+      8
+    ],
+    "display_domain": [
+      -4,
+      4
+    ],
+    "max_refinement_difference": [
+      9.687660469598347e-05,
+      5.333663364631702e-05,
+      3.345908260776742e-05
+    ],
+    "times": [
+      0.25,
+      1,
+      2.25
+    ],
+    "boundary": "fixed initial cone; finite-domain approximation"
+  },
+  "network-1--1": {
+    "shooting_angle_error": 3.673505943879718e-12,
+    "junction_radius": 1.1390120790267615,
+    "junction_angle_degrees": 120
+  },
+  "network-2--1": {
+    "shooting_angle_error": 1.2261303083960229e-12,
+    "junction_radius": 1.6858428706166844,
+    "junction_angle_degrees": 120
+  },
+  "network-3--1": {
+    "shooting_angle_error": 5.329070518200751e-15,
+    "junction_radius": 1.2251879079619628,
+    "junction_angle_degrees": 120
+  },
+  "network-4--1": {
+    "shooting_angle_error": 1.4210854715202004e-14,
+    "junction_radius": 0.9443749449689027,
+    "junction_angle_degrees": 120
+  },
+  "network-5--1": {
+    "shooting_angle_error": 2.6645352591003757e-15,
+    "junction_radius": 0.6474785426086245,
+    "junction_angle_degrees": 120
+  },
+  "lens-cluster": {
+    "slope_residual": 8.038014698286133e-14,
+    "height": 1.1115774973453167,
+    "junction_radius": 2.3391042165744973
+  },
+  "network-7-1": {
+    "shooting_angle_error": 1.1373124664260104e-12,
+    "junction_radius": 0.6262117267102378,
+    "junction_angle_degrees": 120
+  }
+}

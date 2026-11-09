@@ -50,7 +50,7 @@ test('embeddedness is recorded for every case and distinguishes known nonembeddi
     assert.ok(c.embeddedness.text.trim());
   }
   assert.deepEqual(records.filter(r=>matchingCases(r,{embeddedness:'nonembedded'}).length).map(r=>r.label).sort(),
-    ['abresch-langer','drugan-sphere','halldorsson-dense-shrinkers','halldorsson-minimal-helicoids','irrational-torus-curves','whitney-sphere'].map(x=>`ex:catalogue-${x}`).sort());
+    ['abresch-langer','drugan-sphere','halldorsson-dense-shrinkers','halldorsson-minimal-helicoids','irrational-torus-curves','nil-invariant-translators','whitney-sphere'].map(x=>`ex:catalogue-${x}`).sort());
   assert.equal(matchingCases(get('bns-genus'),{ambient:'r3',genus:'1',embeddedness:'embedded'}).length,1);
   assert.equal(matchingCases(get('clifford-torus'),{ambient:'r4',embeddedness:'embedded'}).length,1);
 });

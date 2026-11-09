@@ -1501,6 +1501,888 @@
         "title": "Explore helicoidal minimal surfaces as stationary flows",
         "caption": "Formula sampling of stationary minimal immersions, with rotation, zoom and parameter choices. No evolution PDE is approximated."
       }
+    },
+    {
+      "label": "ex:catalogue-drugan-kleene",
+      "section": "drugan-kleene-immersed-shrinking-families",
+      "title": "Drugan--Kleene immersed shrinking families",
+      "category": "shrinkers",
+      "citations": [
+        "CatDruganKleene2017"
+      ],
+      "model": "literature-drugan-kleene",
+      "status": "Source-informed schematic",
+      "caption": "Meridian construction diagram: closed loops and returning/escaping branches distinguish the four topologies. The three panels apply the exact shrinker time scaling to schematic profiles, not to a numerically certified complete Drugan–Kleene shrinker.",
+      "alt": "Drugan--Kleene immersed shrinking families. Meridian construction diagram: closed loops and returning/escaping branches distinguish the four topologies. The three panels apply the exact shrinker time scaling to schematic profiles, not to a numerically certified complete Drugan–Kleene shrinker.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-riedler-isoparametric",
+      "section": "riedler-shrinkers-from-isoparametric-foliations",
+      "title": "Riedler shrinkers from isoparametric foliations",
+      "category": "shrinkers",
+      "citations": [
+        "CatRiedler2023"
+      ],
+      "model": "literature-riedler-isoparametric",
+      "status": "Source-informed schematic",
+      "caption": "Orbit-space diagram: a closed profile passes through varying isoparametric leaves. The leaf symbols are schematic and are not spherical cross-sections of the full hypersurface. Three times use a common spatial scale.",
+      "alt": "Riedler shrinkers from isoparametric foliations. Orbit-space diagram: a closed profile passes through varying isoparametric leaves. The leaf symbols are schematic and are not spherical cross-sections of the full hypersurface. Three times use a common spatial scale.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-shrinkers",
+      "section": "anciaux-shrinkers-with-minimal-legendrian-leaves",
+      "title": "Anciaux shrinkers with minimal Legendrian leaves",
+      "category": "shrinkers",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "model": "literature-anciaux-legendrian-shrinkers",
+      "status": "Numerical ODE profile and projected immersion",
+      "caption": "Numerical closed or two-ended Anciaux profile, with a selectable projected two-dimensional slice of its Legendrian-torus product in ℂ³. The slice is not the full threefold. Homothetic time scaling is exact.",
+      "alt": "Anciaux shrinkers with minimal Legendrian leaves. Numerical closed or two-ended Anciaux profile, with a selectable projected two-dimensional slice of its Legendrian-torus product in ℂ³. The slice is not the full threefold. Homothetic time scaling is exact.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-anciaux-legendrian-expanders",
+      "section": "anciaux-expanders-with-minimal-legendrian-leaves",
+      "title": "Anciaux expanders with minimal Legendrian leaves",
+      "category": "expanders",
+      "citations": [
+        "CatAnciaux2006",
+        "CatMadnickWood2025"
+      ],
+      "model": "literature-anciaux-legendrian-expanders",
+      "status": "Numerical ODE profile and projected immersion",
+      "caption": "Numerical closed or two-ended Anciaux profile, with a selectable projected two-dimensional slice of its Legendrian-torus product in ℂ³. The slice is not the full threefold. Homothetic time scaling is exact.",
+      "alt": "Anciaux expanders with minimal Legendrian leaves. Numerical closed or two-ended Anciaux profile, with a selectable projected two-dimensional slice of its Legendrian-torus product in ℂ³. The slice is not the full threefold. Homothetic time scaling is exact.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-nguyen-grim-configurations",
+      "section": "nguyen-translators-from-grim-reaper-configurations",
+      "title": "Nguyen translators from grim-reaper configurations",
+      "category": "translators",
+      "citations": [
+        "CatNguyen2013",
+        "CatNguyen2015"
+      ],
+      "model": "literature-nguyen-grim-configurations",
+      "status": "Source-informed schematic",
+      "caption": "Exact limiting grim-reaper cylinders with gluing lines highlighted; the desingularized translator is not computed. Compare three times in fixed coordinates and rotate the full spatial configuration.",
+      "alt": "Nguyen translators from grim-reaper configurations. Exact limiting grim-reaper cylinders with gluing lines highlighted; the desingularized translator is not computed. Compare three times in fixed coordinates and rotate the full spatial configuration.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-polyhedral-slab-translators",
+      "section": "convex-slab-translators-with-polyhedral-asymptotics",
+      "title": "Convex slab translators with polyhedral asymptotics",
+      "category": "translators",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "model": "literature-polyhedral-slab-translators",
+      "status": "Source-informed schematic",
+      "caption": "Cross-section of the prescribed circumscribed polyhedral asymptotics. Moving copies illustrate translation; the smooth translator and its speed are not numerically solved.",
+      "alt": "Convex slab translators with polyhedral asymptotics. Cross-section of the prescribed circumscribed polyhedral asymptotics. Moving copies illustrate translation; the smooth translator and its speed are not numerically solved.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-castro-lerma-pairs",
+      "section": "castro-lerma-lagrangian-translators-from-curve-pairs",
+      "title": "Castro--Lerma Lagrangian translators from curve pairs",
+      "category": "translators",
+      "citations": [
+        "CatCastroLerma2012"
+      ],
+      "model": "literature-castro-lerma-pairs",
+      "status": "Numerical ODE and integral parametrization",
+      "caption": "Numerical planar shrinker–expander pair inserted into the exact integral construction. The displayed sheet is a projection from ℂ²; projection crossings do not determine embeddedness.",
+      "alt": "Castro--Lerma Lagrangian translators from curve pairs. Numerical planar shrinker–expander pair inserted into the exact integral construction. The displayed sheet is a projection from ℂ²; projection crossings do not determine embeddedness.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-su-wood-translating-helicoids",
+      "section": "su-wood-lagrangian-translating-helicoids",
+      "title": "Su--Wood Lagrangian translating helicoids",
+      "category": "translators",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "model": "literature-su-wood-translating-helicoids",
+      "status": "Numerical ODE profile projection",
+      "caption": "Numerical Anciaux profiles in the exact Su–Wood orbit Ansatz; a projection of the two-dimensional profile is shown at three translation times. The hidden orbit directions and uncomputed global identifications are stated explicitly.",
+      "alt": "Su--Wood Lagrangian translating helicoids. Numerical Anciaux profiles in the exact Su–Wood orbit Ansatz; a projection of the two-dimensional profile is shown at three translation times. The hidden orbit directions and uncomputed global identifications are stated explicitly.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-su-wood-paired-translators",
+      "section": "su-wood-paired-profile-translators",
+      "title": "Su--Wood paired-profile translators",
+      "category": "translators",
+      "citations": [
+        "CatSuWood2026"
+      ],
+      "model": "literature-su-wood-paired-translators",
+      "status": "Numerical ODE profile projection",
+      "caption": "Numerical Anciaux profiles in the exact Su–Wood orbit Ansatz; a projection of the two-dimensional profile is shown at three translation times. The hidden orbit directions and uncomputed global identifications are stated explicitly.",
+      "alt": "Su--Wood paired-profile translators. Numerical Anciaux profiles in the exact Su–Wood orbit Ansatz; a projection of the two-dimensional profile is shown at three translation times. The hidden orbit directions and uncomputed global identifications are stated explicitly.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-nonconvex-entire-translators",
+      "section": "nonconvex-entire-graphical-translators",
+      "title": "Nonconvex entire graphical translators",
+      "category": "translators",
+      "citations": [
+        "CatDavilaPinoWei2026"
+      ],
+      "model": "literature-nonconvex-entire-translators",
+      "status": "Source-informed schematic",
+      "caption": "Schematic section through the two four-dimensional radial blocks of the construction. The transition region is marked. Vertical shifts show the exact type of motion, but the drawn saddle is not the constructed graph.",
+      "alt": "Nonconvex entire graphical translators. Schematic section through the two four-dimensional radial blocks of the construction. The transition region is marked. Vertical shifts show the exact type of motion, but the drawn saddle is not the constructed graph.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-graphical-cone-expanders",
+      "section": "graphical-expanders-from-general-lipschitz-cones",
+      "title": "Graphical expanders from general Lipschitz cones",
+      "category": "expanders",
+      "citations": [
+        "CatEckerHuisken1989"
+      ],
+      "model": "literature-graphical-cone-expanders",
+      "status": "Numerical PDE approximation",
+      "caption": "Numerical graphical MCF from the nonround cone 0.35 r cos(2θ). Fixed outer boundary truncates the computation; only the interior is drawn. Three physical times share the same axes.",
+      "alt": "Graphical expanders from general Lipschitz cones. Numerical graphical MCF from the nonround cone 0.35 r cos(2θ). Fixed outer boundary truncates the computation; only the interior is drawn. Three physical times share the same axes.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-lawson-osserman-expanders",
+      "section": "expanders-based-on-generalized-lawson-osserman-maps",
+      "title": "Expanders based on generalized Lawson--Osserman maps",
+      "category": "expanders",
+      "citations": [
+        "CatLee2023"
+      ],
+      "model": "literature-lawson-osserman-expanders",
+      "status": "Numerical ODE radial profile",
+      "caption": "Numerical radial ODE profile for the Hopf-map case, showing f(r), the axis, and the asymptotic slope separately. A radial plot is not the full four-fold.",
+      "alt": "Expanders based on generalized Lawson--Osserman maps. Numerical radial ODE profile for the Hopf-map case, showing f(r), the axis, and the asymptotic slope separately. A radial plot is not the full four-fold.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-birotational-expanders",
+      "section": "bi-rotational-expanding-hypersurfaces",
+      "title": "Bi-rotational expanding hypersurfaces",
+      "category": "expanders",
+      "citations": [
+        "CatNeto2026"
+      ],
+      "model": "literature-birotational-expanders",
+      "status": "Numerical ODE profile projection",
+      "caption": "Numerical (p,q)=(1,1) profile and projected circle-pair orbits in ℝ⁴. The conical directions are asymptotic; the profile is not replaced by a cone.",
+      "alt": "Bi-rotational expanding hypersurfaces. Numerical (p,q)=(1,1) profile and projected circle-pair orbits in ℝ⁴. The conical directions are asymptotic; the profile is not replaced by a cone.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-birotational-shrinkers",
+      "section": "complete-bi-rotational-shrinking-continuations",
+      "title": "Complete bi-rotational shrinking continuations",
+      "category": "shrinkers",
+      "citations": [
+        "CatNeto2026a"
+      ],
+      "model": "literature-birotational-shrinkers",
+      "status": "Numerical ODE segment",
+      "caption": "Finite numerical bi-rotational shrinking profile, with the two distinguished cylinder radii. Time scales the same computed segment; no global closing, properness, or embedding claim is inferred from the finite picture.",
+      "alt": "Complete bi-rotational shrinking continuations. Finite numerical bi-rotational shrinking profile, with the two distinguished cylinder radii. Time scales the same computed segment; no global closing, properness, or embedding claim is inferred from the finite picture.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-ancient-sine-wave",
+      "section": "the-ancient-sine-wave",
+      "title": "The ancient sine wave",
+      "category": "other-special-flows",
+      "citations": [
+        "CatNakayamaIizukaWadati1994",
+        "CatAY18"
+      ],
+      "model": "literature-ancient-sine-wave",
+      "status": "Exact formula",
+      "caption": "Exact graph y = asinh(exp(−t) sin x), shown at three real times without rescaling the axes. The forward flattening and backward growth are actual curve shortening.",
+      "alt": "The ancient sine wave. Exact graph y = asinh(exp(−t) sin x), shown at three real times without rescaling the axes. The forward flattening and backward growth are actual curve shortening.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-ma-halfplane-ancient",
+      "section": "immersed-ancient-curves-spanning-a-half-plane",
+      "title": "Immersed ancient curves spanning a half-plane",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMa2021"
+      ],
+      "model": "literature-ma-halfplane-ancient",
+      "status": "Source-informed schematic",
+      "caption": "Qualitative finger and crossing diagram based on Figure 1. Early, intermediate, and later stages illustrate the construction; no numerical physical times or curvature rates are claimed.",
+      "alt": "Immersed ancient curves spanning a half-plane. Qualitative finger and crossing diagram based on Figure 1. Early, intermediate, and later stages illustrate the construction; no numerical physical times or curvature rates are claimed.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-nonplanar-eternal-reapers",
+      "section": "nonplanar-eternal-curves-from-grim-reapers",
+      "title": "Nonplanar eternal curves from grim reapers",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniMramor2023"
+      ],
+      "model": "literature-nonplanar-eternal-reapers",
+      "status": "Source-informed schematic",
+      "caption": "Spatial grim-reaper pieces in perpendicular planes, with a separately colored schematic bridge. The three stages illustrate backward grim regions and forward straightening; they are not a numerical eternal solution.",
+      "alt": "Nonplanar eternal curves from grim reapers. Spatial grim-reaper pieces in perpendicular planes, with a separately colored schematic bridge. The three stages illustrate backward grim regions and forward straightening; they are not a numerical eternal solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-collapsed-ancient-pancakes",
+      "section": "rotational-collapsed-ancient-pancakes",
+      "title": "Rotational collapsed ancient pancakes",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniLangfordTinaglia2017"
+      ],
+      "model": "literature-collapsed-ancient-pancakes",
+      "status": "Source-informed schematic",
+      "caption": "Schematic rotational pancake with fixed slab walls and grim-shaped edge regions. The three stages show collapse toward a round point; their interpolation is not an ancient PDE solution.",
+      "alt": "Rotational collapsed ancient pancakes. Schematic rotational pancake with fixed slab walls and grim-shaped edge regions. The three stages show collapse toward a round point; their interpolation is not an ancient PDE solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-polyhedral-ancient-pancakes",
+      "section": "ancient-pancakes-with-polyhedral-asymptotics",
+      "title": "Ancient pancakes with polyhedral asymptotics",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "model": "literature-polyhedral-ancient-pancakes",
+      "status": "Source-informed schematic",
+      "caption": "Rounded triangular pancake schematic, with its circumscribed squash-down shown separately. Successive stages change the in-plane size while retaining the slab; these are not exact MCF time slices.",
+      "alt": "Ancient pancakes with polyhedral asymptotics. Rounded triangular pancake schematic, with its circumscribed squash-down shown separately. Successive stages change the in-plane size while retaining the slab; these are not exact MCF time slices.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-convex-eternal-nontranslators",
+      "section": "convex-eternal-flows-that-do-not-translate",
+      "title": "Convex eternal flows that do not translate",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniLangfordTinaglia2022"
+      ],
+      "model": "literature-convex-eternal-nontranslators",
+      "status": "Source-informed schematic",
+      "caption": "Qualitative coalescence of translating regions, with a truncated circumscribed wedge. The panels are asymptotic stages; the displayed deformation is not a translator or a computed MCF solution.",
+      "alt": "Convex eternal flows that do not translate. Qualitative coalescence of translating regions, with a truncated circumscribed wedge. The panels are asymptotic stages; the displayed deformation is not a translator or a computed MCF solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-reduced-symmetry-ancient-ovals",
+      "section": "ancient-ovals-with-reduced-symmetry",
+      "title": "Ancient ovals with reduced symmetry",
+      "category": "other-special-flows",
+      "citations": [
+        "CatDuHaslhofer2021"
+      ],
+      "model": "literature-reduced-symmetry-ancient-ovals",
+      "status": "Source-informed schematic",
+      "caption": "Two axial elongations and a spherical-fiber radius in the first ambient ℝ⁴ case. The snapshots are schematic sections of reduced-symmetry ancient ovals, not ellipsoidal MCF solutions.",
+      "alt": "Ancient ovals with reduced symmetry. Two axial elongations and a spherical-fiber radius in the first ambient ℝ⁴ case. The snapshots are schematic sections of reduced-symmetry ancient ovals, not ellipsoidal MCF solutions.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-ancient-doughnuts",
+      "section": "non-self-similar-ancient-doughnuts",
+      "title": "Non-self-similar ancient doughnuts",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniLangfordMramor2020"
+      ],
+      "model": "literature-ancient-doughnuts",
+      "status": "Source-informed schematic",
+      "caption": "The backward shrinking-doughnut model and a later circular neck pinch are shown on fixed axes. Tube profiles interpolate the qualitative geometry only; neither a certified shrinker nor an ancient PDE trajectory is claimed.",
+      "alt": "Non-self-similar ancient doughnuts. The backward shrinking-doughnut model and a later circular neck pinch are shown on fixed axes. Tube profiles interpolate the qualitative geometry only; neither a certified shrinker nor an ancient PDE trajectory is claimed.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-euclidean",
+      "section": "ancient-isoparametric-flows-in-euclidean-space",
+      "title": "Ancient isoparametric flows in Euclidean space",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "model": "literature-isoparametric-ancient-euclidean",
+      "status": "Exact formula in a labeled projection",
+      "caption": "Exact two-radius product evolution at three physical times, projected from ℝ⁴. The two circle radii evolve independently as stated in the formula; projection crossings do not change embeddedness.",
+      "alt": "Ancient isoparametric flows in Euclidean space. Exact two-radius product evolution at three physical times, projected from ℝ⁴. The two circle radii evolve independently as stated in the formula; projection crossings do not change embeddedness.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-isoparametric-ancient-sphere",
+      "section": "ancient-isoparametric-flows-in-spheres",
+      "title": "Ancient isoparametric flows in spheres",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLiuTerng2020"
+      ],
+      "model": "literature-isoparametric-ancient-sphere",
+      "status": "Exact formula in a labeled projection",
+      "caption": "Exact two-radius product evolution at three physical times, projected from ℝ⁴. The two circle radii evolve independently as stated in the formula; projection crossings do not change embeddedness.",
+      "alt": "Ancient isoparametric flows in spheres. Exact two-radius product evolution at three physical times, projected from ℝ⁴. The two circle radii evolve independently as stated in the formula; projection crossings do not change embeddedness.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-flows-emerging-from-cones",
+      "section": "non-self-similar-flows-emerging-from-cones",
+      "title": "Non-self-similar flows emerging from cones",
+      "category": "other-special-flows",
+      "citations": [
+        "CatChen2026"
+      ],
+      "model": "literature-flows-emerging-from-cones",
+      "status": "Source-informed schematic",
+      "caption": "Ordinary positive time t = exp(s) is displayed alongside rescaled time. The cone is a limit; the mode amplitude is schematic and is not an exact MCF solution.",
+      "alt": "Non-self-similar flows emerging from cones. Ordinary positive time t = exp(s) is displayed alongside rescaled time. The cone is a limit; the mode amplitude is schematic and is not an exact MCF solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-bounded-mean-curvature-singularities",
+      "section": "hypersurface-singularities-with-bounded-mean-curvature",
+      "title": "Hypersurface singularities with bounded mean curvature",
+      "category": "other-special-flows",
+      "citations": [
+        "CatStolarski2023"
+      ],
+      "model": "literature-bounded-mean-curvature-singularities",
+      "status": "Source-informed schematic",
+      "caption": "Radial-block schematic of a Simons-cone singularity. The ordinary view, parabolic magnification, and finer neck scale are distinguished; interpolated curves do not solve MCF.",
+      "alt": "Hypersurface singularities with bounded mean curvature. Radial-block schematic of a Simons-cone singularity. The ordinary view, parabolic magnification, and finer neck scale are distinguished; interpolated curves do not solve MCF.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
+      "section": "lagrangian-singularities-with-prescribed-orbit-models",
+      "title": "Lagrangian singularities with prescribed orbit models",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMadnickWood2025"
+      ],
+      "model": "literature-cohomogeneity-one-lagrangian-singularities",
+      "status": "Source-informed schematic",
+      "caption": "Exact special-Lagrangian profile shape with a schematic decreasing neck scale. Type I cone and Type II neck views are separate; the scaling sequence alone is not a solution of Lagrangian MCF.",
+      "alt": "Lagrangian singularities with prescribed orbit models. Exact special-Lagrangian profile shape with a schematic decreasing neck scale. Type I cone and Type II neck views are separate; the scaling sequence alone is not a solution of Lagrangian MCF.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-spoon",
+      "section": "brakke-spoon",
+      "title": "Brakke spoon",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-spoon",
+      "status": "Numerical ODE network",
+      "caption": "Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "alt": "Brakke spoon. Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-lens",
+      "section": "shrinking-lens-network",
+      "title": "Shrinking lens network",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-lens",
+      "status": "Numerical ODE network",
+      "caption": "Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "alt": "Shrinking lens network. Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-fish",
+      "section": "shrinking-fish-network",
+      "title": "Shrinking fish network",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-fish",
+      "status": "Source-informed network schematic",
+      "caption": "Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "alt": "Shrinking fish network. Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-three-ray",
+      "section": "three-ray-shrinking-star",
+      "title": "Three-ray shrinking star",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-three-ray",
+      "status": "Numerical ODE network",
+      "caption": "Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "alt": "Three-ray shrinking star. Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-four-ray",
+      "section": "four-ray-shrinking-star",
+      "title": "Four-ray shrinking star",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-four-ray",
+      "status": "Numerical ODE network",
+      "caption": "Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "alt": "Four-ray shrinking star. Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-five-ray",
+      "section": "five-ray-shrinking-star",
+      "title": "Five-ray shrinking star",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-five-ray",
+      "status": "Numerical ODE network",
+      "caption": "Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "alt": "Five-ray shrinking star. Three times on common axes. Numerical branch shooting with 120-degree junctions; finite rays are display truncations.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-rocket",
+      "section": "shrinking-rocket-network",
+      "title": "Shrinking rocket network",
+      "category": "shrinkers",
+      "citations": [
+        "CatChang2026",
+        "CatChenGuo2007"
+      ],
+      "model": "literature-network-rocket",
+      "status": "Source-informed network schematic",
+      "caption": "Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "alt": "Shrinking rocket network. Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-network-cisgeminate-eye",
+      "section": "cisgeminate-eye-shrinker",
+      "title": "Cisgeminate-eye shrinker",
+      "category": "shrinkers",
+      "citations": [
+        "CatChangLue2019"
+      ],
+      "model": "literature-network-cisgeminate-eye",
+      "status": "Source-informed network schematic",
+      "caption": "Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "alt": "Cisgeminate-eye shrinker. Three times on common axes. Source-based junction diagram; curved arcs are schematic, not a solved shrinker profile.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-shrinking-lens-cluster",
+      "section": "lens-shaped-shrinking-surface-clusters",
+      "title": "Lens-shaped shrinking surface clusters",
+      "category": "shrinkers",
+      "citations": [
+        "CatBaldiHausMantegazza2019"
+      ],
+      "model": "literature-shrinking-lens-cluster",
+      "status": "Numerical ODE cluster",
+      "caption": "Numerically shot rotational caps meeting a planar exterior at 120 degrees. The triple circle is highlighted and the three homothetic times have a common scale.",
+      "alt": "Lens-shaped shrinking surface clusters. Numerically shot rotational caps meeting a planar exterior at 120 degrees. The triple circle is highlighted and the three homothetic times have a common scale.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-rotational-trumpet-ends",
+      "section": "rotational-shrinking-trumpet-ends",
+      "title": "Rotational shrinking trumpet ends",
+      "category": "shrinkers",
+      "citations": [
+        "CatKleeneMoller2014"
+      ],
+      "model": "literature-rotational-trumpet-ends",
+      "status": "Numerical ODE end",
+      "caption": "A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "alt": "Rotational shrinking trumpet ends. A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-isoparametric-shrinking-ends",
+      "section": "shrinking-ends-asymptotic-to-isoparametric-cones",
+      "title": "Shrinking ends asymptotic to isoparametric cones",
+      "category": "shrinkers",
+      "citations": [
+        "CatChangSpruck2017"
+      ],
+      "model": "literature-isoparametric-shrinking-ends",
+      "status": "Source-informed orbit-space schematic",
+      "caption": "A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "alt": "Shrinking ends asymptotic to isoparametric cones. A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-park-birotational-ends",
+      "section": "park-bi-rotational-shrinking-ends",
+      "title": "Park bi-rotational shrinking ends",
+      "category": "shrinkers",
+      "citations": [
+        "CatPark2026"
+      ],
+      "model": "literature-park-birotational-ends",
+      "status": "Source-informed orbit-space schematic",
+      "caption": "A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "alt": "Park bi-rotational shrinking ends. A numerical local profile or a labeled orbit-space schematic, with an explicit inner boundary and dashed asymptotic direction. Homothetic time does not remove that boundary.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-expanding-cycle-networks",
+      "section": "expanding-planar-networks-with-a-bounded-cell",
+      "title": "Expanding planar networks with a bounded cell",
+      "category": "expanders",
+      "citations": [
+        "CatChenGuo2007"
+      ],
+      "model": "literature-expanding-cycle-networks",
+      "status": "Numerical ODE network",
+      "caption": "Numerical symmetric expanding cell with seven or more sides. Junction angles and the branch ODE are checked independently; all time panels use a common spatial scale.",
+      "alt": "Expanding planar networks with a bounded cell. Numerical symmetric expanding cell with seven or more sides. Junction angles and the branch ODE are checked independently; all time panels use a common spatial scale.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-multiphase-expander-report",
+      "section": "reported-multiphase-expanding-surface-constructions",
+      "title": "Reported multiphase expanding surface constructions",
+      "category": "expanders",
+      "citations": [
+        "CatLiao2025"
+      ],
+      "model": "literature-multiphase-expander-report",
+      "status": "Source-informed schematic",
+      "caption": "Local tetrahedral junction model and proposed smoothing stages. This is a diagram of the preprint proposal, not a numerical or independently verified nontrivial expander.",
+      "alt": "Reported multiphase expanding surface constructions. Local tetrahedral junction model and proposed smoothing stages. This is a diagram of the preprint proposal, not a numerical or independently verified nontrivial expander.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-free-boundary-ancient-balls",
+      "section": "convex-ancient-free-boundary-flows-in-balls",
+      "title": "Convex ancient free-boundary flows in balls",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniLangford2023",
+        "CatBourniLangford2025"
+      ],
+      "model": "literature-free-boundary-ancient-balls",
+      "status": "Source-informed schematic",
+      "caption": "Fixed unit ball, equatorial backward limit, and later orthogonal caps. The caps are contact-angle schematics, not a circular-arc formula for the ancient solution.",
+      "alt": "Convex ancient free-boundary flows in balls. Fixed unit ball, equatorial backward limit, and later orthogonal caps. The caps are contact-angle schematics, not a circular-arc formula for the ancient solution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-free-boundary-convex-domains",
+      "section": "ancient-free-boundary-curves-in-convex-domains",
+      "title": "Ancient free-boundary curves in convex domains",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniBurnsCatron2025"
+      ],
+      "model": "literature-free-boundary-convex-domains",
+      "status": "Source-informed schematic",
+      "caption": "An orthogonal diameter in a fixed convex domain and schematic arcs on either side. The barrier remains fixed through time; the intermediate curves are not computed ancient solutions.",
+      "alt": "Ancient free-boundary curves in convex domains. An orthogonal diameter in a fixed convex domain and schematic arcs on either side. The barrier remains fixed through time; the intermediate curves are not computed ancient solutions.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-mixed-boundary-ancient-curves",
+      "section": "ancient-curves-with-mixed-boundary-conditions",
+      "title": "Ancient curves with mixed boundary conditions",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLangfordLiuMcNamara2025"
+      ],
+      "model": "literature-mixed-boundary-ancient-curves",
+      "status": "Source-informed schematic",
+      "caption": "Fixed Dirichlet endpoint and moving orthogonal Neumann endpoint, with the two stationary segments distinguished. Stages are schematic; the fixed disk is never rescaled.",
+      "alt": "Ancient curves with mixed boundary conditions. Fixed Dirichlet endpoint and moving orthogonal Neumann endpoint, with the two stationary segments distinguished. Stages are schematic; the fixed disk is never rescaled.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-unstable-free-boundary-ancient",
+      "section": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
+      "title": "Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "category": "other-special-flows",
+      "citations": [
+        "CatBourniFranz2026"
+      ],
+      "model": "literature-unstable-free-boundary-ancient",
+      "status": "Source-informed schematic",
+      "caption": "Fixed ambient boundary and a free-boundary minimal background with schematic unstable displacement. The three stages are not eigenfunction graphs falsely asserted to satisfy the nonlinear boundary condition.",
+      "alt": "Ancient flows from unstable free-boundary minimal hypersurfaces. Fixed ambient boundary and a free-boundary minimal background with schematic unstable displacement. The three stages are not eigenfunction graphs falsely asserted to satisfy the nonlinear boundary condition.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-yamamoto-cone-shrinkers",
+      "section": "yamamoto-lagrangian-shrinkers-in-calabi-yau-cones",
+      "title": "Yamamoto Lagrangian shrinkers in Calabi--Yau cones",
+      "category": "shrinkers",
+      "citations": [
+        "CatYamamoto2012"
+      ],
+      "model": "literature-yamamoto-cone-shrinkers",
+      "status": "Source-informed schematic",
+      "caption": "Radial cone coordinate and topology symbol for Σ_g × S¹. Exact radial time scaling is applied to a schematic, not to an explicit Euclidean parametrization.",
+      "alt": "Yamamoto Lagrangian shrinkers in Calabi--Yau cones. Radial cone coordinate and topology symbol for Σ_g × S¹. Exact radial time scaling is applied to a schematic, not to an explicit Euclidean parametrization.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-rotational-translators",
+      "section": "rotational-translators-in-the-hyperbolic-plane-product",
+      "title": "Rotational translators in the hyperbolic-plane product",
+      "category": "translators",
+      "citations": [
+        "CatBueno2018"
+      ],
+      "model": "literature-hyperbolic-product-rotational-translators",
+      "status": "Numerical ODE profile",
+      "caption": "Numerically integrated product-metric bowl and catenoid meridians in disk × height coordinates. Vertical speed is 2 in the catalogue trace convention.",
+      "alt": "Rotational translators in the hyperbolic-plane product. Numerically integrated product-metric bowl and catenoid meridians in disk × height coordinates. Vertical speed is 2 in the catalogue trace convention.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-grim-reapers",
+      "section": "grim-reapers-in-the-hyperbolic-plane-product",
+      "title": "Grim reapers in the hyperbolic-plane product",
+      "category": "translators",
+      "citations": [
+        "CatBuenoLopez2024"
+      ],
+      "model": "literature-hyperbolic-product-grim-reapers",
+      "status": "Source-informed schematic",
+      "caption": "Select vertical, parabolic or hyperbolic Killing motion in upper-half-plane × height coordinates. Profiles are schematics. A coordinate dilation is an intrinsic isometry, not Euclidean MCF scaling.",
+      "alt": "Grim reapers in the hyperbolic-plane product. Select vertical, parabolic or hyperbolic Killing motion in upper-half-plane × height coordinates. Profiles are schematics. A coordinate dilation is an intrinsic isometry, not Euclidean MCF scaling.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-product-helicoidal",
+      "section": "helicoidal-rotators-translators-in-the-hyperbolic-plane-product",
+      "title": "Helicoidal rotators-translators in the hyperbolic-plane product",
+      "category": "translators",
+      "citations": [
+        "CatLimaRamosSantos2025"
+      ],
+      "model": "literature-hyperbolic-product-helicoidal",
+      "status": "Source-informed schematic",
+      "caption": "Source-informed two-arm spiral and helicoidal orbit diagram in disk × height coordinates. Rotation and vertical translation are alternative descriptions of the same set evolution.",
+      "alt": "Helicoidal rotators-translators in the hyperbolic-plane product. Source-informed two-arm spiral and helicoidal orbit diagram in disk × height coordinates. Rotation and vertical translation are alternative descriptions of the same set evolution.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-killing-catenoids",
+      "section": "hyperbolic-killing-translators-and-catenoids",
+      "title": "Hyperbolic Killing translators and catenoids",
+      "category": "translators",
+      "citations": [
+        "CatLimaRamosSantos2026",
+        "CatLimaRamos2026"
+      ],
+      "model": "literature-hyperbolic-killing-catenoids",
+      "status": "Source-informed schematic",
+      "caption": "Upper-half-space profile and rotational orbit schematic under hyperbolic dilation. The boundary plane remains fixed; dilation is an ambient hyperbolic isometry.",
+      "alt": "Hyperbolic Killing translators and catenoids. Upper-half-space profile and rotational orbit schematic under hyperbolic dilation. The boundary plane remains fixed; dilation is an ambient hyperbolic isometry.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-parabolic-grims",
+      "section": "parabolic-killing-grim-reapers-in-hyperbolic-space",
+      "title": "Parabolic Killing grim reapers in hyperbolic space",
+      "category": "translators",
+      "citations": [
+        "CatBuenoLopez2024a"
+      ],
+      "model": "literature-hyperbolic-parabolic-grims",
+      "status": "Source-informed schematic",
+      "caption": "Parabolic horizontal motion in the upper-half-space model, with the ideal boundary marked. Schematic profile; the horizontal isometry is distinct from hyperbolic dilation.",
+      "alt": "Parabolic Killing grim reapers in hyperbolic space. Parabolic horizontal motion in the upper-half-space model, with the ideal boundary marked. Schematic profile; the horizontal isometry is distinct from hyperbolic dilation.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-nil-invariant-translators",
+      "section": "invariant-translators-in-the-heisenberg-group",
+      "title": "Invariant translators in the Heisenberg group",
+      "category": "translators",
+      "citations": [
+        "CatPipoli2018"
+      ],
+      "model": "literature-nil-invariant-translators",
+      "status": "Source-informed schematic",
+      "caption": "Rotational leading-term coordinate model in Nil₃, with g_λ stated. Three vertical translations illustrate the motion. The parabolic profile is an asymptote, not the exact bowl; the other invariant families are described in the text.",
+      "alt": "Invariant translators in the Heisenberg group. Rotational leading-term coordinate model in Nil₃, with g_λ stated. Three vertical translations illustrate the motion. The parabolic profile is an asymptote, not the exact bowl; the other invariant families are described in the text.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-sol-invariant-translators",
+      "section": "invariant-translators-in-sol-geometry",
+      "title": "Invariant translators in Sol geometry",
+      "category": "translators",
+      "citations": [
+        "CatPipoli2019"
+      ],
+      "model": "literature-sol-invariant-translators",
+      "status": "Source-informed schematic",
+      "caption": "Fixed Sol metric and anisotropic Killing motion. A coordinate graph is schematic; the different scaling of x and y is an isometry, not parabolic homothety.",
+      "alt": "Invariant translators in Sol geometry. Fixed Sol metric and anisotropic Killing motion. A coordinate graph is schematic; the different scaling of x and y is an isometry, not parabolic homothety.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-sl2-invariant-translators",
+      "section": "invariant-translators-in-the-special-linear-group",
+      "title": "Invariant translators in the special linear group",
+      "category": "translators",
+      "citations": [
+        "CatLopezMunteanu2024"
+      ],
+      "model": "literature-sl2-invariant-translators",
+      "status": "Source-informed schematic",
+      "caption": "Iwasawa base and circle-fiber orbit schematic. A selected Killing motion is shown through time; fiber identifications and the curved metric are retained in the labels.",
+      "alt": "Invariant translators in the special linear group. Iwasawa base and circle-fiber orbit schematic. A selected Killing motion is shown through time; fiber identifications and the curved metric are retained in the labels.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-compact-symmetric-product-translators",
+      "section": "graphical-translators-over-compact-symmetric-spaces",
+      "title": "Graphical translators over compact symmetric spaces",
+      "category": "translators",
+      "citations": [
+        "CatFujii2024",
+        "CatFujiiKoike2023"
+      ],
+      "model": "literature-compact-symmetric-product-translators",
+      "status": "Source-informed schematic",
+      "caption": "Orbit interval of a compact base and vertically moving graph profile. Open domain endpoints are marked; the drawing does not suggest an entire translator over a closed base.",
+      "alt": "Graphical translators over compact symmetric spaces. Orbit interval of a compact base and vertically moving graph profile. Open domain endpoints are marked; the drawing does not suggest an entire translator over a closed base.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-hyperbolic-curve-solitons",
+      "section": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
+      "title": "Isometric curve-shortening solitons in the hyperbolic plane",
+      "category": "other-special-flows",
+      "citations": [
+        "CatWoolgarXie2022"
+      ],
+      "model": "literature-hyperbolic-curve-solitons",
+      "status": "Source-informed schematic",
+      "caption": "A schematic profile under parabolic isometries in the fixed upper-half-plane chart. The ideal boundary is marked. This illustrates one Killing type, not all profiles of the classification.",
+      "alt": "Isometric curve-shortening solitons in the hyperbolic plane. A schematic profile under parabolic isometries in the fixed upper-half-plane chart. The ideal boundary is marked. This illustrates one Killing type, not all profiles of the classification.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-perturbed-sphere-eternal-tori",
+      "section": "eternal-tori-in-perturbations-of-the-round-three-sphere",
+      "title": "Eternal tori in perturbations of the round three-sphere",
+      "category": "other-special-flows",
+      "citations": [
+        "CatMaganoSmith2020"
+      ],
+      "model": "literature-perturbed-sphere-eternal-tori",
+      "status": "Source-informed schematic",
+      "caption": "A Clifford-torus background and changing schematic normal graphs in a projection. The metric perturbation δ is fixed; the three stages represent flow time, not a changing ambient metric.",
+      "alt": "Eternal tori in perturbations of the round three-sphere. A Clifford-torus background and changing schematic normal graphs in a projection. The metric perturbation δ is fixed; the three stages represent flow time, not a changing ambient metric.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-lotay-oliveira-neck-pinches",
+      "section": "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
+      "title": "Finite-time Lagrangian neck pinches with circle symmetry",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLotayOliveira2023"
+      ],
+      "model": "literature-lotay-oliveira-neck-pinches",
+      "status": "Source-informed schematic",
+      "caption": "Gibbons–Hawking base arc and collapsing circle fiber at a center, followed by a chain. Three schematic stages distinguish the singular time from the regular slices.",
+      "alt": "Finite-time Lagrangian neck pinches with circle symmetry. Gibbons–Hawking base arc and collapsing circle fiber at a center, followed by a chain. Three schematic stages distinguish the singular time from the regular slices.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-shrinkers",
+      "section": "noncompact-periodic-lagrangian-shrinkers",
+      "title": "Noncompact periodic Lagrangian shrinkers",
+      "category": "shrinkers",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "literature-jlt-mixed-periodic-shrinkers",
+      "status": "Source-informed schematic",
+      "caption": "Nonconstant periodic amplitude and phase-loop schematic over an indefinite quadric. Homothetic motion is exact for the constructed family; the sampled orbit diagram is not a solved periodic orbit.",
+      "alt": "Noncompact periodic Lagrangian shrinkers. Nonconstant periodic amplitude and phase-loop schematic over an indefinite quadric. Homothetic motion is exact for the constructed family; the sampled orbit diagram is not a solved periodic orbit.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-jlt-mixed-periodic-expanders",
+      "section": "noncompact-periodic-lagrangian-expanders",
+      "title": "Noncompact periodic Lagrangian expanders",
+      "category": "expanders",
+      "citations": [
+        "CatJoyceLeeTsui2010"
+      ],
+      "model": "literature-jlt-mixed-periodic-expanders",
+      "status": "Source-informed schematic",
+      "caption": "Nonconstant periodic amplitude and phase-loop schematic over an indefinite quadric. Homothetic motion is exact for the constructed family; the sampled orbit diagram is not a solved periodic orbit.",
+      "alt": "Noncompact periodic Lagrangian expanders. Nonconstant periodic amplitude and phase-loop schematic over an indefinite quadric. Homothetic motion is exact for the constructed family; the sampled orbit diagram is not a solved periodic orbit.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-sun-wang-prescribed-ends",
+      "section": "translators-with-general-closed-shrinker-ends",
+      "title": "Translators with general closed-shrinker ends",
+      "category": "translators",
+      "citations": [
+        "CatSunWang2025"
+      ],
+      "model": "literature-sun-wang-prescribed-ends",
+      "status": "Source-informed schematic",
+      "caption": "Asymptotic closed-shrinker sections and a marked unresolved core. This is an end diagram, not a tube construction or a numerical translator.",
+      "alt": "Translators with general closed-shrinker ends. Asymptotic closed-shrinker sections and a marked unresolved core. This is an end diagram, not a tube construction or a numerical translator.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-immersed-ancient-grim-chains",
+      "section": "immersed-ancient-curves-from-grim-reaper-chains",
+      "title": "Immersed ancient curves from grim-reaper chains",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAY18"
+      ],
+      "model": "literature-immersed-ancient-grim-chains",
+      "status": "Source-informed schematic",
+      "caption": "Source-informed grim arcs and connections, including the compact closing arc. Finite-time stages are schematic; grim pieces are backward asymptotic models.",
+      "alt": "Immersed ancient curves from grim-reaper chains. Source-informed grim arcs and connections, including the compact closing arc. Finite-time stages are schematic; grim pieces are backward asymptotic models.",
+      "interactive": true
     }
   ]
 }

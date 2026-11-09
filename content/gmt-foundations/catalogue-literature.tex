@@ -1,0 +1,564 @@
+\chapter{Drugan--Kleene immersed shrinking families}\label{sec:catalogue-drugan-kleene}
+\begin{example}[Drugan--Kleene immersed shrinking families]\label{ex:catalogue-drugan-kleene}
+For every $n\geq2$, Drugan--Kleene construct infinitely many complete rotational immersed self-shrinkers in $\mathbb R^{n+1}$ of each topology $S^n$, $\mathbb R^n$, $\mathbb R\times S^{n-1}$ and $S^1\times S^{n-1}$. This expands the single sphere construction in Example~\ref{ex:catalogue-drugan-sphere}; it does not identify the torus examples with Angenent's embedded torus.
+The arclength meridian $(x,r)$ satisfies
+\[
+ x'=\cos\alpha,\quad r'=\sin\alpha,\quad
+ \alpha'=\frac{x}{2}\sin\alpha+\left(\frac{n-1}{r}-\frac r2\right)\cos\alpha.
+\]
+A smooth axis endpoint must meet the axis orthogonally. Closed meridians generate tori; the other endpoint conditions distinguish spheres, planes and cylinders. The existence proof uses shooting and limiting geodesics; arbitrary initial data do not produce one of these complete examples. The flow is $M_t=\sqrt{-t}\,\Sigma$, $-\infty<t<0$. Nontrivial rotational spheres, planes and cylinders in this construction are not embedded, by the rotational classification quoted in the source. No blanket embedding or uniqueness assertion is made for the torus branch.
+\par Sources: \cite{CatDruganKleene2017}.
+\end{example}
+
+\chapter{Riedler shrinkers from isoparametric foliations}\label{sec:catalogue-riedler-isoparametric}
+\begin{example}[Riedler shrinkers from isoparametric foliations]\label{ex:catalogue-riedler-isoparametric}
+Let $M^{n-1}\subset S^n$ be a closed isoparametric hypersurface with equal principal-curvature multiplicities. Riedler constructs a closed embedded shrinking hypersurface of topology $S^1\times M$ in $\mathbb R^{n+1}$, formed from homothetic copies of leaves of the associated isoparametric foliation. In this entry we retain the cases with $g=3,4,6$ distinct principal curvatures. The $g=1$ case is Angenent's torus; the $g=2$ product-of-spheres case is deliberately omitted from this addition.
+For equal multiplicity $m$, $n-1=gm$. One example is $S^1\times SO(3)/(\mathbb Z_2\times\mathbb Z_2)\subset\mathbb R^5$. The admissible multiplicities are those of an existing spherical isoparametric foliation; arbitrary $(g,m)$ are not allowed. A shooting argument closes a geodesic in the two-dimensional orbit metric. This is an ODE existence construction, not an elementary parametrization. The resulting hypersurface is compact, complete and proper, and its flow is $\sqrt{-t}\,\Sigma$ for $t<0$. No uniqueness or stability statement is asserted here.
+\par Sources: \cite{CatRiedler2023}.
+\end{example}
+
+\chapter{Anciaux shrinkers with minimal Legendrian leaves}\label{sec:catalogue-anciaux-legendrian-shrinkers}
+\begin{example}[Anciaux shrinkers with minimal Legendrian leaves]\label{ex:catalogue-anciaux-legendrian-shrinkers}
+Let $\psi:M^{n-1}\to S^{2n-1}$ be a compact minimal Legendrian immersion. For an arclength curve $\gamma:I\to\mathbb C\setminus\{0\}$, the map
+\[
+ F(s,p)=\gamma(s)\psi(p)
+\]
+is Lagrangian in $\mathbb C^n$. It satisfies $\mathbf H+\lambda F^\perp=0$ precisely when
+\[
+ k=\langle\gamma,N\rangle\left(\frac{n-1}{|\gamma|^2}-\lambda\right).
+\]
+Writing $\gamma=re^{i\phi}$ and $\alpha$ for tangent angle minus $\phi$, the profile equations are $r'=\cos\alpha$, $\phi'=\sin\alpha/r$, $\alpha'=(\lambda r-n/r)\sin\alpha$.
+
+For $\lambda=1/2$, there are closed profiles indexed by coprime positive $p,q$ with $1/(2n)<p/q<1/\sqrt{2n}$. The domain $S^1\times M$ is compact and the immersion is complete and proper. Its image can involve finite identifications; the product domain must not be confused with the topology of an embedded image. Its flow is $\sqrt{-t}\,F$, $t<0$.
+
+This entry emphasizes non-spherical minimal Legendrian leaves, possible for $n\ge3$, including the admissible group orbits in Madnick--Wood. The spherical-leaf overlap with the existing quadric or neck examples is not counted again. The figure uses the minimal Legendrian two-torus $\psi(u,v)=3^{-1/2}(e^{iu},e^{iv},e^{-i(u+v)})$ and a numerical radial profile, with a labeled projection of a two-dimensional slice of the threefold in $\mathbb C^3$. Apparent projection intersections do not prove nonembeddedness.
+\par Sources: \cite{CatAnciaux2006,CatMadnickWood2025}.
+\end{example}
+
+\chapter{Anciaux expanders with minimal Legendrian leaves}\label{sec:catalogue-anciaux-legendrian-expanders}
+\begin{example}[Anciaux expanders with minimal Legendrian leaves]\label{ex:catalogue-anciaux-legendrian-expanders}
+Let $\psi:M^{n-1}\to S^{2n-1}$ be a compact minimal Legendrian immersion. For an arclength curve $\gamma:I\to\mathbb C\setminus\{0\}$, the map
+\[
+ F(s,p)=\gamma(s)\psi(p)
+\]
+is Lagrangian in $\mathbb C^n$. It satisfies $\mathbf H+\lambda F^\perp=0$ precisely when
+\[
+ k=\langle\gamma,N\rangle\left(\frac{n-1}{|\gamma|^2}-\lambda\right).
+\]
+Writing $\gamma=re^{i\phi}$ and $\alpha$ for tangent angle minus $\phi$, the profile equations are $r'=\cos\alpha$, $\phi'=\sin\alpha/r$, $\alpha'=(\lambda r-n/r)\sin\alpha$.
+
+For $\lambda=-1/2$, Anciaux gives a one-parameter family of complete embedded profile curves with two asymptotic rays at angle in $(0,\pi/n)$. The full immersion has domain $\mathbb R\times M$ and two ends for connected compact $M$. It is complete and proper; full embeddedness depends on $\psi$ and possible identifications between leaves, not just on embeddedness of the planar profile. Its flow is $\sqrt t\,F$, $t>0$.
+
+This entry emphasizes non-spherical minimal Legendrian leaves, possible for $n\ge3$, including the admissible group orbits in Madnick--Wood. The spherical-leaf overlap with the existing quadric or neck examples is not counted again. The figure uses the minimal Legendrian two-torus $\psi(u,v)=3^{-1/2}(e^{iu},e^{iv},e^{-i(u+v)})$ and a numerical radial profile, with a labeled projection of a two-dimensional slice of the threefold in $\mathbb C^3$. Apparent projection intersections do not prove nonembeddedness.
+\par Sources: \cite{CatAnciaux2006,CatMadnickWood2025}.
+\end{example}
+
+\chapter{Nguyen translators from grim-reaper configurations}\label{sec:catalogue-nguyen-grim-configurations}
+\begin{example}[Nguyen translators from grim-reaper configurations]\label{ex:catalogue-nguyen-grim-configurations}
+Take finitely many translated grim-reaper cylinders $y=-\log\cos(x-b_j)+c_j$ in $\mathbb R^3$, with no coincident asymptotic planes and no line common to three cylinders. Assign a positive integer $m_k$ to each intersection line. For all sufficiently small $\tau>0$, Nguyen constructs a complete embedded translator with velocity $e_y$, reflection symmetry in $z=0$, and period $2\pi\tau$ in $z$. The smallness bound depends on the configuration, its separation and intersection angles, and the integers $m_k$. Away from intersection lines it converges to the grim cylinders as $\tau\downarrow0$; at each line the rescaled limit is a singly periodic Scherk surface with the prescribed number of periods.
+The periodic extension starts with finitely many cylinders per period vector $a=(a_x,a_y,0)$, requires uniformly separated asymptotic planes and no triple intersection, and gives two independent periods. In particular suitable configurations exist for $a_x\ne0$ and $a_x\ne\pm\pi/q$, $q\in\mathbb N$. The flow is $\Sigma+te_y$, $t\in\mathbb R$. Genus and ends of the full periodic surface must be distinguished from those of a quotient. The drawing shows the exact limiting grim pieces and marked gluing locations; it does not numerically resolve the Scherk bridges or the elliptic correction.
+\par Sources: \cite{CatNguyen2013,CatNguyen2015}.
+\end{example}
+
+\chapter{Convex slab translators with polyhedral asymptotics}\label{sec:catalogue-polyhedral-slab-translators}
+\begin{example}[Convex slab translators with polyhedral asymptotics]\label{ex:catalogue-polyhedral-slab-translators}
+Bourni--Langford--Tinaglia construct convex slab translators from an unbounded regular circumscribed polytope $P\subset\mathbb R^n$ that does not split a line, and separately from circumscribed unbounded simplices. Here circumscribed means that the defining facets are tangent to the unit sphere with the orientations in the source; regularity is the source's symmetry condition on the polytope, not arbitrary polyhedral data. The resulting hypersurface lies in $(-\pi/2,\pi/2)\times\mathbb R^n$, lies in no smaller slab, and its translating evolution sweeps out that slab. Its blow-down under the linear ancient-time scale (the source's ``squash-down'') is $P$. The regular construction is locally uniformly convex, reflection symmetric in the slab midplane, and inherits the symmetries of $P$.
+The evolution is an exact translation of the constructed hypersurface for all real times; the speed and direction are determined by the polyhedral data. There is no closed height formula or general uniqueness claim here. The diagram illustrates a higher-dimensional polyhedral section, not the curvature or topology of a surface in $\mathbb R^3$. Lower-dimensional overlapping slab examples are cross-referenced to Example~\ref{ex:catalogue-delta-wing}.
+\par Sources: \cite{CatBourniLangfordTinaglia2022}.
+\end{example}
+
+\chapter{Castro--Lerma Lagrangian translators from curve pairs}\label{sec:catalogue-castro-lerma-pairs}
+\begin{example}[Castro--Lerma Lagrangian translators from curve pairs]\label{ex:catalogue-castro-lerma-pairs}
+Castro--Lerma construct Lagrangian translating immersions in $\mathbb C^2$ from pairs of planar soliton curves. In the shrinker--expander case, choose nonvanishing arclength curves $\alpha(s),\omega(u)$ with curvature vectors $\mathbf k_\alpha=-\alpha^\perp$ and $\mathbf k_\omega=\omega^\perp$. Their product construction has the integral form
+\[
+ F(s,u)=\left(\int^u\omega'(v)\overline{\omega(v)}\,dv-
+                  \int^s\alpha'(v)\overline{\alpha(v)}\,dv,\;\alpha(s)\omega(u)\right).
+\]
+The translator velocity in this normalization is $(1,0)\in\mathbb C^2$. The induced metric is $(|\alpha|^2+|\omega|^2)(ds^2+du^2)$, so complete profile parameters bounded away from simultaneous zero give complete immersions. The more general rotating/dilating curve pairs are treated in Proposition 2; they are not all asserted to be embedded or proper.
+The flow is $F+t(1,0)$ for $t\in\mathbb R$. Choosing a circular shrinker and a nonstraight expander provides a concrete numerical example. The already listed Hamiltonian-stationary translator and Joyce--Lee--Tsui overlap are not new examples here. The visualized two-dimensional sheet is a projection from four real dimensions, with coordinate choice shown in the controls.
+\par Sources: \cite{CatCastroLerma2012}.
+\end{example}
+
+\chapter{Su--Wood Lagrangian translating helicoids}\label{sec:catalogue-su-wood-translating-helicoids}
+\begin{example}[Su--Wood Lagrangian translating helicoids]\label{ex:catalogue-su-wood-translating-helicoids}
+Use the Su--Wood Ansatz with $a=1$ and an admissible compact group $G\subset SU(m-1)$ acting on $\mathbb C^{m-1}$ with isotropic orbits of dimension $m-2$. If $\gamma,\xi$ are the regular (with the smooth extension at a line profile's origin understood) profile curves satisfying equation (1) of the source, its profile map is
+\[
+ \check F(x,y)=\left(\gamma(x)\xi(y),\;
+ \int^y \xi'(v)\overline{\xi(v)}\,dv-
+ \int^x\gamma'(u)\overline{\gamma(u)}\,du\right).
+\]
+The full Lagrangian is the $G$-orbit of the specified linear inclusion of $\check F$ into $\mathbb C^m$ and translates in $\operatorname{Re}z_m$. The source uses opposite profile soliton constants for the two factors. It is the induced orbit geometry, not ordinary planar curve shortening, that gives the Anciaux profile equation.
+
+Example 1 takes a line and a nonconstant closed Anciaux shrinker profile, with $G=SO(m-1)$. The resulting image is a smooth embedded translating helicoid, periodic in $\operatorname{Im}z_m$; the nonconstant profile distinguishes it from the already recorded constant-radius rotating translator. For other groups the analogous construction can have a one-dimensional singular set and is not included in this smooth case.
+
+The associated motion is translation for every real time. The plotted object is the two-dimensional profile projection used in Figures 1–2, not the full $m$-dimensional Lagrangian. The source explicitly does not claim new complete smooth embedded almost-calibrated translators from this Ansatz.
+\par Sources: \cite{CatSuWood2026}.
+\end{example}
+
+\chapter{Su--Wood paired-profile translators}\label{sec:catalogue-su-wood-paired-translators}
+\begin{example}[Su--Wood paired-profile translators]\label{ex:catalogue-su-wood-paired-translators}
+Use the Su--Wood Ansatz with $a=1$ and an admissible compact group $G\subset SU(m-1)$ acting on $\mathbb C^{m-1}$ with isotropic orbits of dimension $m-2$. If $\gamma,\xi$ are the regular (with the smooth extension at a line profile's origin understood) profile curves satisfying equation (1) of the source, its profile map is
+\[
+ \check F(x,y)=\left(\gamma(x)\xi(y),\;
+ \int^y \xi'(v)\overline{\xi(v)}\,dv-
+ \int^x\gamma'(u)\overline{\gamma(u)}\,du\right).
+\]
+The full Lagrangian is the $G$-orbit of the specified linear inclusion of $\check F$ into $\mathbb C^m$ and translates in $\operatorname{Re}z_m$. The source uses opposite profile soliton constants for the two factors. It is the induced orbit geometry, not ordinary planar curve shortening, that gives the Anciaux profile equation.
+
+Example 3 uses a shrinker and an expander profile and gives immersed $SO(m-1)$- or $T^{m-2}$-invariant translators. They are unbounded in $\operatorname{Im}z_m$ and are not almost calibrated. Full embeddedness and properness are not asserted uniformly here. Non-spherical orbit choices must retain the smoothness restrictions of Section 5.4.
+
+The associated motion is translation for every real time. The plotted object is the two-dimensional profile projection used in Figures 1–2, not the full $m$-dimensional Lagrangian. The source explicitly does not claim new complete smooth embedded almost-calibrated translators from this Ansatz.
+\par Sources: \cite{CatSuWood2026}.
+\end{example}
+
+\chapter{Nonconvex entire graphical translators}\label{sec:catalogue-nonconvex-entire-translators}
+\begin{example}[Nonconvex entire graphical translators]\label{ex:catalogue-nonconvex-entire-translators}
+The 2026 preprint of D\'avila--del Pino--Wei states that for every $N\ge8$ there is a one-parameter family of entire smooth functions $G:\mathbb R^N\to\mathbb R$ satisfying
+\[
+ \operatorname{div}\frac{DG}{\sqrt{1+|DG|^2}}=\frac1{\sqrt{1+|DG|^2}},
+\]
+whose graphs are not convex. The graphs are embedded, complete and proper, with topology $\mathbb R^N$, and translate with unit vertical velocity for $t\in\mathbb R$. The positive scalar quantity in the displayed graph equation expresses mean convexity with the source's normal convention; it does not imply nonnegative principal curvatures. The construction in $N=8$ perturbs Bombieri--De Giorgi--Giusti geometry; higher dimensions follow by flat products. It is separate from the convex Wang examples.
+This is a reported preprint construction, with no independent proof verification or stability conclusion recorded here. Its profile is not available as a closed formula. The figure is a labeled radial-coordinate schematic of the two four-dimensional blocks and the transition near the Simons cone; the plotted saddle is not an exact translator or a surface MCF in three-space.
+\par Sources: \cite{CatDavilaPinoWei2026}.
+\end{example}
+
+\chapter{Graphical expanders from general Lipschitz cones}\label{sec:catalogue-graphical-cone-expanders}
+\begin{example}[Graphical expanders from general Lipschitz cones]\label{ex:catalogue-graphical-cone-expanders}
+Let $u_0:\mathbb R^n\to\mathbb R$ be globally Lipschitz and positively homogeneous of degree one. The unique graphical mean curvature flow from this cone is smooth for $t>0$ and respects parabolic scaling. Thus
+\[
+ u(x,t)=\sqrt t\,U(x/\sqrt t),\qquad
+ \left(\delta_{ij}-\frac{U_iU_j}{1+|DU|^2}\right)U_{ij}
+       =\frac{U-x\cdot DU}{2}.
+\]
+The graph of $U$ is a complete proper embedded hypersurface diffeomorphic to $\mathbb R^n$. For cones smooth away from the vertex, the asymptotic statement is understood away from that vertex. This graphical construction does not require rotational symmetry or mean convexity; its uniqueness is in the corresponding graphical evolution class. A concrete nonsymmetric cone for illustration is $u_0(r,\theta)=0.35r\cos(2\theta)$ in $\mathbb R^3$. It is globally Lipschitz and is not the round cone of the existing rotational entry. The displayed positive-time surfaces are finite-domain numerical graphical MCF approximations; the truncation boundary and refinement error are separate from the complete existence theorem.
+\par Sources: \cite{CatEckerHuisken1989}.
+\end{example}
+
+\chapter{Expanders based on generalized Lawson--Osserman maps}\label{sec:catalogue-lawson-osserman-expanders}
+\begin{example}[Expanders based on generalized Lawson--Osserman maps]\label{ex:catalogue-lawson-osserman-expanders}
+Let $L:S^n\to S^m$ be a Lawson--Osserman map with equal nonzero singular values (LOMSE) of admissible type $(n,p,k)$. Assume $(n,p,k)=(3,2,2),(5,4,2),(5,4,4)$, or $n\ge7$. Chen-Kuan Lee constructs, for sufficiently small positive prescribed data $f(R)=\varepsilon R$, a smooth self-expander
+\[
+ F(r,x)=(rx,f(r)L(x))\in\mathbb R^{n+m+2},\quad r\ge0,\ x\in S^n.
+\]
+It is an entire graph over $\mathbb R^{n+1}$, hence embedded, complete and proper, with one end. The radial function satisfies $f=O(r^k)$, $f'=O(r^{k-1})$ at zero, $f,f'\ge0$, and $f(r)/r\to\varphi_\infty$ at infinity. The limiting cone has slope $\varphi_\infty$; it is not automatically the minimal Lawson--Osserman cone. Uniqueness additionally requires $0\le f\le\varepsilon r$ and $0\le f'\le(2k-1)f/r$ on $(0,R]$.
+The Hopf map $S^3\to S^2$ gives the first case: a four-dimensional graph in $\mathbb R^7$. The source uses $\mathbf H=F^\perp$; dilation by $\sqrt2$ converts the profile to $\mathbf H=F^\perp/2$, whose flow is $\sqrt t\,\Sigma$, $t>0$. The figure shows radial data, not a seven-dimensional embedding in three-space.
+\par Sources: \cite{CatLee2023}.
+\end{example}
+
+\chapter{Bi-rotational expanding hypersurfaces}\label{sec:catalogue-birotational-expanders}
+\begin{example}[Bi-rotational expanding hypersurfaces]\label{ex:catalogue-birotational-expanders}
+Fix integers $p,q\ge1$. In the 2026 preprint of Silva Neto, an $O(p+1)\times O(q+1)$-invariant expander in $\mathbb R^{p+q+2}$ is generated by
+\[
+ F(s,u,v)=(x(s)u,y(s)v),\quad (u,v)\in S^p\times S^q,
+\]
+\[
+ x'=\cos\sigma,\quad y'=\sin\sigma,\quad
+ \sigma'=-\left(\frac p x+\frac x2\right)\sin\sigma+
+           \left(\frac q y+\frac y2\right)\cos\sigma.
+\]
+The maximal nonconical profiles give complete proper noncompact hypersurfaces. Axis-starting profiles close smoothly with topology $\mathbb R^{p+1}\times S^q$ or $\mathbb R^{q+1}\times S^p$ and are embedded. The two-ended family has topology $\mathbb R\times S^p\times S^q$; each point of the open quadrant prescribes its closest point to the origin, up to orientation. Its profile has at most one loop, so embeddedness must be checked for the chosen member. Every end is asymptotically conical, with Euclidean volume growth. The Clifford minimal cone is excluded.
+The first ambient dimension is four, not three. The time evolution is $\sqrt t\,F$, $t>0$. The numerical meridian and projected torus orbits illustrate a selected $(p,q)=(1,1)$ solution of the stated ODE. The global assertions are attributed to the preprint, not independently verified here.
+\par Sources: \cite{CatNeto2026}.
+\end{example}
+
+\chapter{Complete bi-rotational shrinking continuations}\label{sec:catalogue-birotational-shrinkers}
+\begin{example}[Complete bi-rotational shrinking continuations]\label{ex:catalogue-birotational-shrinkers}
+The 2026 preprint of Silva Neto studies maximal $O(p+1)\times O(q+1)$-invariant shrinking profiles in $\mathbb R^{p+q+2}$, $p,q\ge1$, without imposing properness or embeddedness. The profile equations are those of Example~\ref{ex:catalogue-birotational-expanders} with both $+x/2,+y/2$ replaced by $-x/2,-y/2$. A maximal profile is closed off smoothly when it reaches an axis. The stated completeness theorem excludes the Clifford minimal cone; in particular the constructed escaping ends admit complete continuations, which need not be proper.
+The source distinguishes conical escaping ends from recurrent ends meeting both distinguished cylinders infinitely often. A noncompact complete example is proper precisely when all its ends are conical, under the source's classification. The almost-everywhere alternative ``closed or nonproper'' does not by itself construct a specified nonproper topological type. We therefore record no general topology, entropy value, or embedding criterion for arbitrary initial data. The known round and cylindrical solutions are not new entries; the McGrath compact construction is not included here.
+The flow is $\sqrt{-t}\,\Sigma$, $t<0$. The figure integrates a finite segment of the profile ODE; its display endpoints are not a certification of the complete global continuation. All global results remain attributed preprint statements.
+\par Sources: \cite{CatNeto2026a}.
+\end{example}
+
+\chapter{The ancient sine wave}\label{sec:catalogue-ancient-sine-wave}
+\begin{example}[The ancient sine wave]\label{ex:catalogue-ancient-sine-wave}
+An exact eternal graphical solution of planar curve shortening is
+\[
+ X(x,t)=(x,\operatorname{arsinh}(e^{-t}\sin x)),\qquad x\in\mathbb R,\quad t\in\mathbb R.
+\]
+Writing its height as $u$, direct differentiation gives $u_t=u_{xx}/(1+u_x^2)$; this also fixes the time normalization. Spatial translations, time translations and parabolic dilations give the usual equivalent versions. Nakayama--Iizuka--Wadati's ancient sine wave is recalled in Angenent--You's introduction.
+Each slice is complete, proper and embedded, with parameter topology $\mathbb R$, two ends and period $2\pi$ in $x$. It is nonconvex and has infinite total absolute curvature, because each spatial period has a positive curvature integral. At each fixed finite time its slope is bounded, so it has finite Gaussian area and entropy, without a uniform-in-time value asserted here. Forward in time it approaches the axis; backward, long nearly vertical portions are joined near successive extrema. The exact graph are shown at three times. This is distinct from the finite-total-curvature grim chains.
+\par Sources: \cite{CatNakayamaIizukaWadati1994,CatAY18}.
+\end{example}
+
+\chapter{Immersed ancient curves spanning a half-plane}\label{sec:catalogue-ma-halfplane-ancient}
+\begin{example}[Immersed ancient curves spanning a half-plane]\label{ex:catalogue-ma-halfplane-ancient}
+Ma constructs a compact immersed ancient curve-shortening flow in $\mathbb R^2$ whose time-slice convex hulls together fill a half-plane. Compactness refers to each individual immersed closed curve, not to a uniform spatial bound over ancient time. The construction joins increasingly complicated grim-reaper configurations and takes an ancient limit; it is not a homothetic curve or an explicit parametrization.
+The curves can have crossings at early times and become embedded later, then shrink to a round point. Hence embeddedness is time dependent. Smooth compact slices are complete and proper as immersions, have no ends, and have finite Gaussian area and entropy at each time; no uniform ancient-time bound is claimed. The source's sequence of disappearing fingers is a guide to the construction, not a formula for singular events of the final ancient limit. Our diagram separates early immersed stages from the later embedded stage and labels them as qualitative stages rather than numerically computed MCF slices.
+\par Sources: \cite{CatMa2021}.
+\end{example}
+
+\chapter{Nonplanar eternal curves from grim reapers}\label{sec:catalogue-nonplanar-eternal-reapers}
+\begin{example}[Nonplanar eternal curves from grim reapers]\label{ex:catalogue-nonplanar-eternal-reapers}
+Bourni--Mramor construct a nonplanar eternal curve-shortening flow in $\mathbb R^3$ by joining grim-reaper pieces in distinct planes. The complete embedded slices are ramps: a fixed directional component of the unit tangent has a controlled sign, a property used to prevent singularities and continue the ancient limit forward. The backward picture consists of grim regions in different planes with three parallel straight-line limits; the forward behavior approaches a line in the sense proved in the source.
+This is not a translating union of grim reapers, nor one of the explicit shrinking helices. The actual solution is obtained by solving curve shortening and taking limits. Its time domain is all of $\mathbb R$; its topology is a noncompact line with two intrinsic ends. A picture of several asymptotic lines is not an end count. The drawing shows the differently oriented grim pieces and a schematic connecting region at successive stages. The source's nonplanarity is intrinsic to the space curve, not an artifact of projection.
+\par Sources: \cite{CatBourniMramor2023}.
+\end{example}
+
+\chapter{Rotational collapsed ancient pancakes}\label{sec:catalogue-collapsed-ancient-pancakes}
+\begin{example}[Rotational collapsed ancient pancakes]\label{ex:catalogue-collapsed-ancient-pancakes}
+For each $n\ge2$, Bourni--Langford--Tinaglia construct a compact strictly convex ancient hypersurface in $\mathbb R^{n+1}$ invariant under $O(1)\times O(n)$, contained in a slab of width $\pi$ and in no smaller slab. The smooth flow exists for $t<0$ and becomes extinct at the origin at $t=0$, after normalization. Each slice has topology $S^n$ and is embedded, complete and proper.
+Backward in time, the two large faces approach the boundary hyperplanes of the slab, while appropriately translated edge regions approach grim hyperplanes. These are collapsed ancient solutions, distinct from the noncollapsed ancient ovals and from nonconvex stacked pancakes. The source constructs them by flowing rotated Angenent ovals and passing to a limit. Rotating a planar Angenent oval is not itself an exact higher-dimensional ancient solution. The picture therefore labels its rounded pancake profiles as schematics and marks the fixed slab walls and grim edge regions; it does not claim to compute the ancient limit. Compactness gives finite entropy at every fixed time, with no value asserted here.
+\par Sources: \cite{CatBourniLangfordTinaglia2017}.
+\end{example}
+
+\chapter{Ancient pancakes with polyhedral asymptotics}\label{sec:catalogue-polyhedral-ancient-pancakes}
+\begin{example}[Ancient pancakes with polyhedral asymptotics]\label{ex:catalogue-polyhedral-ancient-pancakes}
+For a bounded regular circumscribed polytope $P\subset\mathbb R^n$, and separately for a bounded circumscribed simplex, Bourni--Langford--Tinaglia construct a compact convex ancient hypersurface in the slab $(-\pi/2,\pi/2)\times\mathbb R^n$. The facets of $P$ are tangent to the unit sphere with the source's orientation; the regular-polytope theorem assumes its stated symmetry. The construction does not establish existence for every arbitrary polytope. The solution's linear-scale backward limit, or squash-down, is $P$.
+The slices are embedded, complete and proper, topologically $S^n$, and inherit the prescribed symmetries. Extinction can be normalized to $t=0$. A triangular example in $\mathbb R^3$ already differs from a rotational pancake; higher-dimensional simplices give further examples. The shrinking polytope is an asymptotic descriptor, not the smooth MCF hypersurface at a finite time. The picture shows rounded faces, fixed slab width, and the separate polyhedral limiting outline. Compact slice entropy is finite, but no numeric value or uniqueness theorem is supplied.
+\par Sources: \cite{CatBourniLangfordTinaglia2022}.
+\end{example}
+
+\chapter{Convex eternal flows that do not translate}\label{sec:catalogue-convex-eternal-nontranslators}
+\begin{example}[Convex eternal flows that do not translate]\label{ex:catalogue-convex-eternal-nontranslators}
+Let $C$ be a regular circumscribed cone in the class $\mathcal P_*^n$ of Bourni--Langford--Tinaglia, with vertex $v_C$, and put
+\[
+ P=C\cap\{p:\langle p,v_C/|v_C|\rangle\le1\}.
+\]
+Their Theorem 7.1 constructs a convex eternal flow in $(-\pi/2,\pi/2)\times\mathbb R^n$, reflection symmetric in the midplane, with squash-down $P$, which sweeps out the slab. For the nondegenerate choices in Corollary 7.2 it does not evolve by translation. The complete embedded hypersurfaces have changing geometry despite existing for every real time.
+The source describes translating regions emerging in the remote past and coalescing toward a translating configuration in the future. This asymptotic description is not a formula for the entire evolution or a claim that the pieces can simply be superposed. The illustration uses a truncated wedge in a spatial section and separates the backward and forward configurations. It does not identify an arbitrary deformation between them with MCF. No global topology, numeric entropy value, or general uniqueness assertion is recorded from this construction.
+\par Sources: \cite{CatBourniLangfordTinaglia2022}.
+\end{example}
+
+\chapter{Ancient ovals with reduced symmetry}\label{sec:catalogue-reduced-symmetry-ancient-ovals}
+\begin{example}[Ancient ovals with reduced symmetry]\label{ex:catalogue-reduced-symmetry-ancient-ovals}
+For $n\ge3$ and $2\le k\le n-1$, Du--Haslhofer construct $(k-1)$-parameter families of compact ancient noncollapsed mean-convex hypersurfaces in $\mathbb R^{n+1}$ with $\mathbb Z_2^k\times O(n+1-k)$ symmetry. The parameters encode independent elongations in the $k$ axial directions. The fully symmetric limiting choices overlap the previously recorded ancient ovals; the reduced-symmetry members are the additional cases here.
+The slices are smooth embedded convex hypersurfaces with topology $S^n$, complete and proper. After extinction normalization their time interval is $(-\infty,0)$. The backward parabolic model is $\mathbb R^k\times S^{n-k}$; this does not determine every finite-time slice or establish uniqueness from this limit alone. The smallest case is a three-dimensional hypersurface in $\mathbb R^4$, not a surface in $\mathbb R^3$. The drawing is an axial section with two distinct elongations and a labeled spherical-fiber radius. Its ellipsoidal outline is schematic and does not satisfy the ancient-flow PDE. Entropy is finite for each compact slice; no numerical value is assigned.
+\par Sources: \cite{CatDuHaslhofer2021}.
+\end{example}
+
+\chapter{Non-self-similar ancient doughnuts}\label{sec:catalogue-ancient-doughnuts}
+\begin{example}[Non-self-similar ancient doughnuts]\label{ex:catalogue-ancient-doughnuts}
+For each $n\ge2$, Bourni--Langford--Mramor construct a closed embedded rotational ancient flow with topology $S^1\times S^{n-1}$ in $\mathbb R^{n+1}$ that is not a soliton. It is obtained by perturbing a shrinking doughnut inward and taking an ancient limit. In rescaled coordinates the backward limit is a shrinking doughnut; the finite-time evolution is not a family of homothetic copies of that limit. The source explains that the flow develops a circle of neck-pinch singularities at the forward endpoint.
+The regular slices are compact, complete and proper. The flow is not mean convex for all ancient times, but becomes mean convex before the final circle of neck pinches. In dimension two their genus is one and they have no ends. For the construction based on the Drugan--Nguyen doughnut, entropy is strictly less than two, by the input entropy bound and monotonicity. No exact entropy value, closed parametrization or uniqueness of the ancient solution is claimed. The figure distinguishes the rescaled backward shrinker profile from the later thin tube around a circle. Its evolving tube outline is a geometric schematic, not a generic torus mislabeled as the Angenent torus or a numerical solution of the ancient PDE.
+\par Sources: \cite{CatBourniLangfordMramor2020}.
+\end{example}
+
+\chapter{Ancient isoparametric flows in Euclidean space}\label{sec:catalogue-isoparametric-ancient-euclidean}
+\begin{example}[Ancient isoparametric flows in Euclidean space]\label{ex:catalogue-isoparametric-ancient-euclidean}
+Liu--Terng prove that the spherical and Euclidean mean curvature flows starting at a compact isoparametric submanifold $M^n\subset S^{n+k-1}$ extend for all backward time. Isoparametric means flat normal bundle and constant principal curvatures along parallel normal fields. The nonminimal leaves give nonstationary spherical flows and nonhomothetic Euclidean flows. They approach the unique parallel minimal isoparametric leaf backward in the respective normalization, and collapse forward to a focal submanifold.
+
+If $f(s,\cdot)$ is the spherical flow, the Euclidean flow is
+\[
+ F(t,\cdot)=\sqrt{1-2nt}\,f\left(-\frac{\log(1-2nt)}{2n},\cdot\right).
+\]
+A concrete exact case is the product $S^p(\sqrt{A-2pt})\times S^q(\sqrt{B-2qt})\subset\mathbb R^{p+q+2}$, for $t<\min(A/(2p),B/(2q))$, with $A/p\ne B/q$. This gives a nonhomothetic ancient flow; the equal-extinction case is already a spherical shrinker. The $(p,q)=(1,1)$ figure projects the exact product tori from four-space, retaining both radii separately.
+
+Smooth compact slices are embedded, complete and proper, and their topology remains that of the initial regular leaf before the focal event. The general isoparametric families also include flag-manifold examples. The explicit product picture illustrates one case, not all such leaves.
+\par Sources: \cite{CatLiuTerng2020}.
+\end{example}
+
+\chapter{Ancient isoparametric flows in spheres}\label{sec:catalogue-isoparametric-ancient-sphere}
+\begin{example}[Ancient isoparametric flows in spheres]\label{ex:catalogue-isoparametric-ancient-sphere}
+Liu--Terng prove that the spherical and Euclidean mean curvature flows starting at a compact isoparametric submanifold $M^n\subset S^{n+k-1}$ extend for all backward time. Isoparametric means flat normal bundle and constant principal curvatures along parallel normal fields. The nonminimal leaves give nonstationary spherical flows and nonhomothetic Euclidean flows. They approach the unique parallel minimal isoparametric leaf backward in the respective normalization, and collapse forward to a focal submanifold.
+
+For a concrete hypersurface in the unit sphere, take $S^p(a(t))\times S^q(b(t))\subset S^{p+q+1}$, $p,q\ge1$, with $a^2+b^2=1$. If $n=p+q$, the exact evolution is
+\[
+ a(t)^2=\frac pn+C e^{2nt},\qquad b(t)^2=\frac qn-C e^{2nt}.
+\]
+Here $C\ne0$ and the time interval is the maximal interval on which both squared radii are positive, extending to $-\infty$. The $C=0$ Clifford leaf is stationary. This formula is intrinsic MCF in the fixed round sphere, not Euclidean shrinkage. The $(p,q)=(1,1)$ illustration is a projection of tori in $S^3\subset\mathbb R^4$.
+
+Smooth compact slices are embedded, complete and proper, and their topology remains that of the initial regular leaf before the focal event. The general isoparametric families also include flag-manifold examples. The explicit product picture illustrates one case, not all such leaves.
+\par Sources: \cite{CatLiuTerng2020}.
+\end{example}
+
+\chapter{Non-self-similar flows emerging from cones}\label{sec:catalogue-flows-emerging-from-cones}
+\begin{example}[Non-self-similar flows emerging from cones]\label{ex:catalogue-flows-emerging-from-cones}
+Let $\Sigma$ be a smooth asymptotically conical self-expander with positive finite Morse index for the expander functional, under the weighted decay hypotheses in Chen's Theorem 1.1. The source constructs an index-parameter family of solutions ancient in expander-rescaled time $s$, converging to $\Sigma$ as $s\to-\infty$. Their small graph functions lie in the source's weighted Hölder and spectral spaces; a generic chosen perturbation of an expander is not asserted to be ancient.
+With ordinary time $t=e^s$, the associated MCF is $M_t=\sqrt t\,\widetilde M_{\log t}$ on $0<t<T$ for a suitable $T>0$. It emerges from the same asymptotic cone at $t=0$ and need not be self-similar. Ordinary negative time is not part of this assertion, nor is global existence for all positive time. In the smooth graphical interval the slices retain the topology and embeddedness of the underlying embedded expander. The picture separates the limiting cone, an expander profile, and a small unstable-mode displacement. The displacement is a schematic mode, not a computed nonlinear flow or a universal growth rate.
+\par Sources: \cite{CatChen2026}.
+\end{example}
+
+\chapter{Hypersurface singularities with bounded mean curvature}\label{sec:catalogue-bounded-mean-curvature-singularities}
+\begin{example}[Hypersurface singularities with bounded mean curvature]\label{ex:catalogue-bounded-mean-curvature-singularities}
+Stolarski constructs smooth properly embedded noncompact hypersurface flows in $\mathbb R^N$, $N\ge8$, that develop a finite-time singularity while the scalar mean curvature remains uniformly bounded. The second fundamental form becomes unbounded, so cancellation between principal curvatures is essential. The construction develops the Velázquez singularity model; higher-dimensional examples can be obtained by the stated product extensions. The theorem does not assert a compact example merely because the introduction discusses possible compactification.
+At the parabolic scale the model is a minimal cone; at a finer curvature scale one sees a smooth minimal desingularization. These are different rescalings of the same degenerating region. They are distinct from the rotational bowl-type degenerate neck pinch and the Lagrangian Stolarski--Su examples. No exact time-dependent parametrization or numeric entropy is provided. The radial-block diagram shows a narrowing neighborhood of the Simons cone and identifies the two zoom scales. It is not a shrinking family of minimal surfaces claimed to solve MCF.
+\par Sources: \cite{CatStolarski2023}.
+\end{example}
+
+\chapter{Lagrangian singularities with prescribed orbit models}\label{sec:catalogue-cohomogeneity-one-lagrangian-singularities}
+\begin{example}[Lagrangian singularities with prescribed orbit models]\label{ex:catalogue-cohomogeneity-one-lagrangian-singularities}
+Let $G\subset SU(n)$ be an admissible compact connected group, and let $L_\infty\subset\mu^{-1}(0)\subset\mathbb C^n$ be a complete connected cohomogeneity-one special Lagrangian. Here each orbit has dimension $n-1$ and the same isotropy type. Madnick--Wood construct an almost-calibrated Lagrangian MCF developing a Type II singularity at the origin for which every Type II blow-up is $L_\infty$ and every Type I blow-up is its asymptotic cone.
+The profile flow in a complex line is
+\[
+ (\partial_t\gamma)^\perp=\mathbf k-(n-1)\frac{\gamma^\perp}{|\gamma|^2}.
+\]
+It is not ordinary planar curve shortening. Admissible non-$SO(n)$ groups, for example the diagonal $T^{n-1}$ action, give models beyond the currently listed rotational Lawlor neck. The theorem concerns the evolving singularity-forming flow; its stationary special Lagrangian limit is not counted as an additional moving soliton. Smoothness is restricted to the source's constant-isotropy stratum. We do not infer full embeddedness or topology solely from a projected profile. The illustration uses an exact model profile with a schematic neck scale, clearly distinguished from the nonlinear flow constructed in the proof.
+\par Sources: \cite{CatMadnickWood2025}.
+\end{example}
+
+\chapter{Brakke spoon}\label{sec:catalogue-network-spoon}
+\begin{example}[Brakke spoon]\label{ex:catalogue-network-spoon}
+This planar network has one bounded loop attached to a straight ray at a single triple junction. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Shrinking lens network}\label{sec:catalogue-network-lens}
+\begin{example}[Shrinking lens network]\label{ex:catalogue-network-lens}
+This planar network has two curved arcs bounding a lens and two exterior rays. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Shrinking fish network}\label{sec:catalogue-network-fish}
+\begin{example}[Shrinking fish network]\label{ex:catalogue-network-fish}
+This planar network has the asymmetric two-ray, one-region configuration. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Three-ray shrinking star}\label{sec:catalogue-network-three-ray}
+\begin{example}[Three-ray shrinking star]\label{ex:catalogue-network-three-ray}
+This planar network has one bounded three-sided region and three exterior rays. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Four-ray shrinking star}\label{sec:catalogue-network-four-ray}
+\begin{example}[Four-ray shrinking star]\label{ex:catalogue-network-four-ray}
+This planar network has one bounded four-sided region and four exterior rays. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Five-ray shrinking star}\label{sec:catalogue-network-five-ray}
+\begin{example}[Five-ray shrinking star]\label{ex:catalogue-network-five-ray}
+This planar network has one bounded five-sided region and five exterior rays. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Shrinking rocket network}\label{sec:catalogue-network-rocket}
+\begin{example}[Shrinking rocket network]\label{ex:catalogue-network-rocket}
+This planar network has the asymmetric three-ray, one-region configuration. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChang2026,CatChenGuo2007}.
+\end{example}
+
+\chapter{Cisgeminate-eye shrinker}\label{sec:catalogue-network-cisgeminate-eye}
+\begin{example}[Cisgeminate-eye shrinker]\label{ex:catalogue-network-cisgeminate-eye}
+This planar network has the regular two-region configuration classified by Chang–Lue. Its branches satisfy $\mathbf k=-X^\perp/2$, and three branches meet at each junction at angles $2\pi/3$. The associated network flow is $\sqrt{-t}\,\Gamma$, $-\infty<t<0$. Exterior straight rays pass through the shrinker center when extended. The network is embedded in the network sense: branches intersect only at the specified junctions; it is not a smooth immersed curve at those junctions.
+An arclength branch can be computed from $x'=\cos\theta$, $y'=\sin\theta$, $\theta'=(x\sin\theta-y\cos\theta)/2$, subject to global closing and junction conditions. These conditions, rather than arbitrary shooting data, define the example. The cited papers establish the relevant existence or classification. The no-theta-network result must not be confused with existence of the cisgeminate eye. No exhaustive classification of networks with arbitrarily many regions is claimed.
+The complete noncompact network has finitely many bounded arcs and rays, so its Gaussian area and entropy are finite. Surface genus is inapplicable. Where the figure uses a symmetric shooting solution it reports numerical junction residuals; asymmetric configurations are explicitly labeled construction diagrams. Time scaling is exact in either picture, but does not turn a schematic profile into a solved shrinker.
+\par Sources: \cite{CatChangLue2019}.
+\end{example}
+
+\chapter{Lens-shaped shrinking surface clusters}\label{sec:catalogue-shrinking-lens-cluster}
+\begin{example}[Lens-shaped shrinking surface clusters]\label{ex:catalogue-shrinking-lens-cluster}
+Baldi--Haus--Mantegazza construct a rotationally symmetric self-shrinking lens-shaped cluster in $\mathbb R^3$. Two bounded disk-type caps and an unbounded planar exterior meet along a common circle at $120$ degrees. The upper and lower caps are exchanged by reflection in the horizontal plane. Each sheet satisfies $\mathbf H=-X^\perp/2$ away from the triple circle; the equal-angle condition supplies the junction balance.
+The flow is homothetic for $t<0$. This is a cluster with a junction curve, not a smooth closed sphere or an immersed surface without boundary. The exterior sheet gives a noncompact cluster; the caps themselves are compact disks. Surface genus for the whole singular union is inapplicable. The source proves existence by shooting a rotational profile; it does not identify the caps with spherical caps. The picture therefore uses a numerical rotational shooting profile and keeps the exterior planar sheet, triple circle and $120$-degree contact distinct. Gaussian integrals use the sum of sheet areas, with no numerical entropy value assigned.
+\par Sources: \cite{CatBaldiHausMantegazza2019}.
+\end{example}
+
+\chapter{Rotational shrinking trumpet ends}\label{sec:catalogue-rotational-trumpet-ends}
+\begin{example}[Rotational shrinking trumpet ends]\label{ex:catalogue-rotational-trumpet-ends}
+For every positive asymptotic slope, Kleene--Møller construct a rotational shrinking trumpet end in $\mathbb R^{n+1}$, $n\ge2$, asymptotic to the corresponding round cone. In graph coordinates $r=u(x)>0$ the profile solves $u''=(1+u'^2)(xu'/2-u/2+(n-1)/u)$. The theorem concerns an end with an inner boundary; it must not be presented as a complete boundaryless rotational shrinker. The radial cone is an asymptote, not the trumpet itself. Its smooth rotational sheets are embedded on the stated end, and the geometry is noncompact. We display numerical far-field shooting on a finite interval, with the inner boundary and cutoff explicitly marked. Under the normalization $\mathbf H=-X^\perp/2$, the end evolves as $\sqrt{-t}\,\Sigma$ for $t<0$, including motion of its inner boundary. No boundary condition for a separate fixed-barrier MCF problem is imposed. No global entropy or uniqueness conclusion beyond the cited end problem is recorded.
+\par Sources: \cite{CatKleeneMoller2014}.
+\end{example}
+
+\chapter{Shrinking ends asymptotic to isoparametric cones}\label{sec:catalogue-isoparametric-shrinking-ends}
+\begin{example}[Shrinking ends asymptotic to isoparametric cones]\label{ex:catalogue-isoparametric-shrinking-ends}
+Chang--Spruck construct self-shrinking ends asymptotic to cones over isoparametric hypersurfaces of the sphere. The invariant ansatz reduces the shrinker equation to a profile ODE; the admissible foliation and its multiplicities are part of the data. A nonminimal leaf is used for the nontrivial end; the minimal cone is the stationary exceptional case. These are exterior ends with an inner boundary, not a claimed global complete smoothing of every such cone. Their dimension is that of the cone hypersurface. The figure uses a labeled orbit-space profile and distinguishes the inner boundary from the asymptotic cone. Under the normalization $\mathbf H=-X^\perp/2$, the end evolves as $\sqrt{-t}\,\Sigma$ for $t<0$, including motion of its inner boundary. No boundary condition for a separate fixed-barrier MCF problem is imposed. No global entropy or uniqueness conclusion beyond the cited end problem is recorded.
+\par Sources: \cite{CatChangSpruck2017}.
+\end{example}
+
+\chapter{Park bi-rotational shrinking ends}\label{sec:catalogue-park-birotational-ends}
+\begin{example}[Park bi-rotational shrinking ends]\label{ex:catalogue-park-birotational-ends}
+For $2\le k\le n-1$, Park's 2026 preprint constructs bi-rotational shrinking pieces in $\mathbb R^{n+1}$ using the $O(k)\times O(n-k+1)$ action. The trumpet-type domains are $[0,\infty)\times S^{k-1}\times S^{n-k}$; the disk-type pieces have topology $S^{k-1}\times D^{n-k+1}$. The boundary and the allowable orbit-space regions in Theorems 1.1–1.3 are essential. They are not arbitrary globally complete embedded shrinkers. The first ambient dimension is four. The orbit-space schematic displays a truncated meridian, its boundary point and the two sphere radii; it does not certify the global continuation or a closing condition. Under the normalization $\mathbf H=-X^\perp/2$, the end evolves as $\sqrt{-t}\,\Sigma$ for $t<0$, including motion of its inner boundary. No boundary condition for a separate fixed-barrier MCF problem is imposed. No global entropy or uniqueness conclusion beyond the cited end problem is recorded.
+\par Sources: \cite{CatPark2026}.
+\end{example}
+
+\chapter{Expanding planar networks with a bounded cell}\label{sec:catalogue-expanding-cycle-networks}
+\begin{example}[Expanding planar networks with a bounded cell]\label{ex:catalogue-expanding-cycle-networks}
+In the equal-tension case, Chen--Guo construct a regular self-expanding planar network with one bounded central cell and $k$ exterior rays for every integer $k\ge7$. Every junction has angle $120$ degrees. The global existence condition in their Theorem 2 is $\sum_i\psi_{i,i+1}>2\pi$; equal tensions give $\psi_{i,i+1}=\pi/3$, hence exactly $k>6$ for this construction. Six sides belong to the stationary limiting balance and do not give a nontrivial expander of this type.
+In our normalization the branches satisfy $\mathbf k=X^\perp/2$ and the flow is $\sqrt t\,\Gamma$, $t>0$. This network has a cycle and is not covered by the planar-tree entry. The source proves uniqueness within its prescribed contact-angle and radial-interface ansatz, not among all networks with the same number of ends. The parameter graph is complete and embedded with its prescribed junctions; it has $k$ ends and finite Gaussian area and entropy. Our numerical shooting constructs the symmetric seven-sided example, with radial exterior rays. A changing side count changes the family member; the time slider only applies homothety.
+\par Sources: \cite{CatChenGuo2007}.
+\end{example}
+
+\chapter{Reported multiphase expanding surface constructions}\label{sec:catalogue-multiphase-expander-report}
+\begin{example}[Reported multiphase expanding surface constructions]\label{ex:catalogue-multiphase-expander-report}
+Liao's 2025 preprint proposes self-expanding multiphase surfaces in $\mathbb R^3$ with regular triple curves and tetrahedral quadruple points, obtained from weighted-area minimization with prescribed asymptotic interface data. Triple sheets meet at $120$ degrees; four triple curves have the tetrahedral angle $\arccos(-1/3)$. The intended flow is $\sqrt t\,\Gamma$, $t>0$, sheetwise away from junctions.
+This entry records a reported construction, not a verified existence theorem of this catalogue. The compactness, persistence of junctions and conformal comparison used in Sections 3–5 require further checking. In particular one must distinguish the expander-weighted Euclidean metric from the hyperbolic metric; a conformal comparison does not automatically transport minimality or area minimization. Accordingly no definite global topology, embeddedness, completeness, uniqueness, or entropy assertion is assigned here. The tetrahedral junction drawing illustrates the local angle model only; that stationary cone by itself is not a new nontrivial self-expander. The panels are explicitly labeled proposed smoothing stages, rather than computed or proved flow slices.
+\par Sources: \cite{CatLiao2025}.
+\end{example}
+
+\chapter{Convex ancient free-boundary flows in balls}\label{sec:catalogue-free-boundary-ancient-balls}
+\begin{example}[Convex ancient free-boundary flows in balls]\label{ex:catalogue-free-boundary-ancient-balls}
+There is a convex ancient free-boundary curve-shortening flow in the unit disk, and corresponding rotational convex ancient hypersurface flows in the unit ball $B^{n+1}$, meeting the fixed boundary sphere orthogonally. The backward limit is an equatorial disk; forward the solution contracts to a point on the boundary sphere. The uniqueness statements of Bourni--Langford are within the convex ancient classes and normalizations of their theorems, not for all free-boundary ancient flows.
+The slices are compact embedded disks, smooth up to their moving boundary. Their boundary is constrained to the unit sphere, unlike a freely shrinking boundary under homothety. The maximal interval is ancient with a finite forward endpoint. For $n=1$ the topology is an interval; for $n=2$ it is a disk of genus zero. These are manifolds with boundary, so completeness means completeness as compact metric spaces, not geodesic completeness without boundary. The figure keeps the unit ball fixed and shows orthogonal contact in a meridian. Its circular-arc interpolation enforces contact geometry but is not asserted to solve the ancient PDE.
+\par Sources: \cite{CatBourniLangford2023,CatBourniLangford2025}.
+\end{example}
+
+\chapter{Ancient free-boundary curves in convex domains}\label{sec:catalogue-free-boundary-convex-domains}
+\begin{example}[Ancient free-boundary curves in convex domains]\label{ex:catalogue-free-boundary-convex-domains}
+Let $\Omega\subset\mathbb R^2$ be a smooth bounded strictly convex domain, and let $D$ be an orthogonal diameter: a straight segment in $\overline\Omega$ meeting $\partial\Omega$ orthogonally at both endpoints. Bourni--Burns--Catron construct convex ancient free-boundary curve-shortening solutions approaching $D$ backward, one on each side, with the uniqueness qualifications in Theorem 1.1. The unit-disk family is a special case, cross-linked separately.
+Each regular slice is an embedded compact arc with endpoints moving on the fixed boundary and perpendicular contact there. Its topology is an interval, and it has no noncompact ends. The domain is not scaled with the curve. The construction is by parabolic limits, not an explicit family of elliptical arcs. The visualization uses a strictly convex elliptical domain to distinguish the fixed barrier from the evolving arc, and displays the orthogonal diameter as a backward limit. The intermediate curves are schematic; exact contact and numerical PDE convergence are not inferred from an ellipse drawing.
+\par Sources: \cite{CatBourniBurnsCatron2025}.
+\end{example}
+
+\chapter{Ancient curves with mixed boundary conditions}\label{sec:catalogue-mixed-boundary-ancient-curves}
+\begin{example}[Ancient curves with mixed boundary conditions]\label{ex:catalogue-mixed-boundary-ancient-curves}
+In the unit disk fix $o=(-d,0)$, with $0<d\le1$. Langford--Liu--McNamara construct ancient curve-shortening flows with one endpoint fixed at $o$ (Dirichlet condition) and the other moving on the unit circle with orthogonal contact (Neumann condition). For $0<d<1$, the distinguished flow is eternal and connects the longer unstable stationary segment backward to the shorter stable stationary segment forward. At $d=1$ the forward endpoint is a finite-time singularity with a half-grim-reaper Type II model.
+The regular curves are embedded compact intervals. Their endpoints obey different conditions, so the construction is neither the two-free-endpoint ball flow nor a homothetic shrinker. The figure marks the fixed endpoint, moving endpoint and boundary normal at each stage; it separates the interior-point eternal case from the boundary-point singular case. Intermediate arcs are schematic. The half-grim reaper is a rescaled limit, not a formula for the whole curve or for continuation through the singular time.
+\par Sources: \cite{CatLangfordLiuMcNamara2025}.
+\end{example}
+
+\chapter{Ancient flows from unstable free-boundary minimal hypersurfaces}\label{sec:catalogue-unstable-free-boundary-ancient}
+\begin{example}[Ancient flows from unstable free-boundary minimal hypersurfaces]\label{ex:catalogue-unstable-free-boundary-ancient}
+Let $M^{m+1}$ be a compact Riemannian manifold with strictly convex boundary, and let $\Sigma^m\subset M$ be a smooth properly embedded two-sided free-boundary minimal hypersurface of Morse index $I>0$. Bourni--Franz's 2026 preprint constructs an $I$-parameter family of ancient free-boundary mean curvature flows backward converging to $\Sigma$. The construction uses adapted normal graphs that preserve the nonlinear orthogonality condition; merely adding an eigenfunction to the position vector is not an exact free-boundary deformation.
+The uniqueness theorem additionally imposes the specified small graph and decay conditions; its generality must not be inferred solely from the index count. A mean-convex ancient branch is obtained from the first eigenfunction, with further uniqueness under nondegeneracy. Smooth graphical slices preserve the topology and embeddedness of $\Sigma$ and meet the fixed ambient boundary orthogonally. The figure shows a critical-catenoid-type free-boundary background and a schematic unstable displacement, not a computed ancient flow. The preprint's existence and classification are attributed results, with no formal proof verification recorded.
+\par Sources: \cite{CatBourniFranz2026}.
+\end{example}
+
+\chapter{Yamamoto Lagrangian shrinkers in Calabi--Yau cones}\label{sec:catalogue-yamamoto-cone-shrinkers}
+\begin{example}[Yamamoto Lagrangian shrinkers in Calabi--Yau cones]\label{ex:catalogue-yamamoto-cone-shrinkers}
+For every integer $g\ge1$, Yamamoto constructs a real six-dimensional toric Calabi--Yau cone $C(S)=M_g$ and a compact Lagrangian shrinking immersion with parameter manifold $\Sigma_g\times S^1$, where $\Sigma_g$ is a closed orientable surface of genus $g$. The submanifold has real dimension three and codimension three. This is not a genus-$g$ surface in Euclidean three-space, nor a construction in the flat space $\mathbb C^3$.
+The construction uses the real form, moment-map level sets and torus action of the chosen toric cone, followed by the radial/phase ODE in Theorem 7.1. For the cone metric $dr^2+r^2g_S$, write $D_a(s,r)=(s,ar)$ and $R=r\partial_r$. After normalizing $\mathbf H=-R^\perp/2$, the flow is $D_{\sqrt{-t}}(L)$ for $t<0$. Compactness of the parameter manifold gives completeness and properness of the immersion; a general embedding assertion is not recorded. The cone vertex is outside the smooth ambient manifold and is approached only at the singular endpoint. The figure is a radial and topology diagram, not a Euclidean isometric rendering of the Calabi--Yau metric.
+\par Sources: \cite{CatYamamoto2012}.
+\end{example}
+
+\chapter{Rotational translators in the hyperbolic-plane product}\label{sec:catalogue-hyperbolic-product-rotational-translators}
+\begin{example}[Rotational translators in the hyperbolic-plane product]\label{ex:catalogue-hyperbolic-product-rotational-translators}
+In $\mathbb H^2\times\mathbb R$, with $g=dr^2+\sinh^2r\,d\varphi^2+dz^2$, Bueno constructs an entire rotational bowl and a one-parameter family of properly embedded translating catenoids. The bowl is a complete disk; each catenoid is a complete annulus with two graphical ends outside a compact set, parametrized by its positive neck radius. These are intrinsic product-metric examples, not the Euclidean bowl and winglike solitons.
+The source uses the average of the two principal curvatures. Its unit-speed profile satisfies
+\[
+ r'=\cos\theta,\quad z'=\sin\theta,\quad
+ \theta'=2\cos\theta-\coth(r)\sin\theta.
+\]
+Consequently, with the trace mean-curvature vector used by this catalogue, the same surface evolves by $z\mapsto z+2t$, for every $t\in\mathbb R$. The bowl has the smooth axis condition $\theta(r)=r+O(r^3)$; the annuli start at a positive minimum radius with vertical tangent. Uniqueness is within the rotational class and the additional asymptotic hypotheses of the source. Numerical meridians are revolved and displayed in the Poincar\'e-disk product coordinates $\rho=\tanh(r/2)$; Euclidean-looking distances in this drawing are not intrinsic distances.
+\par Sources: \cite{CatBueno2018}.
+\end{example}
+
+\chapter{Grim reapers in the hyperbolic-plane product}\label{sec:catalogue-hyperbolic-product-grim-reapers}
+\begin{example}[Grim reapers in the hyperbolic-plane product]\label{ex:catalogue-hyperbolic-product-grim-reapers}
+Bueno--L\'opez classify translation-invariant translating surfaces in $\mathbb H^2\times\mathbb R$. One must specify two pieces of data: the Killing field driving the flow and the one-parameter group preserving each slice. In upper-half-plane coordinates the metric is $(dx^2+dy^2)/y^2+dz^2$, with $y>0$. Vertical, parabolic and hyperbolic motions are respectively $(x,y,z+\tau)$, $(x+\tau,y,z)$ and $(e^\tau x,e^\tau y,z)$. The possible combinations yield different profile families; a Euclidean grim cylinder is not a substitute for them.
+The profiles are given by the equations and, in certain cases, explicit parametrizations in Sections 4–6. Their domains, embeddedness and end behavior depend on the chosen case, so no common topology or global completeness claim is assigned to the entire collection. Minimal invariant exceptions are stationary as sets and are not counted as new moving examples. With the source's average scalar curvature, its group parameter is $\tau=2t$ for trace MCF. All complete group orbits extend for $t\in\mathbb R$. The figure compares the three distinct isometry actions on labeled profile schematics; it does not assert a numerical solution of every classification case. The conformal-vector-field examples in Section 7 are not included as Killing translators.
+\par Sources: \cite{CatBuenoLopez2024}.
+\end{example}
+
+\chapter{Helicoidal rotators-translators in the hyperbolic-plane product}\label{sec:catalogue-hyperbolic-product-helicoidal}
+\begin{example}[Helicoidal rotators-translators in the hyperbolic-plane product]\label{ex:catalogue-hyperbolic-product-helicoidal}
+For each pitch $h>0$, de Lima--Ramos--dos Santos construct a one-parameter family of complete helicoidal solitons in $\mathbb H^2\times\mathbb R$. In the hyperboloid model a profile $\sigma(u)=(\alpha(u),\sqrt{1+|\alpha(u)|^2})$ generates
+\[
+ X(u,v)=(e^{vJ}\alpha(u),\sqrt{1+|\alpha(u)|^2},hv),\qquad u,v\in\mathbb R,
+\]
+where $J(x,y)=(-y,x)$. The profile is determined by the curvature ODE in Section 2, not by an Archimedean spiral. Its trace has two unbounded properly embedded arms spiraling around the center; this does not by itself establish embeddedness of their union or of the full immersion.
+The surface is a rotator exactly when it is a translator for $-h\partial_z$ in the source convention. Rotation and vertical translation describe the same evolving sets because of the helicoidal symmetry; they must not be added to double the speed. These are eternal isometric flows. The illustration uses the two-arm profile and helical orbits in disk × height coordinates, labeled schematic. No Euclidean Gaussian area, entropy, or unrestricted uniqueness claim is assigned.
+\par Sources: \cite{CatLimaRamosSantos2025}.
+\end{example}
+
+\chapter{Hyperbolic Killing translators and catenoids}\label{sec:catalogue-hyperbolic-killing-catenoids}
+\begin{example}[Hyperbolic Killing translators and catenoids]\label{ex:catalogue-hyperbolic-killing-catenoids}
+In upper-half-space $\mathbb H^{n+1}=\{z>0\}$ with metric $z^{-2}(dx^2+dz^2)$, the maps $\Phi_\tau(x,z)=(e^\tau x,e^\tau z)$ are hyperbolic isometries. de Lima--Ramos--dos Santos construct rotational translating catenoids and translation-invariant grim-reaper analogues in $\mathbb H^3$, as well as helicoidal rotators-translators. The 2026 work of de Lima--Ramos supplies rotational catenoid barriers in all dimensions $n+1\ge3$. These should not be called Euclidean self-expanders: the ambient metric is fixed and the motion is isometric.
+The rotational examples are properly embedded annuli, with topology $S^{n-1}\times\mathbb R$ and two ends. Their ODE construction and the speed of the generating Killing field are part of the data. The uniqueness statements for the surface catenoids and grim reapers impose the symmetry/asymptotic hypotheses of the cited theorems. Horosphere stability in the later paper concerns radial graphical perturbations with decay; it is not a stability theorem for every catenoid. The figure depicts the rotational and invariant profiles in the half-space model and compares isometric dilation times. Its curves are source-informed schematics, not a computation of the nonlinear profile ODE.
+\par Sources: \cite{CatLimaRamosSantos2026,CatLimaRamos2026}.
+\end{example}
+
+\chapter{Parabolic Killing grim reapers in hyperbolic space}\label{sec:catalogue-hyperbolic-parabolic-grims}
+\begin{example}[Parabolic Killing grim reapers in hyperbolic space]\label{ex:catalogue-hyperbolic-parabolic-grims}
+Bueno--L\'opez construct a family of grim-reaper analogues in $\mathbb H^3$ driven by the parabolic Killing field $\xi=a\partial_x+b\partial_y$ in the upper-half-space model. The metric is $z^{-2}(dx^2+dy^2+dz^2)$ and the isometries are $(x,y,z)\mapsto(x+a\tau,y+b\tau,z)$. The construction classifies the relevant invariant surfaces via a planar ODE. It differs from the hyperbolic-axis translation family, whose half-space coordinates dilate.
+With the average-curvature convention in this paper, the corresponding trace-MCF time is $\tau=2t$. The ambient isometry group exists for all real time. The nontrivial profiles and their domains are those of Section 3; no uniform embedding or completeness assertion is inferred for arbitrary initial data of the ODE. The rotational no-go results of Section 2 eliminate other proposed invariant cases rather than constructing additional solitons. The figure draws the asymptotic shape and horizontal Killing direction in a fixed half-space chart; it is schematic and is not a Euclidean grim curve asserted to solve the hyperbolic equation.
+\par Sources: \cite{CatBuenoLopez2024a}.
+\end{example}
+
+\chapter{Invariant translators in the Heisenberg group}\label{sec:catalogue-nil-invariant-translators}
+\begin{example}[Invariant translators in the Heisenberg group]\label{ex:catalogue-nil-invariant-translators}
+For the Heisenberg metric $g_\lambda=dx^2+dy^2+\lambda(dz+(y\,dx-x\,dy)/2)^2$, $\lambda>0$, Pipoli constructs and classifies invariant vertical translators with unit Killing field $\lambda^{-1/2}\partial_z$. The families include nonconvex complete slab graphs, a rotational entire bowl, embedded rotational catenoids with positive neck radius, and helicoidal examples. The catenoids have two ends; the bowl has one. The helicoidal generating curve has two individually embedded spiraling arms, whose union can have infinitely many intersections, giving nonembedded surfaces. Thus embeddedness must be recorded separately for each branch.
+The rotational asymptotics have leading height $r^2/(2\sqrt\lambda)$, with logarithmic or power corrections depending on whether $\lambda<4$, $\lambda=4$ or $\lambda>4$. This leading term is not an exact formula for the bowl. The flow is generated by vertical left translations for all real time. A Euclidean drawing of these coordinate graphs does not encode the ambient metric or its second fundamental form. The figure labels the metric parameter and compares the invariant orbit models at three vertical-translation times; it is schematic, including the unresolved nonlinear profiles.
+\par Sources: \cite{CatPipoli2018}.
+\end{example}
+
+\chapter{Invariant translators in Sol geometry}\label{sec:catalogue-sol-invariant-translators}
+\begin{example}[Invariant translators in Sol geometry]\label{ex:catalogue-sol-invariant-translators}
+For $\mathrm{Sol}_3$ with metric $e^{2z}dx^2+e^{-2z}dy^2+dz^2$, Pipoli classifies surfaces invariant under a one-parameter isometry group that translate under another Killing field. Write $F_1=\partial_x$, $F_2=\partial_y$, $F_3=-x\partial_x+y\partial_y+\partial_z$. For an $F_1$-invariant surface and driving field $V=\eta F_1+\lambda F_2+\mu F_3$, the case $\mu=0$, $\lambda\ne0$ gives complete graphs over slabs or half-planes, with the asymptotic alternatives in Theorem 1.1. For $\mu\ne0$ the two components off a distinguished orbit approach a special vertical plane or a logarithmic minimal surface. Mixed horizontal invariance is covered by Theorem 1.2; invariance with a nonzero $F_3$ component forces the stationary minimal alternatives in Theorem 1.3.
+These graphs include behavior impossible for complete Euclidean graphical translators. Their construction is by profile ODE, not by merely inserting a logarithm into Euclidean space. The eternal motion is the flow of the specified Killing field; for $F_3$ it is $(x,y,z)\mapsto(e^{-t}x,e^ty,z+t)$. The diagram illustrates this anisotropic isometry on a schematic invariant graph, with the metric and stationary exceptions stated. No common entropy or genus conclusion is assigned beyond the graph cases.
+\par Sources: \cite{CatPipoli2019}.
+\end{example}
+
+\chapter{Invariant translators in the special linear group}\label{sec:catalogue-sl2-invariant-translators}
+\begin{example}[Invariant translators in the special linear group]\label{ex:catalogue-sl2-invariant-translators}
+L\'opez--Munteanu classify invariant translating surfaces in $SL(2,\mathbb R)$ with its standard left-invariant metric. In Iwasawa coordinates $(x,y,\theta)$, $y>0$ and $\theta\in S^1$, the metric is
+\[
+ g=\frac{dx^2+dy^2}{4y^2}+\left(d\theta+\frac{dx}{2y}\right)^2.
+\]
+The invariant subgroups are the parabolic, hyperbolic and elliptic factors $N,A,K$. The driving field is selected from the Killing algebra, and is separate from the field tangent to the invariant orbits. The resulting classification contains explicit special cases and ODE-defined families, as well as minimal stationary exceptions.
+The source's scalar mean curvature is the average of the principal curvatures: a profile satisfying $H=\langle N,X\rangle$ evolves under trace MCF by the isometries generated by $2X$. Complete Killing motion is eternal, but does not make an incomplete profile complete. Global topology, properness and embeddedness must therefore be checked for the chosen subgroup, profile domain and circle identifications; no blanket assertion is recorded here. The visualization is an orbit-space and fiber diagram in the $\mathbb H^2(-4)$ base with its circle fiber. It does not depict the universal cover as identical to $SL(2,\mathbb R)$ or assign Euclidean metric geometry to the coordinate plot.
+\par Sources: \cite{CatLopezMunteanu2024}.
+\end{example}
+
+\chapter{Graphical translators over compact symmetric spaces}\label{sec:catalogue-compact-symmetric-product-translators}
+\begin{example}[Graphical translators over compact symmetric spaces]\label{ex:catalogue-compact-symmetric-product-translators}
+Fujii constructs vertical graphical translators in $S^n\times\mathbb R$ whose height is constant on leaves of an isoparametric foliation. Fujii--Koike treat the corresponding invariant graphs in $N\times\mathbb R$ for compact symmetric spaces, including $\mathbb CP^n$, $\mathbb HP^n$ and the Cayley plane, and derive reduced equations for higher-rank cases. In the trace convention a vertical unit-speed graph $z=u(p)$ satisfies
+\[
+ \operatorname{div}_N\frac{\nabla u}{\sqrt{1+|\nabla u|^2}}
+ =\frac1{\sqrt{1+|\nabla u|^2}}.
+\]
+The invariant ansatz $u=V\circ r$ reduces this PDE to the source's ODE on a regular orbit interval. The allowed domain and behavior at singular orbits are essential: these are graphs over specified open subsets, not smooth entire graphs on a closed compact base. The latter would contradict integration of the positive right-hand side. Embeddedness follows on each single-valued graph domain; completeness is not uniform across the classified branches. The flow is $(p,u(p)+t)$ for all real $t$ on that domain. The figure shows a profile over an orbit interval, marking excluded singular leaves and graph blow-up boundaries; it is not a numerical computation of every symmetric-space case.
+\par Sources: \cite{CatFujii2024,CatFujiiKoike2023}.
+\end{example}
+
+\chapter{Isometric curve-shortening solitons in the hyperbolic plane}\label{sec:catalogue-hyperbolic-curve-solitons}
+\begin{example}[Isometric curve-shortening solitons in the hyperbolic plane]\label{ex:catalogue-hyperbolic-curve-solitons}
+For every nonzero Minkowski vector $\widetilde v\in\mathbb R^{2,1}$, Woolgar--Xie give a two-parameter family of nontrivial curve-shortening solitons in $\mathbb H^2$. Each is complete, unbounded and properly embedded, with parameter domain $\mathbb R$ and two ends. Its motion is the one-parameter group of hyperbolic isometries determined by the corresponding Killing generator; timelike, null and spacelike types correspond to elliptic, parabolic and hyperbolic motions.
+The ends asymptote to horocycles or geodesics under the restrictions in Theorem 1.2. In particular both ends cannot be geodesic-asymptotic, and the timelike case cannot have a geodesic-asymptotic end. The curvature equation is $k_g=\langle K,N\rangle$; these are eternal isometric flows, not Euclidean shrinkers or homothetically scaled hypercycles. The figure uses a fixed hyperbolic disk or half-plane chart and compares the group motion at three times. Its profile is schematic; no Euclidean curvature conclusion follows from its appearance in the conformal model. Euclidean entropy is inapplicable.
+\par Sources: \cite{CatWoolgarXie2022}.
+\end{example}
+
+\chapter{Eternal tori in perturbations of the round three-sphere}\label{sec:catalogue-perturbed-sphere-eternal-tori}
+\begin{example}[Eternal tori in perturbations of the round three-sphere]\label{ex:catalogue-perturbed-sphere-eternal-tori}
+Maga\~no--Smith prove that there is a generic subset $\mathcal U\subset C^\infty(S^3)$ such that for each $u\in\mathcal U$ there is $\epsilon>0$ with the following property: for every $0<|\delta|<\epsilon$, the fixed metric $g_\delta=e^{2\delta u}g_{\mathrm{round}}$ admits a nontrivial eternal mean curvature flow of embedded tori. The flow parameter ranges over all $t\in\mathbb R$ and is distinct from the small metric parameter $\delta$.
+The construction perturbs trajectories of the area functional on the space of Clifford tori, using a Morse--Smale argument and a parabolic correction. It is not an explicit radius formula, and the theorem does not assert such a flow in the unperturbed round metric $\delta=0$. Each regular slice is a compact, complete, proper embedded surface of genus one. The figure depicts changing normal graphs over a Clifford-torus background in a labeled projection, with the ambient metric held fixed. The plotted deformations are schematic; they do not compute the generic conformal factor or solve the correction equation. No Euclidean Gaussian area or entropy is assigned.
+\par Sources: \cite{CatMaganoSmith2020}.
+\end{example}
+
+\chapter{Finite-time Lagrangian neck pinches with circle symmetry}\label{sec:catalogue-lotay-oliveira-neck-pinches}
+\begin{example}[Finite-time Lagrangian neck pinches with circle symmetry]\label{ex:catalogue-lotay-oliveira-neck-pinches}
+In an ALE or ALF hyperk\"ahler four-manifold with a tri-Hamiltonian circle action, Lotay--Oliveira analyze the flow of embedded almost-calibrated circle-invariant Lagrangian surfaces. For compact surfaces, or the specified noncompact surfaces asymptotic to a pair of planes, finite-time singularities are neck pinches with the local models established in Theorem 1.1. Their examples guarantee such singularities under the geometric conditions of Section 4. Noncompact examples exist in the nontrivial Gibbons--Hawking settings described there; compact examples require the appropriate configuration of special Lagrangian spheres and phases. This is not a claim for every ambient manifold or every initial Lagrangian.
+For compact connected initial data, the flow can be continued through finitely many such singular times and converges to an $A_k$-chain of embedded special Lagrangian spheres, with the precise current and phase conclusions of Theorem 1.4. A single smooth parameter manifold is not retained through a neck pinch. In the Gibbons--Hawking base, the surface is encoded by an arc and circle fibers; the evolution is a weighted curve-shortening equation. The diagram shows the arc approaching a center, the collapsing fiber and the separated chain after the pinch. It is a schematic of the proved mechanism, not a Euclidean surface of revolution asserted to solve the hyperk\"ahler flow.
+\par Sources: \cite{CatLotayOliveira2023}.
+\end{example}
+
+\chapter{Noncompact periodic Lagrangian shrinkers}\label{sec:catalogue-jlt-mixed-periodic-shrinkers}
+\begin{example}[Noncompact periodic Lagrangian shrinkers]\label{ex:catalogue-jlt-mixed-periodic-shrinkers}
+In Joyce--Lee--Tsui, Theorems E--F, choose $1\le m<n$, $\lambda_1=\cdots=\lambda_m=1$, $\lambda_{m+1}=\cdots=\lambda_n=-1$, and $C=1$. For the coupled ODE data of Theorems A--B the immersion is
+\[
+ L=\{(x_1w_1(s),\ldots,x_nw_n(s)):\ \sum_j\lambda_jx_j^2=1\}.
+\]
+This entry records the nonconstant-amplitude periodic case. If all phase increments are rational multiples of $\pi$, the $w_j$ have a common period and the source describes a closed noncompact immersed Lagrangian with parameter topology $S^1\times S^{m-1}\times\mathbb R^{n-m}$. For fixed sign of the soliton parameter such periodic initial data are dense in the allowed data. The $m=1$ parameter quadric has two components, and image identifications must be treated separately. The constant-amplitude Hamiltonian-stationary overlap is already included in the Lee--Wang quadric examples.
+For negative soliton parameter this is a self-shrinker; after normalization its flow is $\sqrt{-t}\,L$, $t<0$.
+Periodic bounded nonvanishing amplitudes give completeness and properness of the resulting periodic immersion. The theorem does not assert that every such immersion is embedded. Nonperiodic quasiperiodic data instead give nonclosed images with larger-dimensional closures and are not assigned the same topology or properness. The figure is a phase-loop and indefinite-quadric schematic; it does not falsely replace the coupled ODE by independent sinusoidal phases.
+\par Sources: \cite{CatJoyceLeeTsui2010}.
+\end{example}
+
+\chapter{Noncompact periodic Lagrangian expanders}\label{sec:catalogue-jlt-mixed-periodic-expanders}
+\begin{example}[Noncompact periodic Lagrangian expanders]\label{ex:catalogue-jlt-mixed-periodic-expanders}
+In Joyce--Lee--Tsui, Theorems E--F, choose $1\le m<n$, $\lambda_1=\cdots=\lambda_m=1$, $\lambda_{m+1}=\cdots=\lambda_n=-1$, and $C=1$. For the coupled ODE data of Theorems A--B the immersion is
+\[
+ L=\{(x_1w_1(s),\ldots,x_nw_n(s)):\ \sum_j\lambda_jx_j^2=1\}.
+\]
+This entry records the nonconstant-amplitude periodic case. If all phase increments are rational multiples of $\pi$, the $w_j$ have a common period and the source describes a closed noncompact immersed Lagrangian with parameter topology $S^1\times S^{m-1}\times\mathbb R^{n-m}$. For fixed sign of the soliton parameter such periodic initial data are dense in the allowed data. The $m=1$ parameter quadric has two components, and image identifications must be treated separately. The constant-amplitude Hamiltonian-stationary overlap is already included in the Lee--Wang quadric examples.
+For positive soliton parameter this is a self-expander; after normalization its flow is $\sqrt t\,L$, $t>0$.
+Periodic bounded nonvanishing amplitudes give completeness and properness of the resulting periodic immersion. The theorem does not assert that every such immersion is embedded. Nonperiodic quasiperiodic data instead give nonclosed images with larger-dimensional closures and are not assigned the same topology or properness. The figure is a phase-loop and indefinite-quadric schematic; it does not falsely replace the coupled ODE by independent sinusoidal phases.
+\par Sources: \cite{CatJoyceLeeTsui2010}.
+\end{example}
+
+\chapter{Translators with general closed-shrinker ends}\label{sec:catalogue-sun-wang-prescribed-ends}
+\begin{example}[Translators with general closed-shrinker ends]\label{ex:catalogue-sun-wang-prescribed-ends}
+For a closed smooth embedded self-shrinker $S\subset\mathbb R^n$ of Gaussian Morse index $I$, Sun--Wang construct an $I$-parameter family of complete embedded translators in $\mathbb R^{n+1}$ whose unique tangent flow at backward infinity is $S\times\mathbb R$ with multiplicity one. The construction may have a singular set of dimension at most $n-7$; it is smooth for $n\le6$, namely ambient dimension at most seven. In higher dimensions it is a weak geometric construction, not an unconditional smooth hypersurface theorem.
+The Angenent-torus and spherical-doubling input cases have their own existing pages. Additional inputs include other closed embedded high-entropy shrinkers and Riedler's $g=3,4,6$ isoparametric examples. The excluded compact product-of-spheres construction is not used as an input here. The translating flow is $\Sigma+te_z$, $t\in\mathbb R$. The topology of a cross-sectional shrinker must not be recorded as the genus of the higher-dimensional translator. The theorem specifies the tangent flow, not a literal product end at finite height. The figure shows increasing asymptotic cross-sections and labels the uncomputed core; no arbitrary tube is asserted to solve the translator equation.
+\par Sources: \cite{CatSunWang2025}.
+\end{example}
+
+\chapter{Immersed ancient curves from grim-reaper chains}\label{sec:catalogue-immersed-ancient-grim-chains}
+\begin{example}[Immersed ancient curves from grim-reaper chains]\label{ex:catalogue-immersed-ancient-grim-chains}
+Angenent--You construct compact and noncompact immersed ancient curve-shortening flows from ordered chains of grim reapers. Consecutive horizontal asymptotes $y=a_{k-1},a_k$, with distinct adjacent heights, determine the grim speed $v_k=\pi/|a_k-a_{k-1}|$ and the direction is chosen as in their formula (3). The complete cyclic closing and intersection requirements in Sections 2–4 are essential; arbitrary superposition is not a solution.
+The compact case has a closing grim arc and parameter domain $S^1$. The noncompact construction has parameter domain $\mathbb R$, two ends asymptotic to the first and last horizontal lines, and the parity condition in the source. The construction includes locally convex immersed curves and curves that are neither embedded nor locally convex. These are distinct from the previously recorded embedded eternal chain examples. Their time interval is $(-\infty,T)$ for some endpoint $T$, with no general eternal continuation claim for the compact case. The figure shows the limiting grim pieces and connections at several increasingly late schematic stages. The finite-time gluing correction is not computed, and crossings in the intended planar immersed example are distinguished from artifacts of a higher-dimensional projection.
+\par Sources: \cite{CatAY18}.
+\end{example}
