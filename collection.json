@@ -97,9 +97,14 @@
         "the-eternal-reapernoid",
         "ancient-stacked-pancakes",
         "compact-nonconvex-ancient-spiral-curves",
-        "eternal-curves-from-chains-of-grim-reapers"
+        "eternal-curves-from-chains-of-grim-reapers",
+        "ancient-dense-torus-curves-with-irrational-frequencies",
+        "purely-rotating-curve-shortening-solitons",
+        "rotating-and-translating-curve-solitons",
+        "rotating-and-expanding-curve-solitons",
+        "rotating-and-shrinking-curve-solitons"
       ],
-      "description": "Stationary, ancient, higher-codimension, and singularity-forming flows that need not be solitons."
+      "description": "Stationary, ancient, rotating, higher-codimension, and singularity-forming flows, including mixed curve solitons."
     }
   ],
   "topics": [],

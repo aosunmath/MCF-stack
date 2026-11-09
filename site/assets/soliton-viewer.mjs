@@ -27,8 +27,15 @@ export function revolutionFaces(data, degrees) {
 }
 
 export function explicitCurve(kind,t,count=600) {
-  if(!['torus-curve','helix'].includes(kind))throw new Error('Unknown curve family');
-  if(kind==='torus-curve'&&!(t<0))throw new Error('Ancient torus curves require t < 0.');
+  if(!['torus-curve','helix','dense-torus'].includes(kind))throw new Error('Unknown curve family');
+  if(kind!=='helix'&&!(t<0))throw new Error('Ancient torus curves require t < 0.');
+  if(kind==='dense-torus'){
+    const u=-4*t/(Math.sqrt(1-8*t)+1),r=Math.sqrt(u);
+    return Array.from({length:count+1},(_,i)=>{
+      const theta=-12*Math.PI+24*Math.PI*i/count;
+      return [r*Math.cos(theta),r*Math.sin(theta),u*Math.cos(Math.SQRT2*theta),u*Math.sin(Math.SQRT2*theta)];
+    });
+  }
   let lo=0,hi=Math.max(1,Math.sqrt(Math.max(0,kind==='torus-curve'?-2*t:1-2*t)));
   for(let j=0;j<90;j++){
     const r=(lo+hi)/2;
@@ -42,6 +49,19 @@ export function explicitCurve(kind,t,count=600) {
   });
 }
 
+// Exact ambient evolution of a numerical AAAW profile, normalized at t = 0.
+export function evolveRotatingCurve(vertices,t,{alpha,omega,velocity}) {
+  const squaredScale=1+2*alpha*t;
+  if(!(squaredScale>0))throw new Error('Time is outside the smooth soliton interval.');
+  const scale=Math.sqrt(squaredScale);
+  const angle=omega*(alpha===0?t:Math.log1p(2*alpha*t)/(2*alpha));
+  return vertices.map(([x,y,z])=>[
+    scale*(x*Math.cos(angle)-y*Math.sin(angle)),
+    scale*(x*Math.sin(angle)+y*Math.cos(angle)),
+    scale*z+velocity*t
+  ]);
+}
+
 function init(figure, data) {
   const canvas=figure.querySelector('canvas'), ctx=canvas.getContext('2d');
   if (!ctx) return;
@@ -52,7 +72,7 @@ function init(figure, data) {
   let visibleFaces=revolutionFaces(data,degrees), resetRevolution=()=>{};
   const lo=[0,1,2].map(i=>Math.min(...vertices.map(p=>p[i])));
   const hi=[0,1,2].map(i=>Math.max(...vertices.map(p=>p[i])));
-  let center=lo.map((v,i)=>(v+hi[i])/2);
+  let center=data.view?.center??lo.map((v,i)=>(v+hi[i])/2);
   // Keep one scale throughout the time slider, including its largest oval.
   let radius=data.view?.radius ?? (data.dynamic?.kind==='ancient-oval'
     ? Math.hypot(Math.PI/2,Math.acosh(Math.exp(-data.dynamic.min)))
@@ -202,12 +222,17 @@ function init(figure, data) {
     input.addEventListener('input',()=>{const t=Number(input.value);vertices=ancientOval(t);data.paths=[Array.from({length:vertices.length},(_,i)=>i)];points=centered();output.textContent=`t = ${t.toFixed(2)}`;requestDraw();});
     label.append(output,input);figure.querySelector('.soliton-controls').append(label);
   }
-  if(['torus-curve','helix'].includes(data.dynamic?.kind)){
+  if(['torus-curve','helix','dense-torus','rotating-soliton'].includes(data.dynamic?.kind)){
     const label=document.createElement('label'),output=document.createElement('output');
     output.textContent=`t = ${data.dynamic.value.toFixed(2)}`;
     const input=document.createElement('input');input.type='range';input.min=String(data.dynamic.min);input.max=String(data.dynamic.max);input.step='.01';input.value=String(data.dynamic.value);
-    input.setAttribute('aria-label',data.dynamic.kind==='helix'?'Eternal helix time':'Ancient torus curve time');
-    input.addEventListener('input',()=>{const t=Number(input.value);vertices=explicitCurve(data.dynamic.kind,t);points=centered();output.textContent=`t = ${t.toFixed(2)}`;canvas.dataset.time=String(t);requestDraw();});
+    const kind=data.dynamic.kind;
+    input.setAttribute('aria-label',kind==='helix'?'Eternal helix time':kind==='rotating-soliton'?'Curve soliton time':kind==='dense-torus'?'Dense torus curve time':'Ancient torus curve time');
+    input.addEventListener('input',()=>{
+      const t=Number(input.value);
+      vertices=kind==='rotating-soliton'?evolveRotatingCurve(data.vertices,t,data.dynamic):explicitCurve(kind,t,kind==='dense-torus'?2400:600);
+      points=centered();output.textContent=`t = ${t.toFixed(2)}`;canvas.dataset.time=String(t);requestDraw();
+    });
     label.append(output,input);figure.querySelector('.soliton-controls').append(label);
   }
   figure.querySelector('.soliton-controls').hidden=false;

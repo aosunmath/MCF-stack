@@ -1383,10 +1383,10 @@
       "bibliography_key": "CatAAAW13",
       "filename": "altschuler-et-al-1207.4051v1.pdf",
       "title": "The Zoo of Solitons for Curve Shortening in Rⁿ",
-      "edition": "1207.4051v1; selected passages checked",
+      "edition": "1207.4051v1; full 39-page preprint read and construction passages compared",
       "sha256": "052f77d9247a90a49fa15a12490e8de885b9a14b24e09b5a6ed86ea67813cf10",
       "pdf_pages": 39,
-      "role": "Selected construction, property, or entropy passages checked for the MCF catalogue expansion. Exact locators accompany the entries.",
+      "role": "Full preprint read for five additional curve families. Entry locators and direct-calculation checks are recorded in documentation/aaaw-curve-solitons.md. No independent human or formal verification is claimed.",
       "redistributed": false,
       "review_status": "selected-passages-checked",
       "url": "https://arxiv.org/abs/1207.4051v1"

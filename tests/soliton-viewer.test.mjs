@@ -73,3 +73,42 @@ test('genus-model WebGL rotations agree with the shared geometric projection',as
     actual.forEach((x,i)=>assert.ok(Math.abs(x-expected[i])<1e-12));
   }
 });
+
+test('AAAW exact ambient motion has the scaled normal curvature at nonzero times',async()=>{
+  const {evolveRotatingCurve}=await import('../site/assets/soliton-viewer.mjs');
+  const dt=1e-5;
+  for(const name of ['rotator','screw','expanding','shrinking']){
+    const d=JSON.parse(readFileSync(new URL(`../site/assets/solitons/aaaw-${name}.json`,import.meta.url)));
+    const {alpha,omega,velocity}=d.dynamic;
+    const state=d.integration.states[Math.floor(d.vertices.length/2)+43];
+    const c=state.slice(0,3),T=state.slice(3);
+    const a=[alpha*c[0]-omega*c[1],alpha*c[1]+omega*c[0],alpha*c[2]+velocity];
+    const dot=a.reduce((s,x,j)=>s+x*T[j],0),curvature=a.map((x,j)=>x-dot*T[j]);
+    for(const time of [-.4,.5]){
+      const before=evolveRotatingCurve([c],time-dt,d.dynamic)[0],after=evolveRotatingCurve([c],time+dt,d.dynamic)[0];
+      const speed=after.map((x,j)=>(x-before[j])/(2*dt));
+      const scale=Math.sqrt(1+2*alpha*time);
+      const rotatedT=evolveRotatingCurve([T],time,{alpha,omega,velocity:0})[0].map(x=>x/scale);
+      const tangential=speed.reduce((s,x,j)=>s+x*rotatedT[j],0);
+      const normal=speed.map((x,j)=>x-tangential*rotatedT[j]);
+      const expected=evolveRotatingCurve([curvature],time,{alpha,omega,velocity:0})[0].map(x=>x/(scale*scale));
+      normal.forEach((x,j)=>assert.ok(Math.abs(x-expected[j])<1e-7));
+    }
+  }
+  assert.throws(()=>evolveRotatingCurve([[1,0,0]],1,{alpha:-.5,omega:1,velocity:0}));
+  assert.throws(()=>evolveRotatingCurve([[1,0,0]],-1,{alpha:.5,omega:1,velocity:0}));
+});
+
+test('irrational-frequency curve satisfies Euclidean curve shortening in physical time',async()=>{
+  const {explicitCurve}=await import('../site/assets/soliton-viewer.mjs');
+  const dt=1e-5;
+  for(const time of [-6,-1,-.05]){
+    const p=explicitCurve('dense-torus',time,2400)[743];
+    const before=explicitCurve('dense-torus',time-dt,2400)[743],after=explicitCurve('dense-torus',time+dt,2400)[743];
+    const D=p[0]**2+p[1]**2+2*(p[2]**2+p[3]**2);
+    const curvature=[-p[0]/D,-p[1]/D,-2*p[2]/D,-2*p[3]/D];
+    p.forEach((_,j)=>assert.ok(Math.abs((after[j]-before[j])/(2*dt)-curvature[j])<1e-6));
+    assert.ok(Math.abs(p.reduce((s,x)=>s+x*x,0)+2*time)<1e-10);
+  }
+  assert.throws(()=>explicitCurve('dense-torus',0));
+});

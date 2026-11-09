@@ -848,6 +848,66 @@
       ],
       "dependencies": [],
       "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-irrational-torus-curves",
+      "title": "Ancient dense torus curves with irrational frequencies",
+      "kind": "example",
+      "file": "catalogue-aaaw.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-rotating-curves",
+      "title": "Purely rotating curve-shortening solitons",
+      "kind": "example",
+      "file": "catalogue-aaaw.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-rotating-translating-curves",
+      "title": "Rotating and translating curve solitons",
+      "kind": "example",
+      "file": "catalogue-aaaw.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-rotating-expanding-curves",
+      "title": "Rotating and expanding curve solitons",
+      "kind": "example",
+      "file": "catalogue-aaaw.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-rotating-shrinking-curves",
+      "title": "Rotating and shrinking curve solitons",
+      "kind": "example",
+      "file": "catalogue-aaaw.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
     }
   ],
   "external_proof_dependencies": [

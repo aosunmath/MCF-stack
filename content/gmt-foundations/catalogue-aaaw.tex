@@ -1,0 +1,149 @@
+\chapter{Ancient dense torus curves with irrational frequencies}\label{sec:catalogue-irrational-torus-curves}
+\begin{example}[Ancient dense torus curves with irrational frequencies]\label{ex:catalogue-irrational-torus-curves}
+Choose $m\geq2$, amplitudes $a_j>0$, and positive frequencies $\omega_j$ which are linearly independent over $\mathbb Q$. For $\theta,\tau\in\mathbb R$, set
+\[
+ C(\theta,\tau)=\bigl(a_j e^{-\omega_j^2\tau}\cos(\omega_j\theta),
+ a_j e^{-\omega_j^2\tau}\sin(\omega_j\theta)\bigr)_{j=1}^m,
+ \qquad t(\tau)=-\frac12\sum_{j=1}^m a_j^2e^{-2\omega_j^2\tau}.
+\]
+The strictly increasing map $\tau\mapsto t$ maps $\mathbb R$ onto $(-\infty,0)$. These formulas therefore define an ancient curve-shortening flow in $\mathbb R^{2m}$, of dimension one and codimension $2m-1$. They are explicit in the auxiliary time $\tau$; physical time generally requires inversion of the displayed scalar relation. Indeed, with
+\[
+ D(\tau)=\sum_j\omega_j^2a_j^2e^{-2\omega_j^2\tau},
+ \qquad \frac{dt}{d\tau}=D,
+\]
+one has $|C_\theta|^2=D$, $C_\tau=C_{\theta\theta}$, and $C_t=C_{ss}$. This direct differentiation fixes the coefficient in the time relation.
+
+At each finite time the curve is an injective immersion of $\mathbb R$, dense in the product of the $m$ coordinate circles. It is not an embedding: recurrence gives sequences escaping in the parameter whose images converge to a point of the curve. It is also not proper. Its constant positive speed makes its induced metric complete. Its parameter manifold is noncompact with two intrinsic ends, although its image is bounded and neither end escapes every compact set. The closure is a torus; the evolving object is a curve, not that torus as a surface. The flow has simultaneous rotational symmetry and is not homothetically self-similar because distinct coordinate radii have changing ratios.
+
+The exact radius and curvature identities are
+\[
+ |C|^2=-2t,\qquad
+ |C_{ss}|^2=\frac{\sum_j\omega_j^4 a_j^2e^{-2\omega_j^2\tau}}{D(\tau)^2}.
+\]
+Thus curvature is constant along each time slice. After dividing by $\sqrt{-2t}$, the largest-frequency coordinate pair dominates as $t\to-\infty$, and the smallest-frequency pair dominates as $t\uparrow0$. The locally parametrized limits are great circles traced by an unbounded parameter; no finite-multiplicity convergence is asserted for the full recurrent curve.
+
+At a fixed time, the infinite length lies in a bounded set. Consequently every positive-scale Gaussian length integral is infinite, and both $F_{0,1}$ and entropy are $+\infty$. This is a direct consequence of the parametrization, with length counted on the immersed domain. No finite Gaussian-area or locally finite length assertion is intended.
+
+For the illustrated $\mathbb R^4$ case take $a_1=a_2=1$ and $(\omega_1,\omega_2)=(1,\sqrt2)$. An explicit physical-time formula is obtained by setting
+\[
+ u(t)=\frac{\sqrt{1-8t}-1}{2},\qquad
+ C(\theta,t)=\bigl(\sqrt u\cos\theta,\sqrt u\sin\theta,
+ u\cos(\sqrt2\theta),u\sin(\sqrt2\theta)\bigr),\qquad t<0.
+\]
+Source: \cite{CatAAAW13}, Section 3, equations (11)--(14), PDF pp.~8--10. The irrational-frequency case is distinct from the compact rational-frequency family in \ref{ex:catalogue-ancient-torus-curves}. The figure samples a finite parameter interval and projects four-dimensional geometry; apparent crossings in this projection do not establish self-intersections in $\mathbb R^4$. No stability classification is recorded.
+\end{example}
+
+\chapter{Purely rotating curve-shortening solitons}\label{sec:catalogue-rotating-curves}
+\begin{example}[Purely rotating curve-shortening solitons]\label{ex:catalogue-rotating-curves}
+Let $A$ be a nonzero skew-symmetric linear map on $\mathbb R^n$, $n\geq2$. For a unit vector $T$ write $P_Tw=w-\langle w,T\rangle T$. Given $C(0)=p$ and $T(0)=q$ with $|q|=1$, solve
+\[
+ C_s=T,\qquad T_s=P_T(AC).
+\]
+The solution is unique for these initial data and exists for every $s\in\mathbb R$: $|T|=1$ and $|C(s)|\leq|p|+|s|$ prevent finite-parameter blow-up. Thus it is a complete immersed curve of codimension $n-1$. Its associated eternal flow is
+\[
+ X(s,t)=e^{tA}C(s),\qquad t\in\mathbb R,
+ \qquad (X_t)^\perp=X_{\ell\ell},
+\]
+where $\ell$ is arclength at time $t$. The exponential is an exact evolution law for the ODE-defined profile, not a closed formula for that profile. We exclude the stationary straight lines in $\ker A$.
+
+Both ends satisfy $|C(s)|\to\infty$ as $s\to\pm\infty$; consequently the immersion is proper and noncompact, with domain $\mathbb R$ and two ends. Its distance from the origin has a unique minimum. In the plane, $A=\omega J$ with $J(x,y)=(-y,x)$ gives the rotating spiral family. The initial data $C(0)=0$, $T(0)=(1,0)$ give the usual centrally symmetric Yin--Yang example. A logarithmic spiral is not its exact profile; the purely rotating case has different far-field behavior from the expanding rotators in \ref{ex:catalogue-rotating-expanding-curves}.
+
+For $\mathbb R^3$, let $A(x,y,z)=\omega(-y,x,0)$, $\omega>0$. If $T_z(0)\ne0$, the identity
+\[
+ z_s(s)=z_s(0)\exp\left(-\int_0^s\langle AC,T\rangle\,d\sigma\right)
+\]
+shows that $z$ is strictly monotone. The curve is therefore embedded and is a graph over an interval of the rotation axis. This interval can be bounded or a half-line; a finite endpoint is approached exponentially in arclength. If $T_z(0)=0$, the curve stays in a plane perpendicular to that axis. More generally, the projection to $\ker A$ lies in a line, and any nonconstant such projection is injective. No blanket embeddedness assertion is made for profiles with constant kernel projection or for invertible $A$ in even dimensions.
+
+Source: \cite{CatAAAW13}, Section 4.1, equation (27), Lemmas 5.4 and 6.3, PDF pp.~11--13, 15--20, and Section 7.1, p.~23. Initial-value uniqueness is not a uniqueness theorem for prescribed ends. No general curvature bound, stability theorem, or Gaussian-area or entropy value is recorded here. The figures integrate the profile equation with $\omega=1$: one spatial example has $p=(1,0,0)$, $q=(0,0,1)$; a second shows the planar Yin--Yang profile. Both are truncated numerical ODE curves with exact rotation in the time control.
+\end{example}
+
+\chapter{Rotating and translating curve solitons}\label{sec:catalogue-rotating-translating-curves}
+\begin{example}[Rotating and translating curve solitons]\label{ex:catalogue-rotating-translating-curves}
+Let $n\geq3$, $A\ne0$ be skew-symmetric, and $v\ne0$ satisfy $Av=0$. The arclength system
+\[
+ C_s=T,\qquad T_s=P_T(AC+v),\qquad |T|=1
+\]
+has a unique complete solution on $\mathbb R$ for each point and unit tangent. Here $P_Tw=w-\langle w,T\rangle T$. It generates the eternal curve-shortening flow
+\[
+ X(s,t)=e^{tA}C(s)+tv,\qquad t\in\mathbb R.
+\]
+This is an exact time evolution of an ODE-defined curve in codimension $n-1$. To select genuinely rotating examples, require $P_T(AC)$ not to vanish identically; the axis line and purely translating curves in $\ker A$ are excluded. A rigidly rotating and translating soliton is different from the shrinking helix in \ref{ex:catalogue-eternal-helices}, whose radius changes with time.
+
+The scalar height $h(s)=\langle v,C(s)\rangle$ satisfies
+\[
+ h_{ss}=-\langle AC+v,T\rangle h_s+|v|^2.
+\]
+It is either strictly monotone with range $\mathbb R$, or has exactly one global minimum and tends to $+\infty$ at both ends. In the monotone case projection to the translation axis gives an embedding. In the minimum case each branch is a graph over its height range, but this alone does not establish that the two branches are disjoint. All these curves are proper complete immersions with domain $\mathbb R$ and two ends; the height diverges in absolute value at each end. The norm of the projection to $\operatorname{range}A$ tends to either zero or infinity along each end. We do not replace this projection by distance to the translation line when $\dim\ker A>1$.
+
+In $\mathbb R^3$, write $A(x,y,z)=\omega(-y,x,0)$ and $v=be_3$ with $\omega,b>0$. A family with two upward ends is obtained by choosing $C(0)=(r,0,0)$, $T(0)=(0,1,0)$, $r>0$: $z_s(0)=0$ and $z_{ss}(0)=b$. This is a concrete initial-value construction, not a closed spatial formula. The illustration uses $r=\omega=b=1$ and shows a finite arclength window. Its time control applies the exact screw motion to the numerical profile. The general higher-dimensional construction allows any nonzero skew map with a nontrivial kernel and any $v\in\ker A\setminus\{0\}$.
+
+Source: \cite{CatAAAW13}, Section 4.1 and Lemmas 5.2 and 6.4, PDF pp.~11--12, 14--15, and 20--22. The two height alternatives are read with the proof of Lemma 6.4; its displayed $\pm\infty$ notation does not require opposite signs at the two ends. No global uniqueness with prescribed ends, stability classification, or quantitative Gaussian-area or entropy result is recorded.
+\end{example}
+
+\chapter{Rotating and expanding curve solitons}\label{sec:catalogue-rotating-expanding-curves}
+\begin{example}[Rotating and expanding curve solitons]\label{ex:catalogue-rotating-expanding-curves}
+Fix $n\geq2$, $\alpha>0$, and a nonzero skew-symmetric map $A$ on $\mathbb R^n$. Solve the arclength initial-value problem
+\[
+ C_s=T,\qquad T_s=P_T((\alpha I+A)C),\qquad |T|=1.
+\]
+Here $P_Tw=w-\langle w,T\rangle T$. Each point and unit tangent determine a unique solution on all of $\mathbb R$. It gives the flow
+\[
+ X(s,t)=\sqrt{1+2\alpha t}\,
+ \exp\left(\frac{\log(1+2\alpha t)}{2\alpha}A\right)C(s),
+ \qquad t>-\frac1{2\alpha}.
+\]
+The spatial profile is defined by an ODE, while the displayed evolution law is exact. With $\alpha=1/2$, the profile is normalized at $t=0$ and the initial singular time is $t=-1$; shifting time by one puts its interval at positive times. Its curvature vector is $(C/2+AC)^\perp$, so in general this is not a pure self-expander satisfying $\mathbf H=C^\perp/2$.
+
+These are complete proper noncompact immersed curves, of codimension $n-1$, with parameter manifold $\mathbb R$ and two ends. Their distance from the origin has exactly one minimum and tends to infinity on both ends. Orient either end outward and define $d\sigma/ds=|a|^{-1}$, where $a=(\alpha I+A)C$. For some nonzero vector $\Gamma$ depending on the end,
+\[
+ C(\sigma)=e^{\sigma(\alpha I+A)}\Gamma+O(e^{-\alpha\sigma}),
+ \qquad \sigma\longrightarrow+\infty.
+\]
+Thus each end is asymptotic to a generalized logarithmic spiral, with a decaying positional error. If its $\Gamma$ lies in $\ker A$, the comparison curve is a ray. This is an asymptotic formula, not an exact parametrization of the soliton. The curvature on these ends is $O(|C|^{-1})$, by the bounded quantity $|a|^2|C_{ss}|^2$ in the low-curvature region of the source proof.
+
+For the recorded mixed family require $P_T(AC)$ not to vanish identically. The general construction is available in every $n\geq2$. Embeddedness is not asserted for arbitrary initial data, and no uniqueness for a prescribed pair of asymptotic spirals is claimed. Pure dilation ($A=0$) reduces to planar corner smoothings already recorded in \ref{ex:catalogue-expanding-corners}; those are not added again here. Source: \cite{CatAAAW13}, Section 4.2, Lemma 6.3, and Lemmas 7.6--7.7, PDF pp.~12--13, 19--20, and 28--30. No stability or entropy theorem is supplied by these passages. The numerical spatial illustration uses $\alpha=1/2$, $A(x,y,z)=(-y,x,0)$, $C(0)=(1,0,0)$, and $T(0)=(0,0,1)$, with a finite arclength window.
+\end{example}
+
+\chapter{Rotating and shrinking curve solitons}\label{sec:catalogue-rotating-shrinking-curves}
+\begin{example}[Rotating and shrinking curve solitons]\label{ex:catalogue-rotating-shrinking-curves}
+Let $n\geq2$, $\alpha<0$, and $A\ne0$ be skew-symmetric. The complete arclength profiles satisfy
+\[
+ C_s=T,\qquad T_s=P_T((\alpha I+A)C),\qquad |T|=1,
+ \qquad P_Tw=w-\langle w,T\rangle T.
+\]
+For each initial point and unit tangent the ODE has a unique solution on $\mathbb R$, and its exact time evolution is
+\[
+ X(s,t)=\sqrt{1+2\alpha t}\,
+ \exp\left(\frac{\log(1+2\alpha t)}{2\alpha}A\right)C(s),
+ \qquad t<-\frac1{2\alpha}.
+\]
+We restrict to genuinely rotating profiles, meaning $P_T(AC)$ is not identically zero. This removes the invariant shrinking circles and the nonrotating Abresch--Langer curves in $\ker A$. With $\alpha=-1/2$ the extinction time is $1$ and the equation is $\mathbf H=(-C/2+AC)^\perp$, not the pure shrinker equation. The profiles have dimension one and codimension $n-1$; no closed formula is claimed.
+
+The quantity
+\[
+ V(s)=e^{\alpha|C(s)|^2/2}\langle T,AC\rangle,
+ \qquad V_s=e^{\alpha|C|^2/2}|P_T(AC)|^2
+\]
+is bounded and strictly increasing along a genuinely rotating solution. Its limits $V_-<V_+$ therefore exist, and at least one is nonzero. If $V_+\ne0$, the forward limit set consists of invariant circles of radius $(-\alpha)^{-1/2}$ in one rotation-frequency eigenspace. If that eigenspace is two-dimensional, there is only one such circle and the end is asymptotic to it. The corresponding statement holds for the backward end. In particular, when all nonzero rotation frequencies are simple and $V_-<0<V_+$, both ends are asymptotic to circles, possibly in different eigenspaces. No unspecified meaning of ``generic'' is needed for this conditional statement.
+
+At least one end has infinite arclength in a bounded region. Thus these profiles are nonproper complete immersions with noncompact parameter manifold $\mathbb R$ and two intrinsic ends; an end limiting to a circle is not a compact component. They have infinite centered Gaussian length and infinite entropy, since the Gaussian weight has a positive lower bound on a bounded tail. This direct observation concerns parametrized length, not the length of the limiting circle. Embeddedness of the full general family is not determined by a projection or by its end limits.
+
+A concrete bounded spatial subfamily is obtained by taking $\alpha=-1/2$, $A(x,y,z)=\omega(-y,x,0)$, $\omega>0$, and initial data
+\[
+ C(0)=(\sqrt2,0,0),\qquad T(0)=(0,0,1).
+\]
+The whole curve stays on the sphere $|C|=\sqrt2$ because its initial tangent is tangent to that sphere. Here $V(0)=0$ and $V_s(0)>0$, so both ends limit to the equatorial circle, with opposite orientations. It is not a closed curve or a homothetically shrinking circle. Under the time and radius change in \cite{CatAAAW13}, Lemma 3.2, it corresponds to intrinsic curve shortening by rotation on the unit sphere; the Euclidean flow catalogued here remains in $\mathbb R^3$. The same tangent-sphere construction works in $\mathbb R^n$ for $n\geq3$ with nontrivial tangential rotation.
+
+There are also unbounded spiral ends. Put $a=(\alpha I+A)C$, $\mu=\langle a/|a|,T\rangle$, and $\nu=|a|^4(1-\mu^2)$. For sufficiently large $K$ depending on $\alpha,A$, Lemma 7.8 constructs initial tangents at sufficiently distant points for which the forward orbit remains in
+\[
+ |a|\geq K,\qquad \nu\leq K,\qquad \mu<0.
+\]
+Such an end satisfies, with $d\sigma/ds=|a|^{-1}$,
+\[
+ C(\sigma)=e^{-\sigma(\alpha I+A)}\Gamma+O(e^{\alpha\sigma}),
+ \qquad \Gamma\ne0.
+\]
+Choosing the initial point in the rotation range away from the kernel gives genuinely rotating examples. This is a topological shooting existence result, not a closed formula or a guarantee that a generic numerical initial tangent produces that end. The kernel-accumulation scenarios discussed at the end of the paper remain unresolved there and are not claimed as additional constructed examples.
+
+Source: \cite{CatAAAW13}, Sections 4.2 and 6.3, Lemmas 7.7--7.8 and 8.1--8.5, PDF pp.~12--13, 22, 28--39. The illustrations integrate one nonspherical spatial initial-value problem and the stated spherical problem, with $\omega=1$. Both show finite windows, not certified asymptotic computations. No classification of embeddedness, uniqueness for end data, or dynamical stability is asserted.
+\end{example}

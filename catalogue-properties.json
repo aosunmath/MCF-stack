@@ -4039,6 +4039,689 @@
           }
         }
       ]
+    },
+    {
+      "label": "ex:catalogue-irrational-torus-curves",
+      "notes": "Only even ambient dimensions 2m ≥ 4 are recorded. The closure is an m-torus, while the flow has intrinsic dimension one. Its infinite Gaussian length counts the immersed domain.",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "cases": [
+        {
+          "name": "Two rationally independent frequencies in R4",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two intrinsic ends; both remain in a bounded torus"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "Injective but recurrent: the inverse onto its image is not continuous. This is a nonproper immersion, not an embedding."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        },
+        {
+          "name": "m rationally independent frequencies in R^(2m), m ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two intrinsic ends; neither escapes to infinity"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "nonembedded",
+            "text": "Injective dense torus orbit with noncontinuous inverse and nonproper image parametrization."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotating-curves",
+      "notes": "All profiles are complete proper curves with two ends. A nonzero kernel projection gives an embedding; the general even-dimensional case is not assigned that conclusion.",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "cases": [
+        {
+          "name": "Planar rotating spirals, including the Yin–Yang profile",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Nonplanar rotators in R3 with nonzero axial tangent",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The axial coordinate is strictly monotone (Lemma 5.4), and both ends escape (Lemma 6.3): a proper embedding."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotators in R4 with invertible rotation map",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotators in R^n, n ≥ 5, with nonconstant kernel projection",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Projection onto a line in ker A is injective; properness follows from escaping ends."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotators in R^(2m), m ≥ 3, with invertible rotation map",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotating-translating-curves",
+      "notes": "A ≠ 0, v ≠ 0, Av = 0, with genuinely nonzero normal rotation. The rotation map must have a kernel. Curves lie in range(A) plus at most a two-dimensional affine kernel component (Lemma 5.2); R4 permits a two-dimensional kernel component.",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "cases": [
+        {
+          "name": "Monotone-height screw solitons in R3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Bijective height projection makes the complete proper curve an embedding."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Screw solitons with a height minimum in R3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "Each branch is a height graph, but disjointness of the two branches is not established by that fact."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Monotone-height screw solitons in R4",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Bijective height projection makes the complete proper curve an embedding."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Screw solitons with a height minimum in R4",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "Each branch is a height graph, but disjointness of the two branches is not established by that fact."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Monotone-height screw solitons in R^n, n ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Bijective height projection makes the complete proper curve an embedding."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Screw solitons with a height minimum in R^n, n ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "Each branch is a height graph, but disjointness of the two branches is not established by that fact."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotating-expanding-curves",
+      "notes": "α > 0; complete proper immersed curves. Generalized logarithmic spirals are end asymptotes, not exact spatial formulas. No pure-expander Gaussian identity is imposed.",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "cases": [
+        {
+          "name": "Planar rotating expanders",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Spatial rotating expanders",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotating expanders in R4",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        },
+        {
+          "name": "Rotating expanders in R^n, n ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian length value is recorded; it is not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No entropy value or finiteness theorem is recorded for this general case."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotating-shrinking-curves",
+      "notes": "α < 0, P_T(AC) not identically zero. All recorded domains are complete, noncompact and nonproper; bounded image does not mean compact domain. The spherical subfamily is Euclidean flow, not a separate curved-ambient entry. End convergence to a single circle requires a two-dimensional frequency eigenspace. Unresolved kernel-limit scenarios are not existence claims.",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "cases": [
+        {
+          "name": "Genuinely rotating shrinking curves in R2",
+          "ambient": [
+            "r2"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two intrinsic ends; at least one has a bounded infinite-length tail"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        },
+        {
+          "name": "Genuinely rotating shrinking curves in R3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two intrinsic ends; at least one accumulates in a bounded region"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        },
+        {
+          "name": "Tangent-sphere rotating curves in R3",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two intrinsic ends asymptotic to the equator, with opposite orientations"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        },
+        {
+          "name": "Genuinely rotating shrinking curves in R4",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        },
+        {
+          "name": "Genuinely rotating shrinking curves in R^n, n ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "curve",
+          "topology": "Line R (immersed domain)",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two ends of the parameter manifold R"
+          },
+          "compact": false,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "No general embeddedness theorem for the stated initial data is recorded in the reviewed source."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁ = +∞: infinite arclength in a bounded region (direct calculation)."
+          },
+          "entropy": {
+            "status": "exact",
+            "text": "λ = +∞: already every positive-scale Gaussian integral diverges on a bounded infinite-length tail."
+          }
+        }
+      ]
     }
   ]
 }

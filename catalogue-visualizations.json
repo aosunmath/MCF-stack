@@ -947,6 +947,94 @@
       "caption": "A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
       "alt": "Eternal curves from chains of grim reapers. A schematic embedded curve with three alternating turns between four ordered asymptote heights. Only the individual grim-reaper models have the displayed closed formula.",
       "interactive": false
+    },
+    {
+      "label": "ex:catalogue-irrational-torus-curves",
+      "section": "ancient-dense-torus-curves-with-irrational-frequencies",
+      "title": "Ancient dense torus curves with irrational frequencies",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "model": "aaaw-dense-torus",
+      "status": "Exact R4 curve, projected to R3",
+      "caption": "Frequencies (1, √2), amplitudes one, and physical time t = −1. The finite interval −12π ≤ θ ≤ 12π samples an injectively immersed curve dense in a torus; the complete curve is nonproper. Time and fourth-coordinate rotation controls preserve the exact formula. Projected crossings are not self-intersections in R4.",
+      "alt": "Ancient dense torus curves with irrational frequencies. Frequencies (1, √2), amplitudes one, and physical time t = −1. The finite interval −12π ≤ θ ≤ 12π samples an injectively immersed curve dense in a torus; the complete curve is nonproper. Time and fourth-coordinate rotation controls preserve the exact formula. Projected crossings are not self-intersections in R4.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-rotating-curves",
+      "section": "purely-rotating-curve-shortening-solitons",
+      "title": "Purely rotating curve-shortening solitons",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "model": "aaaw-rotator",
+      "status": "Numerical ODE curve",
+      "caption": "Spatial rotator with angular speed 1, C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The complete curve is embedded and proper by its monotone axial projection and escaping ends. The time control applies exact rigid rotation to this truncated numerical profile.",
+      "alt": "Purely rotating curve-shortening solitons. Spatial rotator with angular speed 1, C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The complete curve is embedded and proper by its monotone axial projection and escaping ends. The time control applies exact rigid rotation to this truncated numerical profile.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "aaaw-yin-yang",
+          "status": "Numerical ODE curve",
+          "caption": "Planar Yin–Yang profile with C(0) = 0, T(0) = (1, 0), and angular speed 1; −24 ≤ s ≤ 24. Time applies exact rotation to a truncated numerical solution, not a logarithmic-spiral substitution.",
+          "alt": "Numerical centrally symmetric planar Yin–Yang rotator, with two outward spiraling arms.",
+          "interactive": true
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-rotating-translating-curves",
+      "section": "rotating-and-translating-curve-solitons",
+      "title": "Rotating and translating curve solitons",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "model": "aaaw-screw",
+      "status": "Numerical ODE curve",
+      "caption": "Angular speed and upward translation speed are both 1; C(0) = (1, 0, 0), T(0) = (0, 1, 0), and −24 ≤ s ≤ 24. Both ends ascend from a unique height minimum. A finite numerical window cannot establish global embeddedness. The time control applies exact rotation and translation.",
+      "alt": "Rotating and translating curve solitons. Angular speed and upward translation speed are both 1; C(0) = (1, 0, 0), T(0) = (0, 1, 0), and −24 ≤ s ≤ 24. Both ends ascend from a unique height minimum. A finite numerical window cannot establish global embeddedness. The time control applies exact rotation and translation.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-rotating-expanding-curves",
+      "section": "rotating-and-expanding-curve-solitons",
+      "title": "Rotating and expanding curve solitons",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "model": "aaaw-expanding",
+      "status": "Numerical ODE curve",
+      "caption": "Dilation coefficient α = 1/2 and angular coefficient ω = 1, with C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The ends are truncated. Time t > −1 follows the exact rotation–dilation law; this is not a pure self-expander or an exact logarithmic spiral.",
+      "alt": "Rotating and expanding curve solitons. Dilation coefficient α = 1/2 and angular coefficient ω = 1, with C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The ends are truncated. Time t > −1 follows the exact rotation–dilation law; this is not a pure self-expander or an exact logarithmic spiral.",
+      "interactive": true
+    },
+    {
+      "label": "ex:catalogue-rotating-shrinking-curves",
+      "section": "rotating-and-shrinking-curve-solitons",
+      "title": "Rotating and shrinking curve solitons",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAAAW13"
+      ],
+      "model": "aaaw-shrinking",
+      "status": "Numerical ODE curve",
+      "caption": "Dilation coefficient α = −1/2 and angular coefficient ω = 1, with C(0) = (2, 0, 0), T(0) = (0, 0, 1), and −18 ≤ s ≤ 18. The finite ODE segment illustrates a nonspherical profile. Time t < 1 follows the exact rotation–dilation law. Neither finite sampling nor projected overlaps certify asymptotic behavior or embeddedness.",
+      "alt": "Rotating and shrinking curve solitons. Dilation coefficient α = −1/2 and angular coefficient ω = 1, with C(0) = (2, 0, 0), T(0) = (0, 0, 1), and −18 ≤ s ≤ 18. The finite ODE segment illustrates a nonspherical profile. Time t < 1 follows the exact rotation–dilation law. Neither finite sampling nor projected overlaps certify asymptotic behavior or embeddedness.",
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "aaaw-spherical",
+          "status": "Numerical ODE curve on an exact sphere",
+          "caption": "Tangent-sphere initial data C(0) = (√2, 0, 0), T(0) = (0, 0, 1), with α = −1/2 and ω = 1. The exact solution lies on the radius-√2 sphere at t = 0; the displayed numerical interval is −18 ≤ s ≤ 18. The two infinite ends accumulate on the equator. This is a noncompact immersed domain, not a closed curve.",
+          "alt": "Numerical rotating and shrinking spatial curve on a sphere, approaching its equator from two sides.",
+          "interactive": true
+        }
+      ]
     }
   ]
 }
