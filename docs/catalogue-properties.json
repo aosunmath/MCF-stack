@@ -5149,7 +5149,7 @@
       "category": "other-special-flows",
       "tag": "2DFF070BC43F",
       "model": "su-tsai-wood",
-      "illustration_status": "Neck-collapse schematic"
+      "illustration_status": "Exact local profiles; asymptotic time model"
     },
     {
       "label": "ex:catalogue-lee-tsai",

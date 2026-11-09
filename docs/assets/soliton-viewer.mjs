@@ -367,6 +367,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='stolarski-su-asymptotic'){
         const {initStolarskiSu}=await import('./stolarski-su-viewer.mjs');
         initStolarskiSu(figure,data);
+      } else if(data.kind==='lawlor-infinite-time'){
+        const {initLawlorFlowFigure}=await import('./lawlor-flow-viewer.mjs');
+        initLawlorFlowFigure(figure,data);
       } else if(data.kind==='su-gluing-slice'){
         const {initSuGluingFigure}=await import('./su-gluing-viewer.mjs');
         initSuGluingFigure(figure,data,rotatePoint);

@@ -202,3 +202,14 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .lee-tsai-figure[data-lee-tsai-mode="single"] canvas{touch-action:none}
 @media(max-width:699px){.soliton-figure[data-soliton$="lee-tsai.json"] .soliton-stage{height:360px}.lee-tsai-figure[data-lee-tsai-mode="sequence"] .soliton-stage{height:1080px}.lee-tsai-figure[data-lee-tsai-mode="single"] .soliton-stage{height:460px}}
 @media print{.soliton-figure[data-soliton$="lee-tsai.json"] .soliton-stage{height:450px}.lee-tsai-figure .soliton-status{display:none}}
+/* Su–Tsai–Wood: fixed spatial scale and the separate rescaled limit. */
+.soliton-figure[data-soliton$="su-tsai-wood.json"] .soliton-stage{height:auto;aspect-ratio:960/780}
+.soliton-figure.lawlor-flow-figure .soliton-stage{height:330px;aspect-ratio:auto}
+.lawlor-flow-figure canvas{cursor:default;touch-action:pan-y}
+.lawlor-timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:12px 14px;background:#f7fafb}
+.lawlor-timeline button{font:inherit;font-size:13px;min-height:44px;padding:6px;border:1px solid #c4d7df;border-radius:5px;background:#fff;color:#183b4e;cursor:pointer}
+.lawlor-timeline button[aria-pressed=true]{background:#e2eff4;border-color:#247b99;box-shadow:inset 0 0 0 1px #247b99}
+.lawlor-timeline svg{display:block;width:100%;height:66px;pointer-events:none}
+.lawlor-topology{font-size:13px;line-height:1.6;padding:10px 16px;margin:0;border-top:1px solid var(--line);color:#183b4e;background:#f7fafb}
+@media(max-width:699px){.soliton-figure.lawlor-flow-figure .soliton-stage{height:550px}.lawlor-timeline{gap:5px;padding:10px}.lawlor-timeline button{font-size:12px}.lawlor-timeline svg{height:48px}}
+@media print{.lawlor-timeline,.lawlor-topology{display:none}.soliton-figure.lawlor-flow-figure .soliton-stage{height:auto;aspect-ratio:960/780}}
