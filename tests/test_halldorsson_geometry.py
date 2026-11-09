@@ -56,8 +56,8 @@ class HalldorssonGeometryTests(unittest.TestCase):
             if 'unit_tangent_difference' in item:self.assertLess(item['unit_tangent_difference'],.006)
             if 'mean_curvature_translator_residual' in item:self.assertLess(item['mean_curvature_translator_residual'],1e-10)
         props=json.loads((ROOT/'catalogue-properties.json').read_text())['examples']
-        for name in ['dense-shrinkers','shrinking-spirals']:
-            record=next(r for r in props if r['label']=='ex:catalogue-halldorsson-'+name)
+        for name in ['halldorsson-dense-shrinkers','rotating-shrinking-curves']:
+            record=next(r for r in props if r['label']=='ex:catalogue-'+name)
             for case in record['cases']:
                 self.assertFalse(case['compact']);self.assertEqual(case['ends']['key'],'2')
                 for q in ['gaussian','entropy']:
