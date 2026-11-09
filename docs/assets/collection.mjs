@@ -141,15 +141,15 @@ function revealFragment() {
 window.addEventListener('hashchange', revealFragment);
 revealFragment();
 
-// Keep proofs available in printed copies, then restore the reader's choices.
-let closedProofsForPrint = [];
+// Keep proofs and chapter background in print, then restore the reader's choices.
+let closedDetailsForPrint = [];
 window.addEventListener('beforeprint', () => {
-  closedProofsForPrint = [...document.querySelectorAll('details.proof:not([open])')];
-  closedProofsForPrint.forEach(proof => { proof.open = true; });
+  closedDetailsForPrint = [...document.querySelectorAll('details.proof:not([open]), details.chapter-background:not([open])')];
+  closedDetailsForPrint.forEach(panel => { panel.open = true; });
 });
 window.addEventListener('afterprint', () => {
-  closedProofsForPrint.forEach(proof => { proof.open = false; });
-  closedProofsForPrint = [];
+  closedDetailsForPrint.forEach(panel => { panel.open = false; });
+  closedDetailsForPrint = [];
 });
 // Repeated clicks to the same fragment must reopen a proof containing it.
 document.addEventListener('click', event => {
