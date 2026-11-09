@@ -1141,10 +1141,11 @@
         "CatSuTsaiWood2026"
       ],
       "model": "su-tsai-wood",
-      "status": "Neck-collapse schematic",
-      "caption": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
-      "alt": "Two compact special Lagrangian tori joined by a positive neck, drawn schematically. The dimension is m ≥ 3 in a flat complex torus. Pinching occurs only in the infinite-time limit.",
-      "interactive": false
+      "status": "Exact local profiles; asymptotic time model",
+      "caption": "Compare model times, play the neck collapse, or change dimension. The equal-angle Lawlor profiles are exact; their dilation follows the leading-order scale law, not a computed mean curvature flow. The fixed spatial view approaches two transverse planes, while magnification retains a smooth neck. The compact flow lives in Cᵐ/Γ, m ≥ 3; the two profile branches represent the same connected neck. Open drawing shows four stages together.",
+      "alt": "Four fixed-scale signed Lawlor profiles at model times τ = 0, 1, 5 and the infinite-time limit, together with a unit-waist magnified profile and the global connected-sum topology.",
+      "interactive": true,
+      "credit_anchor": "su-tsai-wood-visuals"
     },
     {
       "label": "ex:catalogue-lee-tsai",
