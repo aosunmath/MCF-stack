@@ -1,27 +1,27 @@
 {
-  "built_at": "2026-11-09T00:44:45.375418+00:00",
-  "publishing_commit": "040bfeadd7e92caa24d67e80d815195f59af1090",
+  "built_at": "2026-11-09T00:46:21.189103+00:00",
+  "publishing_commit": "d5b5c6b71ffad091967a6e7abafbf1ff6034a156",
   "sources": [
     {
       "repository": "https://github.com/aosunmath/MCF-stack",
       "ref": "local:content/gmt-foundations",
       "kind": "local-manuscript",
-      "source_sha256": "136dbefd4fa055a765efb61402ec7e537d6d8cf8cf2df5e42aba3d9b228820aa",
+      "source_sha256": "0e4d9e847572f7b8a753e62bb9cafd06b21d5864b9b1bc0ab344f4ece508ca7d",
       "files": {
         "book.tex": "8110b1373d7ebe39d003a7260e0bc6aaf4ef5eb6fe86520daff6d2910481c9a7",
         "catalogue-expanders.tex": "809f5ac14ae2a2702f8c23e4fc9b2141e89b503a32e3f9bb173129dd5fac2902",
-        "catalogue-other-flows.tex": "12dc8b9893a3f3a9e171a7c17340e40e8cefe2321d636d9b80df81ce18799b35",
+        "catalogue-other-flows.tex": "0c1ddfc609d5bbe971d8619952cc8b38db34703767ae1a0bdea287b007db70fc",
         "catalogue-shrinkers.tex": "52924ffb5c6f54e26344ace1a3a489d96712c98f05351712c5265c129d1243df",
         "catalogue-translators.tex": "9e7b3eed44cfb420d7f8f51117c7680d15fa9f8cc6b6ed646d08e9626929024b",
         "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
-        "entry-review.json": "e428abca811286ed4e4e684dabf3926879a3c9afebc5c213ae7db38e553ea164",
+        "entry-review.json": "1db5773ecace884a38056ae76a023b958c63bccdf4f5f79ad7544dbd6dd36815",
         "orientation.tex": "64ac571b0fa16df9c1aa35fa00f693bcdc73258da46f922e9424e26607e207cf",
         "overviews/expanders.html": "3e897e44c698df6bc01175658ec93f6aa858f1d34802b0be2e137b8d41c5d6e4",
-        "overviews/other-special-flows.html": "ca73c3c4cb5e05a71952d229cd0a2d1bfb902a951ad95b35de2b83cae17882de",
+        "overviews/other-special-flows.html": "1ea4c679377b484de84a51fae39667facb57caa91a3b1f1958676ad550919049",
         "overviews/shrinkers.html": "34c290957260378da783b8fa5b7a65c331de0cf3b30d0a76a8dede01c3537c03",
         "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
         "references.bib": "9522e4cd7ffda3c7cd4f41e063466b167a3a7f6d51fcc42612ea8d2beff1bdbd",
-        "source-inventory.json": "3f771df03b4c7e3f011d3acfb31b95018234e3ca6e6e4bf33fe77516ea8206d6"
+        "source-inventory.json": "0afa3cf250201c3c113619f32b2ffce819ddc5c3460a8833af12f0048571875a"
       }
     }
   ]

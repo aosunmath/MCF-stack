@@ -1893,14 +1893,14 @@
     },
     {
       "label": "ex:catalogue-stationary-catenoid",
-      "notes": "",
+      "notes": "Every smooth minimal immersion in a fixed ambient metric gives a stationary flow for all real times. The cases below concern immersions without boundary. Completeness, properness, symmetry and stability depend on the chosen immersion; none is assumed for the general class. The catenoid is the illustrated example. Genus describes the parameter surface when orientable; the fixed-boundary numerical catenoid benchmark is discussed in the text.",
       "citations": [
         "CatMan11",
         "CatChoppMinimal1993"
       ],
       "cases": [
         {
-          "name": "",
+          "name": "Catenoid in ℝ³ (illustrated example)",
           "ambient": [
             "r3"
           ],
@@ -1927,9 +1927,158 @@
             "key": "embedded",
             "text": "Every stationary time slice is a properly embedded annulus."
           }
+        },
+        {
+          "name": "Affine planes in ℝ³",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "ℝ²; complete and properly embedded",
+          "genus": {
+            "key": "0",
+            "text": "0"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "exact",
+            "value": 1,
+            "text": "λ(P) = 1 for every multiplicity-one affine plane."
+          },
+          "gaussian": {
+            "status": "exact",
+            "text": "F₀,₁(P) = exp(−dist(0,P)²/4); equals 1 exactly when the plane contains the origin."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The stated affine parametrization is an embedding; multiple covers are not included in this case."
+          }
+        },
+        {
+          "name": "General minimal surfaces in ℝᴺ, N ≥ 3 (codimension N − 2)",
+          "ambient": [
+            "r3",
+            "r4",
+            "higher"
+          ],
+          "dimension": "surface",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the chosen orientable parameter surface; no single genus is assigned to this class."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value, uniform bound or general finiteness assertion is recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or general finiteness assertion is recorded; not identified with entropy."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal submanifolds of dimension n ≥ 3 in ℝᴺ, N ≥ n + 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": false,
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No value, uniform bound or general finiteness assertion is recorded."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No value or general finiteness assertion is recorded; not identified with entropy."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal surfaces in fixed Riemannian manifolds of dimension N ≥ 3",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "surface",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "varies",
+            "text": "Depends on the chosen orientable parameter surface; no single genus is assigned to this class."
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": null,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean entropy is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
+        },
+        {
+          "name": "Minimal submanifolds of dimension n ≥ 3 in fixed Riemannian manifolds of dimension N ≥ n + 1",
+          "ambient": [
+            "manifold"
+          ],
+          "dimension": "higher",
+          "topology": "The topology of the chosen minimal parameter manifold; completeness and properness are not assumed.",
+          "genus": {
+            "key": "na",
+            "text": "Not a surface"
+          },
+          "ends": {
+            "key": "varies",
+            "text": "Depends on the chosen minimal immersion; no common number is asserted."
+          },
+          "compact": null,
+          "entropy": {
+            "status": "not-applicable",
+            "text": "Euclidean entropy is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "gaussian": {
+            "status": "not-applicable",
+            "text": "Euclidean Gaussian area is not assigned to intrinsic MCF in a curved ambient manifold."
+          },
+          "embeddedness": {
+            "key": "depends",
+            "text": "The stationary flow is embedded exactly when the chosen minimal immersion is an embedding. Nonembedded immersions remain nonembedded; minimality alone does not decide this."
+          }
         }
       ],
-      "title": "The catenoid as an eternal stationary flow",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "section": "the-catenoid-as-an-eternal-stationary-flow",
       "category": "other-special-flows",
       "tag": "AC1C0D984A58",

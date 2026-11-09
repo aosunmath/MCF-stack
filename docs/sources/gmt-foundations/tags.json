@@ -1190,7 +1190,7 @@
   {
     "tag": "BA55C10D",
     "label": "sec:catalogue-stationary-catenoid",
-    "title": "66 The catenoid as an eternal stationary flow",
+    "title": "66 Minimal surfaces as stationary mean curvature flows",
     "kind": "chapter",
     "page": "tag/BA55C10D/index.html",
     "canonical_tag": "C9F0102B7272",
@@ -1199,7 +1199,7 @@
   {
     "tag": "7C37C625",
     "label": "ex:catalogue-stationary-catenoid",
-    "title": "Example 66.1 (Stationary catenoid flow)",
+    "title": "Example 66.1 (Minimal surfaces as stationary mean curvature flows)",
     "kind": "example",
     "page": "tag/7C37C625/index.html",
     "canonical_tag": "AC1C0D984A58",
