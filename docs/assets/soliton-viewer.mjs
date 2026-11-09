@@ -280,7 +280,10 @@ function init(figure, data) {
 if(typeof document!=='undefined') {
   const start=async figure=>{
     try {const response=await fetch(figure.dataset.soliton);if(!response.ok)throw new Error('geometry unavailable');const data=await response.json();
-      if(data.kind==='lee-wang-exact-flow'){
+      if(data.kind==='su-wood-exact-stationary'){
+        const {initSuWoodFigure}=await import('./su-wood-viewer.mjs');
+        initSuWoodFigure(figure,data);
+      } else if(data.kind==='lee-wang-exact-flow'){
         const {initLeeWangFigure}=await import('./lee-wang-viewer.mjs');
         initLeeWangFigure(figure,data);
       } else if(data.kind==='lee-wang-expander-exact'){

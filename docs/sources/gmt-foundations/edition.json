@@ -1,13 +1,13 @@
 {
   "source": "https://github.com/aosunmath/MCF-stack",
   "kind": "local-manuscript",
-  "source_sha256": "2896071bba5b875aefe544413d197dc1bab89fe5eaea7bf1fde0c2597301f282",
+  "source_sha256": "7168df111382e68f05d2e00fa3cfce8a2aac2ef57afa73a7fff5a741e205aec5",
   "files": {
     "book.tex": "cfee5056fdf9b37efa375d1b611244bae6edad7e6e469ddf6019d21638222cf8",
     "catalogue-aaaw.tex": "058f98ce236f24b840414ae711374eb2b39b96d8c5326b911dbfa529199438ca",
     "catalogue-expanders.tex": "6ca62ec77bdebb5a445e9efb1c9d206aa5e96bf19a4eb1bb24e4fdc1ffb56337",
     "catalogue-halldorsson.tex": "4e599a9e3e90d5b706b7f6219402cc2ac565c93bc6d3623e24a26f165fbbe48a",
-    "catalogue-other-flows.tex": "0c1ddfc609d5bbe971d8619952cc8b38db34703767ae1a0bdea287b007db70fc",
+    "catalogue-other-flows.tex": "1c14048bdd6b43595d633d22c48ebe826c2387c3dc0035e716dea6c475d94024",
     "catalogue-shrinkers.tex": "1664114e0f9b39747138cbc1be59bea1ab0ec056d708471cdbb8f13fd02b73a1",
     "catalogue-translators.tex": "9e7b3eed44cfb420d7f8f51117c7680d15fa9f8cc6b6ed646d08e9626929024b",
     "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
@@ -18,7 +18,7 @@
     "overviews/shrinkers.html": "34c290957260378da783b8fa5b7a65c331de0cf3b30d0a76a8dede01c3537c03",
     "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
     "references.bib": "603d3ff6a60a1a8fe6430428b8ed311e2f487567b5fee13e893dd20f5c81b8c6",
-    "source-inventory.json": "0983106849458c51cc2b333c33a063a643c56d543c4ea30615591c958bfe884b"
+    "source-inventory.json": "1582589c70ee198383e5f377e16651f830fae907a41fa49fce43d75828405eaa"
   },
   "renderer": "Gerby",
   "tags": 188
