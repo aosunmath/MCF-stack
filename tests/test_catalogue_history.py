@@ -15,7 +15,7 @@ from numbering import assign_numbers
 
 
 class CatalogueHistoryTests(unittest.TestCase):
-    def test_every_example_and_every_cited_paper_is_reviewed(self):
+    def test_every_example_and_every_cited_paper_has_chronology(self):
         registry = history.registry()
         self.assertEqual(set(registry['examples']), set(properties()))
         bibliography = parse_file(ROOT / 'content/gmt-foundations/references.bib')
@@ -52,18 +52,56 @@ class CatalogueHistoryTests(unittest.TestCase):
         self.assertIn('Background only', panel.get_text())
         self.assertEqual(len(panel.select('li')), len(item['references']))
 
-    def test_credits_are_chronological_and_complete(self):
+    def test_only_reviewed_constructors_supply_chronological_title_credits(self):
         for label in history.registry()['examples']:
             item = history.history(label)
             dates = [history.date_key(r['date']) for r in item['references']]
             self.assertEqual(dates, sorted(dates))
-            if len(item['references']) > 1:
-                for r in item['references']:
-                    for author in r['authors']:
-                        self.assertIn(author, item['title'])
+            constructors = [r for r in item['references'] if r['key'] in item['construction_references']]
+            expected = '; '.join('–'.join(r['authors']) + ', ' + r['date'][:4] for r in constructors)
+            self.assertEqual(item['title'], item['name'] + (' (' + expected + ')' if expected else ''))
+            for r in constructors:
+                self.assertIn(r['credit_review']['role'], history.CONSTRUCTION_ROLES)
+                self.assertTrue(r['credit_review']['locator'])
+                self.assertTrue(r['credit_review']['note'])
+
+    def test_surveys_and_later_analysis_do_not_receive_construction_credit(self):
+        expected = {
+            'angenent-torus': ['CatAngenent1992'],
+            'mobius-shrinker': ['CatLeeWang2009'],
+            'bns-genus': ['CatBNS2025'],
+            'pitchfork': ['CatHMW20'],
+            'scherk-translators': ['CatHMW20'],
+            'translating-catenoid': ['CSS07'],
+            'bowl-translator': [],
+            'round-sphere': [],
+            'network-spoon': [],
+            'ancient-sine-wave': [],
+        }
+        for label, keys in expected.items():
+            item = history.history('ex:catalogue-' + label)
+            self.assertEqual(item['construction_references'], keys, label)
+            panel = BeautifulSoup(history.panel(item), 'html.parser')
+            self.assertEqual(len(panel.select('li')), len(item['references']))
+            self.assertNotIn('Earliest recorded reference:', panel.get_text())
+            self.assertFalse(panel.details.has_attr('open'))
+
+    def test_a_paper_can_supply_existence_and_classification_or_independent_rediscovery(self):
+        tridents = history.history('ex:catalogue-nguyen-tridents')
+        self.assertEqual(tridents['construction_references'], ['CatNguyen09', 'CatHMWTridents22'])
+        balls = history.history('ex:catalogue-free-boundary-ancient-balls')
+        self.assertEqual(len(balls['construction_references']), 2)
+        helices = history.history('ex:catalogue-eternal-helices')
+        self.assertIn('acknowledges', history.panel(helices))
+
+    def test_earliest_reference_need_not_be_a_constructor(self):
+        item = history.history('ex:catalogue-pitchfork')
+        self.assertEqual(item['earliest_reference'], 'CatHIMWNotes19')
+        self.assertNotIn(item['earliest_reference'], item['construction_references'])
+        self.assertEqual(item['date'], history.registry()['references']['CatHIMWNotes19']['date'])
 
     def test_year_only_dates_keep_their_precision(self):
-        self.assertEqual(history.history('ex:catalogue-abresch-langer')['date'], '1986')
+        self.assertEqual(history.history('ex:catalogue-abresch-langer')['date'], '1984')
         self.assertLess(history.date_key('2011'), history.date_key('2011-06-01'))
         for invalid in ['2011-06', '2011-02-30', 'unknown']:
             with self.assertRaises(ValueError):

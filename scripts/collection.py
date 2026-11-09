@@ -536,7 +536,7 @@ def build_collection(books, destination, configuration):
             content += '<div class="chapter-overview">' + prose + '</div></details>'
         if chapter.get('ambient_groups'):
             content += '<h2 id="examples">Examples by ambient dimension</h2><p class="ambient-conventions">Each family is placed once, at its lowest recorded ambient dimension. Links in later groups lead to its cases in those dimensions. These are the spaces stated in the construction; parameter restrictions remain in the linked cases.</p>'
-            content += '<p class="ambient-conventions">Within each dimension group, examples follow their earliest recorded reference, including first arXiv submissions. These dates describe the references recorded here, not necessarily the original discovery. Parenthetical author groups credit the cited papers in chronological order.</p>'
+            content += '<p class="ambient-conventions">Within each dimension group, examples follow their earliest recorded reference, including first arXiv submissions. These dates describe the references recorded here, not necessarily the original discovery. Parenthetical author groups credit reviewed construction papers in chronological order; later surveys and analysis remain in the references.</p>'
             content += '<nav class="ambient-jump" aria-label="Jump to ambient dimension">' + ''.join(f'<a href="#ambient-{group["key"]}">{escape(catalogue_properties.AMBIENT_SHORT[group["key"]])}</a>' for group in chapter['ambient_groups']) + '</nav>'
         else:
             content += '<h2 id="examples">Sections and subsections</h2>'

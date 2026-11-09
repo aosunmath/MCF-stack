@@ -1,4 +1,4 @@
-"""Reviewed reference dates and inclusive paper credits for catalogue families."""
+"""Reference chronology and source-checked construction credits for catalogue families."""
 from datetime import date
 from functools import cache
 from html import escape
@@ -7,6 +7,8 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+CONSTRUCTION_ROLES = {'construction', 'alternative-construction', 'numerical-construction'}
+REVIEW_ROLES = CONSTRUCTION_ROLES | {'analysis', 'survey', 'background', 'prior-construction', 'unreviewed'}
 
 
 def date_key(value):
@@ -27,7 +29,7 @@ def registry():
         date_key(reference['date'])
         if not reference['authors'] or not all(reference['authors']):
             raise ValueError(f'Missing paper authors: {key}')
-        if reference['kind'] not in {'arxiv', 'publication'} or not reference['url'].startswith('https://'):
+        if reference['kind'] not in {'arxiv', 'preprint', 'publication'} or not reference['url'].startswith('https://'):
             raise ValueError(f'Missing reference date evidence: {key}')
     for label, record in data['examples'].items():
         keys = record['references']
@@ -38,6 +40,16 @@ def registry():
             raise ValueError(f'Unregistered reference in catalogue history: {label}')
         if not set(keys) - set(background) or not all(background.values()):
             raise ValueError(f'Catalogue family needs a reference discussing the example: {label}')
+        reviews = record.get('credit_reviews', {})
+        if (len(keys) > 1 and set(reviews) != set(keys)) or set(reviews) - set(keys):
+            raise ValueError(f'Multi-paper title credits need a decision for every reference: {label}')
+        for key, review in reviews.items():
+            if review.get('role') not in REVIEW_ROLES or not review.get('locator') or not review.get('note'):
+                raise ValueError(f'Title credit needs a source passage and contribution: {label}, {key}')
+            if key in background and review['role'] in CONSTRUCTION_ROLES:
+                raise ValueError(f'A background source cannot construct this example: {label}, {key}')
+            if 'reviewed_url' in review and not review['reviewed_url'].startswith('https://'):
+                raise ValueError(f'Invalid reviewed source URL: {label}, {key}')
     return data
 
 
@@ -45,15 +57,19 @@ def history(label):
     data = registry()
     record = data['examples'][label]
     references = [dict(data['references'][key], key=key,
-                       background=record['background_references'].get(key, ''))
+                       background=record['background_references'].get(key, ''),
+                       credit_review=record.get('credit_reviews', {}).get(key))
                   for key in record['references']]
     references.sort(key=lambda reference: date_key(reference['date']))
     earliest = next(reference for reference in references if not reference['background'])
+    constructors = [reference for reference in references
+                    if reference['credit_review'] and reference['credit_review']['role'] in CONSTRUCTION_ROLES]
     credits = '; '.join('–'.join(reference['authors']) + ', ' + reference['date'][:4]
-                        for reference in references)
-    title = record['name'] + (' (' + credits + ')' if len(references) > 1 else '')
+                        for reference in constructors)
+    title = record['name'] + (' (' + credits + ')' if credits else '')
     return {'title': title, 'name': record['name'], 'date': earliest['date'],
-            'earliest_reference': earliest['key'], 'references': references}
+            'earliest_reference': earliest['key'], 'references': references,
+            'construction_references': [reference['key'] for reference in constructors]}
 
 
 def apply(records, topics, entries):
@@ -77,12 +93,21 @@ def panel(item):
     rows = []
     for reference in item['references']:
         authors = '–'.join(reference['authors'])
-        basis = 'first arXiv submission' if reference['kind'] == 'arxiv' else 'publication year'
+        basis = {'arxiv': 'first arXiv submission', 'preprint': 'preprint year',
+                 'publication': 'publication year'}[reference['kind']]
         qualification = ' Background only: ' + reference['background'] if reference['background'] else ''
+        review = reference.get('credit_review')
+        if review:
+            role = review['role'].replace('-', ' ').capitalize()
+            qualification += f' {role}: {review["note"]} Passage: {review["locator"]}.'
+        reviewed_link = (' <a href="' + escape(review['reviewed_url'], quote=True) + '">Reviewed text</a>.'
+                         if review and review.get('reviewed_url') else '')
         rows.append(f'<li><a href="{escape(reference["url"], quote=True)}">{escape(authors)}</a> '
-                    f'— {reference["date"]} ({basis}).{escape(qualification)}</li>')
+                    f'— {reference["date"]} ({basis}).{escape(qualification)}{reviewed_link}</li>')
     return ('<div class="catalogue-history"><details><summary>Paper credits and chronology</summary>'
-            '<p>Paper credits are chronological and include every author of the cited papers. '
-            'They identify sources, not exclusive discovery credit. Background-only citations do not determine '
+            '<p>Title credits include all authors of papers with a reviewed construction of this example, '
+            'in chronological order. Later analysis, surveys, and citations remain listed here; they do not '
+            'by themselves earn construction credit. Alternative and numerical constructions are qualified below. '
+            'These credits are not an exhaustive discovery history. Background-only citations do not determine '
             'the date of this example. A classical example may predate the references recorded here.</p><ol>'
             + ''.join(rows) + '</ol></details></div>')
