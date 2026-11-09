@@ -1,0 +1,28 @@
+{
+  "records": 894,
+  "individually_selected": 172,
+  "scopes": {
+    "special-solutions": 446,
+    "supporting-theory": 448
+  },
+  "topics_overlapping": {
+    "Translators": 196,
+    "Other special flows": 187,
+    "Shrinkers": 206,
+    "Expanders": 54
+  },
+  "with_arxiv": 745,
+  "with_doi": 545,
+  "publication_types": {
+    "arXiv record": 403,
+    "journal-article": 460,
+    "proceedings-article": 3,
+    "posted-content": 1,
+    "book-chapter": 17,
+    "edited-book": 2,
+    "book": 3,
+    "article": 3,
+    "monograph": 1,
+    "other": 1
+  }
+}
