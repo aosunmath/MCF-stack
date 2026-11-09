@@ -361,6 +361,9 @@ if(typeof document!=='undefined') {
       } else if(data.kind==='iw-schematic'){
         const {initIWFigure}=await import('./iw-viewer.mjs');
         initIWFigure(figure,data);
+      } else if(data.kind==='stolarski-su-asymptotic'){
+        const {initStolarskiSu}=await import('./stolarski-su-viewer.mjs');
+        initStolarskiSu(figure,data);
       } else if(data.kind==='su-gluing-slice'){
         const {initSuGluingFigure}=await import('./su-gluing-viewer.mjs');
         initSuGluingFigure(figure,data,rotatePoint);

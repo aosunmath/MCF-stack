@@ -183,3 +183,13 @@ figure[data-soliton$="neckpinch-scales.json"] .soliton-stage:not([data-mode]){he
 .soliton-figure[data-soliton$="su-wood-stationary.json"] .soliton-stage:has(img:not([hidden])){height:auto;aspect-ratio:1000/1010}
 @media(max-width:699px){.suwood-figure .soliton-stage[data-view=times]{height:850px}.suwood-figure .soliton-stage[data-view=profile],.suwood-figure .soliton-stage[data-view=orbits]{height:390px}.suwood-figure .soliton-controls label{flex-basis:100%}}
 @media print{.suwood-note,.suwood-figure .soliton-status{display:none}.suwood-figure .soliton-stage{height:auto!important;aspect-ratio:1000/1010}}
+/* Lawlor neck: fixed-scale time comparison and two distinct blow-up scales. */
+.soliton-figure.stolarski-figure .soliton-stage{height:510px}
+.stolarski-note,.stolarski-scale-note{font-size:13px;line-height:1.6;margin:0;padding:10px 16px;color:#476170}
+.stolarski-scale-note{padding-top:0;color:#834d85}
+.stolarski-figure .stolarski-time{flex-basis:100%}.stolarski-time input[type=range]{flex:1;max-width:400px;min-width:90px}.stolarski-time output{min-width:80px;font-variant-numeric:tabular-nums}
+.stolarski-presets{display:flex;flex-wrap:wrap;gap:8px}.stolarski-figure .soliton-status{line-height:1.6}
+.soliton-figure[data-soliton$="stolarski-su.json"]:has(img:not([hidden])) .soliton-stage{height:auto;aspect-ratio:1000/760}
+.soliton-figure:has(img[src$="stolarski-su-limits.svg"]) .soliton-stage{height:auto;aspect-ratio:1000/570}
+@media(max-width:699px){.soliton-figure.stolarski-figure .soliton-stage{height:390px}.soliton-figure.stolarski-figure .soliton-stage[data-view=compare]{height:690px}.stolarski-figure .soliton-controls select{min-height:44px;max-width:100%}}
+@media print{.soliton-figure.stolarski-figure .soliton-stage{height:auto!important;aspect-ratio:1000/760}.stolarski-note,.stolarski-scale-note,.stolarski-figure .soliton-status{display:none}}
