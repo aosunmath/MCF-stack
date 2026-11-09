@@ -1452,14 +1452,14 @@
       ],
       "model": "halldorsson-dense",
       "status": "Numerical ODE approximation",
-      "caption": "Finite ODE window shot toward irrational turning α=(√5−1)/2. The full curve is dense in an annulus; floating-point data cannot establish irrationality.",
-      "alt": "Nonclosed shrinking curves dense in an annulus. Finite ODE window shot toward irrational turning α=(√5−1)/2. The full curve is dense in an annulus; floating-point data cannot establish irrationality.",
+      "caption": "Numerical ODE profiles with irrational turning targets. Orange marks one full excursion; blue shows its rotated continuations. The upper panels compare 12 and 96 excursions at t = −1. The lower panels show the same segment at t = −4, −1, −1/4, −1/16 with one spatial scale. Dashed circles bound the image closure and are not extra flow components.",
+      "alt": "Annulus-dense shrinking curve with one orange excursion, a denser finite window, and four time slices on the same spatial scale.",
       "interactive": false,
       "credit_anchor": "halldorsson-visuals",
       "experiment": {
         "path": "experiments/halldorsson-dense.html",
         "title": "Explore nonclosed shrinking curves dense in an annulus",
-        "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations."
+        "caption": "Choose a narrow or broad annulus, vary the number of displayed excursions, and animate or select time slices. Spatial scale stays fixed as time changes. The initial ODE profile is numerical; its time law X(s,t) = √(−t)X(s) is exact. The full curve is dense only for mathematically irrational turning; floating-point shooting cannot certify irrationality."
       }
     },
     {

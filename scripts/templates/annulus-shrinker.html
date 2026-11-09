@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Annulus-dense shrinker · flow through time</title>
+<link rel="stylesheet" href="../assets/annulus-shrinker-viewer.css"></head>
+<body><main data-model="halldorsson-dense">
+<header><p class="eyebrow">PLANAR CURVE SHORTENING FLOW</p><h1>A dense curve shrinking to the origin</h1>
+<p>Follow the same finite segment as <span class="math">X(s,t) = √(−t) X(s)</span>, for <span class="math">t &lt; 0</span>.</p></header>
+<div class="controls">
+<label>Profile <select id="profile"><option value="0">Narrow annulus</option><option value="1">Broad annulus</option></select></label>
+<label>Excursions shown <select id="excursions"><option>1</option><option>3</option><option selected>12</option><option>48</option><option>96</option><option>144</option></select></label>
+<label><input id="guides" type="checkbox" checked> Annulus guides</label>
+<label>Zoom <input id="zoom" type="range" min="0.75" max="2.5" step="0.05" value="1"></label>
+<button id="reset" type="button">Reset</button>
+</div>
+<div class="time-control"><button id="play" type="button" aria-pressed="false">Play flow</button>
+<label for="time">Time</label><input id="time" type="range" min="-4" max="-0.0625" step="any" value="-4">
+<output id="time-value" for="time">t = −4</output></div>
+<div class="plot"><canvas id="flow" width="960" height="520" role="img" aria-label="Numerical nonclosed curve shrinking in a fixed coordinate frame"></canvas>
+<div class="plot-caption"><span id="scale-value"></span><span>Fixed spatial scale · no rotation</span></div></div>
+<p class="legend"><span class="line orange"></span>One full excursion <span class="line blue"></span>Its successive continuations <span class="line dashed"></span>Inner and outer radii</p>
+<p id="parameters" class="parameters"></p>
+<section aria-labelledby="snapshots-title"><h2 id="snapshots-title">Four times, one spatial scale</h2>
+<p class="small">Select a frame to move the time slider. The orange segment keeps its identity throughout the flow.</p>
+<div class="snapshots">
+<button type="button" data-time="-4" aria-label="Show time minus four"><canvas width="230" height="190" aria-hidden="true"></canvas><strong>t = −4</strong><span>scale 2</span></button>
+<button type="button" data-time="-1" aria-label="Show time minus one"><canvas width="230" height="190" aria-hidden="true"></canvas><strong>t = −1</strong><span>scale 1</span></button>
+<button type="button" data-time="-0.25" aria-label="Show time minus one quarter"><canvas width="230" height="190" aria-hidden="true"></canvas><strong>t = −1/4</strong><span>scale 1/2</span></button>
+<button type="button" data-time="-0.0625" aria-label="Show time minus one sixteenth"><canvas width="230" height="190" aria-hidden="true"></canvas><strong>t = −1/16</strong><span>scale 1/4</span></button>
+</div></section>
+<p class="explanation">Each excursion returns from the inner circle to the inner circle after touching the outer circle. The next is rotated by 2πα. An irrational α prevents closure; drawing more excursions reveals how the complete curve is dense in the annulus. Changing the excursion count changes the displayed parameter window, not time.</p>
+<p class="small">The dashed circles are the boundaries of the image closure, not additional flow components. The visible segment has artificial endpoints. As t → 0⁻, both radii tend to zero; t = 0 is not a regular time slice.</p>
+<details><summary>Source and numerical accuracy</summary><p>Halldórsson, <a href="https://arxiv.org/abs/1007.1617v2" target="_blank" rel="noopener">Self-similar solutions to the curve shortening flow</a>, §2 and §5, Theorem 5.1 (pp. 11–13), Figures 4–7 (pp. 17–18). The source uses B = −1 in its proof; these profiles use B = −1/2.</p><p>The spatial profile solves u′ = uv, v′ = 1/2 − u², θ′ = u. We reconstruct X = −2i eⁱᶿ(u + iv) and shoot for the displayed irrational turning target. The ODE profile is numerical; the similarity time law is exact. Floating-point values and finite drawings cannot prove irrationality or show the full dense image.</p><p id="accuracy"></p><p><a href="../assets/solitons/annulus-shrinker-audit.json" target="_blank" rel="noopener">Numerical diagnostics</a> · <a href="../numerical-references/" target="_blank" rel="noopener">References and credits</a></p></details>
+<p id="error" role="status"></p><noscript>Enable JavaScript to explore the time slices. The catalogue page includes a static comparison.</noscript>
+</main><script type="application/json" id="geometry"><!-- GEOMETRY --></script>
+<script type="module">/* VIEWER */</script></body></html>

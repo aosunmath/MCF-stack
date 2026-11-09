@@ -40,7 +40,9 @@ class HalldorssonGeometryTests(unittest.TestCase):
             if path.name=='halldorsson-audit.json':continue
             data=json.loads(path.read_text())
             page=(ROOT/'site/experiments'/path.with_suffix('.html').name).read_text()
-            self.assertIn(runtime,page)
+            selected_runtime = ((ROOT/'site/assets/annulus-shrinker-viewer.mjs').read_text()
+                                if path.stem=='halldorsson-dense' else runtime)
+            self.assertIn(selected_runtime,page)
             self.assertIn('id="geometry"',page)
             for variant in data['variants']:
                 vertices=variant['vertices'];self.assertGreater(len(vertices),100)

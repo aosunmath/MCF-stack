@@ -110,7 +110,10 @@ def save(name,title,dimension,motion,variants):
 
 
 def main():
-    save('halldorsson-dense','Nonclosed annulus-dense shrinker',2,'similarity',[dense_profile()])
+    # Keep the dense-curve's richer time-comparison viewer when regenerating all figures.
+    from generate_annulus_shrinker import generate
+    generate()
+    dense_profile()  # Retain the original golden-ratio shooting audit.
     variants=[]
     for d in [0,1,2]:
         v=planar(1,0,[0,d,0],L=75);v.update(name=f'Minimum radius d={d}',note='Pure rotation with A=1. Both arms continue to infinity.');variants.append(v)
