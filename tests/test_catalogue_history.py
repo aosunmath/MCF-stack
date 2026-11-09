@@ -33,7 +33,7 @@ class CatalogueHistoryTests(unittest.TestCase):
             self.assertLessEqual(int(reference['date'][:4]), int(bibliography.entries[key].fields['year']))
 
     def test_first_preprints_override_later_editions(self):
-        for label, expected in [('kkm-one-end', '2011-06-27'), ('bns-genus', '2021-10-12'),
+        for label, expected in [('kkm-one-end', '2011-06-26'), ('bns-genus', '2021-10-12'),
                                 ('drugan-sphere', '2013-03-29'), ('hmw-one-ended', '2025-02-27'),
                                 ('ancient-torus-curves', '2012-07-17')]:
             self.assertEqual(history.history('ex:catalogue-' + label)['date'], expected)
@@ -67,6 +67,7 @@ class CatalogueHistoryTests(unittest.TestCase):
 
     def test_surveys_and_later_analysis_do_not_receive_construction_credit(self):
         expected = {
+            'kkm-one-end': ['CatNguyenShrinker2014', 'CatKKM2018'],
             'angenent-torus': ['CatAngenent1992'],
             'mobius-shrinker': ['CatLeeWang2009'],
             'bns-genus': ['CatBNS2025'],

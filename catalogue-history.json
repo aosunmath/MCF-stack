@@ -2173,19 +2173,26 @@
       "name": "One-ended high-genus shrinkers from sphere–plane gluing",
       "references": [
         "CatKKM2018",
-        "CatSunWang2020"
+        "CatSunWang2020",
+        "CatNguyenShrinker2014"
       ],
       "background_references": {},
       "credit_reviews": {
         "CatKKM2018": {
           "role": "construction",
-          "locator": "Theorem 1.1",
-          "note": "Constructs noncompact embedded high-genus shrinkers with one conical end by desingularization."
+          "locator": "Theorem 1.1 (PDF p. 2); final paragraph of the introduction (p. 5)",
+          "note": "Constructs noncompact embedded high-genus shrinkers with one conical end by sphere–plane desingularization. The introduction acknowledges Nguyen’s similar result. The detailed symmetry and quantitative estimates on this page are those of the KKM construction."
         },
         "CatSunWang2020": {
           "role": "analysis",
           "locator": "Introduction, Theorem 1.1",
           "note": "Explicitly credits Kapouleas–Kleene–Møller and Nguyen for the constructions; proves fixed-genus compactness and consequences for ends and entropy."
+        },
+        "CatNguyenShrinker2014": {
+          "role": "construction",
+          "locator": "arXiv:1106.5272v3, Theorem 1 and topology paragraph (PDF p. 2); acknowledgments (p. 5); Section 4.3 (p. 13); Definition 21 and Lemma 22 (pp. 20–21); Section 7 (pp. 24–25)",
+          "note": "Independently constructs the same class of embedded sphere–plane desingularizations, with genus m−1 and one conical end for sufficiently large m. Multiply space by √2 to match the catalogue normalization. The acknowledgments discuss corrections to the original fixed-point setup and acknowledge the similar KKM result; first-posting order is bibliographic, not a claim about priority of a completed proof. No identification of the two constructed families is asserted.",
+          "reviewed_url": "https://arxiv.org/abs/1106.5272v3"
         }
       }
     },

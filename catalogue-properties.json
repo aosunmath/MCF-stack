@@ -2092,10 +2092,11 @@
     },
     {
       "label": "ex:catalogue-kkm-one-end",
-      "notes": "Existence is proved for every sufficiently large genus, with no explicit threshold. The Scherk-based interactive picture is a construction schematic; its period counts and cone profiles are not computed KKM solutions or entropy data.",
+      "notes": "Nguyen and Kapouleas–Kleene–Møller independently construct this class by sphere–plane desingularization. The detailed estimates and Scherk-based illustration on this page concern KKM; Nguyen’s construction has a linked detail page. No geometric identification or noncongruence is asserted. Existence is proved for every sufficiently large genus, with no explicit threshold. The Scherk-based interactive picture is a construction schematic; its period counts and cone profiles are not computed KKM solutions or entropy data.",
       "citations": [
         "CatKKM2018",
-        "CatSunWang2020"
+        "CatSunWang2020",
+        "CatNguyenShrinker2014"
       ],
       "cases": [
         {

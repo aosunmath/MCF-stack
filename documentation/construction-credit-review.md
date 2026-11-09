@@ -61,3 +61,29 @@ Only `construction`, `alternative-construction`, and `numerical-construction`
 roles generate the parenthetical names. An `unreviewed` decision never does.
 The source disclosure lists all papers and explains each recorded role. Canonical
 routes, permanent tags, source labels, and mathematical examples are retained.
+
+## Nguyen and the sphere–plane desingularizations
+
+A follow-up review on 2026-11-09 corrects the omitted construction credit on the
+one-ended high-genus sphere–plane gluing page. Nguyen's *Construction of Complete
+Embedded Self-Similar Surfaces under Mean Curvature Flow. Part III* is already in
+the bibliography as `CatNguyenShrinker2014`. Theorem 1 and the preceding paragraph
+(arXiv v3, PDF p. 2) give genus m−1 for all sufficiently large m and conical
+asymptotics. Section 4.3 constructs the initial surface; Section 7, pp. 24–25,
+solves the nonlinear problem. This is a construction source, not a citation-only
+source. Its scale is converted by multiplying space by √2.
+
+Nguyen's acknowledgments (p. 5) discuss the corrected compactness setup in
+Definition 21 and Lemma 22 and acknowledge the similar KKM result. KKM likewise
+acknowledge Nguyen at the end of their introduction (arXiv v3, p. 5). The shared
+class therefore credits both author groups. The quantitative statements and figure
+on the linked KKM page retain their source-specific scope; the existing Nguyen
+page supplies her construction details. The papers do not provide a theorem
+identifying the two outputs, so their permanent pages are not merged and no
+congruence or noncongruence assertion is added.
+
+The first arXiv postings are [Nguyen, 26 June 2011](https://arxiv.org/abs/1106.5272)
+and [Kapouleas–Kleene–Møller, 27 June 2011](https://arxiv.org/abs/1106.5454).
+The title lists Nguyen first, and the shared-class page's earliest-reference
+metadata now uses 2011-06-26. These are posting dates, not a claim about which
+completed proof came first. The dates remain in metadata and the source disclosure.
