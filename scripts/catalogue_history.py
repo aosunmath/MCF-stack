@@ -74,8 +74,6 @@ def apply(records, topics, entries):
 
 
 def panel(item):
-    earliest = next(reference for reference in item['references'] if reference['key'] == item['earliest_reference'])
-    kind = 'first arXiv submission' if earliest['kind'] == 'arxiv' else 'publication year'
     rows = []
     for reference in item['references']:
         authors = '–'.join(reference['authors'])
@@ -83,9 +81,7 @@ def panel(item):
         qualification = ' Background only: ' + reference['background'] if reference['background'] else ''
         rows.append(f'<li><a href="{escape(reference["url"], quote=True)}">{escape(authors)}</a> '
                     f'— {reference["date"]} ({basis}).{escape(qualification)}</li>')
-    return (f'<div class="catalogue-history"><p>Earliest recorded reference: '
-            f'<time datetime="{item["date"]}">{item["date"]}</time> ({kind}).</p>'
-            '<details><summary>Paper credits and chronology</summary>'
+    return ('<div class="catalogue-history"><details><summary>Paper credits and chronology</summary>'
             '<p>Paper credits are chronological and include every author of the cited papers. '
             'They identify sources, not exclusive discovery credit. Background-only citations do not determine '
             'the date of this example. A classical example may predate the references recorded here.</p><ol>'
