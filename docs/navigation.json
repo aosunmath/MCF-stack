@@ -1010,9 +1010,5 @@
   {
     "route": "search",
     "title": "Search"
-  },
-  {
-    "route": "comments",
-    "title": "Comments"
   }
 ]
