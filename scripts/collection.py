@@ -524,10 +524,11 @@ def build_collection(books, destination, configuration):
         if key in overviews:
             prose = prepare_fragment(overviews[key], source_tags, reference_map, '../../')
             headings = BeautifulSoup(prose, 'html.parser').select('h2[id]')
+            content += '<details class="chapter-background"><summary>Background</summary>'
             content += '<nav class="chapter-jump" aria-label="On this page">' + ''.join(
                 f'<a href="#{escape(heading["id"], quote=True)}">{escape(heading.get_text())}</a>' for heading in headings
             ) + ('<a href="#examples">Examples by dimension</a></nav>' if chapter.get('ambient_groups') else '<a href="#examples">Sections and subsections</a></nav>')
-            content += '<div class="chapter-overview">' + prose + '</div>'
+            content += '<div class="chapter-overview">' + prose + '</div></details>'
         if chapter.get('ambient_groups'):
             content += '<h2 id="examples">Examples by ambient dimension</h2><p class="ambient-conventions">Each family is placed once, at its lowest recorded ambient dimension. Links in later groups lead to its cases in those dimensions. These are the spaces stated in the construction; parameter restrictions remain in the linked cases.</p>'
             content += '<nav class="ambient-jump" aria-label="Jump to ambient dimension">' + ''.join(f'<a href="#ambient-{group["key"]}">{escape(catalogue_properties.AMBIENT_SHORT[group["key"]])}</a>' for group in chapter['ambient_groups']) + '</nav>'
