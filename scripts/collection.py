@@ -25,6 +25,7 @@ from reader_references import citation_label, page_references, bibliography, sou
 from search_index import write_search_index
 import catalogue_properties
 import numerical_references
+import catalogue_history
 from project import TITLE, DESCRIPTION, REPOSITORY, FEATURED_TOPICS
 from source_snapshot import revision_id, revision_markup
 from soliton_visualizations import visualization, validate_visualizations
@@ -468,7 +469,10 @@ def build_collection(books, destination, configuration):
         raise ValueError('Chapter overview refers to an absent chapter')
     from soliton_visualizations import registry as visualization_registry
     property_records = catalogue_properties.prepare(entries, topics, topic_chapters, visualization_registry())
+    catalogue_history.apply(property_records, topics, entries)
     catalogue_properties.arrange_by_ambient(chapters, property_records)
+    positions = {topic: i for i, topic in enumerate(topic for chapter in chapters.values() for topic in chapter['topics'])}
+    property_records.sort(key=lambda record: positions[record['section']])
     catalogue_sections = {record['section']: record['tag'] for record in property_records}
     for record in property_records:
         entry = entries[record['tag']]
@@ -545,6 +549,8 @@ def build_collection(books, destination, configuration):
     section_fragments = {}
     for topic, section in reader.sections.items():
         content = f'<h1>§ {section["number"]} {escape(section["title"])}{tag_code(section["tag"])}</h1>'
+        if section.get('chronology'):
+            content += catalogue_history.panel(section['chronology'])
         if section["entries"]:
             content += continuous_section(section["entries"], entries, roots, sources, source_tags, reference_map, "../../", anchors, reader.numbering, footnotes)
         subdivisions = configuration.get("section_promotions", {}).get(topic, [])

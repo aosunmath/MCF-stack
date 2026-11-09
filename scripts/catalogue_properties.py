@@ -3,6 +3,7 @@ from functools import cache
 from html import escape
 import json
 from pathlib import Path
+import catalogue_history
 
 ROOT = Path(__file__).resolve().parents[1]
 AMBIENTS = {'r2': 'Euclidean plane ℝ²', 'r3': 'Euclidean space ℝ³', 'r4': 'Euclidean space ℝ⁴', 'higher': 'Euclidean dimension ≥ 5', 'manifold': 'Riemannian ambient manifold'}
@@ -63,6 +64,7 @@ def arrange_by_ambient(chapters, records):
         groups = []
         for key, title in AMBIENTS.items():
             primary = [topic for topic, spaces in families.items() if next(iter(spaces)) == key]
+            primary.sort(key=lambda topic: catalogue_history.date_key(catalogue_history.history(by_section[topic]['label'])['date']))
             related = [{'section': topic, 'cases': spaces[key]}
                        for topic, spaces in families.items() if key in spaces and next(iter(spaces)) != key]
             if primary or related:
@@ -70,9 +72,8 @@ def arrange_by_ambient(chapters, records):
         chapter['ambient_groups'] = groups
         chapter['ambient_families'] = families
         chapter['topics'] = [topic for group in groups for topic in group['topics']]
-        positions = {topic: i for i, topic in enumerate(chapter['topics'])}
         for group in groups:
-            group['related'].sort(key=lambda item: positions[item['section']])
+            group['related'].sort(key=lambda item: catalogue_history.date_key(catalogue_history.history(by_section[item['section']]['label'])['date']))
 
 
 def case_html(case,index,identifier=None):
@@ -128,6 +129,8 @@ def page(records):
     cards=[]
     for record in records:
         note=f'<p class="property-note">{escape(record["notes"])}</p>' if record['notes'] else ''
+        if record.get('chronology'):
+            note = f'<p class="catalogue-date">Earliest recorded reference: {record["chronology"]["date"]}</p>' + note
         cards.append(f'<article class="property-card" data-label="{escape(record["label"],quote=True)}"><div class="property-card-heading"><img src="../assets/solitons/{record["model"]}.svg" alt="" width="100" height="64" loading="lazy"><div><h3><a href="../sections/{record["section"]}/">{escape(record["title"])}</a></h3><p>{escape(record["illustration_status"])}</p></div></div>'+note+''.join(case_html(c,i) for i,c in enumerate(record['cases']))+'</article>')
     payload=json.dumps(records,ensure_ascii=False).replace('<','\\u003c')
     return r'''<h1>Browse by properties</h1>

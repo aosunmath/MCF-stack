@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from catalogue_properties import ambient_memberships, arrange_by_ambient, panel, registry
 from reader import Reader
 from soliton_visualizations import registry as illustrations
+from catalogue_history import history, date_key
 
 
 class AmbientArrangementTests(unittest.TestCase):
@@ -30,17 +31,21 @@ class AmbientArrangementTests(unittest.TestCase):
             self.assertCountEqual(placed, original[key]['topics'])
             self.assertEqual(len(placed), len(set(placed)))
             self.assertEqual(chapter['topics'], placed)
+            by_section = {r['section']: r for r in self.records}
             for group in chapter['ambient_groups']:
-                self.assertEqual([placed.index(r['section']) for r in group['related']], sorted(placed.index(r['section']) for r in group['related']))
+                for linked in (group['topics'], [r['section'] for r in group['related']]):
+                    dates = [date_key(history(by_section[topic]['label'])['date']) for topic in linked]
+                    self.assertEqual(dates, sorted(dates))
             for topic, spaces in chapter['ambient_families'].items():
                 primary = next(iter(spaces))
                 group = next(g for g in chapter['ambient_groups'] if topic in g['topics'])
                 self.assertEqual(group['key'], primary)
                 linked = {g['key'] for g in chapter['ambient_groups'] if any(r['section'] == topic for r in g['related'])}
                 self.assertEqual(linked, set(spaces) - {primary})
-                # Family order within a dimension remains the reviewed source order.
-                self.assertEqual(group['topics'], [t for t in original[key]['topics'] if t in group['topics']])
-        self.assertEqual(self.chapters['shrinkers']['topics'][:3], ['round-shrinking-spheres', 'planes-through-the-shrinker-center', 'abresch-langer-closed-shrinking-curves'])
+                expected = sorted([t for t in original[key]['topics'] if t in group['topics']],
+                                  key=lambda t: date_key(history(by_section[t]['label'])['date']))
+                self.assertEqual(group['topics'], expected)
+        self.assertEqual(self.chapters['shrinkers']['topics'][:3], ['abresch-langer-closed-shrinking-curves', 'round-shrinking-spheres', 'planes-through-the-shrinker-center'])
         self.assertEqual(self.chapters['other-special-flows']['topics'][0], 'the-angenent-oval-as-an-explicit-ancient-flow')
 
     def test_dimension_restrictions_and_curved_spaces_are_not_inferred(self):
@@ -53,7 +58,7 @@ class AmbientArrangementTests(unittest.TestCase):
         topics = {topic: {'title': topic} for chapter in self.chapters.values() for topic in chapter['topics']}
         reader = Reader(self.chapters, topics, {}, {}, {'enabled': False})
         self.assertEqual(len(reader.order), len(set(reader.order)))
-        self.assertEqual(reader.sections['abresch-langer-closed-shrinking-curves']['number'], '2.3')
+        self.assertEqual(reader.sections['abresch-langer-closed-shrinking-curves']['number'], '2.1')
         for record in self.records:
             soup = BeautifulSoup(panel(record['label'], '../../'), 'html.parser')
             for cases in ambient_memberships(record).values():

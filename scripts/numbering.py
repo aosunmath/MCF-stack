@@ -30,12 +30,12 @@ def assign_numbers(chapters, entries):
                     number = f'{prefix}.{ordinal}'
                 entry["number"] = number
                 entry["reader_title"] = numbered_title(entry["variants"][0], number)
-                if entry.get('section_example'):
+                if entry.get('section_example') or (entry.get('section_intro') and entry.get('section_title')):
                     entry['reader_title'] = f'{number} {entry["section_title"]}'
                 for variant in entry["variants"]:
                     record = {"number": number, "title": numbered_title(variant, number), "section": variant.get("section", False), "intro": entry.get("section_intro", False), "tag": variant["tag"], "canonical_tag": entry["tag"], "math_row": variant.get("math_row", False)}
                     if entry.get('section_example'):
-                        record.update(section_example=True, repeated_caption=title_key(variant['caption']) == title_key(entry['section_title']))
+                        record.update(section_example=True, repeated_caption=title_key(variant['caption']) == title_key(entry.get('section_source_title', entry['section_title'])))
                     for identifier in (variant["tag"], variant["label"], *variant.get("aliases", [])):
                         references[variant["source"], identifier] = record
                 # Clause numbers describe the logical list within a statement.

@@ -105,10 +105,12 @@ class Reader:
                     children = '<ol class="subsection-list">' + "".join(f'<li><a href="{self.href("tag/" + entry["tag"], root)}">{escape(display_title(entry))}</a>{tag_code(entry["tag"])}</li>' for entry in headings) + '</ol>'
             spaces = list(configuration.get('ambient_families', {}).get(topic, {}))
             other = ''
+            chronology = section.get('chronology')
+            dated = f'<small class="catalogue-date">Earliest recorded reference: {chronology["date"]}</small>' if chronology and subsections else ''
             if subsections and len(spaces) > 1:
                 links = ' · '.join(f'<a href="#ambient-{key}">{escape(AMBIENT_SHORT[key])}</a>' for key in spaces[1:])
                 other = f'<small class="ambient-also">Also in {links}</small>'
-            return f'<li{identifier}><a href="{self.href("sections/" + topic, root)}"{active}><span>{section["number"]}</span> {escape(section["title"])}</a>{tag_code(section["tag"])}{other}{children}</li>'
+            return f'<li{identifier}><a href="{self.href("sections/" + topic, root)}"{active}><span>{section["number"]}</span> {escape(section["title"])}</a>{tag_code(section["tag"])}{dated}{other}{children}</li>'
         def listing(topics):
             return '<ol class="section-list">' + ''.join(row(topic) for topic in topics) + '</ol>' if topics else ''
         if not configuration.get('ambient_groups'):

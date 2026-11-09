@@ -197,7 +197,12 @@ class ReaderTests(unittest.TestCase):
         self.records = [heading, *examples, self.records[-1]]
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
-            with patch('collection.catalogue_properties.prepare', return_value=properties):
+            from catalogue_history import registry as history_registry
+            history_fixture = history_registry()
+            history_fixture = {**history_fixture, 'examples': {
+                label: {**history_fixture['examples'][label], 'name': title}
+                for label, title in zip(labels, ['Alpha', 'Beta'])}}
+            with patch('collection.catalogue_properties.prepare', return_value=properties), patch('catalogue_history.registry', return_value=history_fixture):
                 order = self.build(root)
             routes = [page['route'] for page in order]
             self.assertEqual(routes[routes.index('sections/alpha') + 1], 'sections/beta')
@@ -210,7 +215,7 @@ class ReaderTests(unittest.TestCase):
                 page = BeautifulSoup((root / 'sections' / topic / 'index.html').read_text(), 'html.parser')
                 self.assertTrue(page.h1.get_text().startswith('§ ' + number + ' '))
                 self.assertFalse(page.select('.environment-identifier'))
-                self.assertIn('Complete ' + prop['title'] + ' statement.', page.get_text())
+                self.assertIn('Complete ' + example['caption'] + ' statement.', page.get_text())
                 self.assertIsNotNone(page.find(id='source-' + example['tag']))
                 self.assertIsNotNone(page.select_one(f'[data-gerby-tag="{example["tag"]}"]'))
                 self.assertFalse(page.select('[data-gerby-tag]:not([data-section-marker])'))
