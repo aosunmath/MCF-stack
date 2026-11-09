@@ -1928,6 +1928,116 @@
       }
     },
     {
+      "label": "ex:catalogue-kkm-one-end",
+      "notes": "Nguyen and Kapouleas–Kleene–Møller independently construct this class by sphere–plane desingularization. The detailed estimates and Scherk-based illustration on this page concern KKM; Nguyen’s construction has a linked detail page. No geometric identification or noncongruence is asserted. Existence is proved for every sufficiently large genus, with no explicit threshold. The Scherk-based interactive picture is a construction schematic; its period counts and cone profiles are not computed KKM solutions or entropy data.",
+      "citations": [
+        "CatKKM2018",
+        "CatSunWang2020",
+        "CatNguyenShrinker2014"
+      ],
+      "cases": [
+        {
+          "name": "",
+          "ambient": [
+            "r3"
+          ],
+          "dimension": "surface",
+          "topology": "Closed genus-g surface minus one point",
+          "genus": {
+            "key": "higher",
+            "text": "Every sufficiently large genus g"
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 conical end"
+          },
+          "compact": false,
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by the stated compactness or area growth; no value recorded."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "F₀,₁ = λ for this normalized shrinker. Finite by the stated compactness or area growth; no value recorded."
+          },
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The constructed surface is embedded after desingularization; the intersecting sphere and plane are its singular limiting configuration."
+          }
+        }
+      ],
+      "title": "One-ended high-genus shrinkers from sphere–plane gluing (X. H. Nguyen, 2011; Kapouleas–Kleene–Møller, 2011)",
+      "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
+      "category": "shrinkers",
+      "tag": "A515DF7C7C60",
+      "model": "kkm-shrinker",
+      "illustration_status": "Scherk-based construction schematic",
+      "chronology": {
+        "title": "One-ended high-genus shrinkers from sphere–plane gluing (X. H. Nguyen, 2011; Kapouleas–Kleene–Møller, 2011)",
+        "name": "One-ended high-genus shrinkers from sphere–plane gluing",
+        "date": "2011-06-26",
+        "earliest_reference": "CatNguyenShrinker2014",
+        "references": [
+          {
+            "authors": [
+              "X. H. Nguyen"
+            ],
+            "date": "2011-06-26",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/1106.5272",
+            "evidence": "arXiv submission history, version 1: 2011-06-26. Checked 2026-11-09.",
+            "key": "CatNguyenShrinker2014",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "arXiv:1106.5272v3, Theorem 1 and topology paragraph (PDF p. 2); acknowledgments (p. 5); Section 4.3 (p. 13); Definition 21 and Lemma 22 (pp. 20–21); Section 7 (pp. 24–25)",
+              "note": "Independently constructs the same class of embedded sphere–plane desingularizations, with genus m−1 and one conical end for sufficiently large m. Multiply space by √2 to match the catalogue normalization. The acknowledgments discuss corrections to the original fixed-point setup and acknowledge the similar KKM result; first-posting order is bibliographic, not a claim about priority of a completed proof. No identification of the two constructed families is asserted.",
+              "reviewed_url": "https://arxiv.org/abs/1106.5272v3"
+            }
+          },
+          {
+            "authors": [
+              "Kapouleas",
+              "Kleene",
+              "Møller"
+            ],
+            "date": "2011-06-27",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/1106.5454",
+            "evidence": "arXiv submission history, version 1: 2011-06-27. Checked 2026-11-09.",
+            "key": "CatKKM2018",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1 (PDF p. 2); final paragraph of the introduction (p. 5)",
+              "note": "Constructs noncompact embedded high-genus shrinkers with one conical end by sphere–plane desingularization. The introduction acknowledges Nguyen’s similar result. The detailed symmetry and quantitative estimates on this page are those of the KKM construction."
+            }
+          },
+          {
+            "authors": [
+              "Sun",
+              "Zhichao Wang"
+            ],
+            "date": "2018-11-13",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/1811.05387",
+            "evidence": "arXiv submission history, version 1: 2018-11-13. Checked 2026-11-09.",
+            "key": "CatSunWang2020",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1.1",
+              "note": "Explicitly credits Kapouleas–Kleene–Møller and Nguyen for the constructions; proves fixed-genus compactness and consequences for ends and entropy."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatNguyenShrinker2014",
+          "CatKKM2018"
+        ]
+      }
+    },
+    {
       "label": "ex:catalogue-nguyen-shrinking-saddles",
       "notes": "Nguyen uses H-vector = −X-perp. Multiply the source surface by √2 for this catalogue. No identification with the KKM construction is asserted.",
       "citations": [
@@ -1990,97 +2100,6 @@
           }
         ],
         "construction_references": []
-      }
-    },
-    {
-      "label": "ex:catalogue-kkm-one-end",
-      "notes": "Existence is proved for every sufficiently large genus, with no explicit threshold. The Scherk-based interactive picture is a construction schematic; its period counts and cone profiles are not computed KKM solutions or entropy data.",
-      "citations": [
-        "CatKKM2018",
-        "CatSunWang2020"
-      ],
-      "cases": [
-        {
-          "name": "",
-          "ambient": [
-            "r3"
-          ],
-          "dimension": "surface",
-          "topology": "Closed genus-g surface minus one point",
-          "genus": {
-            "key": "higher",
-            "text": "Every sufficiently large genus g"
-          },
-          "ends": {
-            "key": "1",
-            "text": "1 conical end"
-          },
-          "compact": false,
-          "entropy": {
-            "status": "finite",
-            "text": "Finite by the stated compactness or area growth; no value recorded."
-          },
-          "gaussian": {
-            "status": "finite",
-            "text": "F₀,₁ = λ for this normalized shrinker. Finite by the stated compactness or area growth; no value recorded."
-          },
-          "embeddedness": {
-            "key": "embedded",
-            "text": "The constructed surface is embedded after desingularization; the intersecting sphere and plane are its singular limiting configuration."
-          }
-        }
-      ],
-      "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
-      "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
-      "category": "shrinkers",
-      "tag": "A515DF7C7C60",
-      "model": "kkm-shrinker",
-      "illustration_status": "Scherk-based construction schematic",
-      "chronology": {
-        "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
-        "name": "One-ended high-genus shrinkers from sphere–plane gluing",
-        "date": "2011-06-27",
-        "earliest_reference": "CatKKM2018",
-        "references": [
-          {
-            "authors": [
-              "Kapouleas",
-              "Kleene",
-              "Møller"
-            ],
-            "date": "2011-06-27",
-            "kind": "arxiv",
-            "url": "https://arxiv.org/abs/1106.5454",
-            "evidence": "arXiv submission history, version 1: 2011-06-27. Checked 2026-11-09.",
-            "key": "CatKKM2018",
-            "background": "",
-            "credit_review": {
-              "role": "construction",
-              "locator": "Theorem 1.1",
-              "note": "Constructs noncompact embedded high-genus shrinkers with one conical end by desingularization."
-            }
-          },
-          {
-            "authors": [
-              "Sun",
-              "Zhichao Wang"
-            ],
-            "date": "2018-11-13",
-            "kind": "arxiv",
-            "url": "https://arxiv.org/abs/1811.05387",
-            "evidence": "arXiv submission history, version 1: 2018-11-13. Checked 2026-11-09.",
-            "key": "CatSunWang2020",
-            "background": "",
-            "credit_review": {
-              "role": "analysis",
-              "locator": "Introduction, Theorem 1.1",
-              "note": "Explicitly credits Kapouleas–Kleene–Møller and Nguyen for the constructions; proves fixed-genus compactness and consequences for ends and entropy."
-            }
-          }
-        ],
-        "construction_references": [
-          "CatKKM2018"
-        ]
       }
     },
     {

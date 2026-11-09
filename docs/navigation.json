@@ -165,16 +165,16 @@
     "section": "rotational-shrinking-trumpet-ends"
   },
   {
-    "route": "sections/nguyen-s-one-ended-shrinking-saddles",
-    "title": "2.21 Nguyen's one-ended shrinking saddles",
-    "chapter": "shrinkers",
-    "section": "nguyen-s-one-ended-shrinking-saddles"
-  },
-  {
     "route": "sections/kapouleas-kleene-moller-shrinkers-with-one-end",
-    "title": "2.22 One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
+    "title": "2.21 One-ended high-genus shrinkers from sphere–plane gluing (X. H. Nguyen, 2011; Kapouleas–Kleene–Møller, 2011)",
     "chapter": "shrinkers",
     "section": "kapouleas-kleene-moller-shrinkers-with-one-end"
+  },
+  {
+    "route": "sections/nguyen-s-one-ended-shrinking-saddles",
+    "title": "2.22 Nguyen's one-ended shrinking saddles",
+    "chapter": "shrinkers",
+    "section": "nguyen-s-one-ended-shrinking-saddles"
   },
   {
     "route": "sections/moller-closed-shrinkers-of-large-even-genus",
