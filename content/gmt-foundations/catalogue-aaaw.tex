@@ -55,6 +55,60 @@ For $\mathbb R^3$, let $A(x,y,z)=\omega(-y,x,0)$, $\omega>0$. If $T_z(0)\ne0$, t
 shows that $z$ is strictly monotone. The curve is therefore embedded and is a graph over an interval of the rotation axis. This interval can be bounded or a half-line; a finite endpoint is approached exponentially in arclength. If $T_z(0)=0$, the curve stays in a plane perpendicular to that axis. More generally, the projection to $\ker A$ lies in a line, and any nonconstant such projection is injective. No blanket embeddedness assertion is made for profiles with constant kernel projection or for invertible $A$ in even dimensions.
 
 Source: \cite{CatAAAW13}, Section 4.1, equation (27), Lemmas 5.4 and 6.3, PDF pp.~11--13, 15--20, and Section 7.1, p.~23. Initial-value uniqueness is not a uniqueness theorem for prescribed ends. No general curvature bound, stability theorem, or Gaussian-area or entropy value is recorded here. The figures integrate the profile equation with $\omega=1$: one spatial example has $p=(1,0,0)$, $q=(0,0,1)$; a second shows the planar Yin--Yang profile. Both are truncated numerical ODE curves with exact rotation in the time control.
+\textbf{Planar classification (Halld\'orsson).}
+Halld\'orsson classifies complete planar curves moving by Euclidean similarities
+in \cite{CatHalldorsson2012}. The nontrivial motions are translation, dilation,
+rotation, or simultaneous rotation and dilation. The translator is the grim
+reaper (Example~\ref{ex:catalogue-grim-reaper}); the homothetic expanders are
+Example~\ref{ex:catalogue-expanding-corners}. The shrinking cases are linked from
+Example~\ref{ex:catalogue-halldorsson-dense-shrinkers}. A translation term in a
+motion with rotation or dilation can be absorbed by changing its center;
+see Section~2, PDF pp.~2--5.
+
+Here is the common construction for the rotating families. Identify
+$\mathbb R^2$ with $\mathbb C$, fix $A\ne0$, $B\in\mathbb R$, and use
+$T=e^{i\theta}$, $N=iT$, $\vec H=kN$. Solve globally in arclength
+\[
+ u'=uv+A,\qquad v'=-u^2-B,\qquad \theta'=u,\qquad
+ X=e^{i\theta}\frac{u+iv}{A-iB}.
+\]
+Then $X'=T$, $k=u$, and
+$k=A\langle X,T\rangle+B\langle X,N\rangle$, equivalently
+$\vec H=(AiX+BX)^\perp$. The exact motion of this ODE-defined profile is
+\[
+ X_t=e^{iAt}X\quad(B=0),\qquad
+ X_t=\sqrt{1+2Bt}\,e^{\,iA\log(1+2Bt)/(2B)}X\quad(B\ne0),
+ \qquad 1+2Bt>0.
+\]
+The time formula is explicit; the spatial profile generally is not.
+
+For $B=0$ and fixed $A\ne0$, Theorem~3.1 gives a one-parameter family,
+up to rotation, specified by the minimum distance $d\in[0,\infty)$ from the
+origin. One may take $X(0)=id$, $T(0)=1$, hence $(u(0),v(0))=(0,Ad)$.
+Every member is a complete properly embedded noncompact curve in $\mathbb R^2$,
+of codimension one and topology $\mathbb R$, with two ends. Each end winds
+infinitely often and escapes to infinity; its curvature tends to zero while
+its total absolute curvature is infinite. For $A>0$ the signed curvature
+changes sign once, so these curves are not globally convex. Reflection reverses
+$A$. The $d=0$ member is the centrally symmetric Yin--Yang soliton; other
+members need not have that symmetry. The evolution exists for all real time.
+The identity $|X|^2-2\theta/A=\text{constant}$ is exact, but is not a polar
+formula because $\theta$ is the tangent angle.
+
+The product $X(\mathbb R)\times\mathbb R\subset\mathbb R^3$ is also an
+eternal rotating MCF solution, with the same angular speed. It is a complete
+properly embedded surface, of codimension one, genus zero, topology
+$\mathbb R^2$ and one end. Its principal curvatures are the planar curvature
+and zero. This product case is the $h=\infty$ case discussed in
+\cite{CatHalldorsson2013}, Section~4, PDF p.~7; it is not a finite-pitch
+helicoidal translator.
+
+The classification and properness are in Theorem~3.1, Corollary~3.6 and
+Section~3, PDF pp.~5--7; Figures~8--9 supply visual references. No Gaussian-area
+value, entropy value, or flow-stability conclusion is recorded in these passages.
+The figure is a numerical finite arclength window of the ODE, with time and
+minimum-distance controls. The compact ancient curves in
+Example~\ref{ex:catalogue-ancient-spiral-curves} are a different family.
 \end{example}
 
 \chapter{Rotating and translating curve solitons}\label{sec:catalogue-rotating-translating-curves}
@@ -101,7 +155,41 @@ These are complete proper noncompact immersed curves, of codimension $n-1$, with
 \]
 Thus each end is asymptotic to a generalized logarithmic spiral, with a decaying positional error. If its $\Gamma$ lies in $\ker A$, the comparison curve is a ray. This is an asymptotic formula, not an exact parametrization of the soliton. The curvature on these ends is $O(|C|^{-1})$, by the bounded quantity $|a|^2|C_{ss}|^2$ in the low-curvature region of the source proof.
 
-For the recorded mixed family require $P_T(AC)$ not to vanish identically. The general construction is available in every $n\geq2$. Embeddedness is not asserted for arbitrary initial data, and no uniqueness for a prescribed pair of asymptotic spirals is claimed. Pure dilation ($A=0$) reduces to planar corner smoothings already recorded in \ref{ex:catalogue-expanding-corners}; those are not added again here. Source: \cite{CatAAAW13}, Section 4.2, Lemma 6.3, and Lemmas 7.6--7.7, PDF pp.~12--13, 19--20, and 28--30. No stability or entropy theorem is supplied by these passages. The numerical spatial illustration uses $\alpha=1/2$, $A(x,y,z)=(-y,x,0)$, $C(0)=(1,0,0)$, and $T(0)=(0,0,1)$, with a finite arclength window.
+For the recorded mixed family require $P_T(AC)$ not to vanish identically. The general construction is available in every $n\geq2$. In dimensions at least three, embeddedness is not asserted for arbitrary initial data; the planar case is classified below. No uniqueness for a prescribed pair of asymptotic spirals is claimed. Pure dilation ($A=0$) reduces to planar corner smoothings already recorded in \ref{ex:catalogue-expanding-corners}; those are not added again here. Source: \cite{CatAAAW13}, Section 4.2, Lemma 6.3, and Lemmas 7.6--7.7, PDF pp.~12--13, 19--20, and 28--30. No stability or entropy theorem is supplied by these passages. The numerical spatial illustration uses $\alpha=1/2$, $A(x,y,z)=(-y,x,0)$, $C(0)=(1,0,0)$, and $T(0)=(0,0,1)$, with a finite arclength window.
+\textbf{Planar classification (Halld\'orsson).}
+Let $A\ne0$ and $B>0$ in the arclength system and exact time evolution of
+Example~\ref{ex:catalogue-rotating-curves}. For each fixed pair $(A,B)$,
+there is a one-parameter family, up to rotation, indexed by its minimum radius
+$d\geq0$. Initial data $X(0)=id$, $T(0)=1$ give $(u(0),v(0))=(Bd,Ad)$.
+Positive dilation of the profile rescales both $A$ and $B$ by the inverse
+square of that dilation; after fixing a scale, the ratio of the two rates and
+the minimum radius give the two parameters in the source's description.
+
+These are smooth complete properly embedded noncompact curves in
+$\mathbb R^2$, of dimension one and codimension one, with domain $\mathbb R$
+and two ends. Both ends wind infinitely often around the center and tend to
+spatial infinity. The curvature vanishes at infinity but each end has infinite
+total absolute curvature. The signed curvature changes sign once; these are
+not convex curves. The $d=0$ member is centrally symmetric. With
+$r=|X|$, the source's precise directional asymptotic is
+\[
+ \lim_{s\to\pm\infty}\frac{rT}{X}
+ =\pm\frac{B+iA}{\sqrt{A^2+B^2}}.
+\]
+Thus the ends have the limiting direction of logarithmic spirals; this does
+not identify them with exact logarithmic spirals.
+
+Their maximal similarity time interval containing zero is
+$-1/(2B)<t<\infty$, with scale $\sqrt{1+2Bt}$ and rotation angle
+$A\log(1+2Bt)/(2B)$. Recentring time at $-1/(2B)$ makes this an expanding
+flow for positive time. Because $A\ne0$, it is not a homothetic self-expander
+satisfying $\vec H=X^\perp/2$, so it belongs to Other special flows.
+The spatial curves are ODE constructions, with uniqueness within the
+fixed-rate, fixed-minimum-distance classification up to rotation.
+Source: \cite{CatHalldorsson2012}, Theorem~3.1 and Corollary~3.11, PDF pp.~5--7,
+Figures~10--11. No Gaussian-area value, entropy value or flow-stability result
+is recorded there. The drawing integrates the ODE numerically and applies
+the exact similarity motion to the truncated profile.
 \end{example}
 
 \chapter{Rotating and shrinking curve solitons}\label{sec:catalogue-rotating-shrinking-curves}
@@ -146,4 +234,50 @@ Such an end satisfies, with $d\sigma/ds=|a|^{-1}$,
 Choosing the initial point in the rotation range away from the kernel gives genuinely rotating examples. This is a topological shooting existence result, not a closed formula or a guarantee that a generic numerical initial tangent produces that end. The kernel-accumulation scenarios discussed at the end of the paper remain unresolved there and are not claimed as additional constructed examples.
 
 Source: \cite{CatAAAW13}, Sections 4.2 and 6.3, Lemmas 7.7--7.8 and 8.1--8.5, PDF pp.~12--13, 22, 28--39. The illustrations integrate one nonspherical spatial initial-value problem and the stated spherical problem, with $\omega=1$. Both show finite windows, not certified asymptotic computations. No classification of embeddedness, uniqueness for end data, or dynamical stability is asserted.
+\textbf{Planar classification (Halld\'orsson).}
+Take $A\ne0$, $B<0$ in the arclength system of
+Example~\ref{ex:catalogue-rotating-curves}. Exclude the circle
+of radius $R=1/\sqrt{-B}$, whose rotation changes only its parametrization.
+Theorem~4.1 of \cite{CatHalldorsson2012}, PDF pp.~8--11, distinguishes two types:
+\begin{itemize}
+\item A one-parameter family of bounded curves with both intrinsic ends
+accumulating on the circle $|X|=R$. For fixed $A,B$, these are obtained
+by $(u(0),v(0))=(0,v_0)$ with $v_0\in\mathbb R$, up to rotation and the
+orientation redundancies of the ODE. The signed curvature changes sign once.
+The $v_0=0$ profile is centrally symmetric.
+\item At least one comet spiral for each $A,B$. Its curvature has a constant
+strict sign. One end winds onto $|X|=R$ and the other winds out to infinity,
+with curvature tending to zero and infinite total absolute curvature.
+Along the outward end, the limiting unit direction relative to position is
+$(-B-iA)/\sqrt{A^2+B^2}$. The source proves existence, not uniqueness of
+the comet spiral.
+\end{itemize}
+In both cases the domain is $\mathbb R$: these are smooth complete,
+noncompact immersed curves of codimension one in $\mathbb R^2$, with two
+intrinsic ends. They are nonproper because a whole infinite-length end
+accumulates on a finite circle. Bounded image does not mean compact domain.
+The source notes self-intersecting members but does not give a complete
+embeddedness criterion. In particular, the questions and tentative captions
+in Figures~12--17 are not embeddedness proofs. Constant-sign curvature of a
+comet is local convexity, not a claim that it bounds an embedded convex set.
+
+The exact motion of the ODE-defined profile is
+\[
+ X_t=\sqrt{1+2Bt}\,e^{\,iA\log(1+2Bt)/(2B)}X,
+ \qquad -\infty<t<T=-1/(2B).
+\]
+The bounded profiles collapse to the origin at $T$; the unbounded comet
+profiles are not compact extinction examples. Rotation is nonvacuous, so
+these are not homothetic shrinkers. A circular end contains infinite
+arclength in a compact region. Consequently every centered Gaussian integral
+and entropy is infinite at every regular time, when measured on the immersed
+domain. This is a direct consequence of the stated asymptotics, not a separate
+entropy theorem in the source.
+
+For a transverse loop with interior angle $\eta\in(0,2\pi)$, Section~4 gives
+its time-zero enclosed area as $-(\pi+\eta)/(2B)$, larger than half the area
+of the limiting circle. The phase-plane sink used in the proof is an ODE
+statement; it does not assert stability under general curve-shortening
+perturbations. The illustrations are numerical ODE windows, with the dashed
+circle marking an asymptotic set rather than an additional component.
 \end{example}

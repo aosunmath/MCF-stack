@@ -1,0 +1,96 @@
+{
+  "method": "SciPy DOP853; tolerances 2e-10 and 1e-11, max step 0.06. Dense turning shoot uses 2e-12.",
+  "limitations": "Floating-point diagnostics; no rigorous error bounds. Finite windows do not prove global topology, irrationality, or completeness.",
+  "checks": {
+    "dense_shooting": {
+      "target": 0.6180339887498949,
+      "r_min": 0.1514432307611957,
+      "period": 8.128309368374897,
+      "turning_residual": -1.887379141862766e-15
+    },
+    "halldorsson-dense_0": {
+      "refinement_max": 5.077659693480493e-12,
+      "unit_tangent_difference": 0.00021755637213840393
+    },
+    "halldorsson-rotators_0": {
+      "refinement_max": 8.522464179799269e-14,
+      "unit_tangent_difference": 0.0009791517979044902
+    },
+    "halldorsson-rotators_1": {
+      "refinement_max": 2.054930591826477e-12,
+      "unit_tangent_difference": 0.002403887180554207
+    },
+    "halldorsson-rotators_2": {
+      "refinement_max": 6.928663008755832e-11,
+      "unit_tangent_difference": 0.005004801901439365
+    },
+    "halldorsson-expanding_0": {
+      "refinement_max": 1.555326964294078e-13,
+      "unit_tangent_difference": 0.0003443348074385966
+    },
+    "halldorsson-expanding_1": {
+      "refinement_max": 4.538162046931552e-11,
+      "unit_tangent_difference": 0.002070193984584766
+    },
+    "halldorsson-expanding_2": {
+      "refinement_max": 3.735632398049854e-13,
+      "unit_tangent_difference": 0.00034431702325955093
+    },
+    "halldorsson-shrinking_0": {
+      "refinement_max": 0.0,
+      "unit_tangent_difference": 0.00016144536963988527
+    },
+    "halldorsson-shrinking_1": {
+      "refinement_max": 5.898498687332283e-10,
+      "unit_tangent_difference": 0.0012465866992490975
+    },
+    "halldorsson-shrinking_2": {
+      "refinement_max": 1.3000659709878988e-12,
+      "unit_tangent_difference": 0.0003529321225700681
+    },
+    "helicoidal_h1_d0": {
+      "mean_curvature_translator_residual": 5.551115123125783e-16,
+      "arclength_window": [
+        -18,
+        18
+      ],
+      "screw_angle": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    "helicoidal_h1_d1": {
+      "mean_curvature_translator_residual": 7.771561172376096e-16,
+      "arclength_window": [
+        -18,
+        18
+      ],
+      "screw_angle": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    "helicoidal_h2_d0": {
+      "mean_curvature_translator_residual": 3.3306690738754696e-16,
+      "arclength_window": [
+        -18,
+        18
+      ],
+      "screw_angle": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    "helicoidal_h0.5_d1": {
+      "mean_curvature_translator_residual": 1.4432899320127035e-15,
+      "arclength_window": [
+        -18,
+        18
+      ],
+      "screw_angle": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "review_date": "2026-11-08",
+  "redistributed": false,
+  "sources": [
+    {
+      "bibliography_key": "CatHalldorsson2012",
+      "filename": "1007.1617v2.pdf",
+      "title": "Self-similar solutions to the curve shortening flow",
+      "edition": "arXiv:1007.1617v2, 14 December 2012; journal publication 2012",
+      "sha256": "585906cf9244c5c6fb6176776967ad544bad413f005cb3bd71b7bef95484e953",
+      "pdf_pages": 25,
+      "url": "https://arxiv.org/abs/1007.1617v2",
+      "role": "Reviewed for the Halldorsson catalogue addition; scope in documentation/halldorsson-review.md.",
+      "redistributed": false,
+      "review_status": "text-and-selected-figures-checked",
+      "checked_passages": [
+        "All substantive text, Sections 1–6, PDF pp. 1–15; bibliography p. 25.",
+        "Theorems 2.1, 3.1, 4.1, 5.1, 6.1; Lemmas 4.7–4.8; Figures 8–19 and captions visually checked."
+      ]
+    },
+    {
+      "bibliography_key": "CatHalldorsson2013",
+      "filename": "1106.4583.pdf",
+      "title": "Helicoidal surfaces rotating/translating under the mean curvature flow",
+      "edition": "arXiv:1106.4583v3, 14 December 2012; journal volume 162 (2013)",
+      "sha256": "1e5bcf270ba072dd529a7fc14d250db4be6f7ab74b3c5f59e7d09f03e83ddcf0",
+      "pdf_pages": 21,
+      "url": "https://arxiv.org/abs/1106.4583v3",
+      "role": "Reviewed for the Halldorsson catalogue addition; scope in documentation/halldorsson-review.md.",
+      "redistributed": false,
+      "review_status": "text-and-selected-figures-checked",
+      "checked_passages": [
+        "All substantive text, Sections 1–6, PDF pp. 1–17; bibliography pp. 20–21.",
+        "Metric and mean curvature, equations (3.1)–(3.4); Theorem 4.1; Corollary 4.12; equations (5.1)–(5.4); CMC comparison Theorem 6.5. Formula pages and Figures 1–4 visually checked."
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "label": "ex:catalogue-halldorsson-dense-shrinkers",
+      "section": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "title": "Nonclosed shrinking curves dense in an annulus",
+      "category": "shrinkers",
+      "bibliography_key": "CatHalldorsson2012"
+    },
+    {
+      "label": "ex:catalogue-rotating-curves",
+      "section": "purely-rotating-curve-shortening-solitons",
+      "title": "Rotating planar curves and the Yin–Yang soliton",
+      "category": "other-special-flows",
+      "bibliography_key": "CatHalldorsson2012",
+      "treatment": "Planar classification added to the existing higher-dimensional family; no duplicate section."
+    },
+    {
+      "label": "ex:catalogue-rotating-expanding-curves",
+      "section": "rotating-and-expanding-curve-solitons",
+      "title": "Rotating and expanding planar spirals",
+      "category": "other-special-flows",
+      "bibliography_key": "CatHalldorsson2012",
+      "treatment": "Planar classification added to the existing higher-dimensional family; no duplicate section."
+    },
+    {
+      "label": "ex:catalogue-rotating-shrinking-curves",
+      "section": "rotating-and-shrinking-curve-solitons",
+      "title": "Rotating shrinking curves and comet spirals",
+      "category": "other-special-flows",
+      "bibliography_key": "CatHalldorsson2012",
+      "treatment": "Planar classification added to the existing higher-dimensional family; no duplicate section."
+    },
+    {
+      "label": "ex:catalogue-halldorsson-helicoidal-translators",
+      "section": "halldorsson-helicoidal-rotating-translators",
+      "title": "Halldorsson helicoidal rotating translators",
+      "category": "translators",
+      "bibliography_key": "CatHalldorsson2013"
+    },
+    {
+      "label": "ex:catalogue-halldorsson-minimal-helicoids",
+      "section": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "title": "Helicoidal minimal surfaces as stationary flows",
+      "category": "other-special-flows",
+      "bibliography_key": "CatHalldorsson2013"
+    }
+  ]
+}

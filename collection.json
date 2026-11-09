@@ -45,7 +45,8 @@
         "chopp-octahedral-shrinker-candidate",
         "chopp-punctured-torus-saddle-candidate",
         "chopp-two-handled-cone-candidate",
-        "chopp-four-handled-cone-candidate"
+        "chopp-four-handled-cone-candidate",
+        "nonclosed-shrinking-curves-dense-in-an-annulus"
       ],
       "description": "Homothetically shrinking solutions: explicit models, immersed curves and spheres, toroidal and higher-codimension constructions."
     },
@@ -71,7 +72,8 @@
         "annuloid-translators-in-slabs",
         "joyce-lee-tsui-small-angle-lagrangian-translators",
         "explicit-rotating-lagrangian-translators",
-        "su-translators-obtained-by-gluing-grim-cylinders"
+        "su-translators-obtained-by-gluing-grim-cylinders",
+        "halldorsson-helicoidal-rotating-translators"
       ],
       "description": "Eternal translating solutions: explicit graphs, numerical rotational models, and geometric constructions with precise references."
     },
@@ -122,7 +124,8 @@
         "purely-rotating-curve-shortening-solitons",
         "rotating-and-translating-curve-solitons",
         "rotating-and-expanding-curve-solitons",
-        "rotating-and-shrinking-curve-solitons"
+        "rotating-and-shrinking-curve-solitons",
+        "helicoidal-minimal-surfaces-as-stationary-flows"
       ],
       "description": "Stationary, ancient, rotating, higher-codimension, and singularity-forming flows, including mixed curve solitons."
     }

@@ -1337,7 +1337,8 @@
       "title": "Purely rotating curve-shortening solitons",
       "category": "other-special-flows",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "model": "aaaw-rotator",
       "status": "Numerical ODE curve",
@@ -1351,6 +1352,14 @@
           "caption": "Planar Yin–Yang profile with C(0) = 0, T(0) = (1, 0), and angular speed 1; −24 ≤ s ≤ 24. Time applies exact rotation to a truncated numerical solution, not a logarithmic-spiral substitution.",
           "alt": "Numerical centrally symmetric planar Yin–Yang rotator, with two outward spiraling arms.",
           "interactive": true
+        }
+      ],
+      "additional_experiments": [
+        {
+          "path": "experiments/halldorsson-rotators.html",
+          "title": "Explore the planar Halldórsson classification",
+          "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations.",
+          "id": "halldorsson-rotators"
         }
       ]
     },
@@ -1374,13 +1383,22 @@
       "title": "Rotating and expanding curve solitons",
       "category": "other-special-flows",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "model": "aaaw-expanding",
       "status": "Numerical ODE curve",
       "caption": "Dilation coefficient α = 1/2 and angular coefficient ω = 1, with C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The ends are truncated. Time t > −1 follows the exact rotation–dilation law; this is not a pure self-expander or an exact logarithmic spiral.",
       "alt": "Rotating and expanding curve solitons. Dilation coefficient α = 1/2 and angular coefficient ω = 1, with C(0) = (1, 0, 0), T(0) = (0, 0, 1), and −24 ≤ s ≤ 24. The ends are truncated. Time t > −1 follows the exact rotation–dilation law; this is not a pure self-expander or an exact logarithmic spiral.",
-      "interactive": true
+      "interactive": true,
+      "additional_experiments": [
+        {
+          "path": "experiments/halldorsson-expanding.html",
+          "title": "Explore the planar Halldórsson classification",
+          "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations.",
+          "id": "halldorsson-expanding"
+        }
+      ]
     },
     {
       "label": "ex:catalogue-rotating-shrinking-curves",
@@ -1388,7 +1406,8 @@
       "title": "Rotating and shrinking curve solitons",
       "category": "other-special-flows",
       "citations": [
-        "CatAAAW13"
+        "CatAAAW13",
+        "CatHalldorsson2012"
       ],
       "model": "aaaw-shrinking",
       "status": "Numerical ODE curve",
@@ -1403,7 +1422,75 @@
           "alt": "Numerical rotating and shrinking spatial curve on a sphere, approaching its equator from two sides.",
           "interactive": true
         }
+      ],
+      "additional_experiments": [
+        {
+          "path": "experiments/halldorsson-shrinking.html",
+          "title": "Explore the planar Halldórsson classification",
+          "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations.",
+          "id": "halldorsson-shrinking"
+        }
       ]
+    },
+    {
+      "label": "ex:catalogue-halldorsson-dense-shrinkers",
+      "section": "nonclosed-shrinking-curves-dense-in-an-annulus",
+      "title": "Nonclosed shrinking curves dense in an annulus",
+      "category": "shrinkers",
+      "citations": [
+        "CatHalldorsson2012"
+      ],
+      "model": "halldorsson-dense",
+      "status": "Numerical ODE approximation",
+      "caption": "Finite ODE window shot toward irrational turning α=(√5−1)/2. The full curve is dense in an annulus; floating-point data cannot establish irrationality.",
+      "alt": "Nonclosed shrinking curves dense in an annulus. Finite ODE window shot toward irrational turning α=(√5−1)/2. The full curve is dense in an annulus; floating-point data cannot establish irrationality.",
+      "interactive": false,
+      "credit_anchor": "halldorsson-visuals",
+      "experiment": {
+        "path": "experiments/halldorsson-dense.html",
+        "title": "Explore nonclosed shrinking curves dense in an annulus",
+        "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations."
+      }
+    },
+    {
+      "label": "ex:catalogue-halldorsson-helicoidal-translators",
+      "section": "halldorsson-helicoidal-rotating-translators",
+      "title": "Halldorsson helicoidal rotating translators",
+      "category": "translators",
+      "citations": [
+        "CatHalldorsson2013"
+      ],
+      "model": "halldorsson-helicoidal",
+      "status": "Numerical ODE approximation",
+      "caption": "A finite numerical patch at pitch h=1, with the symmetric generating curve through the axis. Rotate, zoom, change pitch/profile, and translate through time in the interactive viewer.",
+      "alt": "Halldorsson helicoidal rotating translators. A finite numerical patch at pitch h=1, with the symmetric generating curve through the axis. Rotate, zoom, change pitch/profile, and translate through time in the interactive viewer.",
+      "interactive": false,
+      "credit_anchor": "halldorsson-visuals",
+      "experiment": {
+        "path": "experiments/halldorsson-helicoidal.html",
+        "title": "Explore halldorsson helicoidal rotating translators",
+        "caption": "The spatial construction and finite-window limitations are stated beside the controls. The similarity time law is exact; numerical profiles are approximations."
+      }
+    },
+    {
+      "label": "ex:catalogue-halldorsson-minimal-helicoids",
+      "section": "helicoidal-minimal-surfaces-as-stationary-flows",
+      "title": "Helicoidal minimal surfaces as stationary flows",
+      "category": "other-special-flows",
+      "citations": [
+        "CatHalldorsson2013"
+      ],
+      "model": "halldorsson-minimal",
+      "status": "Exact formula",
+      "caption": "An exact helicoid sampled at h=1, a=0. The viewer also samples the nonembedded minimal immersions at a≠0. Display edges truncate complete stationary surfaces.",
+      "alt": "Helicoidal minimal surfaces as stationary flows. An exact helicoid sampled at h=1, a=0. The viewer also samples the nonembedded minimal immersions at a≠0. Display edges truncate complete stationary surfaces.",
+      "interactive": false,
+      "credit_anchor": "halldorsson-visuals",
+      "experiment": {
+        "path": "experiments/halldorsson-minimal.html",
+        "title": "Explore helicoidal minimal surfaces as stationary flows",
+        "caption": "Formula sampling of stationary minimal immersions, with rotation, zoom and parameter choices. No evolution PDE is approximated."
+      }
     }
   ]
 }
