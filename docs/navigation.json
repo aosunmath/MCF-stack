@@ -46,61 +46,61 @@
   },
   {
     "route": "sections/abresch-langer-closed-shrinking-curves",
-    "title": "2.1 Closed planar shrinking curves (Abresch–Langer, 1986; Halldórsson, 2010; Drugan–Lee–X. H. Nguyen, 2017; Colding–Minicozzi II, 2019)",
+    "title": "2.1 Closed planar shrinking curves (Abresch–Langer, 1984)",
     "chapter": "shrinkers",
     "section": "abresch-langer-closed-shrinking-curves"
   },
   {
     "route": "sections/brakke-spoon",
-    "title": "2.2 Spoon-shaped shrinking network (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.2 Spoon-shaped shrinking network",
     "chapter": "shrinkers",
     "section": "brakke-spoon"
   },
   {
     "route": "sections/shrinking-lens-network",
-    "title": "2.3 Shrinking lens network (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.3 Shrinking lens network (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "shrinking-lens-network"
   },
   {
     "route": "sections/shrinking-fish-network",
-    "title": "2.4 Shrinking fish network (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.4 Shrinking fish network (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "shrinking-fish-network"
   },
   {
     "route": "sections/three-ray-shrinking-star",
-    "title": "2.5 Three-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.5 Three-ray shrinking star (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "three-ray-shrinking-star"
   },
   {
     "route": "sections/four-ray-shrinking-star",
-    "title": "2.6 Four-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.6 Four-ray shrinking star (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "four-ray-shrinking-star"
   },
   {
     "route": "sections/five-ray-shrinking-star",
-    "title": "2.7 Five-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.7 Five-ray shrinking star (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "five-ray-shrinking-star"
   },
   {
     "route": "sections/shrinking-rocket-network",
-    "title": "2.8 Shrinking rocket network (Chen–Guo, 2007; Chang, 2021)",
+    "title": "2.8 Shrinking rocket network (Chen–Guo, 2007)",
     "chapter": "shrinkers",
     "section": "shrinking-rocket-network"
   },
   {
     "route": "sections/round-shrinking-spheres",
-    "title": "2.9 Round shrinking spheres (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+    "title": "2.9 Round shrinking spheres",
     "chapter": "shrinkers",
     "section": "round-shrinking-spheres"
   },
   {
     "route": "sections/planes-through-the-shrinker-center",
-    "title": "2.10 Planes through the shrinker center (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+    "title": "2.10 Planes through the shrinker center",
     "chapter": "shrinkers",
     "section": "planes-through-the-shrinker-center"
   },
@@ -118,7 +118,7 @@
   },
   {
     "route": "sections/angenent-s-shrinking-torus",
-    "title": "2.13 Embedded rotational shrinking tori (Angenent, 1992; Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017; Berchenko-Kogan, 2018)",
+    "title": "2.13 Embedded rotational shrinking tori (Angenent, 1992)",
     "chapter": "shrinkers",
     "section": "angenent-s-shrinking-torus"
   },
@@ -148,7 +148,7 @@
   },
   {
     "route": "sections/chopp-four-handled-cone-candidate",
-    "title": "2.18 Numerical four-handled cone shrinker candidate (Chopp, 1994; Angenent–Ilmanen–Chopp, 1995)",
+    "title": "2.18 Numerical four-handled cone shrinker candidate (Chopp, 1994)",
     "chapter": "shrinkers",
     "section": "chopp-four-handled-cone-candidate"
   },
@@ -172,19 +172,19 @@
   },
   {
     "route": "sections/kapouleas-kleene-moller-shrinkers-with-one-end",
-    "title": "2.22 One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011; Sun–Zhichao Wang, 2018)",
+    "title": "2.22 One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
     "chapter": "shrinkers",
     "section": "kapouleas-kleene-moller-shrinkers-with-one-end"
   },
   {
     "route": "sections/moller-closed-shrinkers-of-large-even-genus",
-    "title": "2.23 Closed shrinkers of large even genus via torus–sphere gluing (Colding–Minicozzi II, 2009; Møller, 2011; Drugan–Lee–X. H. Nguyen, 2017)",
+    "title": "2.23 Closed shrinkers of large even genus via torus–sphere gluing (Møller, 2011)",
     "chapter": "shrinkers",
     "section": "moller-closed-shrinkers-of-large-even-genus"
   },
   {
     "route": "sections/drugan-s-immersed-shrinking-spheres",
-    "title": "2.24 Immersed rotational shrinking spheres (Drugan, 2013; Drugan–Lee–X. H. Nguyen, 2017)",
+    "title": "2.24 Immersed rotational shrinking spheres (Drugan, 2013)",
     "chapter": "shrinkers",
     "section": "drugan-s-immersed-shrinking-spheres"
   },
@@ -208,7 +208,7 @@
   },
   {
     "route": "sections/drugan-nguyen-variational-shrinking-tori",
-    "title": "2.28 Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017; Chu–Sun, 2023)",
+    "title": "2.28 Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017)",
     "chapter": "shrinkers",
     "section": "drugan-nguyen-variational-shrinking-tori"
   },
@@ -232,7 +232,7 @@
   },
   {
     "route": "sections/buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
-    "title": "2.32 Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021; Chu–Sun, 2023)",
+    "title": "2.32 Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021)",
     "chapter": "shrinkers",
     "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus"
   },
@@ -286,13 +286,13 @@
   },
   {
     "route": "sections/higher-codimension-spherical-shrinkers",
-    "title": "2.41 Higher-codimension spherical shrinkers (Smoczyk, 2005; Sun–Zhu, 2020)",
+    "title": "2.41 Higher-codimension spherical shrinkers",
     "chapter": "shrinkers",
     "section": "higher-codimension-spherical-shrinkers"
   },
   {
     "route": "sections/the-lee-wang-self-shrinking-mobius-bundle",
-    "title": "2.42 An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007; Braxton–Lee–Zhu, 2026)",
+    "title": "2.42 An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007)",
     "chapter": "shrinkers",
     "section": "the-lee-wang-self-shrinking-mobius-bundle"
   },
@@ -316,7 +316,7 @@
   },
   {
     "route": "sections/angenent-torus-cylinders",
-    "title": "2.46 Cylinders over embedded rotational shrinking tori (Angenent, 1992; Berchenko-Kogan, 2018; Chen–Lee–Sun–Zhao, 2026)",
+    "title": "2.46 Cylinders over embedded rotational shrinking tori",
     "chapter": "shrinkers",
     "section": "angenent-torus-cylinders"
   },
@@ -363,25 +363,25 @@
   },
   {
     "route": "sections/the-grim-reaper-and-its-cylinders",
-    "title": "3.1 The grim reaper and its cylinders (Hoffman–Ilmanen–Martín–White, 2018; Hoffman–Ilmanen–Martín–White, 2019)",
+    "title": "3.1 The grim reaper and its cylinders",
     "chapter": "translators",
     "section": "the-grim-reaper-and-its-cylinders"
   },
   {
     "route": "sections/the-rotational-bowl-translator",
-    "title": "3.2 The rotational bowl translator (Clutterbuck–Schnürer–Schulze, 2005; Brendle–Choi, 2017; Hoffman–Ilmanen–Martín–White, 2019; Sun–Zhihan Wang, 2023)",
+    "title": "3.2 The rotational bowl translator",
     "chapter": "translators",
     "section": "the-rotational-bowl-translator"
   },
   {
     "route": "sections/rotational-translating-catenoids",
-    "title": "3.3 Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005; Hoffman–Ilmanen–Martín–White, 2019)",
+    "title": "3.3 Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005)",
     "chapter": "translators",
     "section": "rotational-translating-catenoids"
   },
   {
     "route": "sections/nguyen-translating-tridents",
-    "title": "3.4 Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+    "title": "3.4 Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Martín–White, 2019)",
     "chapter": "translators",
     "section": "nguyen-translating-tridents"
   },
@@ -399,7 +399,7 @@
   },
   {
     "route": "sections/finite-genus-translators-with-three-ends",
-    "title": "3.7 Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015; Hoffman–Ilmanen–Martín–White, 2019)",
+    "title": "3.7 Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015)",
     "chapter": "translators",
     "section": "finite-genus-translators-with-three-ends"
   },
@@ -423,31 +423,31 @@
   },
   {
     "route": "sections/scherkenoid-translators",
-    "title": "3.11 Scherkenoid translators (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+    "title": "3.11 Scherkenoid translators (Hoffman–Martín–White, 2019)",
     "chapter": "translators",
     "section": "scherkenoid-translators"
   },
   {
     "route": "sections/the-pitchfork-translator",
-    "title": "3.12 The pitchfork translator (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019; Gama–Martín–Møller, 2022; Martín–Sáez–Tsiamis–White, 2024)",
+    "title": "3.12 The pitchfork translator (Hoffman–Martín–White, 2019)",
     "chapter": "translators",
     "section": "the-pitchfork-translator"
   },
   {
     "route": "sections/doubly-periodic-scherk-translators",
-    "title": "3.13 Doubly periodic Scherk translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+    "title": "3.13 Doubly periodic Scherk translators (Hoffman–Martín–White, 2019)",
     "chapter": "translators",
     "section": "doubly-periodic-scherk-translators"
   },
   {
     "route": "sections/helicoid-like-translators",
-    "title": "3.14 Helicoid-like translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+    "title": "3.14 Helicoid-like translators (Hoffman–Martín–White, 2019)",
     "chapter": "translators",
     "section": "helicoid-like-translators"
   },
   {
     "route": "sections/annuloid-translators-in-slabs",
-    "title": "3.15 Annuloid translators in slabs (Gama–Martín–Møller, 2022; Hoffman–Martín–White, 2023)",
+    "title": "3.15 Annuloid translators in slabs (Hoffman–Martín–White, 2023)",
     "chapter": "translators",
     "section": "annuloid-translators-in-slabs"
   },
@@ -483,13 +483,13 @@
   },
   {
     "route": "sections/translators-with-an-angenent-torus-end",
-    "title": "3.21 Translators with an embedded rotational shrinking-torus end (Angenent, 1992; Sun–Zhihan Wang, 2023)",
+    "title": "3.21 Translators with an embedded rotational shrinking-torus end (Sun–Zhihan Wang, 2023)",
     "chapter": "translators",
     "section": "translators-with-an-angenent-torus-end"
   },
   {
     "route": "sections/translators-with-high-genus-spherical-doubling-ends",
-    "title": "3.22 Translators with high-genus spherical-doubling ends (Kapouleas–McGrath, 2020; Sun–Zhihan Wang, 2023)",
+    "title": "3.22 Translators with high-genus spherical-doubling ends (Sun–Zhihan Wang, 2023)",
     "chapter": "translators",
     "section": "translators-with-high-genus-spherical-doubling-ends"
   },
@@ -590,7 +590,7 @@
   },
   {
     "route": "sections/self-expanding-planar-tree-networks",
-    "title": "4.2 Self-expanding planar tree networks (Mazzeo–Saez, 2007; Ilmanen–Neves–Schulze, 2014)",
+    "title": "4.2 Self-expanding planar tree networks (Mazzeo–Saez, 2007)",
     "chapter": "expanders",
     "section": "self-expanding-planar-tree-networks"
   },
@@ -656,7 +656,7 @@
   },
   {
     "route": "sections/joyce-lee-tsui-lagrangian-expander-necks",
-    "title": "4.13 Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+    "title": "4.13 Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008)",
     "chapter": "expanders",
     "section": "joyce-lee-tsui-lagrangian-expander-necks"
   },
@@ -703,13 +703,13 @@
   },
   {
     "route": "sections/the-ancient-sine-wave",
-    "title": "5.1 The ancient sine wave (Nakayama–Iizuka–Wadati, 1994; Angenent–You, 2018)",
+    "title": "5.1 The ancient sine wave",
     "chapter": "other-special-flows",
     "section": "the-ancient-sine-wave"
   },
   {
     "route": "sections/purely-rotating-curve-shortening-solitons",
-    "title": "5.2 Purely rotating curve-shortening solitons (Halldórsson, 2010; Halldórsson, 2011; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
+    "title": "5.2 Purely rotating curve-shortening solitons (Halldórsson, 2010; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
     "chapter": "other-special-flows",
     "section": "purely-rotating-curve-shortening-solitons"
   },
@@ -733,7 +733,7 @@
   },
   {
     "route": "sections/eternal-curves-from-chains-of-grim-reapers",
-    "title": "5.6 Eternal curves from chains of grim reapers (Angenent–You, 2018; Choi–Seo–Su–Zhao, 2026)",
+    "title": "5.6 Eternal curves from chains of grim reapers (Angenent–You, 2018)",
     "chapter": "other-special-flows",
     "section": "eternal-curves-from-chains-of-grim-reapers"
   },
@@ -775,7 +775,7 @@
   },
   {
     "route": "sections/the-catenoid-as-an-eternal-stationary-flow",
-    "title": "5.13 Minimal surfaces as stationary mean curvature flows (Chopp, 1993; Mantegazza, 2011)",
+    "title": "5.13 Minimal surfaces as stationary mean curvature flows",
     "chapter": "other-special-flows",
     "section": "the-catenoid-as-an-eternal-stationary-flow"
   },
@@ -805,7 +805,7 @@
   },
   {
     "route": "sections/haslhofer-hershkovits-ancient-ovals",
-    "title": "5.18 Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013; Huisken–Sinestrari, 2014)",
+    "title": "5.18 Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013)",
     "chapter": "other-special-flows",
     "section": "haslhofer-hershkovits-ancient-ovals"
   },
@@ -817,7 +817,7 @@
   },
   {
     "route": "sections/ancient-flows-from-unstable-minimal-hypersurfaces",
-    "title": "5.20 Ancient flows from unstable minimal hypersurfaces (Melko, 2010; Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
+    "title": "5.20 Ancient flows from unstable minimal hypersurfaces (Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
     "chapter": "other-special-flows",
     "section": "ancient-flows-from-unstable-minimal-hypersurfaces"
   },
@@ -865,7 +865,7 @@
   },
   {
     "route": "sections/lawlor-necks-as-stationary-lagrangian-flows",
-    "title": "5.28 Stationary special Lagrangian necks (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+    "title": "5.28 Stationary special Lagrangian necks",
     "chapter": "other-special-flows",
     "section": "lawlor-necks-as-stationary-lagrangian-flows"
   },

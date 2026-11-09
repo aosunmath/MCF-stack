@@ -40,16 +40,16 @@
           }
         }
       ],
-      "title": "Closed planar shrinking curves (Abresch–Langer, 1986; Halldórsson, 2010; Drugan–Lee–X. H. Nguyen, 2017; Colding–Minicozzi II, 2019)",
+      "title": "Closed planar shrinking curves (Abresch–Langer, 1984)",
       "section": "abresch-langer-closed-shrinking-curves",
       "category": "shrinkers",
       "tag": "55D5743A6941",
       "model": "abresch-langer",
       "illustration_status": "Numerical ODE profile",
       "chronology": {
-        "title": "Closed planar shrinking curves (Abresch–Langer, 1986; Halldórsson, 2010; Drugan–Lee–X. H. Nguyen, 2017; Colding–Minicozzi II, 2019)",
+        "title": "Closed planar shrinking curves (Abresch–Langer, 1984)",
         "name": "Closed planar shrinking curves",
-        "date": "1986",
+        "date": "1984",
         "earliest_reference": "CatAL1986",
         "references": [
           {
@@ -57,12 +57,18 @@
               "Abresch",
               "Langer"
             ],
-            "date": "1986",
-            "kind": "publication",
-            "url": "https://doi.org/10.4310/jdg/1214440025",
-            "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
+            "date": "1984",
+            "kind": "preprint",
+            "url": "https://archive.mpim-bonn.mpg.de/id/eprint/1411/",
+            "evidence": "MPIM Preprint Series 1984 (64), cover marked MPI/SFB 84-64; later published in JDG 23 (1986). Archive deposit date is not used as the preprint date.",
             "key": "CatAL1986",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 2, Theorem 2 in the MPIM preprint",
+              "note": "Derives and integrates the homothetic curve equation and establishes existence of the closed immersed families.",
+              "reviewed_url": "https://archive.mpim-bonn.mpg.de/id/eprint/1411/1/preprint_1984_64.pdf"
+            }
           },
           {
             "authors": [
@@ -73,7 +79,12 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Introduction; shrinking-case discussion",
+              "note": "Explicitly attributes the closed immersed shrinking curves to Abresch–Langer; the planar classification is not assigned their original construction credit."
+            }
           },
           {
             "authors": [
@@ -86,7 +97,12 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           },
           {
             "authors": [
@@ -98,8 +114,16 @@
             "url": "https://arxiv.org/abs/1903.03499",
             "evidence": "arXiv submission history, version 1: 2019-03-08. Checked 2026-11-09.",
             "key": "CatCMComplexity2020",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Section 0.5 and discussion of planar shrinking curves",
+              "note": "Uses the known Abresch–Langer curves in dimension and complexity analysis, not a new construction of these curves."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAL1986"
         ]
       }
     },
@@ -141,14 +165,14 @@
           }
         }
       ],
-      "title": "Spoon-shaped shrinking network (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Spoon-shaped shrinking network",
       "section": "brakke-spoon",
       "category": "shrinkers",
       "tag": "DE792632B8AE",
       "model": "literature-network-spoon",
       "illustration_status": "Numerical ODE network",
       "chronology": {
-        "title": "Spoon-shaped shrinking network (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Spoon-shaped shrinking network",
         "name": "Spoon-shaped shrinking network",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -163,7 +187,12 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "background",
+              "locator": "Section 4.7, Theorem 3 and Figure 9",
+              "note": "The six displayed isotropic configurations have two to five rays; this passage is not a construction of the one-ray Brakke spoon."
+            }
           },
           {
             "authors": [
@@ -174,9 +203,15 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -217,14 +252,14 @@
           }
         }
       ],
-      "title": "Shrinking lens network (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Shrinking lens network (Chen–Guo, 2007)",
       "section": "shrinking-lens-network",
       "category": "shrinkers",
       "tag": "45920B126322",
       "model": "literature-network-lens",
       "illustration_status": "Numerical ODE network",
       "chronology": {
-        "title": "Shrinking lens network (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Shrinking lens network (Chen–Guo, 2007)",
         "name": "Shrinking lens network",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -239,7 +274,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -250,8 +291,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -293,14 +342,14 @@
           }
         }
       ],
-      "title": "Shrinking fish network (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Shrinking fish network (Chen–Guo, 2007)",
       "section": "shrinking-fish-network",
       "category": "shrinkers",
       "tag": "6E3C2D665CDD",
       "model": "literature-network-fish",
       "illustration_status": "Source-informed network schematic",
       "chronology": {
-        "title": "Shrinking fish network (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Shrinking fish network (Chen–Guo, 2007)",
         "name": "Shrinking fish network",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -315,7 +364,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -326,8 +381,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -369,14 +432,14 @@
           }
         }
       ],
-      "title": "Three-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Three-ray shrinking star (Chen–Guo, 2007)",
       "section": "three-ray-shrinking-star",
       "category": "shrinkers",
       "tag": "40F52B6CFB5C",
       "model": "literature-network-three-ray",
       "illustration_status": "Numerical ODE network",
       "chronology": {
-        "title": "Three-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Three-ray shrinking star (Chen–Guo, 2007)",
         "name": "Three-ray shrinking star",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -391,7 +454,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -402,8 +471,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -445,14 +522,14 @@
           }
         }
       ],
-      "title": "Four-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Four-ray shrinking star (Chen–Guo, 2007)",
       "section": "four-ray-shrinking-star",
       "category": "shrinkers",
       "tag": "010FE5696B4C",
       "model": "literature-network-four-ray",
       "illustration_status": "Numerical ODE network",
       "chronology": {
-        "title": "Four-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Four-ray shrinking star (Chen–Guo, 2007)",
         "name": "Four-ray shrinking star",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -467,7 +544,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -478,8 +561,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -521,14 +612,14 @@
           }
         }
       ],
-      "title": "Five-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Five-ray shrinking star (Chen–Guo, 2007)",
       "section": "five-ray-shrinking-star",
       "category": "shrinkers",
       "tag": "4C198F76FD40",
       "model": "literature-network-five-ray",
       "illustration_status": "Numerical ODE network",
       "chronology": {
-        "title": "Five-ray shrinking star (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Five-ray shrinking star (Chen–Guo, 2007)",
         "name": "Five-ray shrinking star",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -543,7 +634,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -554,8 +651,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -597,14 +702,14 @@
           }
         }
       ],
-      "title": "Shrinking rocket network (Chen–Guo, 2007; Chang, 2021)",
+      "title": "Shrinking rocket network (Chen–Guo, 2007)",
       "section": "shrinking-rocket-network",
       "category": "shrinkers",
       "tag": "21D9CE8B056C",
       "model": "literature-network-rocket",
       "illustration_status": "Source-informed network schematic",
       "chronology": {
-        "title": "Shrinking rocket network (Chen–Guo, 2007; Chang, 2021)",
+        "title": "Shrinking rocket network (Chen–Guo, 2007)",
         "name": "Shrinking rocket network",
         "date": "2007",
         "earliest_reference": "CatChenGuo2007",
@@ -619,7 +724,13 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.3–4.7, Theorem 3 and Figure 9",
+              "note": "Derives the closing equations and obtains the one-region configurations. Section 4.7 uses numerical period evaluations in some cases; this title credit does not certify an entirely analytic existence proof.",
+              "reviewed_url": "https://mail.tku.edu.tw/jsguo/curvature-r1.pdf"
+            }
           },
           {
             "authors": [
@@ -630,8 +741,16 @@
             "url": "https://arxiv.org/abs/2107.04338",
             "evidence": "arXiv submission history, version 1: 2021-07-09. Checked 2026-11-09.",
             "key": "CatChang2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, pp. 1–2, Figures 1–2; stability theorems",
+              "note": "Studies stability of known networks and explicitly attributes the one-region classification to Chen–Guo and the spoon to Brakke."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChenGuo2007"
         ]
       }
     },
@@ -736,14 +855,14 @@
           }
         }
       ],
-      "title": "Round shrinking spheres (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+      "title": "Round shrinking spheres",
       "section": "round-shrinking-spheres",
       "category": "shrinkers",
       "tag": "5D6AFC4ECF1B",
       "model": "sphere",
       "illustration_status": "Exact formula",
       "chronology": {
-        "title": "Round shrinking spheres (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+        "title": "Round shrinking spheres",
         "name": "Round shrinking spheres",
         "date": "2009-08-26",
         "earliest_reference": "CM12",
@@ -758,7 +877,12 @@
             "url": "https://arxiv.org/abs/0908.3788",
             "evidence": "arXiv submission history, version 1: 2009-08-26. Checked 2026-11-09.",
             "key": "CM12",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; stability and generic-singularity theorems",
+              "note": "Studies stability and generic singularities using these shrinkers; it does not construct this catalogue family."
+            }
           },
           {
             "authors": [
@@ -771,9 +895,15 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -884,14 +1014,14 @@
           }
         }
       ],
-      "title": "Planes through the shrinker center (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+      "title": "Planes through the shrinker center",
       "section": "planes-through-the-shrinker-center",
       "category": "shrinkers",
       "tag": "97FD822B6630",
       "model": "plane",
       "illustration_status": "Exact formula",
       "chronology": {
-        "title": "Planes through the shrinker center (Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017)",
+        "title": "Planes through the shrinker center",
         "name": "Planes through the shrinker center",
         "date": "2009-08-26",
         "earliest_reference": "CM12",
@@ -906,7 +1036,12 @@
             "url": "https://arxiv.org/abs/0908.3788",
             "evidence": "arXiv submission history, version 1: 2009-08-26. Checked 2026-11-09.",
             "key": "CM12",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; stability and generic-singularity theorems",
+              "note": "Studies stability and generic singularities using these shrinkers; it does not construct this catalogue family."
+            }
           },
           {
             "authors": [
@@ -919,9 +1054,15 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -982,9 +1123,11 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1046,9 +1189,11 @@
             "url": "https://arxiv.org/abs/1901.10315",
             "evidence": "arXiv submission history, version 1: 2019-01-29. Checked 2026-11-09.",
             "key": "CatChangLue2019",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1123,14 +1268,14 @@
           }
         }
       ],
-      "title": "Embedded rotational shrinking tori (Angenent, 1992; Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017; Berchenko-Kogan, 2018)",
+      "title": "Embedded rotational shrinking tori (Angenent, 1992)",
       "section": "angenent-s-shrinking-torus",
       "category": "shrinkers",
       "tag": "10374A017921",
       "model": "angenent-torus",
       "illustration_status": "Numerical ODE surface",
       "chronology": {
-        "title": "Embedded rotational shrinking tori (Angenent, 1992; Colding–Minicozzi II, 2009; Drugan–Lee–X. H. Nguyen, 2017; Berchenko-Kogan, 2018)",
+        "title": "Embedded rotational shrinking tori (Angenent, 1992)",
         "name": "Embedded rotational shrinking tori",
         "date": "1992",
         "earliest_reference": "CatAngenent1992",
@@ -1144,7 +1289,12 @@
             "url": "https://doi.org/10.1007/978-1-4612-0393-3_2",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAngenent1992",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Main Theorem and the toroidal geodesic construction",
+              "note": "Proves existence of the embedded rotational shrinking torus by a shooting construction."
+            }
           },
           {
             "authors": [
@@ -1156,7 +1306,12 @@
             "url": "https://arxiv.org/abs/0908.3788",
             "evidence": "arXiv submission history, version 1: 2009-08-26. Checked 2026-11-09.",
             "key": "CM12",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; stability and generic-singularity theorems",
+              "note": "Studies stability and generic singularities using these shrinkers; it does not construct this catalogue family."
+            }
           },
           {
             "authors": [
@@ -1169,7 +1324,12 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           },
           {
             "authors": [
@@ -1180,8 +1340,16 @@
             "url": "https://arxiv.org/abs/1808.08163",
             "evidence": "arXiv submission history, version 1: 2018-08-24. Checked 2026-11-09.",
             "key": "CatBerchenkoKogan2021",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; numerical entropy computation",
+              "note": "Numerically estimates the entropy of Angenent’s previously constructed torus, not a new construction of the torus or its cylindrical products."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAngenent1992"
         ]
       }
     },
@@ -1243,9 +1411,11 @@
             "url": "https://doi.org/10.1080/10586458.1994.10504572",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChopp1994",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1306,9 +1476,11 @@
             "url": "https://doi.org/10.1080/10586458.1994.10504572",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChopp1994",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1369,9 +1541,11 @@
             "url": "https://doi.org/10.1080/10586458.1994.10504572",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChopp1994",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1432,9 +1606,11 @@
             "url": "https://doi.org/10.1080/10586458.1994.10504572",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChopp1994",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1475,14 +1651,14 @@
           }
         }
       ],
-      "title": "Numerical four-handled cone shrinker candidate (Chopp, 1994; Angenent–Ilmanen–Chopp, 1995)",
+      "title": "Numerical four-handled cone shrinker candidate (Chopp, 1994)",
       "section": "chopp-four-handled-cone-candidate",
       "category": "shrinkers",
       "tag": "F576920EB05F",
       "model": "chopp-four-handle",
       "illustration_status": "Schematic of a numerical candidate",
       "chronology": {
-        "title": "Numerical four-handled cone shrinker candidate (Chopp, 1994; Angenent–Ilmanen–Chopp, 1995)",
+        "title": "Numerical four-handled cone shrinker candidate (Chopp, 1994)",
         "name": "Numerical four-handled cone shrinker candidate",
         "date": "1994",
         "earliest_reference": "CatChopp1994",
@@ -1496,7 +1672,12 @@
             "url": "https://doi.org/10.1080/10586458.1994.10504572",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChopp1994",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "numerical-construction",
+              "locator": "Section 4.6, printed pp. 12–13, Figures 26–27",
+              "note": "Computes the four-handled cone candidate and reports the self-similarity residual. This is numerical evidence, not a rigorous existence theorem."
+            }
           },
           {
             "authors": [
@@ -1509,8 +1690,16 @@
             "url": "https://doi.org/10.1080/03605309508821158",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAIC95",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Section 1, pp. 1940–1944",
+              "note": "Uses and describes Chopp’s numerical shrinker computation in the proposed nonuniqueness example. The simulation and algorithm are attributed to Chopp [9]; no separate construction credit is assigned here."
+            }
           }
+        ],
+        "construction_references": [
+          "CatChopp1994"
         ]
       }
     },
@@ -1635,9 +1824,11 @@
             "url": "https://arxiv.org/abs/0908.3788",
             "evidence": "arXiv submission history, version 1: 2009-08-26. Checked 2026-11-09.",
             "key": "CM12",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1729,9 +1920,11 @@
             "url": "https://arxiv.org/abs/1008.1609",
             "evidence": "arXiv submission history, version 1: 2010-08-10. Checked 2026-11-09.",
             "key": "CatKleeneMoller2014",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1792,9 +1985,11 @@
             "url": "https://arxiv.org/abs/1106.5272",
             "evidence": "arXiv submission history, version 1: 2011-06-26. Checked 2026-11-09.",
             "key": "CatNguyenShrinker2014",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -1835,14 +2030,14 @@
           }
         }
       ],
-      "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011; Sun–Zhichao Wang, 2018)",
+      "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
       "section": "kapouleas-kleene-moller-shrinkers-with-one-end",
       "category": "shrinkers",
       "tag": "A515DF7C7C60",
       "model": "kkm-shrinker",
       "illustration_status": "Scherk-based construction schematic",
       "chronology": {
-        "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011; Sun–Zhichao Wang, 2018)",
+        "title": "One-ended high-genus shrinkers from sphere–plane gluing (Kapouleas–Kleene–Møller, 2011)",
         "name": "One-ended high-genus shrinkers from sphere–plane gluing",
         "date": "2011-06-27",
         "earliest_reference": "CatKKM2018",
@@ -1858,7 +2053,12 @@
             "url": "https://arxiv.org/abs/1106.5454",
             "evidence": "arXiv submission history, version 1: 2011-06-27. Checked 2026-11-09.",
             "key": "CatKKM2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1",
+              "note": "Constructs noncompact embedded high-genus shrinkers with one conical end by desingularization."
+            }
           },
           {
             "authors": [
@@ -1870,8 +2070,16 @@
             "url": "https://arxiv.org/abs/1811.05387",
             "evidence": "arXiv submission history, version 1: 2018-11-13. Checked 2026-11-09.",
             "key": "CatSunWang2020",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1.1",
+              "note": "Explicitly credits Kapouleas–Kleene–Møller and Nguyen for the constructions; proves fixed-genus compactness and consequences for ends and entropy."
+            }
           }
+        ],
+        "construction_references": [
+          "CatKKM2018"
         ]
       }
     },
@@ -1914,14 +2122,14 @@
           }
         }
       ],
-      "title": "Closed shrinkers of large even genus via torus–sphere gluing (Colding–Minicozzi II, 2009; Møller, 2011; Drugan–Lee–X. H. Nguyen, 2017)",
+      "title": "Closed shrinkers of large even genus via torus–sphere gluing (Møller, 2011)",
       "section": "moller-closed-shrinkers-of-large-even-genus",
       "category": "shrinkers",
       "tag": "A105C87CB202",
       "model": "moller-gluing",
       "illustration_status": "Numerical limiting configuration",
       "chronology": {
-        "title": "Closed shrinkers of large even genus via torus–sphere gluing (Colding–Minicozzi II, 2009; Møller, 2011; Drugan–Lee–X. H. Nguyen, 2017)",
+        "title": "Closed shrinkers of large even genus via torus–sphere gluing (Møller, 2011)",
         "name": "Closed shrinkers of large even genus via torus–sphere gluing",
         "date": "2011-11-30",
         "earliest_reference": "CatMoller2014",
@@ -1936,7 +2144,12 @@
             "url": "https://arxiv.org/abs/0908.3788",
             "evidence": "arXiv submission history, version 1: 2009-08-26. Checked 2026-11-09.",
             "key": "CM12",
-            "background": "General mean-convexity and instability theorems applied to the constructed family; this paper predates its construction."
+            "background": "General mean-convexity and instability theorems applied to the constructed family; this paper predates its construction.",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; stability and generic-singularity theorems",
+              "note": "Studies stability and generic singularities using these shrinkers; it does not construct this catalogue family."
+            }
           },
           {
             "authors": [
@@ -1947,7 +2160,12 @@
             "url": "https://arxiv.org/abs/1111.7318",
             "evidence": "arXiv submission history, version 1: 2011-11-30. Checked 2026-11-09.",
             "key": "CatMoller2014",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1",
+              "note": "Constructs compact high-even-genus shrinkers by desingularizing the sphere and torus."
+            }
           },
           {
             "authors": [
@@ -1960,8 +2178,16 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatMoller2014"
         ]
       }
     },
@@ -2033,14 +2259,14 @@
           }
         }
       ],
-      "title": "Immersed rotational shrinking spheres (Drugan, 2013; Drugan–Lee–X. H. Nguyen, 2017)",
+      "title": "Immersed rotational shrinking spheres (Drugan, 2013)",
       "section": "drugan-s-immersed-shrinking-spheres",
       "category": "shrinkers",
       "tag": "FE38A115C52C",
       "model": "drugan-sphere",
       "illustration_status": "Numerical ODE surface",
       "chronology": {
-        "title": "Immersed rotational shrinking spheres (Drugan, 2013; Drugan–Lee–X. H. Nguyen, 2017)",
+        "title": "Immersed rotational shrinking spheres (Drugan, 2013)",
         "name": "Immersed rotational shrinking spheres",
         "date": "2013-03-29",
         "earliest_reference": "CatDrugan2015",
@@ -2054,7 +2280,12 @@
             "url": "https://arxiv.org/abs/1304.0032",
             "evidence": "arXiv submission history, version 1: 2013-03-29. Checked 2026-11-09.",
             "key": "CatDrugan2015",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1",
+              "note": "Constructs an immersed nonembedded shrinking sphere; distinguishes it from Angenent’s numerical candidate."
+            }
           },
           {
             "authors": [
@@ -2067,8 +2298,16 @@
             "url": "https://arxiv.org/abs/1708.09113",
             "evidence": "arXiv submission history, version 1: 2017-08-30. Checked 2026-11-09.",
             "key": "CatDLN2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Introduction and survey of closed self-shrinkers with symmetry",
+              "note": "Surveys earlier constructions with their original attributions; a cited or reproduced construction is not credited to the survey authors as a new construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatDrugan2015"
         ]
       }
     },
@@ -2161,9 +2400,11 @@
             "url": "https://arxiv.org/abs/1306.2383",
             "evidence": "arXiv submission history, version 1: 2013-06-10. Checked 2026-11-09.",
             "key": "CatDruganKleene2017",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2255,9 +2496,11 @@
             "url": "https://arxiv.org/abs/1510.07183",
             "evidence": "arXiv submission history, version 1: 2015-10-24. Checked 2026-11-09.",
             "key": "CatChangSpruck2017",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2454,9 +2697,11 @@
             "url": "https://arxiv.org/abs/1602.07271",
             "evidence": "arXiv submission history, version 1: 2016-02-23. Checked 2026-11-09.",
             "key": "CatKetover2016",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2535,14 +2780,14 @@
           }
         }
       ],
-      "title": "Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017; Chu–Sun, 2023)",
+      "title": "Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017)",
       "section": "drugan-nguyen-variational-shrinking-tori",
       "category": "shrinkers",
       "tag": "9F3C76F8391F",
       "model": "variational-torus",
       "illustration_status": "Variational construction schematic",
       "chronology": {
-        "title": "Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017; Chu–Sun, 2023)",
+        "title": "Variational embedded shrinking tori (Drugan–X. H. Nguyen, 2017)",
         "name": "Variational embedded shrinking tori",
         "date": "2017-08-29",
         "earliest_reference": "CatDruganNguyen2018",
@@ -2557,7 +2802,12 @@
             "url": "https://arxiv.org/abs/1708.08808",
             "evidence": "arXiv submission history, version 1: 2017-08-29. Checked 2026-11-09.",
             "key": "CatDruganNguyen2018",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1 and following discussion",
+              "note": "Constructs toroidal shrinkers by a variational curve flow; the authors do not claim identity with Angenent’s shooting construction."
+            }
           },
           {
             "authors": [
@@ -2569,8 +2819,16 @@
             "url": "https://arxiv.org/abs/2308.05923",
             "evidence": "arXiv submission history, version 1: 2023-08-11. Checked 2026-11-09.",
             "key": "CatChuSun2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction preceding Theorem 1.3",
+              "note": "Explicitly takes the torus constructed by Drugan–Nguyen as input to the singularity argument."
+            }
           }
+        ],
+        "construction_references": [
+          "CatDruganNguyen2018"
         ]
       }
     },
@@ -2634,9 +2892,11 @@
             "url": "https://arxiv.org/abs/1811.07822",
             "evidence": "arXiv submission history, version 1: 2018-11-19. Checked 2026-11-09.",
             "key": "CatBaldiHausMantegazza2019",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2702,9 +2962,11 @@
             "url": "https://arxiv.org/abs/2001.04240",
             "evidence": "arXiv submission history, version 1: 2020-01-13. Checked 2026-11-09.",
             "key": "CatKapouleasMcGrath2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2826,9 +3088,11 @@
             "url": "https://arxiv.org/abs/2011.04136",
             "evidence": "arXiv submission history, version 1: 2020-11-09. Checked 2026-11-09.",
             "key": "CatSunWangZhou2024",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -2933,14 +3197,14 @@
           }
         }
       ],
-      "title": "Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021; Chu–Sun, 2023)",
+      "title": "Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021)",
       "section": "buzano-nguyen-schulz-shrinkers-of-every-positive-genus",
       "category": "shrinkers",
       "tag": "40F2B3444C2E",
       "model": "bns-shrinkers",
       "illustration_status": "Interactive topology schematic",
       "chronology": {
-        "title": "Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021; Chu–Sun, 2023)",
+        "title": "Noncompact shrinkers of every positive genus (Buzano–H. T. Nguyen–Schulz, 2021)",
         "name": "Noncompact shrinkers of every positive genus",
         "date": "2021-10-12",
         "earliest_reference": "CatBNS2025",
@@ -2956,7 +3220,12 @@
             "url": "https://arxiv.org/abs/2110.06027",
             "evidence": "arXiv submission history, version 1: 2021-10-12. Checked 2026-11-09.",
             "key": "CatBNS2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorems 1.2–1.3; Section 2",
+              "note": "Constructs noncompact embedded shrinkers of prescribed genus by equivariant min-max."
+            }
           },
           {
             "authors": [
@@ -2968,8 +3237,16 @@
             "url": "https://arxiv.org/abs/2308.05923",
             "evidence": "arXiv submission history, version 1: 2023-08-11. Checked 2026-11-09.",
             "key": "CatChuSun2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Remark 1.5",
+              "note": "Explicitly attributes these noncompact shrinkers to Buzano–Nguyen–Schulz and discusses their relation to entropy minimization."
+            }
           }
+        ],
+        "construction_references": [
+          "CatBNS2025"
         ]
       }
     },
@@ -3037,9 +3314,11 @@
             "url": "https://arxiv.org/abs/2308.05923",
             "evidence": "arXiv submission history, version 1: 2023-08-11. Checked 2026-11-09.",
             "key": "CatChuSun2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3101,9 +3380,11 @@
             "url": "https://arxiv.org/abs/2406.18703",
             "evidence": "arXiv submission history, version 1: 2024-06-26. Checked 2026-11-09.",
             "key": "CatIlmanenWhite2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3234,9 +3515,11 @@
             "url": "https://arxiv.org/abs/2407.01240",
             "evidence": "arXiv submission history, version 1: 2024-07-01. Checked 2026-11-09.",
             "key": "CatKetover2024",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3357,9 +3640,11 @@
             "url": "https://arxiv.org/abs/2502.20340",
             "evidence": "arXiv submission history, version 1: 2025-02-27. Checked 2026-11-09.",
             "key": "CatHMW2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3492,9 +3777,11 @@
             "url": "https://arxiv.org/abs/2502.20340",
             "evidence": "arXiv submission history, version 1: 2025-02-27. Checked 2026-11-09.",
             "key": "CatHMW2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3557,9 +3844,11 @@
             "url": "https://arxiv.org/abs/2502.20340",
             "evidence": "arXiv submission history, version 1: 2025-02-27. Checked 2026-11-09.",
             "key": "CatHMW2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3679,9 +3968,11 @@
             "url": "https://arxiv.org/abs/2507.18825",
             "evidence": "arXiv submission history, version 1: 2025-07-24. Checked 2026-11-09.",
             "key": "CatShaoZou2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3771,9 +4062,11 @@
             "url": "https://arxiv.org/abs/math/0507325",
             "evidence": "arXiv submission history, version 1: 2005-07-15. Checked 2026-11-09.",
             "key": "CatSmoczyk2005",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3844,14 +4137,14 @@
           }
         }
       ],
-      "title": "Higher-codimension spherical shrinkers (Smoczyk, 2005; Sun–Zhu, 2020)",
+      "title": "Higher-codimension spherical shrinkers",
       "section": "higher-codimension-spherical-shrinkers",
       "category": "shrinkers",
       "tag": "45597E4891F4",
       "model": "spherical-products",
       "illustration_status": "Dimension and factor diagram",
       "chronology": {
-        "title": "Higher-codimension spherical shrinkers (Smoczyk, 2005; Sun–Zhu, 2020)",
+        "title": "Higher-codimension spherical shrinkers",
         "name": "Higher-codimension spherical shrinkers",
         "date": "2005-07-15",
         "earliest_reference": "CatSmoczyk2005",
@@ -3865,7 +4158,12 @@
             "url": "https://arxiv.org/abs/math/0507325",
             "evidence": "arXiv submission history, version 1: 2005-07-15. Checked 2026-11-09.",
             "key": "CatSmoczyk2005",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1.1",
+              "note": "Uses the familiar equivalence between spherical shrinkers and minimal submanifolds of a sphere and proves a converse rigidity characterization."
+            }
           },
           {
             "authors": [
@@ -3877,9 +4175,15 @@
             "url": "https://arxiv.org/abs/2011.01636",
             "evidence": "arXiv submission history, version 1: 2020-11-03. Checked 2026-11-09.",
             "key": "CatSunZhu2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.1–1.2",
+              "note": "Proves local and quantitative rigidity of known products of spheres; does not introduce those products."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -3920,14 +4224,14 @@
           }
         }
       ],
-      "title": "An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007; Braxton–Lee–Zhu, 2026)",
+      "title": "An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007)",
       "section": "the-lee-wang-self-shrinking-mobius-bundle",
       "category": "shrinkers",
       "tag": "CC2E5DD6BD78",
       "model": "mobius-shrinker",
       "illustration_status": "Exact four-dimensional projection",
       "chronology": {
-        "title": "An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007; Braxton–Lee–Zhu, 2026)",
+        "title": "An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007)",
         "name": "An embedded self-shrinking Möbius bundle",
         "date": "2007-07-02",
         "earliest_reference": "CatLeeWang2009",
@@ -3942,7 +4246,12 @@
             "url": "https://arxiv.org/abs/0707.0239",
             "evidence": "arXiv submission history, version 1: 2007-07-02. Checked 2026-11-09.",
             "key": "CatLeeWang2009",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 4, proof of Theorem 1.1, parity cases and explicit shrinker formula",
+              "note": "Constructs the Hamiltonian stationary shrinkers, including the embedded nonorientable p = 2, q = 1 case."
+            }
           },
           {
             "authors": [
@@ -3955,8 +4264,16 @@
             "url": "https://arxiv.org/abs/2609.19648",
             "evidence": "arXiv submission history, version 1: 2026-09-17. Checked 2026-11-09.",
             "key": "CatBraxtonLeeZhu2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, equation (1.1) and Theorem 1.2",
+              "note": "Explicitly credits Lee–Wang for the Möbius shrinker and proves its F-stability."
+            }
           }
+        ],
+        "construction_references": [
+          "CatLeeWang2009"
         ]
       }
     },
@@ -4049,9 +4366,11 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4143,9 +4462,11 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4210,9 +4531,11 @@
             "url": "https://arxiv.org/abs/1802.01423",
             "evidence": "arXiv submission history, version 1: 2018-02-05. Checked 2026-11-09.",
             "key": "CatELS2020",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4287,14 +4610,14 @@
           }
         }
       ],
-      "title": "Cylinders over embedded rotational shrinking tori (Angenent, 1992; Berchenko-Kogan, 2018; Chen–Lee–Sun–Zhao, 2026)",
+      "title": "Cylinders over embedded rotational shrinking tori",
       "section": "angenent-torus-cylinders",
       "category": "shrinkers",
       "tag": "FA65887C28F1",
       "model": "angenent-torus-cylinder",
       "illustration_status": "Numerical R4 product slices",
       "chronology": {
-        "title": "Cylinders over embedded rotational shrinking tori (Angenent, 1992; Berchenko-Kogan, 2018; Chen–Lee–Sun–Zhao, 2026)",
+        "title": "Cylinders over embedded rotational shrinking tori",
         "name": "Cylinders over embedded rotational shrinking tori",
         "date": "2026-07-26",
         "earliest_reference": "CatCLSZ2026",
@@ -4308,7 +4631,12 @@
             "url": "https://doi.org/10.1007/978-1-4612-0393-3_2",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAngenent1992",
-            "background": "Constructs the compact torus factor; the Euclidean product is verified directly in this entry."
+            "background": "Constructs the compact torus factor; the Euclidean product is verified directly in this entry.",
+            "credit_review": {
+              "role": "background",
+              "locator": "Main Theorem",
+              "note": "Constructs the compact torus factor, not the later translator or the cylindrical product entry as a separate construction."
+            }
           },
           {
             "authors": [
@@ -4319,7 +4647,12 @@
             "url": "https://arxiv.org/abs/1808.08163",
             "evidence": "arXiv submission history, version 1: 2018-08-24. Checked 2026-11-09.",
             "key": "CatBerchenkoKogan2021",
-            "background": "Numerical entropy of the compact torus factor, transferred to the product by Gaussian factorization."
+            "background": "Numerical entropy of the compact torus factor, transferred to the product by Gaussian factorization.",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; numerical entropy computation",
+              "note": "Numerically estimates the entropy of Angenent’s previously constructed torus, not a new construction of the torus or its cylindrical products."
+            }
           },
           {
             "authors": [
@@ -4333,9 +4666,15 @@
             "url": "https://arxiv.org/abs/2607.23879",
             "evidence": "arXiv submission history, version 1: 2026-07-26. Checked 2026-11-09.",
             "key": "CatCLSZ2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.2–1.4",
+              "note": "Constructs closed initial hypersurfaces realizing prescribed shrinkers as first singularities. This is a realization theorem, not construction of the torus product itself."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4397,9 +4736,11 @@
             "url": "https://arxiv.org/abs/2608.11046",
             "evidence": "arXiv submission history, version 1: 2026-08-11. Checked 2026-11-09.",
             "key": "CatPark2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4461,9 +4802,11 @@
             "url": "https://arxiv.org/abs/2610.25831",
             "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
             "key": "CatNeto2026a",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4525,7 +4868,12 @@
             "url": "https://doi.org/10.1007/s10711-006-9082-z",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAnciaux2006",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1 and the minimal Legendrian product ansatz",
+              "note": "Constructs the Lagrangian family by combining minimal Legendrian leaves with solutions of the profile ODE."
+            }
           },
           {
             "authors": [
@@ -4537,8 +4885,17 @@
             "url": "https://arxiv.org/abs/2208.01574",
             "evidence": "arXiv submission history, version 1: 2022-08-02. Checked 2026-11-09.",
             "key": "CatMadnickWood2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1, Sections 5 and 7",
+              "note": "Uses Anciaux’s profiles with admissible group orbits to give explicit cohomogeneity-one subfamilies covered by this entry. Credit is for these constructed subfamilies, not the earlier general ansatz."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAnciaux2006",
+          "CatMadnickWood2025"
         ]
       }
     },
@@ -4601,9 +4958,11 @@
             "url": "https://arxiv.org/abs/0802.0359",
             "evidence": "arXiv submission history, version 1: 2008-02-04. Checked 2026-11-09.",
             "key": "CatLeeWang2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4664,9 +5023,11 @@
             "url": "https://arxiv.org/abs/2207.04851",
             "evidence": "arXiv submission history, version 1: 2022-07-11. Checked 2026-11-09.",
             "key": "CatRiedler2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4727,9 +5088,11 @@
             "url": "https://arxiv.org/abs/1203.3934",
             "evidence": "arXiv submission history, version 1: 2012-03-18. Checked 2026-11-09.",
             "key": "CatYamamoto2012",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4829,14 +5192,14 @@
           }
         }
       ],
-      "title": "The grim reaper and its cylinders (Hoffman–Ilmanen–Martín–White, 2018; Hoffman–Ilmanen–Martín–White, 2019)",
+      "title": "The grim reaper and its cylinders",
       "section": "the-grim-reaper-and-its-cylinders",
       "category": "translators",
       "tag": "3B1939BC4D74",
       "model": "grim-reaper",
       "illustration_status": "Exact formula",
       "chronology": {
-        "title": "The grim reaper and its cylinders (Hoffman–Ilmanen–Martín–White, 2018; Hoffman–Ilmanen–Martín–White, 2019)",
+        "title": "The grim reaper and its cylinders",
         "name": "The grim reaper and its cylinders",
         "date": "2018-05-28",
         "earliest_reference": "CatHIMWGraphical18",
@@ -4853,7 +5216,12 @@
             "url": "https://arxiv.org/abs/1805.10860",
             "evidence": "arXiv submission history, version 1: 2018-05-28. Checked 2026-11-09.",
             "key": "CatHIMWGraphical18",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction and complete-graph classification",
+              "note": "Treats grim reapers as known examples in a classification; its new graphical constructions concern other families."
+            }
           },
           {
             "authors": [
@@ -4867,9 +5235,15 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -4943,14 +5317,14 @@
           }
         }
       ],
-      "title": "The rotational bowl translator (Clutterbuck–Schnürer–Schulze, 2005; Brendle–Choi, 2017; Hoffman–Ilmanen–Martín–White, 2019; Sun–Zhihan Wang, 2023)",
+      "title": "The rotational bowl translator",
       "section": "the-rotational-bowl-translator",
       "category": "translators",
       "tag": "ECF360A3D482",
       "model": "bowl",
       "illustration_status": "Numerical ODE surface",
       "chronology": {
-        "title": "The rotational bowl translator (Clutterbuck–Schnürer–Schulze, 2005; Brendle–Choi, 2017; Hoffman–Ilmanen–Martín–White, 2019; Sun–Zhihan Wang, 2023)",
+        "title": "The rotational bowl translator",
         "name": "The rotational bowl translator",
         "date": "2005-09-16",
         "earliest_reference": "CSS07",
@@ -4966,7 +5340,12 @@
             "url": "https://arxiv.org/abs/math/0509372",
             "evidence": "arXiv submission history, version 1: 2005-09-16. Checked 2026-11-09.",
             "key": "CSS07",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Section 2.1, Lemma 2.2 and its proof",
+              "note": "The proof attributes existence in dimension two to Altschuler–Wu and says their argument extends to higher dimensions. This paper’s refined asymptotics and stability are not assigned the original bowl construction credit."
+            }
           },
           {
             "authors": [
@@ -4978,7 +5357,12 @@
             "url": "https://arxiv.org/abs/1711.00823",
             "evidence": "arXiv submission history, version 1: 2017-11-02. Checked 2026-11-09.",
             "key": "CatBrendleChoi19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorem 1.1",
+              "note": "Proves uniqueness of the known bowl among noncompact strictly convex noncollapsed ancient flows."
+            }
           },
           {
             "authors": [
@@ -4992,7 +5376,12 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           },
           {
             "authors": [
@@ -5004,9 +5393,15 @@
             "url": "https://arxiv.org/abs/2301.08224",
             "evidence": "arXiv submission history, version 1: 2023-01-19. Checked 2026-11-09.",
             "key": "CatSunWang2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Theorem 1.1 and paragraph immediately following it",
+              "note": "The general construction recovers the known bowl as the spherical-input case, explicitly attributed to Altschuler–Wu. It is not presented as a new bowl family; retain its role in the references without assigning the bowl’s authorship to this paper."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -5077,14 +5472,14 @@
           }
         }
       ],
-      "title": "Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005; Hoffman–Ilmanen–Martín–White, 2019)",
+      "title": "Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005)",
       "section": "rotational-translating-catenoids",
       "category": "translators",
       "tag": "72E3A9DEA98C",
       "model": "translating-catenoid",
       "illustration_status": "Numerical ODE surface",
       "chronology": {
-        "title": "Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005; Hoffman–Ilmanen–Martín–White, 2019)",
+        "title": "Rotational translating catenoids (Clutterbuck–Schnürer–Schulze, 2005)",
         "name": "Rotational translating catenoids",
         "date": "2005-09-16",
         "earliest_reference": "CSS07",
@@ -5100,7 +5495,12 @@
             "url": "https://arxiv.org/abs/math/0509372",
             "evidence": "arXiv submission history, version 1: 2005-09-16. Checked 2026-11-09.",
             "key": "CSS07",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 2.2, Lemma 2.3 and its proof",
+              "note": "Constructs the winglike solutions by solving the neck ODE and extending both branches to infinity; unlike Lemma 2.2, this is an existence construction in this paper."
+            }
           },
           {
             "authors": [
@@ -5114,8 +5514,16 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           }
+        ],
+        "construction_references": [
+          "CSS07"
         ]
       }
     },
@@ -5159,14 +5567,14 @@
           }
         }
       ],
-      "title": "Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+      "title": "Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Martín–White, 2019)",
       "section": "nguyen-translating-tridents",
       "category": "translators",
       "tag": "27C982677562",
       "model": "nguyen-tridents",
       "illustration_status": "Construction schematic",
       "chronology": {
-        "title": "Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+        "title": "Periodic translating tridents (X. H. Nguyen, 2009; Hoffman–Martín–White, 2019)",
         "name": "Periodic translating tridents",
         "date": "2009",
         "earliest_reference": "CatNguyen09",
@@ -5180,7 +5588,13 @@
             "url": "https://doi.org/10.1080/03605300902768685",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatNguyen09",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1; Section 5, proof of Theorem 1",
+              "note": "Constructs the small-neck tridents by desingularizing a grim reaper and plane and solving the nonlinear perturbation problem.",
+              "reviewed_url": "https://www.researchgate.net/publication/243046956_Translating_Tridents"
+            }
           },
           {
             "authors": [
@@ -5194,7 +5608,12 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           },
           {
             "authors": [
@@ -5207,8 +5626,17 @@
             "url": "https://arxiv.org/abs/1909.09241",
             "evidence": "arXiv submission history, version 1: 2019-09-19. Checked 2026-11-09.",
             "key": "CatHMWTridents22",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1; Sections 2–3",
+              "note": "Constructs tridents for every positive neck parameter by a variational method. The introduction explicitly identifies the small-neck overlap with Nguyen’s construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatNguyen09",
+          "CatHMWTridents22"
         ]
       }
     },
@@ -5300,7 +5728,12 @@
             "url": "https://arxiv.org/abs/1004.2657",
             "evidence": "arXiv submission history, version 1: 2010-04-15. Checked 2026-11-09.",
             "key": "CatNguyen2013",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Main existence theorem and gluing construction",
+              "note": "Constructs translators by desingularizing finite grim-reaper configurations."
+            }
           },
           {
             "authors": [
@@ -5311,8 +5744,17 @@
             "url": "https://arxiv.org/abs/1204.4921",
             "evidence": "arXiv submission history, version 1: 2012-04-22. Checked 2026-11-09.",
             "key": "CatNguyen2015",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorems 1 and 3",
+              "note": "Extends the desingularization construction to periodic grim-reaper configurations."
+            }
           }
+        ],
+        "construction_references": [
+          "CatNguyen2013",
+          "CatNguyen2015"
         ]
       }
     },
@@ -5403,9 +5845,11 @@
             "url": "https://arxiv.org/abs/1106.4583",
             "evidence": "arXiv submission history, version 1: 2011-06-22. Checked 2026-11-09.",
             "key": "CatHalldorsson2013",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -5446,14 +5890,14 @@
           }
         }
       ],
-      "title": "Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015; Hoffman–Ilmanen–Martín–White, 2019)",
+      "title": "Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015)",
       "section": "finite-genus-translators-with-three-ends",
       "category": "translators",
       "tag": "85D3C19BE7E6",
       "model": "bowl-catenoid-gluing",
       "illustration_status": "Construction schematic",
       "chronology": {
-        "title": "Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015; Hoffman–Ilmanen–Martín–White, 2019)",
+        "title": "Finite-genus translators with three ends (Dávila–del Pino–X. H. Nguyen, 2015)",
         "name": "Finite-genus translators with three ends",
         "date": "2015-01-16",
         "earliest_reference": "CatDPN17",
@@ -5469,7 +5913,12 @@
             "url": "https://arxiv.org/abs/1501.03867",
             "evidence": "arXiv submission history, version 1: 2015-01-16. Checked 2026-11-09.",
             "key": "CatDPN17",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1; Section 1.1 and Section 6",
+              "note": "Constructs embedded three-ended finite-genus translators by gluing and a nonlinear fixed-point argument."
+            }
           },
           {
             "authors": [
@@ -5483,8 +5932,16 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           }
+        ],
+        "construction_references": [
+          "CatDPN17"
         ]
       }
     },
@@ -5579,9 +6036,11 @@
             "url": "https://arxiv.org/abs/1805.10860",
             "evidence": "arXiv submission history, version 1: 2018-05-28. Checked 2026-11-09.",
             "key": "CatHIMWGraphical18",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -5645,9 +6104,11 @@
             "url": "https://arxiv.org/abs/1805.10860",
             "evidence": "arXiv submission history, version 1: 2018-05-28. Checked 2026-11-09.",
             "key": "CatHIMWGraphical18",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -5741,9 +6202,11 @@
             "url": "https://arxiv.org/abs/1805.10860",
             "evidence": "arXiv submission history, version 1: 2018-05-28. Checked 2026-11-09.",
             "key": "CatHIMWGraphical18",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -5784,14 +6247,14 @@
           }
         }
       ],
-      "title": "Scherkenoid translators (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+      "title": "Scherkenoid translators (Hoffman–Martín–White, 2019)",
       "section": "scherkenoid-translators",
       "category": "translators",
       "tag": "C6C5A44F27CC",
       "model": "scherkenoid-ends",
       "illustration_status": "Connected construction schematic",
       "chronology": {
-        "title": "Scherkenoid translators (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019)",
+        "title": "Scherkenoid translators (Hoffman–Martín–White, 2019)",
         "name": "Scherkenoid translators",
         "date": "2019-01-25",
         "earliest_reference": "CatHIMWNotes19",
@@ -5808,7 +6271,12 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           },
           {
             "authors": [
@@ -5821,8 +6289,16 @@
             "url": "https://arxiv.org/abs/1903.04617",
             "evidence": "arXiv submission history, version 1: 2019-03-11. Checked 2026-11-09.",
             "key": "CatHMW20",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 2.3 and Section 9",
+              "note": "Constructs this family by solving translator boundary-value problems and, where applicable, taking limits and reflecting."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHMW20"
         ]
       }
     },
@@ -5867,14 +6343,14 @@
           }
         }
       ],
-      "title": "The pitchfork translator (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019; Gama–Martín–Møller, 2022; Martín–Sáez–Tsiamis–White, 2024)",
+      "title": "The pitchfork translator (Hoffman–Martín–White, 2019)",
       "section": "the-pitchfork-translator",
       "category": "translators",
       "tag": "B5E7AB44607B",
       "model": "pitchfork-surface",
       "illustration_status": "Source-informed schematic",
       "chronology": {
-        "title": "The pitchfork translator (Hoffman–Ilmanen–Martín–White, 2019; Hoffman–Martín–White, 2019; Gama–Martín–Møller, 2022; Martín–Sáez–Tsiamis–White, 2024)",
+        "title": "The pitchfork translator (Hoffman–Martín–White, 2019)",
         "name": "The pitchfork translator",
         "date": "2019-01-25",
         "earliest_reference": "CatHIMWNotes19",
@@ -5891,7 +6367,12 @@
             "url": "https://arxiv.org/abs/1901.09101",
             "evidence": "arXiv submission history, version 1: 2019-01-25. Checked 2026-11-09.",
             "key": "CatHIMWNotes19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "survey",
+              "locator": "Sections 3–5, especially pp. 10–12",
+              "note": "Surveys the examples and points to their construction papers. The survey’s full author list is not a construction credit for this example."
+            }
           },
           {
             "authors": [
@@ -5904,7 +6385,12 @@
             "url": "https://arxiv.org/abs/1903.04617",
             "evidence": "arXiv submission history, version 1: 2019-03-11. Checked 2026-11-09.",
             "key": "CatHMW20",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 2.3 and Section 12",
+              "note": "Constructs this family by solving translator boundary-value problems and, where applicable, taking limits and reflecting."
+            }
           },
           {
             "authors": [
@@ -5917,7 +6403,12 @@
             "url": "https://arxiv.org/abs/2209.01640",
             "evidence": "arXiv submission history, version 1: 2022-09-04. Checked 2026-11-09.",
             "key": "CatGMM25",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; entropy and pitchfork uniqueness results",
+              "note": "Studies entropy, wing counts, and uniqueness of previously constructed translators; this is not the construction source for the family."
+            }
           },
           {
             "authors": [
@@ -5931,8 +6422,16 @@
             "url": "https://arxiv.org/abs/2411.16889",
             "evidence": "arXiv submission history, version 1: 2024-11-25. Checked 2026-11-09.",
             "key": "CatMSTW26",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1; Sections 3–4",
+              "note": "Completes the semigraphical classification and proves uniqueness of pitchforks and helicoids. Existence of these families is attributed to the earlier Hoffman–Martín–White papers."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHMW20"
         ]
       }
     },
@@ -5974,14 +6473,14 @@
           }
         }
       ],
-      "title": "Doubly periodic Scherk translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+      "title": "Doubly periodic Scherk translators (Hoffman–Martín–White, 2019)",
       "section": "doubly-periodic-scherk-translators",
       "category": "translators",
       "tag": "D24DEEE97A5F",
       "model": "scherk-translators",
       "illustration_status": "Numerical PDE approximation with illustrative corner fills",
       "chronology": {
-        "title": "Doubly periodic Scherk translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+        "title": "Doubly periodic Scherk translators (Hoffman–Martín–White, 2019)",
         "name": "Doubly periodic Scherk translators",
         "date": "2019-03-11",
         "earliest_reference": "CatHMW20",
@@ -5997,7 +6496,12 @@
             "url": "https://arxiv.org/abs/1903.04617",
             "evidence": "arXiv submission history, version 1: 2019-03-11. Checked 2026-11-09.",
             "key": "CatHMW20",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 2.3 and Sections 3–4",
+              "note": "Constructs this family by solving translator boundary-value problems and, where applicable, taking limits and reflecting."
+            }
           },
           {
             "authors": [
@@ -6011,8 +6515,16 @@
             "url": "https://arxiv.org/abs/2411.16889",
             "evidence": "arXiv submission history, version 1: 2024-11-25. Checked 2026-11-09.",
             "key": "CatMSTW26",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1; Sections 3–4",
+              "note": "Completes the semigraphical classification and proves uniqueness of pitchforks and helicoids. Existence of these families is attributed to the earlier Hoffman–Martín–White papers."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHMW20"
         ]
       }
     },
@@ -6054,14 +6566,14 @@
           }
         }
       ],
-      "title": "Helicoid-like translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+      "title": "Helicoid-like translators (Hoffman–Martín–White, 2019)",
       "section": "helicoid-like-translators",
       "category": "translators",
       "tag": "E6CC94303132",
       "model": "translating-helicoids",
       "illustration_status": "Heuristic schematic",
       "chronology": {
-        "title": "Helicoid-like translators (Hoffman–Martín–White, 2019; Martín–Sáez–Tsiamis–White, 2024)",
+        "title": "Helicoid-like translators (Hoffman–Martín–White, 2019)",
         "name": "Helicoid-like translators",
         "date": "2019-03-11",
         "earliest_reference": "CatHMW20",
@@ -6077,7 +6589,12 @@
             "url": "https://arxiv.org/abs/1903.04617",
             "evidence": "arXiv submission history, version 1: 2019-03-11. Checked 2026-11-09.",
             "key": "CatHMW20",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 2.3 and Section 11",
+              "note": "Constructs this family by solving translator boundary-value problems and, where applicable, taking limits and reflecting."
+            }
           },
           {
             "authors": [
@@ -6091,8 +6608,16 @@
             "url": "https://arxiv.org/abs/2411.16889",
             "evidence": "arXiv submission history, version 1: 2024-11-25. Checked 2026-11-09.",
             "key": "CatMSTW26",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1; Sections 3–4",
+              "note": "Completes the semigraphical classification and proves uniqueness of pitchforks and helicoids. Existence of these families is attributed to the earlier Hoffman–Martín–White papers."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHMW20"
         ]
       }
     },
@@ -6135,14 +6660,14 @@
           }
         }
       ],
-      "title": "Annuloid translators in slabs (Gama–Martín–Møller, 2022; Hoffman–Martín–White, 2023)",
+      "title": "Annuloid translators in slabs (Hoffman–Martín–White, 2023)",
       "section": "annuloid-translators-in-slabs",
       "category": "translators",
       "tag": "4887FC9B88DC",
       "model": "translating-annuloids",
       "illustration_status": "Heuristic schematic",
       "chronology": {
-        "title": "Annuloid translators in slabs (Gama–Martín–Møller, 2022; Hoffman–Martín–White, 2023)",
+        "title": "Annuloid translators in slabs (Hoffman–Martín–White, 2023)",
         "name": "Annuloid translators in slabs",
         "date": "2023-08-04",
         "earliest_reference": "CatHMWAnnuli24",
@@ -6158,7 +6683,12 @@
             "url": "https://arxiv.org/abs/2209.01640",
             "evidence": "arXiv submission history, version 1: 2022-09-04. Checked 2026-11-09.",
             "key": "CatGMM25",
-            "background": "General entropy relation used for annuloids in the later construction paper; not a reference constructing this family."
+            "background": "General entropy relation used for annuloids in the later construction paper; not a reference constructing this family.",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction; entropy and pitchfork uniqueness results",
+              "note": "Studies entropy, wing counts, and uniqueness of previously constructed translators; this is not the construction source for the family."
+            }
           },
           {
             "authors": [
@@ -6171,8 +6701,16 @@
             "url": "https://arxiv.org/abs/2308.02210",
             "evidence": "arXiv submission history, version 1: 2023-08-04. Checked 2026-11-09.",
             "key": "CatHMWAnnuli24",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Introduction and annuloid existence theorem",
+              "note": "Constructs complete properly embedded annular translators with the prescribed inner width and necksize."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHMWAnnuli24"
         ]
       }
     },
@@ -6235,9 +6773,11 @@
             "url": "https://arxiv.org/abs/math/0404326",
             "evidence": "arXiv submission history, version 1: 2004-04-19. Checked 2026-11-09.",
             "key": "CatXJWang11",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6329,9 +6869,11 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6423,9 +6965,11 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6487,9 +7031,11 @@
             "url": "https://arxiv.org/abs/1007.1886",
             "evidence": "arXiv submission history, version 1: 2010-07-12. Checked 2026-11-09.",
             "key": "CatCastroLerma2012",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6553,9 +7099,11 @@
             "url": "https://arxiv.org/abs/2006.16338",
             "evidence": "arXiv submission history, version 1: 2020-06-29. Checked 2026-11-09.",
             "key": "CatBourniLangfordTinaglia2022",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6596,14 +7144,14 @@
           }
         }
       ],
-      "title": "Translators with an embedded rotational shrinking-torus end (Angenent, 1992; Sun–Zhihan Wang, 2023)",
+      "title": "Translators with an embedded rotational shrinking-torus end (Sun–Zhihan Wang, 2023)",
       "section": "translators-with-an-angenent-torus-end",
       "category": "translators",
       "tag": "BF18BDD64F8E",
       "model": "sun-wang-torus-end",
       "illustration_status": "Numerical Angenent profile; auxiliary end model",
       "chronology": {
-        "title": "Translators with an embedded rotational shrinking-torus end (Angenent, 1992; Sun–Zhihan Wang, 2023)",
+        "title": "Translators with an embedded rotational shrinking-torus end (Sun–Zhihan Wang, 2023)",
         "name": "Translators with an embedded rotational shrinking-torus end",
         "date": "2023-01-19",
         "earliest_reference": "CatSunWang2025",
@@ -6617,7 +7165,12 @@
             "url": "https://doi.org/10.1007/978-1-4612-0393-3_2",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAngenent1992",
-            "background": "Constructs the shrinker used as end data, not the translator."
+            "background": "Constructs the shrinker used as end data, not the translator.",
+            "credit_review": {
+              "role": "background",
+              "locator": "Main Theorem",
+              "note": "Constructs the compact torus factor, not the later translator or the cylindrical product entry as a separate construction."
+            }
           },
           {
             "authors": [
@@ -6629,8 +7182,16 @@
             "url": "https://arxiv.org/abs/2301.08224",
             "evidence": "arXiv submission history, version 1: 2023-01-19. Checked 2026-11-09.",
             "key": "CatSunWang2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1",
+              "note": "Constructs translators with the prescribed shrinker as the negative-time tangent-flow factor. The earlier shrinker authors construct the input, not this translator."
+            }
           }
+        ],
+        "construction_references": [
+          "CatSunWang2025"
         ]
       }
     },
@@ -6674,14 +7235,14 @@
           }
         }
       ],
-      "title": "Translators with high-genus spherical-doubling ends (Kapouleas–McGrath, 2020; Sun–Zhihan Wang, 2023)",
+      "title": "Translators with high-genus spherical-doubling ends (Sun–Zhihan Wang, 2023)",
       "section": "translators-with-high-genus-spherical-doubling-ends",
       "category": "translators",
       "tag": "9B1B88A4317F",
       "model": "sun-wang-doubled-sphere-end",
       "illustration_status": "Interactive horizontal-slice schematic in ℝ⁴",
       "chronology": {
-        "title": "Translators with high-genus spherical-doubling ends (Kapouleas–McGrath, 2020; Sun–Zhihan Wang, 2023)",
+        "title": "Translators with high-genus spherical-doubling ends (Sun–Zhihan Wang, 2023)",
         "name": "Translators with high-genus spherical-doubling ends",
         "date": "2023-01-19",
         "earliest_reference": "CatSunWang2025",
@@ -6696,7 +7257,12 @@
             "url": "https://arxiv.org/abs/2001.04240",
             "evidence": "arXiv submission history, version 1: 2020-01-13. Checked 2026-11-09.",
             "key": "CatKapouleasMcGrath2023",
-            "background": "Constructs the shrinker used as end data, not the translator."
+            "background": "Constructs the shrinker used as end data, not the translator.",
+            "credit_review": {
+              "role": "background",
+              "locator": "Catalogue source distinction: input doubled shrinker",
+              "note": "Cited for the shrinker used as input to Sun–Wang’s translator theorem, not for constructing the translator. No translator title credit is assigned."
+            }
           },
           {
             "authors": [
@@ -6708,8 +7274,16 @@
             "url": "https://arxiv.org/abs/2301.08224",
             "evidence": "arXiv submission history, version 1: 2023-01-19. Checked 2026-11-09.",
             "key": "CatSunWang2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1",
+              "note": "Constructs translators with the prescribed shrinker as the negative-time tangent-flow factor. The earlier shrinker authors construct the input, not this translator."
+            }
           }
+        ],
+        "construction_references": [
+          "CatSunWang2025"
         ]
       }
     },
@@ -6802,9 +7376,11 @@
             "url": "https://arxiv.org/abs/2301.08224",
             "evidence": "arXiv submission history, version 1: 2023-01-19. Checked 2026-11-09.",
             "key": "CatSunWang2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6865,9 +7441,11 @@
             "url": "https://arxiv.org/abs/2011.07882",
             "evidence": "arXiv submission history, version 1: 2020-11-16. Checked 2026-11-09.",
             "key": "CatSu2022",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -6929,9 +7507,11 @@
             "url": "https://arxiv.org/abs/2507.01345",
             "evidence": "arXiv submission history, version 1: 2025-07-02. Checked 2026-11-09.",
             "key": "CatSuWood2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7022,9 +7602,11 @@
             "url": "https://arxiv.org/abs/2507.01345",
             "evidence": "arXiv submission history, version 1: 2025-07-02. Checked 2026-11-09.",
             "key": "CatSuWood2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7087,9 +7669,11 @@
             "url": "https://arxiv.org/abs/2609.04675",
             "evidence": "arXiv submission history, version 1: 2026-09-04. Checked 2026-11-09.",
             "key": "CatDavilaPinoWei2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7179,9 +7763,11 @@
             "url": "https://arxiv.org/abs/1803.02783",
             "evidence": "arXiv submission history, version 1: 2018-03-07. Checked 2026-11-09.",
             "key": "CatBueno2018",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7300,9 +7886,11 @@
             "url": "https://arxiv.org/abs/1811.04619",
             "evidence": "arXiv submission history, version 1: 2018-11-12. Checked 2026-11-09.",
             "key": "CatPipoli2018",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7392,9 +7980,11 @@
             "url": "https://arxiv.org/abs/1906.08077",
             "evidence": "arXiv submission history, version 1: 2019-06-19. Checked 2026-11-09.",
             "key": "CatPipoli2019",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7485,7 +8075,12 @@
             "url": "https://arxiv.org/abs/2109.14809",
             "evidence": "arXiv submission history, version 1: 2021-09-30. Checked 2026-11-09.",
             "key": "CatFujii2024",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1; reduced ODE and domain analysis",
+              "note": "Obtains the invariant translator profiles over the sphere by solving and analyzing the profile ODE."
+            }
           },
           {
             "authors": [
@@ -7497,8 +8092,17 @@
             "url": "https://arxiv.org/abs/2308.15790",
             "evidence": "arXiv submission history, version 1: 2023-08-30. Checked 2026-11-09.",
             "key": "CatFujiiKoike2023",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorems 1.1–1.3; reduced equations",
+              "note": "Obtains the corresponding invariant profiles over compact symmetric spaces and derives the higher-rank equations."
+            }
           }
+        ],
+        "construction_references": [
+          "CatFujii2024",
+          "CatFujiiKoike2023"
         ]
       }
     },
@@ -7621,7 +8225,12 @@
             "url": "https://arxiv.org/abs/2307.14136",
             "evidence": "arXiv submission history, version 1: 2023-07-26. Checked 2026-11-09.",
             "key": "CatLimaRamosSantos2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Introduction; Theorems 3.10 and 3.20",
+              "note": "Constructs hyperbolic translating catenoids and grim-reaper analogues in H3."
+            }
           },
           {
             "authors": [
@@ -7633,8 +8242,17 @@
             "url": "https://arxiv.org/abs/2602.02424",
             "evidence": "arXiv submission history, version 1: 2026-02-02. Checked 2026-11-09.",
             "key": "CatLimaRamos2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Introduction; Section 3",
+              "note": "Constructs rotational hyperbolic translating catenoids in all recorded dimensions as barriers, extending the H3 construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatLimaRamosSantos2026",
+          "CatLimaRamos2026"
         ]
       }
     },
@@ -7698,9 +8316,11 @@
             "url": "https://arxiv.org/abs/2402.04757",
             "evidence": "arXiv submission history, version 1: 2024-02-07. Checked 2026-11-09.",
             "key": "CatLimaRamosSantos2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7762,9 +8382,11 @@
             "url": "https://arxiv.org/abs/2402.05772",
             "evidence": "arXiv submission history, version 1: 2024-02-08. Checked 2026-11-09.",
             "key": "CatBuenoLopez2024",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7826,9 +8448,11 @@
             "url": "https://arxiv.org/abs/2402.05533",
             "evidence": "arXiv submission history, version 1: 2024-02-08. Checked 2026-11-09.",
             "key": "CatBuenoLopez2024a",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7890,9 +8514,11 @@
             "url": "https://arxiv.org/abs/2405.15957",
             "evidence": "arXiv submission history, version 1: 2024-05-24. Checked 2026-11-09.",
             "key": "CatLopezMunteanu2024",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -7954,9 +8580,11 @@
             "url": "https://doi.org/10.1016/j.physd.2007.03.009",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChenGuo2007",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8025,14 +8653,14 @@
           }
         }
       ],
-      "title": "Self-expanding planar tree networks (Mazzeo–Saez, 2007; Ilmanen–Neves–Schulze, 2014)",
+      "title": "Self-expanding planar tree networks (Mazzeo–Saez, 2007)",
       "section": "self-expanding-planar-tree-networks",
       "category": "expanders",
       "tag": "16898F334139",
       "model": "expanding-network",
       "illustration_status": "Numerical ODE solution",
       "chronology": {
-        "title": "Self-expanding planar tree networks (Mazzeo–Saez, 2007; Ilmanen–Neves–Schulze, 2014)",
+        "title": "Self-expanding planar tree networks (Mazzeo–Saez, 2007)",
         "name": "Self-expanding planar tree networks",
         "date": "2007-04-24",
         "earliest_reference": "CatMS07",
@@ -8047,7 +8675,12 @@
             "url": "https://arxiv.org/abs/0704.3113",
             "evidence": "arXiv submission history, version 1: 2007-04-24. Checked 2026-11-09.",
             "key": "CatMS07",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Main Theorem; Section 3",
+              "note": "Proves existence of expanding networks by constructing geodesic Steiner trees for the conformal metric."
+            }
           },
           {
             "authors": [
@@ -8060,8 +8693,16 @@
             "url": "https://arxiv.org/abs/1407.4756",
             "evidence": "arXiv submission history, version 1: 2014-07-17. Checked 2026-11-09.",
             "key": "CatINS19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorem 1.1, Remarks 1.2(i); Section 4, Theorem 4.4",
+              "note": "Uses self-expanding networks in the short-time flow construction and proves uniqueness within a topological class; the new general flow is not a new expander family."
+            }
           }
+        ],
+        "construction_references": [
+          "CatMS07"
         ]
       }
     },
@@ -8152,7 +8793,12 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "alternative-construction",
+              "locator": "Section 6, Theorem 6.1; Introduction",
+              "note": "Constructs the expanding profiles through the ODE phase portrait and classifies them; the introduction acknowledges earlier work on homothetic expanders."
+            }
           },
           {
             "authors": [
@@ -8163,8 +8809,17 @@
             "url": "https://arxiv.org/abs/1503.02612",
             "evidence": "arXiv submission history, version 1: 2015-03-09. Checked 2026-11-09.",
             "key": "CatDing20",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "alternative-construction",
+              "locator": "Section 4, equations (4.9)–(4.15), pp. 373–374",
+              "note": "Constructs the even corner-expander profiles by a boundary-value limit and proves their weighted minimizing property. This is a construction of an already known planar family."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHalldorsson2012",
+          "CatDing20"
         ]
       }
     },
@@ -8257,9 +8912,11 @@
             "url": "https://doi.org/10.2307/1971452",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatEckerHuisken1989",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8352,9 +9009,11 @@
             "url": "https://doi.org/10.1080/03605309508821158",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAIC95",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8447,9 +9106,11 @@
             "url": "https://doi.org/10.1080/03605309508821158",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAIC95",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8540,9 +9201,11 @@
             "url": "https://arxiv.org/abs/1503.02612",
             "evidence": "arXiv submission history, version 1: 2015-03-09. Checked 2026-11-09.",
             "key": "CatDing20",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8633,9 +9296,11 @@
             "url": "https://arxiv.org/abs/1503.02612",
             "evidence": "arXiv submission history, version 1: 2015-03-09. Checked 2026-11-09.",
             "key": "CatDing20",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8727,9 +9392,11 @@
             "url": "https://arxiv.org/abs/2003.13857",
             "evidence": "arXiv submission history, version 1: 2020-03-30. Checked 2026-11-09.",
             "key": "CatBWMP20",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8792,7 +9459,12 @@
             "url": "https://arxiv.org/abs/2507.19428",
             "evidence": "arXiv submission history, version 1: 2025-07-25. Checked 2026-11-09.",
             "key": "CatShaoZou2025a",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Introduction, main existence results",
+              "note": "Constructs positive-genus expanders by desingularization, including sequences with unbounded genus at a fixed cone. This is a separate construction, with its own hypotheses."
+            }
           },
           {
             "authors": [
@@ -8805,8 +9477,17 @@
             "url": "https://arxiv.org/abs/2605.09657",
             "evidence": "arXiv submission history, version 1: 2026-05-10. Checked 2026-11-09.",
             "key": "CatHMWExpand26",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.2; Theorems 5.1 and 12.6–12.7",
+              "note": "Constructs expanders of arbitrarily large genus at a fixed cone, including the four classes in the catalogue."
+            }
           }
+        ],
+        "construction_references": [
+          "CatShaoZou2025a",
+          "CatHMWExpand26"
         ]
       }
     },
@@ -8868,9 +9549,11 @@
             "url": "https://arxiv.org/abs/2512.02578",
             "evidence": "arXiv submission history, version 1: 2025-12-02. Checked 2026-11-09.",
             "key": "CatLiao2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -8961,9 +9644,11 @@
             "url": "https://arxiv.org/abs/2611.02829",
             "evidence": "arXiv submission history, version 1: 2026-11-02. Checked 2026-11-09.",
             "key": "CatMWKnotted26",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9033,14 +9718,14 @@
           }
         }
       ],
-      "title": "Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+      "title": "Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008)",
       "section": "joyce-lee-tsui-lagrangian-expander-necks",
       "category": "expanders",
       "tag": "E25A2DDDEA95",
       "model": "jlt-expanders",
       "illustration_status": "Numerical quadrature and projection",
       "chronology": {
-        "title": "Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+        "title": "Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008)",
         "name": "Lagrangian expander necks between transverse planes",
         "date": "2008-01-24",
         "earliest_reference": "CatJoyceLeeTsui2010",
@@ -9056,7 +9741,12 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 3.2, Theorems C–D; Section 5",
+              "note": "Constructs the positive-rate expanding family asymptotic to transverse Lagrangian planes, extending the special Lagrangian and symmetric cases."
+            }
           },
           {
             "authors": [
@@ -9069,8 +9759,16 @@
             "url": "https://arxiv.org/abs/1404.0271",
             "evidence": "arXiv submission history, version 1: 2014-04-01. Checked 2026-11-09.",
             "key": "CatImagiJoyceOliveira2016",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.1–1.2; Examples 3.9 and Section 3.6",
+              "note": "Proves uniqueness of the families explicitly attributed to Lawlor and Joyce–Lee–Tsui; descriptions of the earlier examples are not new constructions."
+            }
           }
+        ],
+        "construction_references": [
+          "CatJoyceLeeTsui2010"
         ]
       }
     },
@@ -9163,9 +9861,11 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9257,9 +9957,11 @@
             "url": "https://arxiv.org/abs/2309.09432",
             "evidence": "arXiv submission history, version 1: 2023-09-18. Checked 2026-11-09.",
             "key": "CatTsaiTsuiWang2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9351,9 +10053,11 @@
             "url": "https://arxiv.org/abs/2610.25833",
             "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
             "key": "CatNeto2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9415,7 +10119,12 @@
             "url": "https://doi.org/10.1007/s10711-006-9082-z",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAnciaux2006",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 2 and the minimal Legendrian product ansatz",
+              "note": "Constructs the Lagrangian family by combining minimal Legendrian leaves with solutions of the profile ODE."
+            }
           },
           {
             "authors": [
@@ -9427,8 +10136,17 @@
             "url": "https://arxiv.org/abs/2208.01574",
             "evidence": "arXiv submission history, version 1: 2022-08-02. Checked 2026-11-09.",
             "key": "CatMadnickWood2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1, Sections 5 and 7",
+              "note": "Uses Anciaux’s profiles with admissible group orbits to give explicit cohomogeneity-one subfamilies covered by this entry. Credit is for these constructed subfamilies, not the earlier general ansatz."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAnciaux2006",
+          "CatMadnickWood2025"
         ]
       }
     },
@@ -9491,9 +10209,11 @@
             "url": "https://arxiv.org/abs/0802.0359",
             "evidence": "arXiv submission history, version 1: 2008-02-04. Checked 2026-11-09.",
             "key": "CatLeeWang2010",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9554,9 +10274,11 @@
             "url": "https://arxiv.org/abs/2211.05625",
             "evidence": "arXiv submission history, version 1: 2022-11-10. Checked 2026-11-09.",
             "key": "CatLee2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9597,14 +10319,14 @@
           }
         }
       ],
-      "title": "The ancient sine wave (Nakayama–Iizuka–Wadati, 1994; Angenent–You, 2018)",
+      "title": "The ancient sine wave",
       "section": "the-ancient-sine-wave",
       "category": "other-special-flows",
       "tag": "3BF94583DFB1",
       "model": "literature-ancient-sine-wave",
       "illustration_status": "Exact formula",
       "chronology": {
-        "title": "The ancient sine wave (Nakayama–Iizuka–Wadati, 1994; Angenent–You, 2018)",
+        "title": "The ancient sine wave",
         "name": "The ancient sine wave",
         "date": "1994",
         "earliest_reference": "CatNakayamaIizukaWadati1994",
@@ -9620,7 +10342,12 @@
             "url": "https://doi.org/10.1143/JPSJ.63.1311",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatNakayamaIizukaWadati1994",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "unreviewed",
+              "locator": "No readable construction passage verified in this audit",
+              "note": "No title credit is assigned until the original construction passage has been read. Existing references and dates are retained."
+            }
           },
           {
             "authors": [
@@ -9632,9 +10359,15 @@
             "url": "https://arxiv.org/abs/1803.01399",
             "evidence": "arXiv submission history, version 1: 2018-03-04. Checked 2026-11-09.",
             "key": "CatAY18",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Introduction, p. 1, and Figure 1",
+              "note": "Explicitly attributes the ancient sine wave to Nakayama–Iizuka–Wadati. Its new construction concerns grim-reaper chains, not the cited sine-wave formula."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -9821,14 +10554,14 @@
           }
         }
       ],
-      "title": "Purely rotating curve-shortening solitons (Halldórsson, 2010; Halldórsson, 2011; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
+      "title": "Purely rotating curve-shortening solitons (Halldórsson, 2010; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
       "section": "purely-rotating-curve-shortening-solitons",
       "category": "other-special-flows",
       "tag": "999F58954ACB",
       "model": "aaaw-rotator",
       "illustration_status": "Numerical ODE curve",
       "chronology": {
-        "title": "Purely rotating curve-shortening solitons (Halldórsson, 2010; Halldórsson, 2011; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
+        "title": "Purely rotating curve-shortening solitons (Halldórsson, 2010; D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012)",
         "name": "Purely rotating curve-shortening solitons",
         "date": "2010-07-09",
         "earliest_reference": "CatHalldorsson2012",
@@ -9842,7 +10575,12 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 2 and Sections 3–5",
+              "note": "Derives and solves the planar profile system for rotation and combined rotation/dilation; this is an ODE construction as well as a classification."
+            }
           },
           {
             "authors": [
@@ -9853,7 +10591,12 @@
             "url": "https://arxiv.org/abs/1106.4583",
             "evidence": "arXiv submission history, version 1: 2011-06-22. Checked 2026-11-09.",
             "key": "CatHalldorsson2013",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "background",
+              "locator": "Introduction; Sections 3–4",
+              "note": "Constructs helicoidal surfaces. The plane-curve construction in this entry is from the separate curve-shortening paper; a related helicoidal surface is not a second construction of this curve family."
+            }
           },
           {
             "authors": [
@@ -9867,8 +10610,17 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.1–4.2, equations (27)–(31); Sections 6–8",
+              "note": "Derives the global profile ODE constructions in arbitrary Euclidean dimension and analyzes their ends."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHalldorsson2012",
+          "CatAAAW13"
         ]
       }
     },
@@ -10018,7 +10770,12 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 2 and Sections 3–5",
+              "note": "Derives and solves the planar profile system for rotation and combined rotation/dilation; this is an ODE construction as well as a classification."
+            }
           },
           {
             "authors": [
@@ -10032,8 +10789,17 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.1–4.2, equations (27)–(31); Sections 6–8",
+              "note": "Derives the global profile ODE constructions in arbitrary Euclidean dimension and analyzes their ends."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHalldorsson2012",
+          "CatAAAW13"
         ]
       }
     },
@@ -10241,7 +11007,12 @@
             "url": "https://arxiv.org/abs/1007.1617",
             "evidence": "arXiv submission history, version 1: 2010-07-09. Checked 2026-11-09.",
             "key": "CatHalldorsson2012",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 2 and Sections 3–5",
+              "note": "Derives and solves the planar profile system for rotation and combined rotation/dilation; this is an ODE construction as well as a classification."
+            }
           },
           {
             "authors": [
@@ -10255,8 +11026,17 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 4.1–4.2, equations (27)–(31); Sections 6–8",
+              "note": "Derives the global profile ODE constructions in arbitrary Euclidean dimension and analyzes their ends."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHalldorsson2012",
+          "CatAAAW13"
         ]
       }
     },
@@ -10319,9 +11099,11 @@
             "url": "https://arxiv.org/abs/1106.0092",
             "evidence": "arXiv submission history, version 1: 2011-06-01. Checked 2026-11-09.",
             "key": "BV11",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -10363,14 +11145,14 @@
           }
         }
       ],
-      "title": "Eternal curves from chains of grim reapers (Angenent–You, 2018; Choi–Seo–Su–Zhao, 2026)",
+      "title": "Eternal curves from chains of grim reapers (Angenent–You, 2018)",
       "section": "eternal-curves-from-chains-of-grim-reapers",
       "category": "other-special-flows",
       "tag": "B7D6B1E7217F",
       "model": "grim-reaper-chains",
       "illustration_status": "Numerical curve-shortening flow",
       "chronology": {
-        "title": "Eternal curves from chains of grim reapers (Angenent–You, 2018; Choi–Seo–Su–Zhao, 2026)",
+        "title": "Eternal curves from chains of grim reapers (Angenent–You, 2018)",
         "name": "Eternal curves from chains of grim reapers",
         "date": "2018-03-04",
         "earliest_reference": "CatAY18",
@@ -10385,7 +11167,12 @@
             "url": "https://arxiv.org/abs/1803.01399",
             "evidence": "arXiv submission history, version 1: 2018-03-04. Checked 2026-11-09.",
             "key": "CatAY18",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Sections 2.4–2.5 and subsequent convergence argument",
+              "note": "Builds broken grim-reaper chains, evolves approximating initial curves, and takes an ancient limit."
+            }
           },
           {
             "authors": [
@@ -10399,8 +11186,16 @@
             "url": "https://arxiv.org/abs/2603.09112",
             "evidence": "arXiv submission history, version 1: 2026-03-10. Checked 2026-11-09.",
             "key": "CatChoiSeoSuZhao2026",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Introduction, Theorem 1.1 and paragraph following it",
+              "note": "Classifies finite-entropy ancient embedded curve flows and explicitly attributes the trombone constructions to Angenent–You."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAY18"
         ]
       }
     },
@@ -10492,9 +11287,11 @@
             "url": "https://arxiv.org/abs/1803.01399",
             "evidence": "arXiv submission history, version 1: 2018-03-04. Checked 2026-11-09.",
             "key": "CatAY18",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -10555,9 +11352,11 @@
             "url": "https://arxiv.org/abs/2003.03018",
             "evidence": "arXiv submission history, version 1: 2020-03-06. Checked 2026-11-09.",
             "key": "CatMa2021",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -10679,7 +11478,12 @@
             "url": "https://arxiv.org/abs/2111.06051",
             "evidence": "arXiv submission history, version 1: 2021-11-11. Checked 2026-11-09.",
             "key": "CatBourniLangford2023",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1; Section 2, Existence",
+              "note": "Constructs the ancient convex free-boundary curve in the disc, as well as proving uniqueness."
+            }
           },
           {
             "authors": [
@@ -10691,8 +11495,17 @@
             "url": "https://arxiv.org/abs/2204.06710",
             "evidence": "arXiv submission history, version 1: 2022-04-14. Checked 2026-11-09.",
             "key": "CatBourniLangford2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1; Section 3",
+              "note": "Constructs the higher-dimensional ancient free-boundary flows using the critical-Robin ground state; not just a citation to the disc case."
+            }
           }
+        ],
+        "construction_references": [
+          "CatBourniLangford2023",
+          "CatBourniLangford2025"
         ]
       }
     },
@@ -10757,9 +11570,11 @@
             "url": "https://arxiv.org/abs/2204.05253",
             "evidence": "arXiv submission history, version 1: 2022-04-11. Checked 2026-11-09.",
             "key": "CatZOKA23",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -10851,9 +11666,11 @@
             "url": "https://arxiv.org/abs/2404.01525",
             "evidence": "arXiv submission history, version 1: 2024-04-01. Checked 2026-11-09.",
             "key": "CatLangfordLiuMcNamara2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -10916,9 +11733,11 @@
             "url": "https://arxiv.org/abs/2404.08824",
             "evidence": "arXiv submission history, version 1: 2024-04-12. Checked 2026-11-09.",
             "key": "CatBourniBurnsCatron2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11108,14 +11927,14 @@
           }
         }
       ],
-      "title": "Minimal surfaces as stationary mean curvature flows (Chopp, 1993; Mantegazza, 2011)",
+      "title": "Minimal surfaces as stationary mean curvature flows",
       "section": "the-catenoid-as-an-eternal-stationary-flow",
       "category": "other-special-flows",
       "tag": "AC1C0D984A58",
       "model": "catenoid",
       "illustration_status": "Exact formula",
       "chronology": {
-        "title": "Minimal surfaces as stationary mean curvature flows (Chopp, 1993; Mantegazza, 2011)",
+        "title": "Minimal surfaces as stationary mean curvature flows",
         "name": "Minimal surfaces as stationary mean curvature flows",
         "date": "1993",
         "earliest_reference": "CatChoppMinimal1993",
@@ -11129,7 +11948,12 @@
             "url": "https://doi.org/10.1006/jcph.1993.1092",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatChoppMinimal1993",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Section 4, printed pp. 86–87, Figure 20",
+              "note": "Uses Euler’s known catenoid as an exact benchmark for the numerical minimal-surface solver; does not introduce the classical catenoid."
+            }
           },
           {
             "authors": [
@@ -11140,9 +11964,15 @@
             "url": "https://doi.org/10.1007/978-3-0348-0145-4",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatMan11",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "unreviewed",
+              "locator": "No readable construction passage verified in this audit",
+              "note": "No title credit is assigned until the original construction passage has been read. Existing references and dates are retained."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11234,9 +12064,11 @@
             "url": "https://doi.org/10.1515/crll.1997.482.15",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatAV97",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11326,9 +12158,11 @@
             "url": "https://arxiv.org/abs/1106.4583",
             "evidence": "arXiv submission history, version 1: 2011-06-22. Checked 2026-11-09.",
             "key": "CatHalldorsson2013",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11422,7 +12256,12 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 3, Circles and Shrinking Helices",
+              "note": "Constructs the flows with static Euclidean symmetry by reducing the evolution to an ODE, including compact torus curves and noncompact helices."
+            }
           },
           {
             "authors": [
@@ -11434,8 +12273,17 @@
             "url": "https://arxiv.org/abs/1908.02688",
             "evidence": "arXiv submission history, version 1: 2019-08-07. Checked 2026-11-09.",
             "key": "CatSS19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "alternative-construction",
+              "locator": "Section 2.2, Proposition 2.6 and Appendix Theorem A.2; Remark 1.3",
+              "note": "Constructs and verifies the eternal helix flows. The paper explicitly acknowledges the earlier Altschuler–Altschuler–Angenent–Wu construction; no original-discovery claim is intended."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAAAW13",
+          "CatSS19"
         ]
       }
     },
@@ -11645,9 +12493,11 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11718,14 +12568,14 @@
           }
         }
       ],
-      "title": "Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013; Huisken–Sinestrari, 2014)",
+      "title": "Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013)",
       "section": "haslhofer-hershkovits-ancient-ovals",
       "category": "other-special-flows",
       "tag": "56D296501918",
       "model": "hh-ancient-ovals",
       "illustration_status": "Numerical PDE approximation",
       "chronology": {
-        "title": "Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013; Huisken–Sinestrari, 2014)",
+        "title": "Compact noncollapsed convex ancient ovals (Haslhofer–Hershkovits, 2013)",
         "name": "Compact noncollapsed convex ancient ovals",
         "date": "2013-08-19",
         "earliest_reference": "CatHH13",
@@ -11740,7 +12590,12 @@
             "url": "https://arxiv.org/abs/1308.4095",
             "evidence": "arXiv submission history, version 1: 2013-08-19. Checked 2026-11-09.",
             "key": "CatHH13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Introduction, Theorem 1.1; Section 3",
+              "note": "Carries out the ancient-oval existence construction, explicitly crediting White’s earlier construction strategy."
+            }
           },
           {
             "authors": [
@@ -11752,8 +12607,16 @@
             "url": "https://arxiv.org/abs/1405.7509",
             "evidence": "arXiv submission history, version 1: 2014-05-29. Checked 2026-11-09.",
             "key": "CatHS14",
-            "background": "A general pinching rigidity theorem used to explain a limitation of the ancient ovals."
+            "background": "A general pinching rigidity theorem used to explain a limitation of the ancient ovals.",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Abstract and Section 1",
+              "note": "Studies rigidity conditions forcing a convex ancient solution to be a shrinking sphere; it is not the ancient-oval construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatHH13"
         ]
       }
     },
@@ -11847,9 +12710,11 @@
             "url": "https://arxiv.org/abs/1705.06981",
             "evidence": "arXiv submission history, version 1: 2017-05-19. Checked 2026-11-09.",
             "key": "CatBourniLangfordTinaglia2017",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -11890,14 +12755,14 @@
           }
         }
       ],
-      "title": "Ancient flows from unstable minimal hypersurfaces (Melko, 2010; Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
+      "title": "Ancient flows from unstable minimal hypersurfaces (Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
       "section": "ancient-flows-from-unstable-minimal-hypersurfaces",
       "category": "other-special-flows",
       "tag": "8A13A6308368",
       "model": "minimal-ancient-flows",
       "illustration_status": "Numerical Costa surface and linearized time model",
       "chronology": {
-        "title": "Ancient flows from unstable minimal hypersurfaces (Melko, 2010; Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
+        "title": "Ancient flows from unstable minimal hypersurfaces (Mramor–Payne, 2019; Choi–Huang–Lee, 2024)",
         "name": "Ancient flows from unstable minimal hypersurfaces",
         "date": "2019-04-17",
         "earliest_reference": "CatMP19",
@@ -11911,7 +12776,12 @@
             "url": "https://www.mathematica-journal.com/2010/12/22/visualizing-minimal-surfaces/",
             "evidence": "Publication year in the reviewed bibliography; no earlier public preprint identified.",
             "key": "CatMelko2010",
-            "background": "Parametrization of the stationary Costa surface used for the illustration, not the ancient flow constructed from it."
+            "background": "Parametrization of the stationary Costa surface used for the illustration, not the ancient flow constructed from it.",
+            "credit_review": {
+              "role": "background",
+              "locator": "Catalogue illustration credit",
+              "note": "The Costa-surface illustration supplies a stationary reference shape, not the ancient-flow construction. No title credit is assigned."
+            }
           },
           {
             "authors": [
@@ -11923,7 +12793,12 @@
             "url": "https://arxiv.org/abs/1904.08439",
             "evidence": "arXiv submission history, version 1: 2019-04-17. Checked 2026-11-09.",
             "key": "CatMP19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.1",
+              "note": "Constructs ancient flows converging from either side to unstable minimal hypersurfaces under the stated geometry assumptions."
+            }
           },
           {
             "authors": [
@@ -11936,8 +12811,17 @@
             "url": "https://arxiv.org/abs/2405.01062",
             "evidence": "arXiv submission history, version 1: 2024-05-02. Checked 2026-11-09.",
             "key": "CatChoiHuangLee2025",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorems 1.1–1.2; Theorems 4.4, 5.1 and 5.3",
+              "note": "Constructs index-parameter families with exponential space-time convergence and a mean-convex subfamily; it is not merely citing the earlier construction."
+            }
           }
+        ],
+        "construction_references": [
+          "CatMP19",
+          "CatChoiHuangLee2025"
         ]
       }
     },
@@ -12030,9 +12914,11 @@
             "url": "https://arxiv.org/abs/1904.08439",
             "evidence": "arXiv submission history, version 1: 2019-04-17. Checked 2026-11-09.",
             "key": "CatMP19",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12125,9 +13011,11 @@
             "url": "https://arxiv.org/abs/1911.05641",
             "evidence": "arXiv submission history, version 1: 2019-11-13. Checked 2026-11-09.",
             "key": "CatBourniLangfordMramor2020",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12220,9 +13108,11 @@
             "url": "https://arxiv.org/abs/2006.16338",
             "evidence": "arXiv submission history, version 1: 2020-06-29. Checked 2026-11-09.",
             "key": "CatBourniLangfordTinaglia2022",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12315,9 +13205,11 @@
             "url": "https://arxiv.org/abs/2006.16338",
             "evidence": "arXiv submission history, version 1: 2020-06-29. Checked 2026-11-09.",
             "key": "CatBourniLangfordTinaglia2022",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12379,9 +13271,11 @@
             "url": "https://arxiv.org/abs/2201.02134",
             "evidence": "arXiv submission history, version 1: 2022-01-06. Checked 2026-11-09.",
             "key": "CatBourniMramor2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12472,9 +13366,11 @@
             "url": "https://arxiv.org/abs/2212.10798",
             "evidence": "arXiv submission history, version 1: 2022-12-21. Checked 2026-11-09.",
             "key": "CatChen2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12536,9 +13432,11 @@
             "url": "https://arxiv.org/abs/2312.17457",
             "evidence": "arXiv submission history, version 1: 2023-12-29. Checked 2026-11-09.",
             "key": "CatCS26R3",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12608,14 +13506,14 @@
           }
         }
       ],
-      "title": "Stationary special Lagrangian necks (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+      "title": "Stationary special Lagrangian necks",
       "section": "lawlor-necks-as-stationary-lagrangian-flows",
       "category": "other-special-flows",
       "tag": "263868E061E7",
       "model": "lawlor-necks",
       "illustration_status": "Exact four-dimensional projection",
       "chronology": {
-        "title": "Stationary special Lagrangian necks (Joyce–Lee–Tsui, 2008; Imagi–Joyce–Oliveira dos Santos, 2014)",
+        "title": "Stationary special Lagrangian necks",
         "name": "Stationary special Lagrangian necks",
         "date": "2008-01-24",
         "earliest_reference": "CatJoyceLeeTsui2010",
@@ -12631,7 +13529,12 @@
             "url": "https://arxiv.org/abs/0801.3721",
             "evidence": "arXiv submission history, version 1: 2008-01-24. Checked 2026-11-09.",
             "key": "CatJoyceLeeTsui2010",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "prior-construction",
+              "locator": "Section 3.2, Theorem C, alpha = 0; Section 5",
+              "note": "Explicitly identifies the alpha = 0 examples with Lawlor’s necks and generalizes their treatment; it does not claim to introduce this neck family."
+            }
           },
           {
             "authors": [
@@ -12644,9 +13547,15 @@
             "url": "https://arxiv.org/abs/1404.0271",
             "evidence": "arXiv submission history, version 1: 2014-04-01. Checked 2026-11-09.",
             "key": "CatImagiJoyceOliveira2016",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.1–1.2; Examples 3.9 and Section 3.6",
+              "note": "Proves uniqueness of the families explicitly attributed to Lawlor and Joyce–Lee–Tsui; descriptions of the earlier examples are not new constructions."
+            }
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12770,7 +13679,12 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Section 3, Circles and Shrinking Helices",
+              "note": "Constructs the flows with static Euclidean symmetry by reducing the evolution to an ODE, including compact torus curves and noncompact helices."
+            }
           },
           {
             "authors": [
@@ -12782,8 +13696,17 @@
             "url": "https://arxiv.org/abs/1908.02688",
             "evidence": "arXiv submission history, version 1: 2019-08-07. Checked 2026-11-09.",
             "key": "CatSS19",
-            "background": ""
+            "background": "",
+            "credit_review": {
+              "role": "alternative-construction",
+              "locator": "Section 2.1, Proposition 2.1; Remark 1.3",
+              "note": "Gives an explicit construction and proof, but Remark 1.3 acknowledges that Altschuler–Altschuler–Angenent–Wu had already discovered it. Credit here is for an independent construction, not first discovery."
+            }
           }
+        ],
+        "construction_references": [
+          "CatAAAW13",
+          "CatSS19"
         ]
       }
     },
@@ -12877,9 +13800,11 @@
             "url": "https://arxiv.org/abs/1207.4051",
             "evidence": "arXiv submission history, version 1: 2012-07-17. Checked 2026-11-09.",
             "key": "CatAAAW13",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -12969,9 +13894,11 @@
             "url": "https://arxiv.org/abs/1802.02108",
             "evidence": "arXiv submission history, version 1: 2018-02-06. Checked 2026-11-09.",
             "key": "CatViana18",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13062,9 +13989,11 @@
             "url": "https://arxiv.org/abs/1911.12535",
             "evidence": "arXiv submission history, version 1: 2019-11-28. Checked 2026-11-09.",
             "key": "CatLiuTerng2020",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13127,9 +14056,11 @@
             "url": "https://arxiv.org/abs/2105.13830",
             "evidence": "arXiv submission history, version 1: 2021-05-28. Checked 2026-11-09.",
             "key": "CatDuHaslhofer2021",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13192,9 +14123,11 @@
             "url": "https://arxiv.org/abs/2509.26515",
             "evidence": "arXiv submission history, version 1: 2025-09-30. Checked 2026-11-09.",
             "key": "CatMY26",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13255,9 +14188,11 @@
             "url": "https://arxiv.org/abs/2003.06383",
             "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
             "key": "CatStolarski2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13319,9 +14254,11 @@
             "url": "https://arxiv.org/abs/2208.01574",
             "evidence": "arXiv submission history, version 1: 2022-08-02. Checked 2026-11-09.",
             "key": "CatMadnickWood2025",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13383,9 +14320,11 @@
             "url": "https://arxiv.org/abs/2507.01345",
             "evidence": "arXiv submission history, version 1: 2025-07-02. Checked 2026-11-09.",
             "key": "CatSuWood2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13447,9 +14386,11 @@
             "url": "https://arxiv.org/abs/2607.03152",
             "evidence": "arXiv submission history, version 1: 2026-07-03. Checked 2026-11-09.",
             "key": "CatStolarskiSu2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13540,9 +14481,11 @@
             "url": "https://arxiv.org/abs/1911.12535",
             "evidence": "arXiv submission history, version 1: 2019-11-28. Checked 2026-11-09.",
             "key": "CatLiuTerng2020",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13604,9 +14547,11 @@
             "url": "https://arxiv.org/abs/2004.00054",
             "evidence": "arXiv submission history, version 1: 2020-03-31. Checked 2026-11-09.",
             "key": "CatMaganoSmith2020",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13668,9 +14613,11 @@
             "url": "https://arxiv.org/abs/2101.07469",
             "evidence": "arXiv submission history, version 1: 2021-01-19. Checked 2026-11-09.",
             "key": "CatWoolgarXie2022",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13761,9 +14708,11 @@
             "url": "https://arxiv.org/abs/2305.05744",
             "evidence": "arXiv submission history, version 1: 2023-05-09. Checked 2026-11-09.",
             "key": "CatLotayOliveira2023",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13826,9 +14775,11 @@
             "url": "https://arxiv.org/abs/2401.02228",
             "evidence": "arXiv submission history, version 1: 2024-01-04. Checked 2026-11-09.",
             "key": "CatSuTsaiWood2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -13919,9 +14870,11 @@
             "url": "https://arxiv.org/abs/2402.04521",
             "evidence": "arXiv submission history, version 1: 2024-02-07. Checked 2026-11-09.",
             "key": "CatCS25Man",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -14012,9 +14965,11 @@
             "url": "https://arxiv.org/abs/2602.08850",
             "evidence": "arXiv submission history, version 1: 2026-02-09. Checked 2026-11-09.",
             "key": "CatBourniFranz2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -14076,9 +15031,11 @@
             "url": "https://arxiv.org/abs/2606.28767",
             "evidence": "arXiv submission history, version 1: 2026-06-27. Checked 2026-11-09.",
             "key": "CatLeeTsai2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     },
     {
@@ -14140,9 +15097,11 @@
             "url": "https://arxiv.org/abs/2608.04855",
             "evidence": "arXiv submission history, version 1: 2026-08-05. Checked 2026-11-09.",
             "key": "CatAryanLee2026",
-            "background": ""
+            "background": "",
+            "credit_review": null
           }
-        ]
+        ],
+        "construction_references": []
       }
     }
   ]
