@@ -1299,6 +1299,17 @@
       "kind": "arxiv",
       "url": "https://arxiv.org/abs/1203.3934",
       "evidence": "arXiv submission history, version 1: 2012-03-18. Checked 2026-11-09."
+    },
+    "CatAIV2002": {
+      "authors": [
+        "Angenent",
+        "Ilmanen",
+        "Velázquez"
+      ],
+      "date": "2002",
+      "kind": "preprint",
+      "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+      "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date."
     }
   },
   "examples": {
@@ -2681,16 +2692,44 @@
     "ex:catalogue-birotational-expanders": {
       "name": "Bi-rotational expanding hypersurfaces",
       "references": [
-        "CatNeto2026"
+        "CatNeto2026",
+        "CatAIV2002"
       ],
-      "background_references": {}
+      "background_references": {},
+      "credit_reviews": {
+        "CatAIV2002": {
+          "role": "construction",
+          "locator": "Theorem 18; Sections 4–5.1, pp. 17–21",
+          "note": "Earlier construction of the axis-starting subfamily; uniqueness fixes axis radius, not the asymptotic cone.",
+          "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+        },
+        "CatNeto2026": {
+          "role": "construction",
+          "locator": "Existing source review on this reading page",
+          "note": "Retains the previously recorded general bi-rotational construction."
+        }
+      }
     },
     "ex:catalogue-birotational-shrinkers": {
       "name": "Complete bi-rotational shrinking continuations",
       "references": [
-        "CatNeto2026a"
+        "CatNeto2026a",
+        "CatAIV2002"
       ],
-      "background_references": {}
+      "background_references": {},
+      "credit_reviews": {
+        "CatAIV2002": {
+          "role": "construction",
+          "locator": "Theorems 1 and 5; Sections 3 and 5.1, pp. 3, 8–17, 20–21",
+          "note": "Constructs a discrete proper embedded monotone subfamily in ambient dimensions 4–7, with a selected sequence having fattening asymptotic cones.",
+          "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+        },
+        "CatNeto2026a": {
+          "role": "construction",
+          "locator": "Existing source review on this reading page",
+          "note": "Retains the previously recorded general bi-rotational construction."
+        }
+      }
     },
     "ex:catalogue-ancient-sine-wave": {
       "name": "The ancient sine wave",
@@ -3176,6 +3215,36 @@
         "CatAY18"
       ],
       "background_references": {}
+    },
+    "ex:catalogue-aiv-minimal": {
+      "name": "Bi-rotational stationary minimal hypersurfaces",
+      "references": [
+        "CatAIV2002"
+      ],
+      "background_references": {},
+      "credit_reviews": {
+        "CatAIV2002": {
+          "role": "analysis",
+          "locator": "Section 2, pp. 4–7; Appendix A, pp. 30–32",
+          "note": "Analyzes both axis-regular minimal caps; credits Alencar and Simoes for earlier minimal-surface and cone results. This is not an original-discovery claim.",
+          "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+        }
+      }
+    },
+    "ex:catalogue-aiv-eight-fattening": {
+      "name": "Eight-dimensional fattening at the Simoes cone",
+      "references": [
+        "CatAIV2002"
+      ],
+      "background_references": {},
+      "credit_reviews": {
+        "CatAIV2002": {
+          "role": "analysis",
+          "locator": "Lemma 23 and Section 6, pp. 21–29, especially Section 6.4",
+          "note": "Announced construction and formal matched asymptotics in an unfinished draft. Detailed positive-time asymptotics are not proved there.",
+          "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+        }
+      }
     }
   },
   "construction_credit_policy": "Title credits require reading the paper’s construction or existence argument and its attribution passages for this particular example. Citations, surveys, classification, stability, entropy, and use of an earlier construction do not by themselves confer construction credit. Independent or alternative constructions and numerical candidates are explicitly qualified. This selected-passage audit is not a proof verification or an exhaustive discovery history."

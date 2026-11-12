@@ -39,14 +39,14 @@ The following equations use the mean curvature vector convention above. The norm
 
 The collection also includes **ancient solutions**, defined for all $`t<T`$ for a finite $`T`$; **eternal solutions**, defined for every real time; and rotating or more general self-similar solutions. Ancient and eternal describe time domains and do not imply that a solution is a soliton.
 
-The catalogue contains **154 illustrated example families in four categories**:
+The catalogue contains **156 illustrated example families in four categories**:
 
 | Category | Entries | Examples |
 | --- | ---: | --- |
 | [Shrinkers](https://aosunmath.github.io/MCF-stack/chapters/shrinkers/) | 52 | Spheres and cylinders, Abresch–Langer curves, Angenent torus, Drugan sphere, Clifford torus, higher-genus gluing and min-max constructions, prescribed ends, Platonic symmetries, unbounded entropy, Chopp’s numerical candidates |
 | [Translators](https://aosunmath.github.io/MCF-stack/chapters/translators/) | 36 | Grim reapers, bowl, translating catenoids, delta-wings, Scherk translators, helicoid-like translators, annuloids, Scherkenoids, pitchforks, gluing constructions, prescribed-shrinker-end translators in four-space |
 | [Expanders](https://aosunmath.github.io/MCF-stack/chapters/expanders/) | 19 | Corner smoothings, graphical cones, one- and two-sheeted double-cone smoothings, mean-convex cones, planar networks, mountain-pass, unbounded-genus and knotted expanders |
-| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 47 | Stationary minimal surfaces, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits, ancient ovals, reapernoids, stacked pancakes, spiral curves, reaper chains, dense torus curves, and rotating curve solitons |
+| [Other special flows](https://aosunmath.github.io/MCF-stack/chapters/other-special-flows/) | 49 | Stationary minimal surfaces, Whitney sphere evolution, degenerate neckpinches, ancient Angenent oval, torus curves, eternal helices, multiplicity-two infinite-time limits, ancient ovals, reapernoids, stacked pancakes, spiral curves, reaper chains, dense torus curves, and rotating curve solitons |
 
 The [Chopp source review](documentation/chopp-review.md) records five numerical shrinker candidates, their original topology schematics, the conditional fattening argument, and the scope of related curvature-flow papers.
 
@@ -67,6 +67,8 @@ The [AAAW13 curve-soliton expansion](documentation/aaaw-curve-solitons.md) adds 
 The [requested author survey](documentation/author-paper-search.md) adds twelve families from online papers and arXiv, records coverage of all fifteen requested authors, and updates pitchfork uniqueness and entropy. Its original figures are labeled heuristic; four also support interactive rotation and zoom.
 
 The [knotted-expander picture](documentation/knotted-expander-picture.md) shows a connected trefoil surface with three annular ends, with rotation, zoom, and views of the tube and punctures. Its topology is checked; its geometry is schematic.
+
+The [AIV source and numerical review](documentation/aiv-fattening.md) adds stationary caps and the qualified eight-dimensional fattening construction, expands the existing bi-rotational pages, and supplies reproducible ODE experiments.
 
 ## Browse by geometric properties
 

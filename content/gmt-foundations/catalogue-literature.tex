@@ -158,7 +158,18 @@ Fix integers $p,q\ge1$. In the 2026 preprint of Silva Neto, an $O(p+1)\times O(q
 \]
 The maximal nonconical profiles give complete proper noncompact hypersurfaces. Axis-starting profiles close smoothly with topology $\mathbb R^{p+1}\times S^q$ or $\mathbb R^{q+1}\times S^p$ and are embedded. The two-ended family has topology $\mathbb R\times S^p\times S^q$; each point of the open quadrant prescribes its closest point to the origin, up to orientation. Its profile has at most one loop, so embeddedness must be checked for the chosen member. Every end is asymptotically conical, with Euclidean volume growth. The Clifford minimal cone is excluded.
 The first ambient dimension is four, not three. The time evolution is $\sqrt t\,F$, $t>0$. The numerical meridian and projected torus orbits illustrate a selected $(p,q)=(1,1)$ solution of the stated ODE. The global assertions are attributed to the preprint, not independently verified here.
-\par Sources: \cite{CatNeto2026}.
+
+\par\textbf{The Angenent--Ilmanen--Vel\'azquez axis-starting family.}
+The earlier construction in \cite{CatAIV2002}, Theorem 18 and Section 5.1, pp.~17--21, uses block dimensions $P,Q\geq2$, so $P=p+1$, $Q=q+1$ in the notation above. For each $a>0$ there is a unique smooth axis-regular solution on $0\leq x<\infty$ of
+\[
+ \frac{U''}{1+(U')^2}+\left(\frac{P-1}{x}+\frac x2\right)U'
+ -\frac U2-\frac{Q-1}{U}=0,\qquad U(0)=a,\quad U'(0)=0.
+\]
+It is strictly increasing for $x>0$, with $U''(0)=((Q-1)/a+a/2)/P$, and $U(x;a)/x\to B_a>0$. The embedding is $(X,\sqrt t\,U(|X|/\sqrt t;a)\omega)$ for $X\in\mathbb R^P$, $\omega\in S^{Q-1}$, $t>0$. Its slices are complete, proper, noncompact and one-ended, with topology $\mathbb R^P\times S^{Q-1}$; exchanging blocks gives the other cap. The radial profile is an ODE construction, not an elementary formula. It is not asserted to be convex, and no stability classification or quantitative entropy value is supplied.
+
+The limiting slopes satisfy $B_a\to A_*:=\sqrt{(Q-1)/(P-1)}$ as $a\downarrow0$. For $4\leq P+Q\leq7$, Section 5.1 describes oscillation of $B_a$ about $A_*$ and arbitrarily many expanders at cone slopes sufficiently close to $A_*$. Uniqueness for prescribed axis radius $a$ therefore does not imply uniqueness for a prescribed cone. For $(P,Q)=(2,6)$, Theorem 18(E) and the Simoes-cone analysis produce cone-crossing profiles; the fattening criterion is discussed in Example~\ref{ex:catalogue-aiv-eight-fattening}. These are special cases of the axis-starting class already recorded on this page, not additional reading entries. The supplementary experiment matches several numerical expanders to the cone of a numerical shrinker in $\mathbb R^4$. It reports cutoff and tolerance comparisons and does not compute the entire fattened level set.
+
+\par Sources: \cite{CatNeto2026,CatAIV2002}.
 \end{example}
 
 \chapter{Complete bi-rotational shrinking continuations}\label{sec:catalogue-birotational-shrinkers}
@@ -166,7 +177,31 @@ The first ambient dimension is four, not three. The time evolution is $\sqrt t\,
 The 2026 preprint of Silva Neto studies maximal $O(p+1)\times O(q+1)$-invariant shrinking profiles in $\mathbb R^{p+q+2}$, $p,q\ge1$, without imposing properness or embeddedness. The profile equations are those of Example~\ref{ex:catalogue-birotational-expanders} with both $+x/2,+y/2$ replaced by $-x/2,-y/2$. A maximal profile is closed off smoothly when it reaches an axis. The stated completeness theorem excludes the Clifford minimal cone; in particular the constructed escaping ends admit complete continuations, which need not be proper.
 The source distinguishes conical escaping ends from recurrent ends meeting both distinguished cylinders infinitely often. A noncompact complete example is proper precisely when all its ends are conical, under the source's classification. The almost-everywhere alternative ``closed or nonproper'' does not by itself construct a specified nonproper topological type. We therefore record no general topology, entropy value, or embedding criterion for arbitrary initial data. The known round and cylindrical solutions are not new entries; the McGrath compact construction is not included here.
 The flow is $\sqrt{-t}\,\Sigma$, $t<0$. The figure integrates a finite segment of the profile ODE; its display endpoints are not a certification of the complete global continuation. All global results remain attributed preprint statements.
-\par Sources: \cite{CatNeto2026a}.
+
+\par\textbf{Angenent--Ilmanen--Vel\'azquez shrinkers with fattening cones.}
+A specific embedded proper subfamily is constructed in \cite{CatAIV2002}, Theorems 1 and 5, pp.~3 and 8, with the argument in Sections 3 and 5.1. Write $P,Q\geq2$ for the block dimensions, $P+Q=N\in\{4,5,6,7\}$; thus $P=p+1$, $Q=q+1$ relative to the preceding notation. For every integer $m\geq2$ there is a smooth positive increasing profile $U_m:[0,\infty)\to(0,\infty)$ satisfying
+\[
+ \frac{U_m''}{1+(U_m')^2}+\left(\frac{P-1}{x}-\frac x2\right)U_m'
+ +\frac{U_m}2-\frac{Q-1}{U_m}=0,
+ \quad U_m'(0)=0,\quad 0<U_m(0)<\sqrt{2(Q-1)}.
+\]
+The corresponding normalized shrinker and its ancient flow are
+\[
+ \Sigma_m=\{(X,U_m(|X|)\omega):X\in\mathbb R^P,\ \omega\in S^{Q-1}\},
+ \qquad M_t=\sqrt{-t}\,\Sigma_m,\quad -\infty<t<0.
+\]
+They satisfy $\vec H+X^\perp/2=0$. Each slice is complete, properly embedded, noncompact, and one-ended, with topology $\mathbb R^P\times S^{Q-1}$. The dimension is $N-1$, the codimension is one, and the symmetry is $O(P)\times O(Q)$. Interchanging the factors gives $S^{P-1}\times\mathbb R^Q$. These hypersurfaces are not convex: along the positive increasing profile, the two spherical orbit directions have opposite principal-curvature signs.
+
+The profile crosses $y=A_*x$, $A_*=\sqrt{(Q-1)/(P-1)}$, exactly $m$ times and has an asymptotic expansion
+\[
+ U_m(x)=A_mx+\frac{(Q-1)/A_m-(P-1)A_m}{x}+O(x^{-3}),
+ \qquad A_m\longrightarrow A_*.
+\]
+At $t=0$ it converges to $C_m=\{|Y|=A_m|X|\}$, smooth away from the vertex. Theorem 1 and Section 5.1 select an infinite sequence for which the cone fattens: there are distinct smooth self-expanding continuations for $t>0$. The latter statement concerns a selected sequence, not every small index $m$ or every cone. The unique level-set flow contains the different continuations and develops interior. This gives smooth noncompact initial data at any fixed negative time; the compact gluing discussion in Section 5.2 is deferred in the draft and is not claimed here as a completed compact construction.
+
+Asymptotic conical growth gives finite Gaussian area and entropy, with equality $F_{0,1}(\Sigma_m)=\lambda(\Sigma_m)$ in this centered shrinker normalization. No exact value, stability theorem, or uniqueness for the intersection count $m$ is supplied. Lemma 6(B) addresses uniqueness within the monotone profile class for a fixed asymptotic slope, a different question. The supplementary numerical experiment uses matching from the axis and a finite conical cutoff; its homothetic time evolution is explicit, but the spatial profile and its cone slope are numerical approximations.
+
+\par Sources: \cite{CatNeto2026a,CatAIV2002}.
 \end{example}
 
 \chapter{The ancient sine wave}\label{sec:catalogue-ancient-sine-wave}

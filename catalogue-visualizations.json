@@ -1679,13 +1679,32 @@
       "title": "Bi-rotational expanding hypersurfaces",
       "category": "expanders",
       "citations": [
-        "CatNeto2026"
+        "CatNeto2026",
+        "CatAIV2002"
       ],
       "model": "literature-birotational-expanders",
       "status": "Numerical ODE profile projection",
       "caption": "Numerical (p,q)=(1,1) profile and projected circle-pair orbits in ℝ⁴. The conical directions are asymptotic; the profile is not replaced by a cone.",
       "alt": "Bi-rotational expanding hypersurfaces. Numerical (p,q)=(1,1) profile and projected circle-pair orbits in ℝ⁴. The conical directions are asymptotic; the profile is not replaced by a cone.",
-      "interactive": true
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "aiv-expanders",
+          "status": "Numerical ODE orbit-space profiles",
+          "caption": "Numerical axis-regular expanders and cone slopes for selected block dimensions. Radius and time are independent controls; uniqueness at a fixed radius does not mean uniqueness at a fixed cone.",
+          "alt": "AIV expanding cap profiles",
+          "interactive": false,
+          "credit_anchor": "aiv-fattening"
+        }
+      ],
+      "additional_experiments": [
+        {
+          "id": "aiv-expanders",
+          "path": "experiments/aiv-expanders.html",
+          "title": "AIV expanding cap profiles",
+          "caption": "Numerical axis-regular expanders and cone slopes for selected block dimensions. Radius and time are independent controls; uniqueness at a fixed radius does not mean uniqueness at a fixed cone."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-birotational-shrinkers",
@@ -1693,13 +1712,32 @@
       "title": "Complete bi-rotational shrinking continuations",
       "category": "shrinkers",
       "citations": [
-        "CatNeto2026a"
+        "CatNeto2026a",
+        "CatAIV2002"
       ],
       "model": "literature-birotational-shrinkers",
       "status": "Numerical ODE segment",
       "caption": "Finite numerical bi-rotational shrinking profile, with the two distinguished cylinder radii. Time scales the same computed segment; no global closing, properness, or embedding claim is inferred from the finite picture.",
       "alt": "Complete bi-rotational shrinking continuations. Finite numerical bi-rotational shrinking profile, with the two distinguished cylinder radii. Time scales the same computed segment; no global closing, properness, or embedding claim is inferred from the finite picture.",
-      "interactive": true
+      "interactive": true,
+      "supplementary": [
+        {
+          "model": "aiv-shrinkers",
+          "status": "Numerical ODE orbit-space profiles",
+          "caption": "Matched numerical ODE profiles in ℝ⁴. Several expanders have the same numerically estimated cone slope. Time uses self-similar scaling; the entire fattened level set is not computed.",
+          "alt": "AIV shrinkers and their continuations",
+          "interactive": false,
+          "credit_anchor": "aiv-fattening"
+        }
+      ],
+      "additional_experiments": [
+        {
+          "id": "aiv-shrinkers",
+          "path": "experiments/aiv-shrinkers.html",
+          "title": "AIV shrinkers and their continuations",
+          "caption": "Matched numerical ODE profiles in ℝ⁴. Several expanders have the same numerically estimated cone slope. Time uses self-similar scaling; the entire fattened level set is not computed."
+        }
+      ]
     },
     {
       "label": "ex:catalogue-ancient-sine-wave",
@@ -2383,6 +2421,46 @@
       "caption": "Source-informed grim arcs and connections, including the compact closing arc. Finite-time stages are schematic; grim pieces are backward asymptotic models.",
       "alt": "Immersed ancient curves from grim-reaper chains. Source-informed grim arcs and connections, including the compact closing arc. Finite-time stages are schematic; grim pieces are backward asymptotic models.",
       "interactive": true
+    },
+    {
+      "label": "ex:catalogue-aiv-minimal",
+      "section": "bi-rotational-minimal-hypersurfaces-asymptotic-to-cones",
+      "title": "Bi-rotational minimal hypersurfaces asymptotic to cones",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "model": "aiv-minimal",
+      "status": "Numerical ODE orbit-space profiles",
+      "caption": "Numerical stationary minimal caps, with cone deviation and block-dimension controls. The two coordinates are radii in higher-dimensional blocks.",
+      "alt": "Bi-rotational minimal hypersurfaces asymptotic to cones",
+      "interactive": false,
+      "credit_anchor": "aiv-fattening",
+      "experiment": {
+        "path": "experiments/aiv-minimal.html",
+        "title": "Bi-rotational minimal hypersurfaces asymptotic to cones",
+        "caption": "Numerical stationary minimal caps, with cone deviation and block-dimension controls. The two coordinates are radii in higher-dimensional blocks."
+      }
+    },
+    {
+      "label": "ex:catalogue-aiv-eight-fattening",
+      "section": "eight-dimensional-fattening-at-the-simoes-cone",
+      "title": "Eight-dimensional fattening at the Simoes cone",
+      "category": "other-special-flows",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "model": "aiv-eight-fattening",
+      "status": "Numerical ODE and labeled asymptotic models",
+      "caption": "Numerical stationary inner profiles and an expander slope test for the eight-dimensional model. The time comparison shows only a formal inner-scale approximation, not a nonlinear PDE solution.",
+      "alt": "Eight-dimensional fattening at the Simoes cone",
+      "interactive": false,
+      "credit_anchor": "aiv-fattening",
+      "experiment": {
+        "path": "experiments/aiv-eight-fattening.html",
+        "title": "Eight-dimensional fattening at the Simoes cone",
+        "caption": "Numerical stationary inner profiles and an expander slope test for the eight-dimensional model. The time comparison shows only a formal inner-scale approximation, not a nonlinear PDE solution."
+      }
     }
   ]
 }

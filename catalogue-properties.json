@@ -6632,9 +6632,10 @@
     },
     {
       "label": "ex:catalogue-birotational-expanders",
-      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels. AIV Theorem 18 gives the axis-starting family; uniqueness is for axis radius, not a prescribed cone. Cone multiplicity for 4 ≤ P+Q ≤ 7 and the (2,6) case are distinguished on the page.",
       "citations": [
-        "CatNeto2026"
+        "CatNeto2026",
+        "CatAIV2002"
       ],
       "cases": [
         {
@@ -6668,7 +6669,7 @@
           }
         },
         {
-          "name": "Axis-starting p,q ≥ 1",
+          "name": "Axis-starting p,q ≥ 1 (AIV block dimensions P=p+1, Q=q+1)",
           "ambient": [
             "r4",
             "higher"
@@ -6701,9 +6702,10 @@
     },
     {
       "label": "ex:catalogue-birotational-shrinkers",
-      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels. The AIV proper embedded cases are separate from arbitrary continued profiles. Fattening is asserted for a selected infinite subsequence; compact gluing is not claimed.",
       "citations": [
-        "CatNeto2026a"
+        "CatNeto2026a",
+        "CatAIV2002"
       ],
       "cases": [
         {
@@ -6734,6 +6736,64 @@
           "entropy": {
             "status": "not-recorded",
             "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "AIV monotone shrinkers: P=Q=2, m ≥ 2",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ² × S¹ (or S¹ × ℝ²)",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded. Equals entropy for the normalized proper shrinker."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        },
+        {
+          "name": "AIV monotone shrinkers: P,Q ≥ 2, 5 ≤ P+Q ≤ 7, m ≥ 2",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝᴾ × S^(Q−1), or S^(P−1) × ℝᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded. Equals entropy for the normalized proper shrinker."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
           }
         }
       ]
@@ -9305,6 +9365,111 @@
           "entropy": {
             "status": "not-recorded",
             "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-aiv-minimal",
+      "notes": "Stationary smooth caps; the singular minimal cone is a limiting comparison geometry, not a smooth case. Cone minimizing assertions do not classify stability of the caps.",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "P=Q=2 in ℝ⁴",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ² × S¹ or S¹ × ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        },
+        {
+          "name": "P,Q ≥ 2, P+Q ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝᴾ × S^(Q−1) or S^(P−1) × ℝᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-aiv-eight-fattening",
+      "notes": "Announced construction in an unfinished draft. Positive-time type I and type II asymptotics are formal; global completion is not specified. Properties below describe the local model, not a global classification.",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "O(2) × O(6) local singularity and fattening model",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Local cap S¹ × ℝ⁶; global completion not recorded",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The smooth positive radial cap is locally embedded; the reviewed construction does not specify a global completion sufficiently to classify it. The fattened set is not a smooth hypersurface."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Seven-dimensional hypersurface, not a surface."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Global completion and end count not specified."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No global Gaussian-area value established in the reviewed draft."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No global entropy value established in the reviewed draft."
           }
         }
       ]

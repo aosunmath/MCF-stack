@@ -1,0 +1,66 @@
+\chapter{Bi-rotational minimal hypersurfaces asymptotic to cones}\label{sec:catalogue-aiv-minimal}
+\begin{example}[Stationary profiles in the fattening construction]\label{ex:catalogue-aiv-minimal}
+Let $p,q\geq2$, $n=p+q$, and write $(X,Y)\in\mathbb R^p\times\mathbb R^q$, $x=|X|$, $y=|Y|$. Angenent--Ilmanen--Vel\'azquez analyze complete minimal hypersurfaces invariant under $O(p)\times O(q)$ in \cite{CatAIV2002}, Section 2, pp.~4--7. For each $a>0$, the axis-regular profile is the increasing solution
+\[
+ \frac{U''}{1+(U')^2}+\frac{p-1}{x}U'-\frac{q-1}{U}=0,
+ \qquad U(0)=a,\quad U'(0)=0,\quad 0\leq x<\infty.
+\]
+Its smooth extension at the axis has $U''(0)=(q-1)/(pa)$. The hypersurface
+\[
+ \Sigma_a=\{(X,U(|X|)\omega):X\in\mathbb R^p,\ \omega\in S^{q-1}\}
+\]
+is an embedded noncompact hypersurface of dimension $n-1$ and codimension one. It is proper and complete, has topology $\mathbb R^p\times S^{q-1}$ and one end, and gives the eternal stationary flow $M_t=\Sigma_a$, $t\in\mathbb R$. These global properties follow from the positive global radial graph and its conical end. Interchanging the two blocks gives the other cap, with topology $S^{p-1}\times\mathbb R^q$. Scaling is explicit, $U_a(x)=aU_1(x/a)$, but $U_1$ is an ODE solution, not a closed formula. The nonflat hypersurfaces are not convex; their principal curvatures have cancelling signs because their mean curvature vanishes.
+
+Both caps are asymptotic to the minimal cone
+\[
+ C_{p,q}=\{(X,Y):|Y|=A_*|X|\},\qquad
+ A_*=\sqrt{\frac{q-1}{p-1}}.
+\]
+The cone is smooth away from its vertex; it is not itself one of the smooth caps. For $4\leq n\leq7$ the profiles cross the cone infinitely often. The characteristic exponents in logarithmic radius are
+\[
+ \lambda_\pm=\frac{-(n-1)\pm\sqrt{(n-5)^2-8}}2,
+\]
+so the approach oscillates in those dimensions. At $n=8$ the exponents are real. Theorem 4, p.~7, records the minimizing cones for $(p,q)=(3,5),(4,4),(5,3)$ and the one-sided minimizing property of the Simoes cone $C_{2,6}$. In the latter case the cone minimizes on $|Y|\leq\sqrt5|X|$ but not on the other side. Appendix A, pp.~30--32, supplies a barrier computation. This is a statement about the cone; it is not a stability classification of every smooth cap.
+
+The asymptotically conical geometry gives finite Gaussian area and entropy for each cap, but no value is recorded here, and the two quantities are not identified. The figures integrate the displayed minimal ODE and compare both caps with their cone, using orbit-space radii rather than a three-dimensional rendering of an $n$-dimensional ambient space. Cone crossings are intersections of different hypersurfaces, not self-intersections of a cap.
+\end{example}
+
+\chapter{Eight-dimensional fattening at the Simoes cone}\label{sec:catalogue-aiv-eight-fattening}
+\begin{example}[The eight-dimensional construction and its formal models]\label{ex:catalogue-aiv-eight-fattening}
+The supplied unfinished draft \cite{CatAIV2002} describes an $O(2)\times O(6)$-invariant mean curvature flow in $\mathbb R^8$, with hypersurface dimension seven and codimension one, which starts smoothly on a short interval $-\varepsilon<t<0$ and becomes singular at the origin at $t=0$. Its singular trace is tangent to
+\[
+ C_{2,6}=\{(X,Y)\in\mathbb R^2\times\mathbb R^6:|Y|=\sqrt5|X|\}.
+\]
+The authors announce fattening after this singularity. The source status matters: Section 6, pp.~22--29, gives formal matched asymptotic expansions; Section 6.4 refers the negative-time construction to an adaptation of Vel\'azquez's earlier argument and invokes Lemma 23 for fattening. It explicitly does not prove that positive-time solutions realize the detailed asymptotics of Sections 6.2--6.3. This entry records that announced construction and its local models, without promoting both formal continuations to proved solutions.
+
+In inverse radial coordinates $x=v(y,t)$, the smooth flow equation is
+\[
+ v_t=\frac{v_{yy}}{1+v_y^2}+\frac5y v_y-\frac1v.
+\]
+The local singular trace is prescribed by
+\[
+ v_0(y)=\frac y{\sqrt5}+K_1y^{2k-2}+o(y^{2k-2}),
+ \qquad K_1>0,\quad k\geq2\text{ even},\quad y\downarrow0.
+\]
+The sign and parity are those selected in Section 6.1, p.~24. This is local asymptotic data, not a global initial parametrization. The regular cap chart has local topology $S^1\times\mathbb R^6$ and is embedded wherever it is a positive smooth graph. The reviewed draft does not specify a global completion with enough detail to assign compactness, end count, completeness, properness, or global topology to this entry. It supplies no entropy, Gaussian-area, or stability value.
+
+With $\eta=y/\sqrt{-t}$ and $\tau=-\log(-t)$, the formal intermediate perturbation of $\eta/\sqrt5$ has eigenvalue $\lambda_k=3/2-k$ and profile
+\[
+ \varphi_k(\eta)=\eta^{-2}\sum_{j=0}^k
+ \binom{k}{j}\frac{(-3\eta^2/5)^j}{(2j+1)!!}.
+\]
+It solves the linearized equation with operator
+\[
+ \mathcal A\varphi=\frac56\varphi''+
+ \left(\frac5\eta-\frac\eta2\right)\varphi'+
+ \left(\frac12+\frac5{\eta^2}\right)\varphi.
+\]
+The inner length scale is $(-t)^{k/3}$, smaller than $\sqrt{-t}$. Its leading stationary profile, in these inverse coordinates, must satisfy
+\[
+ \frac{G''}{1+(G')^2}+\frac5zG'-\frac1G=0,
+ \qquad G(0)>0,\quad G'(0)=0.
+\]
+This equation is derived directly from the inverse graph PDE above. The displayed equations (54)--(55) in the draft interchange the two radial coefficients; they cannot be used with its stated inverse-graph asymptote $G(z)\sim z/\sqrt5$. The polynomial and the inner scale describe asymptotics, not an exact flow formula.
+
+For $t>0$, the source contrasts a formal type I smoothing modeled on $y=\sqrt t\,U(x/\sqrt t)$, where $U$ is an expander asymptotic to $\sqrt5x$, with a formal type II smoothing in inverse coordinates. Lemma 23, pp.~21--22, gives the fattening criterion for the stated singular trace when an axis-regular expander has limiting slope strictly below $\sqrt5$. The numerical experiment finds such a slope for $U(0)=0.1$ and computes the stationary cap models; it does not simulate a complete nonlinear type II flow or prove fattening. The level-set evolution is unique as a closed-set flow: fattening means that this set develops interior, not that the viscosity solution ceases to be unique.
+\end{example}

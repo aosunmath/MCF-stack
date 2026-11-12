@@ -187,7 +187,9 @@
         "isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
         "eternal-tori-in-perturbations-of-the-round-three-sphere",
         "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
-        "immersed-ancient-curves-from-grim-reaper-chains"
+        "immersed-ancient-curves-from-grim-reaper-chains",
+        "bi-rotational-minimal-hypersurfaces-asymptotic-to-cones",
+        "eight-dimensional-fattening-at-the-simoes-cone"
       ],
       "description": "Stationary, ancient, rotating, higher-codimension, and singularity-forming flows, including mixed curve solitons."
     }

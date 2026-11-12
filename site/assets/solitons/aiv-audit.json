@@ -1,0 +1,512 @@
+{
+  "method": "DOP853; axis Taylor regularization; two-sided shrinker shooting; Brent expander matching",
+  "rtol": 2e-11,
+  "refined_rtol": 2e-13,
+  "certified": false,
+  "limitation": "Cutoff/tolerance comparisons are numerical diagnostics, not rigorous error bounds or a fattening proof.",
+  "shrinkers": [
+    {
+      "name": "m = 2",
+      "p": 2,
+      "q": 2,
+      "m": 2,
+      "a": 0.10934207664501311,
+      "slope": 1.02288869720756,
+      "diagnostics": {
+        "axis_radius_cutoff_change": 4.371503159461554e-15,
+        "cone_slope_cutoff_change": 3.973618767361131e-09,
+        "cone_slope_tolerance_change": 5.828892923886997e-12,
+        "matching_residual": 2.6645352591003757e-15,
+        "resolved_minimal_cone_crossings": 2
+      }
+    },
+    {
+      "name": "m = 3",
+      "p": 2,
+      "q": 2,
+      "m": 3,
+      "a": 0.010172969538551863,
+      "slope": 0.9993576155753721,
+      "diagnostics": {
+        "axis_radius_cutoff_change": 5.126628288554258e-14,
+        "cone_slope_cutoff_change": 1.2113055003482032e-10,
+        "cone_slope_tolerance_change": 2.0489165919457264e-12,
+        "matching_residual": 3.219646771412954e-15,
+        "resolved_minimal_cone_crossings": 3
+      }
+    }
+  ],
+  "continuations": [
+    {
+      "name": "Small y-cap",
+      "a": 0.07186041747812781,
+      "p": 2,
+      "q": 2,
+      "swap": false,
+      "slope": 0.9993576155753734,
+      "diagnostics": {
+        "radius_refinement_change": 1.7968234677923078e-09,
+        "cone_slope_mismatch": 1.3322676295501878e-15,
+        "ode_relative_defect": 4.4806097679356595e-10
+      }
+    },
+    {
+      "name": "Large y-cap",
+      "a": 0.6645180237619315,
+      "p": 2,
+      "q": 2,
+      "swap": false,
+      "slope": 0.9993576155753645,
+      "diagnostics": {
+        "radius_refinement_change": 7.424716397252951e-10,
+        "cone_slope_mismatch": 7.549516567451064e-15,
+        "ode_relative_defect": 2.2910557941977608e-10
+      }
+    },
+    {
+      "name": "x-cap",
+      "a": 0.672303551119905,
+      "p": 2,
+      "q": 2,
+      "swap": true,
+      "slope": 0.9993576155754047,
+      "diagnostics": {
+        "radius_refinement_change": 7.297845661113911e-10,
+        "cone_slope_mismatch": 3.26405569239796e-14,
+        "ode_relative_defect": 6.112712852990424e-10
+      }
+    }
+  ],
+  "expanders": [
+    {
+      "name": "(2, 2), a = 0.03",
+      "p": 2,
+      "q": 2,
+      "a": 0.03,
+      "slope": 1.0006590560030677,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.245603620247948e-10,
+        "profile_refinement_max": 6.863665191758628e-11,
+        "ode_relative_defect": 2.1453764739485126e-10
+      }
+    },
+    {
+      "name": "(2, 2), a = 0.1",
+      "p": 2,
+      "q": 2,
+      "a": 0.1,
+      "slope": 0.9969958852656587,
+      "diagnostics": {
+        "cone_slope_refinement_change": 5.754765552978824e-10,
+        "profile_refinement_max": 3.9957814834679084e-11,
+        "ode_relative_defect": 1.0813892033538221e-10
+      }
+    },
+    {
+      "name": "(2, 2), a = 0.3",
+      "p": 2,
+      "q": 2,
+      "a": 0.3,
+      "slope": 0.9779101595592087,
+      "diagnostics": {
+        "cone_slope_refinement_change": 4.522092811320988e-09,
+        "profile_refinement_max": 1.7057133483433518e-11,
+        "ode_relative_defect": 9.467826684805813e-11
+      }
+    },
+    {
+      "name": "(2, 2), a = 1",
+      "p": 2,
+      "q": 2,
+      "a": 1.0,
+      "slope": 1.0791688741099594,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.1297925928133168e-08,
+        "profile_refinement_max": 3.235967049874944e-11,
+        "ode_relative_defect": 9.150341644899874e-11
+      }
+    },
+    {
+      "name": "(2, 3), a = 0.03",
+      "p": 2,
+      "q": 3,
+      "a": 0.03,
+      "slope": 1.4143122714508611,
+      "diagnostics": {
+        "cone_slope_refinement_change": 2.3062440845933452e-11,
+        "profile_refinement_max": 7.324274520215113e-11,
+        "ode_relative_defect": 8.157985932149375e-10
+      }
+    },
+    {
+      "name": "(2, 3), a = 0.1",
+      "p": 2,
+      "q": 3,
+      "a": 0.1,
+      "slope": 1.4136993348634868,
+      "diagnostics": {
+        "cone_slope_refinement_change": 6.421285725366488e-11,
+        "profile_refinement_max": 2.2541835065226223e-10,
+        "ode_relative_defect": 6.486126715138782e-10
+      }
+    },
+    {
+      "name": "(2, 3), a = 0.3",
+      "p": 2,
+      "q": 3,
+      "a": 0.3,
+      "slope": 1.404590188466779,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.2371734747773644e-09,
+        "profile_refinement_max": 1.003797045484589e-11,
+        "ode_relative_defect": 3.0962254014462726e-10
+      }
+    },
+    {
+      "name": "(2, 3), a = 1",
+      "p": 2,
+      "q": 3,
+      "a": 1.0,
+      "slope": 1.4558149750391127,
+      "diagnostics": {
+        "cone_slope_refinement_change": 4.522741958723486e-09,
+        "profile_refinement_max": 9.810525947173687e-08,
+        "ode_relative_defect": 7.713848958248482e-09
+      }
+    },
+    {
+      "name": "(3, 3), a = 0.03",
+      "p": 3,
+      "q": 3,
+      "a": 0.03,
+      "slope": 0.9999981494411956,
+      "diagnostics": {
+        "cone_slope_refinement_change": 2.591593606382503e-12,
+        "profile_refinement_max": 1.6980905570562754e-10,
+        "ode_relative_defect": 5.890283766948894e-10
+      }
+    },
+    {
+      "name": "(3, 3), a = 0.1",
+      "p": 3,
+      "q": 3,
+      "a": 0.1,
+      "slope": 0.9998150448165682,
+      "diagnostics": {
+        "cone_slope_refinement_change": 6.988476464186988e-11,
+        "profile_refinement_max": 7.462297446636512e-11,
+        "ode_relative_defect": 1.1384461751337367e-09
+      }
+    },
+    {
+      "name": "(3, 3), a = 0.3",
+      "p": 3,
+      "q": 3,
+      "a": 0.3,
+      "slope": 1.0002996310411505,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.1256395815451015e-10,
+        "profile_refinement_max": 4.438149847629802e-11,
+        "ode_relative_defect": 4.407781667488515e-10
+      }
+    },
+    {
+      "name": "(3, 3), a = 1",
+      "p": 3,
+      "q": 3,
+      "a": 1.0,
+      "slope": 1.0667330010962162,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.685448913768539e-08,
+        "profile_refinement_max": 5.434985794749991e-12,
+        "ode_relative_defect": 3.499549753204366e-11
+      }
+    },
+    {
+      "name": "(3, 4), a = 0.03",
+      "p": 3,
+      "q": 4,
+      "a": 0.03,
+      "slope": 1.224743188366433,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.4268586312482512e-12,
+        "profile_refinement_max": 5.8202775932159057e-11,
+        "ode_relative_defect": 3.6847599221881183e-10
+      }
+    },
+    {
+      "name": "(3, 4), a = 0.1",
+      "p": 3,
+      "q": 4,
+      "a": 0.1,
+      "slope": 1.2247283124626633,
+      "diagnostics": {
+        "cone_slope_refinement_change": 5.2302606690091125e-12,
+        "profile_refinement_max": 8.362377457160619e-11,
+        "ode_relative_defect": 3.5287359964135486e-10
+      }
+    },
+    {
+      "name": "(3, 4), a = 0.3",
+      "p": 3,
+      "q": 4,
+      "a": 0.3,
+      "slope": 1.2259497047372236,
+      "diagnostics": {
+        "cone_slope_refinement_change": 3.6001490677506354e-10,
+        "profile_refinement_max": 8.962830477798889e-11,
+        "ode_relative_defect": 2.5336547737346346e-09
+      }
+    },
+    {
+      "name": "(3, 4), a = 1",
+      "p": 3,
+      "q": 4,
+      "a": 1.0,
+      "slope": 1.2786535564615702,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.1759379470177578e-08,
+        "profile_refinement_max": 1.1752598894076982e-11,
+        "ode_relative_defect": 5.499226405313256e-11
+      }
+    },
+    {
+      "name": "(2, 6), a = 0.03",
+      "p": 2,
+      "q": 6,
+      "a": 0.03,
+      "slope": 2.2360676304136975,
+      "diagnostics": {
+        "cone_slope_refinement_change": 5.555556015224283e-12,
+        "profile_refinement_max": 1.0462031241331715e-10,
+        "ode_relative_defect": 8.159739375835516e-10
+      }
+    },
+    {
+      "name": "(2, 6), a = 0.1",
+      "p": 2,
+      "q": 6,
+      "a": 0.1,
+      "slope": 2.2360651033862493,
+      "diagnostics": {
+        "cone_slope_refinement_change": 7.287503933639528e-13,
+        "profile_refinement_max": 6.299316623881168e-11,
+        "ode_relative_defect": 7.755116865879191e-10
+      }
+    },
+    {
+      "name": "(2, 6), a = 0.3",
+      "p": 2,
+      "q": 6,
+      "a": 0.3,
+      "slope": 2.2365270812868108,
+      "diagnostics": {
+        "cone_slope_refinement_change": 3.9753089708938205e-11,
+        "profile_refinement_max": 4.2667647193184166e-11,
+        "ode_relative_defect": 5.050030435003987e-10
+      }
+    },
+    {
+      "name": "(2, 6), a = 1",
+      "p": 2,
+      "q": 6,
+      "a": 1.0,
+      "slope": 2.2732347478561,
+      "diagnostics": {
+        "cone_slope_refinement_change": 2.018657241364963e-09,
+        "profile_refinement_max": 4.214926185852619e-10,
+        "ode_relative_defect": 6.840408647198885e-09
+      }
+    },
+    {
+      "name": "(6, 2), a = 0.03",
+      "p": 6,
+      "q": 2,
+      "a": 0.03,
+      "slope": 0.4472236744658052,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.548616790358892e-11,
+        "profile_refinement_max": 2.4987123481423623e-11,
+        "ode_relative_defect": 7.561560146116868e-10
+      }
+    },
+    {
+      "name": "(6, 2), a = 0.1",
+      "p": 6,
+      "q": 2,
+      "a": 0.1,
+      "slope": 0.4475232066851055,
+      "diagnostics": {
+        "cone_slope_refinement_change": 4.819338261796702e-10,
+        "profile_refinement_max": 1.2274603555795238e-10,
+        "ode_relative_defect": 4.867068341053751e-10
+      }
+    },
+    {
+      "name": "(6, 2), a = 0.3",
+      "p": 6,
+      "q": 2,
+      "a": 0.3,
+      "slope": 0.4527930113527812,
+      "diagnostics": {
+        "cone_slope_refinement_change": 7.983084970852872e-09,
+        "profile_refinement_max": 5.310418771387049e-12,
+        "ode_relative_defect": 2.4862405893875682e-11
+      }
+    },
+    {
+      "name": "(6, 2), a = 1",
+      "p": 6,
+      "q": 2,
+      "a": 1.0,
+      "slope": 0.5315931826787018,
+      "diagnostics": {
+        "cone_slope_refinement_change": 5.62805557713375e-09,
+        "profile_refinement_max": 1.6564527527407336e-13,
+        "ode_relative_defect": 5.521641362784474e-12
+      }
+    },
+    {
+      "name": "(4, 4), a = 0.03",
+      "p": 4,
+      "q": 4,
+      "a": 0.03,
+      "slope": 1.0000030655148668,
+      "diagnostics": {
+        "cone_slope_refinement_change": 2.4225066397320916e-12,
+        "profile_refinement_max": 6.587619338915829e-11,
+        "ode_relative_defect": 3.101232598945636e-10
+      }
+    },
+    {
+      "name": "(4, 4), a = 0.1",
+      "p": 4,
+      "q": 4,
+      "a": 0.1,
+      "slope": 1.0001065630311843,
+      "diagnostics": {
+        "cone_slope_refinement_change": 6.011169340069955e-11,
+        "profile_refinement_max": 2.8439250954193085e-11,
+        "ode_relative_defect": 2.868406601071924e-10
+      }
+    },
+    {
+      "name": "(4, 4), a = 0.3",
+      "p": 4,
+      "q": 4,
+      "a": 0.3,
+      "slope": 1.002421641462605,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.338836819186895e-09,
+        "profile_refinement_max": 1.5299894684517312e-10,
+        "ode_relative_defect": 3.734855996047684e-09
+      }
+    },
+    {
+      "name": "(4, 4), a = 1",
+      "p": 4,
+      "q": 4,
+      "a": 1.0,
+      "slope": 1.053490607471005,
+      "diagnostics": {
+        "cone_slope_refinement_change": 1.900959212264297e-08,
+        "profile_refinement_max": 1.7270629371068935e-12,
+        "ode_relative_defect": 2.7841990863566416e-11
+      }
+    }
+  ],
+  "minimal": [
+    {
+      "name": "(2, 2)",
+      "p": 2,
+      "q": 2,
+      "a": 1,
+      "cone_slope": 1.0,
+      "diagnostics": {
+        "profile_refinement_max": 2.3527846337856317e-10,
+        "min_cone_deviation": -0.2705437480300201,
+        "min_deviation_x": 4.054652330673911,
+        "ode_relative_defect": 1.2724730980943994e-11
+      }
+    },
+    {
+      "name": "(2, 3)",
+      "p": 2,
+      "q": 3,
+      "a": 1,
+      "cone_slope": 1.4142135623730951,
+      "diagnostics": {
+        "profile_refinement_max": 1.1380230091617705e-10,
+        "min_cone_deviation": -0.1426542246060789,
+        "min_deviation_x": 2.407115657132603,
+        "ode_relative_defect": 9.358045576058992e-11
+      }
+    },
+    {
+      "name": "(3, 3)",
+      "p": 3,
+      "q": 3,
+      "a": 1,
+      "cone_slope": 1.0,
+      "diagnostics": {
+        "profile_refinement_max": 1.895610335367337e-10,
+        "min_cone_deviation": -0.020392284194165278,
+        "min_deviation_x": 5.524491629533437,
+        "ode_relative_defect": 2.2713082653866275e-10
+      }
+    },
+    {
+      "name": "(3, 4)",
+      "p": 3,
+      "q": 4,
+      "a": 1,
+      "cone_slope": 1.224744871391589,
+      "diagnostics": {
+        "profile_refinement_max": 8.288747466167479e-11,
+        "min_cone_deviation": -0.002123029346703831,
+        "min_deviation_x": 8.007533390210705,
+        "ode_relative_defect": 1.6853040106779777e-10
+      }
+    },
+    {
+      "name": "(2, 6)",
+      "p": 2,
+      "q": 6,
+      "a": 1,
+      "cone_slope": 2.23606797749979,
+      "diagnostics": {
+        "profile_refinement_max": 1.4217249599823845e-10,
+        "min_cone_deviation": -0.0004785365791981633,
+        "min_deviation_x": 3.913818007405287,
+        "ode_relative_defect": 4.4829465703429284e-10
+      }
+    },
+    {
+      "name": "(6, 2)",
+      "p": 6,
+      "q": 2,
+      "a": 1,
+      "cone_slope": 0.4472135954999579,
+      "diagnostics": {
+        "profile_refinement_max": 6.746647684963136e-11,
+        "min_cone_deviation": 0.0033416134553263532,
+        "min_deviation_x": 40.0,
+        "ode_relative_defect": 3.397221780572269e-11
+      }
+    },
+    {
+      "name": "(4, 4)",
+      "p": 4,
+      "q": 4,
+      "a": 1,
+      "cone_slope": 1.0,
+      "diagnostics": {
+        "profile_refinement_max": 2.3214763444912023e-11,
+        "min_cone_deviation": 0.00046058060269160706,
+        "min_deviation_x": 40.0,
+        "ode_relative_defect": 2.75455008451664e-11
+      }
+    }
+  ],
+  "r8_expander_slope_gap": -2.8741135404963813e-06
+}

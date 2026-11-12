@@ -1,0 +1,41 @@
+{
+  "review_date": "2026-11-12",
+  "redistributed": false,
+  "sources": [
+    {
+      "bibliography_key": "CatAIV2002",
+      "filename": "Fattening from Smooth Initial Data in Mean Curvature Flow_Angenent-Ilmanen-Velázquez.pdf",
+      "title": "Fattening from smooth initial data in mean curvature flow",
+      "edition": "Unfinished 33-page draft, title-page date March 30, 1997–February 15, 2017; user-supplied citation year 2002 retained",
+      "sha256": "71ac2c73c7c22e31abeafdb217a1d39740a56f2f4e7f5d00cc6f751cda0c2283",
+      "pdf_pages": 33,
+      "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+      "role": "Reviewed for stationary caps, the AIV monotone shrinker subfamily, axis-starting expanders, and the qualified eight-dimensional fattening construction.",
+      "redistributed": false,
+      "review_status": "text-and-selected-figures-checked",
+      "checked_passages": [
+        "Sections 1–6, pp. 1–29; Appendix A and bibliography, pp. 30–33.",
+        "Theorems 1, 4, 5, 18; Lemmas 6, 22–24; Section 6.4.",
+        "Equations (2), (6), (8), (41)–(55), (57), (75); selected equation and figure pages visually inspected."
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "label": "ex:catalogue-birotational-shrinkers",
+      "role": "Add specific proper embedded subfamily to existing page"
+    },
+    {
+      "label": "ex:catalogue-birotational-expanders",
+      "role": "Attribute existing axis-starting family to earlier construction"
+    },
+    {
+      "label": "ex:catalogue-aiv-minimal",
+      "role": "New stationary family"
+    },
+    {
+      "label": "ex:catalogue-aiv-eight-fattening",
+      "role": "New qualified announced construction and formal models"
+    }
+  ]
+}
