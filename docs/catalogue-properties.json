@@ -14363,6 +14363,258 @@
       }
     },
     {
+      "label": "ex:catalogue-bounded-mean-curvature-singularities",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "citations": [
+        "CatVelazquez1994",
+        "CatStolarski2023"
+      ],
+      "cases": [
+        {
+          "name": "Equal factors n ≥ 4 in R^(2n); even k ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ × Sⁿ⁻¹",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Properly embedded regular slices; isolated cone singularity in the equal-factor model."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        },
+        {
+          "name": "Flat products in R^(2n+m), n ≥ 4, m ≥ 1; even k ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ⁺ᵐ × Sⁿ⁻¹",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Product embedding; the limiting singular set includes the flat Rᵐ factor."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        }
+      ],
+      "title": "Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
+      "section": "hypersurface-singularities-with-bounded-mean-curvature",
+      "category": "other-special-flows",
+      "tag": "D9D28F3C8E4F",
+      "model": "simons-cone-bounded",
+      "illustration_status": "Numerical ODE and asymptotic model",
+      "chronology": {
+        "title": "Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
+        "name": "Hypersurface singularities with bounded mean curvature",
+        "date": "1994",
+        "earliest_reference": "CatVelazquez1994",
+        "references": [
+          {
+            "authors": [
+              "Velázquez"
+            ],
+            "date": "1994",
+            "kind": "publication",
+            "url": "https://www.numdam.org/item/ASNSP_1994_4_21_4_595_0/",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatVelazquez1994",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+              "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+            }
+          },
+          {
+            "authors": [
+              "Stolarski"
+            ],
+            "date": "2020-03-13",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2003.06383",
+            "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
+            "key": "CatStolarski2023",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.1 and 3.2; Introduction attribution, PDF pp. 1–2",
+              "note": "Proves bounded mean curvature for an existing subfamily and explicitly attributes its construction to Velázquez."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatVelazquez1994"
+        ]
+      }
+    },
+    {
+      "label": "ex:catalogue-simons-cone-low-mode",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
+      "citations": [
+        "CatVelazquez1994",
+        "CatGuoSesum2018",
+        "CatStolarski2023"
+      ],
+      "cases": [
+        {
+          "name": "Equal factors n = 4 in R8; low mode k = 2",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "R⁴ × S³",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive radial graph; the singular cone is a limit, not a regular slice."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        },
+        {
+          "name": "Equal factors n ≥ 5 in R^(2n); k = 2, Guo–Šešum mean-curvature blow-up",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ × Sⁿ⁻¹",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular time slices; finer minimal limit is smooth."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        }
+      ],
+      "title": "Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+      "section": "low-mode-type-ii-singularities-approaching-simons-cones",
+      "category": "other-special-flows",
+      "tag": "16DB72EF5FA3",
+      "model": "simons-cone-low-mode",
+      "illustration_status": "Numerical ODE and asymptotic model",
+      "chronology": {
+        "title": "Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+        "name": "Low-mode type-II singularities approaching Simons cones",
+        "date": "1994",
+        "earliest_reference": "CatVelazquez1994",
+        "references": [
+          {
+            "authors": [
+              "Velázquez"
+            ],
+            "date": "1994",
+            "kind": "publication",
+            "url": "https://www.numdam.org/item/ASNSP_1994_4_21_4_595_0/",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatVelazquez1994",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+              "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+            }
+          },
+          {
+            "authors": [
+              "Guo",
+              "Šešum"
+            ],
+            "date": "2017-01-07",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/1701.01835",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatGuoSesum2018",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorem 1.2, Theorem 4.8 and Propositions 5.1–5.4",
+              "note": "Refines convergence and proves slower mean-curvature blow-up for n ≥ 5 and k = 2; analyzes Velázquez’s family."
+            }
+          },
+          {
+            "authors": [
+              "Stolarski"
+            ],
+            "date": "2020-03-13",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2003.06383",
+            "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
+            "key": "CatStolarski2023",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 3.1 and 3.3",
+              "note": "Restates the mode-indexed construction and proves smooth inner convergence."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatVelazquez1994"
+        ]
+      }
+    },
+    {
       "label": "ex:catalogue-aiv-eight-fattening",
       "notes": "Announced construction in an unfinished draft. Positive-time type I and type II asymptotics are formal; global completion is not specified. Properties below describe the local model, not a global classification.",
       "citations": [
@@ -14435,68 +14687,76 @@
       }
     },
     {
-      "label": "ex:catalogue-bounded-mean-curvature-singularities",
-      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
+      "label": "ex:catalogue-simons-cone-smoothing",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
       "citations": [
-        "CatStolarski2023"
+        "CatADS2026"
       ],
       "cases": [
         {
-          "name": "Ambient ℝᴺ, N ≥ 8",
+          "name": "Outgoing R8 flow: integer k ≥ 4; compatible incoming bounded-H flow: even k ≥ 4",
           "ambient": [
             "higher"
           ],
           "dimension": "higher",
-          "topology": "Noncompact hypersurface; minimal-cone desingularization geometry",
+          "topology": "R⁴ × S³",
           "compact": false,
           "embeddedness": {
             "key": "embedded",
-            "text": "The cited construction gives an embedding for this case."
+            "text": "Positive radial graph is embedded for t ≠ 0; time-zero trace is singular at its vertex."
           },
           "genus": {
             "key": "na",
-            "text": "Not a smooth surface; surface genus is inapplicable."
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
           },
           "ends": {
-            "key": "not-recorded",
-            "text": "Not recorded for the full parameter manifold."
+            "key": "1",
+            "text": "1 end of each regular slice"
           },
           "gaussian": {
             "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
           },
           "entropy": {
             "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
+            "text": "No quantitative entropy claim for the evolving slices."
           }
         }
       ],
-      "title": "Hypersurface singularities with bounded mean curvature",
-      "section": "hypersurface-singularities-with-bounded-mean-curvature",
+      "title": "Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+      "section": "type-ii-smoothing-after-a-simons-cone-singularity",
       "category": "other-special-flows",
-      "tag": "D9D28F3C8E4F",
-      "model": "literature-bounded-mean-curvature-singularities",
-      "illustration_status": "Source-informed schematic",
+      "tag": "0B7679E73801",
+      "model": "simons-cone-smoothing",
+      "illustration_status": "Numerical PDE experiment",
       "chronology": {
-        "title": "Hypersurface singularities with bounded mean curvature",
-        "name": "Hypersurface singularities with bounded mean curvature",
-        "date": "2020-03-13",
-        "earliest_reference": "CatStolarski2023",
+        "title": "Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+        "name": "Type-II smoothing after a Simons-cone singularity",
+        "date": "2021-08-19",
+        "earliest_reference": "CatADS2026",
         "references": [
           {
             "authors": [
-              "Stolarski"
+              "Angenent",
+              "Daskalopoulos",
+              "Šešum"
             ],
-            "date": "2020-03-13",
+            "date": "2021-08-19",
             "kind": "arxiv",
-            "url": "https://arxiv.org/abs/2003.06383",
-            "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
-            "key": "CatStolarski2023",
+            "url": "https://arxiv.org/abs/2108.08725",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatADS2026",
             "background": "",
-            "credit_review": null
+            "credit_review": {
+              "role": "construction",
+              "locator": "Main Theorem and Corollary 1.1.1; Sections 3–5",
+              "note": "Proves post-singularity smoothing and bounded mean curvature; credits formal matching to Angenent–Ilmanen–Velázquez."
+            }
           }
         ],
-        "construction_references": []
+        "construction_references": [
+          "CatADS2026"
+        ]
       }
     },
     {
@@ -14563,6 +14823,106 @@
           }
         ],
         "construction_references": []
+      }
+    },
+    {
+      "label": "ex:catalogue-compact-lawson-cone-flows",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
+      "citations": [
+        "CatLiu2024"
+      ],
+      "cases": [
+        {
+          "name": "N = 8, p + q = 8, p,q ≥ 3, integer ℓ ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S⁷",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Smooth compact embedded slices in Liu’s preprint construction."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value or uniform-in-time bound assigned."
+          }
+        },
+        {
+          "name": "N ≥ 9, p + q = N, p,q ≥ 2, integer ℓ ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sᴺ⁻¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices; topology follows from the capped profile."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value or uniform-in-time bound assigned."
+          }
+        }
+      ],
+      "title": "Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+      "section": "compact-type-ii-singularities-approaching-lawson-cones",
+      "category": "other-special-flows",
+      "tag": "81D16D031DF7",
+      "model": "simons-cone-compact",
+      "illustration_status": "Numerical ODE and asymptotic model",
+      "chronology": {
+        "title": "Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+        "name": "Compact type-II singularities approaching Lawson cones",
+        "date": "2024-03-25",
+        "earliest_reference": "CatLiu2024",
+        "references": [
+          {
+            "authors": [
+              "Liu"
+            ],
+            "date": "2024-03-25",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2403.16515",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatLiu2024",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.4; Section 4 initial capped profile and Theorem 4.5; Corollary 8.5",
+              "note": "Preprint construction of compact bounded-mean-curvature singularities; no independent proof verification."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatLiu2024"
+        ]
       }
     },
     {

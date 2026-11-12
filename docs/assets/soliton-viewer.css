@@ -1,4 +1,8 @@
 .soliton-figure{margin:28px 0;padding:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--background,#fff)}
+.simons-cone-figure .soliton-controls select{max-width:100%;min-height:38px;font-size:13px}
+.simons-cone-figure .soliton-stage{height:410px}
+.simons-cone-figure .soliton-controls label{max-width:100%}
+.simons-cone-figure .soliton-status{line-height:1.65;padding-bottom:12px}
 .soliton-figure .soliton-stage:has(img[src$="halldorsson-dense.svg"]){height:auto;aspect-ratio:960/730}
 /* Lee–Wang: a fixed scale across all four exact time slices. */
 .soliton-figure.lw-expander-figure .soliton-stage{height:610px}

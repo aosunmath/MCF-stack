@@ -2842,5 +2842,59 @@
     "page": "tag/BD3A080A/index.html",
     "canonical_tag": "0AC69A3BDB5D",
     "anchor": ""
+  },
+  {
+    "tag": "97F3637D",
+    "label": "sec:catalogue-simons-cone-low-mode",
+    "title": "158 Low-mode type-II singularities approaching Simons cones",
+    "kind": "chapter",
+    "page": "tag/97F3637D/index.html",
+    "canonical_tag": "FA0AF7B1B843",
+    "anchor": ""
+  },
+  {
+    "tag": "E7AE3D52",
+    "label": "ex:catalogue-simons-cone-low-mode",
+    "title": "Example 158.1 (Vel\u00e1zquez flows and the Guo\u2013\u0160e\u0161um blow-up analysis)",
+    "kind": "example",
+    "page": "tag/E7AE3D52/index.html",
+    "canonical_tag": "16DB72EF5FA3",
+    "anchor": ""
+  },
+  {
+    "tag": "B29D83C7",
+    "label": "sec:catalogue-compact-lawson-cone-flows",
+    "title": "159 Compact type-II singularities approaching Lawson cones",
+    "kind": "chapter",
+    "page": "tag/B29D83C7/index.html",
+    "canonical_tag": "0948A6AC6488",
+    "anchor": ""
+  },
+  {
+    "tag": "ABEF7F1B",
+    "label": "ex:catalogue-compact-lawson-cone-flows",
+    "title": "Example 159.1 (Liu's compact flows with bounded mean curvature)",
+    "kind": "example",
+    "page": "tag/ABEF7F1B/index.html",
+    "canonical_tag": "81D16D031DF7",
+    "anchor": ""
+  },
+  {
+    "tag": "A2355102",
+    "label": "sec:catalogue-simons-cone-smoothing",
+    "title": "160 Type-II smoothing after a Simons-cone singularity",
+    "kind": "chapter",
+    "page": "tag/A2355102/index.html",
+    "canonical_tag": "AA223119E79B",
+    "anchor": ""
+  },
+  {
+    "tag": "63A8D902",
+    "label": "ex:catalogue-simons-cone-smoothing",
+    "title": "Example 160.1 (Angenent\u2013Daskalopoulos\u2013\u0160e\u0161um continuation)",
+    "kind": "example",
+    "page": "tag/63A8D902/index.html",
+    "canonical_tag": "0B7679E73801",
+    "anchor": ""
   }
 ]

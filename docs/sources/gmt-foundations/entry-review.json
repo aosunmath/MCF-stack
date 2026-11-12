@@ -1510,6 +1510,7 @@
       "file": "catalogue-literature.tex",
       "status": "cited-example",
       "citations": [
+        "CatVelazquez1994",
         "CatStolarski2023"
       ],
       "dependencies": [],
@@ -1977,6 +1978,44 @@
       "status": "cited-example",
       "citations": [
         "CatAIV2002"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-simons-cone-low-mode",
+      "title": "Low-mode type-II singularities approaching Simons cones",
+      "kind": "example",
+      "file": "catalogue-simons-cones.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatVelazquez1994",
+        "CatGuoSesum2018",
+        "CatStolarski2023"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-compact-lawson-cone-flows",
+      "title": "Compact type-II singularities approaching Lawson cones",
+      "kind": "example",
+      "file": "catalogue-simons-cones.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatLiu2024"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-simons-cone-smoothing",
+      "title": "Type-II smoothing after a Simons-cone singularity",
+      "kind": "example",
+      "file": "catalogue-simons-cones.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatADS2026"
       ],
       "dependencies": [],
       "formal_verification": "none"

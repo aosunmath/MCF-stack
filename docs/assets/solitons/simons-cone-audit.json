@@ -1,0 +1,33 @@
+{
+  "method": "DOP853 minimal ODE; method of lines, quadratic radial grid, sparse BDF for nonlinear PDE",
+  "pde_equation": "Q_t=Q_rr/(1+Q_r^2)+3 Q_r/r-3/Q",
+  "domain": [
+    0,
+    5
+  ],
+  "time": [
+    0,
+    0.5
+  ],
+  "initial_rounding": 0.01,
+  "amplitude": 0.2,
+  "initial_data": "epsilon Q_1(r/epsilon)+0.2 r^6/(1+r^6)",
+  "boundary": "Q_r(0,t)=0; fixed Q(5,t)=Q(5,0)",
+  "stationary_leaf_residuals_120_240_480": [
+    0.00039391319490356125,
+    9.851073355848783e-05,
+    2.4628717304242542e-05
+  ],
+  "grid_240_480_max_error_all_times": 0.00028363425965912195,
+  "domain_5_7_max_error_r_le_2": 3.5046313843390894e-05,
+  "rounding_001_0005_final_max_error": 7.941089940066703e-07,
+  "run_final_axis": {
+    "(240, 0.02, 5)": 0.9412865524783463,
+    "(480, 0.02, 5)": 0.9413271302441304,
+    "(480, 0.01, 5)": 0.941321241841015,
+    "(480, 0.005, 5)": 0.9413204477320775,
+    "(672, 0.01, 7)": 0.9413250500893586
+  },
+  "primary_final_axis": 0.941321241841015,
+  "claims": "Finite-domain regularized forward PDE only. No convergence proof at the singular trace, critical-data tuning, certified type-II rate, or entropy computation."
+}

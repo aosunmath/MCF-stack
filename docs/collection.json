@@ -2403,9 +2403,12 @@
         "ancient-isoparametric-flows-in-euclidean-space",
         "ancient-ovals-with-reduced-symmetry",
         "ancient-stacked-pancakes",
-        "eight-dimensional-fattening-at-the-simoes-cone",
         "hypersurface-singularities-with-bounded-mean-curvature",
+        "low-mode-type-ii-singularities-approaching-simons-cones",
+        "eight-dimensional-fattening-at-the-simoes-cone",
+        "type-ii-smoothing-after-a-simons-cone-singularity",
         "lagrangian-singularities-with-prescribed-orbit-models",
+        "compact-type-ii-singularities-approaching-lawson-cones",
         "su-wood-stationary-products-of-lawlor-profiles",
         "stolarski-su-finite-time-lagrangian-neck-pinches",
         "ancient-isoparametric-flows-in-spheres",
@@ -2661,9 +2664,12 @@
           "key": "higher",
           "title": "Euclidean dimension ≥ 5",
           "topics": [
-            "eight-dimensional-fattening-at-the-simoes-cone",
             "hypersurface-singularities-with-bounded-mean-curvature",
+            "low-mode-type-ii-singularities-approaching-simons-cones",
+            "eight-dimensional-fattening-at-the-simoes-cone",
+            "type-ii-smoothing-after-a-simons-cone-singularity",
             "lagrangian-singularities-with-prescribed-orbit-models",
+            "compact-type-ii-singularities-approaching-lawson-cones",
             "su-wood-stationary-products-of-lawlor-profiles",
             "stolarski-su-finite-time-lagrangian-neck-pinches"
           ],
@@ -3513,7 +3519,11 @@
           "higher": [
             {
               "anchor": "case-ex-catalogue-bounded-mean-curvature-singularities-1",
-              "name": "Ambient ℝᴺ, N ≥ 8"
+              "name": "Equal factors n ≥ 4 in R^(2n); even k ≥ 4"
+            },
+            {
+              "anchor": "case-ex-catalogue-bounded-mean-curvature-singularities-2",
+              "name": "Flat products in R^(2n+m), n ≥ 4, m ≥ 1; even k ≥ 4"
             }
           ]
         },
@@ -3642,6 +3652,38 @@
             {
               "anchor": "case-ex-catalogue-aiv-eight-fattening-1",
               "name": "O(2) × O(6) local singularity and fattening model"
+            }
+          ]
+        },
+        "low-mode-type-ii-singularities-approaching-simons-cones": {
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-simons-cone-low-mode-1",
+              "name": "Equal factors n = 4 in R8; low mode k = 2"
+            },
+            {
+              "anchor": "case-ex-catalogue-simons-cone-low-mode-2",
+              "name": "Equal factors n ≥ 5 in R^(2n); k = 2, Guo–Šešum mean-curvature blow-up"
+            }
+          ]
+        },
+        "compact-type-ii-singularities-approaching-lawson-cones": {
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-compact-lawson-cone-flows-1",
+              "name": "N = 8, p + q = 8, p,q ≥ 3, integer ℓ ≥ 4"
+            },
+            {
+              "anchor": "case-ex-catalogue-compact-lawson-cone-flows-2",
+              "name": "N ≥ 9, p + q = N, p,q ≥ 2, integer ℓ ≥ 3"
+            }
+          ]
+        },
+        "type-ii-smoothing-after-a-simons-cone-singularity": {
+          "higher": [
+            {
+              "anchor": "case-ex-catalogue-simons-cone-smoothing-1",
+              "name": "Outgoing R8 flow: integer k ≥ 4; compatible incoming bounded-H flow: even k ≥ 4"
             }
           ]
         }
@@ -6718,7 +6760,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.46",
+      "number": "5.49",
       "tag": "0806DD487DC4"
     },
     {
@@ -7064,7 +7106,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.49",
+      "number": "5.52",
       "tag": "9C5BCCFA4320"
     },
     {
@@ -7094,7 +7136,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.45",
+      "number": "5.48",
       "tag": "0AE8973A4338"
     },
     {
@@ -7123,7 +7165,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.48",
+      "number": "5.51",
       "tag": "2AB1CBD37191"
     },
     {
@@ -7152,7 +7194,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.39",
+      "number": "5.42",
       "tag": "C99B5440B24D"
     },
     {
@@ -7181,7 +7223,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.40",
+      "number": "5.43",
       "tag": "71FD28B23406"
     },
     {
@@ -8344,7 +8386,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.41",
+      "number": "5.44",
       "tag": "2DFF09123589"
     },
     {
@@ -8377,14 +8419,30 @@
     },
     {
       "slug": "hypersurface-singularities-with-bounded-mean-curvature",
-      "title": "Hypersurface singularities with bounded mean curvature",
+      "title": "Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
       "description": "",
       "chronology": {
-        "title": "Hypersurface singularities with bounded mean curvature",
+        "title": "Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
         "name": "Hypersurface singularities with bounded mean curvature",
-        "date": "2020-03-13",
-        "earliest_reference": "CatStolarski2023",
+        "date": "1994",
+        "earliest_reference": "CatVelazquez1994",
         "references": [
+          {
+            "authors": [
+              "Velázquez"
+            ],
+            "date": "1994",
+            "kind": "publication",
+            "url": "https://www.numdam.org/item/ASNSP_1994_4_21_4_595_0/",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatVelazquez1994",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+              "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+            }
+          },
           {
             "authors": [
               "Stolarski"
@@ -8395,12 +8453,18 @@
             "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
             "key": "CatStolarski2023",
             "background": "",
-            "credit_review": null
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 1.1 and 3.2; Introduction attribution, PDF pp. 1–2",
+              "note": "Proves bounded mean curvature for an existing subfamily and explicitly attributes its construction to Velázquez."
+            }
           }
         ],
-        "construction_references": []
+        "construction_references": [
+          "CatVelazquez1994"
+        ]
       },
-      "number": "5.37",
+      "number": "5.36",
       "tag": "88709443EE99"
     },
     {
@@ -8429,7 +8493,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.38",
+      "number": "5.40",
       "tag": "A3EE122FF71E"
     },
     {
@@ -9134,7 +9198,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.47",
+      "number": "5.50",
       "tag": "1897F09E9330"
     },
     {
@@ -9498,7 +9562,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.43",
+      "number": "5.46",
       "tag": "6E7783E99D53"
     },
     {
@@ -9527,7 +9591,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.42",
+      "number": "5.45",
       "tag": "EF033313C0BB"
     },
     {
@@ -9556,7 +9620,7 @@
         ],
         "construction_references": []
       },
-      "number": "5.44",
+      "number": "5.47",
       "tag": "06177EF7798F"
     },
     {
@@ -9744,8 +9808,145 @@
         ],
         "construction_references": []
       },
-      "number": "5.36",
+      "number": "5.38",
       "tag": "550F100A27EC"
+    },
+    {
+      "slug": "low-mode-type-ii-singularities-approaching-simons-cones",
+      "title": "Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+      "description": "",
+      "chronology": {
+        "title": "Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+        "name": "Low-mode type-II singularities approaching Simons cones",
+        "date": "1994",
+        "earliest_reference": "CatVelazquez1994",
+        "references": [
+          {
+            "authors": [
+              "Velázquez"
+            ],
+            "date": "1994",
+            "kind": "publication",
+            "url": "https://www.numdam.org/item/ASNSP_1994_4_21_4_595_0/",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatVelazquez1994",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+              "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+            }
+          },
+          {
+            "authors": [
+              "Guo",
+              "Šešum"
+            ],
+            "date": "2017-01-07",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/1701.01835",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatGuoSesum2018",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorem 1.2, Theorem 4.8 and Propositions 5.1–5.4",
+              "note": "Refines convergence and proves slower mean-curvature blow-up for n ≥ 5 and k = 2; analyzes Velázquez’s family."
+            }
+          },
+          {
+            "authors": [
+              "Stolarski"
+            ],
+            "date": "2020-03-13",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2003.06383",
+            "evidence": "arXiv submission history, version 1: 2020-03-13. Checked 2026-11-09.",
+            "key": "CatStolarski2023",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Theorems 3.1 and 3.3",
+              "note": "Restates the mode-indexed construction and proves smooth inner convergence."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatVelazquez1994"
+        ]
+      },
+      "number": "5.37",
+      "tag": "FA0AF7B1B843"
+    },
+    {
+      "slug": "compact-type-ii-singularities-approaching-lawson-cones",
+      "title": "Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+      "description": "",
+      "chronology": {
+        "title": "Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+        "name": "Compact type-II singularities approaching Lawson cones",
+        "date": "2024-03-25",
+        "earliest_reference": "CatLiu2024",
+        "references": [
+          {
+            "authors": [
+              "Liu"
+            ],
+            "date": "2024-03-25",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2403.16515",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatLiu2024",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 1.4; Section 4 initial capped profile and Theorem 4.5; Corollary 8.5",
+              "note": "Preprint construction of compact bounded-mean-curvature singularities; no independent proof verification."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatLiu2024"
+        ]
+      },
+      "number": "5.41",
+      "tag": "0948A6AC6488"
+    },
+    {
+      "slug": "type-ii-smoothing-after-a-simons-cone-singularity",
+      "title": "Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+      "description": "",
+      "chronology": {
+        "title": "Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+        "name": "Type-II smoothing after a Simons-cone singularity",
+        "date": "2021-08-19",
+        "earliest_reference": "CatADS2026",
+        "references": [
+          {
+            "authors": [
+              "Angenent",
+              "Daskalopoulos",
+              "Šešum"
+            ],
+            "date": "2021-08-19",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2108.08725",
+            "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json.",
+            "key": "CatADS2026",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Main Theorem and Corollary 1.1.1; Sections 3–5",
+              "note": "Proves post-singularity smoothing and bounded mean curvature; credits formal matching to Angenent–Ilmanen–Velázquez."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatADS2026"
+        ]
+      },
+      "number": "5.39",
+      "tag": "AA223119E79B"
     }
   ],
   "entries": [
@@ -9763,7 +9964,7 @@
           "book": "gmt-foundations",
           "tag": "F8390A5C",
           "label": "sec:sources-conventions",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9782,7 +9983,7 @@
           "book": "gmt-foundations",
           "tag": "B6BB2EC0",
           "label": "rem:source-editions",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9801,7 +10002,7 @@
           "book": "gmt-foundations",
           "tag": "BA8E466F",
           "label": "rem:notation",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9820,7 +10021,7 @@
           "book": "gmt-foundations",
           "tag": "6592A3B9",
           "label": "rem:project-scope",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9839,7 +10040,7 @@
           "book": "gmt-foundations",
           "tag": "3DE9EB04",
           "label": "sec:catalogue-round-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9858,7 +10059,7 @@
           "book": "gmt-foundations",
           "tag": "D203437F",
           "label": "ex:catalogue-round-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9877,7 +10078,7 @@
           "book": "gmt-foundations",
           "tag": "51178EC2",
           "label": "sec:catalogue-round-cylinder",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9896,7 +10097,7 @@
           "book": "gmt-foundations",
           "tag": "EEE3452C",
           "label": "ex:catalogue-round-cylinder",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9915,7 +10116,7 @@
           "book": "gmt-foundations",
           "tag": "E9C051B4",
           "label": "sec:catalogue-plane-shrinker",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9934,7 +10135,7 @@
           "book": "gmt-foundations",
           "tag": "17CD9463",
           "label": "ex:catalogue-plane-shrinker",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9953,7 +10154,7 @@
           "book": "gmt-foundations",
           "tag": "3A437BBD",
           "label": "sec:catalogue-abresch-langer",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9972,7 +10173,7 @@
           "book": "gmt-foundations",
           "tag": "C5E7E766",
           "label": "ex:catalogue-abresch-langer",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -9991,7 +10192,7 @@
           "book": "gmt-foundations",
           "tag": "E1B60631",
           "label": "sec:catalogue-angenent-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10010,7 +10211,7 @@
           "book": "gmt-foundations",
           "tag": "8169E438",
           "label": "ex:catalogue-angenent-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10029,7 +10230,7 @@
           "book": "gmt-foundations",
           "tag": "E6A84F3F",
           "label": "sec:catalogue-drugan-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10048,7 +10249,7 @@
           "book": "gmt-foundations",
           "tag": "B9F1DC7E",
           "label": "ex:catalogue-drugan-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10067,7 +10268,7 @@
           "book": "gmt-foundations",
           "tag": "DE851C71",
           "label": "sec:catalogue-clifford-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10086,7 +10287,7 @@
           "book": "gmt-foundations",
           "tag": "88A4481E",
           "label": "ex:catalogue-clifford-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10105,7 +10306,7 @@
           "book": "gmt-foundations",
           "tag": "E42E972F",
           "label": "sec:catalogue-curve-products",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10124,7 +10325,7 @@
           "book": "gmt-foundations",
           "tag": "E690F2D5",
           "label": "ex:catalogue-curve-products",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10143,7 +10344,7 @@
           "book": "gmt-foundations",
           "tag": "0D7837E2",
           "label": "sec:catalogue-spherical-minimal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10162,7 +10363,7 @@
           "book": "gmt-foundations",
           "tag": "852199B9",
           "label": "ex:catalogue-spherical-minimal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10181,7 +10382,7 @@
           "book": "gmt-foundations",
           "tag": "830EABD2",
           "label": "sec:catalogue-moller-genus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10200,7 +10401,7 @@
           "book": "gmt-foundations",
           "tag": "CBE08D0B",
           "label": "ex:catalogue-moller-genus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10219,7 +10420,7 @@
           "book": "gmt-foundations",
           "tag": "D6BAA215",
           "label": "sec:catalogue-kkm-one-end",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10238,7 +10439,7 @@
           "book": "gmt-foundations",
           "tag": "57CB963E",
           "label": "ex:catalogue-kkm-one-end",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10257,7 +10458,7 @@
           "book": "gmt-foundations",
           "tag": "74D81451",
           "label": "sec:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10276,7 +10477,7 @@
           "book": "gmt-foundations",
           "tag": "8A25E9F3",
           "label": "ex:catalogue-drugan-nguyen-torus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10295,7 +10496,7 @@
           "book": "gmt-foundations",
           "tag": "A24E006E",
           "label": "sec:catalogue-bns-genus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10314,7 +10515,7 @@
           "book": "gmt-foundations",
           "tag": "29FD1848",
           "label": "ex:catalogue-bns-genus",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10333,7 +10534,7 @@
           "book": "gmt-foundations",
           "tag": "8B87958C",
           "label": "sec:catalogue-ketover-doubled-plane",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10352,7 +10553,7 @@
           "book": "gmt-foundations",
           "tag": "B42E22F6",
           "label": "ex:catalogue-ketover-doubled-plane",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10371,7 +10572,7 @@
           "book": "gmt-foundations",
           "tag": "981E6034",
           "label": "sec:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10390,7 +10591,7 @@
           "book": "gmt-foundations",
           "tag": "5EF43C21",
           "label": "ex:catalogue-spherical-doubling-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10409,7 +10610,7 @@
           "book": "gmt-foundations",
           "tag": "BA9331C1",
           "label": "sec:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10428,7 +10629,7 @@
           "book": "gmt-foundations",
           "tag": "F6ED71FE",
           "label": "ex:catalogue-nguyen-shrinking-saddles",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10447,7 +10648,7 @@
           "book": "gmt-foundations",
           "tag": "4F2641F6",
           "label": "sec:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10466,7 +10667,7 @@
           "book": "gmt-foundations",
           "tag": "185EA272",
           "label": "ex:catalogue-angenent-torus-cylinders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10485,7 +10686,7 @@
           "book": "gmt-foundations",
           "tag": "98538DB9",
           "label": "sec:catalogue-iw-two-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10504,7 +10705,7 @@
           "book": "gmt-foundations",
           "tag": "F3DA0C49",
           "label": "ex:catalogue-iw-two-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10523,7 +10724,7 @@
           "book": "gmt-foundations",
           "tag": "AC93AF6C",
           "label": "sec:catalogue-shao-zou-stacking",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10542,7 +10743,7 @@
           "book": "gmt-foundations",
           "tag": "55D3E8EB",
           "label": "ex:catalogue-shao-zou-stacking",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10561,7 +10762,7 @@
           "book": "gmt-foundations",
           "tag": "DDB39012",
           "label": "sec:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10580,7 +10781,7 @@
           "book": "gmt-foundations",
           "tag": "4B406BA4",
           "label": "ex:catalogue-hmw-platonic-polygon",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10599,7 +10800,7 @@
           "book": "gmt-foundations",
           "tag": "08077F3D",
           "label": "sec:catalogue-hmw-one-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10618,7 +10819,7 @@
           "book": "gmt-foundations",
           "tag": "8D1FB423",
           "label": "ex:catalogue-hmw-one-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10637,7 +10838,7 @@
           "book": "gmt-foundations",
           "tag": "099E25A3",
           "label": "sec:catalogue-hmw-three-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10656,7 +10857,7 @@
           "book": "gmt-foundations",
           "tag": "E526106D",
           "label": "ex:catalogue-hmw-three-ended",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10675,7 +10876,7 @@
           "book": "gmt-foundations",
           "tag": "468F62D8",
           "label": "sec:catalogue-ketover-platonic",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10694,7 +10895,7 @@
           "book": "gmt-foundations",
           "tag": "D8E83785",
           "label": "ex:catalogue-ketover-platonic",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10713,7 +10914,7 @@
           "book": "gmt-foundations",
           "tag": "22D51C11",
           "label": "sec:catalogue-swz-large-entropy",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10732,7 +10933,7 @@
           "book": "gmt-foundations",
           "tag": "2649B70D",
           "label": "ex:catalogue-swz-large-entropy",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10751,7 +10952,7 @@
           "book": "gmt-foundations",
           "tag": "DEB2F0AE",
           "label": "sec:catalogue-chu-sun-genus-one",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10770,7 +10971,7 @@
           "book": "gmt-foundations",
           "tag": "2FE2FC92",
           "label": "ex:catalogue-chu-sun-genus-one",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10789,7 +10990,7 @@
           "book": "gmt-foundations",
           "tag": "CEE04939",
           "label": "sec:catalogue-mobius-shrinker",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10808,7 +11009,7 @@
           "book": "gmt-foundations",
           "tag": "6A5DC245",
           "label": "ex:catalogue-mobius-shrinker",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10827,7 +11028,7 @@
           "book": "gmt-foundations",
           "tag": "4A063D13",
           "label": "sec:catalogue-jlt-compact-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10846,7 +11047,7 @@
           "book": "gmt-foundations",
           "tag": "47920AFD",
           "label": "ex:catalogue-jlt-compact-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10865,7 +11066,7 @@
           "book": "gmt-foundations",
           "tag": "A9383DDD",
           "label": "sec:catalogue-lw-quadric-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10884,7 +11085,7 @@
           "book": "gmt-foundations",
           "tag": "876C62CA",
           "label": "ex:catalogue-lw-quadric-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10903,7 +11104,7 @@
           "book": "gmt-foundations",
           "tag": "CA26CF72",
           "label": "sec:catalogue-chopp-cube",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10922,7 +11123,7 @@
           "book": "gmt-foundations",
           "tag": "BBC34992",
           "label": "ex:catalogue-chopp-cube",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10941,7 +11142,7 @@
           "book": "gmt-foundations",
           "tag": "37B7EE51",
           "label": "sec:catalogue-chopp-octahedron",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10960,7 +11161,7 @@
           "book": "gmt-foundations",
           "tag": "6C747D30",
           "label": "ex:catalogue-chopp-octahedron",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10979,7 +11180,7 @@
           "book": "gmt-foundations",
           "tag": "5164E685",
           "label": "sec:catalogue-chopp-saddle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -10998,7 +11199,7 @@
           "book": "gmt-foundations",
           "tag": "D14306D4",
           "label": "ex:catalogue-chopp-saddle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11017,7 +11218,7 @@
           "book": "gmt-foundations",
           "tag": "8E537542",
           "label": "sec:catalogue-chopp-two-handle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11036,7 +11237,7 @@
           "book": "gmt-foundations",
           "tag": "E5C98227",
           "label": "ex:catalogue-chopp-two-handle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11055,7 +11256,7 @@
           "book": "gmt-foundations",
           "tag": "1C782277",
           "label": "sec:catalogue-chopp-four-handle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11074,7 +11275,7 @@
           "book": "gmt-foundations",
           "tag": "318B5D8B",
           "label": "ex:catalogue-chopp-four-handle",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11093,7 +11294,7 @@
           "book": "gmt-foundations",
           "tag": "7E5C7833",
           "label": "sec:catalogue-grim-reaper",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11112,7 +11313,7 @@
           "book": "gmt-foundations",
           "tag": "B992AB57",
           "label": "ex:catalogue-grim-reaper",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11131,7 +11332,7 @@
           "book": "gmt-foundations",
           "tag": "613D030C",
           "label": "sec:catalogue-tilted-grim-reaper",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11150,7 +11351,7 @@
           "book": "gmt-foundations",
           "tag": "B95BEB4E",
           "label": "ex:catalogue-tilted-grim-reaper",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11169,7 +11370,7 @@
           "book": "gmt-foundations",
           "tag": "C86A12BD",
           "label": "sec:catalogue-bowl-translator",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11188,7 +11389,7 @@
           "book": "gmt-foundations",
           "tag": "54CBC7FC",
           "label": "ex:catalogue-bowl-translator",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11207,7 +11408,7 @@
           "book": "gmt-foundations",
           "tag": "1B76070C",
           "label": "sec:catalogue-translating-catenoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11226,7 +11427,7 @@
           "book": "gmt-foundations",
           "tag": "20DD1EEB",
           "label": "ex:catalogue-translating-catenoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11245,7 +11446,7 @@
           "book": "gmt-foundations",
           "tag": "1B861E2A",
           "label": "sec:catalogue-delta-wing",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11264,7 +11465,7 @@
           "book": "gmt-foundations",
           "tag": "40F79154",
           "label": "ex:catalogue-delta-wing",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11283,7 +11484,7 @@
           "book": "gmt-foundations",
           "tag": "2E5159FD",
           "label": "sec:catalogue-wang-entire-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11302,7 +11503,7 @@
           "book": "gmt-foundations",
           "tag": "BCD12F3A",
           "label": "ex:catalogue-wang-entire-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11321,7 +11522,7 @@
           "book": "gmt-foundations",
           "tag": "1907053D",
           "label": "sec:catalogue-prescribed-apex-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11340,7 +11541,7 @@
           "book": "gmt-foundations",
           "tag": "A3CDAF2B",
           "label": "ex:catalogue-prescribed-apex-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11359,7 +11560,7 @@
           "book": "gmt-foundations",
           "tag": "B0D651E7",
           "label": "sec:catalogue-scherkenoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11378,7 +11579,7 @@
           "book": "gmt-foundations",
           "tag": "6B56E4AF",
           "label": "ex:catalogue-scherkenoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11397,7 +11598,7 @@
           "book": "gmt-foundations",
           "tag": "AF906C13",
           "label": "sec:catalogue-pitchfork",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11416,7 +11617,7 @@
           "book": "gmt-foundations",
           "tag": "474E0E06",
           "label": "ex:catalogue-pitchfork",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11435,7 +11636,7 @@
           "book": "gmt-foundations",
           "tag": "A94B1E75",
           "label": "sec:catalogue-nguyen-tridents",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11454,7 +11655,7 @@
           "book": "gmt-foundations",
           "tag": "F7C75286",
           "label": "ex:catalogue-nguyen-tridents",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11473,7 +11674,7 @@
           "book": "gmt-foundations",
           "tag": "0A64E1E7",
           "label": "sec:catalogue-finite-genus-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11492,7 +11693,7 @@
           "book": "gmt-foundations",
           "tag": "DE343151",
           "label": "ex:catalogue-finite-genus-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11511,7 +11712,7 @@
           "book": "gmt-foundations",
           "tag": "BEE5F8F6",
           "label": "sec:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11530,7 +11731,7 @@
           "book": "gmt-foundations",
           "tag": "210DBE2B",
           "label": "ex:catalogue-sun-wang-torus-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11549,7 +11750,7 @@
           "book": "gmt-foundations",
           "tag": "8A842DE0",
           "label": "sec:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11568,7 +11769,7 @@
           "book": "gmt-foundations",
           "tag": "74BE3892",
           "label": "ex:catalogue-sun-wang-sphere-doubling-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11587,7 +11788,7 @@
           "book": "gmt-foundations",
           "tag": "AC12C225",
           "label": "sec:catalogue-scherk-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11606,7 +11807,7 @@
           "book": "gmt-foundations",
           "tag": "24A25A90",
           "label": "ex:catalogue-scherk-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11625,7 +11826,7 @@
           "book": "gmt-foundations",
           "tag": "B8DE98DE",
           "label": "sec:catalogue-translating-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11644,7 +11845,7 @@
           "book": "gmt-foundations",
           "tag": "847E8E44",
           "label": "ex:catalogue-translating-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11663,7 +11864,7 @@
           "book": "gmt-foundations",
           "tag": "4C07D832",
           "label": "sec:catalogue-translating-annuloids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11682,7 +11883,7 @@
           "book": "gmt-foundations",
           "tag": "FAD58353",
           "label": "ex:catalogue-translating-annuloids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11701,7 +11902,7 @@
           "book": "gmt-foundations",
           "tag": "2EFA5544",
           "label": "sec:catalogue-jlt-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11720,7 +11921,7 @@
           "book": "gmt-foundations",
           "tag": "F8CF938E",
           "label": "ex:catalogue-jlt-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11739,7 +11940,7 @@
           "book": "gmt-foundations",
           "tag": "2CF7EE32",
           "label": "sec:catalogue-jlt-rotating-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11758,7 +11959,7 @@
           "book": "gmt-foundations",
           "tag": "9316A944",
           "label": "ex:catalogue-jlt-rotating-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11777,7 +11978,7 @@
           "book": "gmt-foundations",
           "tag": "DAC678B0",
           "label": "sec:catalogue-su-glued-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11796,7 +11997,7 @@
           "book": "gmt-foundations",
           "tag": "5DDAAA39",
           "label": "ex:catalogue-su-glued-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11815,7 +12016,7 @@
           "book": "gmt-foundations",
           "tag": "DDDA013A",
           "label": "sec:catalogue-expanding-corners",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11834,7 +12035,7 @@
           "book": "gmt-foundations",
           "tag": "D6F08E15",
           "label": "ex:catalogue-expanding-corners",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11853,7 +12054,7 @@
           "book": "gmt-foundations",
           "tag": "03B823D0",
           "label": "sec:catalogue-rotational-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11872,7 +12073,7 @@
           "book": "gmt-foundations",
           "tag": "10CF4F59",
           "label": "ex:catalogue-rotational-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11891,7 +12092,7 @@
           "book": "gmt-foundations",
           "tag": "E0945D42",
           "label": "sec:catalogue-two-sheet-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11910,7 +12111,7 @@
           "book": "gmt-foundations",
           "tag": "1E167729",
           "label": "ex:catalogue-two-sheet-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11929,7 +12130,7 @@
           "book": "gmt-foundations",
           "tag": "9E9198D4",
           "label": "sec:catalogue-one-sheet-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11948,7 +12149,7 @@
           "book": "gmt-foundations",
           "tag": "4A120F3D",
           "label": "ex:catalogue-one-sheet-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11967,7 +12168,7 @@
           "book": "gmt-foundations",
           "tag": "BD0F3D26",
           "label": "sec:catalogue-mean-convex-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -11986,7 +12187,7 @@
           "book": "gmt-foundations",
           "tag": "DC248467",
           "label": "ex:catalogue-mean-convex-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12005,7 +12206,7 @@
           "book": "gmt-foundations",
           "tag": "05CAD4B7",
           "label": "sec:catalogue-expanding-networks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12024,7 +12225,7 @@
           "book": "gmt-foundations",
           "tag": "6FB28705",
           "label": "ex:catalogue-expanding-networks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12043,7 +12244,7 @@
           "book": "gmt-foundations",
           "tag": "9C62F2A3",
           "label": "sec:catalogue-mountain-pass-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12062,7 +12263,7 @@
           "book": "gmt-foundations",
           "tag": "9EEF8261",
           "label": "ex:catalogue-mountain-pass-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12081,7 +12282,7 @@
           "book": "gmt-foundations",
           "tag": "1E1ABE80",
           "label": "sec:catalogue-high-genus-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12100,7 +12301,7 @@
           "book": "gmt-foundations",
           "tag": "3B34FF14",
           "label": "ex:catalogue-high-genus-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12119,7 +12320,7 @@
           "book": "gmt-foundations",
           "tag": "AB0D7EFB",
           "label": "sec:catalogue-knotted-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12138,7 +12339,7 @@
           "book": "gmt-foundations",
           "tag": "D7D485D6",
           "label": "ex:catalogue-knotted-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12157,7 +12358,7 @@
           "book": "gmt-foundations",
           "tag": "1297CDA5",
           "label": "sec:catalogue-jlt-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12176,7 +12377,7 @@
           "book": "gmt-foundations",
           "tag": "74FADCDD",
           "label": "ex:catalogue-jlt-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12195,7 +12396,7 @@
           "book": "gmt-foundations",
           "tag": "A0C59E29",
           "label": "sec:catalogue-ttw-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12214,7 +12415,7 @@
           "book": "gmt-foundations",
           "tag": "D0F24A56",
           "label": "ex:catalogue-ttw-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12233,7 +12434,7 @@
           "book": "gmt-foundations",
           "tag": "1696D417",
           "label": "sec:catalogue-lw-quadric-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12252,7 +12453,7 @@
           "book": "gmt-foundations",
           "tag": "1907F440",
           "label": "ex:catalogue-lw-quadric-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12271,7 +12472,7 @@
           "book": "gmt-foundations",
           "tag": "BA55C10D",
           "label": "sec:catalogue-stationary-catenoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12290,7 +12491,7 @@
           "book": "gmt-foundations",
           "tag": "7C37C625",
           "label": "ex:catalogue-stationary-catenoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12309,7 +12510,7 @@
           "book": "gmt-foundations",
           "tag": "1E59C846",
           "label": "sec:catalogue-whitney-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12328,7 +12529,7 @@
           "book": "gmt-foundations",
           "tag": "64D1A038",
           "label": "ex:catalogue-whitney-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12347,7 +12548,7 @@
           "book": "gmt-foundations",
           "tag": "6548DC53",
           "label": "sec:catalogue-degenerate-neckpinches",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12366,7 +12567,7 @@
           "book": "gmt-foundations",
           "tag": "AF275232",
           "label": "ex:catalogue-degenerate-neckpinches",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12385,7 +12586,7 @@
           "book": "gmt-foundations",
           "tag": "22B7F4C2",
           "label": "sec:catalogue-angenent-oval",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12404,7 +12605,7 @@
           "book": "gmt-foundations",
           "tag": "F1C9E396",
           "label": "ex:catalogue-angenent-oval",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12423,7 +12624,7 @@
           "book": "gmt-foundations",
           "tag": "11C905C4",
           "label": "sec:catalogue-ancient-torus-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12442,7 +12643,7 @@
           "book": "gmt-foundations",
           "tag": "A3E2C500",
           "label": "ex:catalogue-ancient-torus-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12461,7 +12662,7 @@
           "book": "gmt-foundations",
           "tag": "9BF22915",
           "label": "sec:catalogue-eternal-helices",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12480,7 +12681,7 @@
           "book": "gmt-foundations",
           "tag": "114EAEF2",
           "label": "ex:catalogue-eternal-helices",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12499,7 +12700,7 @@
           "book": "gmt-foundations",
           "tag": "E88E6E76",
           "label": "sec:catalogue-double-plane-flow",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12518,17 +12719,17 @@
           "book": "gmt-foundations",
           "tag": "F7864FF4",
           "label": "ex:catalogue-double-plane-flow",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "0806DD487DC4",
-      "number": "5.46",
+      "number": "5.49",
       "section_intro": true,
       "section_example": false,
-      "title": "5.46 Immortal compact flows converging to a double sphere",
+      "title": "5.49 Immortal compact flows converging to a double sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -12537,17 +12738,17 @@
           "book": "gmt-foundations",
           "tag": "BA7E1CBA",
           "label": "sec:catalogue-double-sphere-flow",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "225751B3C7E8",
-      "number": "5.46",
+      "number": "5.49",
       "section_intro": false,
       "section_example": true,
-      "title": "5.46 Immortal compact flows converging to a double sphere",
+      "title": "5.49 Immortal compact flows converging to a double sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-compact-flows-converging-to-a-double-sphere",
@@ -12556,7 +12757,7 @@
           "book": "gmt-foundations",
           "tag": "4D0BC7F8",
           "label": "ex:catalogue-double-sphere-flow",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12575,7 +12776,7 @@
           "book": "gmt-foundations",
           "tag": "A443286A",
           "label": "sec:catalogue-hh-ancient-ovals",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12594,7 +12795,7 @@
           "book": "gmt-foundations",
           "tag": "351EC7F0",
           "label": "ex:catalogue-hh-ancient-ovals",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12613,7 +12814,7 @@
           "book": "gmt-foundations",
           "tag": "BEE5B7F2",
           "label": "sec:catalogue-minimal-ancient-flows",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12632,7 +12833,7 @@
           "book": "gmt-foundations",
           "tag": "6F93E4BA",
           "label": "ex:catalogue-minimal-ancient-flows",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12651,7 +12852,7 @@
           "book": "gmt-foundations",
           "tag": "0307FA2C",
           "label": "sec:catalogue-reapernoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12670,7 +12871,7 @@
           "book": "gmt-foundations",
           "tag": "731F87CD",
           "label": "ex:catalogue-reapernoid",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12689,7 +12890,7 @@
           "book": "gmt-foundations",
           "tag": "F4D3BF85",
           "label": "sec:catalogue-stacked-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12708,7 +12909,7 @@
           "book": "gmt-foundations",
           "tag": "48421D4E",
           "label": "ex:catalogue-stacked-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12727,7 +12928,7 @@
           "book": "gmt-foundations",
           "tag": "BD702850",
           "label": "sec:catalogue-ancient-spiral-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12746,7 +12947,7 @@
           "book": "gmt-foundations",
           "tag": "B3F91612",
           "label": "ex:catalogue-ancient-spiral-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12765,7 +12966,7 @@
           "book": "gmt-foundations",
           "tag": "8A3434FC",
           "label": "sec:catalogue-grim-reaper-chains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12784,7 +12985,7 @@
           "book": "gmt-foundations",
           "tag": "08ECC401",
           "label": "ex:catalogue-grim-reaper-chains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12803,7 +13004,7 @@
           "book": "gmt-foundations",
           "tag": "8BDA20D6",
           "label": "sec:catalogue-lawlor-necks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -12822,17 +13023,17 @@
           "book": "gmt-foundations",
           "tag": "60699B15",
           "label": "ex:catalogue-lawlor-necks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "9C5BCCFA4320",
-      "number": "5.49",
+      "number": "5.52",
       "section_intro": true,
       "section_example": false,
-      "title": "5.49 Immortal curve shortening with nonunique geodesic limits",
+      "title": "5.52 Immortal curve shortening with nonunique geodesic limits",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "immortal-curve-shortening-with-nonunique-geodesic-limits",
@@ -12841,17 +13042,17 @@
           "book": "gmt-foundations",
           "tag": "8562C509",
           "label": "sec:catalogue-aryan-lee",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "CC2635F97DC0",
-      "number": "5.49",
+      "number": "5.52",
       "section_intro": false,
       "section_example": true,
-      "title": "5.49 Immortal curve shortening with nonunique geodesic limits",
+      "title": "5.52 Immortal curve shortening with nonunique geodesic limits",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "immortal-curve-shortening-with-nonunique-geodesic-limits",
@@ -12860,17 +13061,17 @@
           "book": "gmt-foundations",
           "tag": "4B6E0148",
           "label": "ex:catalogue-aryan-lee",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "0AE8973A4338",
-      "number": "5.45",
+      "number": "5.48",
       "section_intro": true,
       "section_example": false,
-      "title": "5.45 Lagrangian torus necks collapsing at infinite time",
+      "title": "5.48 Lagrangian torus necks collapsing at infinite time",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lagrangian-torus-necks-collapsing-at-infinite-time",
@@ -12879,17 +13080,17 @@
           "book": "gmt-foundations",
           "tag": "0FA438BE",
           "label": "sec:catalogue-su-tsai-wood",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "2DFF070BC43F",
-      "number": "5.45",
+      "number": "5.48",
       "section_intro": false,
       "section_example": true,
-      "title": "5.45 Lagrangian torus necks collapsing at infinite time",
+      "title": "5.48 Lagrangian torus necks collapsing at infinite time",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lagrangian-torus-necks-collapsing-at-infinite-time",
@@ -12898,17 +13099,17 @@
           "book": "gmt-foundations",
           "tag": "F9E1FEFA",
           "label": "ex:catalogue-su-tsai-wood",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "2AB1CBD37191",
-      "number": "5.48",
+      "number": "5.51",
       "section_intro": true,
       "section_example": false,
-      "title": "5.48 Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "title": "5.51 Lagrangian sphere chains in Gibbons–Hawking spaces",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
@@ -12917,17 +13118,17 @@
           "book": "gmt-foundations",
           "tag": "84F801DC",
           "label": "sec:catalogue-lee-tsai",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "DE8829990703",
-      "number": "5.48",
+      "number": "5.51",
       "section_intro": false,
       "section_example": true,
-      "title": "5.48 Lagrangian sphere chains in Gibbons–Hawking spaces",
+      "title": "5.51 Lagrangian sphere chains in Gibbons–Hawking spaces",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lagrangian-sphere-chains-in-gibbons-hawking-spaces",
@@ -12936,17 +13137,17 @@
           "book": "gmt-foundations",
           "tag": "932D0184",
           "label": "ex:catalogue-lee-tsai",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "C99B5440B24D",
-      "number": "5.39",
+      "number": "5.42",
       "section_intro": true,
       "section_example": false,
-      "title": "5.39 Su–Wood stationary products of Lawlor profiles",
+      "title": "5.42 Su–Wood stationary products of Lawlor profiles",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "su-wood-stationary-products-of-lawlor-profiles",
@@ -12955,17 +13156,17 @@
           "book": "gmt-foundations",
           "tag": "3B3C2F1D",
           "label": "sec:catalogue-su-wood-stationary",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "3CC118326D79",
-      "number": "5.39",
+      "number": "5.42",
       "section_intro": false,
       "section_example": true,
-      "title": "5.39 Su–Wood stationary products of Lawlor profiles",
+      "title": "5.42 Su–Wood stationary products of Lawlor profiles",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "su-wood-stationary-products-of-lawlor-profiles",
@@ -12974,17 +13175,17 @@
           "book": "gmt-foundations",
           "tag": "418E2D0E",
           "label": "ex:catalogue-su-wood-stationary",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "71FD28B23406",
-      "number": "5.40",
+      "number": "5.43",
       "section_intro": true,
       "section_example": false,
-      "title": "5.40 Stolarski–Su finite-time Lagrangian neck pinches",
+      "title": "5.43 Stolarski–Su finite-time Lagrangian neck pinches",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "stolarski-su-finite-time-lagrangian-neck-pinches",
@@ -12993,17 +13194,17 @@
           "book": "gmt-foundations",
           "tag": "EC13F9C2",
           "label": "sec:catalogue-stolarski-su",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "41748F7ED1C1",
-      "number": "5.40",
+      "number": "5.43",
       "section_intro": false,
       "section_example": true,
-      "title": "5.40 Stolarski–Su finite-time Lagrangian neck pinches",
+      "title": "5.43 Stolarski–Su finite-time Lagrangian neck pinches",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "stolarski-su-finite-time-lagrangian-neck-pinches",
@@ -13012,7 +13213,7 @@
           "book": "gmt-foundations",
           "tag": "E2816A03",
           "label": "ex:catalogue-stolarski-su",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13031,7 +13232,7 @@
           "book": "gmt-foundations",
           "tag": "56780A06",
           "label": "sec:catalogue-irrational-torus-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13050,7 +13251,7 @@
           "book": "gmt-foundations",
           "tag": "025F76CC",
           "label": "ex:catalogue-irrational-torus-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13069,7 +13270,7 @@
           "book": "gmt-foundations",
           "tag": "807908D8",
           "label": "sec:catalogue-rotating-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13088,7 +13289,7 @@
           "book": "gmt-foundations",
           "tag": "4B8FA872",
           "label": "ex:catalogue-rotating-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13107,7 +13308,7 @@
           "book": "gmt-foundations",
           "tag": "11FCB02E",
           "label": "sec:catalogue-rotating-translating-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13126,7 +13327,7 @@
           "book": "gmt-foundations",
           "tag": "CFD9A574",
           "label": "ex:catalogue-rotating-translating-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13145,7 +13346,7 @@
           "book": "gmt-foundations",
           "tag": "C2DAE0DD",
           "label": "sec:catalogue-rotating-expanding-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13164,7 +13365,7 @@
           "book": "gmt-foundations",
           "tag": "466D0146",
           "label": "ex:catalogue-rotating-expanding-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13183,7 +13384,7 @@
           "book": "gmt-foundations",
           "tag": "8C594FE7",
           "label": "sec:catalogue-rotating-shrinking-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13202,7 +13403,7 @@
           "book": "gmt-foundations",
           "tag": "CC007955",
           "label": "ex:catalogue-rotating-shrinking-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13221,7 +13422,7 @@
           "book": "gmt-foundations",
           "tag": "8BB2E50B",
           "label": "sec:catalogue-halldorsson-dense-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13240,7 +13441,7 @@
           "book": "gmt-foundations",
           "tag": "6961D647",
           "label": "ex:catalogue-halldorsson-dense-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13259,7 +13460,7 @@
           "book": "gmt-foundations",
           "tag": "E24AA084",
           "label": "sec:catalogue-halldorsson-helicoidal-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13278,7 +13479,7 @@
           "book": "gmt-foundations",
           "tag": "3043D275",
           "label": "ex:catalogue-halldorsson-helicoidal-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13297,7 +13498,7 @@
           "book": "gmt-foundations",
           "tag": "56C89D44",
           "label": "sec:catalogue-halldorsson-minimal-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13316,7 +13517,7 @@
           "book": "gmt-foundations",
           "tag": "BA2CEC7D",
           "label": "ex:catalogue-halldorsson-minimal-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13335,7 +13536,7 @@
           "book": "gmt-foundations",
           "tag": "E2FA1C90",
           "label": "sec:catalogue-drugan-kleene",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13354,7 +13555,7 @@
           "book": "gmt-foundations",
           "tag": "53478B68",
           "label": "ex:catalogue-drugan-kleene",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13373,7 +13574,7 @@
           "book": "gmt-foundations",
           "tag": "25FD9872",
           "label": "sec:catalogue-riedler-isoparametric",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13392,7 +13593,7 @@
           "book": "gmt-foundations",
           "tag": "6BB85C1B",
           "label": "ex:catalogue-riedler-isoparametric",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13411,7 +13612,7 @@
           "book": "gmt-foundations",
           "tag": "74B9654F",
           "label": "sec:catalogue-anciaux-legendrian-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13430,7 +13631,7 @@
           "book": "gmt-foundations",
           "tag": "1A5F2675",
           "label": "ex:catalogue-anciaux-legendrian-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13449,7 +13650,7 @@
           "book": "gmt-foundations",
           "tag": "B4A1C9F6",
           "label": "sec:catalogue-anciaux-legendrian-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13468,7 +13669,7 @@
           "book": "gmt-foundations",
           "tag": "695AE7B7",
           "label": "ex:catalogue-anciaux-legendrian-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13487,7 +13688,7 @@
           "book": "gmt-foundations",
           "tag": "373CE59F",
           "label": "sec:catalogue-nguyen-grim-configurations",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13506,7 +13707,7 @@
           "book": "gmt-foundations",
           "tag": "CF35AF2C",
           "label": "ex:catalogue-nguyen-grim-configurations",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13525,7 +13726,7 @@
           "book": "gmt-foundations",
           "tag": "F893BFF9",
           "label": "sec:catalogue-polyhedral-slab-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13544,7 +13745,7 @@
           "book": "gmt-foundations",
           "tag": "EFF48886",
           "label": "ex:catalogue-polyhedral-slab-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13563,7 +13764,7 @@
           "book": "gmt-foundations",
           "tag": "BD6CC3F1",
           "label": "sec:catalogue-castro-lerma-pairs",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13582,7 +13783,7 @@
           "book": "gmt-foundations",
           "tag": "CC2FD029",
           "label": "ex:catalogue-castro-lerma-pairs",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13601,7 +13802,7 @@
           "book": "gmt-foundations",
           "tag": "34F37702",
           "label": "sec:catalogue-su-wood-translating-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13620,7 +13821,7 @@
           "book": "gmt-foundations",
           "tag": "CA4DE96A",
           "label": "ex:catalogue-su-wood-translating-helicoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13639,7 +13840,7 @@
           "book": "gmt-foundations",
           "tag": "4978FB2D",
           "label": "sec:catalogue-su-wood-paired-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13658,7 +13859,7 @@
           "book": "gmt-foundations",
           "tag": "00B4B2E1",
           "label": "ex:catalogue-su-wood-paired-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13677,7 +13878,7 @@
           "book": "gmt-foundations",
           "tag": "E245615B",
           "label": "sec:catalogue-nonconvex-entire-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13696,7 +13897,7 @@
           "book": "gmt-foundations",
           "tag": "D870122E",
           "label": "ex:catalogue-nonconvex-entire-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13715,7 +13916,7 @@
           "book": "gmt-foundations",
           "tag": "272433C8",
           "label": "sec:catalogue-graphical-cone-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13734,7 +13935,7 @@
           "book": "gmt-foundations",
           "tag": "8EE295EF",
           "label": "ex:catalogue-graphical-cone-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13753,7 +13954,7 @@
           "book": "gmt-foundations",
           "tag": "80FD9E1D",
           "label": "sec:catalogue-lawson-osserman-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13772,7 +13973,7 @@
           "book": "gmt-foundations",
           "tag": "81139E93",
           "label": "ex:catalogue-lawson-osserman-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13791,7 +13992,7 @@
           "book": "gmt-foundations",
           "tag": "8D7C709B",
           "label": "sec:catalogue-birotational-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13810,7 +14011,7 @@
           "book": "gmt-foundations",
           "tag": "9BD05594",
           "label": "ex:catalogue-birotational-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13829,7 +14030,7 @@
           "book": "gmt-foundations",
           "tag": "A3E44CA5",
           "label": "sec:catalogue-birotational-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13848,7 +14049,7 @@
           "book": "gmt-foundations",
           "tag": "86AD3259",
           "label": "ex:catalogue-birotational-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13867,7 +14068,7 @@
           "book": "gmt-foundations",
           "tag": "8B9DE8D8",
           "label": "sec:catalogue-ancient-sine-wave",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13886,7 +14087,7 @@
           "book": "gmt-foundations",
           "tag": "05FE72B3",
           "label": "ex:catalogue-ancient-sine-wave",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13905,7 +14106,7 @@
           "book": "gmt-foundations",
           "tag": "6CAA0EF6",
           "label": "sec:catalogue-ma-halfplane-ancient",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13924,7 +14125,7 @@
           "book": "gmt-foundations",
           "tag": "85A25A15",
           "label": "ex:catalogue-ma-halfplane-ancient",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13943,7 +14144,7 @@
           "book": "gmt-foundations",
           "tag": "948711F6",
           "label": "sec:catalogue-nonplanar-eternal-reapers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13962,7 +14163,7 @@
           "book": "gmt-foundations",
           "tag": "D8812E8E",
           "label": "ex:catalogue-nonplanar-eternal-reapers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -13981,7 +14182,7 @@
           "book": "gmt-foundations",
           "tag": "F2030B07",
           "label": "sec:catalogue-collapsed-ancient-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14000,7 +14201,7 @@
           "book": "gmt-foundations",
           "tag": "875FAF91",
           "label": "ex:catalogue-collapsed-ancient-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14019,7 +14220,7 @@
           "book": "gmt-foundations",
           "tag": "2BEAEF1E",
           "label": "sec:catalogue-polyhedral-ancient-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14038,7 +14239,7 @@
           "book": "gmt-foundations",
           "tag": "F9B703F1",
           "label": "ex:catalogue-polyhedral-ancient-pancakes",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14057,7 +14258,7 @@
           "book": "gmt-foundations",
           "tag": "17BEC156",
           "label": "sec:catalogue-convex-eternal-nontranslators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14076,7 +14277,7 @@
           "book": "gmt-foundations",
           "tag": "56CE6CEB",
           "label": "ex:catalogue-convex-eternal-nontranslators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14095,7 +14296,7 @@
           "book": "gmt-foundations",
           "tag": "A5C07401",
           "label": "sec:catalogue-reduced-symmetry-ancient-ovals",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14114,7 +14315,7 @@
           "book": "gmt-foundations",
           "tag": "4F979CEE",
           "label": "ex:catalogue-reduced-symmetry-ancient-ovals",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14133,7 +14334,7 @@
           "book": "gmt-foundations",
           "tag": "568F4ABB",
           "label": "sec:catalogue-ancient-doughnuts",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14152,7 +14353,7 @@
           "book": "gmt-foundations",
           "tag": "B5B7113B",
           "label": "ex:catalogue-ancient-doughnuts",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14171,7 +14372,7 @@
           "book": "gmt-foundations",
           "tag": "10A27E42",
           "label": "sec:catalogue-isoparametric-ancient-euclidean",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14190,17 +14391,17 @@
           "book": "gmt-foundations",
           "tag": "046BE551",
           "label": "ex:catalogue-isoparametric-ancient-euclidean",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "2DFF09123589",
-      "number": "5.41",
+      "number": "5.44",
       "section_intro": true,
       "section_example": false,
-      "title": "5.41 Ancient isoparametric flows in spheres",
+      "title": "5.44 Ancient isoparametric flows in spheres",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-isoparametric-flows-in-spheres",
@@ -14209,17 +14410,17 @@
           "book": "gmt-foundations",
           "tag": "646C8E02",
           "label": "sec:catalogue-isoparametric-ancient-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "51259B78DC80",
-      "number": "5.41",
+      "number": "5.44",
       "section_intro": false,
       "section_example": true,
-      "title": "5.41 Ancient isoparametric flows in spheres",
+      "title": "5.44 Ancient isoparametric flows in spheres",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-isoparametric-flows-in-spheres",
@@ -14228,7 +14429,7 @@
           "book": "gmt-foundations",
           "tag": "085401C2",
           "label": "ex:catalogue-isoparametric-ancient-sphere",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14247,7 +14448,7 @@
           "book": "gmt-foundations",
           "tag": "F37CD322",
           "label": "sec:catalogue-flows-emerging-from-cones",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14266,17 +14467,17 @@
           "book": "gmt-foundations",
           "tag": "A75139D4",
           "label": "ex:catalogue-flows-emerging-from-cones",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "88709443EE99",
-      "number": "5.37",
+      "number": "5.36",
       "section_intro": true,
       "section_example": false,
-      "title": "5.37 Hypersurface singularities with bounded mean curvature",
+      "title": "5.36 Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "hypersurface-singularities-with-bounded-mean-curvature",
@@ -14285,17 +14486,17 @@
           "book": "gmt-foundations",
           "tag": "349D3347",
           "label": "sec:catalogue-bounded-mean-curvature-singularities",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "D9D28F3C8E4F",
-      "number": "5.37",
+      "number": "5.36",
       "section_intro": false,
       "section_example": true,
-      "title": "5.37 Hypersurface singularities with bounded mean curvature",
+      "title": "5.36 Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "hypersurface-singularities-with-bounded-mean-curvature",
@@ -14304,17 +14505,17 @@
           "book": "gmt-foundations",
           "tag": "CD791B7F",
           "label": "ex:catalogue-bounded-mean-curvature-singularities",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "A3EE122FF71E",
-      "number": "5.38",
+      "number": "5.40",
       "section_intro": true,
       "section_example": false,
-      "title": "5.38 Lagrangian singularities with prescribed orbit models",
+      "title": "5.40 Lagrangian singularities with prescribed orbit models",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "lagrangian-singularities-with-prescribed-orbit-models",
@@ -14323,17 +14524,17 @@
           "book": "gmt-foundations",
           "tag": "78A071A1",
           "label": "sec:catalogue-cohomogeneity-one-lagrangian-singularities",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "5DA3E72E4195",
-      "number": "5.38",
+      "number": "5.40",
       "section_intro": false,
       "section_example": true,
-      "title": "5.38 Lagrangian singularities with prescribed orbit models",
+      "title": "5.40 Lagrangian singularities with prescribed orbit models",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "lagrangian-singularities-with-prescribed-orbit-models",
@@ -14342,7 +14543,7 @@
           "book": "gmt-foundations",
           "tag": "CD414B5C",
           "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14361,7 +14562,7 @@
           "book": "gmt-foundations",
           "tag": "1E8750DA",
           "label": "sec:catalogue-network-spoon",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14380,7 +14581,7 @@
           "book": "gmt-foundations",
           "tag": "81004AEF",
           "label": "ex:catalogue-network-spoon",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14399,7 +14600,7 @@
           "book": "gmt-foundations",
           "tag": "63E12737",
           "label": "sec:catalogue-network-lens",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14418,7 +14619,7 @@
           "book": "gmt-foundations",
           "tag": "C37ED85A",
           "label": "ex:catalogue-network-lens",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14437,7 +14638,7 @@
           "book": "gmt-foundations",
           "tag": "F786014E",
           "label": "sec:catalogue-network-fish",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14456,7 +14657,7 @@
           "book": "gmt-foundations",
           "tag": "711076BE",
           "label": "ex:catalogue-network-fish",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14475,7 +14676,7 @@
           "book": "gmt-foundations",
           "tag": "3BC3B7AE",
           "label": "sec:catalogue-network-three-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14494,7 +14695,7 @@
           "book": "gmt-foundations",
           "tag": "FA64103B",
           "label": "ex:catalogue-network-three-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14513,7 +14714,7 @@
           "book": "gmt-foundations",
           "tag": "B78F4666",
           "label": "sec:catalogue-network-four-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14532,7 +14733,7 @@
           "book": "gmt-foundations",
           "tag": "968F0388",
           "label": "ex:catalogue-network-four-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14551,7 +14752,7 @@
           "book": "gmt-foundations",
           "tag": "EB3ADD97",
           "label": "sec:catalogue-network-five-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14570,7 +14771,7 @@
           "book": "gmt-foundations",
           "tag": "2A7F22D8",
           "label": "ex:catalogue-network-five-ray",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14589,7 +14790,7 @@
           "book": "gmt-foundations",
           "tag": "F2B95AF9",
           "label": "sec:catalogue-network-rocket",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14608,7 +14809,7 @@
           "book": "gmt-foundations",
           "tag": "D77CE6A7",
           "label": "ex:catalogue-network-rocket",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14627,7 +14828,7 @@
           "book": "gmt-foundations",
           "tag": "730768C6",
           "label": "sec:catalogue-network-cisgeminate-eye",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14646,7 +14847,7 @@
           "book": "gmt-foundations",
           "tag": "E345EFFE",
           "label": "ex:catalogue-network-cisgeminate-eye",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14665,7 +14866,7 @@
           "book": "gmt-foundations",
           "tag": "22B4DF5F",
           "label": "sec:catalogue-shrinking-lens-cluster",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14684,7 +14885,7 @@
           "book": "gmt-foundations",
           "tag": "A45F589F",
           "label": "ex:catalogue-shrinking-lens-cluster",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14703,7 +14904,7 @@
           "book": "gmt-foundations",
           "tag": "4AC2883D",
           "label": "sec:catalogue-rotational-trumpet-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14722,7 +14923,7 @@
           "book": "gmt-foundations",
           "tag": "A48E8FC7",
           "label": "ex:catalogue-rotational-trumpet-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14741,7 +14942,7 @@
           "book": "gmt-foundations",
           "tag": "5B4FC539",
           "label": "sec:catalogue-isoparametric-shrinking-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14760,7 +14961,7 @@
           "book": "gmt-foundations",
           "tag": "6F64FF51",
           "label": "ex:catalogue-isoparametric-shrinking-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14779,7 +14980,7 @@
           "book": "gmt-foundations",
           "tag": "237E5223",
           "label": "sec:catalogue-park-birotational-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14798,7 +14999,7 @@
           "book": "gmt-foundations",
           "tag": "AB1D0EDD",
           "label": "ex:catalogue-park-birotational-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14817,7 +15018,7 @@
           "book": "gmt-foundations",
           "tag": "AD8F02DC",
           "label": "sec:catalogue-expanding-cycle-networks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14836,7 +15037,7 @@
           "book": "gmt-foundations",
           "tag": "9BC0EC01",
           "label": "ex:catalogue-expanding-cycle-networks",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14855,7 +15056,7 @@
           "book": "gmt-foundations",
           "tag": "4B678D8F",
           "label": "sec:catalogue-multiphase-expander-report",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14874,7 +15075,7 @@
           "book": "gmt-foundations",
           "tag": "9701F635",
           "label": "ex:catalogue-multiphase-expander-report",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14893,7 +15094,7 @@
           "book": "gmt-foundations",
           "tag": "B15C0917",
           "label": "sec:catalogue-free-boundary-ancient-balls",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14912,7 +15113,7 @@
           "book": "gmt-foundations",
           "tag": "B7346C72",
           "label": "ex:catalogue-free-boundary-ancient-balls",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14931,7 +15132,7 @@
           "book": "gmt-foundations",
           "tag": "D81EAB36",
           "label": "sec:catalogue-free-boundary-convex-domains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14950,7 +15151,7 @@
           "book": "gmt-foundations",
           "tag": "240BC21F",
           "label": "ex:catalogue-free-boundary-convex-domains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14969,7 +15170,7 @@
           "book": "gmt-foundations",
           "tag": "C92A03AE",
           "label": "sec:catalogue-mixed-boundary-ancient-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -14988,17 +15189,17 @@
           "book": "gmt-foundations",
           "tag": "48474DCF",
           "label": "ex:catalogue-mixed-boundary-ancient-curves",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "1897F09E9330",
-      "number": "5.47",
+      "number": "5.50",
       "section_intro": true,
       "section_example": false,
-      "title": "5.47 Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "title": "5.50 Ancient flows from unstable free-boundary minimal hypersurfaces",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
@@ -15007,17 +15208,17 @@
           "book": "gmt-foundations",
           "tag": "77A8C3D1",
           "label": "sec:catalogue-unstable-free-boundary-ancient",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "3846578EAD16",
-      "number": "5.47",
+      "number": "5.50",
       "section_intro": false,
       "section_example": true,
-      "title": "5.47 Ancient flows from unstable free-boundary minimal hypersurfaces",
+      "title": "5.50 Ancient flows from unstable free-boundary minimal hypersurfaces",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
@@ -15026,7 +15227,7 @@
           "book": "gmt-foundations",
           "tag": "CBF91663",
           "label": "ex:catalogue-unstable-free-boundary-ancient",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15045,7 +15246,7 @@
           "book": "gmt-foundations",
           "tag": "22B08067",
           "label": "sec:catalogue-yamamoto-cone-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15064,7 +15265,7 @@
           "book": "gmt-foundations",
           "tag": "2DC6743D",
           "label": "ex:catalogue-yamamoto-cone-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15083,7 +15284,7 @@
           "book": "gmt-foundations",
           "tag": "E532B433",
           "label": "sec:catalogue-hyperbolic-product-rotational-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15102,7 +15303,7 @@
           "book": "gmt-foundations",
           "tag": "AB0D9413",
           "label": "ex:catalogue-hyperbolic-product-rotational-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15121,7 +15322,7 @@
           "book": "gmt-foundations",
           "tag": "A517153F",
           "label": "sec:catalogue-hyperbolic-product-grim-reapers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15140,7 +15341,7 @@
           "book": "gmt-foundations",
           "tag": "0150CFF9",
           "label": "ex:catalogue-hyperbolic-product-grim-reapers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15159,7 +15360,7 @@
           "book": "gmt-foundations",
           "tag": "72190F72",
           "label": "sec:catalogue-hyperbolic-product-helicoidal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15178,7 +15379,7 @@
           "book": "gmt-foundations",
           "tag": "DE426D83",
           "label": "ex:catalogue-hyperbolic-product-helicoidal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15197,7 +15398,7 @@
           "book": "gmt-foundations",
           "tag": "6661B0DB",
           "label": "sec:catalogue-hyperbolic-killing-catenoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15216,7 +15417,7 @@
           "book": "gmt-foundations",
           "tag": "6036200C",
           "label": "ex:catalogue-hyperbolic-killing-catenoids",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15235,7 +15436,7 @@
           "book": "gmt-foundations",
           "tag": "A2F4E728",
           "label": "sec:catalogue-hyperbolic-parabolic-grims",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15254,7 +15455,7 @@
           "book": "gmt-foundations",
           "tag": "73CD2434",
           "label": "ex:catalogue-hyperbolic-parabolic-grims",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15273,7 +15474,7 @@
           "book": "gmt-foundations",
           "tag": "721F44FA",
           "label": "sec:catalogue-nil-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15292,7 +15493,7 @@
           "book": "gmt-foundations",
           "tag": "9ADF2393",
           "label": "ex:catalogue-nil-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15311,7 +15512,7 @@
           "book": "gmt-foundations",
           "tag": "6B837840",
           "label": "sec:catalogue-sol-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15330,7 +15531,7 @@
           "book": "gmt-foundations",
           "tag": "553961D1",
           "label": "ex:catalogue-sol-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15349,7 +15550,7 @@
           "book": "gmt-foundations",
           "tag": "FE743ED2",
           "label": "sec:catalogue-sl2-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15368,7 +15569,7 @@
           "book": "gmt-foundations",
           "tag": "D4532213",
           "label": "ex:catalogue-sl2-invariant-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15387,7 +15588,7 @@
           "book": "gmt-foundations",
           "tag": "352B9C07",
           "label": "sec:catalogue-compact-symmetric-product-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15406,17 +15607,17 @@
           "book": "gmt-foundations",
           "tag": "102492C7",
           "label": "ex:catalogue-compact-symmetric-product-translators",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "6E7783E99D53",
-      "number": "5.43",
+      "number": "5.46",
       "section_intro": true,
       "section_example": false,
-      "title": "5.43 Isometric curve-shortening solitons in the hyperbolic plane",
+      "title": "5.46 Isometric curve-shortening solitons in the hyperbolic plane",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
@@ -15425,17 +15626,17 @@
           "book": "gmt-foundations",
           "tag": "EB9C9CA2",
           "label": "sec:catalogue-hyperbolic-curve-solitons",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "39A0C4D2B77A",
-      "number": "5.43",
+      "number": "5.46",
       "section_intro": false,
       "section_example": true,
-      "title": "5.43 Isometric curve-shortening solitons in the hyperbolic plane",
+      "title": "5.46 Isometric curve-shortening solitons in the hyperbolic plane",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
@@ -15444,17 +15645,17 @@
           "book": "gmt-foundations",
           "tag": "CCD17321",
           "label": "ex:catalogue-hyperbolic-curve-solitons",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "EF033313C0BB",
-      "number": "5.42",
+      "number": "5.45",
       "section_intro": true,
       "section_example": false,
-      "title": "5.42 Eternal tori in perturbations of the round three-sphere",
+      "title": "5.45 Eternal tori in perturbations of the round three-sphere",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "eternal-tori-in-perturbations-of-the-round-three-sphere",
@@ -15463,17 +15664,17 @@
           "book": "gmt-foundations",
           "tag": "6413D785",
           "label": "sec:catalogue-perturbed-sphere-eternal-tori",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "4F2C4D7007ED",
-      "number": "5.42",
+      "number": "5.45",
       "section_intro": false,
       "section_example": true,
-      "title": "5.42 Eternal tori in perturbations of the round three-sphere",
+      "title": "5.45 Eternal tori in perturbations of the round three-sphere",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "eternal-tori-in-perturbations-of-the-round-three-sphere",
@@ -15482,17 +15683,17 @@
           "book": "gmt-foundations",
           "tag": "EBC2722E",
           "label": "ex:catalogue-perturbed-sphere-eternal-tori",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "06177EF7798F",
-      "number": "5.44",
+      "number": "5.47",
       "section_intro": true,
       "section_example": false,
-      "title": "5.44 Finite-time Lagrangian neck pinches with circle symmetry",
+      "title": "5.47 Finite-time Lagrangian neck pinches with circle symmetry",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
@@ -15501,17 +15702,17 @@
           "book": "gmt-foundations",
           "tag": "C02F0E3A",
           "label": "sec:catalogue-lotay-oliveira-neck-pinches",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "A25A9D4CCA2B",
-      "number": "5.44",
+      "number": "5.47",
       "section_intro": false,
       "section_example": true,
-      "title": "5.44 Finite-time Lagrangian neck pinches with circle symmetry",
+      "title": "5.47 Finite-time Lagrangian neck pinches with circle symmetry",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
@@ -15520,7 +15721,7 @@
           "book": "gmt-foundations",
           "tag": "6A1B5DDC",
           "label": "ex:catalogue-lotay-oliveira-neck-pinches",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15539,7 +15740,7 @@
           "book": "gmt-foundations",
           "tag": "B946AD73",
           "label": "sec:catalogue-jlt-mixed-periodic-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15558,7 +15759,7 @@
           "book": "gmt-foundations",
           "tag": "832058AF",
           "label": "ex:catalogue-jlt-mixed-periodic-shrinkers",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15577,7 +15778,7 @@
           "book": "gmt-foundations",
           "tag": "013F31DA",
           "label": "sec:catalogue-jlt-mixed-periodic-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15596,7 +15797,7 @@
           "book": "gmt-foundations",
           "tag": "A194C4D8",
           "label": "ex:catalogue-jlt-mixed-periodic-expanders",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15615,7 +15816,7 @@
           "book": "gmt-foundations",
           "tag": "3157C88B",
           "label": "sec:catalogue-sun-wang-prescribed-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15634,7 +15835,7 @@
           "book": "gmt-foundations",
           "tag": "55EF9321",
           "label": "ex:catalogue-sun-wang-prescribed-ends",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15653,7 +15854,7 @@
           "book": "gmt-foundations",
           "tag": "07019635",
           "label": "sec:catalogue-immersed-ancient-grim-chains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15672,7 +15873,7 @@
           "book": "gmt-foundations",
           "tag": "EAE3D314",
           "label": "ex:catalogue-immersed-ancient-grim-chains",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15691,7 +15892,7 @@
           "book": "gmt-foundations",
           "tag": "DA62CAE9",
           "label": "sec:catalogue-aiv-minimal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
@@ -15710,17 +15911,17 @@
           "book": "gmt-foundations",
           "tag": "9C1071CC",
           "label": "ex:catalogue-aiv-minimal",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "550F100A27EC",
-      "number": "5.36",
+      "number": "5.38",
       "section_intro": true,
       "section_example": false,
-      "title": "5.36 Eight-dimensional fattening at the Simoes cone",
+      "title": "5.38 Eight-dimensional fattening at the Simoes cone",
       "kind": "chapter",
       "chapter": "other-special-flows",
       "topic": "eight-dimensional-fattening-at-the-simoes-cone",
@@ -15729,17 +15930,17 @@
           "book": "gmt-foundations",
           "tag": "104FFA29",
           "label": "sec:catalogue-aiv-eight-fattening",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []
     },
     {
       "tag": "0AC69A3BDB5D",
-      "number": "5.36",
+      "number": "5.38",
       "section_intro": false,
       "section_example": true,
-      "title": "5.36 Eight-dimensional fattening at the Simoes cone",
+      "title": "5.38 Eight-dimensional fattening at the Simoes cone",
       "kind": "example",
       "chapter": "other-special-flows",
       "topic": "eight-dimensional-fattening-at-the-simoes-cone",
@@ -15748,7 +15949,121 @@
           "book": "gmt-foundations",
           "tag": "BD3A080A",
           "label": "ex:catalogue-aiv-eight-fattening",
-          "revision": "sha256:c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b"
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "FA0AF7B1B843",
+      "number": "5.37",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.37 Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "low-mode-type-ii-singularities-approaching-simons-cones",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "97F3637D",
+          "label": "sec:catalogue-simons-cone-low-mode",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "16DB72EF5FA3",
+      "number": "5.37",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.37 Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "low-mode-type-ii-singularities-approaching-simons-cones",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "E7AE3D52",
+          "label": "ex:catalogue-simons-cone-low-mode",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0948A6AC6488",
+      "number": "5.41",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.41 Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "compact-type-ii-singularities-approaching-lawson-cones",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "B29D83C7",
+          "label": "sec:catalogue-compact-lawson-cone-flows",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "81D16D031DF7",
+      "number": "5.41",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.41 Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "compact-type-ii-singularities-approaching-lawson-cones",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "ABEF7F1B",
+          "label": "ex:catalogue-compact-lawson-cone-flows",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "AA223119E79B",
+      "number": "5.39",
+      "section_intro": true,
+      "section_example": false,
+      "title": "5.39 Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+      "kind": "chapter",
+      "chapter": "other-special-flows",
+      "topic": "type-ii-smoothing-after-a-simons-cone-singularity",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "A2355102",
+          "label": "sec:catalogue-simons-cone-smoothing",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
+        }
+      ],
+      "components": []
+    },
+    {
+      "tag": "0B7679E73801",
+      "number": "5.39",
+      "section_intro": false,
+      "section_example": true,
+      "title": "5.39 Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+      "kind": "example",
+      "chapter": "other-special-flows",
+      "topic": "type-ii-smoothing-after-a-simons-cone-singularity",
+      "sources": [
+        {
+          "book": "gmt-foundations",
+          "tag": "63A8D902",
+          "label": "ex:catalogue-simons-cone-smoothing",
+          "revision": "sha256:564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb"
         }
       ],
       "components": []

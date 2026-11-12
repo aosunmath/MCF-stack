@@ -1,31 +1,32 @@
 {
-  "built_at": "2026-11-12T22:05:32.325525+00:00",
-  "publishing_commit": "1b86c078753e0ac32b85857d14d9a9c83bdf6d0e",
+  "built_at": "2026-11-12T22:09:36.561438+00:00",
+  "publishing_commit": "2d7f43d6715aadfe850ee669a4ed9d7e62500d95",
   "sources": [
     {
       "repository": "https://github.com/aosunmath/MCF-stack",
       "ref": "local:content/gmt-foundations",
       "kind": "local-manuscript",
-      "source_sha256": "c08c066f24e97de2f13809eaf4b4de26411e0ccccaf419b46a106afecda1855b",
+      "source_sha256": "564c2709fe03c6c5babba95528fcd562468630c62cd7911132778132760035fb",
       "files": {
-        "book.tex": "2ee61466b2f63d9ebcca55b242bb22c23be4b7f57d5dfcbbe769f54ffec4135e",
+        "book.tex": "8aef1c2f1c3a717d732810222f75e1fe125ee61b4494ab0779babbfacd9c1951",
         "catalogue-aaaw.tex": "058f98ce236f24b840414ae711374eb2b39b96d8c5326b911dbfa529199438ca",
         "catalogue-aiv.tex": "37452e5848f3fadc1dc18a4273c3849b443fd08a921390736b233f374e8915a2",
         "catalogue-expanders.tex": "09b86d5fc2ffdd0fb4f8d790e42cf9e9cd22d3cf0adfafbdadb1eb19347a225f",
         "catalogue-halldorsson.tex": "e8dd195a05d89711a76acd7e69daac92187e78b6ea3bbcc1f343a71f826dc765",
-        "catalogue-literature.tex": "64dd955badec9c1f69deae1fe2533dbbdf89f0b657aa7d6dda1ea9eb110f46cd",
+        "catalogue-literature.tex": "cb19bea881f78f700288403a4670c7e647af4d0a5cbf9deafbce6154e70d24b2",
         "catalogue-other-flows.tex": "35a2f32a1b2d58be393a1a31b281b682345c9c8a142ae29e94b87e84b650584a",
         "catalogue-shrinkers.tex": "ab0b06c98f4643a0c535e3dd460a5420eaf30cce1af2c9bb228f1e025c2b8143",
+        "catalogue-simons-cones.tex": "f8eb23be1aa94ea2d19ac2e51afd98e89bdae5db4d648dc7f0acf96bc6686ddc",
         "catalogue-translators.tex": "9e7b3eed44cfb420d7f8f51117c7680d15fa9f8cc6b6ed646d08e9626929024b",
         "chapter-overviews.json": "9f4759ab7bf5d21e8784d610728c91cb14df1da25a98e3f9cbb808957a240c47",
-        "entry-review.json": "80e40653e28ab24bce4e2080fcd7941e91bc95a6da07542b9b9d92cfadb0c565",
+        "entry-review.json": "ee50dda9361166f3de21846ec02abb9311f013dda2ab49732afb2cc5d37db6af",
         "orientation.tex": "64ac571b0fa16df9c1aa35fa00f693bcdc73258da46f922e9424e26607e207cf",
         "overviews/expanders.html": "3e897e44c698df6bc01175658ec93f6aa858f1d34802b0be2e137b8d41c5d6e4",
-        "overviews/other-special-flows.html": "adae3ffaaffd3dc5078dcd47d24092f29387f6370f6341685b80cfa22f284c4e",
+        "overviews/other-special-flows.html": "6418e2704053b3704b587cfab9be696187b3efef637046f80b6d660928081057",
         "overviews/shrinkers.html": "34c290957260378da783b8fa5b7a65c331de0cf3b30d0a76a8dede01c3537c03",
         "overviews/translators.html": "8cf01122296655cfc617c4172f78bf91f76cfd81a50bf32f32d1b8a04829eafd",
-        "references.bib": "4e7a058612edadda909e305625ebfc5c30a2eced45661ff50230b9b54cb20688",
-        "source-inventory.json": "0963339793b53e809fdd372d6e3a1eae1e0100a088a4dce14e12099c1d4c1fe4"
+        "references.bib": "40dd6a6f4b3b81904a605249f695a62a798e81773434c70014c4d193728f822d",
+        "source-inventory.json": "830992a604418f67c91090794238db493a85c9153cad362b8026443a5df7a168"
       }
     }
   ]

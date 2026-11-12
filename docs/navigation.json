@@ -912,86 +912,104 @@
     "section": "ancient-stacked-pancakes"
   },
   {
-    "route": "sections/eight-dimensional-fattening-at-the-simoes-cone",
-    "title": "5.36 Eight-dimensional fattening at the Simoes cone",
-    "chapter": "other-special-flows",
-    "section": "eight-dimensional-fattening-at-the-simoes-cone"
-  },
-  {
     "route": "sections/hypersurface-singularities-with-bounded-mean-curvature",
-    "title": "5.37 Hypersurface singularities with bounded mean curvature",
+    "title": "5.36 Hypersurface singularities with bounded mean curvature (Velázquez, 1994)",
     "chapter": "other-special-flows",
     "section": "hypersurface-singularities-with-bounded-mean-curvature"
   },
   {
+    "route": "sections/low-mode-type-ii-singularities-approaching-simons-cones",
+    "title": "5.37 Low-mode type-II singularities approaching Simons cones (Velázquez, 1994)",
+    "chapter": "other-special-flows",
+    "section": "low-mode-type-ii-singularities-approaching-simons-cones"
+  },
+  {
+    "route": "sections/eight-dimensional-fattening-at-the-simoes-cone",
+    "title": "5.38 Eight-dimensional fattening at the Simoes cone",
+    "chapter": "other-special-flows",
+    "section": "eight-dimensional-fattening-at-the-simoes-cone"
+  },
+  {
+    "route": "sections/type-ii-smoothing-after-a-simons-cone-singularity",
+    "title": "5.39 Type-II smoothing after a Simons-cone singularity (Angenent–Daskalopoulos–Šešum, 2021)",
+    "chapter": "other-special-flows",
+    "section": "type-ii-smoothing-after-a-simons-cone-singularity"
+  },
+  {
     "route": "sections/lagrangian-singularities-with-prescribed-orbit-models",
-    "title": "5.38 Lagrangian singularities with prescribed orbit models",
+    "title": "5.40 Lagrangian singularities with prescribed orbit models",
     "chapter": "other-special-flows",
     "section": "lagrangian-singularities-with-prescribed-orbit-models"
   },
   {
+    "route": "sections/compact-type-ii-singularities-approaching-lawson-cones",
+    "title": "5.41 Compact type-II singularities approaching Lawson cones (Liu, 2024)",
+    "chapter": "other-special-flows",
+    "section": "compact-type-ii-singularities-approaching-lawson-cones"
+  },
+  {
     "route": "sections/su-wood-stationary-products-of-lawlor-profiles",
-    "title": "5.39 Su–Wood stationary products of Lawlor profiles",
+    "title": "5.42 Su–Wood stationary products of Lawlor profiles",
     "chapter": "other-special-flows",
     "section": "su-wood-stationary-products-of-lawlor-profiles"
   },
   {
     "route": "sections/stolarski-su-finite-time-lagrangian-neck-pinches",
-    "title": "5.40 Stolarski–Su finite-time Lagrangian neck pinches",
+    "title": "5.43 Stolarski–Su finite-time Lagrangian neck pinches",
     "chapter": "other-special-flows",
     "section": "stolarski-su-finite-time-lagrangian-neck-pinches"
   },
   {
     "route": "sections/ancient-isoparametric-flows-in-spheres",
-    "title": "5.41 Ancient isoparametric flows in spheres",
+    "title": "5.44 Ancient isoparametric flows in spheres",
     "chapter": "other-special-flows",
     "section": "ancient-isoparametric-flows-in-spheres"
   },
   {
     "route": "sections/eternal-tori-in-perturbations-of-the-round-three-sphere",
-    "title": "5.42 Eternal tori in perturbations of the round three-sphere",
+    "title": "5.45 Eternal tori in perturbations of the round three-sphere",
     "chapter": "other-special-flows",
     "section": "eternal-tori-in-perturbations-of-the-round-three-sphere"
   },
   {
     "route": "sections/isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
-    "title": "5.43 Isometric curve-shortening solitons in the hyperbolic plane",
+    "title": "5.46 Isometric curve-shortening solitons in the hyperbolic plane",
     "chapter": "other-special-flows",
     "section": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane"
   },
   {
     "route": "sections/finite-time-lagrangian-neck-pinches-with-circle-symmetry",
-    "title": "5.44 Finite-time Lagrangian neck pinches with circle symmetry",
+    "title": "5.47 Finite-time Lagrangian neck pinches with circle symmetry",
     "chapter": "other-special-flows",
     "section": "finite-time-lagrangian-neck-pinches-with-circle-symmetry"
   },
   {
     "route": "sections/lagrangian-torus-necks-collapsing-at-infinite-time",
-    "title": "5.45 Lagrangian torus necks collapsing at infinite time",
+    "title": "5.48 Lagrangian torus necks collapsing at infinite time",
     "chapter": "other-special-flows",
     "section": "lagrangian-torus-necks-collapsing-at-infinite-time"
   },
   {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.46 Immortal compact flows converging to a double sphere",
+    "title": "5.49 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
   },
   {
     "route": "sections/ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
-    "title": "5.47 Ancient flows from unstable free-boundary minimal hypersurfaces",
+    "title": "5.50 Ancient flows from unstable free-boundary minimal hypersurfaces",
     "chapter": "other-special-flows",
     "section": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces"
   },
   {
     "route": "sections/lagrangian-sphere-chains-in-gibbons-hawking-spaces",
-    "title": "5.48 Lagrangian sphere chains in Gibbons–Hawking spaces",
+    "title": "5.51 Lagrangian sphere chains in Gibbons–Hawking spaces",
     "chapter": "other-special-flows",
     "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces"
   },
   {
     "route": "sections/immortal-curve-shortening-with-nonunique-geodesic-limits",
-    "title": "5.49 Immortal curve shortening with nonunique geodesic limits",
+    "title": "5.52 Immortal curve shortening with nonunique geodesic limits",
     "chapter": "other-special-flows",
     "section": "immortal-curve-shortening-with-nonunique-geodesic-limits"
   },
