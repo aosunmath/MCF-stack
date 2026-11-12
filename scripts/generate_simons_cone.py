@@ -123,7 +123,7 @@ def main():
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    plt.rcParams.update({'svg.fonttype':'none','font.family':'DejaVu Sans'})
+    plt.rcParams.update({'svg.fonttype':'none','svg.hashsalt':'mcf-simons-cones','font.family':'DejaVu Sans'})
     for name,title,p,q,mode in [
         ('simons-cone-low-mode','Type-II cone singularity: two spatial scales',5,5,'shrink'),
         ('simons-cone-bounded','Bounded mean curvature: a minimal inner model',4,4,'shrink'),
@@ -146,7 +146,9 @@ def main():
         ax.set_xlabel(f'r = |x| in R^{p}');ax.set_ylabel(f'Q = |y| in R^{q}')
         ax.legend(loc='upper left',fontsize=9);ax.grid(alpha=.18)
         fig.text(.5,.005,note,ha='center',fontsize=8)
-        fig.savefig(OUT/(name+'.svg'));plt.close(fig)
+        path=OUT/(name+'.svg')
+        fig.savefig(path,metadata={'Date':None});plt.close(fig)
+        path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
     print(json.dumps(audit,indent=2))
 
 
