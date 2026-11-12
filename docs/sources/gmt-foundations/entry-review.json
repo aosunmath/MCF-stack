@@ -1351,7 +1351,8 @@
       "file": "catalogue-literature.tex",
       "status": "cited-example",
       "citations": [
-        "CatNeto2026"
+        "CatNeto2026",
+        "CatAIV2002"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1363,7 +1364,8 @@
       "file": "catalogue-literature.tex",
       "status": "cited-example",
       "citations": [
-        "CatNeto2026a"
+        "CatNeto2026a",
+        "CatAIV2002"
       ],
       "dependencies": [],
       "formal_verification": "none"
@@ -1951,6 +1953,30 @@
       "status": "cited-example",
       "citations": [
         "CatAY18"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-aiv-minimal",
+      "title": "Bi-rotational minimal hypersurfaces asymptotic to cones",
+      "kind": "example",
+      "file": "catalogue-aiv.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "dependencies": [],
+      "formal_verification": "none"
+    },
+    {
+      "label": "ex:catalogue-aiv-eight-fattening",
+      "title": "Eight-dimensional fattening at the Simoes cone",
+      "kind": "example",
+      "file": "catalogue-aiv.tex",
+      "status": "cited-example",
+      "citations": [
+        "CatAIV2002"
       ],
       "dependencies": [],
       "formal_verification": "none"

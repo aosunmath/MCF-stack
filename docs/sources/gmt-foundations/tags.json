@@ -2806,5 +2806,41 @@
     "page": "tag/EAE3D314/index.html",
     "canonical_tag": "104CF0DAFD60",
     "anchor": ""
+  },
+  {
+    "tag": "DA62CAE9",
+    "label": "sec:catalogue-aiv-minimal",
+    "title": "156 Bi-rotational minimal hypersurfaces asymptotic to cones",
+    "kind": "chapter",
+    "page": "tag/DA62CAE9/index.html",
+    "canonical_tag": "209060F5D0F3",
+    "anchor": ""
+  },
+  {
+    "tag": "9C1071CC",
+    "label": "ex:catalogue-aiv-minimal",
+    "title": "Example 156.1 (Stationary profiles in the fattening construction)",
+    "kind": "example",
+    "page": "tag/9C1071CC/index.html",
+    "canonical_tag": "FE423BC08B51",
+    "anchor": ""
+  },
+  {
+    "tag": "104FFA29",
+    "label": "sec:catalogue-aiv-eight-fattening",
+    "title": "157 Eight-dimensional fattening at the Simoes cone",
+    "kind": "chapter",
+    "page": "tag/104FFA29/index.html",
+    "canonical_tag": "550F100A27EC",
+    "anchor": ""
+  },
+  {
+    "tag": "BD3A080A",
+    "label": "ex:catalogue-aiv-eight-fattening",
+    "title": "Example 157.1 (The eight-dimensional construction and its formal models)",
+    "kind": "example",
+    "page": "tag/BD3A080A/index.html",
+    "canonical_tag": "0AC69A3BDB5D",
+    "anchor": ""
   }
 ]

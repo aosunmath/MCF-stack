@@ -279,58 +279,58 @@
     "section": "shao-zou-shrinkers-with-any-prescribed-number-of-ends"
   },
   {
+    "route": "sections/complete-bi-rotational-shrinking-continuations",
+    "title": "2.40 Complete bi-rotational shrinking continuations (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+    "chapter": "shrinkers",
+    "section": "complete-bi-rotational-shrinking-continuations"
+  },
+  {
     "route": "sections/products-of-closed-shrinking-curves",
-    "title": "2.40 Products of closed shrinking curves",
+    "title": "2.41 Products of closed shrinking curves",
     "chapter": "shrinkers",
     "section": "products-of-closed-shrinking-curves"
   },
   {
     "route": "sections/higher-codimension-spherical-shrinkers",
-    "title": "2.41 Higher-codimension spherical shrinkers",
+    "title": "2.42 Higher-codimension spherical shrinkers",
     "chapter": "shrinkers",
     "section": "higher-codimension-spherical-shrinkers"
   },
   {
     "route": "sections/the-lee-wang-self-shrinking-mobius-bundle",
-    "title": "2.42 An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007)",
+    "title": "2.43 An embedded self-shrinking Möbius bundle (Lee–Mu-Tao Wang, 2007)",
     "chapter": "shrinkers",
     "section": "the-lee-wang-self-shrinking-mobius-bundle"
   },
   {
     "route": "sections/compact-periodic-lagrangian-quadric-shrinkers",
-    "title": "2.43 Compact periodic Lagrangian quadric shrinkers",
+    "title": "2.44 Compact periodic Lagrangian quadric shrinkers",
     "chapter": "shrinkers",
     "section": "compact-periodic-lagrangian-quadric-shrinkers"
   },
   {
     "route": "sections/noncompact-periodic-lagrangian-shrinkers",
-    "title": "2.44 Noncompact periodic Lagrangian shrinkers",
+    "title": "2.45 Noncompact periodic Lagrangian shrinkers",
     "chapter": "shrinkers",
     "section": "noncompact-periodic-lagrangian-shrinkers"
   },
   {
     "route": "sections/the-clifford-shrinking-torus-in-four-space",
-    "title": "2.45 The Clifford shrinking torus in four-space",
+    "title": "2.46 The Clifford shrinking torus in four-space",
     "chapter": "shrinkers",
     "section": "the-clifford-shrinking-torus-in-four-space"
   },
   {
     "route": "sections/angenent-torus-cylinders",
-    "title": "2.46 Cylinders over embedded rotational shrinking tori",
+    "title": "2.47 Cylinders over embedded rotational shrinking tori",
     "chapter": "shrinkers",
     "section": "angenent-torus-cylinders"
   },
   {
     "route": "sections/park-bi-rotational-shrinking-ends",
-    "title": "2.47 Park bi-rotational shrinking ends",
+    "title": "2.48 Park bi-rotational shrinking ends",
     "chapter": "shrinkers",
     "section": "park-bi-rotational-shrinking-ends"
-  },
-  {
-    "route": "sections/complete-bi-rotational-shrinking-continuations",
-    "title": "2.48 Complete bi-rotational shrinking continuations",
-    "chapter": "shrinkers",
-    "section": "complete-bi-rotational-shrinking-continuations"
   },
   {
     "route": "sections/anciaux-shrinkers-with-minimal-legendrian-leaves",
@@ -655,28 +655,28 @@
     "section": "knotted-self-expanders"
   },
   {
+    "route": "sections/bi-rotational-expanding-hypersurfaces",
+    "title": "4.13 Bi-rotational expanding hypersurfaces (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+    "chapter": "expanders",
+    "section": "bi-rotational-expanding-hypersurfaces"
+  },
+  {
     "route": "sections/joyce-lee-tsui-lagrangian-expander-necks",
-    "title": "4.13 Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008)",
+    "title": "4.14 Lagrangian expander necks between transverse planes (Joyce–Lee–Tsui, 2008)",
     "chapter": "expanders",
     "section": "joyce-lee-tsui-lagrangian-expander-necks"
   },
   {
     "route": "sections/noncompact-periodic-lagrangian-expanders",
-    "title": "4.14 Noncompact periodic Lagrangian expanders",
+    "title": "4.15 Noncompact periodic Lagrangian expanders",
     "chapter": "expanders",
     "section": "noncompact-periodic-lagrangian-expanders"
   },
   {
     "route": "sections/two-convex-lagrangian-graphical-expanders",
-    "title": "4.15 Two-convex Lagrangian graphical expanders",
+    "title": "4.16 Two-convex Lagrangian graphical expanders",
     "chapter": "expanders",
     "section": "two-convex-lagrangian-graphical-expanders"
-  },
-  {
-    "route": "sections/bi-rotational-expanding-hypersurfaces",
-    "title": "4.16 Bi-rotational expanding hypersurfaces",
-    "chapter": "expanders",
-    "section": "bi-rotational-expanding-hypersurfaces"
   },
   {
     "route": "sections/anciaux-expanders-with-minimal-legendrian-leaves",
@@ -864,122 +864,134 @@
     "section": "immortal-annuli-converging-to-a-double-plane"
   },
   {
+    "route": "sections/bi-rotational-minimal-hypersurfaces-asymptotic-to-cones",
+    "title": "5.28 Bi-rotational stationary minimal hypersurfaces",
+    "chapter": "other-special-flows",
+    "section": "bi-rotational-minimal-hypersurfaces-asymptotic-to-cones"
+  },
+  {
     "route": "sections/lawlor-necks-as-stationary-lagrangian-flows",
-    "title": "5.28 Stationary special Lagrangian necks",
+    "title": "5.29 Stationary special Lagrangian necks",
     "chapter": "other-special-flows",
     "section": "lawlor-necks-as-stationary-lagrangian-flows"
   },
   {
     "route": "sections/ancient-torus-curves-in-higher-codimension",
-    "title": "5.29 Ancient torus curves in higher codimension (D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012; Stryker–Sun, 2019)",
+    "title": "5.30 Ancient torus curves in higher codimension (D. J. Altschuler–S. J. Altschuler–Angenent–Wu, 2012; Stryker–Sun, 2019)",
     "chapter": "other-special-flows",
     "section": "ancient-torus-curves-in-higher-codimension"
   },
   {
     "route": "sections/ancient-dense-torus-curves-with-irrational-frequencies",
-    "title": "5.30 Ancient dense torus curves with irrational frequencies",
+    "title": "5.31 Ancient dense torus curves with irrational frequencies",
     "chapter": "other-special-flows",
     "section": "ancient-dense-torus-curves-with-irrational-frequencies"
   },
   {
     "route": "sections/mean-curvature-evolution-of-the-whitney-sphere",
-    "title": "5.31 Mean curvature evolution of the Whitney sphere",
+    "title": "5.32 Mean curvature evolution of the Whitney sphere",
     "chapter": "other-special-flows",
     "section": "mean-curvature-evolution-of-the-whitney-sphere"
   },
   {
     "route": "sections/ancient-isoparametric-flows-in-euclidean-space",
-    "title": "5.32 Ancient isoparametric flows in Euclidean space",
+    "title": "5.33 Ancient isoparametric flows in Euclidean space",
     "chapter": "other-special-flows",
     "section": "ancient-isoparametric-flows-in-euclidean-space"
   },
   {
     "route": "sections/ancient-ovals-with-reduced-symmetry",
-    "title": "5.33 Ancient ovals with reduced symmetry",
+    "title": "5.34 Ancient ovals with reduced symmetry",
     "chapter": "other-special-flows",
     "section": "ancient-ovals-with-reduced-symmetry"
   },
   {
     "route": "sections/ancient-stacked-pancakes",
-    "title": "5.34 Ancient stacked pancakes",
+    "title": "5.35 Ancient stacked pancakes",
     "chapter": "other-special-flows",
     "section": "ancient-stacked-pancakes"
   },
   {
+    "route": "sections/eight-dimensional-fattening-at-the-simoes-cone",
+    "title": "5.36 Eight-dimensional fattening at the Simoes cone",
+    "chapter": "other-special-flows",
+    "section": "eight-dimensional-fattening-at-the-simoes-cone"
+  },
+  {
     "route": "sections/hypersurface-singularities-with-bounded-mean-curvature",
-    "title": "5.35 Hypersurface singularities with bounded mean curvature",
+    "title": "5.37 Hypersurface singularities with bounded mean curvature",
     "chapter": "other-special-flows",
     "section": "hypersurface-singularities-with-bounded-mean-curvature"
   },
   {
     "route": "sections/lagrangian-singularities-with-prescribed-orbit-models",
-    "title": "5.36 Lagrangian singularities with prescribed orbit models",
+    "title": "5.38 Lagrangian singularities with prescribed orbit models",
     "chapter": "other-special-flows",
     "section": "lagrangian-singularities-with-prescribed-orbit-models"
   },
   {
     "route": "sections/su-wood-stationary-products-of-lawlor-profiles",
-    "title": "5.37 Su–Wood stationary products of Lawlor profiles",
+    "title": "5.39 Su–Wood stationary products of Lawlor profiles",
     "chapter": "other-special-flows",
     "section": "su-wood-stationary-products-of-lawlor-profiles"
   },
   {
     "route": "sections/stolarski-su-finite-time-lagrangian-neck-pinches",
-    "title": "5.38 Stolarski–Su finite-time Lagrangian neck pinches",
+    "title": "5.40 Stolarski–Su finite-time Lagrangian neck pinches",
     "chapter": "other-special-flows",
     "section": "stolarski-su-finite-time-lagrangian-neck-pinches"
   },
   {
     "route": "sections/ancient-isoparametric-flows-in-spheres",
-    "title": "5.39 Ancient isoparametric flows in spheres",
+    "title": "5.41 Ancient isoparametric flows in spheres",
     "chapter": "other-special-flows",
     "section": "ancient-isoparametric-flows-in-spheres"
   },
   {
     "route": "sections/eternal-tori-in-perturbations-of-the-round-three-sphere",
-    "title": "5.40 Eternal tori in perturbations of the round three-sphere",
+    "title": "5.42 Eternal tori in perturbations of the round three-sphere",
     "chapter": "other-special-flows",
     "section": "eternal-tori-in-perturbations-of-the-round-three-sphere"
   },
   {
     "route": "sections/isometric-curve-shortening-solitons-in-the-hyperbolic-plane",
-    "title": "5.41 Isometric curve-shortening solitons in the hyperbolic plane",
+    "title": "5.43 Isometric curve-shortening solitons in the hyperbolic plane",
     "chapter": "other-special-flows",
     "section": "isometric-curve-shortening-solitons-in-the-hyperbolic-plane"
   },
   {
     "route": "sections/finite-time-lagrangian-neck-pinches-with-circle-symmetry",
-    "title": "5.42 Finite-time Lagrangian neck pinches with circle symmetry",
+    "title": "5.44 Finite-time Lagrangian neck pinches with circle symmetry",
     "chapter": "other-special-flows",
     "section": "finite-time-lagrangian-neck-pinches-with-circle-symmetry"
   },
   {
     "route": "sections/lagrangian-torus-necks-collapsing-at-infinite-time",
-    "title": "5.43 Lagrangian torus necks collapsing at infinite time",
+    "title": "5.45 Lagrangian torus necks collapsing at infinite time",
     "chapter": "other-special-flows",
     "section": "lagrangian-torus-necks-collapsing-at-infinite-time"
   },
   {
     "route": "sections/immortal-compact-flows-converging-to-a-double-sphere",
-    "title": "5.44 Immortal compact flows converging to a double sphere",
+    "title": "5.46 Immortal compact flows converging to a double sphere",
     "chapter": "other-special-flows",
     "section": "immortal-compact-flows-converging-to-a-double-sphere"
   },
   {
     "route": "sections/ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces",
-    "title": "5.45 Ancient flows from unstable free-boundary minimal hypersurfaces",
+    "title": "5.47 Ancient flows from unstable free-boundary minimal hypersurfaces",
     "chapter": "other-special-flows",
     "section": "ancient-flows-from-unstable-free-boundary-minimal-hypersurfaces"
   },
   {
     "route": "sections/lagrangian-sphere-chains-in-gibbons-hawking-spaces",
-    "title": "5.46 Lagrangian sphere chains in Gibbons–Hawking spaces",
+    "title": "5.48 Lagrangian sphere chains in Gibbons–Hawking spaces",
     "chapter": "other-special-flows",
     "section": "lagrangian-sphere-chains-in-gibbons-hawking-spaces"
   },
   {
     "route": "sections/immortal-curve-shortening-with-nonunique-geodesic-limits",
-    "title": "5.47 Immortal curve shortening with nonunique geodesic limits",
+    "title": "5.49 Immortal curve shortening with nonunique geodesic limits",
     "chapter": "other-special-flows",
     "section": "immortal-curve-shortening-with-nonunique-geodesic-limits"
   },

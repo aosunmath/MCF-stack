@@ -3995,6 +3995,157 @@
       }
     },
     {
+      "label": "ex:catalogue-birotational-shrinkers",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels. The AIV proper embedded cases are separate from arbitrary continued profiles. Fattening is asserted for a selected infinite subsequence; compact gluing is not claimed.",
+      "citations": [
+        "CatNeto2026a",
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "Maximal continued profiles, p,q ≥ 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Depends on axis contacts, periodic closure and recurrent behavior",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Not recorded for the full parameter manifold."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative conclusion is recorded from the cited construction."
+          }
+        },
+        {
+          "name": "AIV monotone shrinkers: P=Q=2, m ≥ 2",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ² × S¹ (or S¹ × ℝ²)",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded. Equals entropy for the normalized proper shrinker."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        },
+        {
+          "name": "AIV monotone shrinkers: P,Q ≥ 2, 5 ≤ P+Q ≤ 7, m ≥ 2",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝᴾ × S^(Q−1), or S^(P−1) × ℝᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded. Equals entropy for the normalized proper shrinker."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        }
+      ],
+      "title": "Complete bi-rotational shrinking continuations (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+      "section": "complete-bi-rotational-shrinking-continuations",
+      "category": "shrinkers",
+      "tag": "313552CFDCE7",
+      "model": "literature-birotational-shrinkers",
+      "illustration_status": "Numerical ODE segment",
+      "chronology": {
+        "title": "Complete bi-rotational shrinking continuations (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+        "name": "Complete bi-rotational shrinking continuations",
+        "date": "2002",
+        "earliest_reference": "CatAIV2002",
+        "references": [
+          {
+            "authors": [
+              "Angenent",
+              "Ilmanen",
+              "Velázquez"
+            ],
+            "date": "2002",
+            "kind": "preprint",
+            "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+            "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date.",
+            "key": "CatAIV2002",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorems 1 and 5; Sections 3 and 5.1, pp. 3, 8–17, 20–21",
+              "note": "Constructs a discrete proper embedded monotone subfamily in ambient dimensions 4–7, with a selected sequence having fattening asymptotic cones.",
+              "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+            }
+          },
+          {
+            "authors": [
+              "Neto"
+            ],
+            "date": "2026-10-19",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2610.25831",
+            "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
+            "key": "CatNeto2026a",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Existing source review on this reading page",
+              "note": "Retains the previously recorded general bi-rotational construction."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatAIV2002",
+          "CatNeto2026a"
+        ]
+      }
+    },
+    {
       "label": "ex:catalogue-curve-products",
       "notes": "The all-circle m=2 case is also listed as the Clifford torus. Topology refers to the immersion domain.",
       "citations": [
@@ -4755,72 +4906,6 @@
             "url": "https://arxiv.org/abs/2608.11046",
             "evidence": "arXiv submission history, version 1: 2026-08-11. Checked 2026-11-09.",
             "key": "CatPark2026",
-            "background": "",
-            "credit_review": null
-          }
-        ],
-        "construction_references": []
-      }
-    },
-    {
-      "label": "ex:catalogue-birotational-shrinkers",
-      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
-      "citations": [
-        "CatNeto2026a"
-      ],
-      "cases": [
-        {
-          "name": "Maximal continued profiles, p,q ≥ 1",
-          "ambient": [
-            "r4",
-            "higher"
-          ],
-          "dimension": "higher",
-          "topology": "Depends on axis contacts, periodic closure and recurrent behavior",
-          "compact": null,
-          "embeddedness": {
-            "key": "not-recorded",
-            "text": "The reviewed statement gives an immersion; no general embedding assertion is recorded."
-          },
-          "genus": {
-            "key": "na",
-            "text": "Not a smooth surface; surface genus is inapplicable."
-          },
-          "ends": {
-            "key": "not-recorded",
-            "text": "Not recorded for the full parameter manifold."
-          },
-          "gaussian": {
-            "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
-          },
-          "entropy": {
-            "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
-          }
-        }
-      ],
-      "title": "Complete bi-rotational shrinking continuations",
-      "section": "complete-bi-rotational-shrinking-continuations",
-      "category": "shrinkers",
-      "tag": "313552CFDCE7",
-      "model": "literature-birotational-shrinkers",
-      "illustration_status": "Numerical ODE segment",
-      "chronology": {
-        "title": "Complete bi-rotational shrinking continuations",
-        "name": "Complete bi-rotational shrinking continuations",
-        "date": "2026-10-19",
-        "earliest_reference": "CatNeto2026a",
-        "references": [
-          {
-            "authors": [
-              "Neto"
-            ],
-            "date": "2026-10-19",
-            "kind": "arxiv",
-            "url": "https://arxiv.org/abs/2610.25831",
-            "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
-            "key": "CatNeto2026a",
             "background": "",
             "credit_review": null
           }
@@ -9671,6 +9756,129 @@
       }
     },
     {
+      "label": "ex:catalogue-birotational-expanders",
+      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels. AIV Theorem 18 gives the axis-starting family; uniqueness is for axis radius, not a prescribed cone. Cone multiplicity for 4 ≤ P+Q ≤ 7 and the (2,6) case are distinguished on the page.",
+      "citations": [
+        "CatNeto2026",
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "Two-ended p,q ≥ 1",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ × Sᵖ × Sᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "depends",
+            "text": "The status depends on the chosen input and closing or quotient conditions."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "2",
+            "text": "Two topological ends."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        },
+        {
+          "name": "Axis-starting p,q ≥ 1 (AIV block dimensions P=p+1, Q=q+1)",
+          "ambient": [
+            "r4",
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ^(p+1) × Sᑫ or ℝ^(q+1) × Sᵖ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "The cited construction gives an embedding for this case."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Not a smooth surface; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One topological end."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
+          }
+        }
+      ],
+      "title": "Bi-rotational expanding hypersurfaces (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+      "section": "bi-rotational-expanding-hypersurfaces",
+      "category": "expanders",
+      "tag": "060795635061",
+      "model": "literature-birotational-expanders",
+      "illustration_status": "Numerical ODE profile projection",
+      "chronology": {
+        "title": "Bi-rotational expanding hypersurfaces (Angenent–Ilmanen–Velázquez, 2002; Neto, 2026)",
+        "name": "Bi-rotational expanding hypersurfaces",
+        "date": "2002",
+        "earliest_reference": "CatAIV2002",
+        "references": [
+          {
+            "authors": [
+              "Angenent",
+              "Ilmanen",
+              "Velázquez"
+            ],
+            "date": "2002",
+            "kind": "preprint",
+            "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+            "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date.",
+            "key": "CatAIV2002",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Theorem 18; Sections 4–5.1, pp. 17–21",
+              "note": "Earlier construction of the axis-starting subfamily; uniqueness fixes axis radius, not the asymptotic cone.",
+              "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+            }
+          },
+          {
+            "authors": [
+              "Neto"
+            ],
+            "date": "2026-10-19",
+            "kind": "arxiv",
+            "url": "https://arxiv.org/abs/2610.25833",
+            "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
+            "key": "CatNeto2026",
+            "background": "",
+            "credit_review": {
+              "role": "construction",
+              "locator": "Existing source review on this reading page",
+              "note": "Retains the previously recorded general bi-rotational construction."
+            }
+          }
+        ],
+        "construction_references": [
+          "CatAIV2002",
+          "CatNeto2026"
+        ]
+      }
+    },
+    {
       "label": "ex:catalogue-jlt-expanders",
       "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
       "citations": [
@@ -9976,102 +10184,6 @@
             "url": "https://arxiv.org/abs/2309.09432",
             "evidence": "arXiv submission history, version 1: 2023-09-18. Checked 2026-11-09.",
             "key": "CatTsaiTsuiWang2025",
-            "background": "",
-            "credit_review": null
-          }
-        ],
-        "construction_references": []
-      }
-    },
-    {
-      "label": "ex:catalogue-birotational-expanders",
-      "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
-      "citations": [
-        "CatNeto2026"
-      ],
-      "cases": [
-        {
-          "name": "Two-ended p,q ≥ 1",
-          "ambient": [
-            "r4",
-            "higher"
-          ],
-          "dimension": "higher",
-          "topology": "ℝ × Sᵖ × Sᑫ",
-          "compact": false,
-          "embeddedness": {
-            "key": "depends",
-            "text": "The status depends on the chosen input and closing or quotient conditions."
-          },
-          "genus": {
-            "key": "na",
-            "text": "Not a smooth surface; surface genus is inapplicable."
-          },
-          "ends": {
-            "key": "2",
-            "text": "Two topological ends."
-          },
-          "gaussian": {
-            "status": "finite",
-            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
-          },
-          "entropy": {
-            "status": "finite",
-            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
-          }
-        },
-        {
-          "name": "Axis-starting p,q ≥ 1",
-          "ambient": [
-            "r4",
-            "higher"
-          ],
-          "dimension": "higher",
-          "topology": "ℝ^(p+1) × Sᑫ or ℝ^(q+1) × Sᵖ",
-          "compact": false,
-          "embeddedness": {
-            "key": "embedded",
-            "text": "The cited construction gives an embedding for this case."
-          },
-          "genus": {
-            "key": "na",
-            "text": "Not a smooth surface; surface genus is inapplicable."
-          },
-          "ends": {
-            "key": "1",
-            "text": "One topological end."
-          },
-          "gaussian": {
-            "status": "finite",
-            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
-          },
-          "entropy": {
-            "status": "finite",
-            "text": "Finite on each stated smooth slice; no numerical value or uniform time bound is recorded."
-          }
-        }
-      ],
-      "title": "Bi-rotational expanding hypersurfaces",
-      "section": "bi-rotational-expanding-hypersurfaces",
-      "category": "expanders",
-      "tag": "060795635061",
-      "model": "literature-birotational-expanders",
-      "illustration_status": "Numerical ODE profile projection",
-      "chronology": {
-        "title": "Bi-rotational expanding hypersurfaces",
-        "name": "Bi-rotational expanding hypersurfaces",
-        "date": "2026-10-19",
-        "earliest_reference": "CatNeto2026",
-        "references": [
-          {
-            "authors": [
-              "Neto"
-            ],
-            "date": "2026-10-19",
-            "kind": "arxiv",
-            "url": "https://arxiv.org/abs/2610.25833",
-            "evidence": "arXiv submission history, version 1: 2026-10-19. Checked 2026-11-09.",
-            "key": "CatNeto2026",
             "background": "",
             "credit_review": null
           }
@@ -13459,6 +13571,107 @@
       }
     },
     {
+      "label": "ex:catalogue-aiv-minimal",
+      "notes": "Stationary smooth caps; the singular minimal cone is a limiting comparison geometry, not a smooth case. Cone minimizing assertions do not classify stability of the caps.",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "P=Q=2 in ℝ⁴",
+          "ambient": [
+            "r4"
+          ],
+          "dimension": "higher",
+          "topology": "ℝ² × S¹ or S¹ × ℝ²",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        },
+        {
+          "name": "P,Q ≥ 2, P+Q ≥ 5",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "ℝᴾ × S^(Q−1) or S^(P−1) × ℝᑫ",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive smooth global radial graph, with smooth axis cap; cone crossings are not self-intersections."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Hypersurface dimension at least three; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "One end; the Euclidean factor has dimension at least two."
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical growth; no value recorded."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite by asymptotically conical geometry; no value recorded."
+          }
+        }
+      ],
+      "title": "Bi-rotational stationary minimal hypersurfaces",
+      "section": "bi-rotational-minimal-hypersurfaces-asymptotic-to-cones",
+      "category": "other-special-flows",
+      "tag": "FE423BC08B51",
+      "model": "aiv-minimal",
+      "illustration_status": "Numerical ODE orbit-space profiles",
+      "chronology": {
+        "title": "Bi-rotational stationary minimal hypersurfaces",
+        "name": "Bi-rotational stationary minimal hypersurfaces",
+        "date": "2002",
+        "earliest_reference": "CatAIV2002",
+        "references": [
+          {
+            "authors": [
+              "Angenent",
+              "Ilmanen",
+              "Velázquez"
+            ],
+            "date": "2002",
+            "kind": "preprint",
+            "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+            "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date.",
+            "key": "CatAIV2002",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Section 2, pp. 4–7; Appendix A, pp. 30–32",
+              "note": "Analyzes both axis-regular minimal caps; credits Alencar and Simoes for earlier minimal-surface and cone results. This is not an original-discovery claim.",
+              "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+            }
+          }
+        ],
+        "construction_references": []
+      }
+    },
+    {
       "label": "ex:catalogue-lawlor-necks",
       "notes": "Dimensions, topology, and embeddedness refer to the stated full ambient geometry and regular slices. See the source hypotheses and illustration conventions on this page.",
       "citations": [
@@ -14144,6 +14357,78 @@
             "key": "CatMY26",
             "background": "",
             "credit_review": null
+          }
+        ],
+        "construction_references": []
+      }
+    },
+    {
+      "label": "ex:catalogue-aiv-eight-fattening",
+      "notes": "Announced construction in an unfinished draft. Positive-time type I and type II asymptotics are formal; global completion is not specified. Properties below describe the local model, not a global classification.",
+      "citations": [
+        "CatAIV2002"
+      ],
+      "cases": [
+        {
+          "name": "O(2) × O(6) local singularity and fattening model",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Local cap S¹ × ℝ⁶; global completion not recorded",
+          "compact": null,
+          "embeddedness": {
+            "key": "not-recorded",
+            "text": "The smooth positive radial cap is locally embedded; the reviewed construction does not specify a global completion sufficiently to classify it. The fattened set is not a smooth hypersurface."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Seven-dimensional hypersurface, not a surface."
+          },
+          "ends": {
+            "key": "not-recorded",
+            "text": "Global completion and end count not specified."
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No global Gaussian-area value established in the reviewed draft."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No global entropy value established in the reviewed draft."
+          }
+        }
+      ],
+      "title": "Eight-dimensional fattening at the Simoes cone",
+      "section": "eight-dimensional-fattening-at-the-simoes-cone",
+      "category": "other-special-flows",
+      "tag": "0AC69A3BDB5D",
+      "model": "aiv-eight-fattening",
+      "illustration_status": "Numerical ODE and labeled asymptotic models",
+      "chronology": {
+        "title": "Eight-dimensional fattening at the Simoes cone",
+        "name": "Eight-dimensional fattening at the Simoes cone",
+        "date": "2002",
+        "earliest_reference": "CatAIV2002",
+        "references": [
+          {
+            "authors": [
+              "Angenent",
+              "Ilmanen",
+              "Velázquez"
+            ],
+            "date": "2002",
+            "kind": "preprint",
+            "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
+            "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date.",
+            "key": "CatAIV2002",
+            "background": "",
+            "credit_review": {
+              "role": "analysis",
+              "locator": "Lemma 23 and Section 6, pp. 21–29, especially Section 6.4",
+              "note": "Announced construction and formal matched asymptotics in an unfinished draft. Detailed positive-time asymptotics are not proved there.",
+              "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+            }
           }
         ],
         "construction_references": []
