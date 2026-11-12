@@ -1310,6 +1310,45 @@
       "kind": "preprint",
       "url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf",
       "evidence": "Year supplied by the user. Reviewed copy is an unfinished 33-page draft dated March 30, 1997–February 15, 2017; 2002 is not its revision date."
+    },
+    "CatVelazquez1994": {
+      "authors": [
+        "Velázquez"
+      ],
+      "date": "1994",
+      "kind": "publication",
+      "url": "https://www.numdam.org/item/ASNSP_1994_4_21_4_595_0/",
+      "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json."
+    },
+    "CatGuoSesum2018": {
+      "authors": [
+        "Guo",
+        "Šešum"
+      ],
+      "date": "2017-01-07",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/1701.01835",
+      "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json."
+    },
+    "CatLiu2024": {
+      "authors": [
+        "Liu"
+      ],
+      "date": "2024-03-25",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2403.16515",
+      "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json."
+    },
+    "CatADS2026": {
+      "authors": [
+        "Angenent",
+        "Daskalopoulos",
+        "Šešum"
+      ],
+      "date": "2021-08-19",
+      "kind": "arxiv",
+      "url": "https://arxiv.org/abs/2108.08725",
+      "evidence": "Primary publication or arXiv submission history checked 2026-11-12; exact reviewed editions in simons-cone-sources.json."
     }
   },
   "examples": {
@@ -2824,9 +2863,22 @@
     "ex:catalogue-bounded-mean-curvature-singularities": {
       "name": "Hypersurface singularities with bounded mean curvature",
       "references": [
+        "CatVelazquez1994",
         "CatStolarski2023"
       ],
-      "background_references": {}
+      "background_references": {},
+      "credit_reviews": {
+        "CatVelazquez1994": {
+          "role": "construction",
+          "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+          "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+        },
+        "CatStolarski2023": {
+          "role": "analysis",
+          "locator": "Theorems 1.1 and 3.2; Introduction attribution, PDF pp. 1–2",
+          "note": "Proves bounded mean curvature for an existing subfamily and explicitly attributes its construction to Velázquez."
+        }
+      }
     },
     "ex:catalogue-cohomogeneity-one-lagrangian-singularities": {
       "name": "Lagrangian singularities with prescribed orbit models",
@@ -3243,6 +3295,60 @@
           "locator": "Lemma 23 and Section 6, pp. 21–29, especially Section 6.4",
           "note": "Announced construction and formal matched asymptotics in an unfinished draft. Detailed positive-time asymptotics are not proved there.",
           "reviewed_url": "https://people.math.wisc.edu/~angenent/preprints/unfinished/fattening.pdf"
+        }
+      }
+    },
+    "ex:catalogue-simons-cone-low-mode": {
+      "name": "Low-mode type-II singularities approaching Simons cones",
+      "references": [
+        "CatVelazquez1994",
+        "CatGuoSesum2018",
+        "CatStolarski2023"
+      ],
+      "background_references": {},
+      "credit_reviews": {
+        "CatVelazquez1994": {
+          "role": "construction",
+          "locator": "Proposition 2.2, Theorems 2.1–2.2; printed pp. 607–611",
+          "note": "Constructs the degree-selected type-II family; subsequent mean-curvature conclusions are credited separately in the text."
+        },
+        "CatGuoSesum2018": {
+          "role": "analysis",
+          "locator": "Theorem 1.2, Theorem 4.8 and Propositions 5.1–5.4",
+          "note": "Refines convergence and proves slower mean-curvature blow-up for n ≥ 5 and k = 2; analyzes Velázquez’s family."
+        },
+        "CatStolarski2023": {
+          "role": "analysis",
+          "locator": "Theorems 3.1 and 3.3",
+          "note": "Restates the mode-indexed construction and proves smooth inner convergence."
+        }
+      }
+    },
+    "ex:catalogue-compact-lawson-cone-flows": {
+      "name": "Compact type-II singularities approaching Lawson cones",
+      "references": [
+        "CatLiu2024"
+      ],
+      "background_references": {},
+      "credit_reviews": {
+        "CatLiu2024": {
+          "role": "construction",
+          "locator": "Theorem 1.4; Section 4 initial capped profile and Theorem 4.5; Corollary 8.5",
+          "note": "Preprint construction of compact bounded-mean-curvature singularities; no independent proof verification."
+        }
+      }
+    },
+    "ex:catalogue-simons-cone-smoothing": {
+      "name": "Type-II smoothing after a Simons-cone singularity",
+      "references": [
+        "CatADS2026"
+      ],
+      "background_references": {},
+      "credit_reviews": {
+        "CatADS2026": {
+          "role": "construction",
+          "locator": "Main Theorem and Corollary 1.1.1; Sections 3–5",
+          "note": "Proves post-singularity smoothing and bounded mean curvature; credits formal matching to Angenent–Ilmanen–Velázquez."
         }
       }
     }

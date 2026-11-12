@@ -189,7 +189,10 @@
         "finite-time-lagrangian-neck-pinches-with-circle-symmetry",
         "immersed-ancient-curves-from-grim-reaper-chains",
         "bi-rotational-minimal-hypersurfaces-asymptotic-to-cones",
-        "eight-dimensional-fattening-at-the-simoes-cone"
+        "eight-dimensional-fattening-at-the-simoes-cone",
+        "low-mode-type-ii-singularities-approaching-simons-cones",
+        "compact-type-ii-singularities-approaching-lawson-cones",
+        "type-ii-smoothing-after-a-simons-cone-singularity"
       ],
       "description": "Stationary, ancient, rotating, higher-codimension, and singularity-forming flows, including mixed curve solitons."
     }

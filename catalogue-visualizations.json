@@ -1900,13 +1900,15 @@
       "title": "Hypersurface singularities with bounded mean curvature",
       "category": "other-special-flows",
       "citations": [
+        "CatVelazquez1994",
         "CatStolarski2023"
       ],
-      "model": "literature-bounded-mean-curvature-singularities",
-      "status": "Source-informed schematic",
-      "caption": "Radial-block schematic of a Simons-cone singularity. The ordinary view, parabolic magnification, and finer neck scale are distinguished; interpolated curves do not solve MCF.",
-      "alt": "Hypersurface singularities with bounded mean curvature. Radial-block schematic of a Simons-cone singularity. The ordinary view, parabolic magnification, and finer neck scale are distinguished; interpolated curves do not solve MCF.",
-      "interactive": true
+      "model": "simons-cone-bounded",
+      "status": "Numerical ODE and asymptotic model",
+      "caption": "Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF.",
+      "alt": "Hypersurface singularities with bounded mean curvature. Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF.",
+      "interactive": true,
+      "credit_anchor": "simons-cone-models"
     },
     {
       "label": "ex:catalogue-cohomogeneity-one-lagrangian-singularities",
@@ -2461,6 +2463,53 @@
         "title": "Eight-dimensional fattening at the Simoes cone",
         "caption": "Numerical stationary inner profiles and an expander slope test for the eight-dimensional model. The time comparison shows only a formal inner-scale approximation, not a nonlinear PDE solution."
       }
+    },
+    {
+      "label": "ex:catalogue-simons-cone-low-mode",
+      "section": "low-mode-type-ii-singularities-approaching-simons-cones",
+      "title": "Low-mode type-II singularities approaching Simons cones",
+      "category": "other-special-flows",
+      "citations": [
+        "CatVelazquez1994",
+        "CatGuoSesum2018",
+        "CatStolarski2023"
+      ],
+      "model": "simons-cone-low-mode",
+      "status": "Numerical ODE and asymptotic model",
+      "caption": "Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF.",
+      "alt": "Low-mode type-II singularities approaching Simons cones. Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF.",
+      "interactive": true,
+      "credit_anchor": "simons-cone-models"
+    },
+    {
+      "label": "ex:catalogue-compact-lawson-cone-flows",
+      "section": "compact-type-ii-singularities-approaching-lawson-cones",
+      "title": "Compact type-II singularities approaching Lawson cones",
+      "category": "other-special-flows",
+      "citations": [
+        "CatLiu2024"
+      ],
+      "model": "simons-cone-compact",
+      "status": "Numerical ODE and asymptotic model",
+      "caption": "Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF. Only local geometry is shown; the compact cap is omitted.",
+      "alt": "Compact type-II singularities approaching Lawson cones. Numerical minimal ODE profile with asymptotic scaling, shown in the radial orbit space. The scaled leaves alone do not solve MCF. Only local geometry is shown; the compact cap is omitted.",
+      "interactive": true,
+      "credit_anchor": "simons-cone-models"
+    },
+    {
+      "label": "ex:catalogue-simons-cone-smoothing",
+      "section": "type-ii-smoothing-after-a-simons-cone-singularity",
+      "title": "Type-II smoothing after a Simons-cone singularity",
+      "category": "other-special-flows",
+      "citations": [
+        "CatADS2026"
+      ],
+      "model": "simons-cone-smoothing",
+      "status": "Numerical PDE experiment",
+      "caption": "Numerical forward PDE with regularized singular trace, smooth axis and fixed outer boundary. Grid, domain and rounding comparisons are recorded; this does not certify the singular-limit continuation.",
+      "alt": "Type-II smoothing after a Simons-cone singularity. Numerical forward PDE with regularized singular trace, smooth axis and fixed outer boundary. Grid, domain and rounding comparisons are recorded; this does not certify the singular-limit continuation.",
+      "interactive": true,
+      "credit_anchor": "simons-cone-models"
     }
   ]
 }

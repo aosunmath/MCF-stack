@@ -305,9 +305,25 @@ With ordinary time $t=e^s$, the associated MCF is $M_t=\sqrt t\,\widetilde M_{\l
 
 \chapter{Hypersurface singularities with bounded mean curvature}\label{sec:catalogue-bounded-mean-curvature-singularities}
 \begin{example}[Hypersurface singularities with bounded mean curvature]\label{ex:catalogue-bounded-mean-curvature-singularities}
-Stolarski constructs smooth properly embedded noncompact hypersurface flows in $\mathbb R^N$, $N\ge8$, that develop a finite-time singularity while the scalar mean curvature remains uniformly bounded. The second fundamental form becomes unbounded, so cancellation between principal curvatures is essential. The construction develops the Velázquez singularity model; higher-dimensional examples can be obtained by the stated product extensions. The theorem does not assert a compact example merely because the introduction discusses possible compactification.
-At the parabolic scale the model is a minimal cone; at a finer curvature scale one sees a smooth minimal desingularization. These are different rescalings of the same degenerating region. They are distinct from the rotational bowl-type degenerate neck pinch and the Lagrangian Stolarski--Su examples. No exact time-dependent parametrization or numeric entropy is provided. The radial-block diagram shows a narrowing neighborhood of the Simons cone and identifies the two zoom scales. It is not a shrinking family of minimal surfaces claimed to solve MCF.
-\par Sources: \cite{CatStolarski2023}.
+For $n\geq4$ and each even integer $k\geq4$, Stolarski proves that a subfamily of Vel\'azquez's $O(n)\times O(n)$ invariant flows in $\mathbb R^{2n}$ develops a type-II singularity at time zero while
+\[
+ \sup_{t_0\leq t<0}\sup_{M_t}|H|<\infty,
+ \qquad \sup_{M_t}|A|\asymp(-t)^{-\beta_k}\longrightarrow\infty,
+ \qquad \beta_k=\frac{k}{1-\alpha_n},\quad
+ \alpha_n=\frac{-(2n-3)+\sqrt{4n^2-20n+17}}2.
+\]
+The time interval is finite. Each regular slice is a complete properly embedded noncompact hypersurface with topology $\mathbb R^n\times S^{n-1}$ and one end, as follows from the positive radial graph $Q(r,t)$ on $r\geq0$. It has dimension $2n-1$ and codimension one. Taking a product with $\mathbb R^m$, $m\geq1$, gives topology $\mathbb R^{n+m}\times S^{n-1}$ and examples in $\mathbb R^{2n+m}$. This accounts for every ambient dimension $N\geq8$. In product examples the singular set also acquires the flat factor; it is not an isolated point.
+
+The exact reduced equation, with smooth-axis condition, is
+\[
+ Q_t=\frac{Q_{rr}}{1+Q_r^2}+\frac{n-1}{r}Q_r-\frac{n-1}{Q},
+ \qquad Q_r(0,t)=0,\quad Q(0,t)>0.
+\]
+At scale $(-t)^{-1/2}$ the flow approaches the stationary Simons cone away from its vertex. At scale $(-t)^{-\beta_k}$ it approaches a smooth minimal desingularization locally smoothly. For $n=4$, $\alpha_4=-2$ and $\beta_k=k/3$. Opposite principal-curvature contributions can cancel in $H$ while $|A|$ grows. Profile convexity is not convexity of the full hypersurface.
+
+Sources: \cite{CatVelazquez1994}, Proposition 2.2 and Theorems 2.1--2.2; \cite{CatStolarski2023}, Theorems 1.1, 3.1--3.3, equation (2.1) and Sections 6--7 (reviewed arXiv v1 PDF pp.~1--6 and the cited sections). The even $k\geq4$ restriction is retained exactly for Stolarski's theorem. The low mode $k=2$ with $n\geq5$ has unbounded mean curvature by Guo--\v Se\v sum; see \ref{ex:catalogue-simons-cone-low-mode}. A stationary minimal blow-up alone therefore does not imply bounded mean curvature of the original flow.
+
+No closed time-dependent formula, general uniqueness, dynamical stability, or quantitative entropy or centered Gaussian-area value is supplied here. The numerical figure integrates the minimal-profile ODE and displays the two asymptotic magnifications; changing the scale of a minimal leaf is not itself MCF. The theorem is noncompact. Liu's compact extension and the Angenent--Daskalopoulos--\v Se\v sum post-singularity smoothing have separate hypotheses and are recorded in \ref{ex:catalogue-compact-lawson-cone-flows} and \ref{ex:catalogue-simons-cone-smoothing}.
 \end{example}
 
 \chapter{Lagrangian singularities with prescribed orbit models}\label{sec:catalogue-cohomogeneity-one-lagrangian-singularities}

@@ -1,0 +1,99 @@
+\chapter{Low-mode type-II singularities approaching Simons cones}\label{sec:catalogue-simons-cone-low-mode}
+\begin{example}[Vel\'azquez flows and the Guo--\v Se\v sum blow-up analysis]\label{ex:catalogue-simons-cone-low-mode}
+Write $\mathbb R^{2n}=\mathbb R^n\times\mathbb R^n$, with $n\geq4$, and let
+\[
+ C_n=\{(x,y):|x|=|y|\},\qquad
+ M_t=\{(r\omega,Q(r,t)\theta):r\geq0,\ \omega,\theta\in S^{n-1}\}.
+\]
+The cone is singular at its vertex. The constructed $M_t$, on a finite interval $t_0\leq t<0$, are smooth complete properly embedded noncompact hypersurfaces of dimension $2n-1$ and codimension one. Their $O(n)\times O(n)$ symmetry reduces MCF to
+\[
+ Q_t=\frac{Q_{rr}}{1+Q_r^2}+\frac{n-1}{r}Q_r-\frac{n-1}{Q},
+ \qquad Q(0,t)>0,\quad Q_r(0,t)=0.
+\]
+At the axis the first two terms have the combined limit $nQ_{rr}(0,t)$. The positive radial graph gives topology $\mathbb R^n\times S^{n-1}$ and one end. These are topological consequences of the parametrization, not surface-genus assertions. They are not ancient solutions or solitons, and no closed formula for $Q(r,t)$ is known from these sources.
+
+Set
+\[
+ \alpha_n=\frac{-(2n-3)+\sqrt{4n^2-20n+17}}2,
+ \qquad \lambda_k=k+\frac{\alpha_n-1}{2},
+ \qquad \beta_k=\frac{k}{1-\alpha_n},\quad \sigma_k=\beta_k-\frac12.
+\]
+Vel\'azquez constructs a discrete family indexed by integers $k\geq2$. This page records its low mode $k=2$; the higher modes with bounded mean curvature are recorded in \ref{ex:catalogue-bounded-mean-curvature-singularities}. At the parabolic scale $(-t)^{-1/2}M_t$, the limit is $C_n$ on compact annuli away from the vertex. At the finer scale $(-t)^{-\beta_k}M_t$, the limit is a smooth minimal hypersurface asymptotic to $C_n$. Its profile, normalized here by $P(0)=1$, solves
+\[
+ \frac{P''}{1+(P')^2}+(n-1)\left(\frac{P'}r-\frac1P\right)=0,
+ \qquad P'(0)=0,\qquad P(r)=r+c r^{\alpha_n}+o(r^{\alpha_n}),\quad c>0.
+\]
+Other normalizations are $P_b(r)=bP(r/b)$. The ODE, not a closed formula, specifies this minimal model. Its convex profile does not make the full hypersurface convex: the two spherical blocks contribute principal curvatures of opposite signs.
+
+Guo--\v Se\v sum prove for $n\geq5$, $k=2$, and their choice of exterior initial data that the origin is the only singular point at time zero, that the finer rescalings converge locally smoothly, and that
+\[
+ 0<\limsup_{t\uparrow0}(-t)^{\beta_2}\sup_{M_t}|A|<\infty.
+\]
+The mean curvature also blows up, but more slowly. More precisely, for some $C(n)>0$ and $0<\varrho(n)<1$,
+\[
+ \limsup_{t\uparrow0}(-t)^{1/2-\sigma_2}
+ \sup_{M_t\cap B(0,C(n)(-t)^{\beta_2})}|H|>0,
+ \qquad
+ \limsup_{t\uparrow0}(-t)^{1/2+(1-2\varrho)\sigma_2}\sup_{M_t}|H|<\infty.
+\]
+These are different lower and upper estimates, not an exact asymptotic equivalent for $|H|$. The stated Guo--\v Se\v sum theorem excludes $n=4$; existence of the $k=2$ flow in $\mathbb R^8$ must not be read as this same mean-curvature conclusion.
+
+Sources: \cite{CatVelazquez1994}, Proposition 2.1, Proposition 2.2 and Theorems 2.1--2.2, printed pp.~605--611; \cite{CatGuoSesum2018}, Theorem 1.2, Section 2, equation (3.5), Theorem 4.8 and Propositions 5.1--5.4; \cite{CatStolarski2023}, Theorems 3.1 and 3.3. Existence is selected by a degree argument; no general uniqueness or dynamical stability is asserted. No entropy or centered Gaussian-area value of the evolving slices is evaluated here. The figure integrates the minimal ODE and applies the source's asymptotic scales. A time-dependent dilation of this minimal leaf alone is not an MCF solution.
+\end{example}
+
+\chapter{Compact type-II singularities approaching Lawson cones}\label{sec:catalogue-compact-lawson-cone-flows}
+\begin{example}[Liu's compact flows with bounded mean curvature]\label{ex:catalogue-compact-lawson-cone-flows}
+Liu's 2024 preprint constructs smooth compact embedded hypersurface flows $M_t^{N-1}\subset\mathbb R^N$, $t_0\leq t<0$, for every $N\geq8$, with a type-II singularity and uniformly bounded scalar mean curvature. Choose integers $p,q\geq2$ with $p+q=N$; when $N=8$ require $p,q\geq3$. The symmetry is $O(p)\times O(q)$, and the local cone is
+\[
+ C_{p,q}=\{(x,y)\in\mathbb R^p\times\mathbb R^q:
+ |y|=\mu|x|\},\qquad \mu=\sqrt{\frac{q-1}{p-1}}.
+\]
+Thus $p=q$ recovers the equal-factor Simons cone. These restrictions on the blocks are part of the construction; a flat-product extension of a noncompact example would not produce a compact example.
+
+Near the singular region the positive profile $Q$ satisfies
+\[
+ Q_t=\frac{Q_{rr}}{1+Q_r^2}+\frac{p-1}{r}Q_r-\frac{q-1}{Q},
+ \qquad Q_r(0,t)=0.
+\]
+The outer profile is capped smoothly. In the source's construction one sphere factor collapses at each endpoint of a simple orbit-space interval. The resulting join $S^{p-1}*S^{q-1}$ gives topology $S^{N-1}$. This is a deduction from Section 4's parametrization. Every regular slice is complete and proper by compactness, with no ends; the mixed curvature near the minimal model precludes global convexity there.
+
+With
+\[
+ \alpha_N=\frac{3-N+\sqrt{N^2-10N+17}}2,\qquad
+ \beta_\ell=\frac{\ell}{1-\alpha_N},
+\]
+the selected flows converge to $C_{p,q}$ under the scale $(-t)^{-1/2}$ away from its vertex, and locally smoothly to its smooth minimal desingularization under $(-t)^{-\beta_\ell}$. The bounded-mean-curvature ranges are
+\[
+ N=8:\ \ell\geq4;\qquad N\geq9:\ \ell\geq3,
+\]
+with integer $\ell$ and no parity requirement in this preprint. The second fundamental form becomes unbounded although $\sup_{t_0\leq t<0}\sup_{M_t}|H|<\infty$. This is a finite-time construction, not an ancient flow or a uniqueness theorem.
+
+Source: \cite{CatLiu2024}, Theorem 1.4, Section 2, the admissibility conditions in Section 3, the capped initial profile in Section 4, Theorem 4.5, Proposition 8.1 and Corollary 8.5 (arXiv v1 PDF pp.~3--4, 8--10, 12--17, 48--54). The result is recorded as a preprint theorem, without independent proof verification. Each compact smooth slice has finite Gaussian area and entropy, but no numerical value or uniform-in-time entropy bound is assigned. The numerical profile shows only the local minimal model and its asymptotic scales; it does not compute the compact cap or the degree-selected PDE solution. Compare \ref{ex:catalogue-simons-cone-low-mode} and \ref{ex:catalogue-bounded-mean-curvature-singularities}.
+\end{example}
+
+\chapter{Type-II smoothing after a Simons-cone singularity}\label{sec:catalogue-simons-cone-smoothing}
+\begin{example}[Angenent--Daskalopoulos--\v Se\v sum continuation]\label{ex:catalogue-simons-cone-smoothing}
+In $\mathbb R^8=\mathbb R^4\times\mathbb R^4$, let $M_0$ be the $O(4)\times O(4)$ invariant singular hypersurface with profile $u_0(r)$, smooth for $r>0$, such that for an integer $k\geq4$ and $K_0>0$,
+\[
+ u_0(r)=r+K_0r^{2(k-1)}+o(r^{2(k-1)})\quad(r\downarrow0).
+\]
+Retain the source's global hypotheses $0\leq u_0'\leq C_0$, $|u_0''|\leq C_0$ and $|u_0''(r)|\leq C_0r^{2k-4}$, and, after rescaling, $u_0'\geq c>0$ on $(0,1]$. Angenent--Daskalopoulos--\v Se\v sum produce a smooth positive profile $u(r,t)$ for $0<t\leq t_0$ satisfying
+\[
+ u_t=\frac{u_{rr}}{1+u_r^2}+\frac3r u_r-\frac3u,
+ \qquad u_r(0,t)=0,\qquad \lim_{t\downarrow0}u(r,t)=u_0(r).
+\]
+Its hypersurfaces are smooth complete noncompact embedded seven-manifolds, of codimension one, with uniformly bounded $|H|$ for sufficiently small positive times. The positive radial graph gives properness, topology $\mathbb R^4\times S^3$, and one end. The initial vertex remains a singular point of $M_0$; its mean curvature is not assigned a classical value there.
+
+The two relevant spatial scales are $\sqrt t$ and $t^{k/3}$. The inner expansion has the leading form
+\[
+ u(r,t)\sim t^{k/3}K_2W\left(\frac{r}{K_2t^{k/3}}\right),\qquad
+ \frac{W''}{1+(W')^2}+\frac3zW'-\frac3W=0,
+\]
+where $W(z)=z+z^{-2}+o(z^{-2})$ at infinity and $K_2^3=K_0(2k+1)!!$. The scale and normalization come from the matching calculation in Section 2. This is an asymptotic model, not an exact evolving dilation of a minimal hypersurface. The solution is not a self-expander.
+
+For compatible incoming Vel\'azquez--Stolarski data with even $k\geq4$, the source obtains a flow on $(-t_0,t_0)$ which is smooth away from the single spacetime point $(0,0)$ and has uniformly bounded mean curvature on its regular slices, while $|A|$ blows up near that point. This does not mean a smooth classical flow through time zero, and it does not establish uniqueness of continuation. The even-mode restriction concerns the incoming bounded-curvature theorem; the outgoing construction allows all integer $k\geq4$.
+
+Source: \cite{CatADS2026}, equations (1.1.1)--(1.1.5), Main Theorem and Corollary 1.1.1, printed pp.~858--860; Sections 2--5, especially (2.3.2)--(2.3.6), pp.~862--863. The paper credits formal continuation asymptotics to Angenent--Ilmanen--Vel\'azquez; the proved continuation here is the Angenent--Daskalopoulos--\v Se\v sum construction. No Gaussian-area or entropy value or dynamical stability assertion is recorded.
+
+The interactive experiment solves the nonlinear reduced PDE on $0\leq r\leq5$ for a regularization of $u_0(r)=r+0.2r^6/(1+r^6)$, with a smooth axis and a fixed outer boundary. This $k=4$ trace satisfies the displayed asymptotic and derivative hypotheses. The initial rounding replaces $r$ by $\varepsilon P(r/\varepsilon)$ with $P(0)=1$, and is explicitly varied in the numerical audit. Positive rounding and finite boundary are numerical approximations, not the singular initial-value problem itself. Mesh, domain and rounding comparisons are supplied; they do not prove convergence to the theorem's solution or certify its blow-up rate. See also \ref{ex:catalogue-bounded-mean-curvature-singularities}.
+\end{example}

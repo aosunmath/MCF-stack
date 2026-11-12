@@ -7430,36 +7430,66 @@
       "label": "ex:catalogue-bounded-mean-curvature-singularities",
       "notes": "Source construction and dimension restrictions are stated on the reading page. Illustrations have their own accuracy labels.",
       "citations": [
+        "CatVelazquez1994",
         "CatStolarski2023"
       ],
       "cases": [
         {
-          "name": "Ambient ℝᴺ, N ≥ 8",
+          "name": "Equal factors n ≥ 4 in R^(2n); even k ≥ 4",
           "ambient": [
             "higher"
           ],
           "dimension": "higher",
-          "topology": "Noncompact hypersurface; minimal-cone desingularization geometry",
+          "topology": "Rⁿ × Sⁿ⁻¹",
           "compact": false,
           "embeddedness": {
             "key": "embedded",
-            "text": "The cited construction gives an embedding for this case."
+            "text": "Properly embedded regular slices; isolated cone singularity in the equal-factor model."
           },
           "genus": {
             "key": "na",
-            "text": "Not a smooth surface; surface genus is inapplicable."
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
           },
           "ends": {
-            "key": "not-recorded",
-            "text": "Not recorded for the full parameter manifold."
+            "key": "1",
+            "text": "1 end of each regular slice"
           },
           "gaussian": {
             "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
           },
           "entropy": {
             "status": "not-recorded",
-            "text": "No quantitative conclusion is recorded from the cited construction."
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        },
+        {
+          "name": "Flat products in R^(2n+m), n ≥ 4, m ≥ 1; even k ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ⁺ᵐ × Sⁿ⁻¹",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Product embedding; the limiting singular set includes the flat Rᵐ factor."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
           }
         }
       ]
@@ -9470,6 +9500,180 @@
           "entropy": {
             "status": "not-recorded",
             "text": "No global entropy value established in the reviewed draft."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-simons-cone-low-mode",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
+      "citations": [
+        "CatVelazquez1994",
+        "CatGuoSesum2018",
+        "CatStolarski2023"
+      ],
+      "cases": [
+        {
+          "name": "Equal factors n = 4 in R8; low mode k = 2",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "R⁴ × S³",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive radial graph; the singular cone is a limit, not a regular slice."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        },
+        {
+          "name": "Equal factors n ≥ 5 in R^(2n); k = 2, Guo–Šešum mean-curvature blow-up",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Rⁿ × Sⁿ⁻¹",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular time slices; finer minimal limit is smooth."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-compact-lawson-cone-flows",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
+      "citations": [
+        "CatLiu2024"
+      ],
+      "cases": [
+        {
+          "name": "N = 8, p + q = 8, p,q ≥ 3, integer ℓ ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "S⁷",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Smooth compact embedded slices in Liu’s preprint construction."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value or uniform-in-time bound assigned."
+          }
+        },
+        {
+          "name": "N ≥ 9, p + q = N, p,q ≥ 2, integer ℓ ≥ 3",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "Sᴺ⁻¹",
+          "compact": true,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Embedded regular slices; topology follows from the capped profile."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "0",
+            "text": "0 (compact)"
+          },
+          "gaussian": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value."
+          },
+          "entropy": {
+            "status": "finite",
+            "text": "Finite for each smooth compact slice; no evaluated value or uniform-in-time bound assigned."
+          }
+        }
+      ]
+    },
+    {
+      "label": "ex:catalogue-simons-cone-smoothing",
+      "notes": "See the reading page for full dimension, time, mode, source and numerical qualifications.",
+      "citations": [
+        "CatADS2026"
+      ],
+      "cases": [
+        {
+          "name": "Outgoing R8 flow: integer k ≥ 4; compatible incoming bounded-H flow: even k ≥ 4",
+          "ambient": [
+            "higher"
+          ],
+          "dimension": "higher",
+          "topology": "R⁴ × S³",
+          "compact": false,
+          "embeddedness": {
+            "key": "embedded",
+            "text": "Positive radial graph is embedded for t ≠ 0; time-zero trace is singular at its vertex."
+          },
+          "genus": {
+            "key": "na",
+            "text": "Intrinsic dimension at least seven; surface genus is inapplicable."
+          },
+          "ends": {
+            "key": "1",
+            "text": "1 end of each regular slice"
+          },
+          "gaussian": {
+            "status": "not-recorded",
+            "text": "No centered Gaussian-area value recorded; not identified with entropy."
+          },
+          "entropy": {
+            "status": "not-recorded",
+            "text": "No quantitative entropy claim for the evolving slices."
           }
         }
       ]
